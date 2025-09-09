@@ -366,8 +366,8 @@ Data/Static.xml
 Data/MetaGame/MetaGameStatic.xml
 Data/SkirmishAI/SkirmishAIIncludes.xml
 Data/SkirmishAI/Targets
-Data/SkirmishAI/AIStates.xml
-Data/SkirmishAI/PersonalityList.xml
+Data/SkirmishAI/States/AIStates.xml
+Data/SkirmishAI/Personalities/PersonalityList.xml
 Data/SkirmishAI/OpeningMoves/TestMove.xml
 Data/maps/official/**/*.tga
 Data/maps/official/**/*.map
