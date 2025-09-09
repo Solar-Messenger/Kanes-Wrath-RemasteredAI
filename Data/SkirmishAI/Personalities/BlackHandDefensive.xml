@@ -32,7 +32,7 @@
 	  StructureSaveChanceEasy="0.0"
 	  StructureSaveChanceMedium="0.25"
 	  StructureSaveChanceHard="0.5"
-		  Minharvesters="4"
+		  MinHarvesters="4"
 		>
 
 		<Side>BlackHand</Side>
@@ -50,11 +50,26 @@
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 
+		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExpansionDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Defensive" MaxTeamsPerTarget="1"/>
+		
+		<TacticalTarget TacticalAITarget="Targetless" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
@@ -73,21 +88,30 @@
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 
-		<OpeningMove Name="BlackHand_EASY" Weight="100%" Difficulty="EASY"/>
+		<OpeningMove Name="BlackHandDefensiveEasy" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="BlackHandStandardCrane" Weight="90%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="BlackHandSuperweaponRush" Weight="10%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="BlackHandDefensiveStandard" Weight="70%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="BlackHandSuperweaponRush" Weight="30%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BlackHandCounterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandFinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandStaticDefense" Difficulty="HARD BRUTAL"/>
+		<States State="BlackHandResourceDefense" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandHarvesterEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandDefensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="BlackHandReactiveDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BlackHandEngineerDefense" Difficulty="HARD BRUTAL"/>
+		<States State="BlackHandOpenCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandOpeningScout" Difficulty="HARD BRUTAL"/>
+
+		<States State="BlackHandOpeningAntiRush" Difficulty="HARD BRUTAL"/>
+
+		<States State="BlackHandDefend" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandEngineerDefense" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandCommandoDefense" Difficulty="HARD BRUTAL"/>
 		<States State="DefensiveExpansionDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="BlackHandDefensiveExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandDefensiveGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandAntiGarrison_EASY" Difficulty="EASY"/>
