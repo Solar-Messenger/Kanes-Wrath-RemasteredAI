@@ -75,6 +75,7 @@
 		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExpansionDefense" MaxTeamsPerTarget="1"/>
 
+		<TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>

@@ -56,6 +56,7 @@
 
 		<TacticalTarget TacticalAITarget="Targetless" MaxTeamsPerTarget="1"/>
 
+		<TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
