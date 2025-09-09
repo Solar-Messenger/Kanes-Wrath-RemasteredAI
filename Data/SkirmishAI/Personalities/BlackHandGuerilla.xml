@@ -100,9 +100,9 @@
 
 		<OpeningMove Name="BlackHandGuerillaEasy" Weight="100%" Difficulty="EASY"/>
 
-		<!--<OpeningMove Name="BlackHandGuerillaStandard" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="BlackHandFlameTankRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/> -->
-		<OpeningMove Name="BlackHandScorpionSpam" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="BlackHandGuerillaStandard" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="BlackHandFlameTankRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="BlackHandScorpionSpam" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BlackHandOpenCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandOpeningScout" Difficulty="HARD BRUTAL"/>
