@@ -363,7 +363,7 @@ MigrationBackup/
 FodyWeavers.xsd
 
 Data/Static.xml
-Data/MetaGameStatic.xml
+Data/MetaGame/MetaGameStatic.xml
 Data/SkirmishAI/SkirmishAIIncludes.xml
 Data/SkirmishAI/Targets
 Data/SkirmishAI/AIStates.xml
