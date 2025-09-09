@@ -103,7 +103,7 @@
 		<States State="BlackHandOptimalAirHarassment" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandOptimalAirHarassmentAntiTurtle" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="BlackHandOptimalBombingRuns" Difficulty="HARD BRUTAL"/>
+		<States State="BlackHandOptimalArtilleryBombing" Difficulty="HARD BRUTAL"/>
 		<States State="BlackHandOptimalFlameTankAttack" Difficulty="HARD BRUTAL"/>
 
 		<States State="BlackHandOpenCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>

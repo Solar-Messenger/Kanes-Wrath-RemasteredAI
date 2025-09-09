@@ -111,7 +111,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandGuerillaBombingRuns"
+		  id="BlackHandGuerillaArtilleryBombing"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<LateGameHeuristic/>

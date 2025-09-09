@@ -114,7 +114,7 @@
 		<States State="BlackHandProductionHalt" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="BlackHandMiniSiege" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="BlackHandGuerillaAirHarassment" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BlackHandGuerillaBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandGuerillaArtilleryBombing" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandEngineer" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="BlackHandGuerillaFlameTankAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandGuerillaFanaticAttack" Difficulty="MEDIUM HARD BRUTAL"/>
