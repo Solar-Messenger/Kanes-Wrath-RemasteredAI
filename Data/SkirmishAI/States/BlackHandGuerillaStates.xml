@@ -119,7 +119,7 @@
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="BombingAirstrike"/>
 		<Tactic Tactic="FlankAttack" TargetType="BombingAirstrike">
 			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits UnitName="BlackHandMobileArtillery"/>
+				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="BlackHandMobileArtillery"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
