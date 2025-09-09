@@ -32,6 +32,6 @@ This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**
 See the [LICENSE](https://github.com/Solar-Messenger/RemasteredAI/tree/master?tab=GPL-3.0-1-ov-file) file for details.
 
 ### Important Notes
-- The **original modding tools** were released by **Electronic Arts (EA)** under **GPLv3**.  
+- The **original modding support** was released by **Electronic Arts (EA)** under **GPLv3**.  
 - All rights, trademarks, and assets related to the original game remain the property of **Electronic Arts**.  
 - This repository does **not** distribute original game assets. To use this project, you must legally own a copy of the game.
