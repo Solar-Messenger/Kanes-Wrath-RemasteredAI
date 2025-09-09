@@ -1,38 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Tags></Tags>
-  <Includes>
-  </Includes>
+	<Tags></Tags>
+	<Includes>
+	</Includes>
 
-  <SkirmishOpeningMove
-    id="BlackHandSuperweaponRush"
-    Side="BlackHand">
+	<SkirmishOpeningMove
+	id="BlackHandDefensiveEasy"
+	Side="BlackHand">
+		<Order Time="0s" Build="BlackHandPowerPlant" />
+		<Order Time="5s" Build="BlackHandHandOfNOD"/>
+		<Order Time="10s" Build="BlackHandRefinery" />
+		<Order Time="40s" Build="BlackHandDropZone" />
+		<Order Time="60s" Build="BlackHandPowerPlant" />
+		<Order Time="65s" Build="BlackHandPowerPlant" />
+	</SkirmishOpeningMove>
 
-    <Order Build="BlackHandRefinery" />
-    <Order Build="BlackHandPowerPlant" />
-    <Order Build="BlackHandRefinery" />
-    <Order Build="BlackHandHandOfNOD" />
-    <Order Time="53s" Account="PRODUCTION" Deposit="6000" />
-    <Order Build="BlackHandPowerPlant" />
-    <Order Build="BlackHandOperationsCenter" />
-    <Order Build="BlackHandTechAssemblyPlant" />
-    <Order Build="BlackHandPowerPlant" />
-    <Order Build="BlackHandTempleOfNOD" />
-    <Order Time="165s" />
-  </SkirmishOpeningMove>
+	<SkirmishOpeningMove
+		id="BlackHandDefensiveStandard"
+		Side="BlackHand" >
+		<Order Time="0s" Build="BlackHandPowerPlant"/>
+		<Order Time="5s" Build="BlackHandHandOfNOD"/>
+		<Order Time="10s" Build="BlackHandRefinery"/>
+		<Order Time="40s" Build="BlackHandDropZone"/>
+		<Order Time="60s" Build="BlackHandRefinery"/>
+		<Order Time="90s" Build="BlackHandPowerPlant"/>
+		<Order Time="95s" Build="BlackHandPowerPlant"/>
+		<Order Time="100s" Build="BlackHandOperationsCenter"/>
+		<Order Time="115s" Build="BlackHandTechAssemblyPlant"/>
+		<Order Time="155s" Build="BlackHandPowerPlant"/>
+		<Order Time="160s" Build="BlackHandTiberiumLiquidationFacility"/>
+	</SkirmishOpeningMove>
 
-  <SkirmishOpeningMove
-     id="BlackHandDualBarracks"
-     Side="BlackHand">
+	<SkirmishOpeningMove
+	  id="BlackHandSuperweaponRush"
+	  Side="BlackHand">
 
-    <Order Time="0s" Account="PRODUCTION" Deposit="4000" />
-    <Order Build="BlackHandPowerPlant" />
-    <Order Build="BlackHandHandOfNOD" />
-    <Order Build="BlackHandRefinery" />
-    <Order Build="BlackHandRefinery" />
-    <Order Build="BlackHandHandOfNOD" />
-    <Order Build="BlackHandRefinery" />
-    <Order Time="75s" />
-  </SkirmishOpeningMove>
+		<Order Build="BlackHandRefinery" />
+		<Order Build="BlackHandPowerPlant" />
+		<Order Build="BlackHandRefinery" />
+		<Order Build="BlackHandHandOfNOD" />
+		<Order Time="53s" Account="PRODUCTION" Deposit="6000" />
+		<Order Build="BlackHandPowerPlant" />
+		<Order Build="BlackHandOperationsCenter" />
+		<Order Build="BlackHandTechAssemblyPlant" />
+		<Order Build="BlackHandPowerPlant" />
+		<Order Build="BlackHandTempleOfNOD" />
+		<Order Time="165s" />
+	</SkirmishOpeningMove>
 
 </AssetDeclaration>
