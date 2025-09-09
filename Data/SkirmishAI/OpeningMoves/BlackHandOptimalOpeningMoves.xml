@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Tags></Tags>
+	<Includes>
+	</Includes>
+
+	<SkirmishOpeningMove
+	id="BlackHandOptimalBalanced"
+	Side="BlackHand">
+		<Order Time="0s" Build="BlackHandPowerPlant"/>
+		<Order Time="5s" Build="BlackHandHandOfNOD"/>
+		<Order Time="10s" Build="BlackHandRefinery"/>
+		<Order Time="40s" Build="BlackHandDropZone"/>
+		<Order Time="60s" Build="BlackHandRefinery"/>
+		<Order Time="90s" Build="BlackHandPowerPlant"/>
+		<Order Time="95s" Build="BlackHandPowerPlant"/>
+		<Order Time="100s" Build="BlackHandOperationsCenter" />
+		<Order Time="115s" Build="BlackHandPowerPlant"/>
+		<Order Time="120s" Build="BlackHandHandOfNOD" />
+		<Order Time="125s" Build="BlackHandDropZone" />
+	</SkirmishOpeningMove>
+
+	<SkirmishOpeningMove
+	id="BlackHandOptimalBalancedHardBrutal"
+	Side="BlackHand">
+		<Order Time="0s" Build="BlackHandPowerPlant"/>
+		<Order Time="5s" Build="BlackHandHandOfNOD"/>
+		<Order Time="10s" Build="BlackHandRefinery"/>
+		<Order Time="40s" Build="BlackHandDropZone"/>
+		<Order Build="BlackHandHarvester" />
+		<Order Time="60s" Build="BlackHandRefinery"/>
+		<Order Time="90s" Build="BlackHandPowerPlant"/>
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Time="95s" Build="BlackHandPowerPlant"/>
+		<Order Time="100s" Build="BlackHandCrane"/>
+		<Order Time="115s" Build="BlackHandOperationsCenter" />
+		<Order Time="115s" Build="BlackHandPowerPlant"/>
+		<Order Time="120s" Build="BlackHandPowerPlant"/>
+		<Order Time="120s" Build="BlackHandHandOfNOD" />
+		<Order Time="125s" Build="BlackHandDropZone" />
+		<Order Time="125s" Build="BlackHandDropZone" />
+	</SkirmishOpeningMove>
+
+</AssetDeclaration>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Tags></Tags>
+  <Includes>
+    <!--
+    MetaGame.xml is the central include for everything that should always stay in memory
+    related to the MetaGame.
+    -->
+
+    <!-- Strike Force templates are included in global.xml -->
+    <!-- Include type="all" source="StrikeForceBuildTemplates.xml" /-->
+
+    <Include type="all" source="MetaGameMapZones.xml" />
+  </Includes>
+
+</AssetDeclaration>
+

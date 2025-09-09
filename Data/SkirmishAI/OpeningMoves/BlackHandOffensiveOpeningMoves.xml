@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Tags></Tags>
+	<Includes>
+	</Includes>
+
+	<SkirmishOpeningMove
+		id="BlackHandOffensiveStandard"
+		Side="BlackHand">
+		<Order Time="0s" Build="BlackHandPowerPlant"/>
+		<Order Time="5s" Build="BlackHandHandOfNOD" />
+		<Order Time="10s" Build="BlackHandRefinery" />
+		<Order Time="40s" Build="BlackHandDropZone" />
+		<Order Build="BlackHandHarvester" />
+		<Order Time="60s" Build="BlackHandRefinery" />
+		<Order Time="90s" Build="BlackHandHarvester" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Time="90s" Build="BlackHandPowerPlant" />
+		<Order Time="95s" Build="BlackHandPowerPlant" />
+		<Order Time="100s" Build="BlackHandDropZone" />
+		<Order Time="120s" Build="BlackHandPowerPlant" />
+		<Order Time="125s" Build="BlackHandDropZone" />
+		<Order Time="145s" Build="BlackHandOperationsCenter" />
+		<Order Build="BlackHandFlameTank" />
+		<Order Build="BlackHandFlameTank" />
+		<Order Time="160s" Build="BlackHandHandOfNOD" />
+		<Order Time="165s" Build="BlackHandHandOfNOD" />
+		<Order Time="170s" Build="BlackHandSecretShrine" />
+	</SkirmishOpeningMove>
+
+	<SkirmishOpeningMove
+		id="BlackHandOffensiveEasy"
+		Side="BlackHand">
+		<Order Time="0s" Build="BlackHandPowerPlant" />
+		<Order Time="5s" Build="BlackHandHandOfNOD"/>
+		<Order Time="10s" Build="BlackHandRefinery" />
+		<Order Time="40s" Build="BlackHandDropZone" />
+		<Order Time="60s" Build="BlackHandPowerPlant" />
+		<Order Time="65s" Build="BlackHandPowerPlant" />
+	</SkirmishOpeningMove>
+
+</AssetDeclaration>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Tags></Tags>
+	<Includes>
+	</Includes>
+
+	<SkirmishOpeningMove
+		id="BlackHandOverlordEasy"
+		Side="BlackHand">
+		<Order Time="0s" Build="BlackHandPowerPlant" />
+		<Order Time="5s" Build="BlackHandHandOfNOD"/>
+		<Order Time="10s" Build="BlackHandRefinery" />
+		<Order Time="40s" Build="BlackHandDropZone" />
+		<Order Time="60s" Build="BlackHandPowerPlant" />
+		<Order Time="65s" Build="BlackHandPowerPlant" />
+	</SkirmishOpeningMove>
+
+	<SkirmishOpeningMove
+		id="BlackHandOverlordStandard"
+		Side="BlackHand">
+		<Order Time="0s" Build="BlackHandPowerPlant"/>
+		<Order Time="5s" Build="BlackHandHandOfNOD" />
+		<Order Time="10s" Build="BlackHandRefinery" />
+		<Order Time="40s" Build="BlackHandDropZone" />
+		<Order Time="60s" Build="BlackHandHarvester" />
+		<Order Time="60s" Build="BlackHandRefinery" />
+		<Order Time="76s" Build="BlackHandHarvester" />
+		<Order Time="90s" Build="BlackHandPowerPlant" />
+		<Order Time="95s" Build="BlackHandPowerPlant"/>
+		<Order Time="100s" Build="BlackHandHandOfNOD" />
+		<Order Time="105s" Build="BlackHandDropZone" />
+		<Order Time="125s" Build="BlackHandPowerPlant" />
+		<Order Time="130s" Build="BlackHandSecretShrine" />
+		<Order Time="140s" Build="BlackHandOperationsCenter" />
+		<Order Time="155s" Build="BlackHandTechAssemblyPlant" />
+	</SkirmishOpeningMove>
+
+	<SkirmishOpeningMove
+		id="BlackHandOverlordInfantry"
+		Side="BlackHand">
+		<Order Time="0s" Build="BlackHandPowerPlant"/>
+		<Order Time="5s" Build="BlackHandHandOfNOD" />
+		<Order Time="10s" Build="BlackHandRefinery" />
+		<Order Time="40s" Build="BlackHandDropZone" />
+		<Order Time="60s" Build="BlackHandHarvester" />
+		<Order Time="60s" Build="BlackHandRefinery" />
+		<Order Time="76s" Build="BlackHandHarvester" />
+		<Order Time="90s" Build="BlackHandPowerPlant" />
+		<Order Time="95s" Build="BlackHandPowerPlant"/>
+		<Order Time="100s" Build="BlackHandHandOfNOD" />
+		<Order Time="105s" Build="BlackHandHandOfNOD" />
+		<Order Time="110s" Build="BlackHandSecretShrine" />
+	</SkirmishOpeningMove>
+
+	<SkirmishOpeningMove
+		id="BlackHandOverlordVehicles"
+		Side="BlackHand">
+		<Order Time="0s" Build="BlackHandPowerPlant"/>
+		<Order Time="5s" Build="BlackHandHandOfNOD" />
+		<Order Time="10s" Build="BlackHandRefinery" />
+		<Order Time="40s" Build="BlackHandDropZone" />
+		<Order Time="60s" Build="BlackHandHarvester" />
+		<Order Time="60s" Build="BlackHandRefinery" />
+		<Order Time="76s" Build="BlackHandHarvester" />
+		<Order Time="90s" Build="BlackHandPowerPlant" />
+		<Order Time="95s" Build="BlackHandPowerPlant"/>
+		<Order Time="100s" Build="BlackHandDropZone" />
+		<Order Time="120s" Build="BlackHandDropZone" />
+		<Order Time="140s" Build="BlackHandOperationsCenter" />
+	</SkirmishOpeningMove>
+
+	<SkirmishOpeningMove
+	  id="BlackHandMegaUnitRush"
+	  Side="BlackHand">
+
+		<Order Build="BlackHandRefinery" />
+		<Order Build="BlackHandPowerPlant" />
+		<Order Build="BlackHandCrane" />
+		<Order Build="BlackHandRefinery" />
+		<Order Build="BlackHandPowerPlant" />
+		<Order Build="BlackHandRefinery" />
+		<Order Build="BlackHandOperationsCenter" />
+		<Order Build="BlackHandPowerPlant" />
+		<Order Build="BlackHandTechAssemblyPlant" />
+		<Order Build="BlackHandPowerPlant" />
+		<Order Build="MG_BlackHand_WarmechFacility" />
+
+		<Order Build="BlackHandMetaUnit" />
+		<Order Time="220s" />
+	</SkirmishOpeningMove>
+
+</AssetDeclaration>
