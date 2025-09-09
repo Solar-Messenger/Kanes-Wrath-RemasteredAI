@@ -80,16 +80,15 @@
 		  id="BlackHandOverlordGarrisonEpicUnit"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="1.0" />
 			<LateGameHeuristic />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>
 		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">
-			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="INFANTRY" ExcludeKindOf="SKIRMISH_AI_DONT_GARRISON VEHICLES STRUCTURES" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits UnitName="BlackHandConfessorSquad" />
-				<CreateUnits UnitName="BlackHandMilitantRocketSquad" />
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="INFANTRY" ExcludeKindOf="SKIRMISH_AI_DONT_GARRISON" AlwaysRelease="false" AlwaysRecruit="false">
 			</TeamTemplate>
 		</Tactic>
+		<UnitModifierByName UnitName="BlackHandMilitantRocketSquad" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="250%"/>
+		<UnitModifierByName UnitName="BlackHandBlackHandSquad" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="250%"/>
 	</AIStrategicStateDefinition>
 
 	<AIBudgetStateDefinition

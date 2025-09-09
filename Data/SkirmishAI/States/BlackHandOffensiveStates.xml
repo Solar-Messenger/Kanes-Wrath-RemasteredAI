@@ -149,16 +149,14 @@
 		  id="BlackHandOffensiveGarrisonEpicUnit"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="1.0" />
 			<LateGameHeuristic />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>
 		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">
-			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="INFANTRY" ExcludeKindOf="SKIRMISH_AI_DONT_GARRISON VEHICLES STRUCTURES" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits UnitName="BlackHandBlackHandSquad" />
-				<CreateUnits UnitName="BlackHandBlackHandSquad" />
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="INFANTRY" ExcludeKindOf="SKIRMISH_AI_DONT_GARRISON" AlwaysRelease="false" AlwaysRecruit="false">
 			</TeamTemplate>
 		</Tactic>
+		<UnitModifierByName UnitName="BlackHandBlackHandSquad" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
 	</AIStrategicStateDefinition>
 
 	<AIBudgetStateDefinition

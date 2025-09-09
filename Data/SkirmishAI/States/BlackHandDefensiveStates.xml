@@ -26,6 +26,18 @@
     </Tactic>
   </AIStrategicStateDefinition>
 
+	<AIStrategicStateDefinition
+		  id="BlackHandResourceDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestFriendlyRefineryHeuristic" TargetType="Guard"/>
+		<Tactic Tactic="StaticDefense" TargetType="Guard">
+			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
   <AIStrategicStateDefinition
 		id="BlackHandHarvesterEscort"
 		UnitUpgradeMultiplier="0.0">
@@ -43,12 +55,12 @@
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
       <PathToTargetHeuristic PathExists="true"/>
-      <TimerHeuristic StartTime="600s" EndTime="-1s"/>
+      <TimerHeuristic StartTime="300s" EndTime="-1s"/>
       <CounterattackHeuristic Threshold="3.0"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="Counterattack"/>
     <Tactic Tactic="SimpleAttack" TargetType="Counterattack">
-      <TeamTemplate MinUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
 
@@ -60,23 +72,20 @@
     </Heuristic>
     <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="Counterattack"/>
     <Tactic Tactic="SimpleAttack" TargetType="Counterattack">
-      <TeamTemplate MinUnits="50" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="40" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
 
   <AIStrategicStateDefinition
-    id="BlackHandDefensiveBombingRuns"
+    id="BlackHandDefensiveArtilleryBombing"
     UnitUpgradeMultiplier="0.0">
     <Heuristic>
       <LateGameHeuristic/>
     </Heuristic>
-    <TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="BombingAirstrike"/>
     <Tactic Tactic="SimpleAttack" TargetType="BombingAirstrike">
-      <TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
-        <CreateUnits UnitName="BlackHandMobileArtillery"/>
-        <CreateUnits UnitName="BlackHandMobileArtillery"/>
-        <CreateUnits UnitName="BlackHandMobileArtillery"/>
-        <CreateUnits UnitName="BlackHandMobileArtillery"/>
+      <TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+        <CreateUnits MinUnits="4" MaxUnits="4" UnitName="BlackHandMobileArtillery"/>
       </TeamTemplate>
     </Tactic>
   </AIStrategicStateDefinition>
@@ -95,12 +104,26 @@
     </Tactic>
   </AIStrategicStateDefinition>
 
+	<AIStrategicStateDefinition
+		  id="BlackHandDefensiveGarrisonEpicUnit"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<LateGameHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>
+		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="INFANTRY" ExcludeKindOf="SKIRMISH_AI_DONT_GARRISON" AlwaysRelease="false" AlwaysRecruit="false">
+			</TeamTemplate>
+		</Tactic>
+		<UnitModifierByName UnitName="BlackHandMilitantRocketSquad" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+	</AIStrategicStateDefinition>
+
   <AIBudgetStateDefinition
     id="BlackHandDefensiveTechByTimeBudget">
     <Heuristic>
       <ConstantHeuristic Weight="0.8"/>
       <OpeningMoveHeuristic Complete="true"/>
-      <IntervalHeuristic IntervalTime="100s" ActiveTime="20s"/>
+      <IntervalHeuristic IntervalTime="90s" ActiveTime="20s"/>
       <IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
     </Heuristic>
     <Budget>
@@ -119,24 +142,6 @@
       <ConstantHeuristic Weight="0.8"/>
       <OpeningMoveHeuristic Complete="true"/>
       <IntervalHeuristic IntervalTime="580s" ActiveTime="20s"/>
-      <IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
-    </Heuristic>
-    <Budget>
-      <AccountShare Account="INVESTMENT" Percent="0%"/>
-      <AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
-      <AccountShare Account="PRODUCTION" Percent="0%"/>
-      <AccountShare Account="DEFENSE" Percent="0%"/>
-      <AccountShare Account="TECHNOLOGY" Percent="90%"/>
-      <AccountShare Account="SLUSH_FUND" Percent="10%"/>
-    </Budget>
-  </AIBudgetStateDefinition>
-
-  <AIBudgetStateDefinition
-    id="BlackHandDefensiveTechByTimeBudget_MEDIUM">
-    <Heuristic>
-      <ConstantHeuristic Weight="0.8"/>
-      <OpeningMoveHeuristic Complete="true"/>
-      <IntervalHeuristic IntervalTime="190s" ActiveTime="20s"/>
       <IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
     </Heuristic>
     <Budget>
