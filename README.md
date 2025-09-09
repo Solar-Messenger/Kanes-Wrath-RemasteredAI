@@ -29,7 +29,7 @@ be added by the user in order to have it be compiled by WrathEd.
 ## ⚖️ License
 
 This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.  
-See the [LICENSE](./LICENSE) file for details.
+See the [LICENSE](https://github.com/Solar-Messenger/RemasteredAI/tree/master?tab=GPL-3.0-1-ov-file) file for details.
 
 ### Important Notes
 - The **original modding tools** were released by **Electronic Arts (EA)** under **GPLv3**.  
