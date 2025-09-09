@@ -22,7 +22,7 @@ various fixes and improved consistency.
 This project is community-driven and intended for research, education, and non-commercial modding.
 
 **Note**: Not all of the required files for compilation are present in this repository and must 
-be added by the user in order to have it be compiled by WrathEd.
+be added by the user in order to have it be compiled.
 
 ---
 
