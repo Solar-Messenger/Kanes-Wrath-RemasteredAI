@@ -53,8 +53,8 @@
 		<Order Time="115s" Build="NODPowerPlant"/>
 		<Order Time="120s" Build="NODPowerPlant"/>
 		<Order Time="120s" Build="NODHangar" />
-		<Order Time="125s" Build="BlackHandDropZone" />
-		<Order Time="130s" Build="BlackHandDropZone" />
+		<Order Time="125s" Build="NODDropZone" />
+		<Order Time="130s" Build="NODDropZone" />
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>
