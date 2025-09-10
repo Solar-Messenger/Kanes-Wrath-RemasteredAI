@@ -153,8 +153,9 @@
 		<UnitOverride UnitName="BlackHandConfessorSquad" Percentage="30%"/>
 		<UnitOverride UnitName="BlackHandMilitantRocketSquad" Percentage="60%"/>
 
-		<UnitOverride UnitName="BlackHandRaiderTank" Percentage="60%"/>
-		<UnitOverride UnitName="BlackHandCustomWarMech" Percentage="30%"/>
+		<UnitOverride UnitName="BlackHandRaiderTank" Percentage="50%"/>
+		<UnitOverride UnitName="BlackHandMetaUnit" Percentage="30%"/>
+		<UnitOverride UnitName="BlackHandCustomWarMech" Percentage="20%"/>
 
 	</AIPersonalityDefinition>
 </AssetDeclaration>
