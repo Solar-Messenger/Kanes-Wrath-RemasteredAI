@@ -18,7 +18,7 @@
 			</ResourceSqueezeHeuristic>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="EconomyKillHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
+		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
 			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="125%" UnitPreferenceDefensiveModifier="100%"/>
@@ -39,7 +39,7 @@
 			</ProductionHaltHeuristic>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ProductionKillHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
+		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
 			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="125%" UnitPreferenceDefensiveModifier="100%"/>
@@ -55,7 +55,7 @@
 			<OpponentPowerThresholdHeuristic/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="PowerKillHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
+		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
 			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 		<!--No Unit Preferences-->
@@ -132,7 +132,7 @@
 			<IntervalHeuristic IntervalTime="130s" ActiveTime="60s"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Diversion"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Diversion">
+		<Tactic Tactic="FlankAttack" TargetType="Diversion">
 			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="BlackHandFlameTank"/>
 			</TeamTemplate>
