@@ -19,7 +19,7 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="EconomyKillHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="125%" UnitPreferenceDefensiveModifier="100%"/>
 	</AIStrategicStateDefinition>
@@ -56,7 +56,7 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="PowerKillHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 		<!--No Unit Preferences-->
 	</AIStrategicStateDefinition>
@@ -118,7 +118,7 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="BombingAirstrike"/>
 		<Tactic Tactic="FlankAttack" TargetType="BombingAirstrike">
-			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK BOMBER_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="BlackHandMobileArtillery"/>
 			</TeamTemplate>
 		</Tactic>
@@ -133,7 +133,7 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Diversion"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Diversion">
-			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="BlackHandFlameTank"/>
 			</TeamTemplate>
 		</Tactic>

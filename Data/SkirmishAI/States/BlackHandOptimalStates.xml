@@ -13,7 +13,7 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="SimpleAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -27,7 +27,7 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="7" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="7" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -55,7 +55,7 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="ExtraTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="ExtraTarget">
-			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
