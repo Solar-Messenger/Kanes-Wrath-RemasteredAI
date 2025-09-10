@@ -25,9 +25,18 @@
 	Side="NOD">
 		<Order Time="0s" Build="NODPowerPlant"/>
 		<Order Time="5s" Build="NODHandOfNOD"/>
+		<Order Build="NODSaboteur" />
+		<Order Build="NODSaboteur" />
+		<Order Build="NODMilitantSquad" />
+		<Order Build="NODMilitantSquad" />
+		<Order Build="NODMilitantSquad" />
 		<Order Time="10s" Build="NODRefinery"/>
 		<Order Time="40s" Build="NODDropZone"/>
 		<Order Build="NODHarvester" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODScorpionBuggy" />
 		<Order Time="60s" Build="NODRefinery"/>
 		<Order Time="90s" Build="NODPowerPlant"/>
 		<Order Build="NODAttackBike" />

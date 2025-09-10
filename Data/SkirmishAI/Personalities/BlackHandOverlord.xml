@@ -82,9 +82,9 @@
 		<OpeningMove Name="BlackHandMegaUnitRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
 		<OpeningMove Name="BlackHandOverlordVehicles" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="BlackHandOpenCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="BlackHandOpeningScout" Difficulty="HARD BRUTAL"/>
-		<States State="BlackHandOpeningAntiRush" Difficulty="HARD BRUTAL"/>
+		<States State="BlackHandOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandOpeningAntiRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="BlackHandOverrunEarly" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="BlackHandOverrunMiddle" Difficulty="EASY MEDIUM HARD BRUTAL" />

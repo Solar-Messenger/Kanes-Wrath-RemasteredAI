@@ -100,10 +100,10 @@
 		<States State="BlackHandHarvesterEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandDefensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="BlackHandOpenCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="BlackHandOpeningScout" Difficulty="HARD BRUTAL"/>
+		<States State="BlackHandOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="BlackHandOpeningAntiRush" Difficulty="HARD BRUTAL"/>
+		<States State="BlackHandOpeningAntiRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="BlackHandDefend" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandEngineerDefense" Difficulty="MEDIUM HARD BRUTAL"/>

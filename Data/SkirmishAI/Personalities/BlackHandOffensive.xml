@@ -96,9 +96,9 @@
 
 		<OpeningMove Name="BlackHandOffensiveStandard" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="BlackHandOpenCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="BlackHandOpeningScout" Difficulty="HARD BRUTAL"/>
-		<States State="BlackHandOpeningAntiRush" Difficulty="HARD BRUTAL"/>
+		<States State="BlackHandOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandOpeningAntiRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="BlackHandOffensiveDirectOpening" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandOffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
