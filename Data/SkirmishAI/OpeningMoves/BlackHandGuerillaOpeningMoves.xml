@@ -11,12 +11,13 @@
 		<Order Time="5s" Build="BlackHandHandOfNOD"/>
 		<Order Time="10s" Build="BlackHandRefinery" />
 		<Order Time="40s" Build="BlackHandDropZone" />
-		<Order Time="60s" Build="BlackHandPowerPlant" />
-		<Order Time="65s" Build="BlackHandPowerPlant" />
+		<Order Time="60s" Build="BlackHandRefinery" />
+		<Order Time="90s" Build="BlackHandPowerPlant" />
+		<Order Time="95s" Build="BlackHandPowerPlant" />
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
-	  id="BlackHandFlameTankRush"
+	  id="BlackHandGuerillaFlameTankRush"
 	  Side="BlackHand">
 		<Order Time="0s" Build="BlackHandPowerPlant" />
 		<Order Time="5s" Build="BlackHandHandOfNOD" />
@@ -58,7 +59,7 @@
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
-	  id="BlackHandScorpionSpam"
+	  id="BlackHandGuerillaScorpionSpam"
 	  Side="BlackHand">
 		<Order Time="0s" Build="BlackHandPowerPlant" />
 		<Order Time="5s" Build="BlackHandHandOfNOD" />
