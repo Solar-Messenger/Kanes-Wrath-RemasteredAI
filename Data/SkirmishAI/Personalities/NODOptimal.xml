@@ -153,7 +153,8 @@
 		<BudgetStates State="TechByNeedSiegeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechFinishBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<UnitOverride UnitName="NODRaiderTank" Percentage="60%"/>
+		<UnitOverride UnitName="NODRaiderTank" Percentage="40%"/>
+		<UnitOverride UnitName="NODScorpionBuggy" Percentage="20%"/>
 		<UnitOverride UnitName="NODMetaUnit" Percentage="30%"/>
 	</AIPersonalityDefinition>
 </AssetDeclaration>
