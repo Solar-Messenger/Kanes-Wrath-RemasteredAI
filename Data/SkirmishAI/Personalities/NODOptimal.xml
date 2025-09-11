@@ -37,7 +37,7 @@
 
 		<Side>NOD</Side>
 
-		<BuildDelayRange MinDelay="0s" MaxDelay="30s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />
+		<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />
 
 		<UnitBuilderUnitChoiceStrategy Shape="MIDDLE" StandardDeviation="0.25" Difficulty="EASY MEDIUM" />
 		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.25" Difficulty="HARD BRUTAL" />
@@ -72,7 +72,6 @@
 		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="ExpansionDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExpansionDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExpansionDefense" MaxTeamsPerTarget="1"/>
 
@@ -117,6 +116,7 @@
 		<States State="NODEngineerDefense" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODCommandoDefense" Difficulty="HARD BRUTAL"/>
 		<States State="ExpansionDefense" Difficulty="HARD BRUTAL"/>
+		<States State="ExpansionDefend" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="NODOptimalGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="MEDIUM HARD BRUTAL"/>

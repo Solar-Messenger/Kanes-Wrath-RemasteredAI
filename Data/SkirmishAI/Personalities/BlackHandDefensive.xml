@@ -59,7 +59,6 @@
 		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExpansionDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExpansionDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="ExpansionDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
@@ -111,6 +110,7 @@
 		<States State="BlackHandEngineerDefense" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandCommandoDefense" Difficulty="HARD BRUTAL"/>
 		<States State="DefensiveExpansionDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="ExpansionDefend" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BlackHandDefensiveExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandDefensiveGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
