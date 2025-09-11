@@ -50,7 +50,6 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
-			<LateGameHeuristic />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="ExtraTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="ExtraTarget">
