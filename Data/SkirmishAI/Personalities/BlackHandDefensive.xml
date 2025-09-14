@@ -47,6 +47,7 @@
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
 
 		<TacticalTarget TacticalAITarget="Counterattack" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Counterattack" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
