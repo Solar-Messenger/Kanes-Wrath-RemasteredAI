@@ -77,9 +77,8 @@
 
 		<OpeningMove Name="BlackHandOverlordEasy" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="BlackHandStandard" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="BlackHandStandard" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
 		<OpeningMove Name="BlackHandOverlordInfantry" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="BlackHandMegaUnitRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
 		<OpeningMove Name="BlackHandOverlordVehicles" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BlackHandOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>

@@ -97,23 +97,4 @@
 		<Order Time="140s" Build="BlackHandOperationsCenter" />
 	</SkirmishOpeningMove>
 
-	<SkirmishOpeningMove
-	  id="BlackHandMegaUnitRush"
-	  Side="BlackHand">
-		<Order Build="BlackHandRefinery" />
-		<Order Build="BlackHandPowerPlant" />
-		<Order Build="BlackHandCrane" />
-		<Order Build="BlackHandRefinery" />
-		<Order Build="BlackHandPowerPlant" />
-		<Order Build="BlackHandRefinery" />
-		<Order Build="BlackHandOperationsCenter" />
-		<Order Build="BlackHandPowerPlant" />
-		<Order Build="BlackHandTechAssemblyPlant" />
-		<Order Build="BlackHandPowerPlant" />
-		<Order Build="MG_BlackHand_WarmechFacility" />
-
-		<Order Build="BlackHandMetaUnit" />
-		<Order Time="220s" />
-	</SkirmishOpeningMove>
-
 </AssetDeclaration>
