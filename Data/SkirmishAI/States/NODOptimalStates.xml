@@ -178,8 +178,8 @@
 		<Heuristic>
 			<ConstantHeuristic Weight="0.8"/>
 			<OpeningMoveHeuristic Complete="true"/>
-			<TimerHeuristic StartTime="180s" EndTime="-1s"/>
-			<IntervalHeuristic IntervalTime="60s" ActiveTime="20s"/>
+			<TimerHeuristic StartTime="90s" EndTime="-1s"/>
+			<IntervalHeuristic IntervalTime="30s" ActiveTime="20s"/>
 			<IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
 		</Heuristic>
 		<Budget>
