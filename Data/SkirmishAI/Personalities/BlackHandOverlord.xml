@@ -93,6 +93,7 @@
 		<States State="BlackHandDefend" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandEngineerDefense" Difficulty="HARD BRUTAL"/>
 		<States State="BlackHandCommandoDefense" Difficulty="HARD BRUTAL"/>
+		<States State="BlackHandCommando" Difficulty="BRUTAL"/>
 		<States State="ExpansionDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="BlackHandOverlordGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
