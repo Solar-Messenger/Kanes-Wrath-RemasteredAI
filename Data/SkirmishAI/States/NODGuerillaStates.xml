@@ -42,6 +42,7 @@
       <TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
     <UnitModifierByName UnitName="NODRaiderTank" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="100%"/>
+    <UnitModifierByName UnitName="NODAvatar" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/>
   </AIStrategicStateDefinition>
 
   <!--If opponent is near power threshold, take his power offline-->
@@ -56,7 +57,8 @@
     <Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
       <TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
-    <!--No Unit Preferences-->
+	  <UnitModifierByName UnitName="NODRaiderTank" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="100%"/>
+	  <UnitModifierByName UnitName="NODStealthTank" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/>
   </AIStrategicStateDefinition>
 
   <!--If opponent is turtling, siege his base with many "mini" siege groups-->

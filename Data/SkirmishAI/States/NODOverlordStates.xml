@@ -63,6 +63,7 @@
     </Tactic>
     <UnitModifierByName UnitName="NODRaiderTank" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
     <UnitModifierByName UnitName="NODAvatar" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
+    <UnitModifierByName UnitName="NODMetaUnit" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
     <UnitModifierByName UnitName="NODMobileArtillery" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="150%"/>
     <UnitModifierByName UnitName="NODBlackHandSquad" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/>
     <UnitModifierByName UnitName="NODVenom" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>

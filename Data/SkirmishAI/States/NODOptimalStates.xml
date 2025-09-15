@@ -15,6 +15,10 @@
 		<Tactic Tactic="SimpleAttack" TargetType="PrimaryTarget">
 			<TeamTemplate MinUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
+		<UnitModifierByName UnitName="NODRaiderTank" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="NODAttackBike" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="NODFlameTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODMetaUnit" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
@@ -29,6 +33,9 @@
 		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
 			<TeamTemplate MinUnits="7" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
+		<UnitModifierByName UnitName="NODRaiderTank" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="NODAttackBike" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODFlameTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
@@ -71,6 +78,7 @@
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="ExtraTarget">
 			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
+		<UnitModifierByName UnitName="NODMetaUnit" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition

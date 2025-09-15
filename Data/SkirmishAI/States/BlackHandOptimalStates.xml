@@ -15,6 +15,11 @@
 		<Tactic Tactic="SimpleAttack" TargetType="PrimaryTarget">
 			<TeamTemplate MinUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
+		<UnitModifierByName UnitName="BlackHandConfessorSquad" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="BlackHandCustomWarmech" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="BlackHandMilitantSquad" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="250%"/>
+		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="250%"/>
+		<UnitModifierByName UnitName="BlackHandMetaUnit" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
@@ -29,6 +34,7 @@
 		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
 			<TeamTemplate MinUnits="7" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
+		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="250%"/>
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
@@ -56,6 +62,7 @@
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="ExtraTarget">
 			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
+		<UnitModifierByName UnitName="BlackHandMetaUnit" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
@@ -109,9 +116,8 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="BombingAirstrike"/>
 		<Tactic Tactic="SimpleAttack" TargetType="BombingAirstrike">
-			<TeamTemplate MinUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits UnitName="BlackHandMobileArtillery"/>
-				<CreateUnits UnitName="BlackHandMobileArtillery"/>
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="BlackHandMobileArtillery"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>

@@ -20,6 +20,7 @@
 		</Tactic>
 		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/>
 		<UnitModifierByName UnitName="BlackHandMilitantSquad" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandConfessorSquad" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/>
 		<UnitModifierByName UnitName="BlackHandMobileArtillery" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="0%"/>
 	</AIStrategicStateDefinition>
 
@@ -58,7 +59,9 @@
 			<TeamTemplate MinUnits="28" MaxUnits="28" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 		<UnitModifierByName UnitName="BlackHandCustomWarmech" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandMetaUnit" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
 		<UnitModifierByName UnitName="BlackHandBlackHandSquad" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandMilitantRocketSquad" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/>
 		<UnitModifierByName UnitName="BlackHandMobileArtillery" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="0%"/>
 	</AIStrategicStateDefinition>
 

@@ -21,7 +21,7 @@
 		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
 			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
-		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="125%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="100%"/>
 		<UnitModifierByName UnitName="BlackHandAttackBike" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="100%"/>
 	</AIStrategicStateDefinition>
 
@@ -43,7 +43,10 @@
 		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
 			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
-		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="125%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandConfessorSquad" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandMilitantRocketSquad" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandCustomWarmech" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/>
 	</AIStrategicStateDefinition>
 
 	<!--If opponent is near power threshold, take his power offline-->
@@ -59,7 +62,8 @@
 		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
 			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
-		<!--No Unit Preferences-->
+		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandAttackBike" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="100%"/>
 	</AIStrategicStateDefinition>
 
 	<!--If opponent is turtling, siege his base with many "mini" siege groups-->
