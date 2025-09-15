@@ -103,7 +103,6 @@
 
 		<States State="BlackHandOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-
 		<States State="BlackHandOpeningAntiRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="BlackHandDefend" Difficulty="EASY MEDIUM HARD BRUTAL"/>
@@ -111,8 +110,8 @@
 		<States State="BlackHandCommandoDefense" Difficulty="HARD BRUTAL"/>
 		<States State="DefensiveExpansionDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionDefend" Difficulty="MEDIUM HARD BRUTAL"/>
-
 		<States State="BlackHandDefensiveExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
+		
 		<States State="BlackHandDefensiveGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>

@@ -22,7 +22,7 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestFriendlyStructureHeuristic" TargetType="Guard"/>
 		<Tactic Tactic="StaticDefense" TargetType="Guard">
-			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -34,7 +34,7 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestFriendlyRefineryHeuristic" TargetType="Guard"/>
 		<Tactic Tactic="StaticDefense" TargetType="Guard">
-			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -46,7 +46,7 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestFriendlyHarvesterHeuristic" TargetType="Guard"/>
 		<Tactic Tactic="StaticDefense" TargetType="Guard">
-			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK VEHICLE" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK VEHICLE" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -60,7 +60,7 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="Counterattack"/>
 		<Tactic Tactic="SimpleAttack" TargetType="Counterattack">
-			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="15" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -123,7 +123,7 @@
 			<ConstantHeuristic Weight="0.8"/>
 			<OpeningMoveHeuristic Complete="true"/>
 			<TimerHeuristic StartTime="90s" EndTime="-1s"/>
-			<IntervalHeuristic IntervalTime="90s" ActiveTime="20s"/>
+			<IntervalHeuristic IntervalTime="60s" ActiveTime="20s"/>
 			<IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
 		</Heuristic>
 		<Budget>
