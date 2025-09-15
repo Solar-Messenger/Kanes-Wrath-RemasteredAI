@@ -17,10 +17,11 @@
       </ResourceSqueezeHeuristic>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="EconomyKillHeuristic" TargetType="PrimaryTarget"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-      <TeamTemplate MinUnits="3" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+    <Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
+      <TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
-    <UnitModifierByName UnitName="NODRaiderTank" UnitPreferenceOffensiveModifier="125%" UnitPreferenceDefensiveModifier="100%"/>
+    <UnitModifierByName UnitName="NODAttackBike" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="100%"/>
+    <UnitModifierByName UnitName="NODStealthTank" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="100%"/>
   </AIStrategicStateDefinition>
 
   <!--If opponent is nearly matched in forces, take out his production capacity-->
@@ -37,10 +38,10 @@
       </ProductionHaltHeuristic>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="ProductionKillHeuristic" TargetType="PrimaryTarget"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-      <TeamTemplate MinUnits="3" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+    <Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
+      <TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
-    <UnitModifierByName UnitName="NODRaiderTank" UnitPreferenceOffensiveModifier="125" UnitPreferenceDefensiveModifier="100%"/>
+    <UnitModifierByName UnitName="NODRaiderTank" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="100%"/>
   </AIStrategicStateDefinition>
 
   <!--If opponent is near power threshold, take his power offline-->
@@ -52,8 +53,8 @@
       <OpponentPowerThresholdHeuristic/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="PowerKillHeuristic" TargetType="PrimaryTarget"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-      <TeamTemplate MinUnits="3" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+    <Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
+      <TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
     <!--No Unit Preferences-->
   </AIStrategicStateDefinition>
@@ -69,8 +70,8 @@
     </Heuristic>
     <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="PrimaryTarget"/>
     <Tactic Tactic="SimpleSiege" TargetType="PrimaryTarget">
-      <TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-        <CreateUnits UnitName="NODBeamCannon"/>
+      <TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+        <CreateUnits MinUnits="3" MaxUnits="3" UnitName="NODBeamCannon"/>
       </TeamTemplate>
       <TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
@@ -86,7 +87,7 @@
     </Heuristic>
     <TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Engineer">
-      <TeamTemplate MinUnits="2" MaxUnits="8" IncludeKindOf="" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+      <TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
         <CreateUnits UnitName="NODSaboteur"/>
       </TeamTemplate>
     </Tactic>
@@ -102,7 +103,7 @@
     <TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
     <TargetHeuristic TargetHeuristic="SafestToAirPowerPlantHeuristic" TargetType="AssaultAirstrike"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
-      <TeamTemplate MinUnits="1" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="4" MaxUnits="8" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
 
@@ -112,10 +113,10 @@
     <Heuristic>
       <LateGameHeuristic/>
     </Heuristic>
-    <TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToAirTechStructureHeuristic" TargetType="BombingAirstrike"/>
     <Tactic Tactic="SimpleAttack" TargetType="BombingAirstrike">
-      <TeamTemplate MinUnits="1" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
-        <CreateUnits UnitName="NODVertigo"/>
+      <TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+        <CreateUnits MinUnits="4" MaxUnits="4" UnitName="NODVertigo"/>
       </TeamTemplate>
     </Tactic>
   </AIStrategicStateDefinition>
@@ -125,15 +126,12 @@
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
       <LateGameHeuristic/>
-      <IntervalHeuristic IntervalTime="130s" ActiveTime="60s"/>
+      <IntervalHeuristic IntervalTime="130s" ActiveTime="80s"/>
     </Heuristic>
-    <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Diversion"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Diversion">
+    <TargetHeuristic TargetHeuristic="SafestToTechStructureHeuristic" TargetType="Diversion"/>
+    <Tactic Tactic="FlankAttack" TargetType="Diversion">
       <TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
-        <CreateUnits UnitName="NODAvatar"/>
-        <CreateUnits UnitName="NODAvatar"/>
-        <CreateUnits UnitName="NODAvatar"/>
-        <CreateUnits UnitName="NODStealthTank"/>
+        <CreateUnits MinUnits="4" MaxUnits="4" UnitName="NODStealthTank"/>
       </TeamTemplate>
     </Tactic>
   </AIStrategicStateDefinition>
@@ -147,10 +145,8 @@
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToGroundVehicleHeuristic" TargetType="Diversion"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Diversion">
-      <TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
-        <CreateUnits UnitName="NodFanaticSquad"/>
-        <CreateUnits UnitName="NodFanaticSquad"/>
-        <CreateUnits UnitName="NodFanaticSquad"/>
+      <TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+        <CreateUnits MinUnits="4" MaxUnits="4" UnitName="NodFanaticSquad"/>
       </TeamTemplate>
     </Tactic>
   </AIStrategicStateDefinition>
@@ -165,17 +161,32 @@
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Diversion"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Diversion">
-      <TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
+	  <UnitModifierByName UnitName="NODRaiderTank" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="100%"/>
   </AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="NODGuerillaGarrisonEpicUnit"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<LateGameHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>
+		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="INFANTRY" ExcludeKindOf="VEHICLES AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+		<UnitModifierByName UnitName="NODMilitantRocketSquad" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="250%"/>
+		<UnitModifierByName UnitName="NODBlackHandSquad" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="250%"/>
+	</AIStrategicStateDefinition>
 
   <AIBudgetStateDefinition
     id="NODGuerillaTechByTimeBudget">
     <Heuristic>
       <ConstantHeuristic Weight="0.8"/>
       <OpeningMoveHeuristic Complete="true"/>
-      <TimerHeuristic StartTime="300s" EndTime="-1s"/>
-      <IntervalHeuristic IntervalTime="160s" ActiveTime="20s"/>
+      <TimerHeuristic StartTime="90s" EndTime="-1s"/>
+      <IntervalHeuristic IntervalTime="60s" ActiveTime="20s"/>
       <IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
     </Heuristic>
     <Budget>
@@ -194,25 +205,6 @@
       <ConstantHeuristic Weight="0.8"/>
       <OpeningMoveHeuristic Complete="true"/>
       <IntervalHeuristic IntervalTime="640s" ActiveTime="20s"/>
-      <IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
-    </Heuristic>
-    <Budget>
-      <AccountShare Account="INVESTMENT" Percent="0%"/>
-      <AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
-      <AccountShare Account="PRODUCTION" Percent="0%"/>
-      <AccountShare Account="DEFENSE" Percent="0%"/>
-      <AccountShare Account="TECHNOLOGY" Percent="90%"/>
-      <AccountShare Account="SLUSH_FUND" Percent="10%"/>
-    </Budget>
-  </AIBudgetStateDefinition>
-
-  <AIBudgetStateDefinition
-    id="NODGuerillaTechByTimeBudget_MEDIUM">
-    <Heuristic>
-      <ConstantHeuristic Weight="0.8"/>
-      <OpeningMoveHeuristic Complete="true"/>
-      <TimerHeuristic StartTime="300s" EndTime="-1s"/>
-      <IntervalHeuristic IntervalTime="250s" ActiveTime="20s"/>
       <IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
     </Heuristic>
     <Budget>
