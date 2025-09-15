@@ -4,35 +4,42 @@
   <Includes>
   </Includes>
 
-  <SkirmishOpeningMove
-    id="NODSuperweaponRush"
-    Side="NOD">
+	<SkirmishOpeningMove
+	id="NODDefensiveEasy"
+	Side="NOD">
+		<Order Time="0s" Build="NODPowerPlant" />
+		<Order Time="5s" Build="NODHandOfNOD"/>
+		<Order Time="10s" Build="NODRefinery" />
+		<Order Time="40s" Build="NODDropZone" />
+		<Order Time="60s" Build="NODRefinery" />
+		<Order Time="90s" Build="NODPowerPlant" />
+		<Order Time="95s" Build="NODPowerPlant" />
+	</SkirmishOpeningMove>
 
-    <Order Build="NODRefinery" />
-    <Order Build="NODPowerPlant" />
-    <Order Build="NODRefinery" />
-    <Order Build="NODHandOfNOD" />
-    <Order Time="53s" Account="PRODUCTION" Deposit="6000" />
-    <Order Build="NODPowerPlant" />
-    <Order Build="NODOperationsCenter" />
-    <Order Build="NODTechAssemblyPlant" />
-    <Order Build="NODPowerPlant" />
-    <Order Build="NODTempleOfNOD" />
-    <Order Time="165s" />
-  </SkirmishOpeningMove>
-
-  <SkirmishOpeningMove
-     id="NODDualBarracks"
-     Side="NOD">
-
-    <Order Time="0s" Account="PRODUCTION" Deposit="4000" />
-    <Order Build="NODPowerPlant" />
-    <Order Build="NODHandOfNOD" />
-    <Order Build="NODRefinery" />
-    <Order Build="NODRefinery" />
-    <Order Build="NODHandOfNOD" />
-    <Order Build="NODRefinery" />
-    <Order Time="75s" />
-  </SkirmishOpeningMove>
+	<SkirmishOpeningMove
+		id="NODDefensiveStandard"
+		Side="NOD" >
+		<Order Time="0s" Build="NODPowerPlant"/>
+		<Order Time="5s" Build="NODHandOfNOD"/>
+		<Order Build="NODSaboteur" />
+		<Order Build="NODSaboteur" />
+		<Order Build="NODMilitantSquad" />
+		<Order Build="NODMilitantSquad" />
+		<Order Build="NODMilitantSquad" />
+		<Order Time="10s" Build="NODRefinery"/>
+		<Order Time="40s" Build="NODDropZone"/>
+		<Order Build="NODHarvester" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Time="60s" Build="NODRefinery"/>
+		<Order Time="90s" Build="NODPowerPlant"/>
+		<Order Time="95s" Build="NODPowerPlant"/>
+		<Order Time="100s" Build="NODOperationsCenter"/>
+		<Order Time="115s" Build="NODTechAssemblyPlant"/>
+		<Order Time="155s" Build="NODPowerPlant"/>
+		<Order Time="160s" Build="NODTiberiumLiquidationFacility"/>
+	</SkirmishOpeningMove>
 
 </AssetDeclaration>
