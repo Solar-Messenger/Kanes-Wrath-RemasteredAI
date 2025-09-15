@@ -92,8 +92,7 @@
 
 		<OpeningMove Name="BlackHandDefensiveEasy" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="BlackHandDefensiveStandard" Weight="70%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="BlackHandSuperweaponRush" Weight="30%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="BlackHandDefensiveStandard" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BlackHandCounterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandFinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
