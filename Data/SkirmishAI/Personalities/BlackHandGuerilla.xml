@@ -107,7 +107,6 @@
 
 		<States State="BlackHandOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-
 		<States State="BlackHandOpeningAntiRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
 		<States State="BlackHandPowerCut" Difficulty="EASY MEDIUM HARD BRUTAL" />
