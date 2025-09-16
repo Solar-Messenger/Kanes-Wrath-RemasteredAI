@@ -10,19 +10,14 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="60s" EndTime="-1s" />
 			<PathToTargetHeuristic PathExists="true"/>
-			<ResourceSqueezeHeuristic
-			  PenetrabilityWeight="0.25"
-			  OpponentFundsWeight="0.75">
-				<PenetrabilityHeuristic/>
-				<OpponentFundsHeuristic/>
-			</ResourceSqueezeHeuristic>
+			<ConstantHeuristic Weight="1.0" />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="EconomyKillHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
 			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
-		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="BlackHandAttackBike" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+		<UnitModifierByName UnitName="BlackHandAttackBike" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="250%"/>
 	</AIStrategicStateDefinition>
 
 	<!--If opponent is nearly matched in forces, take out his production capacity-->
@@ -32,21 +27,16 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="60s" EndTime="-1s" />
 			<PathToTargetHeuristic PathExists="true"/>
-			<ProductionHaltHeuristic
-			  BalanceOfPowerWeight="0.75"
-			  PenetrabilityWeight="0.25">
-				<PenetrabilityHeuristic/>
-				<BalanceOfPowerHeuristic/>
-			</ProductionHaltHeuristic>
+			<ConstantHeuristic Weight="1.0" />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ProductionKillHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
 			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
-		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="BlackHandConfessorSquad" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="BlackHandMilitantRocketSquad" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="BlackHandCustomWarmech" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+		<UnitModifierByName UnitName="BlackHandConfessorSquad" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+		<UnitModifierByName UnitName="BlackHandMilitantRocketSquad" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+		<UnitModifierByName UnitName="BlackHandCustomWarmech" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
 	</AIStrategicStateDefinition>
 
 	<!--If opponent is near power threshold, take his power offline-->
@@ -56,14 +46,14 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="60s" EndTime="-1s" />
 			<PathToTargetHeuristic PathExists="true"/>
-			<OpponentPowerThresholdHeuristic/>
+			<ConstantHeuristic Weight="1.0" />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="PowerKillHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
 			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
-		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="BlackHandAttackBike" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+		<UnitModifierByName UnitName="BlackHandAttackBike" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="250%"/>
 	</AIStrategicStateDefinition>
 
 	<!--If opponent is turtling, siege his base with many "mini" siege groups-->
