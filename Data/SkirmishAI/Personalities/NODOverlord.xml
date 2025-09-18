@@ -84,9 +84,9 @@
 		<OpeningMove Name="NODOverlordStandard" Weight="70%" Difficulty="MEDIUM HARD BRUTAL"/>
 		<OpeningMove Name="NODOverlordVehicles" Weight="30%" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="BlackHandOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BlackHandOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BlackHandOpeningAntiRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="NODOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="NODOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="NODOpeningAntiRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="NODOverrunEarly" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="NODOverrunMiddle" Difficulty="EASY MEDIUM HARD BRUTAL" />
