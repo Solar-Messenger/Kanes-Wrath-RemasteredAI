@@ -8,7 +8,6 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="60s" EndTime="180s"/>
-			<ConstantHeuristic Weight="1.0"/>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
@@ -23,7 +22,6 @@
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="181s" EndTime="-1s"/>
-			<ConstantHeuristic Weight="1.0"/>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
@@ -64,7 +62,6 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
-			<IntervalHeuristic IntervalTime="300s" ActiveTime="90s"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleAttack" TargetType="SiegeTarget">
@@ -165,7 +162,7 @@
 			<OpeningMoveHeuristic Complete="true"/>
 			<TimerHeuristic StartTime="180s" EndTime="-1s"/>
 			<IntervalHeuristic IntervalTime="90s" ActiveTime="20s"/>
-			<IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
+			<IntervalHeuristic IntervalTime="5s" ActiveTime="5s"/>
 		</Heuristic>
 		<Budget>
 			<AccountShare Account="INVESTMENT" Percent="0%"/>

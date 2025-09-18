@@ -8,7 +8,6 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="181s" EndTime="-1s"/>
-			<ConstantHeuristic Weight="1.0"/>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
@@ -28,7 +27,6 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="181s" EndTime="-1s"/>
 			<PathToTargetHeuristic PathExists="true"/>
-			<ConstantHeuristic Weight="1.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
@@ -42,8 +40,7 @@
 		  id="MOKOptimalEarlyMidBikeEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime ="60s" EndTime="420s" />
-			<IntervalHeuristic IntervalTime="180s" ActiveTime="80s"/>
+			<TimerHeuristic StartTime ="120s" EndTime="420s" />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
@@ -58,7 +55,6 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<LateGameHeuristic />
-			<IntervalHeuristic IntervalTime="240s" ActiveTime="80s"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
@@ -172,8 +168,8 @@
       <ConstantHeuristic Weight="0.8"/>
       <OpeningMoveHeuristic Complete="true"/>
       <TimerHeuristic StartTime="90s" EndTime="-1s"/>
-      <IntervalHeuristic IntervalTime="30s" ActiveTime="20s"/>
-      <IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
+      <IntervalHeuristic IntervalTime="60s" ActiveTime="20s"/>
+      <IntervalHeuristic IntervalTime="5s" ActiveTime="5s"/>
     </Heuristic>
     <Budget>
       <AccountShare Account="INVESTMENT" Percent="0%"/>

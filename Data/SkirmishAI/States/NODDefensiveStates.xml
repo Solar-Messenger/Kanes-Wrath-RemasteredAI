@@ -124,7 +124,7 @@
 			<OpeningMoveHeuristic Complete="true"/>
 			<TimerHeuristic StartTime="90s" EndTime="-1s"/>
 			<IntervalHeuristic IntervalTime="60s" ActiveTime="20s"/>
-			<IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
+			<IntervalHeuristic IntervalTime="5s" ActiveTime="5s"/>
 		</Heuristic>
 		<Budget>
 			<AccountShare Account="INVESTMENT" Percent="0%"/>

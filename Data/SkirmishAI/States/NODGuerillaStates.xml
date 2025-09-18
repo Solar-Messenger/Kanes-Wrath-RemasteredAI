@@ -9,7 +9,6 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="60s" EndTime="-1s"/>
 			<PathToTargetHeuristic PathExists="true"/>
-			<ConstantHeuristic Weight="1.0" />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="EconomyKillHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
@@ -25,7 +24,6 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="60s" EndTime="-1s" />
 			<PathToTargetHeuristic PathExists="true"/>
-			<ConstantHeuristic Weight="1.0" />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ProductionKillHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
@@ -41,7 +39,6 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="60s" EndTime="-1s" />
 			<PathToTargetHeuristic PathExists="true"/>
-			<ConstantHeuristic Weight="1.0" />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="PowerKillHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
@@ -74,8 +71,8 @@
 		  id="NODEngineer"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<TimerHeuristic StartTime="60s" EndTime="-1s"/>
 			<PathToTargetHeuristic PathExists="true"/>
-			<ConstantHeuristic Weight="1.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Engineer">
@@ -118,7 +115,7 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<LateGameHeuristic/>
-			<IntervalHeuristic IntervalTime="130s" ActiveTime="80s"/>
+			<IntervalHeuristic IntervalTime="130s" ActiveTime="90s"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToTechStructureHeuristic" TargetType="Diversion"/>
 		<Tactic Tactic="FlankAttack" TargetType="Diversion">
@@ -179,7 +176,7 @@
 			<OpeningMoveHeuristic Complete="true"/>
 			<TimerHeuristic StartTime="90s" EndTime="-1s"/>
 			<IntervalHeuristic IntervalTime="60s" ActiveTime="20s"/>
-			<IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
+			<IntervalHeuristic IntervalTime="5s" ActiveTime="5s"/>
 		</Heuristic>
 		<Budget>
 			<AccountShare Account="INVESTMENT" Percent="0%"/>
