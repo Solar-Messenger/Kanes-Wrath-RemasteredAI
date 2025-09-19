@@ -55,7 +55,7 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
-			<TimerHeuristic StartTime="600s" EndTime="-1s"/>
+			<TimerHeuristic StartTime="300s" EndTime="-1s"/>
 			<CounterattackHeuristic Threshold="3.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="Counterattack"/>
