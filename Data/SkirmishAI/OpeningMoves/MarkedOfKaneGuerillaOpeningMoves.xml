@@ -4,103 +4,84 @@
   <Includes>
   </Includes>
 
-  <SkirmishOpeningMove
-    id="MarkedOfKaneVenomRush"
+	<SkirmishOpeningMove
+		id="MOKGuerillaEasy"
+		Side="MarkedOfKane">
+		<Order Time="0s" Build="MarkedOfKanePowerPlant" />
+		<Order Time="5s" Build="MarkedOfKaneHandOfNOD"/>
+		<Order Time="10s" Build="MarkedOfKaneRefinery" />
+		<Order Time="40s" Build="MarkedOfKaneDropZone" />
+		<Order Time="60s" Build="MarkedOfKaneRefinery" />
+		<Order Time="90s" Build="MarkedOfKanePowerPlant" />
+		<Order Time="95s" Build="MarkedOfKanePowerPlant" />
+	</SkirmishOpeningMove>
+
+	<SkirmishOpeningMove
+		id="MOKGuerillaStandard"
+		Side="MarkedOfKane">
+		<Order Time="0s" Build="MarkedOfKanePowerPlant" />
+		<Order Time="5s" Build="MarkedOfKaneHandOfNOD" />
+		<Order Build="MarkedOfKaneSaboteur" />
+		<Order Build="MarkedOfKaneSaboteur" />
+		<Order Build="MOKCyborgInfantrySquad" />
+		<Order Build="MOKCyborgInfantrySquad" />
+		<Order Build="MOKCyborgInfantrySquad" />
+		<Order Time="10s" Build="MarkedOfKaneRefinery" />
+		<Order Time="40s" Build="MarkedOfKaneDropZone" />
+		<Order Time="60s" Build="MarkedOfKaneRefinery" />
+		<Order Build="MarkedOfKaneHarvester" />
+		<Order Build="MarkedOfKaneScorpionBuggy" />
+		<Order Build="MarkedOfKaneScorpionBuggy" />
+		<Order Build="MarkedOfKaneScorpionBuggy" />
+		<Order Build="MarkedOfKaneScorpionBuggy" />
+		<Order Time="90s" Build="MarkedOfKanePowerPlant" />
+		<Order Time="95s" Build="MarkedOfKaneOperationsCenter" />
+		<Order Time="110s" Build="MarkedOfKanePowerPlant" />
+		<Order Time="115s" Build="MarkedOfKaneSecretShrine" />
+		<Order Time="125s" Build="MarkedOfKaneHandOfNOD" />
+		<Order Time="130s" Build="MarkedOfKaneDropZone" />
+	</SkirmishOpeningMove>
+
+	<SkirmishOpeningMove
+    id="MOKGuerillaEMPRush"
     Side="MarkedOfKane">
-
-    <Order Build="MarkedOfKaneRefinery" />
-    <Order Build="MarkedOfKanePowerPlant" />
-    <Order Build="MarkedOfKaneRefinery" />
-    <Order Build="MarkedOfKaneRefinery" />
-    <Order Build="MarkedOfKanePowerPlant" />
-    <Order Build="MarkedOfKaneOperationsCenter" />
-    <Order Build="MarkedOfKaneHangar" />
-    <Order Build="MarkedOfKaneHangar" />
-
-    <Order Build="MarkedOfKaneVenom" />
-    <Order Build="MarkedOfKaneVenom" />
-    <Order Build="MarkedOfKaneVenom" />
-    <Order Build="MarkedOfKaneVenom" />
-    <Order Build="MarkedOfKaneVenom" />
-    <Order Build="MarkedOfKaneVenom" />
-    <Order Build="MarkedOfKaneVenom" />
-    <Order Build="MarkedOfKaneVenom" />
-    <Order Build="MarkedOfKaneVenom" />
-    <Order Build="MarkedOfKaneVenom" />
-    <Order Build="MarkedOfKaneVenom" />
-    <Order Build="MarkedOfKaneVenom" />
-    <Order Build="MarkedOfKaneVenom" />
-    <Order Build="MarkedOfKaneVenom" />
-    <Order Build="MarkedOfKaneVenom" />
-    <Order Build="MarkedOfKaneVenom" />
-    <Order Time="175s" />
-  </SkirmishOpeningMove>
-  
-  <SkirmishOpeningMove
-    id="MarkedOfKaneReckonerRush"
-    Side="MarkedOfKane">
-
-    <Order Build="MarkedOfKaneRefinery" />
-    <Order Build="MarkedOfKanePowerPlant" />
-    <Order Build="MarkedOfKaneRefinery" />
-    <Order Build="MarkedOfKaneRefinery" />
-    <Order Build="MarkedOfKanePowerPlant" />
-    <Order Build="MarkedOfKaneDropZone" />
-    <Order Build="MarkedOfKaneDropZone" />
-    <Order Build="MarkedOfKanePowerPlant" />
-    <Order Build="MarkedOfKaneOperationsCenter" />
-    <Order Build="MarkedOfKaneHandOfNOD" /> 
-
-    <Order Build="NODCarryallVehicle" />
-    <Order Build="MarkedOfKaneTibTrooperSquad" />
-    <Order Build="NODCarryallVehicle" />
-    <Order Build="MarkedOfKaneTibTrooperSquad" />
-    <Order Build="NODCarryallVehicle" />
-    <Order Build="MarkedOfKaneTibTrooperSquad" />
-    <Order Build="NODCarryallVehicle" />
-    <Order Build="MarkedOfKaneTibTrooperSquad" />
-    <Order Build="NODCarryallVehicle" />
-    <Order Build="MarkedOfKaneTibTrooperSquad" />
-    <Order Build="NODCarryallVehicle" />
-    <Order Build="MarkedOfKaneTibTrooperSquad" />
-    <Order Build="NODCarryallVehicle" />
-    <Order Build="MarkedOfKaneTibTrooperSquad" />
-    <Order Build="NODCarryallVehicle" />
-    <Order Build="MarkedOfKaneTibTrooperSquad" />
-    <Order Time="175s" />
-  </SkirmishOpeningMove>
-
-  <SkirmishOpeningMove
-    id="MarkedOfKaneSpecterRush"
-    Side="MarkedOfKane">
-
-    <Order Build="MarkedOfKaneRefinery" />
-    <Order Build="MarkedOfKanePowerPlant" />
-    <Order Build="MarkedOfKaneRefinery" />
-    <Order Build="MarkedOfKaneRefinery" />
-    <Order Build="MarkedOfKanePowerPlant" />
-    <Order Build="MarkedOfKaneDropZone" />
-    <Order Build="MarkedOfKaneDropZone" />
-    <Order Build="MarkedOfKanePowerPlant" />
-    <Order Build="MarkedOfKaneOperationsCenter" />
-
-    <Order Build="MarkedOfKaneMobileArtillery" />
-    <Order Build="MarkedOfKaneMobileArtillery" />
-    <Order Build="MarkedOfKaneMobileArtillery" />
-    <Order Build="MarkedOfKaneMobileArtillery" />
-    <Order Build="MarkedOfKaneMobileArtillery" />
-    <Order Build="MarkedOfKaneMobileArtillery" />
-    <Order Build="MarkedOfKaneMobileArtillery" />
-    <Order Build="MarkedOfKaneMobileArtillery" />
-    <Order Build="MarkedOfKaneMobileArtillery" />
-    <Order Build="MarkedOfKaneMobileArtillery" />
-    <Order Build="MarkedOfKaneMobileArtillery" />
-    <Order Build="MarkedOfKaneMobileArtillery" />
-    <Order Build="MarkedOfKaneMobileArtillery" />
-    <Order Build="MarkedOfKaneMobileArtillery" />
-    <Order Build="MarkedOfKaneMobileArtillery" />
-    <Order Build="MarkedOfKaneMobileArtillery" />
-    <Order Time="175s" />
-  </SkirmishOpeningMove>
+		<Order Time="0s" Build="MarkedOfKanePowerPlant"/>
+		<Order Time="5s" Build="MarkedOfKaneHandOfNOD"/>
+		<Order Build="MarkedOfKaneSaboteur" />
+		<Order Build="MarkedOfKaneSaboteur" />
+		<Order Build="MOKCyborgInfantrySquad" />
+		<Order Build="MOKCyborgInfantrySquad" />
+		<Order Build="MOKCyborgInfantrySquad" />
+		<Order Time="10s" Build="MarkedOfKaneRefinery"/>
+		<Order Time="40s" Build="MarkedOfKaneDropZone"/>
+		<Order Time="60s" Build="MarkedOfKaneRefinery"/>
+		<Order Build="MarkedOfKaneHarvester" />
+		<Order Build="MarkedOfKaneScorpionBuggy" />
+		<Order Build="MarkedOfKaneScorpionBuggy" />
+		<Order Build="MarkedOfKaneScorpionBuggy" />
+		<Order Build="MarkedOfKaneScorpionBuggy" />
+		<Order Time="90s" Build="MarkedOfKanePowerPlant" />
+		<Order Time="95s" Build="MarkedofKanePowerPlant" />
+		<Order Time="100s" Build="MarkedOfKaneOperationsCenter"/>
+		<Order Time="115s" Build="MarkedOfKaneSecretShrine"/>
+		<Order Build="MarkedOfKaneImprovedCyborgInfantrySquad"/>
+		<Order Build="MarkedOfKaneImprovedCyborgInfantrySquad"/>
+		<Order Build="MarkedOfKaneImprovedCyborgInfantrySquad"/>
+		<Order Build="MarkedOfKaneImprovedCyborgInfantrySquad"/>
+		<Order Build="MarkedOfKaneImprovedCyborgInfantrySquad"/>
+		<Order Build="MarkedOfKaneImprovedCyborgInfantrySquad"/>
+		<Order Time="125s" Build="MarkedOfKaneHangar"/>
+		<Order Build="MarkedOfKaneVenom"/>
+		<Order Build="MarkedOfKaneVenom"/>
+		<Order Build="MarkedOfKaneVenom"/>
+		<Order Build="MarkedOfKaneVenom"/>
+		<Order Build="MarkedOfKaneVenom"/>
+		<Order Build="MarkedOfKaneVenom"/>
+		<Order Build="MarkedOfKaneVenom"/>
+		<Order Build="MarkedOfKaneVenom"/>
+		<Order Time="135s" Build="MarkedofKaneHandOfNOD"/>
+		<Order Time="140s" Build="MarkedofKaneHandOfNOD"/>
+		<Order Time="145s" Build="MarkedOfKaneTechAssemblyPlant"/>
+    </SkirmishOpeningMove>
 
 </AssetDeclaration>

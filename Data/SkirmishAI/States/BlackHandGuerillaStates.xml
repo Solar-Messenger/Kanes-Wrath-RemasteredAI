@@ -152,7 +152,6 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="60s" EndTime="-1s" />
 			<PathToTargetHeuristic PathExists="true"/>
-			<ConstantHeuristic Weight="0.5"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Diversion"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Diversion">

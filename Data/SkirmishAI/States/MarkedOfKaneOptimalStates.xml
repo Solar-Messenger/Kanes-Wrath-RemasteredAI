@@ -134,7 +134,7 @@
   </AIStrategicStateDefinition>
 
   <AIStrategicStateDefinition
-		id="MOKOptimalEngineer"
+		id="MarkedOfKaneOptimalEngineer"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
 		<PathToTargetHeuristic PathExists="true"/>

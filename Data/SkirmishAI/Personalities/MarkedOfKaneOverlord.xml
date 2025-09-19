@@ -87,9 +87,9 @@
 		<States State="MarkedOfKaneOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneOpeningAntiRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="MarkedOfKaneOverrunEarly" Difficulty="EASY MEDIUM HARD BRUTAL" />
-		<States State="MarkedOfKaneOverrunMiddle" Difficulty="EASY MEDIUM HARD BRUTAL" />
-		<States State="MarkedOfKaneOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="MOKOverrunEarly" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="MOKOverrunMiddle" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="MOKOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
 		<States State="MOKOverlordAirHarassment" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="MOKOverlordAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
