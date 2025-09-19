@@ -51,6 +51,18 @@
 		<!--No Unit Preferences-->
 	</AIStrategicStateDefinition>
 
+	<AIStrategicStateDefinition
+		id="MOKGuerillaOverwhelm"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="FocusedTarget"/>
+		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
+			<TeamTemplate MinUnits="20" MaxUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
 	<!--If opponent is turtling, siege his base with many "mini" siege groups-->
 	<AIStrategicStateDefinition
 		  id="MOKMiniSiege"

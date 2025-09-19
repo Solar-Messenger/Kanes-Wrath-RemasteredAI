@@ -50,6 +50,7 @@
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Diversion" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Diversion" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Diversion" MaxTeamsPerTarget="1" />
@@ -110,6 +111,7 @@
 		<States State="MOKPowerCut" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="MOKResourceSqueeze" Difficulty="HARD BRUTAL" />
 		<States State="MOKProductionHalt" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="MOKGuerillaOverwhelm" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="MOKMiniSiege" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="MOKGuerillaAirHarassment" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKGuerillaBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>

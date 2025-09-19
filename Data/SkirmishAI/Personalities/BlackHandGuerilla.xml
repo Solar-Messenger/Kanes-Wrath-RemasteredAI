@@ -112,6 +112,7 @@
 		<States State="BlackHandPowerCut" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="BlackHandResourceSqueeze" Difficulty="HARD BRUTAL" />
 		<States State="BlackHandProductionHalt" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="BlackHandGuerillaOverwhelm" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="BlackHandMiniSiege" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="BlackHandGuerillaAirHarassment" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandGuerillaArtilleryBombing" Difficulty="MEDIUM HARD BRUTAL"/>
