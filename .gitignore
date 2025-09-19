@@ -371,3 +371,4 @@ Data/SkirmishAI/Personalities/PersonalityList.xml
 Data/SkirmishAI/OpeningMoves/TestMove.xml
 Data/maps/official/**/*.tga
 Data/maps/official/**/*.map
+/Data/AdditionalMaps
