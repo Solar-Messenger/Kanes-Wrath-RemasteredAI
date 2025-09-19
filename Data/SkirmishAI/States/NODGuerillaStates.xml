@@ -103,7 +103,7 @@
 			<LateGameHeuristic/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirTechStructureHeuristic" TargetType="BombingAirstrike"/>
-		<Tactic Tactic="SimpleAttack" TargetType="BombingAirstrike">
+		<Tactic Tactic="FlankAttack" TargetType="BombingAirstrike">
 			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="NODVertigo"/>
 			</TeamTemplate>
@@ -115,11 +115,10 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<LateGameHeuristic/>
-			<IntervalHeuristic IntervalTime="130s" ActiveTime="90s"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToTechStructureHeuristic" TargetType="Diversion"/>
 		<Tactic Tactic="FlankAttack" TargetType="Diversion">
-			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="NODStealthTank"/>
 			</TeamTemplate>
 		</Tactic>
