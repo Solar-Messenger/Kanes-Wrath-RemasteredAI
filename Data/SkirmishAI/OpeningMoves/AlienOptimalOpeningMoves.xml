@@ -4,103 +4,53 @@
   <Includes>
   </Includes>
 
-  <SkirmishOpeningMove
-    id="Alien_EASY"
+	<SkirmishOpeningMove
+    id="AlienOptimalEasy"
     Side="Alien">
-    <Order Build="AlienPowerProjector" />
-    <Order Build="AlienFoundry" />
-    <Order Build="AlienPortal" />
-    <Order Build="AlienPortal" />
-    <Order Build="AlienPowerProjector" />
-    <Order Build="AlienTiberiumTower" />
-    <Order Build="AlienGateway" />
-    <Order Build="AlienPowerProjector" />
+		<Order Time="0s" Build="AlienPowerProjector" />
+		<Order Time="5s" Build="AlienPortal" />
+		<Order Build="AlienAssimilator" />
+		<Order Build="AlienAssimilator" />
+		<Order Build="AlienBuzzer" />
+		<Order Build="AlienBuzzer" />
+		<Order Build="AlienBuzzer" />
+		<Order Time="10s" Build="AlienTiberiumTower" />
+		<Order Time="40s" Build="AlienGateway" />
+		<Order Time="60s" Build="AlienTiberiumTower" />
+		<Order Build="AlienGunwalker" />
+		<Order Build="AlienGunwalker" />
+		<Order Build="AlienGunwalker" />
+		<Order Build="AlienGunwalker" />
+		<Order Time="90s" Build="AlienPowerProjector" />
+		<Order Time="95s" Build="AlienPowerProjector" />
+    </SkirmishOpeningMove>
 
-    <Order Build="AlienBuzzers" />
-    <Order Build="AlienBuzzers" />
-    <Order Build="AlienBuzzers" />
-
-    <Order Build="AlienBuzzers" />
-    <Order Build="AlienBuzzers" />
-    <Order Build="AlienBuzzers" />
-
-    <Order Build="AlienBuzzers" />
-    <Order Build="AlienBuzzers" />
-    <Order Build="AlienBuzzers" />
-
-    <Order Build="AlienBuzzers" />
-    <Order Build="AlienBuzzers" />
-    <Order Build="AlienBuzzers" />
-
-    <Order Time="180s" />
-  </SkirmishOpeningMove>
-
-  <SkirmishOpeningMove
-    id="AlienStandard"
+	<SkirmishOpeningMove
+    id="AlienOptimalHardBrutal"
     Side="Alien">
-    <Order Build="AlienPowerProjector" />
-    <Order Build="AlienPortal" />
-    <Order Build="AlienBuzzers" />
-    <Order Build="AlienBuzzers" />
-    <Order Build="AlienTiberiumTower" />
-    <Order Build="AlienTiberiumTower" />
-    <Order Build="AlienGateway" />
-    <Order Time="72s" Account="PRODUCTION" Deposit="3000" />
-		<Order Build="AlienTiberiumTower" />
-    <Order Build="AlienTiberiumTower" />
-    <Order Time="102s" />
-  </SkirmishOpeningMove>
-
-  <SkirmishOpeningMove
-    id="AlienStandard2"
-    Side="Alien">
-    <Order Build="AlienTiberiumTower" />
-    <Order Build="AlienPowerProjector" />
-    <Order Build="AlienGateway" />
-    <Order Time="32s" Account="PRODUCTION" Deposit="6500" />
-		<Order Build="AlienTiberiumTower" />
-		<Order Build="AlienTiberiumTower" />
-		<Order Build="AlienPortal" />
-		<Order Build="AlienTiberiumTower" />
-		<Order Time="97s" />
-  </SkirmishOpeningMove>
-
-  <SkirmishOpeningMove
-    id="AlienStandardCrane"
-    Side="Alien">
-    <Order Build="AlienPowerProjector" />
-		<Order Build="AlienPortal" />
-    <Order Build="AlienTiberiumTower" />
-    <Order Build="AlienFoundry" />
-		<Order Build="AlienPowerProjector" />
-		<Order Build="AlienTiberiumTower" />
-		<Order Build="AlienTiberiumTower" />
-		<Order Build="AlienGateway" />
-    <Order Time="88s" Account="PRODUCTION" Deposit="1000" />
-    <Order Build="AlienPowerProjector" />
-    <Order Build="AlienTiberiumTower" />
-    <Order Time="114s" />
-  </SkirmishOpeningMove>
-
-  <SkirmishOpeningMove
-    id="AlienBrutalCrane"
-    Side="Alien">
-
-    <Order Build="AlienPowerProjector" />
-    <Order Build="AlienPortal" />
-    <Order Build="AlienTiberiumTower" />
-		<Order Build="AlienFoundry" />
-		<Order Build="AlienPowerProjector" />
-		<Order Build="AlienTiberiumTower" />
-    <Order Build="AlienGateway" />
-    <Order Time="56s" Account="PRODUCTION" Deposit="999999" />
-		<Order Build="AlienTiberiumTower" />
-    <Order Build="AlienPowerProjector" />
-    <Order Build="AlienGateway" />
-    <Order Build="AlienTiberiumTower" />
-		<Order Build="AlienPortal" />
-    <Order Build="AlienTiberiumTower" />
-    <Order Time="108s" />
-  </SkirmishOpeningMove>
+		<Order Time="0s" Build="AlienPowerProjector" />
+		<Order Time="5s" Build="AlienPortal" />
+		<Order Build="AlienAssimilator" />
+		<Order Build="AlienAssimilator" />
+		<Order Build="AlienBuzzer" />
+		<Order Build="AlienBuzzer" />
+		<Order Build="AlienBuzzer" />
+		<Order Time="10s" Build="AlienTiberiumTower" />
+		<Order Time="40s" Build="AlienGateway" />
+		<Order Build="AlienHarvester" />
+		<Order Build="AlienGunwalker" />
+		<Order Build="AlienGunwalker" />
+		<Order Build="AlienGunwalker" />
+		<Order Build="AlienGunwalker" />
+		<Order Time="60s" Build="AlienTiberiumTower" />
+		<Order Time="90s" Build="AlienPowerProjector" />
+		<Order Time="95s" Build="AlienPowerProjector" />
+		<Order Time="100s" Build="AlienPortal" />
+		<Order Time="105s" Build="AlienFoundry" />
+		<Order Time="120s" Build="AlienPowerProjector" />
+		<Order Time="120s" Build="AlienControlCenter" />
+		<Order Time="125s" Build="AlienGateway" />
+		<Order Time="135s" Build="AlienWarpBeacon" />
+    </SkirmishOpeningMove>
 
 </AssetDeclaration>
