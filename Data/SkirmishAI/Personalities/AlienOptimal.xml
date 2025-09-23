@@ -52,7 +52,6 @@
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
