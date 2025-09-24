@@ -67,14 +67,12 @@
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="ExpansionDefense" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
@@ -115,7 +113,6 @@
 		<States State="MarkedOfKaneDefend" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneEngineerDefense" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneCommandoDefense" Difficulty="HARD BRUTAL"/>
-		<States State="ExpansionDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="MOKOffensiveGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
 		<States State="MarkedOfKaneAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>

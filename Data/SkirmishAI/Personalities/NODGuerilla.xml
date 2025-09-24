@@ -64,9 +64,6 @@
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
@@ -74,8 +71,6 @@
 		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="ExpansionDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="ExpansionDefense" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
@@ -123,8 +118,6 @@
 		<States State="NODDefend" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="NODEngineerDefense" Difficulty="HARD BRUTAL"/>
 		<States State="NODCommandoDefense" Difficulty="HARD BRUTAL"/>
-		<States State="ExpansionDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="ExpansionDefend" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="NODGuerillaGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="MEDIUM HARD BRUTAL"/>
