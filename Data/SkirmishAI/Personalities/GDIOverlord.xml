@@ -64,7 +64,6 @@
 		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="ExpansionDefense" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
@@ -93,14 +92,13 @@
 		<States State="GDIOverrunMiddle" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="GDIOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-		<States State="GDIOverlordAirHarassment" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="GDIOverlordAirHarassment" Difficulty="BRUTAL" />
 		<States State="GDIOverlordAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL" />
-		<States State="GDIOverlordBombingRuns" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="GDIOverlordBombingRuns" Difficulty="HARD BRUTAL" />
 
 		<States State="GDIDefend" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIEngineerDefense" Difficulty="HARD BRUTAL"/>
 		<States State="GDICommandoDefense" Difficulty="HARD BRUTAL"/>
-		<States State="ExpansionDefend" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="GDIOverlordGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
 		<States State="GDIGarrisonAPC" Difficulty="MEDIUM HARD BRUTAL"/>

@@ -97,17 +97,17 @@
 		<States State="GDIOpeningAntiRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="GDIOptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GDIOptimalBoxIn" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="GDIOptimalBoxIn" Difficulty="HARD BRUTAL"/>
 		<States State="GDIOptimalGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIOptimalAirEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="GDIOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GDIOptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="GDIOptimalSpotters" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="GDIOptimalSiege" Difficulty="HARD BRUTAL"/>
+		<States State="GDIOptimalSpotters" Difficulty="HARD BRUTAL"/>
 
-		<States State="GDIOptimalAirHarassment" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="GDIOptimalAirHarassment" Difficulty="BRUTAL"/>
 		<States State="GDIOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GDIOptimalBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="GDIOptimalEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="GDIOptimalBombingRuns" Difficulty="HARD BRUTAL"/>
+		<States State="GDIOptimalEngineer" Difficulty="HARD BRUTAL"/>
 
 		<States State="GDIDefend" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIEngineerDefense" Difficulty="HARD BRUTAL"/>

@@ -104,13 +104,13 @@
 		<States State="GDIOffensiveGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIOffensiveAirEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="GDIOffensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GDIOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="GDIOffensiveSpotters" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="GDIOffensiveSiege" Difficulty="HARD BRUTAL"/>
+		<States State="GDIOffensiveSpotters" Difficulty="HARD BRUTAL"/>
 
-		<States State="GDIOffensiveAirHarassment" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="GDIOffensiveAirHarassment" Difficulty="BRUTAL"/>
 		<States State="GDIOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GDIOffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="GDIOffensiveEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="GDIOffensiveBombingRuns" Difficulty="HARD BRUTAL"/>
+		<States State="GDIOffensiveEngineer" Difficulty="HARD BRUTAL"/>
 
 		<States State="GDIDefend" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIEngineerDefense" Difficulty="HARD BRUTAL"/>
@@ -122,7 +122,7 @@
 		<States State="GDIAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="GDICaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDISuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="GDICommando" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="GDICommando" Difficulty="HARD BRUTAL"/>
 		<States State="GDIExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
