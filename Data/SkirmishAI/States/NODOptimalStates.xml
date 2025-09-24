@@ -125,7 +125,7 @@
 		<Heuristic>
 			<LateGameHeuristic/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirTechStructureHeuristic" TargetType="BombingAirstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="BombingAirstrike"/>
 		<Tactic Tactic="FlankAttack" TargetType="BombingAirstrike">
 			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="NODVertigo"/>
