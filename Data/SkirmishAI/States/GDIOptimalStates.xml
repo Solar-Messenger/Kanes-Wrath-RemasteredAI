@@ -12,8 +12,10 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="SimpleAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
+		<UnitModifierByName UnitName="GDIAPC" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="GDIPredator" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
@@ -27,13 +29,15 @@
 		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
 			<TeamTemplate MinUnits="7" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
+		<UnitModifierByName UnitName="GDIAPC" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="GDISonicTank" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
 	</AIStrategicStateDefinition>
 
   <AIStrategicStateDefinition
 		id="GDIOptimalGroundEconomyAttack"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
-		<TimerHeuristic StartTime ="90s" EndTime="420s" />
+		<TimerHeuristic StartTime ="120s" EndTime="300s" />
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
     <Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
@@ -47,7 +51,7 @@
 		  id="GDIOptimalAirEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime ="180s" EndTime="420s" />
+			<TimerHeuristic StartTime ="180s" EndTime="-1s" />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterHeuristic" TargetType="SpreadTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="SpreadTarget">
@@ -91,8 +95,8 @@
       <PathToTargetHeuristic PathExists="true"/>
       <LateGameHeuristic/>
     </Heuristic>
-    <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="SiegeTarget"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="SiegeTarget">
+    <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="SecondaryTarget"/>
+    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="SecondaryTarget">
       <TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
         <CreateUnits MinUnits="2" MaxUnits="2" UnitName="GDISniperSquad"/>
       </TeamTemplate>

@@ -52,7 +52,6 @@
 		<Order Time="135s" Build="GDICommandPost"/>
 		<Order Time="135s" Build="GDIPowerPlant"/>
 		<Order Time="140s" Build="GDIAirTower"/>
-		<Order Time="150s" Build="GDIAirTower"/>
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>
