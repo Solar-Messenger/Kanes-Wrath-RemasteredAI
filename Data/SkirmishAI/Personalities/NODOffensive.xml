@@ -94,21 +94,22 @@
 		<OpeningMove Name="NODOffensiveStandard" Weight="60%" Difficulty="MEDIUM HARD BRUTAL"/>
 		<OpeningMove Name="NODOffensiveScorpionRush" Weight="40%" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="NODOffensiveDirectOpening" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODOffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODOffensiveEarlyMidBikeEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODOffensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODOffensiveLateStealthTankEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
-
-		<States State="NODOffensiveAirHarassment" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODOffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODOffensiveFlameTankAttack" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODOffensiveEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODOpeningAntiRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+
+		<States State="NODOffensiveDirectOpening" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="NODOffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="NODOffensiveEarlyMidBikeEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODOffensiveLateStealthTankEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="NODOffensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="NODOffensiveSiege" Difficulty="HARD BRUTAL"/>
+
+		<States State="NODOffensiveAirHarassment" Difficulty="BRUTAL"/>
+		<States State="NODOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="NODOffensiveBombingRuns" Difficulty="HARD BRUTAL"/>
+		<States State="NODOffensiveFlameTankAttack" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODOffensiveEngineer" Difficulty="HARD BRUTAL"/>
 
 		<States State="NODDefend" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODEngineerDefense" Difficulty="HARD BRUTAL"/>
@@ -119,7 +120,7 @@
 		<States State="NODAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="NODCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODCommando" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODCommando" Difficulty="BRUTAL"/>
 		<States State="NODExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>

@@ -95,26 +95,26 @@
 		<OpeningMove Name="BlackHandOptimalBalanced" Weight="100%" Difficulty="EASY MEDIUM"/>
 		<OpeningMove Name="BlackHandOptimalBalancedHardBrutal" Weight="100%" Difficulty="HARD BRUTAL"/>
 
+		<States State="BlackHandOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandOpeningAntiRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+
 		<States State="BlackHandOptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BlackHandOptimalBoxIn" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandOptimalBoxIn" Difficulty="HARD BRUTAL"/>
 		<States State="BlackHandOptimalEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandOptimalSiege" Difficulty="HARD BRUTAL"/>
 
-		<States State="BlackHandOptimalAirHarassment" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="BlackHandOptimalAirHarassmentAntiTurtle" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandOptimalAirHarassment" Difficulty="BRUTAL"/>
+		<States State="BlackHandOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="BlackHandOptimalArtilleryBombing" Difficulty="HARD BRUTAL"/>
 		<States State="BlackHandOptimalFlameTankAttack" Difficulty="HARD BRUTAL"/>
 
-		<States State="BlackHandOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BlackHandOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-
-		<States State="BlackHandOpeningAntiRush" Difficulty="HARD BRUTAL"/>
 		<States State="BlackHandOptimalEngineer" Difficulty="BRUTAL"/>
 
 		<States State="BlackHandDefend" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BlackHandEngineerDefense" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandEngineerDefense" Difficulty="HARD BRUTAL"/>
 		<States State="BlackHandCommandoDefense" Difficulty="HARD BRUTAL"/>
 
 		<States State="BlackHandOptimalGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>

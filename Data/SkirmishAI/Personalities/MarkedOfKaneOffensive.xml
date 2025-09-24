@@ -103,15 +103,15 @@
 		<States State="MOKOffensiveEarlyMidBikeEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="MOKOffensiveLateStealthTankEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="MOKOffensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MOKOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKOffensiveSiege" Difficulty="HARD BRUTAL"/>
 
-		<States State="MOKOffensiveAirHarassment" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="MOKOffensiveAirHarassment" Difficulty="BRUTAL"/>
 		<States State="MOKOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MOKOffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MarkedOfKaneOffensiveEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKOffensiveBombingRuns" Difficulty="HARD BRUTAL"/>
+		<States State="MarkedOfKaneOffensiveEngineer" Difficulty="HARD BRUTAL"/>
 
 		<States State="MarkedOfKaneDefend" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MarkedOfKaneEngineerDefense" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MarkedOfKaneEngineerDefense" Difficulty="HARD BRUTAL"/>
 		<States State="MarkedOfKaneCommandoDefense" Difficulty="HARD BRUTAL"/>
 
 		<States State="MOKOffensiveGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>

@@ -105,16 +105,16 @@
 		<States State="BlackHandOffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandOffensiveEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandOffensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BlackHandOffensiveBeamCannon" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandOffensiveBeamCannon" Difficulty="HARD BRUTAL"/>
 
-		<States State="BlackHandOffensiveAirHarassment" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="BlackHandOffensiveAirHarassmentAntiTurtle" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="BlackHandOffensiveArtilleryBombing" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="BlackHandOffensiveFlameTankAttack" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandOffensiveAirHarassment" Difficulty="BRUTAL"/>
+		<States State="BlackHandOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandOffensiveArtilleryBombing" Difficulty="HARD BRUTAL"/>
+		<States State="BlackHandOffensiveFlameTankAttack" Difficulty="HARD BRUTAL"/>
 		<States State="BlackHandOffensiveEngineer" Difficulty="HARD BRUTAL"/>
 
 		<States State="BlackHandDefend" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BlackHandEngineerDefense" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandEngineerDefense" Difficulty="HARD BRUTAL"/>
 		<States State="BlackHandCommandoDefense" Difficulty="HARD BRUTAL"/>
 
 		<States State="BlackHandOptimalGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>

@@ -96,23 +96,24 @@
 		<OpeningMove Name="MOKOptimalBalanced" Weight="100%" Difficulty="EASY MEDIUM"/>
 		<OpeningMove Name="MOKOptimalBalancedHardBrutal" Weight="100%" Difficulty="HARD BRUTAL"/>
 
-		<States State="MOKOptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MOKOptimalBoxIn" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MOKOptimalEarlyMidBikeEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MOKOptimalLateStealthTankEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MOKOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MOKOptimalSiege" Difficulty="HARD BRUTAL"/>
-
-		<States State="MOKOptimalAirHarassment" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MOKOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MOKOptimalBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MarkedOfKaneOptimalEngineer" Difficulty="BRUTAL"/>
 		<States State="MarkedOfKaneOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneOpeningAntiRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
+		<States State="MOKOptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="MOKOptimalBoxIn" Difficulty="HARD BRUTAL"/>
+		<States State="MOKOptimalEarlyMidBikeEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKOptimalLateStealthTankEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="MOKOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="MOKOptimalSiege" Difficulty="HARD BRUTAL"/>
+
+		<States State="MOKOptimalAirHarassment" Difficulty="BRUTAL"/>
+		<States State="MOKOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="MOKOptimalBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MarkedOfKaneOptimalEngineer" Difficulty="HARD BRUTAL"/>
+
 		<States State="MarkedOfKaneDefend" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MarkedOfKaneEngineerDefense" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MarkedOfKaneEngineerDefense" Difficulty="HARD BRUTAL"/>
 		<States State="MarkedOfKaneCommandoDefense" Difficulty="HARD BRUTAL"/>
 
 		<States State="MOKOptimalGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>

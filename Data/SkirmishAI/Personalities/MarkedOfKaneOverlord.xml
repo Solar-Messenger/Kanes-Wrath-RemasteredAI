@@ -89,9 +89,9 @@
 		<States State="MOKOverrunMiddle" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="MOKOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-		<States State="MOKOverlordAirHarassment" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKOverlordAirHarassment" Difficulty="BRUTAL"/>
 		<States State="MOKOverlordAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MOKOverlordBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKOverlordBombingRuns" Difficulty="HARD BRUTAL"/>
 
 		<States State="MarkedOfKaneDefend" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneEngineerDefense" Difficulty="HARD BRUTAL"/>

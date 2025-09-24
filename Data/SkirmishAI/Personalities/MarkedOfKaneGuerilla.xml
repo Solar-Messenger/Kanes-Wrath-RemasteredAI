@@ -104,12 +104,12 @@
 		<States State="MOKPowerCut" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="MOKResourceSqueeze" Difficulty="HARD BRUTAL" />
 		<States State="MOKProductionHalt" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="MOKGuerillaOverwhelm" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="MOKGuerillaOverwhelm" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="MOKMiniSiege" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="MOKGuerillaAirHarassment" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MOKGuerillaBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MarkedOfKaneEngineer" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="MOKGuerillaStealthTankAttack" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKGuerillaBombingRuns" Difficulty="HARD BRUTAL"/>
+		<States State="MarkedOfKaneEngineer" Difficulty="HARD BRUTAL" />
+		<States State="MOKGuerillaStealthTankAttack" Difficulty="HARD BRUTAL"/>
 		<States State="MOKGuerillaFanaticAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="MOKDiversion" Difficulty="EASY MEDIUM HARD BRUTAL" />
 

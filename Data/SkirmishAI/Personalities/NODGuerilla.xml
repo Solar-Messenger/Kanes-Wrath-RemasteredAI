@@ -106,12 +106,12 @@
 		<States State="NODPowerCut" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="NODResourceSqueeze" Difficulty="HARD BRUTAL" />
 		<States State="NODProductionHalt" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="NODGuerillaOverwhelm" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="NODGuerillaOverwhelm" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="NODMiniSiege" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="NODGuerillaAirHarassment" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODGuerillaBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODEngineer" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="NODGuerillaStealthTankAttack" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODGuerillaBombingRuns" Difficulty="HARD BRUTAL"/>
+		<States State="NODEngineer" Difficulty="HARD BRUTAL" />
+		<States State="NODGuerillaStealthTankAttack" Difficulty="HARD BRUTAL"/>
 		<States State="NODGuerillaFanaticAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODDiversion" Difficulty="EASY MEDIUM HARD BRUTAL" />
 

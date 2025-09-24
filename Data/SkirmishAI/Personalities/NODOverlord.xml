@@ -92,9 +92,9 @@
 		<States State="NODOverrunMiddle" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="NODOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-		<States State="NODOverlordAirHarassment" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODOverlordAirHarassment" Difficulty="BRUTAL"/>
 		<States State="NODOverlordAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODOverlordBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODOverlordBombingRuns" Difficulty="HARD BRUTAL"/>
 
 		<States State="NODDefend" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODEngineerDefense" Difficulty="HARD BRUTAL"/>

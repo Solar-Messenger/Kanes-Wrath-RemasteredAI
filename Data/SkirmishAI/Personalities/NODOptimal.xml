@@ -95,24 +95,25 @@
 		<OpeningMove Name="NODOptimalBalanced" Weight="100%" Difficulty="EASY MEDIUM"/>
 		<OpeningMove Name="NODOptimalBalancedHardBrutal" Weight="100%" Difficulty="HARD BRUTAL"/>
 
-		<States State="NODOptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODOptimalBoxIn" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODOptimalEarlyMidBikeEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODOptimalLateStealthTankEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODOptimalSiege" Difficulty="HARD BRUTAL"/>
-
-		<States State="NODOptimalAirHarassment" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODOptimalBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODOptimalFlameTankAttack" Difficulty="HARD BRUTAL"/>
-		<States State="NODOptimalEngineer" Difficulty="BRUTAL"/>
 		<States State="NODOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODOpeningAntiRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
+		<States State="NODOptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="NODOptimalBoxIn" Difficulty="HARD BRUTAL"/>
+		<States State="NODOptimalEarlyMidBikeEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODOptimalLateStealthTankEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="NODOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="NODOptimalSiege" Difficulty="HARD BRUTAL"/>
+
+		<States State="NODOptimalAirHarassment" Difficulty="BRUTAL"/>
+		<States State="NODOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="NODOptimalBombingRuns" Difficulty="HARD BRUTAL"/>
+		<States State="NODOptimalFlameTankAttack" Difficulty="HARD BRUTAL"/>
+		<States State="NODOptimalEngineer" Difficulty="HARD BRUTAL"/>
+
 		<States State="NODDefend" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODEngineerDefense" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODEngineerDefense" Difficulty="HARD BRUTAL"/>
 		<States State="NODCommandoDefense" Difficulty="HARD BRUTAL"/>
 
 		<States State="NODOptimalGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
