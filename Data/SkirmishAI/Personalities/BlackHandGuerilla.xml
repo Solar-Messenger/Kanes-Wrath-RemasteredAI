@@ -50,6 +50,7 @@
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Diversion" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Diversion" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Diversion" MaxTeamsPerTarget="1" />
