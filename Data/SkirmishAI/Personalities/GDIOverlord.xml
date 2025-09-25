@@ -105,7 +105,7 @@
 		<States State="GDIOverlordExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDICaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDICommando" Difficulty="BRUTAL"/>
-		<States State="GDISuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="GDISuperweapon" Difficulty="HARD BRUTAL"/>
 		<States State="GDIBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
