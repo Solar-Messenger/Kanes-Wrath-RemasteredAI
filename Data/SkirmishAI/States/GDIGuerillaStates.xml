@@ -8,19 +8,14 @@
 		id="GDIResourceSqueeze"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
-      <PathToTargetHeuristic PathExists="true"/>
-      <ResourceSqueezeHeuristic
-        PenetrabilityWeight="0.25"
-        OpponentFundsWeight="0.75">
-        <PenetrabilityHeuristic/>
-        <OpponentFundsHeuristic/>
-      </ResourceSqueezeHeuristic>
+		<TimerHeuristic StartTime="60s" EndTime="-1s"/>
+		<PathToTargetHeuristic PathExists="true"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="EconomyKillHeuristic" TargetType="PrimaryTarget"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-      <TeamTemplate MinUnits="3" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+    <Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
+      <TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
-    <UnitModifierByName UnitName="GDIPredator" UnitPreferenceOffensiveModifier="125%" UnitPreferenceDefensiveModifier="100%"/>
+    <UnitModifierByName UnitName="GDIPitbull" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
   </AIStrategicStateDefinition>
 
   <!--If opponent is nearly matched in forces, take out his production capacity-->
@@ -28,19 +23,13 @@
 		id="GDIProductionHalt"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
-      <PathToTargetHeuristic PathExists="true"/>
-      <ProductionHaltHeuristic
-        BalanceOfPowerWeight="0.75"
-        PenetrabilityWeight="0.25">
-        <PenetrabilityHeuristic/>
-        <BalanceOfPowerHeuristic/>
-      </ProductionHaltHeuristic>
+		<TimerHeuristic StartTime="60s" EndTime="-1s" />
+		<PathToTargetHeuristic PathExists="true"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="ProductionKillHeuristic" TargetType="PrimaryTarget"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-      <TeamTemplate MinUnits="3" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+    <Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
+      <TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
-    <UnitModifierByName UnitName="GDIPredator" UnitPreferenceOffensiveModifier="125" UnitPreferenceDefensiveModifier="100%"/>
   </AIStrategicStateDefinition>
 
   <!--If opponent is near power threshold, take his power offline-->
@@ -48,15 +37,28 @@
 		id="GDIPowerCut"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
-      <PathToTargetHeuristic PathExists="true"/>
-      <OpponentPowerThresholdHeuristic/>
+		<TimerHeuristic StartTime="60s" EndTime="-1s" />
+		<PathToTargetHeuristic PathExists="true"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="PowerKillHeuristic" TargetType="PrimaryTarget"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-      <TeamTemplate MinUnits="3" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+    <Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
+      <TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
-    <!--No Unit Preferences-->
+	  <UnitModifierByName UnitName="GDIPredator" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="250%"/>
+	  <UnitModifierByName UnitName="GDIPitbull" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="250%"/>
   </AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		id="GDIGuerillaOverwhelm"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="FocusedTarget"/>
+		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
+			<TeamTemplate MinUnits="20" MaxUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
 
   <!--If opponent is turtling, siege his base with many "mini" siege groups-->
   <AIStrategicStateDefinition
@@ -81,12 +83,12 @@
 		id="GDIEngineer"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
-      <PathToTargetHeuristic PathExists="true"/>
-      <ConstantHeuristic Weight="1.0"/>
+		<TimerHeuristic StartTime="60s" EndTime="-1s"/>
+		<PathToTargetHeuristic PathExists="true"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Engineer">
-      <TeamTemplate MinUnits="2" MaxUnits="8" IncludeKindOf="" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+      <TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
         <CreateUnits UnitName="GDIEngineer"/>
       </TeamTemplate>
     </Tactic>
@@ -102,7 +104,7 @@
     <TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
     <TargetHeuristic TargetHeuristic="SafestToAirPowerPlantHeuristic" TargetType="AssaultAirstrike"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
-      <TeamTemplate MinUnits="1" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="8" MaxUnits="8" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
 
@@ -113,35 +115,66 @@
       <LateGameHeuristic/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="BombingAirstrike"/>
-    <Tactic Tactic="SimpleAttack" TargetType="BombingAirstrike">
-      <TeamTemplate MinUnits="1" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
-        <CreateUnits UnitName="GDIFireHawk"/>
+    <Tactic Tactic="FlankAttack" TargetType="BombingAirstrike">
+      <TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+        <CreateUnits MinUnits="4" MaxUnits="4" UnitName="GDIFireHawk"/>
       </TeamTemplate>
     </Tactic>
   </AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+    id="GDIGuerillaSpotters"
+    UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+			<LateGameHeuristic/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="SecondaryTarget"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="SecondaryTarget">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="1" MaxUnits="1" UnitName="GDISniperSquad"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
 
   <!--Constantly pester opponent with small attacks on random targets -->
   <AIStrategicStateDefinition
 		id="GDIDiversion"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
-      <PathToTargetHeuristic PathExists="true"/>
-      <ConstantHeuristic Weight="1.0"/>
+		<TimerHeuristic StartTime="60s" EndTime="-1s" />
+		<PathToTargetHeuristic PathExists="true"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Diversion"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Diversion">
-      <TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
+	  <UnitModifierByName UnitName="GDIPredator" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="250%"/>
+	  <UnitModifierByName UnitName="GDIAPC" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="250%"/>
   </AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="GDIGuerillaGarrisonEpicUnit"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="900.0" />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>
+		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">
+			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+		<UnitModifierByName UnitName="GDIZoneTrooperSquad" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="GDIMissileSoldierSquad" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+	</AIStrategicStateDefinition>
 
   <AIBudgetStateDefinition
     id="GDIGuerillaTechByTimeBudget">
     <Heuristic>
       <ConstantHeuristic Weight="0.8"/>
       <OpeningMoveHeuristic Complete="true"/>
-      <TimerHeuristic StartTime="300s" EndTime="-1s"/>
-      <IntervalHeuristic IntervalTime="190s" ActiveTime="20s"/>
-      <IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
+      <TimerHeuristic StartTime="90s" EndTime="-1s"/>
+      <IntervalHeuristic IntervalTime="60s" ActiveTime="20s"/>
+      <IntervalHeuristic IntervalTime="5s" ActiveTime="5s"/>
     </Heuristic>
     <Budget>
       <AccountShare Account="INVESTMENT" Percent="0%"/>
@@ -159,25 +192,6 @@
       <ConstantHeuristic Weight="0.8"/>
       <OpeningMoveHeuristic Complete="true"/>
       <IntervalHeuristic IntervalTime="670s" ActiveTime="20s"/>
-      <IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
-    </Heuristic>
-    <Budget>
-      <AccountShare Account="INVESTMENT" Percent="0%"/>
-      <AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
-      <AccountShare Account="PRODUCTION" Percent="0%"/>
-      <AccountShare Account="DEFENSE" Percent="0%"/>
-      <AccountShare Account="TECHNOLOGY" Percent="90%"/>
-      <AccountShare Account="SLUSH_FUND" Percent="10%"/>
-    </Budget>
-  </AIBudgetStateDefinition>
-
-  <AIBudgetStateDefinition
-    id="GDIGuerillaTechByTimeBudget_MEDIUM">
-    <Heuristic>
-      <ConstantHeuristic Weight="0.8"/>
-      <OpeningMoveHeuristic Complete="true"/>
-      <TimerHeuristic StartTime="300s" EndTime="-1s"/>
-      <IntervalHeuristic IntervalTime="280s" ActiveTime="20s"/>
       <IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
     </Heuristic>
     <Budget>
