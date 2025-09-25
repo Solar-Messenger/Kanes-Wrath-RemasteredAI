@@ -101,7 +101,7 @@
 		<States State="MOKOverlordGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
 		<States State="MarkedOfKaneOverlordExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MarkedOfKaneSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MarkedOfKaneSuperweapon" Difficulty="HARD BRUTAL"/>
 		<States State="MarkedOfKaneBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>

@@ -122,10 +122,10 @@
 		<States State="Garrison_EASY" Difficulty="EASY"/>
 		<States State="MarkedOfKaneAntiGarrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MarkedOfKaneSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MarkedOfKaneCommando" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MarkedOfKaneSuperweapon" Difficulty="HARD BRUTAL"/>
+		<States State="MarkedOfKaneCommando" Difficulty="HARD BRUTAL"/>
 		<States State="MarkedOfKaneExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="ExpansionEscort" Difficulty="HARD BRUTAL"/>
 		<States State="MarkedOfKaneBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>

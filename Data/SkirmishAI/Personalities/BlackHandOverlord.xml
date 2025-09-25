@@ -96,7 +96,7 @@
 		<States State="BlackHandOverlordGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
 		<States State="BlackHandOverlordExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="BlackHandSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandSuperweapon" Difficulty="HARD BRUTAL"/>
 		<States State="BlackHandBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>

@@ -104,7 +104,7 @@
 		<States State="NODOverlordGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
 		<States State="NODOverlordExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODSuperweapon" Difficulty="HARD BRUTAL"/>
 		<States State="NODBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>

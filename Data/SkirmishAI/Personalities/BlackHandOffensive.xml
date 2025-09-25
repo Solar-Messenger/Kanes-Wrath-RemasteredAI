@@ -124,7 +124,7 @@
 		<States State="BlackHandSuperweapon" Difficulty="HARD BRUTAL"/>
 		<States State="BlackHandCommando" Difficulty="BRUTAL"/>
 		<States State="BlackHandExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="ExpansionEscort" Difficulty="HARD BRUTAL"/>
 		<States State="BlackHandBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>

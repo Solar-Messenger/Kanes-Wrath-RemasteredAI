@@ -124,10 +124,10 @@
 		<States State="Garrison_EASY" Difficulty="EASY"/>
 		<States State="NODAntiGarrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODCommando" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODSuperweapon" Difficulty="HARD BRUTAL"/>
+		<States State="NODCommando" Difficulty="HARD BRUTAL"/>
 		<States State="NODExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="ExpansionEscort" Difficulty="HARD BRUTAL"/>
 		<States State="NODBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
