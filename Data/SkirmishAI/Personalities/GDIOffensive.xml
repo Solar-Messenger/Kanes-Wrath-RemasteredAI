@@ -150,5 +150,13 @@
 		<BudgetStates State="TechByNeedSiegeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechFinishBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
+		<UnitOverride UnitName="GDIHammerhead" Percentage="50%" Difficulty="HARD BRUTAL"/>
+
+		<UnitOverride UnitName="GDIPredator" Percentage="30%" Difficulty="HARD BRUTAL"/>
+		<UnitOverride UnitName="GDIAPC" Percentage="30%" Difficulty="HARD BRUTAL"/>
+		<UnitOverride UnitName="GDISonicTank" Percentage="10%" Difficulty="HARD BRUTAL"/>
+		<UnitOverride UnitName="GDIMammoth" Percentage="10%" Difficulty="HARD BRUTAL"/>
+		<UnitOverride UnitName="GDIMARV" Percentage="15%" Difficulty="HARD BRUTAL"/>
+
 	</AIPersonalityDefinition>
 </AssetDeclaration>

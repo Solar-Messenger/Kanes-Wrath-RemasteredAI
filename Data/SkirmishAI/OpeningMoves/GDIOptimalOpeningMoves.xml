@@ -44,6 +44,7 @@
 		<Order Build="GDIAPC"/>
 		<Order Build="GDIAPC"/>
 		<Order Build="GDIAPC"/>
+		<Order Build="GDIHarvester"/>
 		<Order Time="90s" Build="GDIPowerPlant"/>
 		<Order Time="95s" Build="GDIPowerPlant"/>
 		<Order Time="100s" Build="GDICrane"/>
