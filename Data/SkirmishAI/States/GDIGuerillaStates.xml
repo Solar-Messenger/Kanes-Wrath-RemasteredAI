@@ -13,9 +13,8 @@
     </Heuristic>
     <TargetHeuristic TargetHeuristic="EconomyKillHeuristic" TargetType="PrimaryTarget"/>
     <Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
-      <TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="8" MaxUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="true"/>
     </Tactic>
-    <UnitModifierByName UnitName="GDIPitbull" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
   </AIStrategicStateDefinition>
 
   <!--If opponent is nearly matched in forces, take out his production capacity-->
@@ -28,7 +27,7 @@
     </Heuristic>
     <TargetHeuristic TargetHeuristic="ProductionKillHeuristic" TargetType="PrimaryTarget"/>
     <Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
-      <TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="7" MaxUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="true"/>
     </Tactic>
   </AIStrategicStateDefinition>
 
@@ -42,10 +41,8 @@
     </Heuristic>
     <TargetHeuristic TargetHeuristic="PowerKillHeuristic" TargetType="PrimaryTarget"/>
     <Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
-      <TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="5" MaxUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="true"/>
     </Tactic>
-	  <UnitModifierByName UnitName="GDIPredator" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="250%"/>
-	  <UnitModifierByName UnitName="GDIPitbull" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="250%"/>
   </AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
@@ -56,7 +53,7 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="FocusedTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
-			<TeamTemplate MinUnits="20" MaxUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -104,7 +101,7 @@
     <TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
     <TargetHeuristic TargetHeuristic="SafestToAirPowerPlantHeuristic" TargetType="AssaultAirstrike"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
-      <TeamTemplate MinUnits="8" MaxUnits="8" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="8" MaxUnits="8" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="RELOAD_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
 
@@ -147,10 +144,8 @@
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Diversion"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Diversion">
-      <TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="7" MaxUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="true"/>
     </Tactic>
-	  <UnitModifierByName UnitName="GDIPredator" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="250%"/>
-	  <UnitModifierByName UnitName="GDIAPC" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="250%"/>
   </AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition

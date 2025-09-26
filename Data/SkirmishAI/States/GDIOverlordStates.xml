@@ -16,12 +16,8 @@
     </Heuristic>
     <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="PrimaryTarget"/>
     <Tactic Tactic="SimpleAttack" TargetType="PrimaryTarget">
-      <TeamTemplate MinUnits="12" MaxUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="10" MaxUnits="15" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="true"/>
     </Tactic>
-    <UnitModifierByName UnitName="GDIPredator" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
-    <UnitModifierByName UnitName="GDIAPC" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
-    <UnitModifierByName UnitName="GDIMissileSoldierSquad" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/>
-    <UnitModifierByName UnitName="GDIOrca" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
   </AIStrategicStateDefinition>
 
   <!--Direct assault with medium team sizes-->
@@ -37,13 +33,8 @@
     </Heuristic>
     <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="PrimaryTarget"/>
     <Tactic Tactic="SimpleAttack" TargetType="PrimaryTarget">
-      <TeamTemplate MinUnits="20" MaxUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="15" MaxUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="true"/>
     </Tactic>
-    <UnitModifierByName UnitName="GDIPredator" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
-	<UnitModifierByName UnitName="GDISonicTank" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
-	<UnitModifierByName UnitName="GDIAPC" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
-	<UnitModifierByName UnitName="GDIMissileSoldierSquad" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
-    <UnitModifierByName UnitName="GDIOrca" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
   </AIStrategicStateDefinition>
 
   <!--Direct assault with large team sizes-->
@@ -58,12 +49,8 @@
     </Heuristic>
     <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="PrimaryTarget"/>
     <Tactic Tactic="SimpleAttack" TargetType="PrimaryTarget">
-      <TeamTemplate MinUnits="28" MaxUnits="28" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="20" MaxUnits="32" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="true"/>
     </Tactic>
-    <UnitModifierByName UnitName="GDIMammoth" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
-	<UnitModifierByName UnitName="GDIMARV" UnitPreferenceOffensiveModifier="500%" UnitPreferenceDefensiveModifier="500%"/>
-    <UnitModifierByName UnitName="GDIJuggernaught" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="250%"/>
-    <UnitModifierByName UnitName="GDIOrca" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
   </AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
