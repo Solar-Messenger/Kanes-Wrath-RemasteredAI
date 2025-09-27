@@ -97,7 +97,6 @@
 		<States State="GDIOpeningAntiRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="GDIOptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GDIOptimalBoxIn" Difficulty="HARD BRUTAL"/>
 		<States State="GDIOptimalGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIOptimalAirEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="GDIOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>

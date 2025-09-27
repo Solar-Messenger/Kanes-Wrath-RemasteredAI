@@ -5,27 +5,17 @@
 
 	<AIStrategicStateDefinition
 		  id="GDIOptimalDirectAttack"
-		  UnitUpgradeMultiplier="0.0">
+		  UnitUpgradeMultiplier="2.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="181s" EndTime="-1s"/>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="SimpleAttack" TargetType="PrimaryTarget">
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
 			<TeamTemplate MinUnits="12" MaxUnits="15" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="true"/>
 		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-	  id="GDIOptimalBoxIn"
-	  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<TimerHeuristic StartTime="181s" EndTime="-1s"/>
-			<PathToTargetHeuristic PathExists="true"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="7" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="true"/>
+			<TeamTemplate MinUnits="5" MaxUnits="7" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="true"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -45,7 +35,7 @@
 
 	<AIStrategicStateDefinition
 		  id="GDIOptimalAirEconomyAttack"
-		  UnitUpgradeMultiplier="0.0">
+		  UnitUpgradeMultiplier="2.0">
 		<Heuristic>
 			<TimerHeuristic StartTime ="180s" EndTime="-1s" />
 		</Heuristic>
@@ -59,7 +49,7 @@
 
   <AIStrategicStateDefinition
 		id="GDIOptimalOverwhelmAttack"
-		UnitUpgradeMultiplier="0.0">
+		UnitUpgradeMultiplier="5.0">
     <Heuristic>
       <PathToTargetHeuristic PathExists="true"/>
     </Heuristic>
@@ -129,7 +119,7 @@
 
   <AIStrategicStateDefinition
 		id="GDIOptimalBombingRuns"
-		UnitUpgradeMultiplier="0.0">
+		UnitUpgradeMultiplier="2.0">
     <Heuristic>
 	  <TimerHeuristic StartTime="480s" EndTime="-1s"/>
       <LateGameHeuristic/>
@@ -177,7 +167,7 @@
       <ConstantHeuristic Weight="0.8"/>
       <OpeningMoveHeuristic Complete="true"/>
       <TimerHeuristic StartTime="90s" EndTime="-1s"/>
-      <IntervalHeuristic IntervalTime="30s" ActiveTime="20s"/>
+      <IntervalHeuristic IntervalTime="60s" ActiveTime="20s"/>
       <IntervalHeuristic IntervalTime="5s" ActiveTime="5s"/>
     </Heuristic>
     <Budget>
