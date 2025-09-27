@@ -77,7 +77,7 @@
     </Tactic>
   </AIStrategicStateDefinition>
 
-  <AIStrategicStateDefinition
+	<!-- <AIStrategicStateDefinition
 		id="GDISuperweaponDefense"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
@@ -87,7 +87,7 @@
     <Tactic Tactic="StaticDefense" TargetType="Guard">
       <TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK VEHICLE" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
-  </AIStrategicStateDefinition>
+  </AIStrategicStateDefinition> -->
 
   <AIStrategicStateDefinition
 		id="3_1_GDICounterattack"
@@ -172,9 +172,10 @@
     <Tactic Tactic="SimpleAttack" TargetType="ExtraTarget">
       <TeamTemplate MinUnits="2" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
-  </AIStrategicStateDefinition> 
-  
-  <AIBudgetStateDefinition
+  </AIStrategicStateDefinition>
+
+	<!--
+	<AIBudgetStateDefinition
     id="GDIDefensiveTechByTimeBudget">
     <Heuristic>
       <ConstantHeuristic Weight="0.8"/>
@@ -226,7 +227,7 @@
       <AccountShare Account="TECHNOLOGY" Percent="90%"/>
       <AccountShare Account="SLUSH_FUND" Percent="10%"/>
     </Budget>
-  </AIBudgetStateDefinition>
+  </AIBudgetStateDefinition> -->
 
   <AIBudgetStateDefinition
 		id="CM_1_3_NodeAssault_BudgetState">
