@@ -89,7 +89,7 @@
 
   <AIStrategicStateDefinition
     id="GDIFinalAttack"
-    UnitUpgradeMultiplier="0.0">
+    UnitUpgradeMultiplier="5.0">
     <Heuristic>
       <PathToTargetHeuristic PathExists="true"/>
     </Heuristic>

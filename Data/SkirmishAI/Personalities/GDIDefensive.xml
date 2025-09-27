@@ -97,6 +97,10 @@
 
 		<OpeningMove Name="GDIDefensiveStandard" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
+		<States State="GDIOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="GDIOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="GDIOpeningAntiRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+
 		<States State="GDIStaticDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIResourceDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIHarvesterEscort" Difficulty="EASY MEDIUM HARD BRUTAL"/>
