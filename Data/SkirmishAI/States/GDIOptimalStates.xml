@@ -7,7 +7,7 @@
 		  id="GDIOptimalDirectAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="181s" EndTime="600s"/>
+			<TimerHeuristic StartTime="241s" EndTime="600s"/>
 			<FocusedThresholdHeuristic />
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
@@ -17,7 +17,7 @@
 			<TeamTemplate MinUnits="15" MaxUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="7" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="10" MaxUnits="15" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -25,7 +25,8 @@
 		id="GDIOptimalGroundEconomyAttack"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
-		<TimerHeuristic StartTime ="120s" EndTime="300s" />
+		<TimerHeuristic StartTime ="120s" EndTime="240s" />
+		<FocusedThresholdHeuristic />
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
     <Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
@@ -53,7 +54,6 @@
 		  id="GDIOptimalDefense"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
 			<SpreadThresholdHeuristic />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestFriendlyTechHeuristic" TargetType="Guard"/>
@@ -68,9 +68,9 @@
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
       <PathToTargetHeuristic PathExists="true"/>
-	  <FocusedThresholdHeuristic />
+	  <TimerHeuristic StartTime="601s" EndTime="-1s"/>
     </Heuristic>
-	  <TargetHeuristic TargetHeuristic="ClosestOffensiveUnitHeuristic" TargetType="ExtraTarget"/>
+	<TargetHeuristic TargetHeuristic="ClosestOffensiveUnitHeuristic" TargetType="ExtraTarget"/>
     <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="ExtraTarget"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="ExtraTarget">
       <TeamTemplate MinUnits="20" MaxUnits="40" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="true"/>

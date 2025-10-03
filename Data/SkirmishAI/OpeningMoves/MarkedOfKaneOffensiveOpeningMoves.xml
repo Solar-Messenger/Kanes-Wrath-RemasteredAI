@@ -23,14 +23,6 @@
 		<Order Build="MarkedOfKaneScorpionBuggy" />
 		<Order Time="60s" Build="MarkedOfKaneRefinery" />
 		<Order Time="90s" Build="MarkedOfKaneHarvester" />
-		<Order Build="MarkedOfKaneAttackBike" />
-		<Order Build="MarkedOfKaneAttackBike" />
-		<Order Build="MarkedOfKaneAttackBike" />
-		<Order Build="MarkedOfKaneAttackBike" />
-		<Order Build="MarkedOfKaneAttackBike" />
-		<Order Build="MarkedOfKaneAttackBike" />
-		<Order Build="MarkedOfKaneAttackBike" />
-		<Order Build="MarkedOfKaneAttackBike" />
 		<Order Time="90s" Build="MarkedOfKanePowerPlant" />
 		<Order Time="95s" Build="MarkedOfKanePowerPlant" />
 		<Order Time="100s" Build="MarkedOfKaneDropZone" />

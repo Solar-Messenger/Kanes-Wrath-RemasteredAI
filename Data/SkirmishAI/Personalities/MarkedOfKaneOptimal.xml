@@ -18,7 +18,7 @@
 		  DesiredExcessPowerBuffer="20"
 		  BaseCompactness="0.75"
 	  DefaultThreatFindRadius="0"
-	  UnitBuilderCostEffectivenessWeight="1.0"
+	  UnitBuilderCostEffectivenessWeight="1.5"
 	  UnitBuilderMoneyVersusTimePreference="0.5"
 	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
@@ -32,7 +32,7 @@
 	  StructureSaveChanceEasy="0.0"
 	  StructureSaveChanceMedium="0.25"
 	  StructureSaveChanceHard="0.5"
-		  MinHarvesters="4"
+		  MinHarvesters="5"
 		>
 
 		<Side>MarkedOfKane</Side>
@@ -51,11 +51,9 @@
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
@@ -82,9 +80,13 @@
 		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Superweapon" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Expansion" MaxTeamsPerTarget="1" UpdateTime="5s"/>
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Bridge" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
@@ -101,13 +103,12 @@
 		<States State="MarkedOfKaneOpeningAntiRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="MOKOptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MOKOptimalBoxIn" Difficulty="HARD BRUTAL"/>
 		<States State="MOKOptimalEarlyMidBikeEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="MOKOptimalLateStealthTankEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="MOKOptimalDefense" Difficulty="HARD BRUTAL"/>
 		<States State="MOKOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKOptimalSiege" Difficulty="HARD BRUTAL"/>
 
-		<States State="MOKOptimalAirHarassment" Difficulty="BRUTAL"/>
 		<States State="MOKOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKOptimalBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneOptimalEngineer" Difficulty="HARD BRUTAL"/>
@@ -142,14 +143,14 @@
 
 		<BudgetStates State="FullInvestmentBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="FullInvestmentBudget_EASY_WINNING" Difficulty="EASY"/>
-		<BudgetStates State="InvestmentFinishBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<BudgetStates State="MarkedOfKaneOptimalTechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="MarkedOfKaneOptimalTechByTimeBudget_EASY" Difficulty="EASY"/>
 		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechByNeedAntiGarrisonBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechByNeedSiegeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechFinishBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+
+		<UnitOverride UnitName="MarkedOfKaneImprovedCyborgInfantrySquad" Percentage="20%"/>
+
+		<UnitOverride UnitName="MarkedOfKaneMetaUnit" Percentage="50%"/>
 
 	</AIPersonalityDefinition>
 </AssetDeclaration>

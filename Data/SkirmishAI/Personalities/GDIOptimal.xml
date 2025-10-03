@@ -48,6 +48,8 @@
 
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
@@ -103,6 +105,7 @@
 		<States State="GDIOptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIOptimalGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIOptimalAirEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="GDIOptimalDefense" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIOptimalSiege" Difficulty="HARD BRUTAL"/>
 		<States State="GDIOptimalSpotters" Difficulty="HARD BRUTAL"/>
@@ -147,7 +150,7 @@
 		<BudgetStates State="GDIOptimalTechByTimeBudget_EASY" Difficulty="EASY"/>
 		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<UnitOverride UnitName="GDIMARV" Percentage="50%"/>
+		<UnitOverride UnitName="GDIMARV" Percentage="50%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 	</AIPersonalityDefinition>
 </AssetDeclaration>

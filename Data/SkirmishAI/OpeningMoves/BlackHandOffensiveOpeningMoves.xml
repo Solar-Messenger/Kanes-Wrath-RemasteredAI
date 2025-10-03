@@ -23,14 +23,6 @@
 		<Order Build="BlackHandScorpionBuggy" />
 		<Order Time="60s" Build="BlackHandRefinery" />
 		<Order Time="90s" Build="BlackHandHarvester" />
-		<Order Build="BlackHandAttackBike" />
-		<Order Build="BlackHandAttackBike" />
-		<Order Build="BlackHandAttackBike" />
-		<Order Build="BlackHandAttackBike" />
-		<Order Build="BlackHandAttackBike" />
-		<Order Build="BlackHandAttackBike" />
-		<Order Build="BlackHandAttackBike" />
-		<Order Build="BlackHandAttackBike" />
 		<Order Time="90s" Build="BlackHandPowerPlant" />
 		<Order Time="95s" Build="BlackHandPowerPlant" />
 		<Order Time="100s" Build="BlackHandDropZone" />

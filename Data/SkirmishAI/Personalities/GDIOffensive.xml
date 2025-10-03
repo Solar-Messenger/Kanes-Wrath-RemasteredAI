@@ -18,7 +18,7 @@
 		  DesiredExcessPowerBuffer="20"
 		  BaseCompactness="0.85"
 	  DefaultThreatFindRadius="0"
-	  UnitBuilderCostEffectivenessWeight="1.0"
+	  UnitBuilderCostEffectivenessWeight="1.5"
 	  UnitBuilderMoneyVersusTimePreference="0.5"
 	  UnitBuilderOverallOffensivePreference="110%"
 	  UnitBuilderOverallDefensivePreference="100%"
@@ -40,7 +40,7 @@
 		<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />
 
 		<UnitBuilderUnitChoiceStrategy Shape="MIDDLE" StandardDeviation="0.25" Difficulty="EASY MEDIUM" />
-		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="HARD BRUTAL" />
+		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.25" Difficulty="HARD BRUTAL" />
 
 		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
@@ -55,7 +55,6 @@
 		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
@@ -99,7 +98,6 @@
 		<States State="GDIOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIOpeningAntiRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="GDIOffensiveDirectOpening" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIOffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIOffensiveGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIOffensiveAirEconomyAttack" Difficulty="HARD BRUTAL"/>
@@ -107,7 +105,6 @@
 		<States State="GDIOffensiveSiege" Difficulty="HARD BRUTAL"/>
 		<States State="GDIOffensiveSpotters" Difficulty="HARD BRUTAL"/>
 
-		<States State="GDIOffensiveAirHarassment" Difficulty="BRUTAL"/>
 		<States State="GDIOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIOffensiveBombingRuns" Difficulty="HARD BRUTAL"/>
 		<States State="GDIOffensiveEngineer" Difficulty="HARD BRUTAL"/>
@@ -141,22 +138,12 @@
 
 		<BudgetStates State="FullInvestmentBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="FullInvestmentBudget_EASY_WINNING" Difficulty="EASY"/>
-		<BudgetStates State="InvestmentFinishBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<BudgetStates State="GDIOffensiveTechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="GDIOffensiveTechByTimeBudget_EASY" Difficulty="EASY"/>
 		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechByNeedAntiGarrisonBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechByNeedSiegeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechFinishBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<UnitOverride UnitName="GDIHammerhead" Percentage="50%" Difficulty="HARD BRUTAL"/>
-
-		<UnitOverride UnitName="GDIPredator" Percentage="30%" Difficulty="HARD BRUTAL"/>
-		<UnitOverride UnitName="GDIAPC" Percentage="30%" Difficulty="HARD BRUTAL"/>
-		<UnitOverride UnitName="GDISonicTank" Percentage="10%" Difficulty="HARD BRUTAL"/>
-		<UnitOverride UnitName="GDIMammoth" Percentage="10%" Difficulty="HARD BRUTAL"/>
-		<UnitOverride UnitName="GDIMARV" Percentage="15%" Difficulty="HARD BRUTAL"/>
+		<UnitOverride UnitName="GDIMARV" Percentage="50%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 	</AIPersonalityDefinition>
 </AssetDeclaration>

@@ -18,7 +18,7 @@
 		  DesiredExcessPowerBuffer="20"
 		  BaseCompactness="0.75"
 	  DefaultThreatFindRadius="0"
-	  UnitBuilderCostEffectivenessWeight="1.0"
+	  UnitBuilderCostEffectivenessWeight="1.5"
 	  UnitBuilderMoneyVersusTimePreference="0.5"
 	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
@@ -32,7 +32,7 @@
 	  StructureSaveChanceEasy="0.0"
 	  StructureSaveChanceMedium="0.25"
 	  StructureSaveChanceHard="0.5"
-		  MinHarvesters="4"
+		  MinHarvesters="5"
 		>
 
 		<Side>NOD</Side>
@@ -51,11 +51,10 @@
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
@@ -81,9 +80,13 @@
 		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Superweapon" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Expansion" MaxTeamsPerTarget="1" UpdateTime="5s"/>
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Bridge" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
@@ -100,16 +103,15 @@
 		<States State="NODOpeningAntiRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="NODOptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODOptimalBoxIn" Difficulty="HARD BRUTAL"/>
 		<States State="NODOptimalEarlyMidBikeEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODOptimalLateStealthTankEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="NODOptimalFlameTankAttack" Difficulty="HARD BRUTAL"/>
+		<States State="NODOptimalDefense" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODOptimalSiege" Difficulty="HARD BRUTAL"/>
 
-		<States State="NODOptimalAirHarassment" Difficulty="BRUTAL"/>
 		<States State="NODOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODOptimalBombingRuns" Difficulty="HARD BRUTAL"/>
-		<States State="NODOptimalFlameTankAttack" Difficulty="HARD BRUTAL"/>
 		<States State="NODOptimalEngineer" Difficulty="HARD BRUTAL"/>
 
 		<States State="NODDefend" Difficulty="EASY MEDIUM HARD BRUTAL"/>
@@ -142,17 +144,12 @@
 
 		<BudgetStates State="FullInvestmentBudget" Difficulty="HARD BRUTAL"/>
 		<BudgetStates State="FullInvestmentBudget_EASY_WINNING" Difficulty="EASY"/>
-		<BudgetStates State="InvestmentFinishBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<BudgetStates State="NODOptimalTechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="NODOptimalTechByTimeBudget_EASY" Difficulty="EASY"/>
 		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechByNeedAntiGarrisonBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechByNeedSiegeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechFinishBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<UnitOverride UnitName="NODRaiderTank" Percentage="40%"/>
-		<UnitOverride UnitName="NODScorpionBuggy" Percentage="20%"/>
-		<UnitOverride UnitName="NODMetaUnit" Percentage="30%"/>
+		<UnitOverride UnitName="NODMetaUnit" Percentage="50%" Difficulty="MEDIUM HARD BRUTAL"/>
+
 	</AIPersonalityDefinition>
 </AssetDeclaration>

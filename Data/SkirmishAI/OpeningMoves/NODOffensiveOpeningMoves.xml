@@ -23,14 +23,6 @@
 		<Order Build="NODScorpionBuggy" />
 		<Order Time="60s" Build="NODRefinery" />
 		<Order Time="90s" Build="NODHarvester" />
-		<Order Build="NODAttackBike" />
-		<Order Build="NODAttackBike" />
-		<Order Build="NODAttackBike" />
-		<Order Build="NODAttackBike" />
-		<Order Build="NODAttackBike" />
-		<Order Build="NODAttackBike" />
-		<Order Build="NODAttackBike" />
-		<Order Build="NODAttackBike" />
 		<Order Time="90s" Build="NODPowerPlant" />
 		<Order Time="95s" Build="NODPowerPlant" />
 		<Order Time="100s" Build="NODDropZone" />
