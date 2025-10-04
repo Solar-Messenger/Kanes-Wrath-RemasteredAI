@@ -65,7 +65,6 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="300s" EndTime="-1s" />
 			<PathToTargetHeuristic PathExists="true"/>
-			<LateGameHeuristic/>
 			<SiegeThresholdHeuristic SiegeMode="True" Threshold="0.5"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
@@ -94,7 +93,6 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="420s" EndTime="-1s" />
-			<LateGameHeuristic/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="BombingAirstrike"/>
 		<Tactic Tactic="FlankAttack" TargetType="BombingAirstrike">

@@ -73,7 +73,7 @@
 	<TargetHeuristic TargetHeuristic="ClosestOffensiveUnitHeuristic" TargetType="ExtraTarget"/>
     <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="ExtraTarget"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="ExtraTarget">
-      <TeamTemplate MinUnits="20" MaxUnits="40" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="true"/>
+      <TeamTemplate MinUnits="30" MaxUnits="40" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
 
@@ -84,14 +84,13 @@
 	  <TimerHeuristic StartTime="480s" EndTime="-1s"/>
       <PathToTargetHeuristic PathExists="true"/>
 	  <SiegeThresholdHeuristic SiegeMode="true" Threshold="0.5"/>
-      <LateGameHeuristic/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
     <Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
       <TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
         <CreateUnits MinUnits="3" MaxUnits="3" UnitName="GDIJuggernaught"/>
       </TeamTemplate>
-		<TeamTemplate MinUnits="6" MaxUnits="10" IncludeKindOf="CAN_ATTACK INFANTRY" ExcludeKindOf="RELOAD_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="true"/>
+		<TeamTemplate MinUnits="6" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
 
@@ -99,9 +98,9 @@
     id="GDIOptimalSpotters"
     UnitUpgradeMultiplier="0.0">
     <Heuristic>
+	  <TimerHeuristic StartTime="480s" EndTime="-1s"/>
       <PathToTargetHeuristic PathExists="true"/>
 	  <SiegeThresholdHeuristic SiegeMode="true" Threshold="0.5"/>
-      <LateGameHeuristic/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="SecondaryTarget"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="SecondaryTarget">
@@ -129,7 +128,6 @@
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
 	  <TimerHeuristic StartTime="480s" EndTime="-1s"/>
-      <LateGameHeuristic/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="BombingAirstrike"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
