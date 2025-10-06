@@ -93,7 +93,7 @@
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
       <PathToTargetHeuristic PathExists="true"/>
-      <IntervalHeuristic IntervalTime="180s" ActiveTime="30s"/>
+	  <ConstantHeuristic Weight="0.3"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Engineer">

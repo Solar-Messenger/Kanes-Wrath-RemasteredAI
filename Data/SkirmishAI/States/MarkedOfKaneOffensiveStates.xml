@@ -7,13 +7,14 @@
 	  id="MOKOffensiveDirectAttack"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="181s" EndTime="-1s"/>
+			<ConstantHeuristic Weight="0.8"/>
+			<FocusedThresholdHeuristic />
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestOffensiveUnitHeuristic" TargetType="PrimaryTarget"/>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="15" MaxUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="true"/>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
+		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
+			<TeamTemplate MinUnits="10" MaxUnits="15" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="true"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -21,13 +22,13 @@
 		  id="MOKOffensiveEarlyMidBikeEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime ="60s" EndTime="180s" />
+			<TimerHeuristic StartTime="60s" EndTime="300s" />
 			<FocusedThresholdHeuristic />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
-			<TeamTemplate MinUnits="8" MaxUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="8" MaxUnits="8" UnitName="MarkedOfKaneAttackBike"/>
+			<TeamTemplate MinUnits="7" MaxUnits="7" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="7" MaxUnits="7" UnitName="MarkedOfKaneAttackBike"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -36,12 +37,12 @@
 		  id="MOKOffensiveLateStealthTankEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic Starttime="421s" EndTime="-1s" />
+			<TimerHeuristic Starttime="301s" EndTime="-1s" />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
-			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="1" MaxUnits="1" UnitName="MarkedOfKaneStealthTank"/>
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="MarkedOfKaneStealthTank"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -52,10 +53,9 @@
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestOffensiveUnitHeuristic" TargetType="ExtraTarget"/>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="ExtraTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="ExtraTarget">
-			<TeamTemplate MinUnits="25" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="25" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -63,14 +63,13 @@
 		  id="MOKOffensiveSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="300s" EndTime="-1s" />
 			<PathToTargetHeuristic PathExists="true"/>
-			<SiegeThresholdHeuristic SiegeMode="True" Threshold="0.5"/>
+			<SiegeThresholdHeuristic SiegeMode="True" Threshold="2.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits UnitName="MarkedOfKaneMobileArtillery"/>
+			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="3" MaxUnits="3" UnitName="MarkedOfKaneMobileArtillery"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -79,12 +78,12 @@
 	  id="MOKOffensiveAirHarassmentAntiTurtle"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
+			<ConstantHeuristic Weight="0.6"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
-			<TeamTemplate MinUnits="8" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="5" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -95,9 +94,9 @@
 			<TimerHeuristic StartTime="420s" EndTime="-1s" />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="BombingAirstrike"/>
-		<Tactic Tactic="FlankAttack" TargetType="BombingAirstrike">
-			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="MarkedOfKaneVertigo"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
+			<TeamTemplate MinUnits="2" MaxUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="2" MaxUnits="4" UnitName="MarkedOfKaneVertigo"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -107,7 +106,7 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
-			<IntervalHeuristic IntervalTime="180s" ActiveTime="30s"/>
+			<ConstantHeuristic Weight="0.3"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Engineer">
@@ -121,7 +120,8 @@
 	  id="MOKOffensiveGarrisonEpicUnit"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="2.0" />
+			<TimerHeuristic StartTime="241s" EndTime="-1s"/>
+			<ConstantHeuristic Weight="1.5"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>
 		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">
