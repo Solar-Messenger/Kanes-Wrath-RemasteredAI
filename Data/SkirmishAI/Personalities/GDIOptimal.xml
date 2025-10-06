@@ -11,20 +11,20 @@
 		  ChanceForTargetToExpire="100"
 		  MaxBuildingsToBeDefensiveTarget_Small="0"
 		  MaxBuildingsToBeDefensiveTarget_Med="0"
-		  ChanceForUnitsToUpgrade="100"
+		  ChanceForUnitsToUpgrade="300"
 		  ChanceToUseAllUnitsForDefenseTarget_Small="0"
 		  ChanceToUseAllUnitsForDefenseTarget_Med="0"
 		  ChanceToUseAllUnitsForDefenseTarget_Large="0"
 		  DesiredExcessPowerBuffer="20"
 		  BaseCompactness="0.75"
 	  DefaultThreatFindRadius="0"
-	  UnitBuilderCostEffectivenessWeight="1.5"
-	  UnitBuilderMoneyVersusTimePreference="0.5"
-	  UnitBuilderOverallOffensivePreference="120%"
+	  UnitBuilderCostEffectivenessWeight="1.3"
+	  UnitBuilderMoneyVersusTimePreference="0.25"
+	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
-	  Expansion_TiberiumSearchRadius="750"
-	  Expansion_MaxTiberiumRemaining="28000"
-	  ReactiveDefenseRadius="1500"
+	  Expansion_TiberiumSearchRadius="700"
+	  Expansion_MaxTiberiumRemaining="27000"
+	  ReactiveDefenseRadius="1250"
 	  RepairBuildingsAtDifficulty="MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoPowerAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoIncomeAtDifficulty="EASY MEDIUM HARD BRUTAL"
@@ -32,7 +32,7 @@
 	  StructureSaveChanceEasy="0.0"
 	  StructureSaveChanceMedium="0.25"
 	  StructureSaveChanceHard="0.5"
-	  MinHarvesters="5"
+	  MinHarvesters="4"
 		>
 
 		<Side>GDI</Side>
@@ -42,9 +42,9 @@
 		<UnitBuilderUnitChoiceStrategy Shape="MIDDLE" StandardDeviation="0.25" Difficulty="EASY MEDIUM" />
 		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.25" Difficulty="HARD BRUTAL" />
 
-		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
-		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
-		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
+		<ResourceMultiplierCheat Percentage="200%" Difficulty="MEDIUM"/>
+		<ResourceMultiplierCheat Percentage="250%" Difficulty="HARD"/>
+		<ResourceMultiplierCheat Percentage="300%" Difficulty="BRUTAL"/>
 
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
@@ -59,10 +59,14 @@
 		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Defensive" MaxTeamsPerTarget="1"/>
+
+		<TacticalTarget TacticalAITarget="Targetless" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
@@ -73,6 +77,8 @@
 
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
@@ -80,13 +86,6 @@
 		<TacticalTarget TacticalAITarget="Superweapon" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Expansion" MaxTeamsPerTarget="1" UpdateTime="5s"/>
 		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="Bridge" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Beacon" MaxTeamsPerTarget="1"/>
@@ -98,14 +97,14 @@
 
 		<OpeningMove Name="GDIOptimalHardBrutal" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
+		<States State="SimulationUnitCap" Difficulty="BRUTAL"/>
+
 		<States State="GDIOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GDIOpeningAntiRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="GDIOptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIOptimalGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIOptimalAirEconomyAttack" Difficulty="HARD BRUTAL"/>
-		<States State="GDIOptimalDefense" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIOptimalSiege" Difficulty="HARD BRUTAL"/>
 		<States State="GDIOptimalSpotters" Difficulty="HARD BRUTAL"/>
@@ -119,14 +118,13 @@
 		<States State="GDICommandoDefense" Difficulty="HARD BRUTAL"/>
 
 		<States State="GDIOptimalGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
-		<States State="GDIGarrisonAPC" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="Garrison_EASY" Difficulty="EASY"/>
 		<States State="GDIAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="GDICaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDISuperweapon" Difficulty="HARD BRUTAL"/>
-		<States State="GDICommando" Difficulty="BRUTAL"/>
+		<States State="GDICommando" Difficulty="HARD BRUTAL"/>
 		<States State="GDIExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="HARD BRUTAL"/>
 		<States State="GDIBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
@@ -138,7 +136,7 @@
 		<States State="GDIUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="SpareMoneyBudget" Difficulty="HARD BRUTAL"/>
+		<BudgetStates State="SpareMoneyBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="OptimalEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="OptimalMidGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="OptimalLateGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
@@ -146,11 +144,13 @@
 		<BudgetStates State="FullInvestmentBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="FullInvestmentBudget_EASY_WINNING" Difficulty="EASY"/>
 
-		<BudgetStates State="GDIOptimalTechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="GDIOptimalTechByTimeBudget_EASY" Difficulty="EASY"/>
 		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="DefenseBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="SupportPowerAdvantageBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<UnitOverride UnitName="GDIMARV" Percentage="50%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<UnitOverride UnitName="GDIMARV" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 	</AIPersonalityDefinition>
 </AssetDeclaration>
