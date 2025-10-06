@@ -7,7 +7,7 @@
 		  id="GDIOptimalDirectAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="180s" EndTime="600s"/>
+			<TimerHeuristic StartTime="180s" EndTime="-1s"/>
 			<FocusedThresholdHeuristic />
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
@@ -26,8 +26,8 @@
 		id="GDIOptimalGroundEconomyAttack"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
-		<TimerHeuristic StartTime ="120s" EndTime="600s" />
-		<SiegeThresholdHeuristic SiegeMode="false" Threshold="2.0"/>
+		<TimerHeuristic StartTime ="120s" EndTime="-1s" />
+		<SiegeThresholdHeuristic SiegeMode="false" Threshold="3.0"/>
 		<ConstantHeuristic Weight="0.5"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
@@ -105,7 +105,7 @@
     <TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
     <TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
-      <TeamTemplate MinUnits="5" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="INFANTRY RELOAD_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="5" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
 
@@ -144,13 +144,13 @@
 		  id="GDIOptimalGarrisonEpicUnit"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="301s" EndTime="-1s"/>
+			<TimerHeuristic StartTime="241s" EndTime="-1s"/>
 			<LateGameHeuristic />
-			<ConstantHeuristic Weight="1.5"/>
+			<ConstantHeuristic Weight="1.25"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>
 		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">
-			<TeamTemplate MinUnits="1" MaxUnits="4" IncludeKindOf="INFANTRY CAN_ATTACK" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
+			<TeamTemplate MinUnits="1" MaxUnits="4" IncludeKindOf="INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 

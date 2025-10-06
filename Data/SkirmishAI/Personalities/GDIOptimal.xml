@@ -24,7 +24,7 @@
 	  UnitBuilderOverallDefensivePreference="100%"
 	  Expansion_TiberiumSearchRadius="700"
 	  Expansion_MaxTiberiumRemaining="27000"
-	  ReactiveDefenseRadius="1250"
+	  ReactiveDefenseRadius="1500"
 	  RepairBuildingsAtDifficulty="MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoPowerAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoIncomeAtDifficulty="EASY MEDIUM HARD BRUTAL"
