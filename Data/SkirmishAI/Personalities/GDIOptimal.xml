@@ -130,7 +130,8 @@
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
 
-		<States State="GDIUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<!--
+		<States State="GDIUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>-->
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SpareMoneyBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
