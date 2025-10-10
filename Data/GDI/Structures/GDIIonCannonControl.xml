@@ -911,7 +911,7 @@
 				ReinforceDistance="0"
 				SpellMakesAStructure=""
 				SpecificUnit=""
-				UnitKindOf="STRUCTURE"
+				UnitKindOf="STRUCTURE UNIQUE_UNIT"
 				AllyUnitInclude=""
 				AllyUnitExclude=""
 				EnemyUnitInclude="UNIQUE_UNIT METAUNIT STRUCTURE"
