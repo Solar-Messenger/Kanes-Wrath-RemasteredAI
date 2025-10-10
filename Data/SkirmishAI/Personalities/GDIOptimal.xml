@@ -130,11 +130,9 @@
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
 
-		<!--
-		<States State="GDIUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>-->
+		<!--<States State="GDIUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>-->
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="SpareMoneyBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="OptimalEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="OptimalMidGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="OptimalLateGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
@@ -145,6 +143,7 @@
 		<BudgetStates State="TechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="GDIOptimalTechByTimeBudget_EASY" Difficulty="EASY"/>
 		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="RecoveryBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="DefenseBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerAdvantageBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 

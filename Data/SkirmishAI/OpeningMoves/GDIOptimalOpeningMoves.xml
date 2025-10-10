@@ -48,11 +48,10 @@
 		<Order Time="90s" Build="GDIPowerPlant"/>
 		<Order Time="95s" Build="GDIPowerPlant"/>
 		<Order Time="100s" Build="GDICrane"/>
-		<Order Time="115s" Build="GDIWarfactory"/>
-		<Order Time="115s" Build="GDIWarfactory"/>
-		<Order Time="135s" Build="GDICommandPost"/>
-		<Order Time="135s" Build="GDIPowerPlant"/>
-		<Order Time="140s" Build="GDIAirTower"/>
+		<Order Time="115s" Build="GDICommandPost"/>
+		<Order Time="115s" Build="GDIPowerPlant"/>
+		<Order Time="120s" Build="GDIAirTower"/>
+		<Order Time="130s" Build="GDIWarfactory"/>
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>

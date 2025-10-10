@@ -129,7 +129,7 @@
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
       <PathToTargetHeuristic PathExists="true"/>
-      <ConstantHeuristic Weight="0.15"/>
+      <ConstantHeuristic Weight="0.10"/>
 	  <SiegeThresholdHeuristic SiegeMode="false" Threshold="2.0"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
