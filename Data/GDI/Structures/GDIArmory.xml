@@ -154,7 +154,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="GBTECHCEN_SKN"
+						Name="W3DContainer:GBTECHCEN_SKN"
 						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
@@ -164,7 +164,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="GBTECHCEN_SKN"
+						Name="W3DContainer:GBTECHCEN_SKN"
 						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
@@ -174,7 +174,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="GBTECHCEN_ASN"
+						Name="W3DContainer:GBTECHCEN_ASN"
 						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
@@ -184,7 +184,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="GBTECHCEN_SKN"
+						Name="W3DContainer:GBTECHCEN_SKN"
 						ExtraMesh="False" />
 					<Texture
 						Original="GBTechCen"
@@ -197,7 +197,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="GBTECHCEND2_SN"
+						Name="W3DContainer:GBTECHCEND2_SN"
 						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
@@ -207,7 +207,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="GBTECHCEND3_SN"
+						Name="W3DContainer:GBTECHCEND3_SN"
 						ExtraMesh="False" />
 				</ModelConditionState>
 				<AnimationState
@@ -242,6 +242,7 @@
 					AllowRepeatInRandomPick="False"
 					SimilarRestart="False">
 					<Script>
+						CurDrawableHideSubObject("LIGHT_01")
 						CurDrawableHideSubObject("UG_Rail")
 						CurDrawableHideSubObject("UG_Mortar")
 						CurDrawableHideSubObject("B_MortarRound_1")
@@ -492,7 +493,69 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="GBTECHCENSRF_SKN"
+						Name="W3DContainer:GBTECHCENSRF_SKN"
+						ExtraMesh="False" />
+				</ModelConditionState>
+			</ScriptedModelDraw>
+			<ScriptedModelDraw
+				id="ModuleTag_DrawRailgunT3">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name=""
+						ExtraMesh="False" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name=""
+						ExtraMesh="False" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_7 DYING"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name=""
+						ExtraMesh="False" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_7 REALLYDAMAGED"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name="W3DContainer:UGRAILBUILDINGD"
+						ExtraMesh="False" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_7 DAMAGED"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name="W3DContainer:UGRAILBUILDING"
+						ExtraMesh="False" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="USER_7"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name="W3DContainer:UGRAILBUILDING"
 						ExtraMesh="False" />
 				</ModelConditionState>
 			</ScriptedModelDraw>
@@ -785,7 +848,7 @@
 				id="D7169F09"
 				RequiresAllTriggers="False"
 				RequiresAllConflictingTriggers="False"
-				Permanent="True"
+				Permanent="false"
 				WaypointMode="False"
 				WaypointModeTerminal="True"
 				ArmorSetFlag="PLAYER_UPGRADE"
@@ -820,11 +883,53 @@
 					SelfRepairFromDamageLoop=""
 					SelfRepairFromRubbleLoop="" />
 			</RepairUpdate>
+			<!--
+			<ParkingPlaceBehavior
+				id="ModuleTag_ParkingPlace"
+				HealAmount="10"
+				NumRows="1"
+				NumCols="1"
+				ApproachHeight="100"
+				CanSetRallyPoint="false"
+				ParkInHangars="true">
+				<CanParkHereFilter
+					Rule="NONE"
+					Relationship="ENEMIES"
+					Include="ENGINEER">
+				</CanParkHereFilter>
+			</ParkingPlaceBehavior>
+			-->
+			<HordeTransportContain
+				id="ModuleTag_Contain"
+				ObjectStatusOfContained=""
+				ContainMax="0"
+				Slots="0"
+				AllowEnemiesInside="false"
+				AllowAlliesInside="false"
+				AllowNeutralInside="false"
+				AllowOwnPlayerInsideOverride="false"
+				ShowPips="false"
+				EnterSound=""
+				ExitSound=""
+				KillPassengersOnDeath="false">
+				<PassengerFilter
+					Rule="NONE"
+					Include="" />
+				<DieMuxData
+					DeathTypes="ALL" />
+				<PassengerData
+					BonePrefix="ROOTTRANSFORM">
+					<Filter
+						Rule="NONE"
+						Include="" />
+				</PassengerData>
+			</HordeTransportContain>
+
 			<EngineerContain
 				id="E2BE8599"
 				ReplaceWith=""
-				NameOfVoiceToUseForFriendlyEnter="9D165EA1"
-				NameOfVoiceToUseForHostileEnter="124DB476"
+				NameOfVoiceToUseForFriendlyEnter="VoiceEngineerRepair"
+				NameOfVoiceToUseForHostileEnter="VoiceCaptureBuilding"
 				FXForRepair="FX_Building_Repaired"
 				FXForCapture="FX_Building_Captured"
 				FXForCaptureAndReplace="FX_Building_Captured"
@@ -875,6 +980,11 @@
 					DeathTypes="SUICIDED"
 					DeathTypesForbidden="" />
 			</CreateObjectDie>
+			<ModelConditionUpgrade
+				id="ModuleTag_ShowRailGuns"
+				AddConditionFlags="USER_7">
+				<TriggeredBy>Upgrade_GDIArmoryRailgunTech</TriggeredBy>
+			</ModelConditionUpgrade>
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -1021,25 +1131,19 @@
 				EvaEvent="EnemyBuildingCaptured"
 				AudioType="voiceDefectingTowards" />
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:2C9BCD5D]"
+				Sound="AudioEvent:GDI_ArmorySelect"
 				AudioType="voiceSelect" />
 		</AudioArrayVoice>
 		<AudioArraySound>
-			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:45BB2ECF]"
-				AudioType="soundUnderConstruction" />
-			<AudioEntry
-				Sound="Asset not found in stream: [A3A7AF37:FDA3F3E1]"
-				AudioType="soundOnDamaged" />
-			<AudioEntry
-				Sound="Asset not found in stream: [A3A7AF37:10435FC9]"
-				AudioType="soundOnReallyDamaged" />
+			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
+			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_LightDamageMS" AudioType="soundOnDamaged" />
+			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
 		</AudioArraySound>
 		<EvaEvents
 			EvaEventSoldOwner="StructureSold"
 			EvaEventDamagedOwner="StructureUnderAttack"
 			EvaEventSecondDamageFarFromFirstScanRange="200"
-			EvaEventSecondDamageFarFromFirstTimeoutMS="155"
+			EvaEventSecondDamageFarFromFirstTimeoutMS="31000"
 			EvaEventRepairingOwner="StructureRepairing"
 			EvaEnemyObjectSightedEvent="EnemyCampSighted"
 			EvaEventAvailableForProduction="NewConstructionOptions"

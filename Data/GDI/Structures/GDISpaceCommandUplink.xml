@@ -1,299 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<GameObject
 		id="GDISpaceCommandUplink"
-		KindOf="SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS STRUCTURE FS_TECHNOLOGY POWERED NOT_AUTOACQUIRABLE COVER AUTO_ACQUIRABLE_BY_AI"
-		Description="Desc:GDISpaceCommandUplink"
-		TypeDescription="Type:GDISpaceCommandUplink"
-		RadarPriority="STRUCTURE"
-		BuildCompletion="INVALID"
-		FenceWidth="0"
-		FenceXOffset="0"
-		RemoveTerrainRadius="0"
-		EmotionRange="0"
-		PlacementViewAngle="315d"
-		BuildFadeInOnCreateTimeSeconds="0s"
-		FactoryExitWidth="0"
-		FactoryExtraBibWidth="0"
-		Side="GDI"
-		EditorName="GDISpaceCommandUplink"
-		EditorSorting="STRUCTURE"
-		BountyValue="0"
-		BuildTime="30"
-		BuildFadeInOnCreateTime="0"
-		EnergyProduction="-15"
-		EnergyBonus="0"
-		CommandSet="GDISpaceCommandUplinkCommandSet"
+		inheritFrom="BaseStructure"
 		SelectPortrait="Portrait_GDISpaceCommandUplink"
 		ButtonImage="Portrait_GDISpaceCommandUplink"
-		VoicePriority="0"
-		MinZIncreaseForVoiceMoveToHigherGround="-1"
-		CrowdResponse=""
+		Side="GDI"
+		EditorSorting="STRUCTURE"
+		TransportSlotCount="1"
+		BuildCost="3000"
+		BuildTime="30"
 		CampnessValue="2000"
 		CampnessValueRadius="300"
-		Scale="1"
-		HealthBoxScale="1.5"
-		HealthBoxHeightOffset="10"
-		OcclusionDelay="0"
-		LiveCameraPitch="0"
-		FormationWidth="1"
-		FormationDepth="1"
-		InstanceScaleFuzziness="0"
-		ThreatRadius="-1"
-		RamPower="0"
-		RamZMult="1"
-		ShockwaveResistance="0"
-		CommandPoints="0"
-		CommandPointBonus="0"
-		VoiceAttackChargeTimeout="0"
-		MaxDistanceForEngaged="0"
-		EngagedStateTimeout="0"
-		ThreatLevel="1"
-		SlopeLimitIndex="0"
-		PathfindDiameter="-1"
-		SupplyOverride="0"
-		DisplayMeleeDamage="-1"
-		DisplayRangedDamage="-1"
-		HeroSortOrder="2147483647"
-		FiringArc="360"
-		CamouflageDetectionMultiplier="1"
-		SelectionPriority="2147483647"
+		UnitCategory="STRUCTURE"
+		EnergyProduction="-15"
+		CommandSet="GDISpaceCommandUplinkCommandSet"
+		KindOf="STRUCTURE SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS FS_TECHNOLOGY POWERED NOT_AUTOACQUIRABLE AUTO_ACQUIRABLE_BY_AI COVER"
+		RadarPriority="STRUCTURE"
+		PlacementViewAngle="315d"
 		ProductionQueueType="MAIN_STRUCTURE"
 		BuildPlacementTypeFlag="MAIN_STRUCTURE"
-		BuildOnRequiredObjectKindOf=""
-		UnitCategory="STRUCTURE"
-		WeaponCategory="NONE"
-		HasFiredRecentlyTime="2s"
-		UnitTypeIcon=""
-		ReinvisibilityDelay="4s"
-		CaptureTime="0s"
-		BuildCost="3000"
-		RefundValue="0"
-		ThreatValue="0"
-		MaxSimultaneousOfType="0"
-		TransportSlotCount="1"
-		IsTrainable="True"
-		IsForbidden="False"
-		IsPrerequisite="False"
-		IsGrabbable="False"
-		IsHarvestable="False"
-		StructureRubbleHeight="0"
-		ForceLuaRegistration="False"
-		ShowHealthInSelectionDecal="False"
-		KeepSelectableWhenDead="False"
-		IsAutoBuilt="False"
-		CanPathThroughGates="True"
-		ShouldClearShotsOnIdle="False"
-		BuildInProximityToSamePlayerStucture="True">
+		EditorName="GDISpaceCommandUplink"
+		Description="Desc:GDISpaceCommandUplink"
+		TypeDescription="Type:GDISpaceCommandUplink">
 		<DisplayName>Name:GDISpaceCommandUplink</DisplayName>
-		<GameDependency
-			RequiredModelConditionsAny=""
-			ForbiddenModelConditions=""
-			RequiredObjectStatusAny="">
+		<GameDependency>
 			<RequiredObject>GDIArmory</RequiredObject>
 		</GameDependency>
 		<ArmorSet
 			Armor="GDISpaceCommandUplinkArmor"
-			DamageFX="FactionStructureDamageFX"
-			Conditions="" />
+			DamageFX="FactionStructureDamageFX" />
 		<ArmorSet
+			Conditions="PLAYER_UPGRADE"
 			Armor="GDISpaceCommandUplinkSonicRepulsionFieldArmor"
-			DamageFX="NormalDamageFX"
-			Conditions="PLAYER_UPGRADE" />
+			DamageFX="NormalDamageFX" />
 		<SkirmishAIInformation
 			BaseBuildingLocation="SPREAD"
 			ConquerMetricsOverrideDamageType="UNDEFINED"
 			ConquerMetricsOverrideAntiMask="ANTI_GROUND"
-			UnitBuilderStandardCombatUnit="False" />
+			UnitBuilderStandardCombatUnit="False"/>
 		<Draws>
 			<ScriptedModelDraw
-				id="50DF2C46"
-				InitialRecoilSpeed="2"
-				MaxRecoilDistance="3"
-				RecoilDamping="0.4"
-				RecoilSettleSpeed="0.065"
-				MinLODRequired="LOW"
-				ProjectileBoneFeedbackEnabledSlots=""
-				TrackMarks=""
-				DependencySharedModelFlags=""
-				HighDetailLODThreshold="0"
-				LowDetailLODThreshold="0"
-				WadingParticleSys=""
-				AlphaCameraFadeOuterRadius="0"
-				AlphaCameraFadeInnerRadius="0"
-				AlphaCameraAtInnerRadius="100%"
-				StaticSortLevelWhileFading="-1"
-				BirthFadeTime="0"
-				OkToChangeModelColor="True"
-				AnimationsRequirePower="True"
-				UseYAxisForTurretRotation="False"
-				TrackMarksOnlyWhenCorneringQuickly="False"
-				UseProducerTexture="False"
-				NoRotate="False"
-				UseFiringArcRotation="False"
-				Selectable="True"
-				RandomTextureFixedRandomIndex="False"
-				ParticlesAttachedToAnimatedBones="False"
-				ParticleBonesCheckDrawable="False"
-				ShadowForceDisable="False"
-				SwitchModelLODMode="False"
-				StaticModelLODMode="False"
-				ShowShadowWhileContained="False"
-				UseStandardModelNames="False"
-				UseDefaultAnimation="False"
-				BirthFadeAdditive="False"
-				ZWriteDisableOverride="False"
-				MultiPlayerOnly="False"
-				AffectedByStealth="True"
-				InvertStealthOpacity="False"
-				HighDetailOnly="False"
-				SetAnimsToLastFrameOnConstructionComplete="True">
+				id="ModuleTag_Draw"
+				OkToChangeModelColor="true">
 				<ModelConditionState
-					ParseCondStateType="PARSE_DEFAULT"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ParseCondStateType="PARSE_DEFAULT">
 					<Model
-						Name="GBSPCCMND"
-						ExtraMesh="False" />
+						Name="W3DContainer:GBSpcCmnd" />
+				</ModelConditionState>
+				<!-- BUILDING -->
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING">
+					<Model
+						Name="W3DContainer:GBSpcCmnd_ASN" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="RUBBLE">
 					<Model
-						Name="GBSPCCMND_ASN"
-						ExtraMesh="False" />
+						Name="W3DContainer:GBSpcCmnd_D3SN" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="RUBBLE"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="REALLYDAMAGED">
 					<Model
-						Name="GBSPCCMND_D3SN"
-						ExtraMesh="False" />
+						Name="W3DContainer:GBSpcCmnd_D2SN" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="DAMAGED">
 					<Model
-						Name="GBSPCCMND_D2SN"
-						ExtraMesh="False" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
-					<Model
-						Name="GBSPCCMND"
-						ExtraMesh="False" />
+						Name="W3DContainer:GBSpcCmnd" />
 					<Texture
 						Original="GBSpcCmnd"
 						New="GBSpcCmndD" />
 				</ModelConditionState>
+				<!-- ANIMATIONS -->
 				<AnimationState
-					ParseCondStateType="PARSE_DEFAULT"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False" />
+					ParseCondStateType="PARSE_DEFAULT"></AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
-					<Animation
-						AnimationName="GBSPCCMND_AAN"
-						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="5"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
-					<ParticleSysBone
-						BoneName="NONE"
-						FXParticleSystemTemplate="Con_Medium"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
+					ConditionsYes="BUILD_PLACEMENT_CURSOR">
+					<Script>
+						CurDrawableHideSubObject("LIGHT_01")
+					</Script>
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					ConditionsYes="STRUCTURE_UNPACKING">
 					<Animation
-						AnimationName="GBSPCCMND_AAN"
-						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="5"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationName="GBSpcCmnd_AAN"
+						AnimationMode="ONCE" />
+					<ParticleSysBone
+						BoneName="NONE"
+						FXParticleSystemTemplate="Con_Medium"
+						FollowBone="true" />
+				</AnimationState>
+				<AnimationState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING">
+					<Animation
+						AnimationName="GBSpcCmnd_AAN"
+						AnimationMode="ONCE" />
 					<ParticleSysBone
 						BoneName="NONE"
 						FXParticleSystemTemplate="Con_Small"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
+						FollowBone="true" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="RUBBLE"
 					StateName="STATE_Rubble"
-					Flags="START_FRAME_LAST"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					Flags="START_FRAME_LAST">
 					<Animation
-						AnimationName="GBSPCCMND_D3AN"
-						AnimationMode="MANUAL"
-						Distance="0"
-						AnimationBlendTime="5"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationName="GBSpcCmnd_D3AN"
+						AnimationMode="MANUAL" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState();
 						if Prev ~= "STATE_Rubble" and Prev ~= "TRANS_IntoRubble" then
@@ -303,36 +125,16 @@
 					<ParticleSysBone
 						BoneName="NONE"
 						FXParticleSystemTemplate="Des_Medium"
-						PersistID="0"
-						FollowBone="False"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
+						FollowBone="false" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED"
 					StateName="STATE_ReallyDamaged"
-					Flags="START_FRAME_LAST"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					Flags="START_FRAME_LAST">
 					<Animation
-						AnimationName="GBSPCCMND_D2AN"
-						AnimationMode="MANUAL"
-						Distance="0"
-						AnimationBlendTime="5"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationName="GBSpcCmnd_D2AN"
+						AnimationMode="MANUAL" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState();
 						if Prev ~= "STATE_ReallyDamaged" and Prev ~= "TRANS_IntoReallyDamaged" then
@@ -342,188 +144,75 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_TRANSITION"
-					StateName="TRANS_IntoReallyDamaged"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					StateName="TRANS_IntoReallyDamaged">
 					<Animation
-						AnimationName="GBSPCCMND_D2AN"
+						AnimationName="GBSpcCmnd_D2AN"
 						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="0"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationBlendTime="0" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_TRANSITION"
-					StateName="TRANS_IntoRubble"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					StateName="TRANS_IntoRubble">
 					<Animation
-						AnimationName="GBSPCCMND_D3AN"
+						AnimationName="GBSpcCmnd_D3AN"
 						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="0"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationBlendTime="0" />
 				</AnimationState>
 			</ScriptedModelDraw>
+			<!-- DRAW MISSLE -->
 			<ScriptedModelDraw
-				id="B99FDDFC"
-				InitialRecoilSpeed="2"
-				MaxRecoilDistance="3"
-				RecoilDamping="0.4"
-				RecoilSettleSpeed="0.065"
-				MinLODRequired="LOW"
-				ProjectileBoneFeedbackEnabledSlots=""
-				TrackMarks=""
-				DependencySharedModelFlags=""
-				HighDetailLODThreshold="0"
-				LowDetailLODThreshold="0"
-				WadingParticleSys=""
-				AlphaCameraFadeOuterRadius="0"
-				AlphaCameraFadeInnerRadius="0"
-				AlphaCameraAtInnerRadius="100%"
-				StaticSortLevelWhileFading="-1"
-				BirthFadeTime="0"
-				OkToChangeModelColor="True"
-				AnimationsRequirePower="True"
-				UseYAxisForTurretRotation="False"
-				TrackMarksOnlyWhenCorneringQuickly="False"
-				UseProducerTexture="False"
-				NoRotate="False"
-				UseFiringArcRotation="False"
-				Selectable="True"
-				RandomTextureFixedRandomIndex="False"
-				ParticlesAttachedToAnimatedBones="False"
-				ParticleBonesCheckDrawable="False"
-				ShadowForceDisable="False"
-				SwitchModelLODMode="False"
-				StaticModelLODMode="False"
-				ShowShadowWhileContained="False"
-				UseStandardModelNames="False"
-				UseDefaultAnimation="False"
-				BirthFadeAdditive="False"
-				ZWriteDisableOverride="False"
-				MultiPlayerOnly="False"
-				AffectedByStealth="True"
-				InvertStealthOpacity="False"
-				HighDetailOnly="False"
-				SetAnimsToLastFrameOnConstructionComplete="True">
+				id="ModuleTag_Draw_Missle"
+				OkToChangeModelColor="true">
 				<ModelConditionState
-					ParseCondStateType="PARSE_DEFAULT"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ParseCondStateType="PARSE_DEFAULT">
 					<Model
-						Name="GBSPCCMNDX_SKN"
-						ExtraMesh="False" />
+						Name="W3DContainer:GBSpcCmndX_SKN" />
+				</ModelConditionState>
+				<!-- BUILDING -->
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING">
+					<Model
+						Name="W3DContainer:NBEmpty_ABLD" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="DYING SPECIALPOWER1_READY">
 					<Model
-						Name="NBEMPTY_ABLD"
-						ExtraMesh="False" />
+						Name="W3DContainer:GBSpcCmndX_RDY_D3" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DYING SPECIALPOWER1_READY"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="DYING">
 					<Model
-						Name="GBSPCCMNDX_RDY_D3"
-						ExtraMesh="False" />
+						Name="W3DContainer:GBSpcCmndX_D3" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DYING"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="SPECIALPOWER1_READY">
 					<Model
-						Name="GBSPCCMNDX_D3"
-						ExtraMesh="False" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="SPECIALPOWER1_READY"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
-					<Model
-						Name="GBSPCCMNDX_SKN"
-						ExtraMesh="False" />
+						Name="W3DContainer:GBSpcCmndX_SKN" />
 					<ParticleSysBone
 						BoneName="FXBone01"
 						FXParticleSystemTemplate="BuildingSteam"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
+						FollowBone="true" />
 					<ParticleSysBone
 						BoneName="FXBone02"
 						FXParticleSystemTemplate="BuildingSteam"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
+						FollowBone="true" />
 					<ParticleSysBone
 						BoneName="FXBone03"
 						FXParticleSystemTemplate="BuildingSteam"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
+						FollowBone="true" />
 				</ModelConditionState>
+				<!-- ANIMATIONS -->
 				<AnimationState
 					ParseCondStateType="PARSE_DEFAULT"
-					StateName="STATE_Idle"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					StateName="STATE_Idle">
 					<Animation
-						AnimationName="GBSPCCMNDX_IDLA"
+						AnimationName="GBSpcCmndX_IDLA"
 						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="0"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationBlendTime="0" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState();
 						if Prev == "STATE_Ready" and Prev ~= "STATE_Idle" then
@@ -533,449 +222,165 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					ConditionsYes="STRUCTURE_UNPACKING">
 					<Animation
-						AnimationName="NBEMPTY_ABLD"
-						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="5"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationName="NBEmpty_ABLD"
+						AnimationMode="ONCE" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DYING SPECIALPOWER1_READY"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					ConditionsYes="DYING SPECIALPOWER1_READY">
 					<Animation
-						AnimationName="GBSPCCMNDX_RDY_D3"
-						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="5"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationName="GBSpcCmndX_RDY_D3"
+						AnimationMode="ONCE" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DYING"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					ConditionsYes="DYING">
 					<Animation
-						AnimationName="GBSPCCMNDX_D3"
-						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="5"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationName="GBSpcCmndX_D3"
+						AnimationMode="ONCE" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="SPECIALPOWER1_READY"
-					StateName="STATE_Ready"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					StateName="STATE_Ready">
 					<Animation
-						AnimationName="GBSPCCMNDX_RDY"
+						AnimationName="GBSpcCmndX_RDY"
 						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="0"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationBlendTime="0" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="PACKING"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					ConditionsYes="PACKING">
 					<Animation
-						AnimationName="GBSPCCMNDX_IDLA"
+						AnimationName="GBSpcCmndX_IDLA"
 						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="0"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationBlendTime="0" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_TRANSITION"
-					StateName="TRANS_FIRING"
-					EnteringStateFX=""
-					FrameForPristineBonePositions="0"
-					ShareAnimation="False"
-					AllowRepeatInRandomPick="False"
-					SimilarRestart="False">
+					StateName="TRANS_FIRING">
 					<Animation
-						AnimationName="GBSPCCMNDX_FIRA"
+						AnimationName="GBSpcCmndX_FIRA"
 						AnimationMode="ONCE"
-						Distance="0"
-						AnimationBlendTime="0"
-						AnimationSpeedFactorMin="1"
-						AnimationSpeedFactorMax="1"
-						WeaponTimingOrdering="PRIMARY_WEAPON"
-						WeaponTimingSlotID="1"
-						AnimationPriority="1"
-						FadeBeginFrame="-1"
-						FadeEndFrame="-1"
-						AnimationMustCompleteBlend="False"
-						UseWeaponTiming="False"
-						FadingIn="False" />
+						AnimationBlendTime="0" />
 					<ParticleSysBone
 						BoneName="FXBone04"
 						FXParticleSystemTemplate="NodNukeMissleSmoke"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
+						FollowBone="true" />
 					<ParticleSysBone
 						BoneName="FXBone04"
 						FXParticleSystemTemplate="NodNukeMissleFire"
-						PersistID="0"
-						FollowBone="True"
-						OnlyIfOnWater="False"
-						OnlyIfOnLand="False" />
+						FollowBone="true" />
 				</AnimationState>
 			</ScriptedModelDraw>
+
+			<!-- Draw sonic repulsion field -->
+
 			<ScriptedModelDraw
-				id="CD182A15"
-				InitialRecoilSpeed="2"
-				MaxRecoilDistance="3"
-				RecoilDamping="0.4"
-				RecoilSettleSpeed="0.065"
-				MinLODRequired="LOW"
-				ProjectileBoneFeedbackEnabledSlots=""
-				TrackMarks=""
-				DependencySharedModelFlags=""
-				HighDetailLODThreshold="0"
-				LowDetailLODThreshold="0"
-				WadingParticleSys=""
-				AlphaCameraFadeOuterRadius="0"
-				AlphaCameraFadeInnerRadius="0"
-				AlphaCameraAtInnerRadius="100%"
-				StaticSortLevelWhileFading="-1"
-				BirthFadeTime="0"
-				OkToChangeModelColor="True"
-				AnimationsRequirePower="True"
-				UseYAxisForTurretRotation="False"
-				TrackMarksOnlyWhenCorneringQuickly="False"
-				UseProducerTexture="False"
-				NoRotate="False"
-				UseFiringArcRotation="False"
-				Selectable="True"
-				RandomTextureFixedRandomIndex="False"
-				ParticlesAttachedToAnimatedBones="False"
-				ParticleBonesCheckDrawable="False"
-				ShadowForceDisable="False"
-				SwitchModelLODMode="False"
-				StaticModelLODMode="True"
-				ShowShadowWhileContained="False"
-				UseStandardModelNames="True"
-				UseDefaultAnimation="False"
-				BirthFadeAdditive="False"
-				ZWriteDisableOverride="False"
-				MultiPlayerOnly="False"
-				AffectedByStealth="True"
-				InvertStealthOpacity="False"
-				HighDetailOnly="False"
-				SetAnimsToLastFrameOnConstructionComplete="True">
+				id="ModuleTag_DrawGDIWarfactorySRF"
+				OkToChangeModelColor="true"
+				UseStandardModelNames="true"
+				StaticModelLODMode="true">
 				<ModelConditionState
-					ParseCondStateType="PARSE_DEFAULT"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ParseCondStateType="PARSE_DEFAULT" >
 					<Model
-						Name=""
-						ExtraMesh="False" />
+						Name="" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_6 DYING"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="USER_6 DYING">
 					<Model
-						Name=""
-						ExtraMesh="False" />
+						Name="" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_6 REALLYDAMAGED"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="USER_6 REALLYDAMAGED">
 					<Model
-						Name=""
-						ExtraMesh="False" />
+						Name="" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_6 DAMAGED"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="USER_6 DAMAGED">
 					<Model
-						Name=""
-						ExtraMesh="False" />
+						Name="" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_6"
-					PortraitImage=""
-					ButtonImage=""
-					RetainSubObjects="False">
+					ConditionsYes="USER_6">
 					<Model
-						Name="GBSPCCMNDSRF_SKN"
-						ExtraMesh="False" />
+						Name="W3DContainer:GBSpcCmndSRF_SKN" />
 				</ModelConditionState>
 			</ScriptedModelDraw>
 		</Draws>
 		<Behaviors>
-			<AttributeModifierPoolUpdate
-				id="513BC476" />
+
+			<AttributeModifierPoolUpdate id="DefaultAttributeModifierPoolUpdate"/>
 			<FireWeaponWhenDead
-				id="DDED328F"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				DelayTime="0s"
+				id="ModuleTag_CatalystDeathWeapon"
+				InitiallyActive="true"
 				DeathWeapon="CatalystBuildingDeathWeapon"
-				FocusFireKindOfFlag=""
-				InitiallyActive="True"
-				ActiveDuringConstruction="False"
-				ContinueToBezierDestination="False">
-				<DieMuxData
-					ExemptStatus=""
-					RequiredStatus=""
-					DamageAmountRequired="-1"
-					MinKillerAngle="1d"
-					MaxKillerAngle="-1d"
-					DeathTypes="CATALYST"
-					DeathTypesForbidden="" />
+				ContinueToBezierDestination="false"
+				>
+				<DieMuxData DeathTypes="CATALYST" />
 			</FireWeaponWhenDead>
 			<TemporarilyDefectUpdate
-				id="3473AFD2"
-				DefectionFrameCount="100" />
+			  id="ModuleTag_TemporarilyDefect"
+			  DefectionFrameCount="100" />
+
 			<ModelConditionUpgrade
-				id="931C692F"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				AddConditionFlags="USER_6"
-				RemoveConditionFlags=""
-				AddTempConditionFlag="TOPPLED"
-				TempConditionTime="0s">
+				id="ModuleTag_UpgradeSonicRepulsion"
+				AddConditionFlags="USER_6">
 				<TriggeredBy>Upgrade_SonicRepulsionField</TriggeredBy>
 			</ModelConditionUpgrade>
+
 			<BuildingBehavior
-				id="2118A085"
+				id="ModuleTag_BuildingBehavior"
 				NightWindowObject="LIGHT_01" />
+
 			<SlowDeath
-				id="73542D4A"
-				SinkRate="4"
-				ProbabilityModifier="10"
-				ModifierBonusPerOverkillPercent="0%"
-				SinkDelay="3s"
-				SinkDelayVariance="0s"
-				DestructionDelay="8s"
-				DestructionDelayVariance="0s"
-				DecayBeginTime="0s"
-				FlingForce="0"
-				FlingForceVariance="0"
-				FlingPitch="0d"
-				FlingPitchVariance="0d"
-				DeathFlags=""
-				FadeTime="0s"
-				FadeDelay="0s"
-				DeathTypes=""
-				DeathObjectStatusBits=""
-				ShadowWhenDead="False"
-				Fade="False">
-				<Sound
-					Type="INITIAL"
-					List="HumanFaction_MediumBuilding_DieMS" />
+				id="ModuleTag_Death"
+				SinkDelay="3.0s"
+				SinkRate="4.0"
+				DestructionDelay="8.0s">
+				<Sound Type="INITIAL" List="HumanFaction_MediumBuilding_DieMS" />
 				<DieMuxData
-					ExemptStatus=""
-					RequiredStatus=""
-					DamageAmountRequired="-1"
-					MinKillerAngle="1d"
-					MaxKillerAngle="-1d"
-					DeathTypes="ALL"
-					DeathTypesForbidden="" />
+					DeathTypes="ALL" />
 			</SlowDeath>
 			<FXListBehavior
-				id="C74C39D8">
+				id="ModuleTag_FXList">
 				<DieMuxData
-					ExemptStatus=""
-					RequiredStatus=""
-					DamageAmountRequired="-1"
-					MinKillerAngle="1d"
-					MaxKillerAngle="-1d"
-					DeathTypes="ALL"
-					DeathTypesForbidden="" />
+					DeathTypes="ALL" />
 				<Event
 					Index="onTransitionToDamaged"
-					FX="FX_BuildDamaged_Medium"
-					MinThreshold="0"
-					MaxThreshold="0"
-					Direction="Default"
-					OrientToObject="True"
-					ForceUseDoFXObj="False" />
+					FX="FX_BuildDamaged_Medium" />
 				<Event
 					Index="onTransitionToReallyDamaged"
-					FX="FX_BuildDamaged_Medium"
-					MinThreshold="0"
-					MaxThreshold="0"
-					Direction="Default"
-					OrientToObject="True"
-					ForceUseDoFXObj="False" />
+					FX="FX_BuildDamaged_Medium" />
 				<Event
 					Index="onTransitionToRubble"
-					FX="FX_BuildRubble_Medium"
-					MinThreshold="0"
-					MaxThreshold="0"
-					Direction="Default"
-					OrientToObject="True"
-					ForceUseDoFXObj="False" />
+					FX="FX_BuildRubble_Medium" />
 			</FXListBehavior>
 			<StructureUnpackUpdate
 				UnpackTime="1.5s" />
+
+
+
 			<OCLSpecialPower
-				id="B03C43C1"
+				id="ModuleTag_OCLDropPods"
 				SpecialPowerTemplate="SpecialPowerGDI_SpaceCommandDropPods"
-				AntiCategory=""
-				AntiFX=""
-				AttributeModifier=""
-				AttributeModifierRange="0"
-				AttributeModifierFX=""
-				WeatherDuration="0"
-				InitiateFX=""
-				TriggerFX=""
-				SetModelCondition="TOPPLED"
-				SetModelConditionTime="0s"
-				GiveLevels="0"
-				ChangeWeather="NORMAL"
-				OnTriggerRechargeSpecialPower=""
-				BurnDecayModifier="0"
-				MaxDistanceFromCommandCenter="0"
-				UpdateModuleStartsAttack="False"
-				StartsPaused="False"
-				ReEnableAntiCategory="False"
-				AttributeModifierAffectsSelf="False"
-				AttributeModifierWeatherBased="False"
-				TargetEnemy="False"
-				TargetAllSides="False"
-				DisableDuringAnimDuration="False"
-				IdleWhenStartingPower="False"
-				AffectGood="False"
-				AffectEvil="False"
-				AffectAllies="True"
-				AvailableAtStart="True"
-				AdjustVictim="False"
-				UseDistanceFromCommandCenter="False"
-				ChildModuleHandlesFX="False"
 				OCL="OCL_GDISpaceCommandDropPods"
 				CreateLocation="CREATE_AT_LOCATION"
-				MaxCreateCount="0"
-				NumberToSpawn="1"
-				DestinationOCL=""
-				RegisterObjectsWithSpecialAbilityUpdate="False">
-				<AttributeModifierAffects
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-				<RequirementsFilterMP
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-				<RequirementsFilterStrategic
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-			</OCLSpecialPower>
+			/>
+
 			<AISpecialPowerUpdate
-				id="42F15D37"
+				id="ModuleTag_GDISpaceCommandDropPodsAI"
 				CommandButtonName="Command_SpaceCommandGDIDropPods"
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
 				SpecialPowerRadius="999999"
-				ReinforceDistance="999999"
+				ReinforceDistance="5000"
 				SpellMakesAStructure=""
 				SpecificUnit=""
 				UnitKindOf=""
@@ -986,81 +391,16 @@
 				MinimumCutoff="0"
 				UpdateTime="1s"
 				MaxFrequency="0"
-				RandomizeTargetLocation="False" />
+				RandomizeTargetLocation="False"
+			/>
 			<OCLSpecialPower
-				id="E1FE1D2A"
+				id="ModuleTag_ShockwaveArtillery"
 				SpecialPowerTemplate="SpecialPowerGDI_SpaceCommandShockwaveArtillery"
-				AntiCategory=""
-				AntiFX=""
-				AttributeModifier=""
-				AttributeModifierRange="0"
-				AttributeModifierFX=""
-				WeatherDuration="0"
-				InitiateFX=""
-				TriggerFX=""
-				SetModelCondition="TOPPLED"
-				SetModelConditionTime="0s"
-				GiveLevels="0"
-				ChangeWeather="NORMAL"
-				OnTriggerRechargeSpecialPower=""
-				BurnDecayModifier="0"
-				MaxDistanceFromCommandCenter="0"
-				UpdateModuleStartsAttack="False"
-				StartsPaused="False"
-				ReEnableAntiCategory="False"
-				AttributeModifierAffectsSelf="False"
-				AttributeModifierWeatherBased="False"
-				TargetEnemy="False"
-				TargetAllSides="False"
-				DisableDuringAnimDuration="False"
-				IdleWhenStartingPower="False"
-				AffectGood="False"
-				AffectEvil="False"
-				AffectAllies="True"
-				AvailableAtStart="True"
-				AdjustVictim="False"
-				UseDistanceFromCommandCenter="False"
-				ChildModuleHandlesFX="False"
 				OCL="OCL_GDISpaceCommandShockwaveArtillery"
 				CreateLocation="CREATE_AT_LOCATION"
-				MaxCreateCount="0"
-				NumberToSpawn="1"
-				DestinationOCL=""
-				RegisterObjectsWithSpecialAbilityUpdate="False">
-				<AttributeModifierAffects
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-				<RequirementsFilterMP
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-				<RequirementsFilterStrategic
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-			</OCLSpecialPower>
+			/>
 			<AISpecialPowerUpdate
-				id="1DEB8236"
-				CommandButtonName="Command_SpaceCommandGDIShockwave"
+				id="ModuleTag_GDISpaceCommandShockwaveAI"
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
 				SpecialPowerRadius="999999"
@@ -1075,84 +415,22 @@
 				MinimumCutoff="0"
 				UpdateTime="1s"
 				MaxFrequency="0"
-				RandomizeTargetLocation="False" />
+				RandomizeTargetLocation="False"
+			/>
+
 			<MonitorSpecialPowerTimerUpdate
-				id="E4AED5E5"
+				id="ModuleTag_ShockwaveArtilleryReadyToFireUpdate"
 				SpecialPowerTemplate="SpecialPowerGDI_SpaceCommandShockwaveArtillery"
 				ReadyCondition="SPECIALPOWER1_READY" />
+			<!-- MJOLNIR -->
 			<OCLSpecialPower
-				id="F541D74A"
+				id="ModuleTag_MjolnirStrikePower"
 				SpecialPowerTemplate="SpecialPower_MjolnirStrike"
-				AntiCategory=""
-				AntiFX=""
-				AttributeModifier=""
-				AttributeModifierRange="0"
-				AttributeModifierFX=""
-				WeatherDuration="0"
-				InitiateFX=""
-				TriggerFX=""
-				SetModelCondition="TOPPLED"
-				SetModelConditionTime="0s"
-				GiveLevels="0"
-				ChangeWeather="NORMAL"
-				OnTriggerRechargeSpecialPower=""
-				BurnDecayModifier="0"
-				MaxDistanceFromCommandCenter="0"
-				UpdateModuleStartsAttack="False"
-				StartsPaused="False"
-				ReEnableAntiCategory="False"
-				AttributeModifierAffectsSelf="False"
-				AttributeModifierWeatherBased="False"
-				TargetEnemy="False"
-				TargetAllSides="False"
-				DisableDuringAnimDuration="False"
-				IdleWhenStartingPower="False"
-				AffectGood="False"
-				AffectEvil="False"
-				AffectAllies="True"
-				AvailableAtStart="True"
-				AdjustVictim="False"
-				UseDistanceFromCommandCenter="False"
-				ChildModuleHandlesFX="False"
 				OCL="OCL_GDIMjolnirBeaconOne"
 				CreateLocation="CREATE_AT_LOCATION"
-				MaxCreateCount="0"
-				NumberToSpawn="1"
-				DestinationOCL=""
-				RegisterObjectsWithSpecialAbilityUpdate="False">
-				<AttributeModifierAffects
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-				<RequirementsFilterMP
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-				<RequirementsFilterStrategic
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-			</OCLSpecialPower>
+			/>
 			<AISpecialPowerUpdate
-				id="6861BB0A"
+				id="ModuleTag_MjolnirStrikeAI"
 				CommandButtonName="Command_SpecialPowerMjolnirStrike"
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_SUPERWEAPON"
@@ -1163,85 +441,23 @@
 				UnitKindOf="VEHICLE UNIQUE_UNIT"
 				AllyUnitInclude=""
 				AllyUnitExclude=""
-				EnemyUnitInclude=""
+				EnemyUnitInclude="VEHICLE UNIQUE_UNIT"
 				EnemyUnitExclude="INFANTRY NEUTRAL_TECH CIVILIAN_BUILDING"
 				MinimumCutoff="0"
 				UpdateTime="1s"
 				MaxFrequency="0"
-				RandomizeTargetLocation="False" />
+				RandomizeTargetLocation="False"
+			/>
+			<!-- SUPERSONIC AIR ATTACK -->
 			<OCLSpecialPower
-				id="B742FB9E"
+				id="ModuleTag_OCLSpecialPowerAirAttack"
 				SpecialPowerTemplate="SpecialPower_SupersonicAirAttack"
-				AntiCategory=""
-				AntiFX=""
-				AttributeModifier=""
-				AttributeModifierRange="0"
-				AttributeModifierFX=""
-				WeatherDuration="0"
-				InitiateFX=""
-				TriggerFX=""
-				SetModelCondition="TOPPLED"
-				SetModelConditionTime="0s"
-				GiveLevels="0"
-				ChangeWeather="NORMAL"
-				OnTriggerRechargeSpecialPower=""
-				BurnDecayModifier="0"
-				MaxDistanceFromCommandCenter="0"
-				UpdateModuleStartsAttack="False"
-				StartsPaused="False"
-				ReEnableAntiCategory="False"
-				AttributeModifierAffectsSelf="False"
-				AttributeModifierWeatherBased="False"
-				TargetEnemy="False"
-				TargetAllSides="False"
-				DisableDuringAnimDuration="False"
-				IdleWhenStartingPower="False"
-				AffectGood="False"
-				AffectEvil="False"
-				AffectAllies="True"
-				AvailableAtStart="True"
-				AdjustVictim="False"
-				UseDistanceFromCommandCenter="False"
-				ChildModuleHandlesFX="False"
 				OCL="OCL_GDISuperSonicAirAttackBeacon"
 				CreateLocation="CREATE_AT_LOCATION"
-				MaxCreateCount="0"
-				NumberToSpawn="1"
-				DestinationOCL=""
-				RegisterObjectsWithSpecialAbilityUpdate="False">
-				<AttributeModifierAffects
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-				<RequirementsFilterMP
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-				<RequirementsFilterStrategic
-					Rule="UNPARSED"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="" />
-			</OCLSpecialPower>
+			/>
+
 			<AISpecialPowerUpdate
-				id="F362864C"
+				id="ModuleTag_SpecialPowerAirAttackAI"
 				CommandButtonName="Command_SpecialPowerSupersonicAirAttack"
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
@@ -1249,74 +465,86 @@
 				ReinforceDistance="0"
 				SpellMakesAStructure=""
 				SpecificUnit=""
-				UnitKindOf="AIRCRAFT ASSAULT_AIRCRAFT BOMBER_AIRCRAFT"
+				UnitKindOf="AIRCRAFT "
 				AllyUnitInclude=""
 				AllyUnitExclude=""
-				EnemyUnitInclude=""
+				EnemyUnitInclude="AIRCRAFT ASSAULT_AIRCRAFT BOMBER_AIRCRAFT"
 				EnemyUnitExclude="TRANSPORT"
 				MinimumCutoff="0"
 				UpdateTime="1s"
 				MaxFrequency="0"
-				RandomizeTargetLocation="False" />
+				RandomizeTargetLocation="False"
+			/>
 			<ArmorUpgrade
-				id="D7169F09"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="True"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				ArmorSetFlag="PLAYER_UPGRADE"
-				KillArmorUpgrade="False"
-				IgnoreArmorUpgrade="False">
+							id="ModuleTag_SonicRepulsionFieldUpgrade"
+							Permanent="false"
+							ArmorSetFlag="PLAYER_UPGRADE"
+				>
 				<TriggeredBy>Upgrade_SonicRepulsionField</TriggeredBy>
 			</ArmorUpgrade>
 			<StatusBitsUpgrade
-				id="BA874D9A"
-				RequiresAllTriggers="False"
-				RequiresAllConflictingTriggers="False"
-				Permanent="False"
-				WaypointMode="False"
-				WaypointModeTerminal="True"
-				StatusToSet="RIDER1"
-				StatusToClear=""
-				ApplyToContained="False">
+				id="ModuleTag_GDISonicRepulsionFieldStatusUpgrade"
+				StatusToSet="RIDER1">
 				<TriggeredBy>Upgrade_SonicRepulsionField</TriggeredBy>
 			</StatusBitsUpgrade>
 			<RepairUpdate
-				id="41FDEB2A"
-				RepopThreshold="0.2"
-				HealAmountPerSecond="90"
-				Toggleable="True"
-				RepairableWhenDead="False">
-				<PercentOfBuildCostToRebuildInfo
-					Pristine="50%"
-					Damaged="50%"
-					ReallyDamaged="50%"
-					Rubble="50%" />
-				<SelfAudio
-					SelfRepairFromDamageLoop=""
-					SelfRepairFromRubbleLoop="" />
+				id="ModuleTag_RepairUpdate">
+				<PercentOfBuildCostToRebuildInfo></PercentOfBuildCostToRebuildInfo>
+				<SelfAudio></SelfAudio>
 			</RepairUpdate>
+			<!--
+			<ParkingPlaceBehavior
+				id="ModuleTag_ParkingPlace"
+				HealAmount="10"
+				NumRows="1"
+				NumCols="1"
+				ApproachHeight="100"
+				CanSetRallyPoint="false"
+				ParkInHangars="true">
+				<CanParkHereFilter
+					Rule="NONE"
+					Relationship="ENEMIES"
+					Include="ENGINEER">
+				</CanParkHereFilter>
+			</ParkingPlaceBehavior>
+			-->
+			<HordeTransportContain
+				id="ModuleTag_Contain"
+				ObjectStatusOfContained=""
+				ContainMax="0"
+				Slots="0"
+				AllowEnemiesInside="false"
+				AllowAlliesInside="false"
+				AllowNeutralInside="false"
+				AllowOwnPlayerInsideOverride="false"
+				ShowPips="false"
+				EnterSound=""
+				ExitSound=""
+				KillPassengersOnDeath="false">
+				<PassengerFilter
+					Rule="NONE"
+					Include="" />
+				<DieMuxData
+					DeathTypes="ALL" />
+				<PassengerData
+					BonePrefix="ROOTTRANSFORM">
+					<Filter
+						Rule="NONE"
+						Include="" />
+				</PassengerData>
+			</HordeTransportContain>
+
 			<EngineerContain
-				id="E2BE8599"
-				ReplaceWith=""
-				NameOfVoiceToUseForFriendlyEnter="9D165EA1"
-				NameOfVoiceToUseForHostileEnter="124DB476"
+				id="ModuleTag_EngineerContain"
+				NameOfVoiceToUseForFriendlyEnter="VoiceEngineerRepair"
+				NameOfVoiceToUseForHostileEnter="VoiceCaptureBuilding"
+				EvaEventForRepair="BuildingRepaired"
+				EvaEventForCapture="EnemyBuildingCaptured"
 				FXForRepair="FX_Building_Repaired"
 				FXForCapture="FX_Building_Captured"
 				FXForCaptureAndReplace="FX_Building_Captured"
-				EvaEventForRepair="BuildingRepaired"
-				EvaEventForCapture="EnemyBuildingCaptured">
-				<CanEnterFilter
-					Rule="NONE"
-					Relationship=""
-					Alignment="NONE"
-					Include=""
-					Exclude=""
-					StatusBitFlags=""
-					RejectStatusBitFlags=""
-					AcceptModelCondition=""
-					RejectModelCondition="">
+				ImmediatelyEnabled="true">
+				<CanEnterFilter Rule="NONE">
 					<IncludeThing>GDIEngineer</IncludeThing>
 					<IncludeThing>NODSaboteur</IncludeThing>
 					<IncludeThing>AlienAssimilator</IncludeThing>
@@ -1328,198 +556,102 @@
 				</CanEnterFilter>
 			</EngineerContain>
 			<CreateObjectDie
-				id="34FD1923"
-				CreationList="OCL_AdvancedGDIBuildingDestruction">
+				id="ModuleTag_CreateOccupiedDie"
+				CreationList="OCL_AdvancedGDIBuildingDestruction" >
 				<DieMuxData
-					ExemptStatus=""
-					RequiredStatus=""
-					DamageAmountRequired="-1"
-					MinKillerAngle="1d"
-					MaxKillerAngle="-1d"
 					DeathTypes="ALL"
-					DeathTypesForbidden="SUICIDED DETONATED" />
+					DeathTypesForbidden="DETONATED SUICIDED"
+				/>
 				<UpgradeForbidden>Upgrade_NoSpawnUponDestruction</UpgradeForbidden>
 			</CreateObjectDie>
 			<CreateObjectDie
-				id="4BF392A4"
-				CreationList="OCL_AdvancedGDIBuildingSuicide">
-				<DieMuxData
-					ExemptStatus=""
-					RequiredStatus=""
-					DamageAmountRequired="-1"
-					MinKillerAngle="1d"
-					MaxKillerAngle="-1d"
-					DeathTypes="SUICIDED"
-					DeathTypesForbidden="" />
+				id="ModuleTag_CreateOccupiedSuicide"
+				CreationList="OCL_AdvancedGDIBuildingSuicide" >
+				<DieMuxData DeathTypes="SUICIDED" />
 			</CreateObjectDie>
+
 		</Behaviors>
 		<AI>
 			<AIUpdate
-				id="4B2D0C2A"
+				id="ModuleTag_AIUpdate"
 				AutoAcquireEnemiesWhenIdle="NO"
-				StopChaseDistance="500"
-				HoldGroundCloseRangeDistance="0"
 				AILuaEventsList="BuildingPowerFunctions"
-				MinCowerTime="0s"
-				MaxCowerTime="0s"
-				RampageTime="0s"
-				BurningDeathTime="0s"
-				TimeToEjectPassengersOnRampage="0"
-				ComboLocomotorSet="NORMAL"
-				ComboLocoAttackDistance="80"
-				IdleTargetTime="0s"
-				MaxCombineChildren="1"
-				SpawnOffsetRadius="0"
-				StandGround="False"
-				CanAttackWhileContained="False"
-				RampageRequiresAflame="False"
-				FadeOnPortals="False" />
+			/>
 		</AI>
 		<Body>
 			<ActiveBody
-				id="B313F576"
-				MaxHealth="3000"
-				MaxHealthDamaged="0"
-				MaxHealthReallyDamaged="0"
-				InitialHealth="-1"
-				RecoveryTime="0"
-				DodgePercent="0"
-				EnteringDamagedTransitionTime="0s"
-				EnteringReallyDamagedTransitionTime="0s"
-				GrabFX=""
-				GrabDamage="200"
-				HealingBuffFX=""
-				DamagedAttributeModifier=""
-				ReallyDamagedAttributeModifier=""
-				CheerRadius="200"
-				BurningDeathFX=""
-				SecondChanceUpgrade=""
-				SecondChanceHeal="0"
-				UseDefaultDamageSettings="True"
-				RemoveUpgradesOnDeath="False"
-				BurningDeathBehavior="False">
+			 id="ModuleTag_Body"
+			 MaxHealth="3000.0">
 				<DamageTrigger
-					HealthLevelBelowPercent="66"
-					RemoveUpgrade="Upgrade_SonicRepulsionField"
-					RemoveStatus="" />
+				 HealthLevelBelowPercent="66"
+				 RemoveUpgrade="Upgrade_SonicRepulsionField"/>
 			</ActiveBody>
 		</Body>
 		<Geometry
-			IsSmall="False">
+			IsSmall="false">
 			<Shape
 				Type="BOX"
-				ContactPointGeneration="NONE"
-				MajorRadius="9"
-				MinorRadius="5"
-				Height="65"
-				FrontAngle="0d"
-				Active="True"
-				UsedForHealthBox="True">
+				MajorRadius="9.0"
+				MinorRadius="5.0"
+				Height="65.0">
 				<Offset
-					x="0"
-					y="-40"
-					z="0" />
+					y="-40.0" />
 			</Shape>
 			<Shape
 				Type="BOX"
-				ContactPointGeneration="VEHICLE"
-				MajorRadius="36"
+				MajorRadius="36.0"
 				MinorRadius="47.5"
-				Height="9"
-				FrontAngle="0d"
-				Active="True"
-				UsedForHealthBox="True">
+				Height="9.0"
+				ContactPointGeneration="VEHICLE">
 				<Offset
 					x="-3"
-					y="-5"
-					z="0" />
+					y="-5" />
 			</Shape>
 			<Shape
 				Type="CYLINDER"
-				ContactPointGeneration="INFANTRY"
-				MajorRadius="14"
-				MinorRadius="1"
-				Height="40"
-				FrontAngle="0d"
-				Active="True"
-				UsedForHealthBox="True">
+				MajorRadius="14.0"
+				Height="40.0"
+				ContactPointGeneration="INFANTRY">
 				<Offset
 					x="-25"
-					y="5"
-					z="0" />
+					y="5" />
 			</Shape>
 		</Geometry>
 		<AudioArrayVoice>
+			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
+			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 			<AudioEntry
-				EvaEvent="BuildingStolen"
-				AudioType="voiceDefectingAway" />
-			<AudioEntry
-				EvaEvent="EnemyBuildingCaptured"
-				AudioType="voiceDefectingTowards" />
-			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:15B070B9]"
+				Sound="AudioEvent:GDI_SpaceCommandUplinkSelect"
 				AudioType="voiceSelect" />
 		</AudioArrayVoice>
 		<AudioArraySound>
-			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:45BB2ECF]"
-				AudioType="soundUnderConstruction" />
-			<AudioEntry
-				Sound="Asset not found in stream: [A3A7AF37:FDA3F3E1]"
-				AudioType="soundOnDamaged" />
-			<AudioEntry
-				Sound="Asset not found in stream: [A3A7AF37:10435FC9]"
-				AudioType="soundOnReallyDamaged" />
+			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
+			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_LightDamageMS" AudioType="soundOnDamaged" />
+			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
 		</AudioArraySound>
+
 		<EvaEvents
-			EvaEventSoldOwner="StructureSold"
+			EvaEventProductionStarted="BuildingConstructionStarted"
+			EvaEventProductionComplete="BuildingConstructionComplete"
 			EvaEventDamagedOwner="StructureUnderAttack"
-			EvaEventSecondDamageFarFromFirstScanRange="200"
-			EvaEventSecondDamageFarFromFirstTimeoutMS="155"
+			EvaEventSoldOwner="StructureSold"
 			EvaEventRepairingOwner="StructureRepairing"
 			EvaEnemyObjectSightedEvent="EnemyCampSighted"
 			EvaEventAvailableForProduction="NewConstructionOptions"
-			EvaEventProductionStarted="BuildingConstructionStarted"
-			EvaEventProductionComplete="BuildingConstructionComplete"
 			EvaEventPlacementFailed="StructurePlacementFailed"
 			EvaEventCannotBuildDueToFullBuildQueue="StructureCannotBuildDueToFullBuildQueue"
 			EvaEventBuildOnHold="BuildOnHold"
 			EvaEventBuildCancelled="BuildCancelled"
 			EvaEventManuallyPoweredOff="BuildingManuallyPoweredDown"
 			EvaEventManuallyPoweredOn="BuildingManuallyPoweredUp" />
+
 		<ShadowInfo
-			Type="VOLUME"
-			Texture=""
-			AdditionalTexture=""
-			SizeX="0"
-			SizeY="0"
-			OffsetX="0"
-			OffsetY="0"
-			OpacityStart="0"
-			OpacityFadeInTime="0s"
-			OpacityPeak="1"
-			OpacityFadeOutTime="0s"
-			OpacityEnd="0"
-			MaxHeight="20"
-			SunAngle="0"
-			OverrideLODVisibility="False"
-			UseHouseColor="False"
-			IsRotatingWithObject="True"
-			LocalPlayerOnly="False" />
+			Type="VOLUME" />
 		<VisionInfo
 			VisionRange="100"
-			ShroudClearingRange="1000"
-			VisionSide="100%"
-			VisionRear="100%"
-			VisionBonusTestRadius="100"
-			VisionBonusTestSegments="8"
-			VisionBonusPercentPerFoot="0%"
-			MaxVisionBonusPercent="50%"
-			MinVisionBonusPercent="-50%" />
+			ShroudClearingRange="1000" />
 		<ProjectedBuildabilityInfo
 			Radius="175"
-			BuildPlacementTypes="MAIN_STRUCTURE OTHER_STRUCTURE"
-			StatusToReject=""
-			ModelConditionsToReject="" />
+			BuildPlacementTypes="MAIN_STRUCTURE OTHER_STRUCTURE" />
 	</GameObject>
 </AssetDeclaration>

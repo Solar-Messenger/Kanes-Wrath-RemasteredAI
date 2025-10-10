@@ -109,9 +109,9 @@
 		<Draws>
 			<ScriptedModelDraw
 				id="50DF2C46"
-				InitialRecoilSpeed="2"
-				MaxRecoilDistance="3"
 				RecoilDamping="0.4"
+				MaxRecoilDistance="3"
+				InitialRecoilSpeed="2"
 				RecoilSettleSpeed="0.065"
 				MinLODRequired="LOW"
 				ProjectileBoneFeedbackEnabledSlots=""
@@ -155,7 +155,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="GBCOMPOST"
+						Name="W3DContainer:GBCOMPOST"
 						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
@@ -165,7 +165,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="GBCOMPOST_ASKN"
+						Name="W3DContainer:GBCOMPOST_ASKN"
 						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
@@ -175,7 +175,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="GBCOMPOSTD3_SN"
+						Name="W3DContainer:GBCOMPOSTD3_SN"
 						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
@@ -185,7 +185,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="GBCOMPOSTD2_SN"
+						Name="W3DContainer:GBCOMPOSTD2_SN"
 						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
@@ -195,7 +195,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="GBCOMPOST"
+						Name="W3DContainer:GBCOMPOST"
 						ExtraMesh="False" />
 					<Texture
 						Original="GBCommandPost"
@@ -217,6 +217,7 @@
 					AllowRepeatInRandomPick="False"
 					SimilarRestart="False">
 					<Script>
+						CurDrawableHideSubObject("LIGHT_01")
 						CurDrawableHideSubObject("UG_Scan")
 						CurDrawableHideSubObject("UG_Scan01")
 						CurDrawableHideSubObject("UG_Scan02")
@@ -381,10 +382,69 @@
 				</AnimationState>
 			</ScriptedModelDraw>
 			<ScriptedModelDraw
+				id="ModuleTag_Show_CPGlow"
+				OkToChangeModelColor="true">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="STRUCTURE_UNPACKING"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name=""
+						ExtraMesh="False" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DYING"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name=""
+						ExtraMesh="False" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="REALLYDAMAGED"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name=""
+						ExtraMesh="False" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="DAMAGED"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name=""
+						ExtraMesh="False" />
+				</ModelConditionState>
+				<ModelConditionState
+					ParseCondStateType="PARSE_NORMAL"
+					ConditionsYes="NIGHT"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
+					<Model
+						Name="W3DContainer:GBCOMPOSTGLOW"
+						ExtraMesh="False" />
+				</ModelConditionState>
+			</ScriptedModelDraw>
+			<ScriptedModelDraw
 				id="3ADDB6E9"
-				InitialRecoilSpeed="2"
-				MaxRecoilDistance="3"
 				RecoilDamping="0.4"
+				MaxRecoilDistance="3"
+				InitialRecoilSpeed="2"
 				RecoilSettleSpeed="0.065"
 				MinLODRequired="LOW"
 				ProjectileBoneFeedbackEnabledSlots=""
@@ -428,7 +488,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="GBCOMPOST_RDR"
+						Name="W3DContainer:GBCOMPOST_RDR"
 						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
@@ -438,7 +498,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="GBCOMPOST_RDRA"
+						Name="W3DContainer:GBCOMPOST_RDRA"
 						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
@@ -448,7 +508,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="GBCOMPOST_RDRD"
+						Name="W3DContainer:GBCOMPOST_RDRD"
 						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
@@ -458,7 +518,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="GBCOMPOST_RDRD"
+						Name="W3DContainer:GBCOMPOST_RDRD"
 						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
@@ -582,9 +642,9 @@
 			</ScriptedModelDraw>
 			<ScriptedModelDraw
 				id="CD182A15"
-				InitialRecoilSpeed="2"
-				MaxRecoilDistance="3"
 				RecoilDamping="0.4"
+				MaxRecoilDistance="3"
+				InitialRecoilSpeed="2"
 				RecoilSettleSpeed="0.065"
 				MinLODRequired="LOW"
 				ProjectileBoneFeedbackEnabledSlots=""
@@ -668,7 +728,7 @@
 					ButtonImage=""
 					RetainSubObjects="False">
 					<Model
-						Name="GBCOMPOSTSRF_SKN"
+						Name="W3DContainer:GBCOMPOSTSRF_SKN"
 						ExtraMesh="False" />
 				</ModelConditionState>
 			</ScriptedModelDraw>
@@ -693,8 +753,8 @@
 					ExemptStatus=""
 					RequiredStatus=""
 					DamageAmountRequired="-1"
-					MinKillerAngle="1d"
-					MaxKillerAngle="-1d"
+					MinKillerAngle="0.9999999d"
+					MaxKillerAngle="-0.9999999d"
 					DeathTypes="CATALYST"
 					DeathTypesForbidden="" />
 			</FireWeaponWhenDead>
@@ -721,7 +781,7 @@
 				Permanent="False"
 				WaypointMode="False"
 				WaypointModeTerminal="True"
-				ShowSubObjects="UG_StealthDetector UG_StealthDetector01 UG_StealthDetector02 UG_StealthDetector03"
+				ShowSubObjects="UG_Scan UG_Scan01 UG_Scan02"
 				FadeTimeInSeconds="0.5"
 				WaitBeforeFadeInSeconds="0"
 				RecolorHouse="False"
@@ -741,7 +801,7 @@
 				Permanent="False"
 				WaypointMode="False"
 				WaypointModeTerminal="True"
-				ShowSubObjects="UG_Scan UG_Scan01 UG_Scan02"
+				ShowSubObjects="UG_StealthDetector UG_StealthDetector01 UG_StealthDetector02 UG_StealthDetector03"
 				FadeTimeInSeconds="0.5"
 				WaitBeforeFadeInSeconds="0"
 				RecolorHouse="False"
@@ -802,8 +862,8 @@
 					ExemptStatus=""
 					RequiredStatus=""
 					DamageAmountRequired="-1"
-					MinKillerAngle="1d"
-					MaxKillerAngle="-1d"
+					MinKillerAngle="0.9999999d"
+					MaxKillerAngle="-0.9999999d"
 					DeathTypes="ALL"
 					DeathTypesForbidden="" />
 			</SlowDeath>
@@ -813,8 +873,8 @@
 					ExemptStatus=""
 					RequiredStatus=""
 					DamageAmountRequired="-1"
-					MinKillerAngle="1d"
-					MaxKillerAngle="-1d"
+					MinKillerAngle="0.9999999d"
+					MaxKillerAngle="-0.9999999d"
 					DeathTypes="ALL"
 					DeathTypesForbidden="" />
 				<Event
@@ -919,15 +979,15 @@
 				id="73D10F32"
 				CommandButtonName="Command_CommandPostRadarScan"
 				SecondaryCommandButtonName=""
-				SpecialPowerAIType="SPECIAL_POWER_TARGET_STEALTH"
+				SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF"
 				SpecialPowerRadius="999999"
 				ReinforceDistance="0"
 				SpellMakesAStructure=""
 				SpecificUnit=""
-				UnitKindOf="STRUCTURE VEHICLE"
+				UnitKindOf="HAVESTER"
 				AllyUnitInclude=""
-				AllyUnitExclude="STRUCTURE VEHICLE"
-				EnemyUnitInclude="BROADCASTS_INVISIBILITY HARVESTER"
+				AllyUnitExclude=""
+				EnemyUnitInclude="STRUCTURE HARVESTER"
 				EnemyUnitExclude=""
 				MinimumCutoff="0"
 				UpdateTime="1s"
@@ -937,7 +997,7 @@
 				id="D7169F09"
 				RequiresAllTriggers="False"
 				RequiresAllConflictingTriggers="False"
-				Permanent="True"
+				Permanent="false"
 				WaypointMode="False"
 				WaypointModeTerminal="True"
 				ArmorSetFlag="PLAYER_UPGRADE"
@@ -972,11 +1032,53 @@
 					SelfRepairFromDamageLoop=""
 					SelfRepairFromRubbleLoop="" />
 			</RepairUpdate>
+			<!--
+			<ParkingPlaceBehavior
+				id="ModuleTag_ParkingPlace"
+				HealAmount="10"
+				NumRows="1"
+				NumCols="1"
+				ApproachHeight="100"
+				CanSetRallyPoint="false"
+				ParkInHangars="true">
+				<CanParkHereFilter
+					Rule="NONE"
+					Relationship="ENEMIES"
+					Include="ENGINEER">
+				</CanParkHereFilter>
+			</ParkingPlaceBehavior>
+			-->
+			<HordeTransportContain
+				id="ModuleTag_Contain"
+				ObjectStatusOfContained=""
+				ContainMax="0"
+				Slots="0"
+				AllowEnemiesInside="false"
+				AllowAlliesInside="false"
+				AllowNeutralInside="false"
+				AllowOwnPlayerInsideOverride="false"
+				ShowPips="false"
+				EnterSound=""
+				ExitSound=""
+				KillPassengersOnDeath="false">
+				<PassengerFilter
+					Rule="NONE"
+					Include="" />
+				<DieMuxData
+					DeathTypes="ALL" />
+				<PassengerData
+					BonePrefix="ROOTTRANSFORM">
+					<Filter
+						Rule="NONE"
+						Include="" />
+				</PassengerData>
+			</HordeTransportContain>
+
 			<EngineerContain
 				id="E2BE8599"
 				ReplaceWith=""
-				NameOfVoiceToUseForFriendlyEnter="9D165EA1"
-				NameOfVoiceToUseForHostileEnter="124DB476"
+				NameOfVoiceToUseForFriendlyEnter="VoiceEngineerRepair"
+				NameOfVoiceToUseForHostileEnter="VoiceCaptureBuilding"
 				FXForRepair="FX_Building_Repaired"
 				FXForCapture="FX_Building_Captured"
 				FXForCaptureAndReplace="FX_Building_Captured"
@@ -1004,16 +1106,16 @@
 			</EngineerContain>
 			<CreateObjectDie
 				id="34FD1923"
-				CreationList="OCL_GenericGDIBuildingDestruction">
+				CreationList="OCL_GenericGDIBuildingDestruction"
+				UpgradeForbidden="">
 				<DieMuxData
 					ExemptStatus=""
 					RequiredStatus=""
 					DamageAmountRequired="-1"
-					MinKillerAngle="1d"
-					MaxKillerAngle="-1d"
+					MinKillerAngle="0.9999999d"
+					MaxKillerAngle="-0.9999999d"
 					DeathTypes="ALL"
 					DeathTypesForbidden="SUICIDED DETONATED" />
-				<UpgradeForbidden>Upgrade_NoSpawnUponDestruction</UpgradeForbidden>
 			</CreateObjectDie>
 			<CreateObjectDie
 				id="4BF392A4"
@@ -1022,8 +1124,8 @@
 					ExemptStatus=""
 					RequiredStatus=""
 					DamageAmountRequired="-1"
-					MinKillerAngle="1d"
-					MaxKillerAngle="-1d"
+					MinKillerAngle="0.9999999d"
+					MaxKillerAngle="-0.9999999d"
 					DeathTypes="SUICIDED"
 					DeathTypesForbidden="" />
 			</CreateObjectDie>
@@ -1129,7 +1231,7 @@
 				id="97428C02"
 				CommandButtonName="Command_SpecialPowerSonicRepulsionField"
 				SecondaryCommandButtonName=""
-				SpecialPowerAIType="SPECIAL_POWER_SPECIFIC_UNIT"
+				SpecialPowerAIType="SPECIAL_POWER_HEAL_AOE"
 				SpecialPowerRadius="-1"
 				ReinforceDistance="0"
 				SpellMakesAStructure=""
@@ -1143,6 +1245,10 @@
 				UpdateTime="1s"
 				MaxFrequency="0"
 				RandomizeTargetLocation="False" />
+			<!--
+			<BuildingBehavior
+				id="2118A085"
+				NightWindowObject="LIGHT_01" /> -->
 		</Behaviors>
 		<AI>
 			<AIUpdate
@@ -1339,25 +1445,25 @@
 				EvaEvent="EnemyBuildingCaptured"
 				AudioType="voiceDefectingTowards" />
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:EA61CA53]"
+				Sound="AudioEvent:GDI_CommandPostSelect"
 				AudioType="voiceSelect" />
 		</AudioArrayVoice>
 		<AudioArraySound>
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:45BB2ECF]"
+				Sound="AudioEvent:GDI_BuildingPlaced"
 				AudioType="soundUnderConstruction" />
 			<AudioEntry
-				Sound="Asset not found in stream: [A3A7AF37:FDA3F3E1]"
+				Sound="Multisound:HumanFaction_MediumBuilding_LightDamageMS"
 				AudioType="soundOnDamaged" />
 			<AudioEntry
-				Sound="Asset not found in stream: [A3A7AF37:10435FC9]"
+				Sound="Multisound:HumanFaction_MediumBuilding_HeavyDamageMS"
 				AudioType="soundOnReallyDamaged" />
 		</AudioArraySound>
 		<EvaEvents
 			EvaEventSoldOwner="StructureSold"
 			EvaEventDamagedOwner="StructureUnderAttack"
 			EvaEventSecondDamageFarFromFirstScanRange="200"
-			EvaEventSecondDamageFarFromFirstTimeoutMS="155"
+			EvaEventSecondDamageFarFromFirstTimeoutMS="31000"
 			EvaEventRepairingOwner="StructureRepairing"
 			EvaEnemyObjectSightedEvent="EnemyCampSighted"
 			EvaEventAvailableForProduction="NewConstructionOptions"

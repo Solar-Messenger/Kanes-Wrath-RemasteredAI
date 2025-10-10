@@ -945,7 +945,7 @@
 				Permanent="False"
 				WaypointMode="False"
 				WaypointModeTerminal="True"
-				SoundToPlay="Asset not found in stream: [844D7B9F:9D4DB7C1]"
+				SoundToPlay="GDI_CommandPost_APammoUpgrade"
 				KillAfterMS="0">
 				<TriggeredBy>Upgrade_GDIAPAmmo</TriggeredBy>
 			</AudioLoopUpgrade>
@@ -1048,25 +1048,25 @@
 				EvaEvent="EnemyBuildingCaptured"
 				AudioType="voiceDefectingTowards" />
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:5CD8EAA7]"
+				Sound="GDI_WatchTowerSelect"
 				AudioType="voiceSelect" />
 		</AudioArrayVoice>
 		<AudioArraySound>
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:45BB2ECF]"
+				Sound="GDI_BuildingPlaced"
 				AudioType="soundUnderConstruction" />
 			<AudioEntry
-				Sound="Asset not found in stream: [A3A7AF37:58972509]"
+				Sound="HumanFaction_SmallBuilding_LightDamageMS"
 				AudioType="soundOnDamaged" />
 			<AudioEntry
-				Sound="Asset not found in stream: [A3A7AF37:F43E413C]"
+				Sound="HumanFaction_SmallBuilding_HeavyDamageMS"
 				AudioType="soundOnReallyDamaged" />
 		</AudioArraySound>
 		<EvaEvents
 			EvaEventSoldOwner="StructureSold"
 			EvaEventDamagedOwner="StructureUnderAttack"
 			EvaEventSecondDamageFarFromFirstScanRange="200"
-			EvaEventSecondDamageFarFromFirstTimeoutMS="155"
+			EvaEventSecondDamageFarFromFirstTimeoutMS="31000"
 			EvaEventRepairingOwner="StructureRepairing"
 			EvaEnemyObjectSightedEvent="EnemyCampSighted"
 			EvaEventAvailableForProduction="NewConstructionOptions"
