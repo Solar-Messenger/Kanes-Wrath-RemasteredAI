@@ -366,10 +366,11 @@ Data/Static.xml
 Data/MetaGame/MetaGameStatic.xml
 Data/SkirmishAI/SkirmishAIIncludes.xml
 Data/SkirmishAI/Targets
-Data/SkirmishAI/States/AIStates.xml
 Data/SkirmishAI/Personalities/PersonalityList.xml
 Data/SkirmishAI/OpeningMoves/TestMove.xml
 Data/maps/official/**/*.tga
 Data/maps/official/**/*.map
 /Data/AdditionalMaps
 /Data/GDI/GDI.xml
+/Data/GDI/Units/GDIAPC.xml
+/Data/GDI/Units/GDIAPC.xml
