@@ -933,7 +933,7 @@
 				SpecialPowerRadius="999999.0"
 				UnitKindOf="HARVESTER"
 				AllyUnitInclude=""
-				AllyUnitExclude=""
+				AllyUnitExclude="HARVESTER"
 				EnemyUnitInclude="HARVESTER"
 				EnemyUnitExclude="AIRCRAFT"
 			/>
@@ -948,8 +948,8 @@
 			<AISpecialPowerUpdate
 				id="ModuleTag_CommandPostCallBloodhoundAI"
 				CommandButtonName="Command_CommandPostCallBloodhound"
-				ReinforceDistance="999999.0"
-				SpecialPowerRadius="500.0"
+				SpecialPowerRadius="999999.0"
+				ReinforceDistance="1000.0"
 				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
 			/>
 
