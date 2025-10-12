@@ -2339,7 +2339,7 @@
 				UnitKindOf="STRUCTURE"
 				AllyUnitInclude=""
 				AllyUnitExclude="STRUCTURE VALID_TARGET_FOR_C4"
-				EnemyUnitInclude="STRUCTURE VALID_TARGET_FOR_C4"
+				EnemyUnitInclude="VALID_TARGET_FOR_C4"
 				EnemyUnitExclude=""
 				MinimumCutoff="200"
 				UpdateTime="1s"
