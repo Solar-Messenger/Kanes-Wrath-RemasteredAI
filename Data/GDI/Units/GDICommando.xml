@@ -2151,9 +2151,9 @@
 				FleeRangeAfterCompletion="0"
 				DisableFXParticleSystem=""
 				PackSound=""
-				UnpackSound="Asset not found in stream: [844D7B9F:4CDD6FEB]"
+				UnpackSound="AudioEvent:GDI_Commando_JumpJetStart"
 				PrepSoundLoop=""
-				TriggerSound="Asset not found in stream: [A3A7AF37:8E875AE6]"
+				TriggerSound="Multisound:GDI_Commando_JumpJetFireMS"
 				ActiveLoopSound=""
 				AwardXPForTriggering="0"
 				SkillPointsForTriggering="-1"
@@ -2607,11 +2607,11 @@
 				id="04D7CD75"
 				MaxUpdateRangeCap="0">
 				<Sound
-					Sound="Asset not found in stream: [844D7B9F:0D6AE562]"
+					Sound="AudioEvent:GDI_Commando_JumpJetLand"
 					Animation="GU_CMMNDO_LNDB"
 					Frame="8" />
 				<Sound
-					Sound="Asset not found in stream: [844D7B9F:2FE0682E]"
+					Sound="AudioEvent:Bodyfall"
 					Animation="GU_CMMNDO_LNDA"
 					Frame="5" />
 			</AnimationSoundClientBehavior>
@@ -2630,47 +2630,47 @@
 		</Geometry>
 		<AudioArrayVoice>
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:684AE3D9]"
+				Sound="AudioEvent:GDI_Commando_VoiceAttack"
 				AudioType="voiceAttack" />
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:CC3F172C]"
+				Sound="AudioEvent:GDI_Commando_VoiceAttackC4"
 				AudioType="voiceAttackStructure" />
 			<AudioEntry
-				Sound="Asset not found in stream: [A3A7AF37:E6A6F226]"
+				Sound="Multisound:GDI_Commando_VoiceCreateMS"
 				AudioType="voiceCreated" />
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:2F9D596B]"
+				Sound="AudioEvent:GDI_Commando_VoiceGarrison"
 				AudioType="voiceGarrison" />
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:85D73487]"
+				Sound="AudioEvent:GDI_Commando_VoiceMove"
 				AudioType="voiceMove" />
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:230F790E]"
+				Sound="AudioEvent:GDI_Commando_VoiceMoveAttack"
 				AudioType="voiceAttackAfterMoving" />
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:A990436A]"
+				Sound="AudioEvent:GDI_Commando_VoiceRetreat"
 				AudioType="voiceRetreatToCastle" />
 			<AudioEntry
-				Sound="Asset not found in stream: [A3A7AF37:081B8A27]"
+				Sound="Multisound:GDI_Commando_VoiceSelectMS"
 				AudioType="voiceSelect" />
 			<AudioEntry
-				Sound="Asset not found in stream: [A3A7AF37:418694CF]"
+				Sound="Multisound:GDI_Commando_VoiceSelectBattleMS"
 				AudioType="voiceSelectBattle" />
 			<NamedEntry
-				Sound="Asset not found in stream: [844D7B9F:81DB770A]"
-				Name="108EB4CF" />
+				Sound="AudioEvent:GDI_Commando_VoiceMoveJumpJet"
+				Name="InitiateJumpJets" />
 			<NamedEntry
-				Sound="Asset not found in stream: [844D7B9F:CC3F172C]"
-				Name="CA9F677D" />
+				Sound="AudioEvent:GDI_Commando_VoiceAttackC4"
+				Name="InitiatePlaceSatchelCharge" />
 			<NamedEntry
-				Sound="Asset not found in stream: [844D7B9F:CC3F172C]"
-				Name="0632A7AB" />
+				Sound="AudioEvent:GDI_Commando_VoiceAttackC4"
+				Name="InitiatePlaceSatchelChargeSticky" />
 			<NamedEntry
-				Sound="Asset not found in stream: [844D7B9F:CC3F172C]"
-				Name="2241AEA3" />
+				Sound="AudioEvent:GDI_Commando_VoiceAttackC4"
+				Name="InitiateJumpJetPlaceSatchelCharge" />
 			<NamedEntry
-				Sound="Asset not found in stream: [844D7B9F:CC3F172C]"
-				Name="A93937D0" />
+				Sound="AudioEvent:GDI_Commando_VoiceAttackC4"
+				Name="InitiateJumpJetPlaceSatchelChargeSticky" />
 		</AudioArrayVoice>
 		<EvaEvents
 			EvaEventDieOwner="UnitLost"
