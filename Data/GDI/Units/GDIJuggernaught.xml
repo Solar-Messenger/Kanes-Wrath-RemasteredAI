@@ -1508,11 +1508,11 @@
 				ReinforceDistance="0"
 				SpellMakesAStructure=""
 				SpecificUnit="GDISniper"
-				UnitKindOf="SUPER_WEAPON FS_FACTORY FS_TECHNOLOGY FS_BASE_DEFENSE CAN_ATTACK"
+				UnitKindOf="SUPER_WEAPON FS_FACTORY FS_TECHNOLOGY FS_BASE_DEFENSE"
 				AllyUnitInclude=""
-				AllyUnitExclude=""
-				EnemyUnitInclude="FS_FACTORY FS_TECHNOLOGY FS_BASE_DEFENSE CAN_ATTACK"
-				EnemyUnitExclude="INFANTRY"
+				AllyUnitExclude="INFANTRY VEHICLE STRUCTURE"
+				EnemyUnitInclude="SUPER_WEAPON FS_FACTORY FS_TECHNOLOGY FS_BASE_DEFENSE"
+				EnemyUnitExclude="INFANTRY VEHICLE"
 				MinimumCutoff="0"
 				UpdateTime="1s"
 				MaxFrequency="0"
@@ -1685,112 +1685,33 @@
 		</Body>
 		<ClientBehaviors>
 			<AnimationSoundClientBehavior
-				id="7A2074AA"
-				MaxUpdateRangeCap="0">
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="GUJUGG_ABTA"
-					Frame="27 65" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="GUJUGG_AIFA"
-					Frame="112" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="GUJUGG_ATKA1"
-					Frame="12" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="GUJUGG_ATKA3"
-					Frame="14" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="GUJUGG_ATKB1"
-					Frame="13" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="Asset not found in stream: [5E2D96EE]"
-					Frame="11" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="GUJUGG_BATA"
-					Frame="28 44" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="GUJUGG_BATB"
-					Frame="37 51" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="GUJUGG_BIFA"
-					Frame="118" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="GUJUGG_BIFB"
-					Frame="30 88 294" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="GUJUGG_BIFC"
-					Frame="41 90" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="GUJUGG_BIFD"
-					Frame="234" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="GUJUGG_BLDA"
-					Frame="75 94 112" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="GUJUGG_BLDA"
-					Frame="75 94 112" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="GUJUGG_DECL"
-					Frame="16" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="GUJUGG_DIEA"
-					Frame="60 79" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="GUJUGG_DIEB"
-					Frame="5 63" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="GUJUGG_DIEC"
-					Frame="7 23 43 78 105 130" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="GUJUGG_DIED"
-					Frame="22 43 89 94 101" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="GUJUGG_GTPA"
-					Frame="61 101 119" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:5AF90614]"
-					Animation="GUJUGG_GTPA"
-					Frame="40" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:0D2684F0]"
-					Animation="GUJUGG_GTPA"
-					Frame="70" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="GUJUGG_TRNL"
-					Frame="14 30" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="GUJUGG_TRNR"
-					Frame="14 30" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="GUJUGG_WLKA"
-					Frame="0 25" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:F62015B0]"
-					Animation="GUJUGG_WLKB"
-					Frame="0 25" />
+				id="ModuleTag_ASCB">
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_ABTA" Frame="27 65" />
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_AIFA" Frame="112" />
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_ATKA1" Frame="12" />
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_ATKA3" Frame="14" />
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_ATKB1" Frame="13" />
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_ATKB3" Frame="11" />
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_BATA" Frame="28 44" />
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_BATB" Frame="37 51" />
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_BIFA" Frame="118" />
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_BIFB" Frame="30 88 294" />
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_BIFC" Frame="41 90" />
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_BIFD" Frame="234" />
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_BLDA" Frame="75 94 112" />
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_BLDA" Frame="75 94 112" />
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_DECL" Frame="16" />
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_DIEA" Frame="60 79" />
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_DIEB" Frame="5 63" />
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_DIEC" Frame="7 23 43 78 105 130" />
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_DIED" Frame="22 43 89 94 101" />
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_GTPA" Frame="61 101 119" />
+				<Sound Sound="GDI_Juggernaught_Recovered1" Animation="GUJUGG_GTPA" Frame="40" />
+				<Sound Sound="GDI_Juggernaught_Recovered2" Animation="GUJUGG_GTPA" Frame="70" />
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_TRNL" Frame="14 30" />
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_TRNR" Frame="14 30" />
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_WLKA" Frame="0 25" />
+				<Sound Sound="GDI_Juggernaught_Footstep" Animation="GUJUGG_WLKB" Frame="0 25" />
 			</AnimationSoundClientBehavior>
 		</ClientBehaviors>
 		<Geometry
@@ -1807,39 +1728,39 @@
 		</Geometry>
 		<AudioArrayVoice>
 			<AudioEntry
-				Sound="Asset not found in stream: [A3A7AF37:EA9A51F2]"
+				Sound="Multisound:GDI_Juggernaught_VoiceAttackMS"
 				AudioType="voiceAttack" />
 			<AudioEntry
-				Sound="Asset not found in stream: [A3A7AF37:98484D43]"
+				Sound="Multisound:GDI_Juggernaught_VoiceCreateMS"
 				AudioType="voiceCreated" />
 			<AudioEntry
-				Sound="Asset not found in stream: [A3A7AF37:7DA5A5B7]"
+				Sound="Multisound:GDI_Juggernaught_VoiceMoveMS"
 				AudioType="voiceMove" />
 			<AudioEntry
-				Sound="Asset not found in stream: [A3A7AF37:7DA5A5B7]"
+				Sound="Multisound:GDI_Juggernaught_VoiceMoveMS"
 				AudioType="voiceGuard" />
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:16CB472F]"
+				Sound="AudioEvent:GDI_Juggernaught_VoiceMoveAttack"
 				AudioType="voiceAttackAfterMoving" />
 			<AudioEntry
-				Sound="Asset not found in stream: [A3A7AF37:FC46DF41]"
+				Sound="Multisound:GDI_Juggernaught_VoiceRetreatMS"
 				AudioType="voiceRetreatToCastle" />
 			<AudioEntry
-				Sound="Asset not found in stream: [A3A7AF37:41A62206]"
+				Sound="Multisound:GDI_Juggernaught_VoiceSelectMS"
 				AudioType="voiceSelect" />
 			<AudioEntry
-				Sound="Asset not found in stream: [A3A7AF37:FA2F43C5]"
+				Sound="Multisound:GDI_Juggernaught_VoiceSelectBattleMS"
 				AudioType="voiceSelectBattle" />
 			<NamedEntry
-				Sound="Asset not found in stream: [A3A7AF37:CDF47D6E]"
-				Name="933DCB8B" />
+				Sound="Multisound:GDI_Juggernaught_VoiceBombardAttackMS"
+				Name="InitiateSpotTargetBombard" />
 		</AudioArrayVoice>
 		<AudioArraySound>
 			<AudioEntry
-				Sound="Asset not found in stream: [A3A7AF37:ABEA8DFE]"
+				Sound="Multisound:GDI_Juggernaught_MoveStartMS"
 				AudioType="soundMoveStart" />
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:FEE3E6D3]"
+				Sound="AudioEvent:PredatorIdleLoop"
 				AudioType="soundAmbient" />
 		</AudioArraySound>
 		<EvaEvents
