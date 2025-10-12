@@ -1554,24 +1554,25 @@
 				Permanent="False"
 				WaypointMode="False"
 				WaypointModeTerminal="True"
-				SoundToPlay="Asset not found in stream: [844D7B9F:A6A7B119]"
+				SoundToPlay="AudioEvent:GDI_Orca_SensorPodInstalled"
 				KillAfterMS="0">
 				<TriggeredBy>Upgrade_OrcaSensorPod</TriggeredBy>
 			</AudioLoopUpgrade>
+
 			<AISpecialPowerUpdate
 			id="ModuleTag_OrcaSensorPod"
 			CommandSet="Command_OrcaSensorPod"
 			SecondaryCommandButtonName=""
 			SpecialPowerAIType="SPECIAL_POWER_RANGED_AOE_ATTACK"
-			SpecialPowerRadius="375"
+			SpecialPowerRadius="500"
 			ReinforceDistance="0"
 			SpellMakesAStructure=""
 			SpecificUnit=""
-			UnitKindOf="HARVESTER VEHICLE CAN_ATTACK"
+			UnitKindOf="VEHICLE SUPPLY_GATHERING_CENTER"
 			AllyUnitInclude="VEHICLE CAN_ATTACK"
-			AllyUnitExclude="HARVESTER INFANTRY"
-			EnemyUnitInclude="HARVESTER"
-			EnemyUnitExclude="INFANTRY"
+			AllyUnitExclude="HARVESTER INFANTRY AIRCRAFT SUPPLY_GATHERING_CENTER"
+			EnemyUnitInclude="VEHICLE SUPPLY_GATHERING_CENTER HARVESTER"
+			EnemyUnitExclude="INFANTRY AIRCRAFT NEUTRAL_TECH CIVILIAN_BUILDING"
 			MinimumCutoff="0"
 			UpdateTime="1s"
 			MaxFrequency="0"
@@ -1581,15 +1582,15 @@
 			id="ModuleTag_PulseScan"
 			CommandSet="Command_OrcaPulseScan"
 			SecondaryCommandButtonName=""
-			SpecialPowerAIType="SPECIAL_POWER_TARGET_STEALTH"
-			SpecialPowerRadius="-1"
+			SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF"
+			SpecialPowerRadius="999999"
 			ReinforceDistance="0"
 			SpellMakesAStructure=""
 			SpecificUnit=""
-			UnitKindOf="BROADCASTS_INVISIBILITY HARVESTER"
+			UnitKindOf="HARVESTER"
 			AllyUnitInclude=""
-			AllyUnitExclude="BROADCASTS_INVISIBILITY HARVESTER"
-			EnemyUnitInclude= "BROADCASTS_INVISIBILITY HARVESTER"
+			AllyUnitExclude="HARVESTER BROADCASTS_INVISIBILITY"
+			EnemyUnitInclude= "HARVESTER BROADCASTS_INVISIBILITY"
 			EnemyUnitExclude=""
 			MinimumCutoff="0"
 			UpdateTime="1s"
@@ -1678,17 +1679,17 @@
 		</Body>
 		<ClientBehaviors>
 			<ModelConditionAudioLoopClientBehavior
-				id="868CC9FB">
+				id="951DB9B7">
 				<ModelConditionSound
-					Sound="Asset not found in stream: [844D7B9F:495D917D]"
+					Sound="AudioEvent:OrcaMoveStart"
 					RequiredFlags="LANDING"
 					ExcludedFlags="" />
 				<ModelConditionSound
-					Sound="Asset not found in stream: [844D7B9F:495D917D]"
+					Sound="AudioEvent:OrcaMoveStart"
 					RequiredFlags="TAKING_OFF"
 					ExcludedFlags="" />
 				<ModelConditionSound
-					Sound="Asset not found in stream: [844D7B9F:3E75F081]"
+					Sound="AudioEvent:TEMP_OrcaAmbientLoop"
 					RequiredFlags="FLYING"
 					ExcludedFlags="" />
 			</ModelConditionAudioLoopClientBehavior>
@@ -1712,51 +1713,51 @@
 		</Geometry>
 		<AudioArrayVoice>
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:C7183AFF]"
+				Sound="AudioEvent:GDI_Orca_VoiceAttack"
 				AudioType="voiceAttack" />
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:1F8FF1EC]"
+				Sound="AudioEvent:GDI_Orca_VoiceCreate"
 				AudioType="voiceCreated" />
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:A7483240]"
+				Sound="AudioEvent:GDI_Orca_VoiceMoveHelopad"
 				AudioType="voiceEnter" />
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:E7A87FA4]"
+				Sound="AudioEvent:GDI_Orca_VoiceMove"
 				AudioType="voiceGuard" />
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:E7A87FA4]"
+				Sound="AudioEvent:GDI_Orca_VoiceMove"
 				AudioType="voiceMove" />
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:C16D3FB8]"
+				Sound="AudioEvent:GDI_Orca_VoiceMoveAttack"
 				AudioType="voiceAttackAfterMoving" />
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:E30375D8]"
+				Sound="AudioEvent:GDI_Orca_VoiceRetreat"
 				AudioType="voiceRetreatToCastle" />
 			<AudioEntry
-				Sound="Asset not found in stream: [A3A7AF37:26FC1017]"
+				Sound="Multisound:GDI_Orca_VoiceSelectMS"
 				AudioType="voiceSelect" />
 			<AudioEntry
-				Sound="Asset not found in stream: [A3A7AF37:0B259FFB]"
+				Sound="Multisound:GDI_Orca_VoiceSelectBattleMS"
 				AudioType="voiceSelectBattle" />
 			<NamedEntry
-				Sound="Asset not found in stream: [844D7B9F:DE00572D]"
-				Name="5372374E" />
+				Sound="AudioEvent:GDI_Orca_VoiceScan"
+				Name="VoicePulseScan" />
 			<NamedEntry
-				Sound="Asset not found in stream: [844D7B9F:8628AF6C]"
-				Name="5BED4CE3" />
+				Sound="AudioEvent:GDI_Orca_VoiceLaunchSensorPod"
+				Name="VoiceSensorPod" />
 			<NamedEntry
-				Sound="Asset not found in stream: [844D7B9F:A7483240]"
-				Name="1E1473D1" />
+					  Sound="AudioEvent:GDI_Orca_VoiceMoveHelopad"
+					  Name="ReturnToProducer" />
 			<NamedEntry
-				Sound="Asset not found in stream: [844D7B9F:E30375D8]"
-				Name="97BF1D04" />
+				Sound="AudioEvent:GDI_Orca_VoiceRetreat"
+				Name="ReturnToProducerWhileUnderAttack" />
 		</AudioArrayVoice>
 		<AudioArraySound>
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:495D917D]"
+				Sound="AudioEvent:OrcaMoveStart"
 				AudioType="soundMoveStart" />
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:890BE968]"
+				Sound="AudioEvent:TEMP_OrcaMoveLoop"
 				AudioType="soundMoveLoop" />
 		</AudioArraySound>
 		<EvaEvents
