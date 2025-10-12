@@ -2340,9 +2340,9 @@
 		<Budget>
 			<AccountShare Account="INVESTMENT" Percent="0%"/>
 			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
-			<AccountShare Account="PRODUCTION" Percent="70%"/>
+			<AccountShare Account="PRODUCTION" Percent="80%"/>
 			<AccountShare Account="DEFENSE" Percent="10%"/>
-			<AccountShare Account="TECHNOLOGY" Percent="10%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="0%"/>
 			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
 		</Budget>
 	</AIBudgetStateDefinition>
@@ -2356,10 +2356,10 @@
 		</Heuristic>
 		<Budget>
 			<AccountShare Account="INVESTMENT" Percent="0%"/>
-			<AccountShare Account="SPECIAL_OPERATIONS" Percent="15%"/>
-			<AccountShare Account="PRODUCTION" Percent="65%"/>
-			<AccountShare Account="DEFENSE" Percent="10%"/>
-			<AccountShare Account="TECHNOLOGY" Percent="5%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="25%"/>
+			<AccountShare Account="PRODUCTION" Percent="70%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="0%"/>
 			<AccountShare Account="SLUSH_FUND" Percent="5%"/>
 		</Budget>
 	</AIBudgetStateDefinition>
@@ -2373,10 +2373,10 @@
 		</Heuristic>
 		<Budget>
 			<AccountShare Account="INVESTMENT" Percent="0%"/>
-			<AccountShare Account="SPECIAL_OPERATIONS" Percent="15%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="25%"/>
 			<AccountShare Account="PRODUCTION" Percent="70%"/>
-			<AccountShare Account="DEFENSE" Percent="5%"/>
-			<AccountShare Account="TECHNOLOGY" Percent="5%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="0%"/>
 			<AccountShare Account="SLUSH_FUND" Percent="5%"/>
 		</Budget>
 	</AIBudgetStateDefinition>
@@ -2637,8 +2637,8 @@
 		<Budget>
 			<AccountShare Account="INVESTMENT" Percent="0%"/>
 			<AccountShare Account="SPECIAL_OPERATIONS" Percent="10%"/>
-			<AccountShare Account="PRODUCTION" Percent="70%"/>
-			<AccountShare Account="DEFENSE" Percent="10%"/>
+			<AccountShare Account="PRODUCTION" Percent="60%"/>
+			<AccountShare Account="DEFENSE" Percent="20%"/>
 			<AccountShare Account="TECHNOLOGY" Percent="5%"/>
 			<AccountShare Account="SLUSH_FUND" Percent="5%"/>
 		</Budget>
@@ -2658,8 +2658,8 @@
 			<AccountShare Account="INVESTMENT" Percent="0%"/>
 			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
 			<AccountShare Account="PRODUCTION" Percent="10%"/>
-			<AccountShare Account="DEFENSE" Percent="70%"/>
-			<AccountShare Account="TECHNOLOGY" Percent="10%"/>
+			<AccountShare Account="DEFENSE" Percent="80%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="0%"/>
 			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
 		</Budget>
 	</AIBudgetStateDefinition>
@@ -2669,7 +2669,6 @@
 		<Heuristic>
 			<ConstantHeuristic Weight="1.0"/>
 			<OpeningMoveHeuristic Complete="true"/>
-			<FocusedThresholdHeuristic />
 			<TimerHeuristic StartTime="120s" EndTime="-1s" />
 			<IntervalHeuristic IntervalTime="60s" ActiveTime="60s"/>
 			<IntervalHeuristic IntervalTime="15s" ActiveTime="15s"/>
@@ -2796,9 +2795,10 @@
 
 	<AIStrategicStateDefinition
 	id="GDIUnitPreferences"
-	UnitUpgradeMultiplier="0.0">
+	UnitUpgradeMultiplier="0.0"
+	UnitBuilderSimpleUnitCap="150">
 		<Heuristic>
-			<ConstantHeuristic Weight="998.0"/>
+			<ConstantHeuristic Weight="999.0"/>
 		</Heuristic>
 		<!--
 		<UnitModifierByName UnitName="GDIZoneTrooperSquad" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="100%"/>
@@ -2822,10 +2822,10 @@
 
 		<UnitModifierByName UnitName="GDIEngineer" UnitPreferenceOffensiveModifier="10%" UnitPreferenceDefensiveModifier="10%"/>
 
+		<UnitModifierByName UnitName="GDIOrca" UnitPreferenceOffensiveModifier="10%" UnitPreferenceDefensiveModifier="10%"/>
+
 		<UnitModifierByName UnitName="GDIMARV" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
 
-		<UnitModifierByName UnitName="GDIOrca" UnitPreferenceOffensiveModifier="5%" UnitPreferenceDefensiveModifier="5%"/>
-		<UnitModifierByName UnitName="GDIFireHawk" UnitPreferenceOffensiveModifier="10%" UnitPreferenceDefensiveModifier="10%"/>
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
