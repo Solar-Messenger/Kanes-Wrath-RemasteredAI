@@ -374,14 +374,14 @@
 
 			<AISpecialPowerUpdate
 				id="ModuleTag_GDISpaceCommandDropPodsAI"
-				CommandButtonName="Command_GDI_SpaceCommandDropPods"
+				CommandButtonName="Command_SpaceCommandGDIDropPods"
 				SecondaryCommandButtonName=""
-				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
+				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
 				SpecialPowerRadius="999999"
-				ReinforceDistance="999999"
+				ReinforceDistance="1000"
 				SpellMakesAStructure=""
 				SpecificUnit=""
-				UnitKindOf=""
+				UnitKindOf="HARVESTER"
 				AllyUnitInclude=""
 				AllyUnitExclude=""
 				EnemyUnitInclude=""
@@ -389,14 +389,15 @@
 				MinimumCutoff="0"
 				UpdateTime="1s"
 				MaxFrequency="0"
-				RandomizeTargetLocation="False"
-			/>
+				RandomizeTargetLocation="True" />
+
 			<OCLSpecialPower
 				id="ModuleTag_ShockwaveArtillery"
 				SpecialPowerTemplate="SpecialPowerGDI_SpaceCommandShockwaveArtillery"
 				OCL="OCL_GDISpaceCommandShockwaveArtillery"
 				CreateLocation="CREATE_AT_LOCATION"
 			/>
+
 			<AISpecialPowerUpdate
 				id="ModuleTag_GDISpaceCommandShockwaveAI"
 				CommandButtonName="Command_SpaceCommandGDIShockwave"
@@ -421,6 +422,7 @@
 				id="ModuleTag_ShockwaveArtilleryReadyToFireUpdate"
 				SpecialPowerTemplate="SpecialPowerGDI_SpaceCommandShockwaveArtillery"
 				ReadyCondition="SPECIALPOWER1_READY" />
+
 			<!-- MJOLNIR -->
 			<OCLSpecialPower
 				id="ModuleTag_MjolnirStrikePower"
@@ -428,7 +430,7 @@
 				OCL="OCL_GDIMjolnirBeaconOne"
 				CreateLocation="CREATE_AT_LOCATION"
 			/>
-			<AISpecialPowerUpdate
+			<!--<AISpecialPowerUpdate
 				id="ModuleTag_MjolnirStrikeAI"
 				CommandButtonName="Command_SpecialPowerMjolnirStrike"
 				SecondaryCommandButtonName=""
@@ -446,7 +448,27 @@
 				UpdateTime="1s"
 				MaxFrequency="0"
 				RandomizeTargetLocation="False"
-			/>
+			/>-->
+
+			<AISpecialPowerUpdate
+				id="ModuleTag_MjolnirStrikeAI"
+				CommandButtonName="Command_SpecialPowerMjolnirStrike"
+				SecondaryCommandButtonName=""
+				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
+				SpecialPowerRadius="999999.0"
+				ReinforceDistance="0"
+				SpellMakesAStructure=""
+				SpecificUnit=""
+				UnitKindOf="SUPPLY_GATHERING_CENTER"
+				AllyUnitInclude=""
+				AllyUnitExclude=""
+				EnemyUnitInclude="SUPPLY_GATHERING_CENTER"
+				EnemyUnitExclude=""
+				MinimumCutoff="0"
+				UpdateTime="1s"
+				MaxFrequency="0"
+				RandomizeTargetLocation="True" />
+
 			<!-- SUPERSONIC AIR ATTACK -->
 			<OCLSpecialPower
 				id="ModuleTag_OCLSpecialPowerAirAttack"
@@ -455,7 +477,7 @@
 				CreateLocation="CREATE_AT_LOCATION"
 			/>
 
-			<AISpecialPowerUpdate
+			<!--<AISpecialPowerUpdate
 				id="ModuleTag_SpecialPowerAirAttackAI"
 				CommandButtonName="Command_SpecialPowerSupersonicAirAttack"
 				SecondaryCommandButtonName=""
@@ -467,13 +489,33 @@
 				UnitKindOf="ASSAULT_AIRCRAFT AIRCRAFT VEHICLE"
 				AllyUnitInclude=""
 				AllyUnitExclude="ASSAULT_AIRCRAFT AIRCRAFT VEHICLE"
-				EnemyUnitInclude="ASSAULT_AIRCRAFT"
+				EnemyUnitInclude="ASSAULT_AIRCRAFT AIRCRAFT"
 				EnemyUnitExclude="TRANSPORT"
-				MinimumCutoff="0"
+				MinimumCutoff="200"
 				UpdateTime="1s"
 				MaxFrequency="0"
 				RandomizeTargetLocation="False"
-			/>
+			/>-->
+
+			<AISpecialPowerUpdate
+				id="897E3FC1"
+				CommandButtonName="Command_SpecialPowerSupersonicAirAttack"
+				SecondaryCommandButtonName=""
+				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
+				SpecialPowerRadius="999999.0"
+				ReinforceDistance="-1"
+				SpellMakesAStructure=""
+				SpecificUnit=""
+				UnitKindOf="PRODUCED_AT_HELIPAD"
+				AllyUnitInclude=""
+				AllyUnitExclude=""
+				EnemyUnitInclude=""
+				EnemyUnitExclude=""
+				MinimumCutoff="0"
+				UpdateTime="1s"
+				MaxFrequency="0"
+				RandomizeTargetLocation="True" />
+
 			<ArmorUpgrade
 							id="ModuleTag_SonicRepulsionFieldUpgrade"
 							Permanent="false"
