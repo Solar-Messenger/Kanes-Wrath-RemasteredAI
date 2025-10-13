@@ -470,7 +470,7 @@
 				UnitKindOf="AIRCRAFT"
 				AllyUnitInclude=""
 				AllyUnitExclude=""
-				EnemyUnitInclude=""
+				EnemyUnitInclude="ASSAULT_AIRCRAFT"
 				EnemyUnitExclude="TRANSPORT"
 				MinimumCutoff="0"
 				UpdateTime="1s"
