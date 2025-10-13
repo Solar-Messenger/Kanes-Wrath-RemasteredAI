@@ -975,13 +975,13 @@
 					AcceptModelCondition=""
 					RejectModelCondition="" />
 			</OCLSpecialPower>
-			<AISpecialPowerUpdate
-				id="73D10F32"
+			<!--<AISpecialPowerUpdate
+				id="ModuleTag_CommandPostRadarScanAI"
 				CommandButtonName="Command_CommandPostRadarScan"
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
 				SpecialPowerRadius="999999"
-				ReinforceDistance="0"
+				ReinforceDistance="-1"
 				SpellMakesAStructure=""
 				SpecificUnit=""
 				UnitKindOf="FS_FACTORY FS_WAR_FACTORY FS_AIRFIELD AIRFIELD"
@@ -992,7 +992,27 @@
 				MinimumCutoff="0"
 				UpdateTime="1s"
 				MaxFrequency="0"
-				RandomizeTargetLocation="False" />
+				RandomizeTargetLocation="True" />-->
+
+			<AISpecialPowerUpdate
+				id="ModuleTag_CommandPostRadarScanAI"
+				CommandButtonName="Command_CommandPostRadarScan"
+				SecondaryCommandButtonName=""
+				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
+				SpecialPowerRadius="999999.0"
+				ReinforceDistance="0"
+				SpellMakesAStructure=""
+				SpecificUnit=""
+				UnitKindOf=""
+				AllyUnitInclude=""
+				AllyUnitExclude="INFANTRY VEHICLE AIRCRAFT CIVILIAN_BUILDING STRUCTURE"
+				EnemyUnitInclude="FS_FACTORY FS_WAR_FACTORY FS_AIRFIELD AIRFIELD"
+				EnemyUnitExclude="INFANTRY VEHICLE AIRCRAFT CIVILIAN_BUILDING"
+				MinimumCutoff="0"
+				UpdateTime="1s"
+				MaxFrequency="0"
+				RandomizeTargetLocation="True" />
+
 			<ArmorUpgrade
 				id="D7169F09"
 				RequiresAllTriggers="False"
@@ -1227,24 +1247,25 @@
 					RejectModelCondition="" />
 				<UpgradeTemplate>Upgrade_SonicRepulsionField</UpgradeTemplate>
 			</GrantUpgradeAreaOfEffectSpecialPower>
+
 			<AISpecialPowerUpdate
 				id="97428C02"
 				CommandButtonName="Command_SpecialPowerSonicRepulsionField"
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF"
-				SpecialPowerRadius="999999"
-				ReinforceDistance="-1"
+				SpecialPowerRadius="999999.0"
+				ReinforceDistance="0"
 				SpellMakesAStructure=""
 				SpecificUnit=""
-				UnitKindOf="FS_TECHNOLOGY FS_WAR_FACTORY FS_FACTORY CONSTRUCTION_YARD"
-				AllyUnitInclude="FS_TECHNOLOGY FS_WAR_FACTORY FS_FACTORY CONSTRUCTION_YARD"
-				AllyUnitExclude="FS_BASE_DEFENSE FS_POWER NEUTRAL_TECH CIVILIAN_BUILDING"
+				UnitKindOf="STRUCTURE"
+				AllyUnitInclude="FS_TECHNOLOGY FS_WAR_FACTORY FS_FACTORY CONSTRUCTION_YARD FS_AIRFIELD AIRFIELD"
+				AllyUnitExclude=""
 				EnemyUnitInclude=""
-				EnemyUnitExclude="STRUCTURE"
+				EnemyUnitExclude=""
 				MinimumCutoff="0"
 				UpdateTime="1s"
 				MaxFrequency="0"
-				RandomizeTargetLocation="False" />
+				RandomizeTargetLocation="True" />
 			<!--
 			<BuildingBehavior
 				id="2118A085"
