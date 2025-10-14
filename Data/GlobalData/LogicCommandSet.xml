@@ -199,8 +199,8 @@
 		id="GDISpaceCommandUplinkCommandSet">
 		<Cmd>Command_SpaceCommandGDIDropPods</Cmd>
 		<Cmd>Command_SpaceCommandGDIShockwave</Cmd>
-		<Cmd>Command_SpecialPowerMjolnirStrike</Cmd>
 		<Cmd>Command_SpecialPowerSupersonicAirAttack</Cmd>
+		<Cmd>Command_SpecialPowerMjolnirStrike</Cmd>
 	</LogicCommandSet>
 	<LogicCommandSet
 		  id="GDIIonCannonControlCommandSet">
@@ -554,6 +554,7 @@
 		<Cmd>Command_UpgradeNODDozerBlades</Cmd>
 		<Cmd>Command_SelectObjectsForClone</Cmd>
 		<Cmd>Command_SpawnObjectsForClone</Cmd>
+		<Cmd>Command_SpecialPowerLaserFencing</Cmd>
 		<Cmd>Command_CloakingField</Cmd>
 		<Cmd>Command_FireRadarJammingMissile</Cmd>
 		<Cmd>Command_PurchaseUpgradeNODQuadTurrets</Cmd>
@@ -570,7 +571,6 @@
 		<Cmd>Command_UpgradeNODLaserCapacitor</Cmd>
 		<!--		<Cmd>Command_PurchaseUpgradeChargedParticleBeam</Cmd> -->
 		<Cmd>Command_PurchaseUpgradeTibCoreMissiles</Cmd>
-		<Cmd>Command_SpecialPowerLaserFencing</Cmd>
 		<Cmd>Command_Redemption</Cmd>
 	</LogicCommandSet>
 	<LogicCommandSet
@@ -726,6 +726,7 @@
 	<LogicCommandSet
 		id="AlienControlCenterCommandSet">
 		<Cmd>Command_TiberiumVibrationScan</Cmd>
+		<Cmd>Command_SpecialPowerAlienRepairDrones</Cmd>
 		<Cmd>Command_SpecialPowerSwarm</Cmd>
 		<Cmd>Command_LightningSpike</Cmd>
 		<Cmd>Command_PurchaseUpgradeMinorForcefieldGenerator</Cmd>
@@ -804,7 +805,6 @@
 	</LogicCommandSet>
 	<LogicCommandSet
 		id="AlienSignalTransmitterCommandSet">
-		<Cmd>Command_SpecialPowerAlienRepairDrones</Cmd>
 		<Cmd>Command_SpecialPowerOverlordsWrath</Cmd>
 		<Cmd>Command_SummonMothership</Cmd>
 	</LogicCommandSet>
