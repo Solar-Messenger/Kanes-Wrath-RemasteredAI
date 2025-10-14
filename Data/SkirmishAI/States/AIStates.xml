@@ -2820,11 +2820,33 @@
 		<UnitModifierByName UnitName="GDIAABattery" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="150%"/>
 		<UnitModifierByName UnitName="GDITerraformingStation" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/> -->
 
+		<UnitModifierByName UnitName="GDIMissileSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
 		<UnitModifierByName UnitName="GDIEngineer" UnitPreferenceOffensiveModifier="10%" UnitPreferenceDefensiveModifier="10%"/>
+		<UnitModifierByName UnitName="GDIGrenadierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIZoneTrooperSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+
+		<UnitModifierByName UnitName="GDIPitbull" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIPredator" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIAPC" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDISonicTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIAAScout" UnitPreferenceOffensiveModifier="70%" UnitPreferenceDefensiveModifier="70%"/>
+		<UnitModifierByName UnitName="GDIMammoth" UnitPreferenceOffensiveModifier="70%" UnitPreferenceDefensiveModifier="70%"/>
+		<UnitModifierByName UnitName="GDIJuggernaught" UnitPreferenceOffensiveModifier="90%" UnitPreferenceDefensiveModifier="90%"/>
+		<UnitModifierByName UnitName="GDIMARV" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
 
 		<UnitModifierByName UnitName="GDIOrca" UnitPreferenceOffensiveModifier="10%" UnitPreferenceDefensiveModifier="10%"/>
+		<UnitModifierByName UnitName="GDIHammerhead" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIFireHawk" UnitPreferenceOffensiveModifier="80%" UnitPreferenceDefensiveModifier="80%"/>
 
-		<UnitModifierByName UnitName="GDIMARV" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
+		<UnitModifierByName UnitName="GDIBarracks" UnitPreferenceOffensiveModifier="80%" UnitPreferenceDefensiveModifier="80%"/>
+		<UnitModifierByName UnitName="GDIWarfactory" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIAirTower" UnitPreferenceOffensiveModifier="90%" UnitPreferenceDefensiveModifier="90%"/>
+		<UnitModifierByName UnitName="MG_GDI_ReclamatorHub" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
+
+		<UnitModifierByName UnitName="GDIWatchTower" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIGolumCannon" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIAABattery" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDITerraformingStation" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
 
 	</AIStrategicStateDefinition>
 
@@ -2875,7 +2897,8 @@
 
 	<AIStrategicStateDefinition
 	id="NODUnitPreferences"
-	UnitUpgradeMultiplier="0.0">
+	UnitUpgradeMultiplier="0.0"
+	UnitBuilderSimpleUnitCap="150">
 		<Heuristic>
 			<ConstantHeuristic Weight="999.0"/>
 		</Heuristic>
@@ -2913,7 +2936,8 @@
 
 	<AIStrategicStateDefinition
 	id="BlackHandUnitPreferences"
-	UnitUpgradeMultiplier="0.0">
+	UnitUpgradeMultiplier="0.0"
+	UnitBuilderSimpleUnitCap="150">
 		<Heuristic>
 			<ConstantHeuristic Weight="999.0"/>
 		</Heuristic>
@@ -2946,7 +2970,8 @@
 
 	<AIStrategicStateDefinition
 	id="MarkedOfKaneUnitPreferences"
-	UnitUpgradeMultiplier="0.0">
+	UnitUpgradeMultiplier="0.0"
+	UnitBuilderSimpleUnitCap="150">
 		<Heuristic>
 			<ConstantHeuristic Weight="999.0"/>
 		</Heuristic>
