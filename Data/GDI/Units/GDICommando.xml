@@ -2339,9 +2339,9 @@
 				UnitKindOf=""
 				AllyUnitInclude=""
 				AllyUnitExclude=""
-				EnemyUnitInclude="STRUCTURE"
+				EnemyUnitInclude=""
 				EnemyUnitExclude=""
-				MinimumCutoff="200"
+				MinimumCutoff="0"
 				UpdateTime="1s"
 				MaxFrequency="0"
 				RandomizeTargetLocation="False" />
