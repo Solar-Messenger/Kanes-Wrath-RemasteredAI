@@ -1564,11 +1564,11 @@
 			CommandSet="Command_OrcaSensorPod"
 			SecondaryCommandButtonName=""
 			SpecialPowerAIType="SPECIAL_POWER_RANGED_AOE_ATTACK"
-			SpecialPowerRadius="500"
+			SpecialPowerRadius="400"
 			ReinforceDistance="0"
 			SpellMakesAStructure=""
 			SpecificUnit=""
-			UnitKindOf="VEHICLE SUPPLY_GATHERING_CENTER"
+			UnitKindOf="VEHICLE"
 			AllyUnitInclude="VEHICLE CAN_ATTACK"
 			AllyUnitExclude="HARVESTER INFANTRY AIRCRAFT SUPPLY_GATHERING_CENTER"
 			EnemyUnitInclude="VEHICLE SUPPLY_GATHERING_CENTER HARVESTER"
@@ -1576,14 +1576,14 @@
 			MinimumCutoff="0"
 			UpdateTime="1s"
 			MaxFrequency="0"
-			RandomizeTargetLocation="False" />
+			RandomizeTargetLocation="True" />
 
 			<AISpecialPowerUpdate
 			id="ModuleTag_PulseScan"
 			CommandSet="Command_OrcaPulseScan"
 			SecondaryCommandButtonName=""
 			SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF"
-			SpecialPowerRadius="999999"
+			SpecialPowerRadius="999999.0"
 			ReinforceDistance="0"
 			SpellMakesAStructure=""
 			SpecificUnit=""
