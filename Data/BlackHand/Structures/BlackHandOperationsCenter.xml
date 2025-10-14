@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude">
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="BlackHandOperationsCenter"
 		KindOf="SELECTABLE IMMOBILE CAN_CAST_REFLECTIONS STRUCTURE FS_TECHNOLOGY POWERED NOT_AUTOACQUIRABLE COVER FS_RADAR AUTO_ACQUIRABLE_BY_AI"
@@ -108,72 +108,162 @@
 			UnitBuilderStandardCombatUnit="False" />
 		<Draws>
 			<ScriptedModelDraw
-				id="ModuleTag_Draw"
-				OkToChangeModelColor="true">
+				id="50DF2C46"
+				InitialRecoilSpeed="2"
+				MaxRecoilDistance="3"
+				RecoilDamping="0.4"
+				RecoilSettleSpeed="0.065"
+				MinLODRequired="LOW"
+				ProjectileBoneFeedbackEnabledSlots=""
+				TrackMarks=""
+				DependencySharedModelFlags=""
+				HighDetailLODThreshold="0"
+				LowDetailLODThreshold="0"
+				WadingParticleSys=""
+				AlphaCameraFadeOuterRadius="0"
+				AlphaCameraFadeInnerRadius="0"
+				AlphaCameraAtInnerRadius="100%"
+				StaticSortLevelWhileFading="-1"
+				BirthFadeTime="0"
+				OkToChangeModelColor="True"
+				AnimationsRequirePower="True"
+				UseYAxisForTurretRotation="False"
+				TrackMarksOnlyWhenCorneringQuickly="False"
+				UseProducerTexture="False"
+				NoRotate="False"
+				UseFiringArcRotation="False"
+				Selectable="True"
+				RandomTextureFixedRandomIndex="False"
+				ParticlesAttachedToAnimatedBones="False"
+				ParticleBonesCheckDrawable="False"
+				ShadowForceDisable="False"
+				SwitchModelLODMode="False"
+				StaticModelLODMode="False"
+				ShowShadowWhileContained="False"
+				UseStandardModelNames="False"
+				UseDefaultAnimation="False"
+				BirthFadeAdditive="False"
+				ZWriteDisableOverride="False"
+				MultiPlayerOnly="False"
+				AffectedByStealth="True"
+				InvertStealthOpacity="False"
+				HighDetailOnly="False"
+				SetAnimsToLastFrameOnConstructionComplete="True">
 				<ModelConditionState
-					ParseCondStateType="PARSE_DEFAULT">
+					ParseCondStateType="PARSE_DEFAULT"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
 					<Model
-						Name="W3DContainer:NBOpCenter" />
+						Name="NBOPCENTER"
+						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING">
+					ConditionsYes="STRUCTURE_UNPACKING"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
 					<Model
-						Name="W3DContainer:NBOpCenterA_SN" />
+						Name="NBOPCENTERA_SN"
+						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="RUBBLE">
+					ConditionsYes="RUBBLE"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
 					<Model
-						Name="W3DContainer:NBOpCenD3_SN" />
+						Name="NBOPCEND3_SN"
+						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED">
+					ConditionsYes="REALLYDAMAGED"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
 					<Model
-						Name="W3DContainer:NBOpCenD2_SN" />
+						Name="NBOPCEND2_SN"
+						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED">
+					ConditionsYes="DAMAGED"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
 					<Model
-						Name="W3DContainer:NBOpCenter" />
+						Name="NBOPCENTER"
+						ExtraMesh="False" />
 					<Texture
 						Original="NBOpCenter"
 						New="NBOpCenter_D" />
 				</ModelConditionState>
 				<AnimationState
-					ParseCondStateType="PARSE_DEFAULT"></AnimationState>
-				<!-- BUILDUP ANIMATION -->
+					ParseCondStateType="PARSE_DEFAULT"
+					EnteringStateFX=""
+					FrameForPristineBonePositions="0"
+					ShareAnimation="False"
+					AllowRepeatInRandomPick="False"
+					SimilarRestart="False" />
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="BUILD_PLACEMENT_CURSOR">
-					<Script>
-						CurDrawableHideSubObject("UG_QUADTURRETS")
-						CurDrawableHideSubObject("UG_DOZERBLADES")
-						CurDrawableHideSubObject("UG_SIGGEN")
-						CurDrawableHideSubObject("UG_SIGGEN_02")
-					</Script>
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING">
+					ConditionsYes="STRUCTURE_UNPACKING"
+					EnteringStateFX=""
+					FrameForPristineBonePositions="0"
+					ShareAnimation="False"
+					AllowRepeatInRandomPick="False"
+					SimilarRestart="False">
 					<Animation
-						AnimationName="NBOpCenterA_AN"
-						AnimationMode="ONCE" />
+						AnimationName="NBOPCENTERA_AN"
+						AnimationMode="ONCE"
+						Distance="0"
+						AnimationBlendTime="5"
+						AnimationSpeedFactorMin="1"
+						AnimationSpeedFactorMax="1"
+						WeaponTimingOrdering="PRIMARY_WEAPON"
+						WeaponTimingSlotID="1"
+						AnimationPriority="1"
+						FadeBeginFrame="-1"
+						FadeEndFrame="-1"
+						AnimationMustCompleteBlend="False"
+						UseWeaponTiming="False"
+						FadingIn="False" />
 					<ParticleSysBone
 						BoneName="NONE"
 						FXParticleSystemTemplate="Con_Medium"
-						FollowBone="true" />
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="RUBBLE"
 					StateName="STATE_Rubble"
-					Flags="START_FRAME_LAST">
+					Flags="START_FRAME_LAST"
+					EnteringStateFX=""
+					FrameForPristineBonePositions="0"
+					ShareAnimation="False"
+					AllowRepeatInRandomPick="False"
+					SimilarRestart="False">
 					<Animation
-						AnimationName="NBOpCenD3_AN"
-						AnimationMode="MANUAL" />
+						AnimationName="NBOPCEND3_AN"
+						AnimationMode="MANUAL"
+						Distance="0"
+						AnimationBlendTime="5"
+						AnimationSpeedFactorMin="1"
+						AnimationSpeedFactorMax="1"
+						WeaponTimingOrdering="PRIMARY_WEAPON"
+						WeaponTimingSlotID="1"
+						AnimationPriority="1"
+						FadeBeginFrame="-1"
+						FadeEndFrame="-1"
+						AnimationMustCompleteBlend="False"
+						UseWeaponTiming="False"
+						FadingIn="False" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState();
 						if Prev ~= "STATE_Rubble" and Prev ~= "TRANS_IntoRubble" then
@@ -185,10 +275,27 @@
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="REALLYDAMAGED"
 					StateName="STATE_ReallyDamaged"
-					Flags="START_FRAME_LAST">
+					Flags="START_FRAME_LAST"
+					EnteringStateFX=""
+					FrameForPristineBonePositions="0"
+					ShareAnimation="False"
+					AllowRepeatInRandomPick="False"
+					SimilarRestart="False">
 					<Animation
-						AnimationName="NBOpCenD2_AN"
-						AnimationMode="MANUAL" />
+						AnimationName="NBOPCEND2_AN"
+						AnimationMode="MANUAL"
+						Distance="0"
+						AnimationBlendTime="5"
+						AnimationSpeedFactorMin="1"
+						AnimationSpeedFactorMax="1"
+						WeaponTimingOrdering="PRIMARY_WEAPON"
+						WeaponTimingSlotID="1"
+						AnimationPriority="1"
+						FadeBeginFrame="-1"
+						FadeEndFrame="-1"
+						AnimationMustCompleteBlend="False"
+						UseWeaponTiming="False"
+						FadingIn="False" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState();
 						if Prev ~= "STATE_ReallyDamaged" and Prev ~= "TRANS_IntoReallyDamaged" then
@@ -198,105 +305,240 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_TRANSITION"
-					StateName="TRANS_IntoReallyDamaged">
+					StateName="TRANS_IntoReallyDamaged"
+					EnteringStateFX=""
+					FrameForPristineBonePositions="0"
+					ShareAnimation="False"
+					AllowRepeatInRandomPick="False"
+					SimilarRestart="False">
 					<Animation
-						AnimationName="NBOpCenD2_AN"
+						AnimationName="NBOPCEND2_AN"
 						AnimationMode="ONCE"
-						AnimationBlendTime="0" />
+						Distance="0"
+						AnimationBlendTime="0"
+						AnimationSpeedFactorMin="1"
+						AnimationSpeedFactorMax="1"
+						WeaponTimingOrdering="PRIMARY_WEAPON"
+						WeaponTimingSlotID="1"
+						AnimationPriority="1"
+						FadeBeginFrame="-1"
+						FadeEndFrame="-1"
+						AnimationMustCompleteBlend="False"
+						UseWeaponTiming="False"
+						FadingIn="False" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_TRANSITION"
-					StateName="TRANS_IntoRubble">
+					StateName="TRANS_IntoRubble"
+					EnteringStateFX=""
+					FrameForPristineBonePositions="0"
+					ShareAnimation="False"
+					AllowRepeatInRandomPick="False"
+					SimilarRestart="False">
 					<Animation
-						AnimationName="NBOpCenD3_AN"
+						AnimationName="NBOPCEND3_AN"
 						AnimationMode="ONCE"
-						AnimationBlendTime="0" />
+						Distance="0"
+						AnimationBlendTime="0"
+						AnimationSpeedFactorMin="1"
+						AnimationSpeedFactorMax="1"
+						WeaponTimingOrdering="PRIMARY_WEAPON"
+						WeaponTimingSlotID="1"
+						AnimationPriority="1"
+						FadeBeginFrame="-1"
+						FadeEndFrame="-1"
+						AnimationMustCompleteBlend="False"
+						UseWeaponTiming="False"
+						FadingIn="False" />
 				</AnimationState>
 			</ScriptedModelDraw>
-
 			<ScriptedModelDraw
-				id="ModuleTag_DrawNodOpCenterLF"
-				OkToChangeModelColor="true"
-				UseStandardModelNames="true"
-				StaticModelLODMode="true">
+				id="E44310AE"
+				InitialRecoilSpeed="2"
+				MaxRecoilDistance="3"
+				RecoilDamping="0.4"
+				RecoilSettleSpeed="0.065"
+				MinLODRequired="LOW"
+				ProjectileBoneFeedbackEnabledSlots=""
+				TrackMarks=""
+				DependencySharedModelFlags=""
+				HighDetailLODThreshold="0"
+				LowDetailLODThreshold="0"
+				WadingParticleSys=""
+				AlphaCameraFadeOuterRadius="0"
+				AlphaCameraFadeInnerRadius="0"
+				AlphaCameraAtInnerRadius="100%"
+				StaticSortLevelWhileFading="-1"
+				BirthFadeTime="0"
+				OkToChangeModelColor="True"
+				AnimationsRequirePower="True"
+				UseYAxisForTurretRotation="False"
+				TrackMarksOnlyWhenCorneringQuickly="False"
+				UseProducerTexture="False"
+				NoRotate="False"
+				UseFiringArcRotation="False"
+				Selectable="True"
+				RandomTextureFixedRandomIndex="False"
+				ParticlesAttachedToAnimatedBones="False"
+				ParticleBonesCheckDrawable="False"
+				ShadowForceDisable="False"
+				SwitchModelLODMode="False"
+				StaticModelLODMode="True"
+				ShowShadowWhileContained="False"
+				UseStandardModelNames="True"
+				UseDefaultAnimation="False"
+				BirthFadeAdditive="False"
+				ZWriteDisableOverride="False"
+				MultiPlayerOnly="False"
+				AffectedByStealth="True"
+				InvertStealthOpacity="False"
+				HighDetailOnly="False"
+				SetAnimsToLastFrameOnConstructionComplete="True">
 				<ModelConditionState
-					ParseCondStateType="PARSE_DEFAULT" >
+					ParseCondStateType="PARSE_DEFAULT"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
 					<Model
-						Name="" />
+						Name=""
+						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_6 DYING">
+					ConditionsYes="USER_6 DYING"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
 					<Model
-						Name="" />
+						Name=""
+						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_6 REALLYDAMAGED">
+					ConditionsYes="USER_6 REALLYDAMAGED"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
 					<Model
-						Name="" />
+						Name=""
+						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_6 DAMAGED">
+					ConditionsYes="USER_6 DAMAGED"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
 					<Model
-						Name="" />
+						Name=""
+						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="USER_6">
+					ConditionsYes="USER_6"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
 					<Model
-						Name="W3DContainer:NBOpCenter_LF" />
+						Name="NBOPCENTER_LF"
+						ExtraMesh="False" />
 				</ModelConditionState>
 			</ScriptedModelDraw>
 			<ScriptedModelDraw
-				id="ModuleTag_Draw_Missle"
-				OkToChangeModelColor="true">
+				id="B99FDDFC"
+				InitialRecoilSpeed="2"
+				MaxRecoilDistance="3"
+				RecoilDamping="0.4"
+				RecoilSettleSpeed="0.065"
+				MinLODRequired="LOW"
+				ProjectileBoneFeedbackEnabledSlots=""
+				TrackMarks=""
+				DependencySharedModelFlags=""
+				HighDetailLODThreshold="0"
+				LowDetailLODThreshold="0"
+				WadingParticleSys=""
+				AlphaCameraFadeOuterRadius="0"
+				AlphaCameraFadeInnerRadius="0"
+				AlphaCameraAtInnerRadius="100%"
+				StaticSortLevelWhileFading="-1"
+				BirthFadeTime="0"
+				OkToChangeModelColor="True"
+				AnimationsRequirePower="True"
+				UseYAxisForTurretRotation="False"
+				TrackMarksOnlyWhenCorneringQuickly="False"
+				UseProducerTexture="False"
+				NoRotate="False"
+				UseFiringArcRotation="False"
+				Selectable="True"
+				RandomTextureFixedRandomIndex="False"
+				ParticlesAttachedToAnimatedBones="False"
+				ParticleBonesCheckDrawable="False"
+				ShadowForceDisable="False"
+				SwitchModelLODMode="False"
+				StaticModelLODMode="False"
+				ShowShadowWhileContained="False"
+				UseStandardModelNames="False"
+				UseDefaultAnimation="False"
+				BirthFadeAdditive="False"
+				ZWriteDisableOverride="False"
+				MultiPlayerOnly="False"
+				AffectedByStealth="True"
+				InvertStealthOpacity="False"
+				HighDetailOnly="False"
+				SetAnimsToLastFrameOnConstructionComplete="True">
 				<ModelConditionState
-					ParseCondStateType="PARSE_DEFAULT">
+					ParseCondStateType="PARSE_DEFAULT"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
 					<Model
-						Name="W3DContainer:NBOpCenterX2_SKN" />
+						Name="NBOPCENTERX_SKN"
+						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED">
+					ConditionsYes="STRUCTURE_UNPACKING"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
 					<Model
-						Name="W3DContainer:NBOpCenterX2_SKN" />
-					<Texture
-						Original="NBOpCenter"
-						New="NBOpCenter_D" />
+						Name="NBEMPTY_ABLD"
+						ExtraMesh="False" />
 				</ModelConditionState>
 				<ModelConditionState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED">
+					ConditionsYes="DYING"
+					PortraitImage=""
+					ButtonImage=""
+					RetainSubObjects="False">
 					<Model
-						Name="W3DContainer:NBOpCenterX2_SKN" />
-					<Texture
-						Original="NBOpCenter"
-						New="NBOpCenter_D" />
+						Name="NBEMPTY_ABLD"
+						ExtraMesh="False" />
 				</ModelConditionState>
-				<!-- BUILDING -->
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING">
-					<Model
-						Name="W3DContainer:NBEmpty_ABLD" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DYING">
-					<Model
-						Name="W3DContainer:NBEmpty_ABLD" />
-				</ModelConditionState>
-				<!-- ANIMATIONS -->
 				<AnimationState
 					ParseCondStateType="PARSE_DEFAULT"
 					StateName="STATE_Idle"
-					Flags="DO_NOT_PLAY_WHEN_UNPOWERED">
+					Flags="DO_NOT_PLAY_WHEN_UNPOWERED"
+					EnteringStateFX=""
+					FrameForPristineBonePositions="0"
+					ShareAnimation="False"
+					AllowRepeatInRandomPick="False"
+					SimilarRestart="False">
 					<Animation
-						AnimationName="NBOpCenterX2_IDLA"
+						AnimationName="NBOPCENTERX_IDLA"
 						AnimationMode="LOOP"
-						AnimationBlendTime="0" />
+						Distance="0"
+						AnimationBlendTime="0"
+						AnimationSpeedFactorMin="1"
+						AnimationSpeedFactorMax="1"
+						WeaponTimingOrdering="PRIMARY_WEAPON"
+						WeaponTimingSlotID="1"
+						AnimationPriority="1"
+						FadeBeginFrame="-1"
+						FadeEndFrame="-1"
+						AnimationMustCompleteBlend="False"
+						UseWeaponTiming="False"
+						FadingIn="False" />
 					<Script>
 						Prev = CurDrawablePrevAnimationState();
 						if Prev == "STATE_Ready" and Prev ~= "STATE_Idle" then
@@ -306,133 +548,156 @@
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING">
+					ConditionsYes="STRUCTURE_UNPACKING"
+					EnteringStateFX=""
+					FrameForPristineBonePositions="0"
+					ShareAnimation="False"
+					AllowRepeatInRandomPick="False"
+					SimilarRestart="False">
 					<Animation
-						AnimationName="NBEmpty_ABLD"
-						AnimationMode="ONCE" />
-				</AnimationState>
-				<!--				
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="UNPACKING">
-					<Animation
-						AnimationName="NBOpCenterX_FIRA"
+						AnimationName="NBEMPTY_ABLD"
 						AnimationMode="ONCE"
-						AnimationBlendTime="0" />
+						Distance="0"
+						AnimationBlendTime="5"
+						AnimationSpeedFactorMin="1"
+						AnimationSpeedFactorMax="1"
+						WeaponTimingOrdering="PRIMARY_WEAPON"
+						WeaponTimingSlotID="1"
+						AnimationPriority="1"
+						FadeBeginFrame="-1"
+						FadeEndFrame="-1"
+						AnimationMustCompleteBlend="False"
+						UseWeaponTiming="False"
+						FadingIn="False" />
 				</AnimationState>
--->
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
 					ConditionsYes="SPECIALPOWER1_READY"
-					StateName="STATE_Ready">
+					StateName="STATE_Ready"
+					EnteringStateFX=""
+					FrameForPristineBonePositions="0"
+					ShareAnimation="False"
+					AllowRepeatInRandomPick="False"
+					SimilarRestart="False">
 					<Animation
-						AnimationName="NBOpCenterX2_RDY"
+						AnimationName="NBOPCENTERX_RDY"
 						AnimationMode="ONCE"
-						AnimationBlendTime="0" />
+						Distance="0"
+						AnimationBlendTime="0"
+						AnimationSpeedFactorMin="1"
+						AnimationSpeedFactorMax="1"
+						WeaponTimingOrdering="PRIMARY_WEAPON"
+						WeaponTimingSlotID="1"
+						AnimationPriority="1"
+						FadeBeginFrame="-1"
+						FadeEndFrame="-1"
+						AnimationMustCompleteBlend="False"
+						UseWeaponTiming="False"
+						FadingIn="False" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="PACKING">
+					ConditionsYes="PACKING"
+					EnteringStateFX=""
+					FrameForPristineBonePositions="0"
+					ShareAnimation="False"
+					AllowRepeatInRandomPick="False"
+					SimilarRestart="False">
 					<Animation
-						AnimationName="NBOpCenterX2_IDLA"
+						AnimationName="NBOPCENTERX_IDLA"
 						AnimationMode="ONCE"
-						AnimationBlendTime="0" />
+						Distance="0"
+						AnimationBlendTime="0"
+						AnimationSpeedFactorMin="1"
+						AnimationSpeedFactorMax="1"
+						WeaponTimingOrdering="PRIMARY_WEAPON"
+						WeaponTimingSlotID="1"
+						AnimationPriority="1"
+						FadeBeginFrame="-1"
+						FadeEndFrame="-1"
+						AnimationMustCompleteBlend="False"
+						UseWeaponTiming="False"
+						FadingIn="False" />
 				</AnimationState>
 				<AnimationState
 					ParseCondStateType="PARSE_TRANSITION"
-					StateName="TRANS_FIRING">
+					StateName="TRANS_FIRING"
+					EnteringStateFX=""
+					FrameForPristineBonePositions="0"
+					ShareAnimation="False"
+					AllowRepeatInRandomPick="False"
+					SimilarRestart="False">
 					<Animation
-						AnimationName="NBOpCenterX2_FIRA"
+						AnimationName="NBOPCENTERX_FIRA"
 						AnimationMode="ONCE"
-						AnimationBlendTime="0" />
+						Distance="0"
+						AnimationBlendTime="0"
+						AnimationSpeedFactorMin="1"
+						AnimationSpeedFactorMax="1"
+						WeaponTimingOrdering="PRIMARY_WEAPON"
+						WeaponTimingSlotID="1"
+						AnimationPriority="1"
+						FadeBeginFrame="-1"
+						FadeEndFrame="-1"
+						AnimationMustCompleteBlend="False"
+						UseWeaponTiming="False"
+						FadingIn="False" />
 					<ParticleSysBone
 						BoneName="FX_Rocket01"
 						FXParticleSystemTemplate="NodNukeMissleSmoke"
-						FollowBone="true" />
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
 					<ParticleSysBone
 						BoneName="FX_Rocket02"
 						FXParticleSystemTemplate="NodNukeMissleSmoke"
-						FollowBone="true" />
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
 					<ParticleSysBone
 						BoneName="FX_Rocket03"
 						FXParticleSystemTemplate="NodNukeMissleSmoke"
-						FollowBone="true" />
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
 					<ParticleSysBone
 						BoneName="FX_Rocket04"
 						FXParticleSystemTemplate="NodNukeMissleSmoke"
-						FollowBone="true" />
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
 					<ParticleSysBone
 						BoneName="FX_Rocket01"
 						FXParticleSystemTemplate="NodNukeMissleFire"
-						FollowBone="true" />
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
 					<ParticleSysBone
 						BoneName="FX_Rocket02"
 						FXParticleSystemTemplate="NodNukeMissleFire"
-						FollowBone="true" />
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
 					<ParticleSysBone
 						BoneName="FX_Rocket03"
 						FXParticleSystemTemplate="NodNukeMissleFire"
-						FollowBone="true" />
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
 					<ParticleSysBone
 						BoneName="FX_Rocket04"
 						FXParticleSystemTemplate="NodNukeMissleFire"
-						FollowBone="true" />
-				</AnimationState>
-			</ScriptedModelDraw>
-			<ScriptedModelDraw
-				id="ModuleTag_Draw_Dish"
-				OkToChangeModelColor="true">
-				<ModelConditionState
-					ParseCondStateType="PARSE_DEFAULT">
-					<Model
-						Name="W3DContainer:NBOpCenter_Dish" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="REALLYDAMAGED">
-					<Model
-						Name="W3DContainer:NBOpCenter_Dish" />
-					<Texture
-						Original="NBOpCenter"
-						New="NBOpCenter_D" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DAMAGED">
-					<Model
-						Name="W3DContainer:NBOpCenter_Dish" />
-					<Texture
-						Original="NBOpCenter"
-						New="NBOpCenter_D" />
-				</ModelConditionState>
-				<!-- BUILDING -->
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING">
-					<Model
-						Name="W3DContainer:NBEmpty_ABLD" />
-				</ModelConditionState>
-				<ModelConditionState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="DYING">
-					<Model
-						Name="W3DContainer:NBEmpty_ABLD" />
-				</ModelConditionState>
-				<!-- ANIMATIONS -->
-				<AnimationState
-					ParseCondStateType="PARSE_DEFAULT"
-					Flags="DO_NOT_PLAY_WHEN_UNPOWERED">
-					<Animation
-						AnimationName="NBOpCenter_Dish"
-						AnimationMode="LOOP"
-						AnimationBlendTime="0" />
-				</AnimationState>
-				<AnimationState
-					ParseCondStateType="PARSE_NORMAL"
-					ConditionsYes="STRUCTURE_UNPACKING">
-					<Animation
-						AnimationName="NBEmpty_ABLD"
-						AnimationMode="ONCE" />
+						PersistID="0"
+						FollowBone="True"
+						OnlyIfOnWater="False"
+						OnlyIfOnLand="False" />
 				</AnimationState>
 			</ScriptedModelDraw>
 		</Draws>
@@ -1063,7 +1328,7 @@
 				UseDistanceFromCommandCenter="False"
 				ChildModuleHandlesFX="False"
 				JamRadius="-1"
-				JamDuration="15s">
+				JamDuration="10s">
 				<AttributeModifierAffects
 					Rule="UNPARSED"
 					Relationship=""
@@ -1121,7 +1386,7 @@
 				id="F3CB043F"
 				RequiresAllTriggers="False"
 				RequiresAllConflictingTriggers="False"
-				Permanent="False"
+				Permanent="True"
 				WaypointMode="False"
 				WaypointModeTerminal="True"
 				ArmorSetFlag="PLAYER_UPGRADE"
@@ -1156,38 +1421,11 @@
 					SelfRepairFromDamageLoop=""
 					SelfRepairFromRubbleLoop="" />
 			</RepairUpdate>
-
-			<HordeTransportContain
-				id="ModuleTag_Contain"
-				ObjectStatusOfContained=""
-				ContainMax="0"
-				Slots="0"
-				AllowEnemiesInside="false"
-				AllowAlliesInside="false"
-				AllowNeutralInside="false"
-				AllowOwnPlayerInsideOverride="false"
-				ShowPips="false"
-				EnterSound=""
-				ExitSound=""
-				KillPassengersOnDeath="false">
-				<PassengerFilter
-					Rule="NONE"
-					Include="" />
-				<DieMuxData
-					DeathTypes="ALL" />
-				<PassengerData
-					BonePrefix="ROOTTRANSFORM">
-					<Filter
-						Rule="NONE"
-						Include="" />
-				</PassengerData>
-			</HordeTransportContain>
-
 			<EngineerContain
 				id="E2BE8599"
 				ReplaceWith=""
-				NameOfVoiceToUseForFriendlyEnter="VoiceEngineerRepair"
-				NameOfVoiceToUseForHostileEnter="VoiceCaptureBuilding"
+				NameOfVoiceToUseForFriendlyEnter="9D165EA1"
+				NameOfVoiceToUseForHostileEnter="124DB476"
 				FXForRepair="FX_Building_Repaired"
 				FXForCapture="FX_Building_Captured"
 				FXForCaptureAndReplace="FX_Building_Captured"
@@ -1258,7 +1496,7 @@
 				OnTriggerRechargeSpecialPower=""
 				BurnDecayModifier="0"
 				MaxDistanceFromCommandCenter="0"
-				UpdateModuleStartsAttack="true"
+				UpdateModuleStartsAttack="False"
 				StartsPaused="False"
 				ReEnableAntiCategory="False"
 				AttributeModifierAffectsSelf="False"
@@ -1375,21 +1613,55 @@
 				MaxFrequency="0"
 				RandomizeTargetLocation="False" />
 		</Behaviors>
-
 		<AI>
 			<AIUpdate
-				id="ModuleTag_AI"
+				id="12FA48BA"
 				AutoAcquireEnemiesWhenIdle="YES"
-				AILuaEventsList="NODOperationsCenterFunctions">
-			</AIUpdate>
+				StopChaseDistance="500"
+				HoldGroundCloseRangeDistance="0"
+				AILuaEventsList="NODOperationsCenterFunctions"
+				MinCowerTime="0s"
+				MaxCowerTime="0s"
+				RampageTime="0s"
+				BurningDeathTime="0s"
+				TimeToEjectPassengersOnRampage="0"
+				ComboLocomotorSet="NORMAL"
+				ComboLocoAttackDistance="80"
+				IdleTargetTime="0s"
+				MaxCombineChildren="1"
+				SpawnOffsetRadius="0"
+				StandGround="False"
+				CanAttackWhileContained="False"
+				RampageRequiresAflame="False"
+				FadeOnPortals="False" />
 		</AI>
 		<Body>
 			<ActiveBody
-			 id="ModuleTag_Body"
-			 MaxHealth="5000.0">
+				id="B313F576"
+				MaxHealth="5000"
+				MaxHealthDamaged="0"
+				MaxHealthReallyDamaged="0"
+				InitialHealth="-1"
+				RecoveryTime="0"
+				DodgePercent="0"
+				EnteringDamagedTransitionTime="0s"
+				EnteringReallyDamagedTransitionTime="0s"
+				GrabFX=""
+				GrabDamage="200"
+				HealingBuffFX=""
+				DamagedAttributeModifier=""
+				ReallyDamagedAttributeModifier=""
+				CheerRadius="200"
+				BurningDeathFX=""
+				SecondChanceUpgrade=""
+				SecondChanceHeal="0"
+				UseDefaultDamageSettings="True"
+				RemoveUpgradesOnDeath="False"
+				BurningDeathBehavior="False">
 				<DamageTrigger
-				 HealthLevelBelowPercent="66"
-				 RemoveUpgrade="Upgrade_LaserFencing"/>
+					HealthLevelBelowPercent="66"
+					RemoveUpgrade="Upgrade_LaserFencing"
+					RemoveStatus="" />
 			</ActiveBody>
 		</Body>
 		<ClientBehaviors>
@@ -1407,91 +1679,121 @@
 			</ModelConditionAudioLoopClientBehavior>
 		</ClientBehaviors>
 		<Geometry
-			IsSmall="false">
+			IsSmall="False">
 			<Shape
 				Type="CYLINDER"
-				MajorRadius="21.0"
-				Height="20.0"
-				ContactPointGeneration="INFANTRY">
+				ContactPointGeneration="INFANTRY"
+				MajorRadius="21"
+				MinorRadius="1"
+				Height="20"
+				FrontAngle="0d"
+				Active="True"
+				UsedForHealthBox="True">
 				<Offset
-					x="20.0"
-					y="18.0"
+					x="20"
+					y="18"
 					z="0" />
 			</Shape>
 			<Shape
 				Type="CYLINDER"
-				MajorRadius="6.0"
-				Height="35.0"
-				ContactPointGeneration="INFANTRY">
+				ContactPointGeneration="INFANTRY"
+				MajorRadius="6"
+				MinorRadius="1"
+				Height="35"
+				FrontAngle="0d"
+				Active="True"
+				UsedForHealthBox="True">
 				<Offset
-					x="18.0"
-					y="18.0"
+					x="18"
+					y="18"
 					z="20" />
 			</Shape>
 			<Shape
 				Type="CYLINDER"
-				MajorRadius="20.0"
-				Height="16.0"
-				ContactPointGeneration="INFANTRY">
+				ContactPointGeneration="INFANTRY"
+				MajorRadius="20"
+				MinorRadius="1"
+				Height="16"
+				FrontAngle="0d"
+				Active="True"
+				UsedForHealthBox="True">
 				<Offset
-					x="-15.0"
-					y="20.0"
+					x="-15"
+					y="20"
 					z="0" />
 			</Shape>
 			<Shape
 				Type="CYLINDER"
+				ContactPointGeneration="INFANTRY"
 				MajorRadius="12.5"
-				Height="17.0"
-				ContactPointGeneration="INFANTRY">
+				MinorRadius="1"
+				Height="17"
+				FrontAngle="0d"
+				Active="True"
+				UsedForHealthBox="True">
 				<Offset
-					x="-15.0"
-					y="20.0"
+					x="-15"
+					y="20"
 					z="16" />
 			</Shape>
 			<Shape
 				Type="BOX"
-				MajorRadius="15.0"
-				MinorRadius="20.0"
-				Height="20.0"
-				ContactPointGeneration="VEHICLE">
+				ContactPointGeneration="VEHICLE"
+				MajorRadius="15"
+				MinorRadius="20"
+				Height="20"
+				FrontAngle="0d"
+				Active="True"
+				UsedForHealthBox="True">
 				<Offset
-					x="5.0"
-					y="-17.0"
+					x="5"
+					y="-17"
 					z="0" />
 			</Shape>
 			<Shape
 				Type="CYLINDER"
-				MajorRadius="4.0"
-				Height="45.0"
-				ContactPointGeneration="INFANTRY">
+				ContactPointGeneration="INFANTRY"
+				MajorRadius="4"
+				MinorRadius="1"
+				Height="45"
+				FrontAngle="0d"
+				Active="True"
+				UsedForHealthBox="True">
 				<Offset
-					x="7.0"
-					y="-14.0"
+					x="7"
+					y="-14"
 					z="20" />
 			</Shape>
 			<Shape
-				Type= "BOX"
-				MajorRadius = "46.8567"
-				MinorRadius = "27.4004"
-				Height = "9.27532"
-				ContactPointGeneration="INFANTRY">
+				Type="BOX"
+				ContactPointGeneration="INFANTRY"
+				MajorRadius="46.8567"
+				MinorRadius="27.4004"
+				Height="9.27532"
+				FrontAngle="0d"
+				Active="True"
+				UsedForHealthBox="True">
 				<Offset
-					x = "2.41555"
-					y = "18.8839"
-					z = "0.0" />
+					x="2.41555"
+					y="18.8839"
+					z="0" />
 			</Shape>
 			<Shape
-				Type= "BOX"
-				MajorRadius = "29.4575"
-				MinorRadius = "19.6674"
-				Height = "9.27532"
-				ContactPointGeneration="INFANTRY">
+				Type="BOX"
+				ContactPointGeneration="INFANTRY"
+				MajorRadius="29.4575"
+				MinorRadius="19.6674"
+				Height="9.27532"
+				FrontAngle="0d"
+				Active="True"
+				UsedForHealthBox="True">
 				<Offset
-					x = "2.41555"
-					y = "-25.3502"
-					z = "0.0" />
+					x="2.41555"
+					y="-25.3502"
+					z="0" />
 			</Shape>
 		</Geometry>
+
 		<AudioArrayVoice>
 			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
 			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
@@ -1504,14 +1806,17 @@
 			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_LightDamageMS" AudioType="soundOnDamaged" />
 			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
 		</AudioArraySound>
+
 		<EvaEvents
-			EvaEventProductionStarted="BuildingConstructionStarted"
-			EvaEventProductionComplete="BuildingConstructionComplete"
-			EvaEventDamagedOwner="StructureUnderAttack"
 			EvaEventSoldOwner="StructureSold"
+			EvaEventDamagedOwner="StructureUnderAttack"
+			EvaEventSecondDamageFarFromFirstScanRange="200"
+			EvaEventSecondDamageFarFromFirstTimeoutMS="155"
 			EvaEventRepairingOwner="StructureRepairing"
 			EvaEnemyObjectSightedEvent="EnemyCampSighted"
 			EvaEventAvailableForProduction="NewConstructionOptions"
+			EvaEventProductionStarted="BuildingConstructionStarted"
+			EvaEventProductionComplete="BuildingConstructionComplete"
 			EvaEventPlacementFailed="StructurePlacementFailed"
 			EvaEventCannotBuildDueToFullBuildQueue="StructureCannotBuildDueToFullBuildQueue"
 			EvaEventBuildOnHold="BuildOnHold"
@@ -1519,12 +1824,38 @@
 			EvaEventManuallyPoweredOff="BuildingManuallyPoweredDown"
 			EvaEventManuallyPoweredOn="BuildingManuallyPoweredUp" />
 		<ShadowInfo
-			Type="VOLUME" />
+			Type="VOLUME"
+			Texture=""
+			AdditionalTexture=""
+			SizeX="0"
+			SizeY="0"
+			OffsetX="0"
+			OffsetY="0"
+			OpacityStart="0"
+			OpacityFadeInTime="0s"
+			OpacityPeak="1"
+			OpacityFadeOutTime="0s"
+			OpacityEnd="0"
+			MaxHeight="20"
+			SunAngle="0"
+			OverrideLODVisibility="False"
+			UseHouseColor="False"
+			IsRotatingWithObject="True"
+			LocalPlayerOnly="False" />
 		<VisionInfo
 			VisionRange="100"
-			ShroudClearingRange="500" />
+			ShroudClearingRange="500"
+			VisionSide="100%"
+			VisionRear="100%"
+			VisionBonusTestRadius="100"
+			VisionBonusTestSegments="8"
+			VisionBonusPercentPerFoot="0%"
+			MaxVisionBonusPercent="50%"
+			MinVisionBonusPercent="-50%" />
 		<ProjectedBuildabilityInfo
 			Radius="175"
-			BuildPlacementTypes="MAIN_STRUCTURE OTHER_STRUCTURE" />
+			BuildPlacementTypes="MAIN_STRUCTURE OTHER_STRUCTURE"
+			StatusToReject=""
+			ModelConditionsToReject="" />
 	</GameObject>
 </AssetDeclaration>

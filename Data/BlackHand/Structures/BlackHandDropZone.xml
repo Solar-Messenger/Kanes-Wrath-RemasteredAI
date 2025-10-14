@@ -1426,25 +1426,11 @@
 			</ActiveBody>
 		</Body>
 		<ClientBehaviors>
-			<AnimationSoundClientBehavior
-				id="7A2074AA"
-				MaxUpdateRangeCap="0">
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:FD490545]"
-					Animation="NBDRPZNDOOR_OPN"
-					Frame="1" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:786F53A7]"
-					Animation="NBDRPZNDOOR_OPN"
-					Frame="33" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:2A7CC779]"
-					Animation="NBDRPZNDOOR_CLS"
-					Frame="30" />
-				<Sound
-					Sound="Asset not found in stream: [844D7B9F:0CF20F04]"
-					Animation="NBDRPZNDOOR_CLS"
-					Frame="1" />
+			<AnimationSoundClientBehavior id="ModuleTag_ASCB">
+				<Sound Sound="AudioEvent:NOD_WarFactory_SpinOpen" Animation="NBDrpZnDoor_OPN" Frame="1" />
+				<Sound Sound="AudioEvent:NOD_WarFactory_DoorOpen" Animation="NBDrpZnDoor_OPN" Frame="33" />
+				<Sound Sound="AudioEvent:NOD_WarFactory_SpinClose" Animation="NBDrpZnDoor_CLS" Frame="30" />
+				<Sound Sound="AudioEvent:NOD_WarFactory_DoorClose" Animation="NBDrpZnDoor_CLS" Frame="1" />
 			</AnimationSoundClientBehavior>
 		</ClientBehaviors>
 		<Geometry
@@ -1569,26 +1555,16 @@
 			</ContactPoint>
 		</Geometry>
 		<AudioArrayVoice>
+			<AudioEntry EvaEvent="BuildingStolen" AudioType="voiceDefectingAway" />
+			<AudioEntry EvaEvent="EnemyBuildingCaptured" AudioType="voiceDefectingTowards" />
 			<AudioEntry
-				EvaEvent="BuildingStolen"
-				AudioType="voiceDefectingAway" />
-			<AudioEntry
-				EvaEvent="EnemyBuildingCaptured"
-				AudioType="voiceDefectingTowards" />
-			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:472C9C36]"
+				Sound="AudioEvent:NOD_DropZoneSelect"
 				AudioType="voiceSelect" />
 		</AudioArrayVoice>
 		<AudioArraySound>
-			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:45BB2ECF]"
-				AudioType="soundUnderConstruction" />
-			<AudioEntry
-				Sound="Asset not found in stream: [A3A7AF37:FDA3F3E1]"
-				AudioType="soundOnDamaged" />
-			<AudioEntry
-				Sound="Asset not found in stream: [A3A7AF37:10435FC9]"
-				AudioType="soundOnReallyDamaged" />
+			<AudioEntry Sound="AudioEvent:GDI_BuildingPlaced" AudioType="soundUnderConstruction" />
+			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_LightDamageMS" AudioType="soundOnDamaged" />
+			<AudioEntry Sound="Multisound:HumanFaction_MediumBuilding_HeavyDamageMS" AudioType="soundOnReallyDamaged" />
 		</AudioArraySound>
 		<EvaEvents
 			EvaEventSoldOwner="StructureSold"
