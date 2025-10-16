@@ -878,24 +878,26 @@
 					AcceptModelCondition=""
 					RejectModelCondition="" />
 			</HordeDispatchSpecialPower>
+
 			<AISpecialPowerUpdate
-					id="DFC29267"
-					CommandButtonName="Command_EMPGrenadesGetInRange"
-					SecondaryCommandButtonName=""
-					SpecialPowerAIType="SPECIAL_POWER_RANGED_AOE_ATTACK"
-					SpecialPowerRadius="400"
-					ReinforceDistance="0"
-					SpellMakesAStructure=""
-					SpecificUnit=""
-					UnitKindOf="VEHICLE FS_FACTORY FS_BASE_DEFENSE FS_POWER"
-					AllyUnitInclude=""
-					AllyUnitExclude="INFANTRY VEHICLE AIRCRAFT STRUCTURE"
-					EnemyUnitInclude="VEHICLE FS_FACTORY FS_BASE_DEFENSE FS_POWER"
-					EnemyUnitExclude="INFANTRY AIRCRAFT CIVILIAN_BUILDING NEUTRAL_TECH HUSK"
-					MinimumCutoff="0"
-					UpdateTime="1s"
-					MaxFrequency="0"
-					RandomizeTargetLocation="False" />
+				id="DFC29267"
+				CommandButtonName="Command_EMPGrenadesGetInRange"
+				SecondaryCommandButtonName=""
+				SpecialPowerAIType="SPECIAL_POWER_RANGED_AOE_ATTACK"
+				SpecialPowerRadius="350"
+				ReinforceDistance="0"
+				SpellMakesAStructure=""
+				SpecificUnit=""
+				UnitKindOf=""
+				AllyUnitInclude=""
+				AllyUnitExclude=""
+				EnemyUnitInclude="VEHICLE FS_FACTORY FS_WAR_FACTORY FS_BASE_DEFENSE FS_AIRFIELD AIRFIELD"
+				EnemyUnitExclude="INFANTRY AIRCRAFT HUSK CIVILIAN_BUILDING NEUTRAL_TECH"
+				MinimumCutoff="0"
+				UpdateTime="2.5s"
+				MaxFrequency="0"
+				RandomizeTargetLocation="False" />
+
 		</Behaviors>
 		<AI>
 			<HordeAIUpdate
@@ -974,13 +976,6 @@
 			EvaEventBuildOnHold="BuildOnHold"
 			EvaEventBuildCancelled="BuildCancelled"
 			EvaEventPromotedOwner="UnitPromoted" />
-
-		<AudioArraySound>
-			<AudioEntry
-				Sound="AudioEvent:GDI_GrenadierSoldier_GroupSmall_MoveLoop"
-				AudioType="soundMoveLoop" />
-		</AudioArraySound>
-
 		<VisionInfo
 			VisionRange="350"
 			ShroudClearingRange="400"
