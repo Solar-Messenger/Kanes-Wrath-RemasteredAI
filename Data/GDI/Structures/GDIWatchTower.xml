@@ -945,7 +945,7 @@
 				Permanent="False"
 				WaypointMode="False"
 				WaypointModeTerminal="True"
-				SoundToPlay="GDI_CommandPost_APammoUpgrade"
+				SoundToPlay="AudioEvent:GDI_CommandPost_APammoUpgrade"
 				KillAfterMS="0">
 				<TriggeredBy>Upgrade_GDIAPAmmo</TriggeredBy>
 			</AudioLoopUpgrade>
@@ -1048,18 +1048,18 @@
 				EvaEvent="EnemyBuildingCaptured"
 				AudioType="voiceDefectingTowards" />
 			<AudioEntry
-				Sound="GDI_WatchTowerSelect"
+				Sound="AudioEvent:GDI_WatchTowerSelect"
 				AudioType="voiceSelect" />
 		</AudioArrayVoice>
 		<AudioArraySound>
 			<AudioEntry
-				Sound="GDI_BuildingPlaced"
+				Sound="AudioEvent:GDI_BuildingPlaced"
 				AudioType="soundUnderConstruction" />
 			<AudioEntry
-				Sound="HumanFaction_SmallBuilding_LightDamageMS"
+				Sound="Multisound:HumanFaction_SmallBuilding_LightDamageMS"
 				AudioType="soundOnDamaged" />
 			<AudioEntry
-				Sound="HumanFaction_SmallBuilding_HeavyDamageMS"
+				Sound="Multisound:HumanFaction_SmallBuilding_HeavyDamageMS"
 				AudioType="soundOnReallyDamaged" />
 		</AudioArraySound>
 		<EvaEvents
