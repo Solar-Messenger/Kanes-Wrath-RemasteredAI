@@ -982,18 +982,12 @@
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
 				SpecialPowerRadius="999999.0"
-				ReinforceDistance="0"
-				SpellMakesAStructure=""
-				SpecificUnit=""
-				UnitKindOf="FS_FACTORY"
+				UnitKindOf=""
 				AllyUnitInclude=""
 				AllyUnitExclude="INFANTRY VEHICLE AIRCRAFT CIVILIAN_BUILDING STRUCTURE NEUTRAL_TECH UNIQUE_UNIT HUSK"
 				EnemyUnitInclude="FS_FACTORY FS_WAR_FACTORY FS_AIRFIELD AIRFIELD"
 				EnemyUnitExclude="INFANTRY VEHICLE AIRCRAFT CAN_ATTACK INFILTRATOR CIVILIAN_BUILDING NEUTRAL_TECH HUSK"
-				MinimumCutoff="0"
-				UpdateTime="1s"
-				MaxFrequency="0"
-				RandomizeTargetLocation="True" />
+				RandomizeTargetLocation="False" />
 
 			<ArmorUpgrade
 				id="D7169F09"
@@ -1229,25 +1223,6 @@
 					RejectModelCondition="" />
 				<UpgradeTemplate>Upgrade_SonicRepulsionField</UpgradeTemplate>
 			</GrantUpgradeAreaOfEffectSpecialPower>
-
-			<AISpecialPowerUpdate
-				id="97428C02"
-				CommandButtonName="Command_SpecialPowerSonicRepulsionField"
-				SecondaryCommandButtonName=""
-				SpecialPowerAIType="SPECIAL_POWER_CAPTURE_BUILDING"
-				SpecialPowerRadius="999999.0"
-				ReinforceDistance="0"
-				SpellMakesAStructure=""
-				SpecificUnit=""
-				UnitKindOf=""
-				AllyUnitInclude="FS_WAR_FACTORY FS_FACTORY FS_TECHNOLOGY CONSTRUCTION_YARD FS_AIRFIELD AIRFIELD"
-				AllyUnitExclude="INFANTRY VEHICLE AIRCRAFT NEUTRAL_TECH CIVILIAN_BUILDING HUSK"
-				EnemyUnitInclude=""
-				EnemyUnitExclude="INFANTRY VEHICLE AIRCRAFT STRUCTURE NEUTRAL_TECH CIVILIAN_BUILDING HUSK"
-				MinimumCutoff="0"
-				UpdateTime="1s"
-				MaxFrequency="0"
-				RandomizeTargetLocation="False" />
 			<!--
 			<BuildingBehavior
 				id="2118A085"
