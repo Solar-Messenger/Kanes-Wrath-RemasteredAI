@@ -1463,6 +1463,7 @@
 		<Cmd>Command_UpgradeNODEmpBurst</Cmd>
 		<Cmd>Command_PurchaseUpgradeChargedParticleBeam</Cmd>
 		<Cmd>Command_PurchaseUpgradeTibCoreMissilesBH</Cmd>
+		<Cmd>Command_NODDecoyTemple</Cmd>
 	</LogicCommandSet>
 
 	<LogicCommandSet
