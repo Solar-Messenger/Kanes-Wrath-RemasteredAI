@@ -346,7 +346,7 @@
 					AllowRepeatInRandomPick="False"
 					SimilarRestart="False">
 					<Animation
-						AnimationName="NBDHUB_QLBLD_AAN"
+						AnimationName="NBDHub_QLBld_AAN"
 						AnimationMode="ONCE"
 						Distance="0"
 						AnimationBlendTime="5"
@@ -428,7 +428,7 @@
 					AllowRepeatInRandomPick="False"
 					SimilarRestart="False">
 					<Animation
-						AnimationName="Asset not found in stream: [2448AE30:822B1418]"
+						AnimationName="NBDHub_QSBld_SKN"
 						AnimationMode="MANUAL"
 						Distance="0"
 						AnimationBlendTime="5"
@@ -458,7 +458,7 @@
 					AllowRepeatInRandomPick="False"
 					SimilarRestart="False">
 					<Animation
-						AnimationName="Asset not found in stream: [2448AE30:822B1418]"
+						AnimationName="NBDHub_QSBld_SKN"
 						AnimationMode="ONCE"
 						Distance="0"
 						AnimationBlendTime="0"
