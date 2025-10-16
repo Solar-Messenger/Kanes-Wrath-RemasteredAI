@@ -853,7 +853,7 @@
 				ReinforceDistance="0"
 				SpellMakesAStructure=""
 				SpecificUnit=""
-				UnitKindOf="VEHICLE"
+				UnitKindOf=""
 				AllyUnitInclude=""
 				AllyUnitExclude="VEHICLE AIRCRAFT"
 				EnemyUnitInclude="VEHICLE UNIQUE_UNIT"
