@@ -1165,7 +1165,7 @@
 				EnemyUnitInclude=""
 				EnemyUnitExclude=""
 				MinimumCutoff="200"
-				UpdateTime="1s"
+				UpdateTime="2.5s"
 				MaxFrequency="0"
 				RandomizeTargetLocation="False"/>
 		</Behaviors>
