@@ -378,7 +378,7 @@
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
 				SpecialPowerRadius="999999"
-				ReinforceDistance="1000"
+				ReinforceDistance="1500"
 				SpellMakesAStructure=""
 				SpecificUnit=""
 				UnitKindOf="HARVESTER"
@@ -405,17 +405,12 @@
 				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
 				SpecialPowerRadius="999999"
 				ReinforceDistance="1000"
-				SpellMakesAStructure=""
-				SpecificUnit=""
 				UnitKindOf="UNIQUE_UNIT META_UNIT VEHICLE"
 				AllyUnitInclude=""
 				AllyUnitExclude="INFANTRY VEHICLE AIRCRAFT STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH"
 				EnemyUnitInclude="UNIQUE_UNIT META_UNIT"
 				EnemyUnitExclude="INFANTRY AIRCRAFT HUSK STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH"
-				MinimumCutoff="0"
-				UpdateTime="1s"
-				MaxFrequency="0"
-				RandomizeTargetLocation="True"
+				RandomizeTargetLocation="False"
 			/>
 
 			<MonitorSpecialPowerTimerUpdate
@@ -437,18 +432,12 @@
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
 				SpecialPowerRadius="999999.0"
-				ReinforceDistance="0"
-				SpellMakesAStructure=""
-				SpecificUnit=""
 				UnitKindOf="SIEGE_WEAPON"
 				AllyUnitInclude=""
 				AllyUnitExclude="INFANTRY VEHICLE AIRCRAFT STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH"
 				EnemyUnitInclude="SIEGE_WEAPON"
 				EnemyUnitExclude="AIRCRAFT INFILTRATOR"
-				MinimumCutoff="0"
-				UpdateTime="1s"
-				MaxFrequency="0"
-				RandomizeTargetLocation="True" />
+				RandomizeTargetLocation="False" />
 
 			<!-- SUPERSONIC AIR ATTACK -->
 			<OCLSpecialPower
@@ -464,18 +453,12 @@
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
 				SpecialPowerRadius="999999.0"
-				ReinforceDistance="0"
-				SpellMakesAStructure=""
-				SpecificUnit=""
 				UnitKindOf="ASSAULT_AIRCRAFT"
 				AllyUnitInclude=""
 				AllyUnitExclude="INFANTRY VEHICLE AIRCRAFT STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH HUSK"
 				EnemyUnitInclude="ASSAULT_AIRCRAFT"
 				EnemyUnitExclude="INFANTRY INFILTRATOR TRANSPORT STRUCTURE CIVILIAN_BUILDING HUSK NEUTRAL_TECH"
-				MinimumCutoff="0"
-				UpdateTime="1s"
-				MaxFrequency="0"
-				RandomizeTargetLocation="True" />
+				RandomizeTargetLocation="False" />
 
 			<ArmorUpgrade
 							id="ModuleTag_SonicRepulsionFieldUpgrade"
