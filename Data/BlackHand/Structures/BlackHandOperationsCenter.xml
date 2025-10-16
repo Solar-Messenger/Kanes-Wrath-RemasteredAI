@@ -1364,7 +1364,7 @@
 				id="51CC365B"
 				CommandButtonName="Command_FireRadarJammingMissile"
 				SecondaryCommandButtonName=""
-				SpecialPowerAIType="SPECIAL_POWER_BASIC_SELF_BUFF"
+				SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF"
 				SpecialPowerRadius="-1"
 				ReinforceDistance="0"
 				SpellMakesAStructure=""
@@ -1598,7 +1598,7 @@
 				id="33EA2973"
 				CommandButtonName="Command_PowerSignatureScan"
 				SecondaryCommandButtonName=""
-				SpecialPowerAIType="SPECIAL_POWER_BASIC_SELF_BUFF"
+				SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF"
 				SpecialPowerRadius="-1"
 				ReinforceDistance="0"
 				SpellMakesAStructure=""
@@ -1609,9 +1609,21 @@
 				EnemyUnitInclude=""
 				EnemyUnitExclude=""
 				MinimumCutoff="0"
-				UpdateTime="1s"
-				MaxFrequency="0"
+				UpdateTime="2.5s"
+				MaxFrequency="2700"
 				RandomizeTargetLocation="False" />
+
+			<AISpecialPowerUpdate
+				id="ModuleTag_BHDecoyArmyAI"
+				CommandButtonName="Command_SelectObjectsForClone"
+				SecondaryCommandButtonName="Command_SpawnObjectsForClone"
+				SpecialPowerAIType="SPECIAL_POWER_DECOY_ARMY"
+				SpecialPowerRadius="400"
+				AllyUnitInclude="VEHICLE"
+				AllyUnitExclude="AIRCRAFT STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH HUSK"
+				EnemyUnitExclude="INFANTRY VEHICLE AIRCRAFT STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH HUSK"
+				UpdateTime="2.5s"/>
+	
 		</Behaviors>
 		<AI>
 			<AIUpdate
