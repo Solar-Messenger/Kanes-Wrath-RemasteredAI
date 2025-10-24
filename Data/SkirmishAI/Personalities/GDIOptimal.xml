@@ -7,8 +7,8 @@
 		  PersonalityType="1GDIOptimal"
 	  PersonalityUIName="Personality:Optimal"
 	  SkirmishPersonality="true"
-		  SecondsTillTargetsCanExpire="15.0"
-		  ChanceForTargetToExpire="100"
+		  SecondsTillTargetsCanExpire="10.0"
+		  ChanceForTargetToExpire="60"
 		  MaxBuildingsToBeDefensiveTarget_Small="0"
 		  MaxBuildingsToBeDefensiveTarget_Med="0"
 		  ChanceForUnitsToUpgrade="300"
@@ -20,8 +20,8 @@
 	  DefaultThreatFindRadius="0"
 	  UnitBuilderCostEffectivenessWeight="1.0"
 	  UnitBuilderMoneyVersusTimePreference="0.25"
-	  UnitBuilderOverallOffensivePreference="100%"
-	  UnitBuilderOverallDefensivePreference="100%"
+	  UnitBuilderOverallOffensivePreference="200%"
+	  UnitBuilderOverallDefensivePreference="50%"
 	  Expansion_TiberiumSearchRadius="700"
 	  Expansion_MaxTiberiumRemaining="27000"
 	  ReactiveDefenseRadius="1500"
@@ -33,6 +33,7 @@
 	  StructureSaveChanceMedium="0.25"
 	  StructureSaveChanceHard="0.5"
 	  MinHarvesters="4"
+	  TimeToBeConsideredIdle="0.5"
 		>
 
 		<Side>GDI</Side>
@@ -48,9 +49,6 @@
 
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
@@ -63,6 +61,10 @@
 		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="Targetless" MaxTeamsPerTarget="1"/>
+
+		<TacticalTarget TacticalAITarget="Defensive" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Defensive" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Opportunity" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
@@ -99,17 +101,19 @@
 		<States State="GDIOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="GDIOptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="GDIOptimalDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIOptimalGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIOptimalAirEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="GDIOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIOptimalSiege" Difficulty="HARD BRUTAL"/>
 		<States State="GDIOptimalSpotters" Difficulty="HARD BRUTAL"/>
+		<States State="GDIOptimalBaseCrack" Difficulty="HARD BRUTAL"/>
 
 		<States State="GDIOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIOptimalBombingRuns" Difficulty="HARD BRUTAL"/>
 		<States State="GDIOptimalEngineer" Difficulty="HARD BRUTAL"/>
 
-		<States State="GDIDefend" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIEngineerDefense" Difficulty="HARD BRUTAL"/>
 		<States State="GDICommandoDefense" Difficulty="HARD BRUTAL"/>
 
