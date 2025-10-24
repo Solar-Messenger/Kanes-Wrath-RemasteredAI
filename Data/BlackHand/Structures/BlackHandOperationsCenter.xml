@@ -1376,7 +1376,7 @@
 				EnemyUnitExclude=""
 				MinimumCutoff="0"
 				UpdateTime="1s"
-				MaxFrequency="2700"
+				MaxFrequency="2"
 				RandomizeTargetLocation="False" />
 			<MonitorSpecialPowerTimerUpdate
 				id="E56507EB"
@@ -1598,7 +1598,7 @@
 				id="33EA2973"
 				CommandButtonName="Command_PowerSignatureScan"
 				SecondaryCommandButtonName=""
-				SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF"
+				SpecialPowerAIType="SPECIAL_POWER_BASIC_SELF_BUFF"
 				SpecialPowerRadius="-1"
 				ReinforceDistance="0"
 				SpellMakesAStructure=""
@@ -1613,7 +1613,11 @@
 				MaxFrequency="2700"
 				RandomizeTargetLocation="False" />
 
-			<AISpecialPowerUpdate
+			<!--This thing likes to spam this to crash the game. Edit frequency and/or update time till it stops spamming 
+				or comment out till a later fix.
+				Update: Commented out as the decoy units sometimes take unit spots in standard states. This makes attacks 
+				extremely weak due to one shot clones taking up so many slots but will keep it here for completion sakes.-->
+			<!--<AISpecialPowerUpdate
 				id="ModuleTag_BHDecoyArmyAI"
 				CommandButtonName="Command_SelectObjectsForClone"
 				SecondaryCommandButtonName="Command_SpawnObjectsForClone"
@@ -1622,7 +1626,21 @@
 				AllyUnitInclude="VEHICLE"
 				AllyUnitExclude="AIRCRAFT STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH HUSK"
 				EnemyUnitExclude="INFANTRY VEHICLE AIRCRAFT STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH HUSK"
-				UpdateTime="2.5s"/>
+				UpdateTime="2.5s"
+				MaxFrequency="4000"/>-->
+
+			<!--Doesnt work. Commenting out till a solution is found-->
+
+			<AISpecialPowerUpdate
+				id="ModuleTag_BHLaserFencingAI"
+				CommandButtonName="Command_SpecialPowerLaserFencing"
+				SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF"
+				SpecialPowerRadius="999999.0"
+				AllyUnitInclude="FS_TECHNOLOGY FS_WAR_FACTORY CONSTRUCTION_YARD FS_TECH_CENTER FS_FACTORY FS_AIRFIELD AIRFIELD STRUCTURE"
+				AllyUnitExclude="INFANTRY VEHICLE AIRCRAFT FS_BASE_DEFENSE CIVILIAN_BUILDING NEUTRAL_TECH HUSK"
+				EnemyUnitExclude="INFANTRY VEHICLE AIRCRAFT STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH HUSK"
+				UpdateTime="2.5s"
+				/>
 	
 		</Behaviors>
 		<AI>
