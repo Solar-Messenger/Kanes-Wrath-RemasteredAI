@@ -1223,6 +1223,19 @@
 					RejectModelCondition="" />
 				<UpgradeTemplate>Upgrade_SonicRepulsionField</UpgradeTemplate>
 			</GrantUpgradeAreaOfEffectSpecialPower>
+
+			<!--<AISpecialPowerUpdate
+					id="ModuleTag_GDISonicRepulsionFieldAI"
+					CommandButtonName="Command_SpecialPowerSonicRepulsionField"
+					SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF"
+					SpecialPowerRadius="999999.0"
+					AllyUnitInclude="FS_TECHNOLOGY FS_WAR_FACTORY CONSTRUCTION_YARD FS_TECH_CENTER FS_FACTORY FS_AIRFIELD AIRFIELD STRUCTURE"
+					AllyUnitExclude="INFANTRY VEHICLE AIRCRAFT FS_BASE_DEFENSE CIVILIAN_BUILDING NEUTRAL_TECH HUSK"
+					EnemyUnitExclude="INFANTRY VEHICLE AIRCRAFT STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH HUSK"
+					UpdateTime="2.5s"
+				/>-->
+
+
 			<!--
 			<BuildingBehavior
 				id="2118A085"
