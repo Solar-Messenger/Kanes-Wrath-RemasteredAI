@@ -381,3 +381,4 @@ Data/maps/official/**/*.map
 /Data/Traveler59/Traveler59.xml
 /Data/ZOCOM/ZOCOM.xml
 Data/Neutral/Neutral.xml
+/Data/SkirmishAI/States/AIStates.xml
