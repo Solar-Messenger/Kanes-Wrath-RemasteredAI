@@ -1152,7 +1152,7 @@
 
 			<AISpecialPowerUpdate
 			id="ModuleTag_ZoneTrooperSquadFireJumpJets"
-				CommandButtonName="Command_ZoneTrooperSquadFireJumpJets"
+				CommandButtonName="Command_ZoneTrooperSquadGetToJumpJetRange"
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_MOVEMENT"
 				SpecialPowerRadius="-1"

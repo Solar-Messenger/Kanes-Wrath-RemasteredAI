@@ -6,4 +6,28 @@
 		Options="">
 		<SpecialPower>SpecialPower_DecoyTemple</SpecialPower>
 	</LogicCommand>
+
+		<LogicCommand
+		id="Command_APCMinefield"
+		Type="SPECIAL_POWER"
+		Options="NEED_TARGET_POS">
+		<SpecialPower>SpecialPowerGDI_APCMinefield</SpecialPower>
+	</LogicCommand>
+
+	<!--Doesnt work. Commenting out till a solution is found-->
+	<!--
+	<LogicCommand
+	id="Command_SpecialPowerSonicRepulsionField"
+	Type="SPECIAL_POWER"
+	Options="NEED_TARGET_ALLY_OBJECT">
+		<Upgrade>SpecialPower_SonicRepulsionField</Upgrade>
+	</LogicCommand>
+
+	<LogicCommand
+	id="Command_SpecialPowerLaserFencing"
+	Type="SPECIAL_POWER"
+	Options="NEED_TARGET_ALLY_OBJECT">
+		<Upgrade>SpecialPower_LaserFencing</Upgrade>
+	</LogicCommand>-->
+
 </AssetDeclaration>

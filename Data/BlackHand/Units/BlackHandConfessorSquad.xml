@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="BlackHandConfessorSquad"
-		KindOf="SELECTABLE CAN_ATTACK INFANTRY SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAPTURE HORDE PATH_THROUGH_INFANTRY ARMY_SUMMARY LARGE_RECTANGLE_PATHFIND SKIRMISH_AI_DONT_GARRISON ANTI_GARRISON CAN_BE_FAVORITE_UNIT"
+		KindOf="SELECTABLE CAN_ATTACK INFANTRY SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_CAPTURE HORDE PATH_THROUGH_INFANTRY ARMY_SUMMARY LARGE_RECTANGLE_PATHFIND ANTI_GARRISON CAN_BE_FAVORITE_UNIT"
 		Description="Desc:BlackHandConfessorSquad"
 		TypeDescription="Type:BlackHandConfessorSquad"
 		RadarPriority="NOT_ON_RADAR"
@@ -66,7 +66,7 @@
 		HasFiredRecentlyTime="2s"
 		UnitTypeIcon="ConfessorHordePip"
 		ReinvisibilityDelay="4s"
-		WorldMapArmoryUpgradesAllowed="Upgrade_NodTechCenterChargedParticleBeam"
+		WorldMapArmoryUpgradesAllowed="Upgrade_NodTechCenterChargedParticleBeam Upgrade_BlackHandBlackDisciplesUpgrade"
 		CaptureTime="0s"
 		BuildCost="400"
 		RefundValue="0"
@@ -975,19 +975,24 @@
 					CommandButtonName="Command_BlackHandConfessorCabalSquadFireGrenade"
 					SecondaryCommandButtonName=""
 					SpecialPowerAIType="SPECIAL_POWER_RANGED_AOE_ATTACK"
-					SpecialPowerRadius="300"
+					SpecialPowerRadius="275"
 					ReinforceDistance="0"
 					SpellMakesAStructure=""
 					SpecificUnit=""
 					UnitKindOf="INFANTRY"
 					AllyUnitInclude=""
 					AllyUnitExclude=""
-					EnemyUnitInclude="INFANTRY"
-					EnemyUnitExclude="VEHICLE"
+					EnemyUnitInclude=""
+					EnemyUnitExclude="VEHICLE AIRCRAFT STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH HUSK UNIQUE_UNIT"
 					MinimumCutoff="0"
-					UpdateTime="1s"
+					UpdateTime="2.5s"
 					MaxFrequency="0"
 					RandomizeTargetLocation="False" />
+			<AudioLoopUpgrade 
+					id="NOD_BlackDisciples_Upgrade" 
+					SoundToPlay="AudioEvent:NOD_BlackDisciples_Upgrade">
+				<TriggeredBy>Upgrade_BlackHandBlackDisciplesUpgrade</TriggeredBy>
+			</AudioLoopUpgrade>
 		</Behaviors>
 		<AI>
 			<HordeAIUpdate

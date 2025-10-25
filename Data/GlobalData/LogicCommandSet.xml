@@ -83,7 +83,6 @@
 		id="GDIZoneTrooperSquadCommandSet">
 		<Cmd>Command_GDICallForTransportInfantry</Cmd>
 		<Cmd>Command_ZoneTrooperSquadGetToJumpJetRange</Cmd>
-		<Cmd>Command_ZoneTrooperSquadFireJumpJets</Cmd>
 		<Cmd>Command_AttackMove</Cmd>
 		<Cmd>Command_Stop</Cmd>
 	</LogicCommandSet>
@@ -175,10 +174,10 @@
 	<LogicCommandSet
 		id="GDICommandPostCommandSet">
 		<Cmd>Command_CommandPostRadarScan</Cmd>
+		<Cmd>Command_SpecialPowerSonicRepulsionField</Cmd>
 		<Cmd>Command_PurchaseUpgradeGDIAPAmmo</Cmd>
 		<Cmd>Command_PurchaseUpgradeOrcaSensorPod</Cmd>
 		<Cmd>Command_UpgradeZoneTrooperScannerPack</Cmd>
-		<Cmd>Command_SpecialPowerSonicRepulsionField</Cmd>
 	</LogicCommandSet>
 	<LogicCommandSet
 		id="GDIAirTowerCommandSet">
@@ -265,7 +264,6 @@
 		id="GDIGrenadeSoldierSquadCommandSet">
 		<Cmd>Command_GDICallForTransportInfantry</Cmd>
 		<Cmd>Command_EMPGrenadesGetInRange</Cmd>
-		<Cmd>Command_FireEMPGrenades</Cmd>
 		<Cmd>Command_AttackMove</Cmd>
 	</LogicCommandSet>
 	<LogicCommandSet
@@ -367,7 +365,6 @@
 	<LogicCommandSet
 		id="BlackHandConfessorCabalSquadCommandSet">
 		<Cmd>Command_BlackHandConfessorCabalSquadFireGrenade</Cmd>
-		<Cmd>Command_BlackHandConfessorCabalFireGrenade</Cmd>
 		<Cmd>Command_AttackMove</Cmd>
 	</LogicCommandSet>
 
@@ -1473,10 +1470,11 @@
 
 	<LogicCommandSet
 		id="BlackHandOperationsCenterCommandSet">
-		<Cmd>Command_UpgradeNODDozerBlades</Cmd>
+		<Cmd>Command_FireRadarJammingMissile</Cmd>
+		<Cmd>Command_SpecialPowerLaserFencing</Cmd>
 		<Cmd>Command_SelectObjectsForClone</Cmd>
 		<Cmd>Command_SpawnObjectsForClone</Cmd>
-		<Cmd>Command_FireRadarJammingMissile</Cmd>
+		<Cmd>Command_UpgradeNODDozerBlades</Cmd>
 		<Cmd>Command_PurchaseUpgradeNODQuadTurrets</Cmd>
 	</LogicCommandSet>
 
