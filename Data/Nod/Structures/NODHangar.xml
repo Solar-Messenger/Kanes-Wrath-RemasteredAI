@@ -696,11 +696,11 @@
 				CommandButtonName="Command_NODBurrowMines"
 				SpecialPowerRadius="99999.0"
 				SpecialPowerAIType="SPECIAL_POWER_RANGED_AOE_ATTACK"
-				UnitKindOf="VEHICLE"
+				UnitKindOf="HARVESTER"
 				AllyUnitInclude=""
-				AllyUnitExclude=""
-				EnemyUnitInclude="UNIQUE_UNIT HARVESTER"
-				EnemyUnitExclude=""
+				AllyUnitExclude="INFANTRY VEHICLE AIRCRAFT STRUCTURE NEUTRAL_TECH CIVILIAN_BUILDING HUSK"
+				EnemyUnitInclude="HARVESTER VEHICLE UNIQUE_UNIT"
+				EnemyUnitExclude="AIRCRAFT STRUCTURE NEUTRAL_TECH CIVILIAN_BUILDING HUSK"
 			/>
 			<ModelConditionUpgrade
 				id="ModuleTag_UpgradeLaserFencing"
