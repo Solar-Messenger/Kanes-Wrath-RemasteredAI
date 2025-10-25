@@ -2,7 +2,7 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset">
 	<GameObject
 		id="GDIAPC"
-		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS TRANSPORT PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_REVERSE_MOVE VEHICLE CAN_BE_FAVORITE_UNIT"
+		KindOf="SELECTABLE CAN_ATTACK CAN_CAST_REFLECTIONS TRANSPORT GARRISONABLE_UNTIL_DESTROYED PRELOAD SCORE ATTACK_NEEDS_LINE_OF_SIGHT CAN_REVERSE_MOVE VEHICLE CAN_BE_FAVORITE_UNIT"
 		Description="Desc:GDIAPC"
 		TypeDescription="Type:GDIAPC"
 		RadarPriority="UNIT"
@@ -1007,12 +1007,14 @@
 				PlayWeaponPreFireFX="False"
 				OffsetTargetLocationFromObject="False"
 				DestealthClosestObjectMatchingFilter="False" />
-			<AISpecialPowerUpdate
+
+	<!--Does not work as intended. APC chooses to drop mines on current position rather than move towards a target & drop mines in front of it-->
+			<!--<AISpecialPowerUpdate
 				id="DBD07887"
 				CommandButtonName="Command_APCMinefield"
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF"
-				SpecialPowerRadius="100.0"
+				SpecialPowerRadius="500.0"
 				ReinforceDistance="500"
 				SpellMakesAStructure=""
 				SpecificUnit=""
@@ -1024,7 +1026,8 @@
 				MinimumCutoff="0"
 				UpdateTime="5s"
 				MaxFrequency="0"
-				RandomizeTargetLocation="true"/>
+				RandomizeTargetLocation="true"/>-->
+
 			<CreateAndEnterObjectSpecialPower
 				id="6D44A823"
 				SpecialPowerTemplate="SpecialPowerCallForTransportGDI"
