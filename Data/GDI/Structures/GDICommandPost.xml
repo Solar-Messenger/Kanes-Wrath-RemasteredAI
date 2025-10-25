@@ -1224,12 +1224,14 @@
 				<UpgradeTemplate>Upgrade_SonicRepulsionField</UpgradeTemplate>
 			</GrantUpgradeAreaOfEffectSpecialPower>
 
+			<!--Doesnt work. Commenting out till a solution is found-->
+
 			<!--<AISpecialPowerUpdate
 					id="ModuleTag_GDISonicRepulsionFieldAI"
 					CommandButtonName="Command_SpecialPowerSonicRepulsionField"
-					SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF"
+					SpecialPowerAIType="SPECIAL_POWER_CAPTURE_BUILDING"
 					SpecialPowerRadius="999999.0"
-					AllyUnitInclude="FS_TECHNOLOGY FS_WAR_FACTORY CONSTRUCTION_YARD FS_TECH_CENTER FS_FACTORY FS_AIRFIELD AIRFIELD STRUCTURE"
+					AllyUnitInclude="FS_TECHNOLOGY FS_WAR_FACTORY CONSTRUCTION_YARD FS_TECH_CENTER FS_FACTORY FS_AIRFIELD AIRFIELD"
 					AllyUnitExclude="INFANTRY VEHICLE AIRCRAFT FS_BASE_DEFENSE CIVILIAN_BUILDING NEUTRAL_TECH HUSK"
 					EnemyUnitExclude="INFANTRY VEHICLE AIRCRAFT STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH HUSK"
 					UpdateTime="2.5s"
