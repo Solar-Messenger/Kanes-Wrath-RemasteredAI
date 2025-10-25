@@ -1576,7 +1576,7 @@
 			MinimumCutoff="0"
 			UpdateTime="1s"
 			MaxFrequency="0"
-			RandomizeTargetLocation="True" />
+			RandomizeTargetLocation="true" />
 
 			<AISpecialPowerUpdate
 			id="ModuleTag_PulseScan"
@@ -1589,13 +1589,13 @@
 			SpecificUnit=""
 			UnitKindOf="HARVESTER"
 			AllyUnitInclude=""
-			AllyUnitExclude="HARVESTER BROADCASTS_INVISIBILITY"
-			EnemyUnitInclude= "HARVESTER BROADCASTS_INVISIBILITY"
+			AllyUnitExclude="INFANTRY VEHICLE AIRCRAFT STRUCTURE HARVESTER BROADCASTS_INVISIBILITY NEUTRAL_TECH HUSK"
+			EnemyUnitInclude="HARVESTER BROADCASTS_INVISIBILITY"
 			EnemyUnitExclude=""
 			MinimumCutoff="0"
 			UpdateTime="1s"
 			MaxFrequency="0"
-			RandomizeTargetLocation="False" />
+			RandomizeTargetLocation="true" />
 		</Behaviors>
 		<AI>
 			<JetAIUpdate
