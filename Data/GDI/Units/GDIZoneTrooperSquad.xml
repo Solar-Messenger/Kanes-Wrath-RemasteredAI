@@ -1168,6 +1168,7 @@
 				UpdateTime="2.5s"
 				MaxFrequency="0"
 				RandomizeTargetLocation="False"/>
+
 		</Behaviors>
 		<AI>
 			<HordeAIUpdate
