@@ -26,6 +26,7 @@
 		  id="GDIOptimalDefense"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<TimerHeuristic StartTime="91s" EndTime="-1s"/>
 			<SpreadThresholdHeuristic/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ExpansionDefendHeuristic" TargetType="Defensive"/>
@@ -81,7 +82,6 @@
       <PathToTargetHeuristic PathExists="true"/>
     </Heuristic>
 	<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="ExtraTarget"/>
-    <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="ExtraTarget"/>
     <Tactic Tactic="FlankAttack" TargetType="ExtraTarget">
       <TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
