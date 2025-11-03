@@ -5,9 +5,7 @@
 
 	<AIStrategicStateDefinition
 		  id="NODOptimalDirectAttack"
-		  UnitUpgradeMultiplier="0.0"
-		  UnitBuilderOverallOffensivePreference="200%"
-		  UnitBuilderOverallDefensivePreference="10%">
+		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
 			<TimerHeuristic StartTime="180s" EndTime="-1s"/>
@@ -18,24 +16,21 @@
 				<PenetrabilityHeuristic/>
 			</OverpowerHeuristic>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundUnitHeuristic" WeightMultiplier="0.4" TargetType="PrimaryTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" WeightMultiplier="0.6" TargetType="PrimaryTarget"/>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
 		  id="NODOptimalDefense"
-		  UnitUpgradeMultiplier="0.0"
-		  UnitBuilderOverallOffensivePreference="10%"
-		  UnitBuilderOverallDefensivePreference="200%">
+		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<SpreadThresholdHeuristic/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ExpansionDefendHeuristic" TargetType="Defensive"/>
 		<Tactic Tactic="ReactiveDefense" TargetType="Defensive">
-			<TeamTemplate MinUnits="1" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="true" AlwaysRecruit="true"/>
+			<TeamTemplate MinUnits="1" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="true" AlwaysRecruit="true"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -45,8 +40,8 @@
 		<Heuristic>
 			<TimerHeuristic StartTime ="120s" EndTime="420s" />
 			<ProductionHaltHeuristic
-				PenetrabilityWeight="0.4"
-				BalanceOfPowerWeight="0.6">
+				PenetrabilityWeight="0.5"
+				BalanceOfPowerWeight="0.5">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
@@ -65,8 +60,8 @@
 		<Heuristic>
 			<TimerHeuristic StartTime ="421s" EndTime="-1s" />
 			<ProductionHaltHeuristic
-				PenetrabilityWeight="0.4"
-				BalanceOfPowerWeight="0.6">
+				PenetrabilityWeight="0.5"
+				BalanceOfPowerWeight="0.5">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
@@ -84,9 +79,10 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime ="180s" EndTime="-1s" />
+			<PathToTargetHeuristic PathExists="true"/>
 			<ProductionHaltHeuristic
-				PenetrabilityWeight="0.4"
-				BalanceOfPowerWeight="0.6">
+				PenetrabilityWeight="0.5"
+				BalanceOfPowerWeight="0.5">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
@@ -105,11 +101,10 @@
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundUnitHeuristic" WeightMultiplier="0.3" TargetType="ExtraTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" WeightMultiplier="0.3" TargetType="ExtraTarget"/>
-		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" WeightMultiplier="0.4" TargetType="ExtraTarget"/>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="ExtraTarget"/>
+		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="ExtraTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="ExtraTarget">
-			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -135,6 +130,7 @@
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="480s" EndTime="-1s"/>
+			<PathToTargetHeuristic PathExists="true"/>
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.3"
 				BalanceOfPowerWeight="0.7">
@@ -155,12 +151,12 @@
 	  id="NODOptimalAirHarassmentAntiTurtle"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.6"/>
+			<ConstantHeuristic Weight="0.75"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
-			<TeamTemplate MinUnits="5" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		<Tactic Tactic="FlankAttack" TargetType="AssaultAirstrike">
+			<TeamTemplate MinUnits="4" MaxUnits="8" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT PRODUCED_AT_HELIPAD" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
