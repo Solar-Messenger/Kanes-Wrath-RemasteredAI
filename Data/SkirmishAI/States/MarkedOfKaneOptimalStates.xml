@@ -18,10 +18,9 @@
 				<PenetrabilityHeuristic/>
 			</OverpowerHeuristic>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundUnitHeuristic" WeightMultiplier="0.4" TargetType="PrimaryTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" WeightMultiplier="0.6" TargetType="PrimaryTarget"/>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -31,6 +30,7 @@
 		  UnitBuilderOverallOffensivePreference="10%"
 		  UnitBuilderOverallDefensivePreference="200%">
 		<Heuristic>
+			<TimerHeuristic StartTime="91s" EndTime="-1s"/>
 			<SpreadThresholdHeuristic/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ExpansionDefendHeuristic" TargetType="Defensive"/>
@@ -85,11 +85,10 @@
     <Heuristic>
 		<PathToTargetHeuristic PathExists="true"/>
     </Heuristic>
-	  <TargetHeuristic TargetHeuristic="SafestToGroundUnitHeuristic" WeightMultiplier="0.3" TargetType="ExtraTarget"/>
-	  <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" WeightMultiplier="0.3" TargetType="ExtraTarget"/>
-	  <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" WeightMultiplier="0.4" TargetType="ExtraTarget"/>
+	  <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" WeightMultiplier="0.5" TargetType="ExtraTarget"/>
+	  <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" WeightMultiplier="0.5" TargetType="ExtraTarget"/>
 	  <Tactic Tactic="FlankAttack" TargetType="ExtraTarget">
-		  <TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		  <TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 	  </Tactic>
   </AIStrategicStateDefinition>
 
@@ -138,8 +137,8 @@
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
     <TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
-      <TeamTemplate MinUnits="5" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+    <Tactic Tactic="FlankAttack" TargetType="AssaultAirstrike">
+      <TeamTemplate MinUnits="4" MaxUnits="8" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT PRODUCED_AT_HELIPAD" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
     </Tactic>
   </AIStrategicStateDefinition>
 
