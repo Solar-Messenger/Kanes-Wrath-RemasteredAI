@@ -49,35 +49,9 @@
 		<Order Time="95s" Build="GDIPowerPlant"/>
 		<Order Time="100s" Build="GDIAirTower"/>
 		<Order Time="120s" Build="GDIWarfactory"/>
-		<Order Time="140s" Build="GDIPowerPlant"/>
-		<Order Time="145s" Build="GDICommandPost"/>
-		<Order Time="160s" Build="GDIArmory"/>
-	</SkirmishOpeningMove>
-
-	<SkirmishOpeningMove
-    id="GDIOverlordVehicles"
-    Side="GDI">
-		<Order Time="0s" Build="GDIPowerPlant"/>
-		<Order Time="5s" Build="GDIBarracks"/>
-		<Order Build="GDIEngineer"/>
-		<Order Build="GDIEngineer"/>
-		<Order Build="GDIRifleSoldierSquad"/>
-		<Order Build="GDIRifleSoldierSquad"/>
-		<Order Build="GDIRifleSoldierSquad"/>
-		<Order Time="10s" Build="GDIRefinery"/>
-		<Order Time="40s" Build="GDIWarfactory"/>
-		<Order Time="60s" Build="GDIRefinery"/>
-		<Order Build="GDIHarvester"/>
-		<Order Build="GDIAPC"/>
-		<Order Build="GDIAPC"/>
-		<Order Build="GDIAPC"/>
-		<Order Build="GDIAPC"/>
-		<Order Time="90s" Build="GDIPowerPlant"/>
-		<Order Time="95s" Build="GDIPowerPlant"/>
-		<Order Time="100s" Build="GDIWarfactory"/>
-		<Order Time="120s" Build="GDIWarfactory"/>
-		<Order Time="140s" Build="GDICommandPost"/>
-		<Order Time="155s" Build="GDIArmory"/>
+		<Order Time="140s" Build="GDIWarfactory"/>
+		<Order Time="160s" Build="GDIPowerPlant"/>
+		<Order Time="165s" Build="GDICommandPost"/>
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>

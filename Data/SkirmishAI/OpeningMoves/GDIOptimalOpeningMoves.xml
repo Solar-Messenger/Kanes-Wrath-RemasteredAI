@@ -29,6 +29,10 @@
 	<SkirmishOpeningMove
 	id="GDIOptimalHardBrutal"
 	Side="GDI">
+		<!--<Order Time="0s" Account="INVESTMENT" Deposit="99999"/>
+		<Order Time="0s" Account="SPECIAL_OPERATIONS" Deposit="99999"/>
+		<Order Time="0s" Account="TECHNOLOGY" Deposit="99999"/>
+		<Order Time="0s" Account="PRODUCTION" Deposit="99999"/>-->
 		<Order Time="0s" Build="GDIPowerPlant"/>
 		<Order Time="5s" Build="GDIBarracks"/>
 		<Order Build="GDIEngineer"/>
@@ -38,20 +42,23 @@
 		<Order Build="GDIRifleSoldierSquad"/>
 		<Order Time="10s" Build="GDIRefinery"/>
 		<Order Time="40s" Build="GDIWarfactory"/>
+		<Order Build="GDIHarvester"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIHarvester"/>
 		<Order Time="60s" Build="GDIRefinery"/>
-		<Order Build="GDIHarvester"/>
-		<Order Build="GDIAPC"/>
-		<Order Build="GDIAPC"/>
-		<Order Build="GDIAPC"/>
-		<Order Build="GDIAPC"/>
-		<Order Build="GDIHarvester"/>
 		<Order Time="90s" Build="GDIPowerPlant"/>
+		<Order Time="90s" Build="GDIWatchTower"/>
 		<Order Time="95s" Build="GDIPowerPlant"/>
+		<Order Time="95s" Build="GDIWatchTower"/>
 		<Order Time="100s" Build="GDICrane"/>
-		<Order Time="115s" Build="GDICommandPost"/>
+		<Order Time="115s" Build="GDIWarfactory"/>
 		<Order Time="115s" Build="GDIPowerPlant"/>
-		<Order Time="120s" Build="GDIAirTower"/>
-		<Order Time="130s" Build="GDIWarfactory"/>
+		<Order Time="120s" Build="GDICommandPost"/>
+		<Order Time="135s" Build="GDIPowerPlant"/>
+		<Order Time="135s" Build="GDIAirTower"/>
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>

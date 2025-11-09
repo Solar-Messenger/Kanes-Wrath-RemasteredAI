@@ -1169,6 +1169,16 @@
 				MaxFrequency="0"
 				RandomizeTargetLocation="False"/>
 
+			<AISpecialPowerUpdate
+				id="ModuleTag_ZoneTrooperSquadGarrisonEpic"
+				CommandButtonName="Command_GarrisonEpicUnit"
+				SpecialPowerAIType="SPECIAL_POWER_SUPERWEAPON"
+				SpecialPowerRadius="99999.0"
+				UnitKindOf="UNIQUE_UNIT GARRISONABLE_UNTIL_DESTROYED"
+				AllyUnitInclude="UNIQUE_UNIT GARRISONABLE_UNTIL_DESTROYED"
+				EnemyUnitExclude="UNIQUE_UNIT GARRISONABLE_UNTIL_DESTROYED"
+				UpdateTime="2.5s"/>
+
 		</Behaviors>
 		<AI>
 			<HordeAIUpdate

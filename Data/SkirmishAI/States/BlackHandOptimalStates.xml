@@ -23,19 +23,6 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandOptimalDefense"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<TimerHeuristic StartTime="91s" EndTime="-1s"/>
-			<SpreadThresholdHeuristic/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ExpansionDefendHeuristic" TargetType="Defensive"/>
-		<Tactic Tactic="ReactiveDefense" TargetType="Defensive">
-			<TeamTemplate MinUnits="1" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="true" AlwaysRecruit="true"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
 		  id="BlackHandOptimalEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>

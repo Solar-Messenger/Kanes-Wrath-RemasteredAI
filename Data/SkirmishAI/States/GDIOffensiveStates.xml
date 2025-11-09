@@ -12,9 +12,8 @@
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="10" MaxUnits="15" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="true"/>
+			<TeamTemplate MinUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -54,7 +53,7 @@
     </Heuristic>
 	  <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="ExtraTarget"/>
     <Tactic Tactic="SimpleAttack" TargetType="ExtraTarget">
-      <TeamTemplate MinUnits="25" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
 
@@ -63,7 +62,7 @@
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
       <PathToTargetHeuristic PathExists="true"/>
-	  <SiegeThresholdHeuristic SiegeMode="True" Threshold="2.0"/>
+	  <SiegeThresholdHeuristic SiegeMode="True" Threshold="0.25"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
     <Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
@@ -107,12 +106,12 @@
     id="GDIOffensiveAirHarassmentAntiTurtle"
     UnitUpgradeMultiplier="0.0">
     <Heuristic>
-      <ConstantHeuristic Weight="0.6"/>
+      <ConstantHeuristic Weight="0.75"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
     <TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
-      <TeamTemplate MinUnits="5" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT PRODUCED_AT_HELIPAD" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
 

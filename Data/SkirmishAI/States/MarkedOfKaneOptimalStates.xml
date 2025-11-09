@@ -5,9 +5,7 @@
 
 	<AIStrategicStateDefinition
 		  id="MOKOptimalDirectAttack"
-		  UnitUpgradeMultiplier="0.0"
-		  UnitBuilderOverallOffensivePreference="200%"
-		  UnitBuilderOverallDefensivePreference="10%">
+		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
 			<TimerHeuristic StartTime="180s" EndTime="-1s"/>
@@ -20,22 +18,7 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		  id="MOKOptimalDefense"
-		  UnitUpgradeMultiplier="0.0"
-		  UnitBuilderOverallOffensivePreference="10%"
-		  UnitBuilderOverallDefensivePreference="200%">
-		<Heuristic>
-			<TimerHeuristic StartTime="91s" EndTime="-1s"/>
-			<SpreadThresholdHeuristic/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ExpansionDefendHeuristic" TargetType="Defensive"/>
-		<Tactic Tactic="ReactiveDefense" TargetType="Defensive">
-			<TeamTemplate MinUnits="1" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="true" AlwaysRecruit="true"/>
+			<TeamTemplate MinUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -45,8 +28,8 @@
 		<Heuristic>
 			<TimerHeuristic StartTime ="120s" EndTime="420s" />
 			<ProductionHaltHeuristic
-				PenetrabilityWeight="0.4"
-				BalanceOfPowerWeight="0.6">
+				PenetrabilityWeight="0.5"
+				BalanceOfPowerWeight="0.5">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
@@ -65,8 +48,8 @@
 		<Heuristic>
 			<TimerHeuristic StartTime ="421s" EndTime="-1s" />
 			<ProductionHaltHeuristic
-				PenetrabilityWeight="0.4"
-				BalanceOfPowerWeight="0.6">
+				PenetrabilityWeight="0.5"
+				BalanceOfPowerWeight="0.5">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
@@ -85,8 +68,7 @@
     <Heuristic>
 		<PathToTargetHeuristic PathExists="true"/>
     </Heuristic>
-	  <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" WeightMultiplier="0.5" TargetType="ExtraTarget"/>
-	  <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" WeightMultiplier="0.5" TargetType="ExtraTarget"/>
+	  <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="ExtraTarget"/>
 	  <Tactic Tactic="FlankAttack" TargetType="ExtraTarget">
 		  <TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 	  </Tactic>
@@ -114,8 +96,8 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="480s" EndTime="-1s"/>
 			<ProductionHaltHeuristic
-				PenetrabilityWeight="0.3"
-				BalanceOfPowerWeight="0.7">
+				PenetrabilityWeight="0.5"
+				BalanceOfPowerWeight="0.5">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
@@ -133,7 +115,7 @@
     id="MOKOptimalAirHarassmentAntiTurtle"
     UnitUpgradeMultiplier="0.0">
     <Heuristic>
-      <ConstantHeuristic Weight="0.6"/>
+      <ConstantHeuristic Weight="0.75"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
     <TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>

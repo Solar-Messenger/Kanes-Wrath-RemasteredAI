@@ -11,65 +11,73 @@
 		  ChanceForTargetToExpire="100"
 		  MaxBuildingsToBeDefensiveTarget_Small="0"
 		  MaxBuildingsToBeDefensiveTarget_Med="0"
-		  ChanceForUnitsToUpgrade="100"
+		  ChanceForUnitsToUpgrade="300"
 		  ChanceToUseAllUnitsForDefenseTarget_Small="0"
 		  ChanceToUseAllUnitsForDefenseTarget_Med="0"
 		  ChanceToUseAllUnitsForDefenseTarget_Large="0"
 		  DesiredExcessPowerBuffer="40"
-		  BaseCompactness="0.85"
+		  BaseCompactness="0.75"
 	  DefaultThreatFindRadius="0"
 	  UnitBuilderCostEffectivenessWeight="1.0"
 	  UnitBuilderMoneyVersusTimePreference="0.5"
 	  UnitBuilderOverallOffensivePreference="100%"
-	  UnitBuilderOverallDefensivePreference="110%"
-	  Expansion_TiberiumSearchRadius="800"
-	  Expansion_MaxTiberiumRemaining="28000"
-	  ReactiveDefenseRadius="2000"
-	  RepairBuildingsAtDifficulty="MEDIUM HARD BRUTAL"
-	  EmergencyManagerHandleNoPowerAtDifficulty="MEDIUM HARD BRUTAL"
+	  UnitBuilderOverallDefensivePreference="100%"
+	  Expansion_TiberiumSearchRadius="600"
+	  Expansion_MaxTiberiumRemaining="27000"
+	  ReactiveDefenseRadius="1500"
+	  RepairBuildingsAtDifficulty="EASY MEDIUM HARD BRUTAL"
+	  EmergencyManagerHandleNoPowerAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoIncomeAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoConyardAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  StructureSaveChanceEasy="0.0"
 	  StructureSaveChanceMedium="0.25"
 	  StructureSaveChanceHard="0.5"
-	  MinHarvesters="4"
+	  MinHarvesters="5"
 		>
 
 		<Side>MarkedOfKane</Side>
 
 		<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />
 
-		<UnitBuilderUnitChoiceStrategy Shape="MIDDLE" StandardDeviation="0.25" Difficulty="EASY MEDIUM" />
-		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.25" Difficulty="HARD BRUTAL" />
+		<UnitBuilderUnitChoiceStrategy Shape="MIDDLE" StandardDeviation="0.5" Difficulty="EASY MEDIUM" />
+		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="HARD BRUTAL" />
 
 		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
-		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
-		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
+		<ResourceMultiplierCheat Percentage="250%" Difficulty="HARD"/>
+		<ResourceMultiplierCheat Percentage="300%" Difficulty="BRUTAL"/>
+
+		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
+
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
+
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="Counterattack" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Counterattack" MaxTeamsPerTarget="1"/>
+
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+
+		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="ExpansionDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="ExpansionDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Defensive" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="Targetless" MaxTeamsPerTarget="1"/>
 
@@ -94,30 +102,34 @@
 
 		<OpeningMove Name="MOKDefensiveStandard" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="MOKCounterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MOKFinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MOKStaticDefense" Difficulty="HARD BRUTAL"/>
-		<States State="MOKResourceDefense" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MOKHarvesterEscort" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MOKDefensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
-
 		<States State="MarkedOfKaneOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MarkedOfKaneOpeningAntiRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="MarkedOfKaneDefend" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MarkedOfKaneEngineerDefense" Difficulty="HARD BRUTAL"/>
-		<States State="MarkedOfKaneCommandoDefense" Difficulty="HARD BRUTAL"/>
-		<States State="DefensiveExpansionDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="ExpansionDefend" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MarkedOfKaneDefensiveExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKResourceDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="MOKConyardDefense" Difficulty="HARD BRUTAL"/>
+		<States State="MOKSuperweaponDefense" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKCounterattack" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKFinalAttack" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKDefensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKDefensiveAirHarassmentAntiTurtle" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKDefensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 
+		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="MarkedOfKaneGroundEngineerDefense" Difficulty="HARD BRUTAL"/>
+		<States State="MarkedOfKaneAirEngineerDefense" Difficulty="HARD BRUTAL"/>
+		<States State="MarkedOfKaneGroundCommandoDefense" Difficulty="HARD BRUTAL"/>
+		<States State="MarkedOfKaneAirCommandoDefense" Difficulty="HARD BRUTAL"/>
+
+		<States State="ExpansionEscort" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+
+		<States State="MOKDefensiveGarrisonEpicUnit" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="MarkedOfKaneCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneCommando" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MarkedOfKaneExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
@@ -126,21 +138,21 @@
 		<States State="MarkedOfKaneUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="SpareMoneyBudget" Difficulty="HARD BRUTAL"/>
 		<BudgetStates State="DefensiveEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="DefensiveMidGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="DefensiveLateGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<BudgetStates State="FullInvestmentBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="FullInvestmentBudget_EASY_WINNING" Difficulty="EASY"/>
-		<BudgetStates State="InvestmentFinishBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<BudgetStates State="MarkedOfKaneDefensiveTechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="MarkedOfKaneDefensiveTechByTimeBudget_EASY" Difficulty="EASY"/>
 		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechByNeedAntiGarrisonBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechByNeedSiegeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechFinishBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="SupportPowerbyTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="SupportPowerByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="DefenseByTimeDistanceBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+
+		<UnitOverride UnitName="MarkedOfKaneMetaUnit" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 	</AIPersonalityDefinition>
 </AssetDeclaration>

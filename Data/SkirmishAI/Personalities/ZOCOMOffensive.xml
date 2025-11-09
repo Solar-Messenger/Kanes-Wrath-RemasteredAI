@@ -91,9 +91,10 @@
     <TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1"/>
     <TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
     
-    <TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="ExpansionDefense" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
 
     <TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
     <TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>

@@ -19,13 +19,13 @@
 		  BaseCompactness="0.75"
 	  DefaultThreatFindRadius="0"
 	  UnitBuilderCostEffectivenessWeight="1.0"
-	  UnitBuilderMoneyVersusTimePreference="0.25"
-	  UnitBuilderOverallOffensivePreference="200%"
+	  UnitBuilderMoneyVersusTimePreference="0.5"
+	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
 	  Expansion_TiberiumSearchRadius="600"
 	  Expansion_MaxTiberiumRemaining="27000"
 	  ReactiveDefenseRadius="1500"
-	  RepairBuildingsAtDifficulty="MEDIUM HARD BRUTAL"
+	  RepairBuildingsAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoPowerAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoIncomeAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoConyardAtDifficulty="EASY MEDIUM HARD BRUTAL"
@@ -61,9 +61,6 @@
 
 		<TacticalTarget TacticalAITarget="Targetless" MaxTeamsPerTarget="1"/>
 
-		<TacticalTarget TacticalAITarget="Defensive" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Defensive" MaxTeamsPerTarget="1"/>
-
 		<TacticalTarget TacticalAITarget="Opportunity" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
@@ -75,8 +72,8 @@
 
 		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
@@ -101,14 +98,12 @@
 		<States State="BlackHandOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="BlackHandOptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BlackHandOptimalDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandOptimalEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandOptimalFlameTankAttack" Difficulty="HARD BRUTAL"/>
 		<States State="BlackHandOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandOptimalSiege" Difficulty="HARD BRUTAL"/>
 		<States State="BlackHandOptimalBaseCrack" Difficulty="HARD BRUTAL"/>
 
-		<States State="BlackHandOptimalAirHarassment" Difficulty="BRUTAL"/>
 		<States State="BlackHandOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandOptimalArtilleryBombing" Difficulty="HARD BRUTAL"/>
 
@@ -138,6 +133,10 @@
 		<States State="BlackHandOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
+		<States State="BHInfantryDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BHVehicleDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BHAircraftDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="OptimalEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
@@ -146,7 +145,6 @@
 
 		<BudgetStates State="FullInvestmentBudget" Difficulty="HARD BRUTAL"/>
 		<BudgetStates State="FullInvestmentBudget_EASY_WINNING" Difficulty="EASY"/>
-		<BudgetStates State="InvestmentFinishBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<BudgetStates State="TechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="BlackHandOptimalTechByTimeBudget_EASY" Difficulty="EASY"/>

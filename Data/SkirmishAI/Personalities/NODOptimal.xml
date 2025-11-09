@@ -19,13 +19,13 @@
 		  BaseCompactness="0.75"
 	  DefaultThreatFindRadius="0"
 	  UnitBuilderCostEffectivenessWeight="1.0"
-	  UnitBuilderMoneyVersusTimePreference="0.25"
+	  UnitBuilderMoneyVersusTimePreference="0.5"
 	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
 	  Expansion_TiberiumSearchRadius="600"
 	  Expansion_MaxTiberiumRemaining="27000"
 	  ReactiveDefenseRadius="1500"
-	  RepairBuildingsAtDifficulty="MEDIUM HARD BRUTAL"
+	  RepairBuildingsAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoPowerAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoIncomeAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoConyardAtDifficulty="EASY MEDIUM HARD BRUTAL"
@@ -61,9 +61,6 @@
 
 		<TacticalTarget TacticalAITarget="Targetless" MaxTeamsPerTarget="1"/>
 
-		<TacticalTarget TacticalAITarget="Defensive" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Defensive" MaxTeamsPerTarget="1"/>
-
 		<TacticalTarget TacticalAITarget="Opportunity" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
@@ -75,8 +72,8 @@
 
 		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
@@ -101,12 +98,12 @@
 		<States State="NODOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="NODOptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODOptimalDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODOptimalEarlyMidBikeEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODOptimalLateStealthTankEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="NODOptimalFlameTankAttack" Difficulty="HARD BRUTAL"/>
 		<States State="NODOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODOptimalSiege" Difficulty="HARD BRUTAL"/>
+		<States State="NODOptimalBeamSiege" Difficulty="HARD BRUTAL"/>
+		<States State="NODOptimalSpecterSiege" Difficulty="HARD BRUTAL"/>
 		<States State="NODOptimalBaseCrack" Difficulty="HARD BRUTAL"/>
 
 		<States State="NODOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
@@ -138,6 +135,10 @@
 		<States State="NODBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+
+		<States State="NODInfantryDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODVehicleDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODAircraftDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>

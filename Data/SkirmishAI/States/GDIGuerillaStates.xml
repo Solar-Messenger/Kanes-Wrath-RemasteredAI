@@ -12,7 +12,7 @@
 		<PathToTargetHeuristic PathExists="true"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="EconomyKillHeuristic" TargetType="PrimaryTarget"/>
-    <Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
+    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
       <TeamTemplate MinUnits="8" MaxUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="true"/>
     </Tactic>
   </AIStrategicStateDefinition>
@@ -26,7 +26,7 @@
 		<PathToTargetHeuristic PathExists="true"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="ProductionKillHeuristic" TargetType="PrimaryTarget"/>
-    <Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
+    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
       <TeamTemplate MinUnits="7" MaxUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="true"/>
     </Tactic>
   </AIStrategicStateDefinition>
@@ -40,7 +40,7 @@
 		<PathToTargetHeuristic PathExists="true"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="PowerKillHeuristic" TargetType="PrimaryTarget"/>
-    <Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
+    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
       <TeamTemplate MinUnits="5" MaxUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="true"/>
     </Tactic>
   </AIStrategicStateDefinition>
@@ -52,7 +52,7 @@
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="FocusedTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="FocusedTarget">
 			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -112,7 +112,7 @@
       <LateGameHeuristic/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="BombingAirstrike"/>
-    <Tactic Tactic="FlankAttack" TargetType="BombingAirstrike">
+    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
       <TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
         <CreateUnits MinUnits="4" MaxUnits="4" UnitName="GDIFireHawk"/>
       </TeamTemplate>
@@ -156,7 +156,7 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>
 		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">
-			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="1" MaxUnits="4" IncludeKindOf="INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
 		</Tactic>
 		<UnitModifierByName UnitName="GDIZoneTrooperSquad" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
 		<UnitModifierByName UnitName="GDIMissileSoldierSquad" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>

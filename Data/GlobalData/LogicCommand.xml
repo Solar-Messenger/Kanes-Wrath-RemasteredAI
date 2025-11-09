@@ -7,20 +7,20 @@
 		<SpecialPower>SpecialPower_DecoyTemple</SpecialPower>
 	</LogicCommand>
 
+	<LogicCommand
+		id="Command_GarrisonEpicUnit"
+		Type="GARRISON_BUILDING"
+		Options="NEED_TARGET_POS">
+		<SpecialPower>SpecialPower_GarrisonEpic</SpecialPower>
+	</LogicCommand>
+
 	<!--Doesnt work. Commenting out till a solution is found-->
 
 	<!--<LogicCommand
-		id="Command_APCMinefield"
+		id="Command_SpecialPowerSonicRepulsionField"
 		Type="SPECIAL_POWER"
-		Options="NEED_TARGET_POS">
-		<SpecialPower>SpecialPowerGDI_APCMinefield</SpecialPower>
-	</LogicCommand>-->
-
-	<!--<LogicCommand
-	id="Command_SpecialPowerSonicRepulsionField"
-	Type="SPECIAL_POWER"
-	Options="NEED_TARGET_ALLY_OBJECT">
-		<Upgrade>SpecialPower_SonicRepulsionField</Upgrade>
+		Options="NEED_TARGET_ALLY_OBJECT">
+		<SpecialPower>SpecialPower_SonicRepulsionField</SpecialPower>
 	</LogicCommand>-->
 
 	<!--<LogicCommand

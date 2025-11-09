@@ -47,17 +47,19 @@
 		<Order Build="BlackHandScorpionBuggy" />
 		<Order Build="BlackHandScorpionBuggy" />
 		<Order Build="BlackHandScorpionBuggy" />
+		<Order Build="BlackHandHarvester" />
 		<Order Time="60s" Build="BlackHandRefinery"/>
 		<Order Time="90s" Build="BlackHandPowerPlant"/>
 		<Order Time="95s" Build="BlackHandPowerPlant"/>
+		<Order Time="95s" Build="BlackHandShredderTurretHub"/>
+		<Order Time="100s" Build="BlackHandShredderTurretHub"/>
 		<Order Time="100s" Build="BlackHandCrane"/>
-		<Order Time="115s" Build="BlackHandOperationsCenter" />
-		<Order Time="115s" Build="BlackHandPowerPlant"/>
-		<Order Time="120s" Build="BlackHandPowerPlant"/>
-		<Order Time="120s" Build="BlackHandHandOfNOD" />
-		<Order Time="125s" Build="BlackHandDropZone" />
-		<Order Time="125s" Build="BlackHandDropZone" />
-		<Order Time="145s" Build="BlackHandSecretShrine"/>
+		<Order Time="115s" Build="BlackHandDropZone" />
+		<Order Time="115s" Build="BlackHandHandOfNOD" />
+		<Order Time="120s" Build="BlackHandOperationsCenter" />
+		<Order Time="135s" Build="BlackHandPowerPlant" />
+		<Order Time="135s" Build="BlackHandSecretShrine" />
+		<Order Time="140s" Build="BlackHandHandOfNOD" />
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+	<SpecialPowerTemplate
+	id="SpecialPower_GarrisonEpic"
+	TargetType="OBJECT"
+	Flags="NEEDS_OBJECT_FILTER"
+	ReloadTime="5s"
+	>
+		<ObjectFilter 
+			Rule="ANY"
+			Relationship="SAME_PLAYER"
+			Alignment="NONE"
+			Include="UNIQUE_UNIT GARRISONABLE_UNTIL_DESTROYED"
+			Exclude="INFANTRY"
+			StatusBitFlags=""
+			RejectStatusBitFlags=""
+			AcceptModelCondition=""
+			RejectModelCondition=""/>
+	</SpecialPowerTemplate>
+
+</AssetDeclaration>

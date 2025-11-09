@@ -22,19 +22,6 @@
 		</Tactic>
 	</AIStrategicStateDefinition>
 
-	<AIStrategicStateDefinition
-		  id="GDIOptimalDefense"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<TimerHeuristic StartTime="91s" EndTime="-1s"/>
-			<SpreadThresholdHeuristic/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ExpansionDefendHeuristic" TargetType="Defensive"/>
-		<Tactic Tactic="ReactiveDefense" TargetType="Defensive">
-			<TeamTemplate MinUnits="1" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="true" AlwaysRecruit="true"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
   <AIStrategicStateDefinition
 		id="GDIOptimalGroundEconomyAttack"
 		UnitUpgradeMultiplier="0.0">
@@ -126,8 +113,8 @@
 			<TimerHeuristic StartTime="480s" EndTime="-1s"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<ProductionHaltHeuristic
-				PenetrabilityWeight="0.3"
-				BalanceOfPowerWeight="0.7">
+				PenetrabilityWeight="0.5"
+				BalanceOfPowerWeight="0.5">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>

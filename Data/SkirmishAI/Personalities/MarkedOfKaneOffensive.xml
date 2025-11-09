@@ -18,14 +18,14 @@
 		  DesiredExcessPowerBuffer="20"
 		  BaseCompactness="0.75"
 	  DefaultThreatFindRadius="0"
-	  UnitBuilderCostEffectivenessWeight="1.25"
+	  UnitBuilderCostEffectivenessWeight="1.0"
 	  UnitBuilderMoneyVersusTimePreference="0.25"
-	  UnitBuilderOverallOffensivePreference="110%"
+	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
-	  Expansion_TiberiumSearchRadius="700"
+	  Expansion_TiberiumSearchRadius="600"
 	  Expansion_MaxTiberiumRemaining="27000"
 	  ReactiveDefenseRadius="1500"
-	  RepairBuildingsAtDifficulty="MEDIUM HARD BRUTAL"
+	  RepairBuildingsAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoPowerAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoIncomeAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoConyardAtDifficulty="EASY MEDIUM HARD BRUTAL"
@@ -39,15 +39,13 @@
 
 		<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />
 
-		<UnitBuilderUnitChoiceStrategy Shape="MIDDLE" StandardDeviation="0.25" Difficulty="EASY MEDIUM" />
-		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.25" Difficulty="HARD BRUTAL" />
+		<UnitBuilderUnitChoiceStrategy Shape="MIDDLE" StandardDeviation="0.5" Difficulty="EASY MEDIUM" />
+		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="HARD BRUTAL" />
 
 		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="300%" Difficulty="BRUTAL"/>
 
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
@@ -70,8 +68,9 @@
 		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
@@ -80,7 +79,6 @@
 		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Superweapon" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Expansion" MaxTeamsPerTarget="1" UpdateTime="5s"/>
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Bridge" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
@@ -92,8 +90,6 @@
 		<OpeningMove Name="MOKOffensiveEasy" Weight="100%" Difficulty="EASY"/>
 
 		<OpeningMove Name="MOKOffensiveStandard" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
-
-		<States State="SimulationUnitCap" Difficulty="BRUTAL"/>
 
 		<States State="MarkedOfKaneOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
@@ -108,7 +104,7 @@
 		<States State="MOKOffensiveBombingRuns" Difficulty="HARD BRUTAL"/>
 		<States State="MarkedOfKaneOffensiveEngineer" Difficulty="HARD BRUTAL"/>
 
-		<States State="MarkedOfKaneDefend" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneEngineerDefense" Difficulty="HARD BRUTAL"/>
 		<States State="MarkedOfKaneCommandoDefense" Difficulty="HARD BRUTAL"/>
 
@@ -119,7 +115,6 @@
 		<States State="MarkedOfKaneSuperweapon" Difficulty="HARD BRUTAL"/>
 		<States State="MarkedOfKaneCommando" Difficulty="BRUTAL"/>
 		<States State="MarkedOfKaneExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ExpansionEscort" Difficulty="HARD BRUTAL"/>
 		<States State="MarkedOfKaneBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -129,7 +124,7 @@
 		<States State="MarkedOfKaneUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="SpareMoneyBudget" Difficulty="HARD BRUTAL"/>
+		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="OffensiveEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="OffensiveMidGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="OffensiveLateGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
@@ -140,9 +135,8 @@
 		<BudgetStates State="TechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="MarkedOfKaneOffensiveTechByTimeBudget_EASY" Difficulty="EASY"/>
 		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="SupportPowerAdvantageBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-
-		<UnitOverride UnitName="MarkedOfKaneImprovedCyborgInfantrySquad" Percentage="10%"/>
+		<BudgetStates State="SupportPowerbyTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="SupportPowerbyMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<UnitOverride UnitName="MarkedOfKaneMetaUnit" Percentage="80%"/>
 

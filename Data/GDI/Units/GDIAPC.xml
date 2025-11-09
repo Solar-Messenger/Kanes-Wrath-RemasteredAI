@@ -1009,24 +1009,24 @@
 				DestealthClosestObjectMatchingFilter="False" />
 
 	<!--Does not work as intended. APC chooses to drop mines on current position rather than move towards a target & drop mines in front of it-->
-			<!--<AISpecialPowerUpdate
+			<AISpecialPowerUpdate
 				id="DBD07887"
 				CommandButtonName="Command_APCMinefield"
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF"
 				SpecialPowerRadius="500.0"
-				ReinforceDistance="500"
+				ReinforceDistance="0"
 				SpellMakesAStructure=""
 				SpecificUnit=""
-				UnitKindOf="VEHICLE"
+				UnitKindOf=""
 				AllyUnitInclude=""
 				AllyUnitExclude=""
-				EnemyUnitInclude="VEHICLE"
-				EnemyUnitExclude="AIRCRAFT"
+				EnemyUnitInclude=""
+				EnemyUnitExclude=""
 				MinimumCutoff="0"
 				UpdateTime="5s"
 				MaxFrequency="0"
-				RandomizeTargetLocation="true"/>-->
+				RandomizeTargetLocation="true"/>
 
 			<CreateAndEnterObjectSpecialPower
 				id="6D44A823"

@@ -18,14 +18,14 @@
 		  DesiredExcessPowerBuffer="20"
 		  BaseCompactness="0.75"
 	  DefaultThreatFindRadius="0"
-	  UnitBuilderCostEffectivenessWeight="1.5"
+	  UnitBuilderCostEffectivenessWeight="1.0"
 	  UnitBuilderMoneyVersusTimePreference="0.25"
-	  UnitBuilderOverallOffensivePreference="110%"
+	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
-	  Expansion_TiberiumSearchRadius="700"
+	  Expansion_TiberiumSearchRadius="600"
 	  Expansion_MaxTiberiumRemaining="27000"
 	  ReactiveDefenseRadius="1500"
-	  RepairBuildingsAtDifficulty="MEDIUM HARD BRUTAL"
+	  RepairBuildingsAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoPowerAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoIncomeAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoConyardAtDifficulty="EASY MEDIUM HARD BRUTAL"
@@ -39,15 +39,13 @@
 
 		<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />
 
-		<UnitBuilderUnitChoiceStrategy Shape="MIDDLE" StandardDeviation="0.25" Difficulty="EASY MEDIUM" />
-		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.25" Difficulty="HARD BRUTAL" />
+		<UnitBuilderUnitChoiceStrategy Shape="MIDDLE" StandardDeviation="0.5" Difficulty="EASY MEDIUM" />
+		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="HARD BRUTAL" />
 
 		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="300%" Difficulty="BRUTAL"/>
 
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
@@ -61,7 +59,6 @@
 		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Defensive" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="Targetless" MaxTeamsPerTarget="1"/>
 
@@ -72,8 +69,9 @@
 		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
@@ -96,8 +94,6 @@
 		<OpeningMove Name="BlackHandOffensiveScorpionSpam" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
 		<OpeningMove Name="BlackHandOffensiveFlameTankRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="SimulationUnitCap" Difficulty="BRUTAL"/>
-
 		<States State="BlackHandOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
@@ -111,7 +107,7 @@
 		<States State="BlackHandOffensiveArtilleryBombing" Difficulty="HARD BRUTAL"/>
 		<States State="BlackHandOffensiveEngineer" Difficulty="HARD BRUTAL"/>
 
-		<States State="BlackHandDefend" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandEngineerDefense" Difficulty="HARD BRUTAL"/>
 		<States State="BlackHandCommandoDefense" Difficulty="HARD BRUTAL"/>
 
@@ -122,17 +118,22 @@
 		<States State="BlackHandSuperweapon" Difficulty="HARD BRUTAL"/>
 		<States State="BlackHandCommando" Difficulty="BRUTAL"/>
 		<States State="BlackHandExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ExpansionEscort" Difficulty="HARD BRUTAL"/>
 		<States State="BlackHandBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
 
-		<States State="BlackHandUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+
+		<States State="BHInfantryDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BHVehicleDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BHAircraftDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="SpareMoneyBudget" Difficulty="HARD BRUTAL"/>
+		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="OffensiveEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="OffensiveMidGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="OffensiveLateGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
@@ -143,10 +144,8 @@
 		<BudgetStates State="TechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="BlackHandOffensiveTechByTimeBudget_EASY" Difficulty="EASY"/>
 		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="SupportPowerAdvantageBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-
-		<UnitOverride UnitName="BlackHandConfessorSquad" Percentage="30%"/>
-		<UnitOverride UnitName="BlackHandMilitantRocketSquad" Percentage="60%"/>
+		<BudgetStates State="SupportPowerbyTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="SupportPowerbyMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<UnitOverride UnitName="BlackHandMetaUnit" Percentage="80%"/>
 

@@ -84,7 +84,8 @@
 		<Cmd>Command_GDICallForTransportInfantry</Cmd>
 		<Cmd>Command_ZoneTrooperSquadGetToJumpJetRange</Cmd>
 		<Cmd>Command_AttackMove</Cmd>
-		<Cmd>Command_Stop</Cmd>
+		<Cmd>Command_GarrisonEpicUnit</Cmd>
+		<!--<Cmd>Command_Stop</Cmd>-->
 	</LogicCommandSet>
 	<LogicCommandSet
 		id="GDIWarFactoryCommandSet">
@@ -1655,8 +1656,9 @@
 	</LogicCommandSet>
 	<LogicCommandSet
 		id="SteelTalonsTitanCommandSet">
-		<Cmd>Command_AttackMove</Cmd>
 		<Cmd>Command_ActivateAdaptiveArmor</Cmd>
+		<Cmd>Command_Stop</Cmd>
+		<Cmd>Command_AttackMove</Cmd>
 	</LogicCommandSet>
 	<LogicCommandSet
  		id="SteelTalonsWolverineCommandSet">
@@ -1670,7 +1672,7 @@
 		<Cmd>Command_APCMinefield</Cmd>
 		<Cmd>Command_RepairVehicle</Cmd>
 		<Cmd>Command_Stop</Cmd>
-		<Cmd>Command_AttackMove</Cmd>
+		<!--<Cmd>Command_AttackMove</Cmd>-->
 	</LogicCommandSet>
 	<LogicCommandSet
 		id="SteelTalonsAAScoutCommandSet">
