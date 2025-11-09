@@ -384,3 +384,6 @@ Data/Neutral/Neutral.xml
 /Data/SkirmishAI/States/AIStates.xml
 /Data/SkirmishAI/Personalities/HuntPersonality.xml
 /Data/SkirmishAI/Personalities/DefaultPersonality.xml
+/Data/GDI/Units/GDIAPC.xml
+/Data/SkirmishAI/Personalities/GDITest.xml
+/Data/SkirmishAI/Personalities/RandomPersonalities.xml
