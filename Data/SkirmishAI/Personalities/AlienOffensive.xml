@@ -11,7 +11,7 @@
 		  ChanceForTargetToExpire="100"
 		  MaxBuildingsToBeDefensiveTarget_Small="0"
 		  MaxBuildingsToBeDefensiveTarget_Med="0"
-		  ChanceForUnitsToUpgrade="100"
+		  ChanceForUnitsToUpgrade="300"
 		  ChanceToUseAllUnitsForDefenseTarget_Small="0"
 		  ChanceToUseAllUnitsForDefenseTarget_Med="0"
 		  ChanceToUseAllUnitsForDefenseTarget_Large="0"
@@ -140,7 +140,6 @@
 		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerbyTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="DefenseByTimeDistanceBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<UnitOverride UnitName="AlienEradicatorHexapod" Percentage="80%"/>
 
