@@ -97,8 +97,8 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="480s" EndTime="-1s"/>
 			<ProductionHaltHeuristic
-				PenetrabilityWeight="0.3"
-				BalanceOfPowerWeight="0.7">
+				PenetrabilityWeight="0.5"
+				BalanceOfPowerWeight="0.5">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
