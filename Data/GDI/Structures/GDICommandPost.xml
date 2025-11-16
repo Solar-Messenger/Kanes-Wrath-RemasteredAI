@@ -1229,6 +1229,7 @@
 			<!--<AISpecialPowerUpdate
 					id="ModuleTag_GDISonicRepulsionFieldAI"
 					CommandButtonName="Command_SpecialPowerSonicRepulsionField"
+					SecondaryCommandButtonName="Command_UpgradeSonicRepulsionField"
 					SpecialPowerAIType="SPECIAL_POWER_SUPERWEAPON"
 					SpecialPowerRadius="999999.0"
 					AllyUnitInclude="FS_TECHNOLOGY FS_TECH_CENTER FS_WAR_FACTORY FS_FACTORY CONSTRUCTION_YARD"
