@@ -129,7 +129,13 @@
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
 
-		<States State="MarkedOfKaneUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MarkedOfKaneBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MarkedOfKaneOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MarkedOfKaneDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+
+		<States State="MOKInfantryDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKVehicleDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKAircraftDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>

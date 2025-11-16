@@ -132,7 +132,13 @@
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
 
-		<States State="Traveler59UnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="Traveler59BaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="Traveler59OffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="Traveler59DefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+
+		<States State="Traveler59InfantryDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="Traveler59VehicleDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="Traveler59AircraftDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>

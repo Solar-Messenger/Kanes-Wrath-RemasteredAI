@@ -136,6 +136,10 @@
 		<States State="ZOCOMOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
+		<States State="ZOCOMInfantryDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="ZOCOMVehicleDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="ZOCOMAircraftDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="OptimalEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
