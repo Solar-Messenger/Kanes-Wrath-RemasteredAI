@@ -7,20 +7,27 @@
 		<SpecialPower>SpecialPower_DecoyTemple</SpecialPower>
 	</LogicCommand>
 
-	<LogicCommand
+	<!--Doesnt work. Commenting out till a solution is found-->
+
+	<!--<LogicCommand
 		id="Command_GarrisonEpicUnit"
 		Type="GARRISON_BUILDING"
 		Options="NEED_TARGET_POS">
 		<SpecialPower>SpecialPower_GarrisonEpic</SpecialPower>
-	</LogicCommand>
-
-	<!--Doesnt work. Commenting out till a solution is found-->
+	</LogicCommand>-->
 
 	<!--<LogicCommand
 		id="Command_SpecialPowerSonicRepulsionField"
 		Type="SPECIAL_POWER"
-		Options="NEED_TARGET_ALLY_OBJECT">
+		Options="NEED_TARGET_POS">
 		<SpecialPower>SpecialPower_SonicRepulsionField</SpecialPower>
+	</LogicCommand>
+
+	<LogicCommand
+		id="Command_UpgradeSonicRepulsionField"
+		Type="OBJECT_UPGRADE"
+		Options="">
+		<Upgrade>Upgrade_SonicRepulsionField</Upgrade>
 	</LogicCommand>-->
 
 	<!--<LogicCommand
@@ -28,6 +35,13 @@
 	Type="SPECIAL_POWER"
 	Options="NEED_TARGET_ALLY_OBJECT">
 		<Upgrade>SpecialPower_LaserFencing</Upgrade>
+	</LogicCommand>
+
+	<LogicCommand
+	id="Command_UpgradeLaserFencing"
+	Type="OBJECT_UPGRADE"
+	Options="">
+		<Upgrade>Upgrade_LaserFencing</Upgrade>
 	</LogicCommand>-->
 
 </AssetDeclaration>
