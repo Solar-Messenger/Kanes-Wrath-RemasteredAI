@@ -7,7 +7,7 @@
 		  id="GDIResourceDefense"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<EnemyNearbyHeuristic Distance="1000.0" Nearby="true" AttackerKindOf="SUPPLY_GATHERING_CENTER"/>
+			<EnemyNearbyHeuristic Distance="1000.0" EnemyNearby="true" AttackerKindOf="SUPPLY_GATHERING_CENTER"/>
 			<ConstantHeuristic Weight="1.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestFriendlyRefineryHeuristic" TargetType="Structure"/>
@@ -20,7 +20,7 @@
 		id="GDIConyardDefense"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
-	  <EnemyNearbyHeuristic Distance="1000.0" Nearby="true" AttackerKindOf="CONSTRUCTION_YARD"/>
+	  <EnemyNearbyHeuristic Distance="1000.0" EnemyNearby="true" AttackerKindOf="CONSTRUCTION_YARD"/>
       <ConstantHeuristic Weight="1.0"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="ClosestFriendlyConyardHeuristic" TargetType="PrimaryTarget"/>
@@ -47,7 +47,7 @@
     <Heuristic>
       <PathToTargetHeuristic PathExists="true"/>
       <TimerHeuristic StartTime="180s" EndTime="-1s"/>
-	  <CounterattackHeuristic Threshold="1.0"/>
+	  <FocusedThresholdHeuristic/>
 	  <SiegeThresholdHeuristic SiegeMode="false" Threshold="0.25"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Counterattack"/>
@@ -61,11 +61,10 @@
     UnitUpgradeMultiplier="0.0">
     <Heuristic>
       <PathToTargetHeuristic PathExists="true"/>
-	  <CounterattackHeuristic Threshold="1.0"/>
     </Heuristic>
 	  <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="ExtraTarget"/>
     <Tactic Tactic="FlankAttack" TargetType="ExtraTarget">
-      <TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="25" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
 
@@ -146,13 +145,14 @@
 		  id="GDIDefensiveGarrisonEpicUnit"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="1.5" />
-			<LateGameHeuristic/>
+			<TimerHeuristic StartTime="241s" EndTime="-1s"/>
+			<ConstantHeuristic Weight="1.25"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>
 		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">
 			<TeamTemplate MinUnits="1" MaxUnits="4" IncludeKindOf="INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
 		</Tactic>
+		<UnitModifierByName UnitName="GDIMissileSoldierSquad" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
 	</AIStrategicStateDefinition>
   
   <AIBudgetStateDefinition

@@ -7,7 +7,7 @@
 		  id="MOKResourceDefense"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<EnemyNearbyHeuristic Distance="1000.0" Nearby="true" AttackerKindOf="SUPPLY_GATHERING_CENTER"/>
+			<EnemyNearbyHeuristic Distance="1000.0" EnemyNearby="true" AttackerKindOf="SUPPLY_GATHERING_CENTER"/>
 			<ConstantHeuristic Weight="1.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestFriendlyRefineryHeuristic" TargetType="Structure"/>
@@ -20,7 +20,7 @@
 		  id="MOKConyardDefense"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<EnemyNearbyHeuristic Distance="1000.0" Nearby="true" AttackerKindOf="CONSTRUCTION_YARD"/>
+			<EnemyNearbyHeuristic Distance="1000.0" EnemyNearby="true" AttackerKindOf="CONSTRUCTION_YARD"/>
 			<ConstantHeuristic Weight="1.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestFriendlyConyardHeuristic" TargetType="PrimaryTarget"/>
@@ -47,7 +47,7 @@
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
 			<TimerHeuristic StartTime="180s" EndTime="-1s"/>
-			<CounterattackHeuristic Threshold="1.0"/>
+			<FocusedThresholdHeuristic/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="0.25"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Counterattack"/>
@@ -61,11 +61,10 @@
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
-			<CounterattackHeuristic Threshold="1.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="ExtraTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="ExtraTarget">
-			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="25" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
