@@ -1,149 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Tags></Tags>
-  <Includes></Includes>
-  <AIPersonalityDefinition
-		id="3AlienDefensive"
-		PersonalityType="3AlienDefensive"
-    PersonalityUIName="Personality:Defensive"
-    SkirmishPersonality="true" 
-		SecondsTillTargetsCanExpire="15.0"
-		ChanceForTargetToExpire="100"
-		MaxBuildingsToBeDefensiveTarget_Small="0"
-		MaxBuildingsToBeDefensiveTarget_Med="0"
-		ChanceForUnitsToUpgrade="100"
-		ChanceToUseAllUnitsForDefenseTarget_Small="0"
-		ChanceToUseAllUnitsForDefenseTarget_Med="0"
-		ChanceToUseAllUnitsForDefenseTarget_Large="0"
-		DesiredExcessPowerBuffer="40"
-		BaseCompactness="0.65"
-    DefaultThreatFindRadius="0"
-    UnitBuilderCostEffectivenessWeight="1.0"
-    UnitBuilderMoneyVersusTimePreference="0.5"
-    UnitBuilderOverallOffensivePreference="100%"
-    UnitBuilderOverallDefensivePreference="110%"
-    Expansion_TiberiumSearchRadius="1000"
-    Expansion_MaxTiberiumRemaining="999999"
-    ReactiveDefenseRadius="1000"
-    RepairBuildingsAtDifficulty="MEDIUM HARD BRUTAL"
-    EmergencyManagerHandleNoPowerAtDifficulty="MEDIUM HARD BRUTAL"
-    EmergencyManagerHandleNoIncomeAtDifficulty="EASY MEDIUM HARD BRUTAL"
-    EmergencyManagerHandleNoConyardAtDifficulty="EASY MEDIUM HARD BRUTAL"
-    StructureSaveChanceEasy="0.0"
-    StructureSaveChanceMedium="0.01"
-    StructureSaveChanceHard="1.0"
+	<Tags></Tags>
+	<Includes></Includes>
+	<AIPersonalityDefinition
+		  id="3AlienDefensive"
+		  PersonalityType="3AlienDefensive"
+	  PersonalityUIName="Personality:Defensive"
+	  SkirmishPersonality="true"
+		  SecondsTillTargetsCanExpire="15.0"
+		  ChanceForTargetToExpire="100"
+		  MaxBuildingsToBeDefensiveTarget_Small="0"
+		  MaxBuildingsToBeDefensiveTarget_Med="0"
+		  ChanceForUnitsToUpgrade="500"
+		  ChanceToUseAllUnitsForDefenseTarget_Small="0"
+		  ChanceToUseAllUnitsForDefenseTarget_Med="0"
+		  ChanceToUseAllUnitsForDefenseTarget_Large="0"
+		  DesiredExcessPowerBuffer="40"
+		  BaseCompactness="0.75"
+	  DefaultThreatFindRadius="0"
+	  UnitBuilderCostEffectivenessWeight="1.0"
+	  UnitBuilderMoneyVersusTimePreference="0.5"
+	  UnitBuilderOverallOffensivePreference="100%"
+	  UnitBuilderOverallDefensivePreference="100%"
+	  Expansion_TiberiumSearchRadius="600"
+	  Expansion_MaxTiberiumRemaining="27000"
+	  ReactiveDefenseRadius="1500"
+	  RepairBuildingsAtDifficulty="EASY MEDIUM HARD BRUTAL"
+	  EmergencyManagerHandleNoPowerAtDifficulty="EASY MEDIUM HARD BRUTAL"
+	  EmergencyManagerHandleNoIncomeAtDifficulty="EASY MEDIUM HARD BRUTAL"
+	  EmergencyManagerHandleNoConyardAtDifficulty="EASY MEDIUM HARD BRUTAL"
+	  StructureSaveChanceEasy="0.0"
+	  StructureSaveChanceMedium="0.25"
+	  StructureSaveChanceHard="0.5"
+	  MinHarvesters="5"
 		>
 
-    <Side>Alien</Side>
+		<Side>Alien</Side>
 
-    <BuildDelayRange MinDelay="0s" MaxDelay="60s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />
-    <BuildDelayRange MinDelay="0s" MaxDelay="30s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="MEDIUM" />
+		<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />
 
-    <UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.25" Difficulty="HARD BRUTAL" />
+		<UnitBuilderUnitChoiceStrategy Shape="MIDDLE" StandardDeviation="0.5" Difficulty="EASY MEDIUM" />
+		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="HARD BRUTAL" />
 
-    <UnitBuilderUnitChoiceStrategyAdaptive 
-     MinEffectiveness="0.5" MaxEffectiveness="1.0"
-     MinStandardDeviation="2.0" MaxStandardDeviation="0.5"
-     MinEfficiency="1.0" MaxEfficiency="2.0"
-     Difficulty="EASY" 
-      />
+		<ResourceMultiplierCheat Percentage="200%" Difficulty="MEDIUM"/>
+		<ResourceMultiplierCheat Percentage="250%" Difficulty="HARD"/>
+		<ResourceMultiplierCheat Percentage="300%" Difficulty="BRUTAL"/>
 
-    <UnitBuilderUnitChoiceStrategyAdaptive
-      MinEffectiveness="0.0" MaxEffectiveness="0.5"
-      MinStandardDeviation="0.25" MaxStandardDeviation="2.0"
-      MinEfficiency="0.75" MaxEfficiency="1.0"
-      Difficulty="MEDIUM" 
-      />
+		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
 
-    <UnitBuilderEvaluationDelayRange
-      UseAllAvailableQueues="false"
-      MinDelay="180s" MaxDelay="180s"
-      MinEfficiency="1.0" MaxEfficiency="1.0"
-      Difficulty="EASY"
-      />
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
 
-    <UnitBuilderEvaluationDelayRange
-      UseAllAvailableQueues="true"
-      MinDelay="10s" MaxDelay="60s"
-      MinEfficiency="0.75" MaxEfficiency="1.0"
-      Difficulty="MEDIUM"
-      />
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
 
-    <ResourceMultiplierCheat Percentage="200%" Difficulty="BRUTAL"/>
+		<TacticalTarget TacticalAITarget="Counterattack" MaxTeamsPerTarget="1"/>
 
-    <TacticalTarget TacticalAITarget="Counterattack" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 
-    <TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="ExpansionDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 
-    <TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Superweapon" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Expansion" MaxTeamsPerTarget="1" UpdateTime="10s"/>
-    <TacticalTarget TacticalAITarget="Bridge" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Beacon" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Crate" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 
-    <OpeningMove Name="Alien_EASY" Weight="100%" Difficulty="EASY"/>
+		<TacticalTarget TacticalAITarget="Targetless" MaxTeamsPerTarget="1"/>
+
+		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
+
+		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Superweapon" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Expansion" MaxTeamsPerTarget="1" UpdateTime="10s"/>
+		<TacticalTarget TacticalAITarget="Bridge" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Beacon" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Crate" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
+
+		<OpeningMove Name="Alien_EASY" Weight="100%" Difficulty="EASY"/>
 
 		<OpeningMove Name="AlienStandardCrane" Weight="90%" Difficulty="MEDIUM HARD BRUTAL"/>
 		<OpeningMove Name="AlienSuperweaponRush" Weight="10%" Difficulty="MEDIUM HARD BRUTAL"/>
 
+		<States State="AlienResourceDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienConyardDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienSuperweaponDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienCounterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-    <States State="AlienFinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-    <States State="AlienDefensiveAirHarassment" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-    <States State="AlienMothership" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienFinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienDefensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienDefensiveBombingRuns" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienDefensiveSiege" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-    <States State="AlienReactiveDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-    <States State="AlienEngineerDefense" Difficulty="HARD BRUTAL"/>
-    <States State="AlienCommandoDefense" Difficulty="HARD BRUTAL"/>
-    <States State="DefensiveExpansionDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienEngineerDefense" Difficulty="HARD BRUTAL"/>
+		<States State="AlienCommandoDefense" Difficulty="HARD BRUTAL"/>
 
-    <States State="AlienDefensiveExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-    <States State="Garrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-    <States State="AlienAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
-    <States State="AlienAntiGarrison_EASY" Difficulty="EASY"/>
-    <States State="AlienCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-    <States State="AlienSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
-    <States State="AlienIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-    <States State="AlienHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
-    <States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-    <States State="CratePickup" Difficulty="HARD BRUTAL"/>
+		<States State="ExpansionEscort" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-    <States State="AlienUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="AlienDefensiveGarrisonEpicUnit" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="Garrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="AlienAntiGarrison_EASY" Difficulty="EASY"/>
+		<States State="AlienCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="AlienSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="AlienIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
 
-    <BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-    <BudgetStates State="DefensiveEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-    <BudgetStates State="DefensiveMidGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-    <BudgetStates State="DefensiveLateGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="AlienOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="AlienDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
-    <BudgetStates State="FullInvestmentBudget" Difficulty="HARD BRUTAL"/>
-    <BudgetStates State="FullInvestmentBudget_EASY_WINNING" Difficulty="EASY"/>
-    <BudgetStates State="FullInvestmentBudget_MEDIUM_WINNING" Difficulty="MEDIUM"/>
-    <BudgetStates State="FullInvestmentBudget_MEDIUM_LOSING" Difficulty="MEDIUM"/>
-    <BudgetStates State="InvestmentFinishBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienInfantryDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="AlienVehicleDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="AlienAircraftDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
-    <BudgetStates State="AlienDefensiveTechByTimeBudget" Difficulty="HARD BRUTAL"/>
-    <BudgetStates State="AlienDefensiveTechByTimeBudget_EASY" Difficulty="EASY"/>
-    <BudgetStates State="AlienDefensiveTechByTimeBudget_MEDIUM" Difficulty="MEDIUM"/>
-    <BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-    <BudgetStates State="TechByNeedAntiGarrisonBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-    <BudgetStates State="TechByNeedSiegeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-    <BudgetStates State="TechFinishBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="DefensiveEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="DefensiveMidGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="DefensiveLateGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-  </AIPersonalityDefinition>
+		<BudgetStates State="FullInvestmentBudget" Difficulty="HARD BRUTAL"/>
+		<BudgetStates State="FullInvestmentBudget_EASY_WINNING" Difficulty="EASY"/>
+
+		<BudgetStates State="TechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="AlienDefensiveTechByTimeBudget_EASY" Difficulty="EASY"/>
+		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="SupportPowerbyTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="SupportPowerByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="DefenseByTimeDistanceBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+
+		<UnitOverride UnitName="AlienEradicatorHexapod" Percentage="80%"/>
+
+	</AIPersonalityDefinition>
 </AssetDeclaration>
