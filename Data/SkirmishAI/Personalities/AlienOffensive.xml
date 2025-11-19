@@ -124,7 +124,13 @@
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
 
-		<States State="AlienUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="AlienBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="AlienOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="AlienDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+
+		<States State="AlienInfantryDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="AlienVehicleDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="AlienAircraftDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
