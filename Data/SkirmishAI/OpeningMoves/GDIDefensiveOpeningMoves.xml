@@ -21,7 +21,9 @@
 		<Order Build="GDIAPC"/>
 		<Order Build="GDIAPC"/>
 		<Order Build="GDIAPC"/>
-		<Order Build="GDIAPC"/>
+		<Order Build="GDIHarvester"/>
+		<Order Build="GDIHarvester"/>
+		<Order Build="GDIHarvester"/>
 		<Order Time="90s" Build="GDIPowerPlant"/>
 		<Order Time="95s" Build="GDIPowerPlant"/>
 	</SkirmishOpeningMove>
@@ -43,13 +45,16 @@
 		<Order Build="GDIAPC"/>
 		<Order Build="GDIAPC"/>
 		<Order Build="GDIAPC"/>
-		<Order Build="GDIAPC"/>
+		<Order Build="GDIHarvester"/>
+		<Order Build="GDIHarvester"/>
 		<Order Time="90s" Build="GDIPowerPlant"/>
+		<Order Time="95s" Build="GDIWatchTower"/>
 		<Order Time="95s" Build="GDIPowerPlant"/>
-		<Order Time="100s" Build="GDICommandPost"/>
-		<Order Time="115s" Build="GDIArmory"/>
-		<Order Time="155s" Build="GDIPowerPlant"/>
-		<Order Time="160s" Build="GDISpaceCommandUplink"/>
+		<Order Time="100s" Build="GDIWatchTower"/>
+		<Order Time="100s" Build="GDICrane"/>
+		<Order Time="115s" Build="GDIWarfactory"/>
+		<Order Time="115s" Build="GDICommandPost"/>
+		<Order Time="130s" Build="GDIAirTower"/>
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>

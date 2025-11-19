@@ -9,8 +9,20 @@
 	Side="MarkedOfKane">
 		<Order Time="0s" Build="MarkedOfKanePowerPlant" />
 		<Order Time="5s" Build="MarkedOfKaneHandOfNOD"/>
+		<Order Build="MarkedOfKaneSaboteur" />
+		<Order Build="MarkedOfKaneSaboteur" />
+		<Order Build="MOKCyborgInfantrySquad" />
+		<Order Build="MOKCyborgInfantrySquad" />
+		<Order Build="MOKCyborgInfantrySquad" />
 		<Order Time="10s" Build="MarkedOfKaneRefinery" />
 		<Order Time="40s" Build="MarkedOfKaneDropZone" />
+		<Order Build="MarkedOfKaneHarvester" />
+		<Order Build="MarkedOfKaneScorpionBuggy" />
+		<Order Build="MarkedOfKaneScorpionBuggy" />
+		<Order Build="MarkedOfKaneScorpionBuggy" />
+		<Order Build="MarkedOfKaneHarvester" />
+		<Order Build="MarkedOfKaneHarvester" />
+		<Order Build="MarkedOfKaneHarvester" />
 		<Order Time="60s" Build="MarkedOfKaneRefinery" />
 		<Order Time="90s" Build="MarkedOfKanePowerPlant" />
 		<Order Time="95s" Build="MarkedOfKanePowerPlant" />
@@ -23,23 +35,27 @@
 		<Order Time="5s" Build="MarkedOfKaneHandOfNOD"/>
 		<Order Build="MarkedOfKaneSaboteur" />
 		<Order Build="MarkedOfKaneSaboteur" />
-		<Order Build="MarkedOfKaneMilitantSquad" />
-		<Order Build="MarkedOfKaneMilitantSquad" />
-		<Order Build="MarkedOfKaneMilitantSquad" />
+		<Order Build="MOKCyborgInfantrySquad" />
+		<Order Build="MOKCyborgInfantrySquad" />
+		<Order Build="MOKCyborgInfantrySquad" />
 		<Order Time="10s" Build="MarkedOfKaneRefinery"/>
 		<Order Time="40s" Build="MarkedOfKaneDropZone"/>
 		<Order Build="MarkedOfKaneHarvester" />
 		<Order Build="MarkedOfKaneScorpionBuggy" />
 		<Order Build="MarkedOfKaneScorpionBuggy" />
 		<Order Build="MarkedOfKaneScorpionBuggy" />
-		<Order Build="MarkedOfKaneScorpionBuggy" />
+		<Order Build="MarkedOfKaneHarvester" />
+		<Order Build="MarkedOfKaneHarvester" />
 		<Order Time="60s" Build="MarkedOfKaneRefinery"/>
 		<Order Time="90s" Build="MarkedOfKanePowerPlant"/>
 		<Order Time="95s" Build="MarkedOfKanePowerPlant"/>
-		<Order Time="100s" Build="MarkedOfKaneOperationsCenter"/>
-		<Order Time="115s" Build="MarkedOfKaneTechAssemblyPlant"/>
-		<Order Time="155s" Build="MarkedOfKanePowerPlant"/>
-		<Order Time="160s" Build="MarkedOfKaneTiberiumLiquidationFacility"/>
+		<Order Time="95s" Build="MarkedOfKaneShredderTurretHub"/>
+		<Order Time="100s" Build="MarkedOfKaneShredderTurretHub"/>
+		<Order Time="100s" Build="MarkedOfKaneCrane"/>
+		<Order Time="115s" Build="MarkedOfKaneDropZone"/>
+		<Order Time="115s" Build="MarkedOfKaneOperationsCenter"/>
+		<Order Time="130s" Build="MarkedOfKaneHangar"/>
+		<Order Time="135s" Build="MarkedOfKaneHandOfNOD"/>
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>

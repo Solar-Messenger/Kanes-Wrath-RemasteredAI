@@ -21,7 +21,9 @@
 		<Order Build="ZOCOMAPC"/>
 		<Order Build="ZOCOMAPC"/>
 		<Order Build="ZOCOMAPC"/>
-		<Order Build="ZOCOMAPC"/>
+		<Order Build="ZOCOMHarvester"/>
+		<Order Build="ZOCOMHarvester"/>
+		<Order Build="ZOCOMHarvester"/>
 		<Order Time="90s" Build="ZOCOMPowerPlant"/>
 		<Order Time="95s" Build="ZOCOMPowerPlant"/>
 	</SkirmishOpeningMove>

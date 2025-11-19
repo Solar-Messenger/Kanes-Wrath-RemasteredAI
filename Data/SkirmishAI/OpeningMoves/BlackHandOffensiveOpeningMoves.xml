@@ -5,6 +5,30 @@
 	</Includes>
 
 	<SkirmishOpeningMove
+	id="BlackHandOffensiveEasy"
+	Side="BlackHand">
+		<Order Time="0s" Build="BlackHandPowerPlant" />
+		<Order Time="5s" Build="BlackHandHandOfNOD"/>
+		<Order Build="BlackHandSaboteur" />
+		<Order Build="BlackHandSaboteur" />
+		<Order Build="BlackHandConfessorSquad" />
+		<Order Build="BlackHandConfessorSquad" />
+		<Order Build="BlackHandConfessorSquad" />
+		<Order Time="10s" Build="BlackHandRefinery" />
+		<Order Time="40s" Build="BlackHandDropZone" />
+		<Order Build="BlackHandHarvester" />
+		<Order Build="BlackHandScorpionBuggy" />
+		<Order Build="BlackHandScorpionBuggy" />
+		<Order Build="BlackHandScorpionBuggy" />
+		<Order Build="BlackHandHarvester" />
+		<Order Build="BlackHandHarvester" />
+		<Order Build="BlackHandHarvester" />
+		<Order Time="60s" Build="BlackHandRefinery" />
+		<Order Time="90s" Build="BlackHandPowerPlant" />
+		<Order Time="95s" Build="BlackHandPowerPlant" />
+	</SkirmishOpeningMove>
+
+	<SkirmishOpeningMove
 		id="BlackHandOffensiveStandard"
 		Side="BlackHand">
 		<Order Time="0s" Build="BlackHandPowerPlant"/>
@@ -37,15 +61,52 @@
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
-		id="BlackHandOffensiveEasy"
-		Side="BlackHand">
-		<Order Time="0s" Build="BlackHandPowerPlant" />
-		<Order Time="5s" Build="BlackHandHandOfNOD"/>
+	 id="BlackHandOffensiveBikeBuggyRush"
+	 Side="BlackHand">
+		<Order Time="0s" Build="BlackHandPowerPlant"/>
+		<Order Time="5s" Build="BlackHandHandOfNOD" />
+		<Order Build="BlackHandSaboteur" />
+		<Order Build="BlackHandSaboteur" />
+		<Order Build="BlackHandConfessorSquad" />
+		<Order Build="BlackHandConfessorSquad" />
+		<Order Build="BlackHandConfessorSquad" />
 		<Order Time="10s" Build="BlackHandRefinery" />
 		<Order Time="40s" Build="BlackHandDropZone" />
+		<Order Build="BlackHandHarvester" />
+		<Order Build="BlackHandScorpionBuggy" />
+		<Order Build="BlackHandScorpionBuggy" />
+		<Order Build="BlackHandScorpionBuggy" />
+		<Order Build="BlackHandHarvester" />
 		<Order Time="60s" Build="BlackHandRefinery" />
+		<Order Build="BlackHandHarvester" />
 		<Order Time="90s" Build="BlackHandPowerPlant" />
 		<Order Time="95s" Build="BlackHandPowerPlant" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandScorpionBuggy" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandScorpionBuggy" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandScorpionBuggy" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandScorpionBuggy" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandScorpionBuggy" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandScorpionBuggy" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandScorpionBuggy" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandScorpionBuggy" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Build="BlackHandAttackBike" />
+		<Order Time="100s" Build="BlackHandDropZone" />
+		<Order Time="120s" Build="BlackHandOperationsCenter" />
+		<Order Time="135s" Build="BlackHandPowerPlant"/>
+		<Order Time="140s" Build="BlackHandTechAssemblyPlant"/>
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
@@ -91,9 +152,9 @@
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
-	  id="BlackHandOffensiveScorpionSpam"
+	  id="BlackHandOffensiveScorpionRush"
 	  Side="BlackHand">
-		<Order Time="0s" Build="BlackHandPowerPlant" />
+		<Order Time="0s" Build="BlackHandPowerPlant"/>
 		<Order Time="5s" Build="BlackHandHandOfNOD" />
 		<Order Build="BlackHandSaboteur" />
 		<Order Build="BlackHandSaboteur" />
@@ -103,14 +164,14 @@
 		<Order Time="10s" Build="BlackHandRefinery" />
 		<Order Time="40s" Build="BlackHandDropZone" />
 		<Order Build="BlackHandHarvester" />
-		<Order Build="BlackHandScorpionBuggy" />
-		<Order Build="BlackHandScorpionBuggy" />
-		<Order Build="BlackHandScorpionBuggy" />
-		<Order Build="BlackHandScorpionBuggy" />
+		<Order Build="BlackHandRaiderTank" />
+		<Order Build="BlackHandRaiderTank" />
+		<Order Build="BlackHandRaiderTank" />
+		<Order Build="BlackHandHarvester" />
 		<Order Time="60s" Build="BlackHandRefinery" />
-		<Order Time="90s" Build="BlackHandHarvester" />
+		<Order Build="BlackHandHarvester" />
 		<Order Time="90s" Build="BlackHandPowerPlant" />
-		<Order Time="95s" Build="BlackHandOperationsCenter" />
+		<Order Time="95s" Build="BlackHandPowerPlant" />
 		<Order Build="BlackHandRaiderTank" />
 		<Order Build="BlackHandRaiderTank" />
 		<Order Build="BlackHandRaiderTank" />
@@ -124,11 +185,8 @@
 		<Order Build="BlackHandRaiderTank" />
 		<Order Build="BlackHandRaiderTank" />
 		<Order Build="BlackHandRaiderTank" />
-		<Order Build="BlackHandRaiderTank" />
-		<Order Build="BlackHandRaiderTank" />
-		<Order Build="BlackHandRaiderTank" />
-		<Order Time="110s" Build="BlackHandPowerPlant" />
-		<Order Time="115s" Build="BlackHandDropZone" />
-		<Order Time="135s" Build="BlackHandDropZone" />
+		<Order Time="100s" Build="BlackHandDropZone" />
+		<Order Time="120s" Build="BlackHandOperationsCenter" />
+		<Order Time="135s" Build="BlackHandPowerPlant"/>
 	</SkirmishOpeningMove>
 </AssetDeclaration>

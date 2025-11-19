@@ -4,108 +4,121 @@
   <Includes>
   </Includes>
 
-  <SkirmishOpeningMove
-    id="ZOCOMFastRush"
+	<SkirmishOpeningMove
+	id="ZOCOMOffensiveEasy"
+	Side="ZOCOM">
+		<Order Time="0s" Build="ZOCOMPowerPlant"/>
+		<Order Time="5s" Build="ZOCOMBarracks"/>
+		<Order Build="ZOCOMEngineer"/>
+		<Order Build="ZOCOMEngineer"/>
+		<Order Build="ZOCOMRifleSoldierSquad"/>
+		<Order Build="ZOCOMRifleSoldierSquad"/>
+		<Order Build="ZOCOMRifleSoldierSquad"/>
+		<Order Time="10s" Build="ZOCOMRefinery"/>
+		<Order Time="40s" Build="ZOCOMWarfactory"/>
+		<Order Time="60s" Build="ZOCOMRefinery"/>
+		<Order Build="ZOCOMHarvester"/>
+		<Order Build="ZOCOMAPC"/>
+		<Order Build="ZOCOMAPC"/>
+		<Order Build="ZOCOMAPC"/>
+		<Order Build="ZOCOMHarvester"/>
+		<Order Build="ZOCOMHarvester"/>
+		<Order Build="ZOCOMHarvester"/>
+		<Order Time="90s" Build="ZOCOMPowerPlant"/>
+		<Order Time="95s" Build="ZOCOMPowerPlant"/>
+	</SkirmishOpeningMove>
+
+	<SkirmishOpeningMove
+    id="ZOCOMOffensiveStandard"
     Side="ZOCOM">
+		<Order Time="0s" Build="ZOCOMPowerPlant"/>
+		<Order Time="5s" Build="ZOCOMBarracks"/>
+		<Order Build="ZOCOMEngineer"/>
+		<Order Build="ZOCOMEngineer"/>
+		<Order Build="ZOCOMRifleSoldierSquad"/>
+		<Order Build="ZOCOMRifleSoldierSquad"/>
+		<Order Build="ZOCOMRifleSoldierSquad"/>
+		<Order Time="10s" Build="ZOCOMRefinery"/>
+		<Order Time="40s" Build="ZOCOMWarfactory"/>
+		<Order Time="60s" Build="ZOCOMRefinery"/>
+		<Order Build="ZOCOMHarvester"/>
+		<Order Build="ZOCOMAPC"/>
+		<Order Build="ZOCOMAPC"/>
+		<Order Build="ZOCOMAPC"/>
+		<Order Build="ZOCOMAPC"/>
+		<Order Build="GDIHarvester"/>
+		<Order Time="90s" Build="ZOCOMPowerPlant"/>
+		<Order Time="95s" Build="ZOCOMPowerPlant"/>
+		<Order Time="100s" Build="ZOCOMWarfactory"/>
+		<Order Time="120s" Build="ZOCOMPowerPlant"/>
+		<Order Time="125s" Build="ZOCOMWarfactory"/>
+		<Order Time="145s" Build="ZOCOMCommandPost"/>
+		<Order Time="160s" Build="ZOCOMAirTower"/>
+	</SkirmishOpeningMove>
 
-    <Order Time="0s" Account="PRODUCTION" Deposit="999999" />
-    <Order Build="ZOCOMRefinery" />
-    <Order Build="ZOCOMPowerPlant" />
-    <Order Build="ZOCOMRefinery" />
-    <Order Build="ZOCOMWarfactory" />
-    <Order Build="ZOCOMWarfactory" />
-    <Order Build="ZOCOMPowerPlant" />
-
-    <Order Build="ZOCOMPredator" />
-    <Order Build="ZOCOMPredator" />
-    <Order Build="ZOCOMPredator" />
-    <Order Build="ZOCOMPredator" />
-    <Order Build="ZOCOMPredator" />
-    <Order Build="ZOCOMRepairAPC" />
-    <Order Time="110s" />
-  </SkirmishOpeningMove>
-
-  <SkirmishOpeningMove
-    id="ZOCOMDualFactoryRush"
+	<SkirmishOpeningMove
+    id="ZOCOMOffensiveOrcaRush"
     Side="ZOCOM">
+		<Order Time="0s" Build="ZOCOMPowerPlant"/>
+		<Order Time="5s" Build="ZOCOMBarracks"/>
+		<Order Build="ZOCOMEngineer"/>
+		<Order Build="ZOCOMEngineer"/>
+		<Order Build="ZOCOMRifleSoldierSquad"/>
+		<Order Build="ZOCOMRifleSoldierSquad"/>
+		<Order Build="ZOCOMRifleSoldierSquad"/>
+		<Order Time="10s" Build="ZOCOMRefinery"/>
+		<Order Time="40s" Build="ZOCOMWarfactory"/>
+		<Order Time="60s" Build="ZOCOMCommandPost"/>
+		<Order Build="ZOCOMHarvester"/>
+		<Order Build="ZOCOMHarvester"/>
+		<Order Time="75s" Build="ZOCOMAirTower"/>
+		<Order Build="ZOCOMOrca"/>
+		<Order Build="ZOCOMOrca"/>
+		<Order Build="ZOCOMOrca"/>
+		<Order Build="ZOCOMOrca"/>
+		<Order Time="80s" Build="ZOCOMPowerPlant"/>
+		<Order Time="85s" Build="ZOCOMRefinery" />
+		<Order Time="115s" Build="ZOCOMWarfactory" />
+		<Order Time="135s" Build="ZOCOMWarfactory"/>
+	</SkirmishOpeningMove>
 
-    <Order Time="0s" Account="PRODUCTION" Deposit="999999" />
-    <Order Build="ZOCOMRefinery" />
-    <Order Build="ZOCOMPowerPlant" />
-    <Order Build="ZOCOMWarfactory" />
-    <Order Build="ZOCOMHarvester" />
-    <Order Build="ZOCOMHarvester" />
-    <Order Build="ZOCOMRefinery" />
-    <Order Build="ZOCOMWarfactory" />
-    <Order Build="ZOCOMPowerPlant" />
-    <Order Time="210s" />
-  </SkirmishOpeningMove>
-
-  <SkirmishOpeningMove
-    id="ZOCOMTriFactoryRush"
-    Side="ZOCOM">
-
-    <Order Time="0s" Account="PRODUCTION" Deposit="999999" />
-    <Order Build="ZOCOMRefinery" />
-    <Order Build="ZOCOMPowerPlant" />
-    <Order Build="ZOCOMRefinery" />
-    <Order Build="ZOCOMRefinery" />
-    <Order Build="ZOCOMWarfactory" />
-    <Order Build="ZOCOMHarvester" />
-    <Order Build="ZOCOMHarvester" />
-    <Order Build="ZOCOMPowerPlant" />
-    <Order Build="ZOCOMRefinery" />
-    <Order Build="ZOCOMWarfactory" />
-    <Order Build="ZOCOMWarfactory" />
-    <Order Time="300s" />
-  </SkirmishOpeningMove>
-
-  <SkirmishOpeningMove
-    id="ZOCOMBrutalTankRush"
-    Side="ZOCOM">
-
-    <Order Time="0s" Account="PRODUCTION" Deposit="999999" />
-    <Order Build="ZOCOMRefinery" />
-    <Order Build="ZOCOMPowerPlant" />
-    <Order Build="ZOCOMWarfactory" />
-    <Order Build="ZOCOMHarvester" />
-    <Order Build="ZOCOMHarvester" />
-    <Order Build="ZOCOMRefinery" />
-    <Order Build="ZOCOMPowerPlant" />
-    <Order Build="ZOCOMWarfactory" />
-    <Order Build="ZOCOMRefinery" />
-    <Order Build="ZOCOMWarfactory" />
-    <Order Build="ZOCOMRefinery" />
-    <Order Build="ZOCOMPowerPlant" />
-    <Order Build="ZOCOMWarfactory" />
-    <Order Build="ZOCOMWarfactory" />
-    <Order Build="ZOCOMBarracks" />
-    <Order Time="209s" />
-  </SkirmishOpeningMove>
-
-  <SkirmishOpeningMove
-    id="ZOCOMMammothRush"
-    Side="ZOCOM">
-
-    <Order Build="ZOCOMRefinery" />
-    <Order Build="ZOCOMPowerPlant" />
-    <Order Build="ZOCOMRefinery" />
-    <Order Build="ZOCOMWarfactory" />
-    <Order Build="ZOCOMHarvester" />
-    <Order Build="ZOCOMHarvester" />
-    <Order Build="ZOCOMPowerPlant" />
-    <Order Build="ZOCOMCommandPost" />
-    <Order Build="ZOCOMWarfactory" />
-    <Order Build="ZOCOMArmory" />
-    <Order Build="ZOCOMPowerPlant" />
-
-    <Order Build="ZOCOMMammoth" />
-    <Order Build="ZOCOMMammoth" />
-    <Order Build="ZOCOMMammoth" />
-    <Order Build="ZOCOMMammoth" />
-    <Order Build="ZOCOMMammoth" />
-    <Order Build="ZOCOMMammoth" />
-    <Order Time="235s" />
-  </SkirmishOpeningMove>
+	<SkirmishOpeningMove
+		id="ZOCOMOffensivePitBullSpam"
+		Side="ZOCOM">
+		<Order Time="0s" Build="ZOCOMPowerPlant"/>
+		<Order Time="5s" Build="ZOCOMBarracks"/>
+		<Order Build="ZOCOMEngineer"/>
+		<Order Build="ZOCOMEngineer"/>
+		<Order Build="ZOCOMRifleSoldierSquad"/>
+		<Order Build="ZOCOMRifleSoldierSquad"/>
+		<Order Build="ZOCOMRifleSoldierSquad"/>
+		<Order Time="10s" Build="ZOCOMRefinery"/>
+		<Order Time="40s" Build="ZOCOMWarfactory"/>
+		<Order Time="60s" Build="ZOCOMRefinery"/>
+		<Order Build="ZOCOMHarvester"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMHarvester"/>
+		<Order Time="90s" Build="ZOCOMPowerPlant"/>
+		<Order Time="95s" Build="ZOCOMPowerPlant"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Time="100s" Build="ZOCOMWarfactory"/>
+		<Order Time="120s" Build="ZOCOMCommandPost"/>
+		<Order Time="135s" Build="ZOCOMPowerPlant"/>
+		<Order Time="140s" Build="ZOCOMArmory"/>
+	</SkirmishOpeningMove>
 
 </AssetDeclaration>
