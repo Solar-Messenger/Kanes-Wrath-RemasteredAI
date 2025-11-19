@@ -90,8 +90,9 @@
 
 		<OpeningMove Name="NODOffensiveEasy" Weight="100%" Difficulty="EASY"/>
 		
-		<OpeningMove Name="NODOffensiveStandard" Weight="60%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="NODOffensiveScorpionRush" Weight="40%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="NODOffensiveStandard" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="NODOffensiveBikeBuggyRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="NODOffensiveScorpionRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="NODOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>

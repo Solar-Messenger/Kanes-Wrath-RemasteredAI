@@ -90,9 +90,10 @@
 
 		<OpeningMove Name="BlackHandOffensiveEasy" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="BlackHandOffensiveStandard" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="BlackHandOffensiveScorpionSpam" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="BlackHandOffensiveFlameTankRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="BlackHandOffensiveStandard" Weight="55%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="BlackHandOffensiveBikeBuggyRush" Weight="15%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="BlackHandOffensiveScorpionRush" Weight="15%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="BlackHandOffensiveFlameTankRush" Weight="15%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BlackHandOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>

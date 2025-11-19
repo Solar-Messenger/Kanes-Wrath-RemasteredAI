@@ -89,7 +89,9 @@
 
 		<OpeningMove Name="MOKOffensiveEasy" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="MOKOffensiveStandard" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="MOKOffensiveStandard" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="MOKOffensiveBikeBuggyRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="MOKOffensiveScorpionRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="MarkedOfKaneOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>

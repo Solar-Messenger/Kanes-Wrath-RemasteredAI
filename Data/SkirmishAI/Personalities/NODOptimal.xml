@@ -91,8 +91,8 @@
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 
-		<OpeningMove Name="NODOptimalBalanced" Weight="100%" Difficulty="EASY MEDIUM"/>
-		<OpeningMove Name="NODOptimalBalancedHardBrutal" Weight="100%" Difficulty="HARD BRUTAL"/>
+		<OpeningMove Name="NODOptimalEasy" Weight="100%" Difficulty="EASY"/>
+		<OpeningMove Name="NODOptimalBalancedHardBrutal" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="NODOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>

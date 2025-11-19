@@ -90,8 +90,8 @@
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 
-		<OpeningMove Name="MOKOptimalBalanced" Weight="100%" Difficulty="EASY MEDIUM"/>
-		<OpeningMove Name="MOKOptimalBalancedHardBrutal" Weight="100%" Difficulty="HARD BRUTAL"/>
+		<OpeningMove Name="MOKOptimalEasy" Weight="100%" Difficulty="EASY"/>
+		<OpeningMove Name="MOKOptimalBalancedHardBrutal" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="MarkedOfKaneOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MarkedOfKaneOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
