@@ -21,7 +21,7 @@
 		  id="AlienOffensiveEarlyGroundEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="0s" EndTime="300s" />
+			<TimerHeuristic StartTime="0s" EndTime="240s" />
 			<FocusedThresholdHeuristic />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
@@ -36,7 +36,7 @@
 	  id="AlienOffensiveLateGroundEconomyAttack"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime ="301s" EndTime="-1s" />
+			<TimerHeuristic StartTime ="241s" EndTime="-1s" />
 			<FocusedThresholdHeuristic />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>

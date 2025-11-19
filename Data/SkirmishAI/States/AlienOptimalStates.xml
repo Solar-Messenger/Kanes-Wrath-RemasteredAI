@@ -26,7 +26,7 @@
 		  id="AlienOptimalEarlyGroundEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="90s" EndTime="300s" />
+			<TimerHeuristic StartTime="90s" EndTime="240s" />
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.5"
 				BalanceOfPowerWeight="0.5">
@@ -46,7 +46,7 @@
 	  id="AlienOptimalLateGroundEconomyAttack"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime ="301s" EndTime="-1s" />
+			<TimerHeuristic StartTime ="241s" EndTime="-1s" />
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.5"
 				BalanceOfPowerWeight="0.5">
