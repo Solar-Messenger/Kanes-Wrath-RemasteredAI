@@ -46,22 +46,26 @@
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="300%" Difficulty="BRUTAL"/>
 
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
+
+		<TacticalTarget TacticalAITarget="Targetless" MaxTeamsPerTarget="1"/>
+
+		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
@@ -71,6 +75,10 @@
 		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
 
+		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
@@ -96,15 +104,14 @@
 		<OpeningMove Name="SteelTalonsBrutalCrane" Weight="90%" Difficulty="BRUTAL"/>
 		<OpeningMove Name="SteelTalonsMammothRush" Weight="10%" Difficulty="BRUTAL"/>
 
-		<States State="SteelTalonsOffensiveDirectAttack1" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="SteelTalonsOffensiveDirectAttack2" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="SteelTalonsOffensiveEconomyAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="SteelTalonsOffensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="SteelTalonsOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
-
-		<States State="SteelTalonsOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="SteelTalonsOffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="SteelTalonsOffensiveEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="STOffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="STOffensiveGroundEconomyAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="STOffensiveAirEconomyAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="STOffensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="STOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="STOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="STOffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="STOffensiveEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="SteelTalonsGroundEngineerDefense" Difficulty="HARD BRUTAL"/>
@@ -113,6 +120,7 @@
 		<States State="SteelTalonsAirCommandoDefense" Difficulty="HARD BRUTAL"/>
 		<States State="SteelTalonsMRT" Difficulty="HARD BRUTAL"/>
 
+		<States State="STOffensiveGarrisonEpicUnit" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="SteelTalonsAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="SteelTalonsAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="SteelTalonsCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
