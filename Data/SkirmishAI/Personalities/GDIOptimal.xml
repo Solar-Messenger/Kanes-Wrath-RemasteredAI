@@ -11,7 +11,7 @@
 		  ChanceForTargetToExpire="100"
 		  MaxBuildingsToBeDefensiveTarget_Small="0"
 		  MaxBuildingsToBeDefensiveTarget_Med="0"
-		  ChanceForUnitsToUpgrade="300"
+		  ChanceForUnitsToUpgrade="999"
 		  ChanceToUseAllUnitsForDefenseTarget_Small="0"
 		  ChanceToUseAllUnitsForDefenseTarget_Med="0"
 		  ChanceToUseAllUnitsForDefenseTarget_Large="0"
@@ -104,21 +104,21 @@
 		<States State="GDIOptimalGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIOptimalAirEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="GDIOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GDIOptimalSiege" Difficulty="HARD BRUTAL"/>
+		<States State="GDIOptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIOptimalSpotters" Difficulty="HARD BRUTAL"/>
-		<States State="GDIOptimalBaseCrack" Difficulty="HARD BRUTAL"/>
+		<States State="GDIOptimalBaseCrack" Difficulty="BRUTAL"/>
 
 		<States State="GDIOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GDIOptimalBombingRuns" Difficulty="HARD BRUTAL"/>
-		<States State="GDIOptimalEngineer" Difficulty="HARD BRUTAL"/>
+		<States State="GDIOptimalBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="GDIOptimalEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GDIGroundEngineerDefense" Difficulty="HARD BRUTAL"/>
+		<States State="GDIGroundEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIAirEngineerDefense" Difficulty="HARD BRUTAL"/>
-		<States State="GDIGroundCommandoDefense" Difficulty="HARD BRUTAL"/>
+		<States State="GDIGroundCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIAirCommandoDefense" Difficulty="HARD BRUTAL"/>
 
-		<States State="GDIOptimalGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
+		<States State="GDIOptimalGarrisonEpicUnit" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="Garrison_EASY" Difficulty="EASY"/>
 		<States State="GDIAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -127,20 +127,20 @@
 		<States State="GDISuperweapon" Difficulty="HARD BRUTAL"/>
 		<States State="GDICommando" Difficulty="HARD BRUTAL"/>
 		<States State="GDIExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="ExpansionEscort" Difficulty="HARD BRUTAL"/>
+		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
+		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="GDIBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="GDIInfantryDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="GDIVehicleDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="GDIAircraftDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="GDIInfantryDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="GDIVehicleDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="GDIAircraftDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>	
 		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>	

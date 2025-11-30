@@ -11,7 +11,7 @@
 		  ChanceForTargetToExpire="100"
 		  MaxBuildingsToBeDefensiveTarget_Small="0"
 		  MaxBuildingsToBeDefensiveTarget_Med="0"
-		  ChanceForUnitsToUpgrade="300"
+		  ChanceForUnitsToUpgrade="999"
 		  ChanceToUseAllUnitsForDefenseTarget_Small="0"
 		  ChanceToUseAllUnitsForDefenseTarget_Med="0"
 		  ChanceToUseAllUnitsForDefenseTarget_Large="0"
@@ -105,17 +105,17 @@
 		<States State="ZOCOMOptimalGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOptimalAirEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="ZOCOMOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMOptimalSiege" Difficulty="HARD BRUTAL"/>
-		<States State="ZOCOMOptimalBaseCrack" Difficulty="HARD BRUTAL"/>
+		<States State="ZOCOMOptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="ZOCOMOptimalBaseCrack" Difficulty="BRUTAL"/>
 
 		<States State="ZOCOMOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOptimalBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOptimalEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMGroundEngineerDefense" Difficulty="HARD BRUTAL"/>
+		<States State="ZOCOMGroundEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMAirEngineerDefense" Difficulty="HARD BRUTAL"/>
-		<States State="ZOCOMGroundCommandoDefense" Difficulty="HARD BRUTAL"/>
+		<States State="ZOCOMGroundCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMAirCommandoDefense" Difficulty="HARD BRUTAL"/>
 
 		<States State="ZOCOMOptimalGarrisonEpicUnit" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -125,22 +125,22 @@
 		<States State="ZOCOMAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="ZOCOMCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMCommando" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="ZOCOMCommando" Difficulty="HARD BRUTAL"/>
+		<States State="ZOCOMExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
+		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="ZOCOMBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="ZOCOMInfantryDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMVehicleDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMAircraftDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="ZOCOMInfantryDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="ZOCOMVehicleDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="ZOCOMAircraftDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>

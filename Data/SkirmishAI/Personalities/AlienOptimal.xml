@@ -11,7 +11,7 @@
 		  ChanceForTargetToExpire="100"
 		  MaxBuildingsToBeDefensiveTarget_Small="0"
 		  MaxBuildingsToBeDefensiveTarget_Med="0"
-		  ChanceForUnitsToUpgrade="300"
+		  ChanceForUnitsToUpgrade="999"
 		  ChanceToUseAllUnitsForDefenseTarget_Small="0"
 		  ChanceToUseAllUnitsForDefenseTarget_Med="0"
 		  ChanceToUseAllUnitsForDefenseTarget_Large="0"
@@ -102,43 +102,43 @@
 
 		<States State="AlienOptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienOptimalEarlyGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="AlienOptimalLateGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="AlienOptimalLateGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienOptimalRavagerEconomyAttack" Difficulty="HARD BRUTAL"/>
-		<States State="AlienOptimalAirEconomyAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="AlienOptimalOverwhelmAttack" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="AlienOptimalAirEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="AlienOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienOptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="AlienOptimalBaseCrack" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="AlienOptimalBaseCrack" Difficulty="BRUTAL"/>
 
 		<States State="AlienOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="AlienOptimalBombingRuns" Difficulty="BRUTAL"/>
+		<States State="AlienOptimalBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienOptimalEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="AlienEngineerDefense" Difficulty="HARD BRUTAL"/>
-		<States State="AlienCommandoDefense" Difficulty="HARD BRUTAL"/>
+		<States State="AlienEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="AlienOptimalGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
+		<States State="AlienOptimalGarrisonEpicUnit" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="Garrison_EASY" Difficulty="EASY"/>
 		<States State="AlienAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="AlienCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="AlienExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="AlienExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
+		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="AlienBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="AlienInfantryDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="AlienVehicleDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="AlienAircraftDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="AlienInfantryDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienVehicleDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienAircraftDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="RushBudget" Difficulty="HARD BRUTAL"/>

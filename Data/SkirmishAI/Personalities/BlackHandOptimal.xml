@@ -11,7 +11,7 @@
 		  ChanceForTargetToExpire="100"
 		  MaxBuildingsToBeDefensiveTarget_Small="0"
 		  MaxBuildingsToBeDefensiveTarget_Med="0"
-		  ChanceForUnitsToUpgrade="300"
+		  ChanceForUnitsToUpgrade="999"
 		  ChanceToUseAllUnitsForDefenseTarget_Small="0"
 		  ChanceToUseAllUnitsForDefenseTarget_Med="0"
 		  ChanceToUseAllUnitsForDefenseTarget_Large="0"
@@ -101,41 +101,41 @@
 		<States State="BlackHandOptimalEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandOptimalFlameTankAttack" Difficulty="HARD BRUTAL"/>
 		<States State="BlackHandOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BlackHandOptimalSiege" Difficulty="HARD BRUTAL"/>
-		<States State="BlackHandOptimalBaseCrack" Difficulty="HARD BRUTAL"/>
+		<States State="BlackHandOptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandOptimalBaseCrack" Difficulty="BRUTAL"/>
 
 		<States State="BlackHandOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BlackHandOptimalArtilleryBombing" Difficulty="HARD BRUTAL"/>
-
-		<States State="BlackHandOptimalEngineer" Difficulty="BRUTAL"/>
+		<States State="BlackHandOptimalArtilleryBombing" Difficulty="MEDIUM HARD BRUTAL"/>
+		
+		<States State="BlackHandOptimalEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BlackHandEngineerDefense" Difficulty="HARD BRUTAL"/>
-		<States State="BlackHandCommandoDefense" Difficulty="HARD BRUTAL"/>
+		<States State="BlackHandEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="BlackHandCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="BlackHandOptimalGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
+		<States State="BlackHandOptimalGarrisonEpicUnit" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="Garrison_EASY" Difficulty="EASY"/>
 		<States State="BlackHandAntiGarrison" Difficulty="HARD BRUTAL"/>
 		<States State="BlackHandAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="BlackHandCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandSuperweapon" Difficulty="HARD BRUTAL"/>
-		<States State="BlackHandCommando" Difficulty="BRUTAL"/>
-		<States State="BlackHandExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ExpansionEscort" Difficulty="HARD BRUTAL"/>
+		<States State="BlackHandCommando" Difficulty="HARD BRUTAL"/>
+		<States State="BlackHandExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
+		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BlackHandBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BlackHandDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="BHInfantryDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="BHVehicleDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="BHAircraftDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BHInfantryDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="BHVehicleDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="BHAircraftDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>

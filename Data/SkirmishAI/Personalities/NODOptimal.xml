@@ -11,7 +11,7 @@
 		  ChanceForTargetToExpire="100"
 		  MaxBuildingsToBeDefensiveTarget_Small="0"
 		  MaxBuildingsToBeDefensiveTarget_Med="0"
-		  ChanceForUnitsToUpgrade="300"
+		  ChanceForUnitsToUpgrade="999"
 		  ChanceToUseAllUnitsForDefenseTarget_Small="0"
 		  ChanceToUseAllUnitsForDefenseTarget_Med="0"
 		  ChanceToUseAllUnitsForDefenseTarget_Large="0"
@@ -99,46 +99,46 @@
 
 		<States State="NODOptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODOptimalEarlyMidBikeEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODOptimalLateStealthTankEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="NODOptimalLateStealthTankEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODOptimalFlameTankAttack" Difficulty="HARD BRUTAL"/>
 		<States State="NODOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODOptimalBeamSiege" Difficulty="HARD BRUTAL"/>
+		<States State="NODOptimalBeamSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODOptimalSpecterSiege" Difficulty="HARD BRUTAL"/>
-		<States State="NODOptimalBaseCrack" Difficulty="HARD BRUTAL"/>
+		<States State="NODOptimalBaseCrack" Difficulty="BRUTAL"/>
 
 		<States State="NODOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODOptimalBombingRuns" Difficulty="HARD BRUTAL"/>
-		<States State="NODOptimalEngineer" Difficulty="HARD BRUTAL"/>
+		<States State="NODOptimalBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODOptimalEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODGroundEngineerDefense" Difficulty="HARD BRUTAL"/>
+		<States State="NODGroundEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODAirEngineerDefense" Difficulty="HARD BRUTAL"/>
-		<States State="NODGroundCommandoDefense" Difficulty="HARD BRUTAL"/>
+		<States State="NODGroundCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODAirCommandoDefense" Difficulty="HARD BRUTAL"/>
 
-		<States State="NODOptimalGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
+		<States State="NODOptimalGarrisonEpicUnit" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="Garrison_EASY" Difficulty="EASY"/>
 		<States State="NODAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="NODCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODSuperweapon" Difficulty="HARD BRUTAL"/>
-		<States State="NODCommando" Difficulty="BRUTAL"/>
-		<States State="NODExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODCommando" Difficulty="HARD BRUTAL"/>
+		<States State="NODExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
+		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="NODBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="NODInfantryDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODVehicleDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODAircraftDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODInfantryDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="NODVehicleDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="NODAircraftDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>

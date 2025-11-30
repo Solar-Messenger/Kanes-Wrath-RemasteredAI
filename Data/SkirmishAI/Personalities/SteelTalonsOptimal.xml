@@ -11,7 +11,7 @@
 		  ChanceForTargetToExpire="100"
 		  MaxBuildingsToBeDefensiveTarget_Small="0"
 		  MaxBuildingsToBeDefensiveTarget_Med="0"
-		  ChanceForUnitsToUpgrade="300"
+		  ChanceForUnitsToUpgrade="999"
 		  ChanceToUseAllUnitsForDefenseTarget_Small="0"
 		  ChanceToUseAllUnitsForDefenseTarget_Med="0"
 		  ChanceToUseAllUnitsForDefenseTarget_Large="0"
@@ -106,42 +106,42 @@
 		<States State="STOptimalGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="STOptimalAirEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="STOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="STOptimalSiege" Difficulty="HARD BRUTAL"/>
-		<States State="STOptimalBaseCrack" Difficulty="HARD BRUTAL"/>
+		<States State="STOptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="STOptimalBaseCrack" Difficulty="BRUTAL"/>
 
 		<States State="STOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="STOptimalBombingRuns" Difficulty="HARD BRUTAL"/>
-		<States State="STOptimalEngineer" Difficulty="HARD BRUTAL"/>
+		<States State="STOptimalBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="STOptimalEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="SteelTalonsGroundEngineerDefense" Difficulty="HARD BRUTAL"/>
+		<States State="SteelTalonsGroundEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="SteelTalonsAirEngineerDefense" Difficulty="HARD BRUTAL"/>
-		<States State="SteelTalonsGroundCommandoDefense" Difficulty="HARD BRUTAL"/>
+		<States State="SteelTalonsGroundCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="SteelTalonsAirCommandoDefense" Difficulty="HARD BRUTAL"/>
 		<States State="SteelTalonsMRT" Difficulty="HARD BRUTAL"/>
 
-		<States State="STOptimalGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
+		<States State="STOptimalGarrisonEpicUnit" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="Garrison_EASY" Difficulty="EASY"/>
 		<States State="SteelTalonsAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="SteelTalonsAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="SteelTalonsCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="SteelTalonsSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="SteelTalonsExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="SteelTalonsExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="SteelTalonsBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="SteelTalonsIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="SteelTalonsHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
+		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="SteelTalonsBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="SteelTalonsOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="SteelTalonsDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="STInfantryDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="STVehicleDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="STAircraftDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="STInfantryDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="STVehicleDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="STAircraftDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
@@ -153,7 +153,7 @@
 		<BudgetStates State="FullInvestmentBudget_EASY_WINNING" Difficulty="EASY"/>
 
 		<BudgetStates State="TechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="SteelTalonsOptimalTechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="SteelTalonsOptimalTechByTimeBudget" Difficulty="EASY"/>
 		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerbyTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
