@@ -39,9 +39,9 @@
 
 		<BuildDelayRange id="BuildDelayEasy" MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />
 
-		<UnitBuilderUnitChoiceStrategy Shape="MIDDLE" StandardDeviation="0.5" Difficulty="EASY MEDIUM" />
-		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="HARD BRUTAL" />
+		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
+		<ResourceMultiplierCheat Percentage="150%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="MEDIUM"/>
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="300%" Difficulty="BRUTAL"/>
@@ -142,6 +142,10 @@
 		<States State="STInfantryDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STVehicleDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STAircraftDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+
+		<States State="SteelTalonsUnitPreferencesEasyEarly" Difficulty="EASY"/>
+		<States State="SteelTalonsUnitPreferencesEasyMid" Difficulty="EASY"/>
+		<States State="SteelTalonsUnitPreferencesEasyLate" Difficulty="EASY"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
