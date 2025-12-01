@@ -116,6 +116,7 @@
 		<States State="AlienEngineerDefense" Difficulty="HARD BRUTAL"/>
 		<States State="AlienCommandoDefense" Difficulty="HARD BRUTAL"/>
 
+		<States State="AlienOffensiveGarrisonEpicUnit" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="AlienCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>

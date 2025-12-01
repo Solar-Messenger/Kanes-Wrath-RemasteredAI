@@ -97,53 +97,53 @@
 
 		<OpeningMove Name="Traveler59OptimalHardBrutal" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="Traveler59OpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL" />
-		<States State="Traveler59OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="T59OpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="T59OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-		<States State="Traveler59OptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="Traveler59OptimalEarlyGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="Traveler59OptimalLateGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="Traveler59OptimalRavagerEconomyAttack" Difficulty="HARD BRUTAL"/>
-		<States State="Traveler59OptimalAirEconomyAttack" Difficulty="HARD BRUTAL"/>
-		<States State="Traveler59OptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="Traveler59OptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="Traveler59Cultists" Difficulty="HARD BRUTAL"/>
-		<States State="Traveler59OptimalBaseCrack" Difficulty="BRUTAL"/>
+		<States State="T59OptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="T59OptimalEarlyGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59OptimalLateGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59OptimalRavagerEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="T59OptimalAirEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="T59OptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="T59OptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59Cultists" Difficulty="HARD BRUTAL"/>
+		<States State="T59OptimalBaseCrack" Difficulty="BRUTAL"/>
 
-		<States State="Traveler59OptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="Traveler59OptimalBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="Traveler59OptimalEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59OptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="T59OptimalBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59OptimalEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="Traveler59EngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="Traveler59CommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="T59EngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="T59CommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="Traveler59OptimalGarrisonEpicUnit" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59OptimalGarrisonEpicUnit" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="Garrison_EASY" Difficulty="EASY"/>
-		<States State="Traveler59AntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="Traveler59AntiGarrison_EASY" Difficulty="EASY"/>
-		<States State="Traveler59CaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="Traveler59Superweapon" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="Traveler59Expansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="T59AntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59AntiGarrison_EASY" Difficulty="EASY"/>
+		<States State="T59CaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59Superweapon" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59Expansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="Traveler59BridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="Traveler59Isolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="Traveler59HuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59BridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="T59Isolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="T59HuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="Traveler59BaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="Traveler59OffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="Traveler59DefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59BaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59OffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59DefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="Traveler59InfantryDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="Traveler59VehicleDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="Traveler59AircraftDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="T59InfantryDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="T59VehicleDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="T59AircraftDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="Traveler59UnitPreferencesEasyEarly" Difficulty="EASY"/>
-		<States State="Traveler59UnitPreferencesEasyMid" Difficulty="EASY"/>
-		<States State="Traveler59UnitPreferencesEasyLate" Difficulty="EASY"/>
+		<States State="T59UnitPreferencesEasyEarly" Difficulty="EASY"/>
+		<States State="T59UnitPreferencesEasyMid" Difficulty="EASY"/>
+		<States State="T59UnitPreferencesEasyLate" Difficulty="EASY"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>

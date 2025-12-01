@@ -104,6 +104,9 @@
 		<OpeningMove Name="SteelTalonsStandardCrane" Weight="90%" Difficulty="MEDIUM HARD BRUTAL"/>
 		<OpeningMove Name="SteelTalonsSuperweaponRush" Weight="10%" Difficulty="MEDIUM HARD BRUTAL"/>
 
+		<States State="STOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="STOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+
 		<States State="STResourceDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STConyardDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STSuperweaponDefense" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -114,38 +117,38 @@
 		<States State="STDefensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="SteelTalonsGroundEngineerDefense" Difficulty="HARD BRUTAL"/>
-		<States State="SteelTalonsAirEngineerDefense" Difficulty="HARD BRUTAL"/>
-		<States State="SteelTalonsGroundCommandoDefense" Difficulty="HARD BRUTAL"/>
-		<States State="SteelTalonsAirCommandoDefense" Difficulty="HARD BRUTAL"/>
-		<States State="SteelTalonsMRT" Difficulty="HARD BRUTAL"/>
+		<States State="STGroundEngineerDefense" Difficulty="HARD BRUTAL"/>
+		<States State="STAirEngineerDefense" Difficulty="HARD BRUTAL"/>
+		<States State="STGroundCommandoDefense" Difficulty="HARD BRUTAL"/>
+		<States State="STAirCommandoDefense" Difficulty="HARD BRUTAL"/>
+		<States State="STMRT" Difficulty="HARD BRUTAL"/>
 		
 		<States State="ExpansionEscort" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="STDefensiveGarrisonEpicUnit" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="SteelTalonsAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="SteelTalonsAntiGarrison_EASY" Difficulty="EASY"/>
-		<States State="SteelTalonsCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="SteelTalonsSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="SteelTalonsExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="SteelTalonsCommando" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="SteelTalonsIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="SteelTalonsHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="STAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="STAntiGarrison_EASY" Difficulty="EASY"/>
+		<States State="STCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="STSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="STExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="STCommando" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="STIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="STHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
 
-		<States State="SteelTalonsBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="SteelTalonsOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="SteelTalonsDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="STBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="STOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="STDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="STInfantryDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="STVehicleDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="STAircraftDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="SteelTalonsUnitPreferencesEasyEarly" Difficulty="EASY"/>
-		<States State="SteelTalonsUnitPreferencesEasyMid" Difficulty="EASY"/>
-		<States State="SteelTalonsUnitPreferencesEasyLate" Difficulty="EASY"/>
+		<States State="STUnitPreferencesEasyEarly" Difficulty="EASY"/>
+		<States State="STUnitPreferencesEasyMid" Difficulty="EASY"/>
+		<States State="STUnitPreferencesEasyLate" Difficulty="EASY"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="DefensiveEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>

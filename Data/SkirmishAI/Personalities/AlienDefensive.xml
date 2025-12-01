@@ -103,6 +103,9 @@
 		<OpeningMove Name="AlienStandardCrane" Weight="90%" Difficulty="MEDIUM HARD BRUTAL"/>
 		<OpeningMove Name="AlienSuperweaponRush" Weight="10%" Difficulty="MEDIUM HARD BRUTAL"/>
 
+		<States State="AlienOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="AlienOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL" />
+
 		<States State="AlienResourceDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienConyardDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienSuperweaponDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>

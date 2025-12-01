@@ -4,7 +4,7 @@
 	<Includes></Includes>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandOptimalDirectAttack"
+		  id="BHOptimalDirectAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
@@ -23,7 +23,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandOptimalEconomyAttack"
+		  id="BHOptimalEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime ="120s" EndTime="-1s" />
@@ -43,7 +43,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandOptimalFlameTankAttack"
+		  id="BHOptimalFlameTankAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime ="180s" EndTime="-1s" />
@@ -64,7 +64,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandOptimalOverwhelmAttack"
+		  id="BHOptimalOverwhelmAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
@@ -76,7 +76,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandOptimalSiege"
+		  id="BHOptimalSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="180s" EndTime="-1s"/>
@@ -93,7 +93,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-	id="BlackHandOptimalBaseCrack"
+	id="BHOptimalBaseCrack"
 	UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="480s" EndTime="-1s"/>
@@ -115,7 +115,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-	  id="BlackHandOptimalAirHarassmentAntiTurtle"
+	  id="BHOptimalAirHarassmentAntiTurtle"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<ConstantHeuristic Weight="0.75"/>
@@ -128,7 +128,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandOptimalArtilleryBombing"
+		  id="BHOptimalArtilleryBombing"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="480s" EndTime="-1s"/>
@@ -142,7 +142,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandOptimalEngineer"
+		  id="BHOptimalEngineer"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
@@ -158,7 +158,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandOptimalGarrisonEpicUnit"
+		  id="BHOptimalGarrisonEpicUnit"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="241s" EndTime="-1s"/>

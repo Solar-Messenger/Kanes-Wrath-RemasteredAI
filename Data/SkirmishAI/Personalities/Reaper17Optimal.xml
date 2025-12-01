@@ -102,6 +102,9 @@
 
 		<OpeningMove Name="Reaper17BrutalCrane" Weight="100%" Difficulty="BRUTAL"/>
 
+		<States State="R17OpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		
 		<States State="R17OptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="R17OptimalEarlyGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="R17OptimalLateGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -114,35 +117,35 @@
 		<States State="R17OptimalEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="Reaper17EngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="Reaper17CommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17EngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17CommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="R17OptimalGarrisonEpicUnit" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="Garrison_EASY" Difficulty="EASY"/>
-		<States State="Reaper17AntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="Reaper17AntiGarrison_EASY" Difficulty="EASY"/>
-		<States State="Reaper17CaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="Reaper17Superweapon" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="Reaper17Expansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17AntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17AntiGarrison_EASY" Difficulty="EASY"/>
+		<States State="R17CaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17Superweapon" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17Expansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="Reaper17BridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="Reaper17Isolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="Reaper17HuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17BridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17Isolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17HuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="Reaper17BaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="Reaper17OffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="Reaper17DefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17BaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17OffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17DefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		
-		<States State="Reaper17InfantryDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="Reaper17VehicleDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="Reaper17AircraftDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17InfantryDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17VehicleDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17AircraftDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="Reaper17UnitPreferencesEasyEarly" Difficulty="EASY"/>
-		<States State="Reaper17UnitPreferencesEasyMid" Difficulty="EASY"/>
-		<States State="Reaper17UnitPreferencesEasyLate" Difficulty="EASY"/>
+		<States State="R17UnitPreferencesEasyEarly" Difficulty="EASY"/>
+		<States State="R17UnitPreferencesEasyMid" Difficulty="EASY"/>
+		<States State="R17UnitPreferencesEasyLate" Difficulty="EASY"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="RushBudget" Difficulty="HARD BRUTAL"/>

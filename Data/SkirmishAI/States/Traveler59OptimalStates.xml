@@ -4,7 +4,7 @@
   <Includes></Includes>
 
 	<AIStrategicStateDefinition
-		  id="Traveler59OptimalDirectAttack"
+		  id="T59OptimalDirectAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
@@ -23,7 +23,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="Traveler59OptimalEarlyGroundEconomyAttack"
+		  id="T59OptimalEarlyGroundEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime ="90s" EndTime="300s" />
@@ -43,7 +43,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-	  id="Traveler59OptimalLateGroundEconomyAttack"
+	  id="T59OptimalLateGroundEconomyAttack"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime ="301s" EndTime="-1s" />
@@ -63,7 +63,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-	  id="Traveler59OptimalRavagerEconomyAttack"
+	  id="T59OptimalRavagerEconomyAttack"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime ="180s" EndTime="-1s" />
@@ -83,7 +83,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="Traveler59OptimalAirEconomyAttack"
+		  id="T59OptimalAirEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime ="180s" EndTime="-1s" />
@@ -103,7 +103,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="Traveler59OptimalOverwhelmAttack"
+		  id="T59OptimalOverwhelmAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
@@ -115,7 +115,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="Traveler59OptimalSiege"
+		  id="T59OptimalSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="180s" EndTime="-1s"/>
@@ -132,7 +132,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="Traveler59Cultists"
+		  id="T59Cultists"
 		  UnitUpgradeModifier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
@@ -147,7 +147,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-	id="Traveler59OptimalBaseCrack"
+	id="T59OptimalBaseCrack"
 	UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="480s" EndTime="-1s"/>
@@ -168,7 +168,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-	  id="Traveler59OptimalAirHarassmentAntiTurtle"
+	  id="T59OptimalAirHarassmentAntiTurtle"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<ConstantHeuristic Weight="0.75"/>
@@ -181,7 +181,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="Traveler59OptimalBombingRuns"
+		  id="T59OptimalBombingRuns"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="480s" EndTime="-1s"/>
@@ -195,7 +195,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="Traveler59OptimalEngineer"
+		  id="T59OptimalEngineer"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
@@ -211,7 +211,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="Traveler59OptimalGarrisonEpicUnit"
+		  id="T59OptimalGarrisonEpicUnit"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="241s" EndTime="-1s"/>

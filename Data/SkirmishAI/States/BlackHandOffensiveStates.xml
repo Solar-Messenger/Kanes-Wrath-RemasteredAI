@@ -4,7 +4,7 @@
 	<Includes></Includes>
 
 	<AIStrategicStateDefinition
-	  id="BlackHandOffensiveDirectAttack"
+	  id="BHOffensiveDirectAttack"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<ConstantHeuristic Weight="0.8"/>
@@ -18,7 +18,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandOffensiveEconomyAttack"
+		  id="BHOffensiveEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<FocusedThresholdHeuristic />
@@ -32,7 +32,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandOffensiveFlameTankAttack"
+		  id="BHOffensiveFlameTankAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime ="90s" EndTime="-1s" />
@@ -47,7 +47,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandOffensiveOverwhelmAttack"
+		  id="BHOffensiveOverwhelmAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
@@ -59,7 +59,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandOffensiveSiege"
+		  id="BHOffensiveSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
@@ -74,7 +74,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-	  id="BlackHandOffensiveAirHarassmentAntiTurtle"
+	  id="BHOffensiveAirHarassmentAntiTurtle"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<ConstantHeuristic Weight="0.75"/>
@@ -87,7 +87,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandOffensiveArtilleryBombing"
+		  id="BHOffensiveArtilleryBombing"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="420s" EndTime="-1s" />
@@ -101,7 +101,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandOffensiveEngineer"
+		  id="BHOffensiveEngineer"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
@@ -116,7 +116,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandOffensiveGarrisonEpicUnit"
+		  id="BHOffensiveGarrisonEpicUnit"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="241s" EndTime="-1s"/>

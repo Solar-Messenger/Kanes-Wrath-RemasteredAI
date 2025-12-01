@@ -100,8 +100,8 @@
 
 		<OpeningMove Name="MOKDefensiveStandard" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="MarkedOfKaneOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MarkedOfKaneOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="MOKOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="MOKOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="MOKResourceDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKConyardDefense" Difficulty="HARD BRUTAL"/>
@@ -113,37 +113,37 @@
 		<States State="MOKDefensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MarkedOfKaneGroundEngineerDefense" Difficulty="HARD BRUTAL"/>
-		<States State="MarkedOfKaneAirEngineerDefense" Difficulty="HARD BRUTAL"/>
-		<States State="MarkedOfKaneGroundCommandoDefense" Difficulty="HARD BRUTAL"/>
-		<States State="MarkedOfKaneAirCommandoDefense" Difficulty="HARD BRUTAL"/>
+		<States State="MOKGroundEngineerDefense" Difficulty="HARD BRUTAL"/>
+		<States State="MOKAirEngineerDefense" Difficulty="HARD BRUTAL"/>
+		<States State="MOKGroundCommandoDefense" Difficulty="HARD BRUTAL"/>
+		<States State="MOKAirCommandoDefense" Difficulty="HARD BRUTAL"/>
 
 		<States State="ExpansionEscort" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="MOKDefensiveGarrisonEpicUnit" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MarkedOfKaneAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MarkedOfKaneAntiGarrison_EASY" Difficulty="EASY"/>
-		<States State="MarkedOfKaneCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MarkedOfKaneSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MarkedOfKaneCommando" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MarkedOfKaneExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MarkedOfKaneIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MarkedOfKaneHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKAntiGarrison_EASY" Difficulty="EASY"/>
+		<States State="MOKCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKCommando" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="MOKIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="MOKHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
 
-		<States State="MarkedOfKaneBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MarkedOfKaneOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MarkedOfKaneDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="MOKInfantryDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKVehicleDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKAircraftDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="MarkedOfKaneUnitPreferencesEasyEarly" Difficulty="EASY"/>
-		<States State="MarkedOfKaneUnitPreferencesEasyMid" Difficulty="EASY"/>
-		<States State="MarkedOfKaneUnitPreferencesEasyLate" Difficulty="EASY"/>
+		<States State="MOKUnitPreferencesEasyEarly" Difficulty="EASY"/>
+		<States State="MOKUnitPreferencesEasyMid" Difficulty="EASY"/>
+		<States State="MOKUnitPreferencesEasyLate" Difficulty="EASY"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="DefensiveEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>

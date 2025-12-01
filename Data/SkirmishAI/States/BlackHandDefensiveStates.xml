@@ -4,7 +4,7 @@
 	<Includes></Includes>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandResourceDefense"
+		  id="BHResourceDefense"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<EnemyNearbyHeuristic Distance="1000.0" EnemyNearby="true" AttackerKindOf="SUPPLY_GATHERING_CENTER"/>
@@ -17,7 +17,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandConyardDefense"
+		  id="BHConyardDefense"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<EnemyNearbyHeuristic Distance="1000.0" EnemyNearby="true" AttackerKindOf="CONSTRUCTION_YARD"/>
@@ -30,7 +30,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandSuperweaponDefense"
+		  id="BHSuperweaponDefense"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<ConstantHeuristic Weight="1.0"/>
@@ -42,7 +42,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandCounterattack"
+		  id="BHCounterattack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
@@ -57,7 +57,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-	  id="BlackHandFinalAttack"
+	  id="BHFinalAttack"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
@@ -69,7 +69,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-	  id="BlackHandDefensiveAirHarassmentAntiTurtle"
+	  id="BHDefensiveAirHarassmentAntiTurtle"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<ConstantHeuristic Weight="0.75"/>
@@ -82,7 +82,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandDefensiveSiege"
+		  id="BHDefensiveSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="240s" EndTime="-1s"/>
@@ -99,7 +99,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-	  id="BlackHandDefensiveArtilleryBombing"
+	  id="BHDefensiveArtilleryBombing"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<LateGameHeuristic/>
@@ -113,7 +113,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandDefensiveExpansion"
+		  id="BHDefensiveExpansion"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<IntervalHeuristic IntervalTime="130s" ActiveTime="30s"/>
@@ -127,7 +127,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandDefensiveGarrisonEpicUnit"
+		  id="BHDefensiveGarrisonEpicUnit"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<ConstantHeuristic Weight="1.5" />
