@@ -5,7 +5,7 @@
 	</Includes>
 
 	<SkirmishOpeningMove
-	id="NODOptimalEasy"
+	id="NODEasy"
 	Side="NOD">
 		<Order Time="0s" Build="NODPowerPlant" />
 		<Order Time="5s" Build="NODHandOfNOD"/>

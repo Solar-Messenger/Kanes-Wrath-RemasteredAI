@@ -5,30 +5,6 @@
   </Includes>
 
 	<SkirmishOpeningMove
-	id="ZOCOMOffensiveEasy"
-	Side="ZOCOM">
-		<Order Time="0s" Build="ZOCOMPowerPlant"/>
-		<Order Time="5s" Build="ZOCOMBarracks"/>
-		<Order Build="ZOCOMEngineer"/>
-		<Order Build="ZOCOMEngineer"/>
-		<Order Build="ZOCOMRifleSoldierSquad"/>
-		<Order Build="ZOCOMRifleSoldierSquad"/>
-		<Order Build="ZOCOMRifleSoldierSquad"/>
-		<Order Time="10s" Build="ZOCOMRefinery"/>
-		<Order Time="40s" Build="ZOCOMWarfactory"/>
-		<Order Time="60s" Build="ZOCOMRefinery"/>
-		<Order Build="ZOCOMHarvester"/>
-		<Order Build="ZOCOMAPC"/>
-		<Order Build="ZOCOMAPC"/>
-		<Order Build="ZOCOMAPC"/>
-		<Order Build="ZOCOMHarvester"/>
-		<Order Build="ZOCOMHarvester"/>
-		<Order Build="ZOCOMHarvester"/>
-		<Order Time="90s" Build="ZOCOMPowerPlant"/>
-		<Order Time="95s" Build="ZOCOMPowerPlant"/>
-	</SkirmishOpeningMove>
-
-	<SkirmishOpeningMove
     id="ZOCOMOffensiveStandard"
     Side="ZOCOM">
 		<Order Time="0s" Build="ZOCOMPowerPlant"/>

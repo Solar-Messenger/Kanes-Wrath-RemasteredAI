@@ -5,30 +5,6 @@
   </Includes>
 
 	<SkirmishOpeningMove
-	id="MOKDefensiveEasy"
-	Side="MarkedOfKane">
-		<Order Time="0s" Build="MarkedOfKanePowerPlant" />
-		<Order Time="5s" Build="MarkedOfKaneHandOfNOD"/>
-		<Order Build="MarkedOfKaneSaboteur" />
-		<Order Build="MarkedOfKaneSaboteur" />
-		<Order Build="MOKCyborgInfantrySquad" />
-		<Order Build="MOKCyborgInfantrySquad" />
-		<Order Build="MOKCyborgInfantrySquad" />
-		<Order Time="10s" Build="MarkedOfKaneRefinery" />
-		<Order Time="40s" Build="MarkedOfKaneDropZone" />
-		<Order Build="MarkedOfKaneHarvester" />
-		<Order Build="MarkedOfKaneScorpionBuggy" />
-		<Order Build="MarkedOfKaneScorpionBuggy" />
-		<Order Build="MarkedOfKaneScorpionBuggy" />
-		<Order Build="MarkedOfKaneHarvester" />
-		<Order Build="MarkedOfKaneHarvester" />
-		<Order Build="MarkedOfKaneHarvester" />
-		<Order Time="60s" Build="MarkedOfKaneRefinery" />
-		<Order Time="90s" Build="MarkedOfKanePowerPlant" />
-		<Order Time="95s" Build="MarkedOfKanePowerPlant" />
-	</SkirmishOpeningMove>
-
-	<SkirmishOpeningMove
 		id="MOKDefensiveStandard"
 		Side="MarkedOfKane" >
 		<Order Time="0s" Build="MarkedOfKanePowerPlant"/>

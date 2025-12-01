@@ -95,7 +95,7 @@
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 
-		<OpeningMove Name="STOptimalEasy" Weight="100%" Difficulty="EASY"/>
+		<OpeningMove Name="STEasy" Weight="100%" Difficulty="EASY"/>
 
 		<OpeningMove Name="STOptimalHardBrutal" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 

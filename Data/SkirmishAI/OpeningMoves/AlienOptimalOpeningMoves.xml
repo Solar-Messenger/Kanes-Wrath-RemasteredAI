@@ -5,7 +5,7 @@
   </Includes>
 
 	<SkirmishOpeningMove
-    id="AlienOptimalEasy"
+    id="AlienEasy"
     Side="Alien">
 		<Order Time="0s" Build="AlienPowerProjector" />
 		<Order Time="5s" Build="AlienPortal" />
@@ -17,10 +17,14 @@
 		<Order Time="10s" Build="AlienTiberiumTower" />
 		<Order Time="40s" Build="AlienGateway" />
 		<Order Time="60s" Build="AlienTiberiumTower" />
+		<Order Build="AlienHarvester" />
 		<Order Build="AlienGunwalker" />
 		<Order Build="AlienGunwalker" />
 		<Order Build="AlienGunwalker" />
-		<Order Build="AlienGunwalker" />
+		<Order Build="AlienHarvester" />
+		<Order Build="AlienHarvester" />
+		<Order Build="AlienHarvester" />
+		<Order Build="AlienHarvester" />
 		<Order Time="90s" Build="AlienPowerProjector" />
 		<Order Time="95s" Build="AlienPowerProjector" />
     </SkirmishOpeningMove>

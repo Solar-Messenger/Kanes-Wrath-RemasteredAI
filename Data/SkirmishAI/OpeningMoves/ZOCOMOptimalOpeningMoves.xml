@@ -5,7 +5,7 @@
   </Includes>
 
 	<SkirmishOpeningMove
-	id="ZOCOMOptimalEasy"
+	id="ZOCOMEasy"
 	Side="ZOCOM">
 		<Order Time="0s" Build="ZOCOMPowerPlant"/>
 		<Order Time="5s" Build="ZOCOMBarracks"/>

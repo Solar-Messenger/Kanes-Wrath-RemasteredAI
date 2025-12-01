@@ -5,7 +5,7 @@
   </Includes>
 
 	<SkirmishOpeningMove
-	id="MOKOptimalEasy"
+	id="MOKEasy"
 	Side="MarkedOfKane">
 		<Order Time="0s" Build="MarkedOfKanePowerPlant" />
 		<Order Time="5s" Build="MarkedOfKaneHandOfNOD"/>

@@ -5,30 +5,6 @@
   </Includes>
 
 	<SkirmishOpeningMove
-	id="GDIOffensiveEasy"
-	Side="GDI">
-		<Order Time="0s" Build="GDIPowerPlant"/>
-		<Order Time="5s" Build="GDIBarracks"/>
-		<Order Build="GDIEngineer"/>
-		<Order Build="GDIEngineer"/>
-		<Order Build="GDIRifleSoldierSquad"/>
-		<Order Build="GDIRifleSoldierSquad"/>
-		<Order Build="GDIRifleSoldierSquad"/>
-		<Order Time="10s" Build="GDIRefinery"/>
-		<Order Time="40s" Build="GDIWarfactory"/>
-		<Order Time="60s" Build="GDIRefinery"/>
-		<Order Build="GDIHarvester"/>
-		<Order Build="GDIAPC"/>
-		<Order Build="GDIAPC"/>
-		<Order Build="GDIAPC"/>
-		<Order Build="GDIHarvester"/>
-		<Order Build="GDIHarvester"/>
-		<Order Build="GDIHarvester"/>
-		<Order Time="90s" Build="GDIPowerPlant"/>
-		<Order Time="95s" Build="GDIPowerPlant"/>
-	</SkirmishOpeningMove>
-
-	<SkirmishOpeningMove
     id="GDIOffensiveStandard"
     Side="GDI">
 		<Order Time="0s" Build="GDIPowerPlant"/>

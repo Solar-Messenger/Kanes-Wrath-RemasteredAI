@@ -5,7 +5,7 @@
 	</Includes>
 
 	<SkirmishOpeningMove
-	id="BlackHandOptimalEasy"
+	id="BlackHandEasy"
 	Side="BlackHand">
 		<Order Time="0s" Build="BlackHandPowerPlant"/>
 		<Order Time="5s" Build="BlackHandHandOfNOD"/>

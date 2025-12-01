@@ -5,7 +5,7 @@
   </Includes>
 
 	<SkirmishOpeningMove
-	id="STOptimalEasy"
+	id="STEasy"
 	Side="SteelTalons">
 		<Order Time="0s" Build="SteelTalonsPowerPlant"/>
 		<Order Time="5s" Build="SteelTalonsBarracks"/>
@@ -18,7 +18,9 @@
 		<Order Time="40s" Build="SteelTalonsWarfactory"/>
 		<Order Time="60s" Build="SteelTalonsRefinery"/>
 		<Order Build="SteelTalonsHeavyHarvester"/>
-
+		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Build="SteelTalonsHeavyHarvester"/>
 		<Order Time="90s" Build="SteelTalonsPowerPlant"/>
 		<Order Time="95s" Build="SteelTalonsPowerPlant"/>
 	</SkirmishOpeningMove>

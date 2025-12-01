@@ -88,7 +88,7 @@
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 
-		<OpeningMove Name="MOKOffensiveEasy" Weight="100%" Difficulty="EASY"/>
+		<OpeningMove Name="MOKEasy" Weight="100%" Difficulty="EASY"/>
 
 		<OpeningMove Name="MOKOffensiveStandard" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
 		<OpeningMove Name="MOKOffensiveBikeBuggyRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>

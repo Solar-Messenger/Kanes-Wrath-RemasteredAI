@@ -5,7 +5,7 @@
   </Includes>
 
 	<SkirmishOpeningMove
-	id="GDIOptimalEasy"
+	id="GDIEasy"
 	Side="GDI">
 		<Order Time="0s" Build="GDIPowerPlant"/>
 		<Order Time="5s" Build="GDIBarracks"/>
