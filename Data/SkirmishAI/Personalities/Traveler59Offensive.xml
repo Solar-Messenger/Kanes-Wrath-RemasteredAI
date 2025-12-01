@@ -71,6 +71,9 @@
 		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
 
+		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
@@ -102,21 +105,21 @@
 		<States State="T59OpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="T59OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-		<States State="T59OffensiveDirectAttack1" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="T59OffensiveDirectAttack2" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="T59OffensiveEconomyAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="T59OffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="T59OffensiveEarlyGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59OffensiveLateGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59OffensiveRavagerEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="T59OffensiveAirEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="T59OffensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="T59OffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="Offensive_EASY" Difficulty="EASY"/>
-
-		<States State="T59OffensiveAirHarassment" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		
 		<States State="T59OffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="T59Mothership" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="T59OffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="T59OffensiveEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="T59EngineerDefense" Difficulty="HARD BRUTAL"/>
-		<States State="T59CommandoDefense" Difficulty="HARD BRUTAL"/>
+		<States State="T59EngineerDefense" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59CommandoDefense" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="T59OffensiveGarrisonEpicUnit" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="T59AntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
