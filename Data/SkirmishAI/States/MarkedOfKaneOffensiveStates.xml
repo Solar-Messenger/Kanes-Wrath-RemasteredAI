@@ -102,7 +102,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="MarkedOfKaneOffensiveEngineer"
+		  id="MOKOffensiveEngineer"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
