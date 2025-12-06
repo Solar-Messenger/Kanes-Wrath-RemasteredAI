@@ -98,8 +98,8 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="3" MaxUnits="3" UnitName="Reaper17DevourerTank"/>
+			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="Reaper17DevourerTank"/>
 			</TeamTemplate>
 			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="UNIQUE_UNIT SIEGE_WEAPON RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
