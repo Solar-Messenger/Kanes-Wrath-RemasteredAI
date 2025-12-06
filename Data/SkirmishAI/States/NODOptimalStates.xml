@@ -160,7 +160,7 @@
 		<TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
 		<Tactic Tactic="FlankAttack" TargetType="AssaultAirstrike">
-			<TeamTemplate MinUnits="4" MaxUnits="8" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT PRODUCED_AT_HELIPAD" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
+			<TeamTemplate MinUnits="4" MaxUnits="8" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT PRODUCED_AT_HELIPAD" ExcludeKindOf="INFANTRY RELOAD_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -208,42 +208,5 @@
 		<UnitModifierByName UnitName="NODBlackHandSquad" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
 		<UnitModifierByName UnitName="NODMilitantRocketSquad" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
 	</AIStrategicStateDefinition>
-
-	<AIBudgetStateDefinition
-		  id="NODOptimalTechByTimeBudget">
-		<Heuristic>
-			<ConstantHeuristic Weight="0.8"/>
-			<OpeningMoveHeuristic Complete="true"/>
-			<TimerHeuristic StartTime="90s" EndTime="-1s"/>
-			<IntervalHeuristic IntervalTime="60s" ActiveTime="20s"/>
-			<IntervalHeuristic IntervalTime="5s" ActiveTime="5s"/>
-		</Heuristic>
-		<Budget>
-			<AccountShare Account="INVESTMENT" Percent="0%"/>
-			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
-			<AccountShare Account="PRODUCTION" Percent="0%"/>
-			<AccountShare Account="DEFENSE" Percent="0%"/>
-			<AccountShare Account="TECHNOLOGY" Percent="90%"/>
-			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
-		</Budget>
-	</AIBudgetStateDefinition>
-
-	<AIBudgetStateDefinition
-	  id="NODOptimalTechByTimeBudget_EASY">
-		<Heuristic>
-			<ConstantHeuristic Weight="0.8"/>
-			<OpeningMoveHeuristic Complete="true"/>
-			<IntervalHeuristic IntervalTime="610s" ActiveTime="20s"/>
-			<IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
-		</Heuristic>
-		<Budget>
-			<AccountShare Account="INVESTMENT" Percent="0%"/>
-			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
-			<AccountShare Account="PRODUCTION" Percent="0%"/>
-			<AccountShare Account="DEFENSE" Percent="0%"/>
-			<AccountShare Account="TECHNOLOGY" Percent="90%"/>
-			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
-		</Budget>
-	</AIBudgetStateDefinition>
 
 </AssetDeclaration>
