@@ -38,11 +38,11 @@
 
 		<Side>MarkedOfKane</Side>
 
-		<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />
+		<!--<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />-->
 
 		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-		<ResourceMultiplierCheat Percentage="150%" Difficulty="EASY"/>
+		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="MEDIUM"/>
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="300%" Difficulty="BRUTAL"/>
@@ -98,8 +98,8 @@
 		<States State="MOKOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="MOKOptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MOKOptimalEarlyMidBikeEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MOKOptimalLateStealthTankEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKOptimalEarlyMidBikeEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="MOKOptimalLateStealthTankEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="MOKOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKOptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="MOKOptimalBaseCrack" Difficulty="BRUTAL"/>
@@ -114,7 +114,7 @@
 		<States State="MOKGroundCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKAirCommandoDefense" Difficulty="HARD BRUTAL"/>
 
-		<States State="MOKOptimalGarrisonEpicUnit" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKOptimalGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="Garrison_EASY" Difficulty="EASY"/>
 		<States State="MOKAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -143,22 +143,29 @@
 		<States State="MOKUnitPreferencesEasyLate" Difficulty="EASY"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OptimalEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OptimalMidGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OptimalLateGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="RushBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OptimalEarlyGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OptimalMidGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OptimalLateGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OptimalBudget_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="FullInvestmentBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="FullInvestmentBudget_EASY_WINNING" Difficulty="EASY"/>
+		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="TechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="MarkedOfKaneOptimalTechByTimeBudget_EASY" Difficulty="EASY"/>
+		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
 		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		
 		<BudgetStates State="SupportPowerbyTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerbyMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="DefenseByTimeDistanceBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<UnitOverride UnitName="MarkedOfKaneMetaUnit" Percentage="80%"/>
+		<UnitOverride UnitName="MarkedOfKaneMetaUnit" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>
+
+		<UnitOverride UnitName="MarkedOfKaneCommando" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="MarkedOfKaneVertigo" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="MarkedOfKaneMetaUnit" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="MarkedOfKaneTempleOfNOD" Percentage="-1%" Difficulty="EASY MEDIUM"/>
 
 	</AIPersonalityDefinition>
 </AssetDeclaration>

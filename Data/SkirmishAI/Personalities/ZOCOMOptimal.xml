@@ -38,11 +38,11 @@
 
 		<Side>ZOCOM</Side>
 
-		<BuildDelayRange id="BuildDelayEasy" MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />
+		<!--<BuildDelayRange id="BuildDelayEasy" MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />-->
 
 		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-		<ResourceMultiplierCheat Percentage="150%" Difficulty="EASY"/>
+		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="MEDIUM"/>
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="300%" Difficulty="BRUTAL"/>
@@ -103,8 +103,8 @@
 		<States State="ZOCOMOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="ZOCOMOptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMOptimalGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMOptimalAirEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="ZOCOMOptimalGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="ZOCOMOptimalAirEconomyAttack" Difficulty="BRUTAL"/>
 		<States State="ZOCOMOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOptimalBaseCrack" Difficulty="BRUTAL"/>
@@ -119,7 +119,7 @@
 		<States State="ZOCOMGroundCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMAirCommandoDefense" Difficulty="HARD BRUTAL"/>
 
-		<States State="ZOCOMOptimalGarrisonEpicUnit" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="ZOCOMOptimalGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="Garrison_EASY" Difficulty="EASY"/>
 		<States State="ZOCOMAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -148,22 +148,29 @@
 		<States State="ZOCOMUnitPreferencesEasyLate" Difficulty="EASY"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OptimalEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OptimalMidGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OptimalLateGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="RushBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OptimalEarlyGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OptimalMidGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OptimalLateGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OptimalBudget_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="FullInvestmentBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="FullInvestmentBudget_EASY_WINNING" Difficulty="EASY"/>
+		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="TechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="ZOCOMOptimalTechByTimeBudget_EASY" Difficulty="EASY"/>
+		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
 		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		
 		<BudgetStates State="SupportPowerbyTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="DefenseByTimeDistanceBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<UnitOverride UnitName="ZOCOMMARV" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>
+
+		<UnitOverride UnitName="ZOCOMCommando" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="ZOCOMFirehawk" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="ZOCOMMARV" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="ZOCOMIonCannonControl" Percentage="-1%" Difficulty="EASY MEDIUM"/>
 
 	</AIPersonalityDefinition>
 </AssetDeclaration>
