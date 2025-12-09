@@ -5,7 +5,7 @@
   </Includes>
 
 	<SkirmishOpeningMove
-	id="MOKEasy"
+	id="MOK_EASY"
 	Side="MarkedOfKane">
 		<Order Time="0s" Build="MarkedOfKanePowerPlant" />
 		<Order Time="5s" Build="MarkedOfKaneHandOfNOD"/>
@@ -29,7 +29,7 @@
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
-	id="MOKOptimalBalancedHardBrutal"
+	id="MOKOptimalStandard"
 	Side="MarkedOfKane">
 		<Order Time="0s" Build="MarkedOfKanePowerPlant"/>
 		<Order Time="5s" Build="MarkedOfKaneHandOfNOD"/>

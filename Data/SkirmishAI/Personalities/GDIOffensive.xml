@@ -92,7 +92,7 @@
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 
-		<OpeningMove Name="GDIEasy" Weight="100%" Difficulty="EASY"/>
+		<OpeningMove Name="GDI_EASY" Weight="100%" Difficulty="EASY"/>
 
 		<OpeningMove Name="GDIOffensiveStandard" Weight="55%" Difficulty="MEDIUM HARD BRUTAL"/>
 		<OpeningMove Name="GDIOffensiveOrcaRush" Weight="15%" Difficulty="MEDIUM HARD BRUTAL"/>

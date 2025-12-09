@@ -94,9 +94,9 @@
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 
-		<OpeningMove Name="AlienEasy" Weight="100%" Difficulty="EASY"/>
+		<OpeningMove Name="Alien_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="AlienOptimalHardBrutal" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="AlienOptimalStandard" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="AlienOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="AlienOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL" />

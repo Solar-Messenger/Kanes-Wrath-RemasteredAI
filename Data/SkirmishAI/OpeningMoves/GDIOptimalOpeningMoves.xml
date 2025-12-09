@@ -5,7 +5,7 @@
   </Includes>
 
 	<SkirmishOpeningMove
-	id="GDIEasy"
+	id="GDI_EASY"
 	Side="GDI">
 		<Order Time="0s" Build="GDIPowerPlant"/>
 		<Order Time="5s" Build="GDIBarracks"/>
@@ -29,7 +29,7 @@
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
-	id="GDIOptimalHardBrutal"
+	id="GDIOptimalStandard"
 	Side="GDI">
 		<!--<Order Time="0s" Account="INVESTMENT" Deposit="99999"/>
 		<Order Time="0s" Account="SPECIAL_OPERATIONS" Deposit="99999"/>

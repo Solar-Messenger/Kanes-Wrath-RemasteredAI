@@ -99,9 +99,9 @@
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 
-		<OpeningMove Name="BlackHandEasy" Weight="100%" Difficulty="EASY"/>
+		<OpeningMove Name="BH_Easy" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="BlackHandDefensiveStandard" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="BHDefensiveStandard" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BHOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
@@ -119,7 +119,7 @@
 		<States State="BHEngineerDefense" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BHCommandoDefense" Difficulty="HARD BRUTAL"/>
 
-		<States State="ExpansionEscort" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		
 		<States State="BHDefensiveGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>

@@ -124,7 +124,7 @@
 		<States State="STAirCommandoDefense" Difficulty="HARD BRUTAL"/>
 		<States State="STMRT" Difficulty="HARD BRUTAL"/>
 		
-		<States State="ExpansionEscort" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="STDefensiveGarrisonEpicUnit" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>

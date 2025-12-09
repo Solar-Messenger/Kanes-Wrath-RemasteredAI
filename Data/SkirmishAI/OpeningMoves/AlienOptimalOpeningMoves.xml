@@ -5,7 +5,7 @@
   </Includes>
 
 	<SkirmishOpeningMove
-    id="AlienEasy"
+    id="Alien_EASY"
     Side="Alien">
 		<Order Time="0s" Build="AlienPowerProjector" />
 		<Order Time="5s" Build="AlienPortal" />
@@ -30,7 +30,7 @@
     </SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
-    id="AlienOptimalHardBrutal"
+    id="AlienOptimalStandard"
     Side="Alien">
 		<Order Time="0s" Build="AlienPowerProjector" />
 		<Order Time="5s" Build="AlienPortal" />

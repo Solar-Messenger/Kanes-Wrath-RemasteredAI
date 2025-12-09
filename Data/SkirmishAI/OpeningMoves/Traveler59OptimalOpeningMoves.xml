@@ -5,7 +5,7 @@
   </Includes>
 
 	<SkirmishOpeningMove
-    id="T59Easy"
+    id="T59_EASY"
     Side="Traveler59">
 		<Order Time="0s" Build="Traveler59PowerProjector" />
 		<Order Time="5s" Build="Traveler59Portal" />
@@ -29,7 +29,7 @@
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
-    id="Traveler59OptimalHardBrutal"
+    id="T59OptimalStandard"
     Side="Traveler59">
 		<Order Time="0s" Build="Traveler59PowerProjector" />
 		<Order Time="5s" Build="Traveler59Portal" />

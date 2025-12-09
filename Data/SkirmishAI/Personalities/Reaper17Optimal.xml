@@ -93,15 +93,8 @@
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 
-		<OpeningMove Name="Reaper17_EASY" Weight="100%" Difficulty="EASY"/>
-
-		<OpeningMove Name="Reaper17Standard" Weight="15%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="Reaper17Standard2" Weight="15%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="Reaper17StandardCrane" Weight="15%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="Reaper17MegaUnitRush" Weight="5%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="Reaper17Opening" Weight="50%" Difficulty="MEDIUM HARD"/>
-
-		<OpeningMove Name="Reaper17BrutalCrane" Weight="100%" Difficulty="BRUTAL"/>
+		<OpeningMove Name="R17_EASY" Weight="100%" Difficulty="EASY"/>
+		<OpeningMove Name="R17OptimalStandard" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="R17OpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="R17OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>

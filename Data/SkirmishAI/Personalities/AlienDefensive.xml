@@ -120,7 +120,7 @@
 		<States State="AlienEngineerDefense" Difficulty="HARD BRUTAL"/>
 		<States State="AlienCommandoDefense" Difficulty="HARD BRUTAL"/>
 
-		<States State="ExpansionEscort" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="AlienDefensiveGarrisonEpicUnit" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>

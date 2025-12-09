@@ -5,7 +5,7 @@
 	</Includes>
 
 	<SkirmishOpeningMove
-	id="BlackHandEasy"
+	id="BH_EASY"
 	Side="BlackHand">
 		<Order Time="0s" Build="BlackHandPowerPlant"/>
 		<Order Time="5s" Build="BlackHandHandOfNOD"/>
@@ -29,7 +29,7 @@
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
-	id="BlackHandOptimalBalancedHardBrutal"
+	id="BHOptimalStandard"
 	Side="BlackHand">
 		<Order Time="0s" Build="BlackHandPowerPlant"/>
 		<Order Time="5s" Build="BlackHandHandOfNOD"/>

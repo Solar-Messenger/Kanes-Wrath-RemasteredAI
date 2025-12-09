@@ -99,7 +99,7 @@
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 
-		<OpeningMove Name="Traveler59_EASY" Weight="100%" Difficulty="EASY"/>
+		<OpeningMove Name="T59_EASY" Weight="100%" Difficulty="EASY"/>
 
 		<OpeningMove Name="Traveler59StandardCrane" Weight="90%" Difficulty="MEDIUM HARD BRUTAL"/>
 		<OpeningMove Name="Traveler59SuperweaponRush" Weight="10%" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -120,10 +120,11 @@
 		<States State="T59CaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="T59Superweapon" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="T59Expansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="T59Isolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="T59HuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
+		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="T59BaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="T59OffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>

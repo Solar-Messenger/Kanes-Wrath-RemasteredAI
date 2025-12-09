@@ -97,7 +97,7 @@
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 
-		<OpeningMove Name="MOKEasy" Weight="100%" Difficulty="EASY"/>
+		<OpeningMove Name="MOK_EASY" Weight="100%" Difficulty="EASY"/>
 
 		<OpeningMove Name="MOKDefensiveStandard" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
@@ -119,7 +119,7 @@
 		<States State="MOKGroundCommandoDefense" Difficulty="HARD BRUTAL"/>
 		<States State="MOKAirCommandoDefense" Difficulty="HARD BRUTAL"/>
 
-		<States State="ExpansionEscort" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="MOKDefensiveGarrisonEpicUnit" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>

@@ -93,7 +93,7 @@
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 
-		<OpeningMove Name="ZOCOMEasy" Weight="100%" Difficulty="EASY"/>
+		<OpeningMove Name="ZOCOM_EASY" Weight="100%" Difficulty="EASY"/>
 
 		<OpeningMove Name="ZOCOMOffensiveStandard" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
 		<OpeningMove Name="ZOCOMOffensiveOrcaRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>

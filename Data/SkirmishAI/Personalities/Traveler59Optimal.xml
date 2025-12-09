@@ -94,9 +94,9 @@
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 
-		<OpeningMove Name="T59Easy" Weight="100%" Difficulty="EASY"/>
+		<OpeningMove Name="T59_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="Traveler59OptimalHardBrutal" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="T59OptimalStandard" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="T59OpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="T59OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL" />

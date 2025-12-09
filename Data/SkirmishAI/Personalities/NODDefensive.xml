@@ -98,7 +98,7 @@
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 
-		<OpeningMove Name="NODEasy" Weight="100%" Difficulty="EASY"/>
+		<OpeningMove Name="NOD_EASY" Weight="100%" Difficulty="EASY"/>
 
 		<OpeningMove Name="NODDefensiveStandard" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
@@ -120,7 +120,7 @@
 		<States State="NODGroundCommandoDefense" Difficulty="HARD BRUTAL"/>
 		<States State="NODAirCommandoDefense" Difficulty="HARD BRUTAL"/>
 
-		<States State="ExpansionEscort" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="NODDefensiveGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>

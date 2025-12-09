@@ -90,12 +90,12 @@
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 
-		<OpeningMove Name="BlackHandEasy" Weight="100%" Difficulty="EASY"/>
+		<OpeningMove Name="BH_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="BlackHandOffensiveStandard" Weight="55%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="BlackHandOffensiveBikeBuggyRush" Weight="15%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="BlackHandOffensiveScorpionRush" Weight="15%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="BlackHandOffensiveFlameTankRush" Weight="15%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="BHOffensiveStandard" Weight="55%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="BHOffensiveBikeBuggyRush" Weight="15%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="BHOffensiveScorpionRush" Weight="15%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="BHOffensiveFlameTankRush" Weight="15%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BHOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>

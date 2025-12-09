@@ -5,7 +5,7 @@
 	</Includes>
 
 	<SkirmishOpeningMove
-		id="BlackHandOffensiveStandard"
+		id="BHOffensiveStandard"
 		Side="BlackHand">
 		<Order Time="0s" Build="BlackHandPowerPlant"/>
 		<Order Time="5s" Build="BlackHandHandOfNOD" />
@@ -37,7 +37,7 @@
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
-	 id="BlackHandOffensiveBikeBuggyRush"
+	 id="BHOffensiveBikeBuggyRush"
 	 Side="BlackHand">
 		<Order Time="0s" Build="BlackHandPowerPlant"/>
 		<Order Time="5s" Build="BlackHandHandOfNOD" />
@@ -86,7 +86,7 @@
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
-	  id="BlackHandOffensiveFlameTankRush"
+	  id="BHOffensiveFlameTankRush"
 	  Side="BlackHand">
 		<Order Time="0s" Build="BlackHandPowerPlant" />
 		<Order Time="5s" Build="BlackHandHandOfNOD" />
@@ -128,7 +128,7 @@
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
-	  id="BlackHandOffensiveScorpionRush"
+	  id="BHOffensiveScorpionRush"
 	  Side="BlackHand">
 		<Order Time="0s" Build="BlackHandPowerPlant"/>
 		<Order Time="5s" Build="BlackHandHandOfNOD" />
