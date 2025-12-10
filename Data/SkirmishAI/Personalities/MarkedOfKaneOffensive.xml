@@ -38,11 +38,11 @@
 
 		<Side>MarkedOfKane</Side>
 
-		<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />
+		<!--<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />-->
 
 		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-		<ResourceMultiplierCheat Percentage="150%" Difficulty="EASY"/>
+		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="MEDIUM"/>
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="300%" Difficulty="BRUTAL"/>
@@ -99,31 +99,33 @@
 		<States State="MOKOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="MOKOffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MOKOffensiveEarlyMidBikeEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKOffensiveEarlyMidBikeEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="MOKOffensiveLateStealthTankEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="MOKOffensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MOKOffensiveSiege" Difficulty="HARD BRUTAL"/>
+		<States State="MOKOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="MOKOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MOKOffensiveBombingRuns" Difficulty="HARD BRUTAL"/>
-		<States State="MOKOffensiveEngineer" Difficulty="HARD BRUTAL"/>
+		<States State="MOKOffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKOffensiveEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MOKEngineerDefense" Difficulty="HARD BRUTAL"/>
-		<States State="MOKCommandoDefense" Difficulty="HARD BRUTAL"/>
+		<States State="MOKGroundEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="MOKAirEngineerDefense" Difficulty="HARD BRUTAL"/>
+		<States State="MOKGroundCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="MOKAirCommandoDefense" Difficulty="HARD BRUTAL"/>
 
 		<States State="MOKOffensiveGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
 		<States State="MOKAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="MOKAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="MOKCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="MOKSuperweapon" Difficulty="HARD BRUTAL"/>
-		<States State="MOKCommando" Difficulty="BRUTAL"/>
-		<States State="MOKExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKCommando" Difficulty="HARD BRUTAL"/>
+		<States State="MOKExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
+		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="MOKBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="MOKOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -139,20 +141,26 @@
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OffensiveEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OffensiveMidGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OffensiveLateGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OffensiveEarlyGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OffensiveMidGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OffensiveLateGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OffensiveBudget_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="FullInvestmentBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="FullInvestmentBudget_EASY_WINNING" Difficulty="EASY"/>
+		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="TechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="MarkedOfKaneOffensiveTechByTimeBudget_EASY" Difficulty="EASY"/>
+		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
 		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerbyTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerbyMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<UnitOverride UnitName="MarkedOfKaneMetaUnit" Percentage="80%"/>
+		<UnitOverride UnitName="MarkedOfKaneMetaUnit" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>
+
+		<UnitOverride UnitName="MarkedOfKaneCommando" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="MarkedOfKaneVertigo" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="MarkedOfKaneMetaUnit" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="MarkedOfKaneTempleOfNOD" Percentage="-1%" Difficulty="EASY MEDIUM"/>
 
 	</AIPersonalityDefinition>
 </AssetDeclaration>

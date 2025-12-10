@@ -38,11 +38,11 @@
 
 		<Side>GDI</Side>
 
-		<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />
+		<!--<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />-->
 
 		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-		<ResourceMultiplierCheat Percentage="150%" Difficulty="EASY"/>
+		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="MEDIUM"/>
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="300%" Difficulty="BRUTAL"/>
@@ -103,20 +103,20 @@
 		<States State="GDIOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="GDIOffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GDIOffensiveGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="GDIOffensiveAirEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="GDIOffensiveGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="GDIOffensiveAirEconomyAttack" Difficulty="BRUTAL"/>
 		<States State="GDIOffensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GDIOffensiveSiege" Difficulty="HARD BRUTAL"/>
+		<States State="GDIOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIOffensiveSpotters" Difficulty="HARD BRUTAL"/>
 
 		<States State="GDIOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GDIOffensiveBombingRuns" Difficulty="HARD BRUTAL"/>
-		<States State="GDIOffensiveEngineer" Difficulty="HARD BRUTAL"/>
+		<States State="GDIOffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="GDIOffensiveEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GDIGroundEngineerDefense" Difficulty="HARD BRUTAL"/>
+		<States State="GDIGroundEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIAirEngineerDefense" Difficulty="HARD BRUTAL"/>
-		<States State="GDIGroundCommandoDefense" Difficulty="HARD BRUTAL"/>
+		<States State="GDIGroundCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIAirCommandoDefense" Difficulty="HARD BRUTAL"/>
 
 		<States State="GDIOffensiveGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
@@ -124,13 +124,13 @@
 		<States State="GDIAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="GDICaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDISuperweapon" Difficulty="HARD BRUTAL"/>
-		<States State="GDICommando" Difficulty="BRUTAL"/>
-		<States State="GDIExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="GDICommando" Difficulty="HARD BRUTAL"/>
+		<States State="GDIExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
+		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="GDIBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -145,21 +145,26 @@
 		<States State="GDIUnitPreferencesEasyLate" Difficulty="EASY"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="RushBudget" Difficulty="HARD BRUTAL"/>
-		<BudgetStates State="OffensiveEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OffensiveMidGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OffensiveLateGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OffensiveEarlyGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OffensiveMidGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OffensiveLateGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OffensiveLateGameBudget" Difficulty="EASY"/>
 
 		<BudgetStates State="FullInvestmentBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="FullInvestmentBudget_EASY_WINNING" Difficulty="EASY"/>
+		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="TechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="GDIOffensiveTechByTimeBudget_EASY" Difficulty="EASY"/>
+		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
 		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<UnitOverride UnitName="GDIMARV" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>
 
+		<UnitOverride UnitName="GDICommando" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="GDIFirehawk" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="GDIMARV" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="GDIIonCannonControl" Percentage="-1%" Difficulty="EASY MEDIUM"/>
 	</AIPersonalityDefinition>
 </AssetDeclaration>

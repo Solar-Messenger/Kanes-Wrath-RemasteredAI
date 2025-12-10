@@ -38,11 +38,11 @@
 
 		<Side>Reaper17</Side>
 
-		<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />
+		<!--<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />-->
 
 		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-		<ResourceMultiplierCheat Percentage="150%" Difficulty="EASY"/>
+		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="MEDIUM"/>
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="300%" Difficulty="BRUTAL"/>
@@ -107,26 +107,25 @@
 		<States State="R17OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="R17OffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="R17OffensiveEarlyGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="R17OffensiveLateGroundEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="R17OffensiveRavagerEconomyAttack" Difficulty="HARD BRUTAL"/>
-		<States State="R17OffensiveAirEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="R17OffensiveEarlyGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="R17OffensiveLateGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="R17OffensiveRavagerEconomyAttack" Difficulty="BRUTAL"/>
+		<States State="R17OffensiveAirEconomyAttack" Difficulty="BRUTAL"/>
 		<States State="R17OffensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="R17OffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="R17OffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="R17OffensiveEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="R17EngineerDefense" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="R17CommandoDefense" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17EngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17CommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="R17OffensiveGarrisonEpicUnit" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17OffensiveGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
 		<States State="R17AntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="R17AntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="R17CaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="R17Superweapon" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17Superweapon" Difficulty="HARD BRUTAL"/>
 		<States State="R17Expansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="R17BridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="R17Isolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="R17HuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -146,21 +145,24 @@
 		<States State="R17UnitPreferencesEasyLate" Difficulty="EASY"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="RushBudget" Difficulty="HARD BRUTAL"/>
-		<BudgetStates State="OffensiveEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OffensiveMidGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OffensiveLateGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OffensiveEarlyGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OffensiveMidGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OffensiveLateGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OffensiveBudget_EASY" Difficulty="EASY"/>
 
-		<BudgetStates State="FullInvestmentBudget" Difficulty="HARD BRUTAL"/>
-		<BudgetStates State="FullInvestmentBudget_EASY_WINNING" Difficulty="EASY"/>
+		<BudgetStates State="FullInvestmentBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="TechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="Reaper17OffensiveTechByTimeBudget_EASY" Difficulty="EASY"/>
+		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
 		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerbyTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<UnitOverride UnitName="Reaper17EradicatorHexapod" Percentage="80%"/>
+		<UnitOverride UnitName="Reaper17EradicatorHexapod" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>
 
+		<UnitOverride UnitName="Reaper17EradicatorHexapod" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="Reaper17RiftGenerator" Percentage="-1%" Difficulty="EASY MEDIUM"/>
 	</AIPersonalityDefinition>
 </AssetDeclaration>

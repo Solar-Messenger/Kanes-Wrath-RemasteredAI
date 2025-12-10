@@ -8,7 +8,7 @@
 	  PersonalityUIName="Personality:Optimal"
 	  SkirmishPersonality="true"
 		  SecondsTillTargetsCanExpire="15.0"
-		  ChanceForTargetToExpire="300"
+		  ChanceForTargetToExpire="100"
 		  MaxBuildingsToBeDefensiveTarget_Small="0"
 		  MaxBuildingsToBeDefensiveTarget_Med="0"
 		  ChanceForUnitsToUpgrade="999"

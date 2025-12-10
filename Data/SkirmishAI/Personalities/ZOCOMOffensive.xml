@@ -38,11 +38,11 @@
 
 		<Side>ZOCOM</Side>
 
-		<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />
+		<!--<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />-->
 
 		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-		<ResourceMultiplierCheat Percentage="150%" Difficulty="EASY"/>
+		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="MEDIUM"/>
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="300%" Difficulty="BRUTAL"/>
@@ -103,8 +103,8 @@
 		<States State="ZOCOMOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="ZOCOMOffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMOffensiveGroundEconomyAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMOffensiveAirEconomyAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="ZOCOMOffensiveGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="ZOCOMOffensiveAirEconomyAttack" Difficulty="BRUTAL"/>
 		<States State="ZOCOMOffensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 
@@ -113,24 +113,23 @@
 		<States State="ZOCOMOffensiveEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMGroundEngineerDefense" Difficulty="HARD BRUTAL"/>
+		<States State="ZOCOMGroundEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMAirEngineerDefense" Difficulty="HARD BRUTAL"/>
-		<States State="ZOCOMGroundCommandoDefense" Difficulty="HARD BRUTAL"/>
+		<States State="ZOCOMGroundCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMAirCommandoDefense" Difficulty="HARD BRUTAL"/>
 
-		<States State="ZOCOMOffensiveGarrisonEpicUnit" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="ZOCOMOffensiveGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
 		<States State="ZOCOMAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="ZOCOMCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMCommando" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="ZOCOMSuperweapon" Difficulty="HARD BRUTAL"/>
+		<States State="ZOCOMCommando" Difficulty="HARD BRUTAL"/>
+		<States State="ZOCOMExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
+		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="ZOCOMBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -145,22 +144,26 @@
 		<States State="ZOCOMUnitPreferencesEasyLate" Difficulty="EASY"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="RushBudget" Difficulty="HARD BRUTAL"/>
-		<BudgetStates State="OffensiveEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OffensiveMidGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OffensiveLateGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OffensiveEarlyGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OffensiveMidGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OffensiveLateGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OffensiveBudget_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="FullInvestmentBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="FullInvestmentBudget_EASY_WINNING" Difficulty="EASY"/>
+		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="TechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="ZOCOMOffensiveTechByTimeBudget_EASY" Difficulty="EASY"/>
+		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
 		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerbyTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="DefenseByTimeDistanceBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<UnitOverride UnitName="ZOCOMMARV" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>
 
+		<UnitOverride UnitName="ZOCOMCommando" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="ZOCOMFirehawk" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="ZOCOMMARV" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="ZOCOMIonCannonControl" Percentage="-1%" Difficulty="EASY MEDIUM"/>
 	</AIPersonalityDefinition>
 </AssetDeclaration>

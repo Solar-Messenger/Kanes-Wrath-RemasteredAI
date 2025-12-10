@@ -38,11 +38,11 @@
 
 		<Side>SteelTalons</Side>
 
-		<BuildDelayRange id="BuildDelayEasy" MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />
+		<!--<BuildDelayRange id="BuildDelayEasy" MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />-->
 
 		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-		<ResourceMultiplierCheat Percentage="150%" Difficulty="EASY"/>
+		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="MEDIUM"/>
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="300%" Difficulty="BRUTAL"/>
@@ -109,8 +109,8 @@
 		<States State="STOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="STOffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="STOffensiveGroundEconomyAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="STOffensiveAirEconomyAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="STOffensiveGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="STOffensiveAirEconomyAttack" Difficulty="BRUTAL"/>
 		<States State="STOffensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="STOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
@@ -118,25 +118,23 @@
 		<States State="STOffensiveEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="STGroundEngineerDefense" Difficulty="HARD BRUTAL"/>
+		<States State="STGroundEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STAirEngineerDefense" Difficulty="HARD BRUTAL"/>
-		<States State="STGroundCommandoDefense" Difficulty="HARD BRUTAL"/>
+		<States State="STGroundCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STAirCommandoDefense" Difficulty="HARD BRUTAL"/>
 		<States State="STMRT" Difficulty="HARD BRUTAL"/>
 
-		<States State="STOffensiveGarrisonEpicUnit" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="STOffensiveGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
 		<States State="STAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="STAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="STCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="STSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="STCommando" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="STExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="STSuperweapon" Difficulty="HARD BRUTAL"/>
+		<States State="STExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
+		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="STBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="STOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -152,20 +150,24 @@
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OffensiveEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OffensiveMidGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OffensiveLateGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OffensiveEarlyGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OffensiveMidGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OffensiveLateGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OffensiveBudget_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="FullInvestmentBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="FullInvestmentBudget_EASY_WINNING" Difficulty="EASY"/>
+		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="TechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="SteelTalonsOffensiveTechByTimeBudget_EASY" Difficulty="EASY"/>
+		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
 		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerbyTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<UnitOverride UnitName="SteelTalonsMARV" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>
 
+		<UnitOverride UnitName="SteelTalonsFirehawk" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="SteelTalonsMARV" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="SteelTalonsIonCannonControl" Percentage="-1%" Difficulty="EASY MEDIUM"/>
 	</AIPersonalityDefinition>
 </AssetDeclaration>
