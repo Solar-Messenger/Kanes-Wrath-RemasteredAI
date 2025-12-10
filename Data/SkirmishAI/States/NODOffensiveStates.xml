@@ -136,7 +136,7 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="241s" EndTime="-1s"/>
-			<ConstantHeuristic Weight="1.25"/>
+			<ConstantHeuristic Weight="1.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>
 		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">

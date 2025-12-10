@@ -130,7 +130,7 @@
 		  id="MOKDefensiveGarrisonEpicUnit"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="1.5" />
+			<ConstantHeuristic Weight="1.0" />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>
 		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">

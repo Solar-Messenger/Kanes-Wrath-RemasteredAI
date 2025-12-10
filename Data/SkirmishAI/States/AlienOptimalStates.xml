@@ -201,7 +201,7 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="241s" EndTime="-1s"/>
-			<ConstantHeuristic Weight="1.25"/>
+			<ConstantHeuristic Weight="1.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>
 		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">
@@ -215,11 +215,11 @@
 	  id="AlienOptimalHealEpicUnit"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="900.0" />
+			<ConstantHeuristic Weight="1.0" />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="HealHexHeuristic" TargetType="SpreadTarget"/>
 		<Tactic Tactic="SimpleAttack" TargetType="SpreadTarget">
-			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_HEAL_ALLIES" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+			<TeamTemplate MinUnits="1" MaxUnits="4" IncludeKindOf="CAN_HEAL_ALLIES" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="true">
 				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="AlienCorrupter" />
 			</TeamTemplate>
 		</Tactic>
