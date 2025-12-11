@@ -92,16 +92,10 @@
 
 		<OpeningMove Name="R17_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="Reaper17Standard" Weight="28%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="Reaper17Standard2" Weight="27%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="Reaper17TripodRush" Weight="5%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="Reaper17StormriderRush" Weight="5%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="Reaper17RavagerRush" Weight="5%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="Reaper17MechapedeRush" Weight="5%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="Reaper17Opening" Weight="25%" Difficulty="MEDIUM HARD"/>
-
-		<OpeningMove Name="Reaper17BrutalCrane" Weight="90%" Difficulty="BRUTAL"/>
-		<OpeningMove Name="Reaper17TripodRush" Weight="10%" Difficulty="BRUTAL"/>
+		<OpeningMove Name="R17OffensiveStandard" Weight="40%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="R17SeekerSpam" Weight="20%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="R17DevRush" Weight="20%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="R17ShardWalkerSpam" Weight="20%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="R17OpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="R17OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>

@@ -91,15 +91,9 @@
 
 		<OpeningMove Name="Alien_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="AlienStandard" Weight="38%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="AlienStandard2" Weight="37%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="AlienTripodRush" Weight="10%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="AlienStormriderRush" Weight="5%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="AlienRavagerRush" Weight="5%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="AlienMechapedeRush" Weight="5%" Difficulty="MEDIUM HARD"/>
-
-		<OpeningMove Name="AlienBrutalCrane" Weight="90%" Difficulty="BRUTAL"/>
-		<OpeningMove Name="AlienTripodRush" Weight="10%" Difficulty="BRUTAL"/>
+		<OpeningMove Name="AlienOffensiveStandard" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="AlienSeekerSpam" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="AlienDevRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="AlienOffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienOffensiveEarlyGroundEconomyAttack" Difficulty="HARD BRUTAL"/>

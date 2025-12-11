@@ -92,16 +92,9 @@
 
 		<OpeningMove Name="T59_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="Traveler59Standard" Weight="28%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="Traveler59Standard2" Weight="27%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="Traveler59TripodRush" Weight="5%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="Traveler59StormriderRush" Weight="5%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="Traveler59RavagerRush" Weight="5%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="Traveler59MechapedeRush" Weight="5%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="Traveler59Opening" Weight="25%" Difficulty="MEDIUM HARD"/>
-
-		<OpeningMove Name="Traveler59BrutalCrane" Weight="90%" Difficulty="BRUTAL"/>
-		<OpeningMove Name="Traveler59TripodRush" Weight="10%" Difficulty="BRUTAL"/>
+		<OpeningMove Name="T59OffensiveStandard" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="T59DisintRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="T59SeekerSpam" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="T59OpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="T59OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL" />
