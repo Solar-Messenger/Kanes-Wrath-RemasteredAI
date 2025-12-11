@@ -95,15 +95,11 @@
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 
-		<OpeningMove Name="SteelTalons_EASY" Weight="100%" Difficulty="EASY"/>
+		<OpeningMove Name="ST_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="SteelTalonsStandard" Weight="33%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="SteelTalonsStandard2" Weight="32%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="SteelTalonsMammothRush" Weight="10%" Difficulty="MEDIUM HARD"/>
-		<OpeningMove Name="SteelTalonsRush" Weight="25%" Difficulty="MEDIUM HARD"/>
-
-		<OpeningMove Name="SteelTalonsBrutalCrane" Weight="90%" Difficulty="BRUTAL"/>
-		<OpeningMove Name="SteelTalonsMammothRush" Weight="10%" Difficulty="BRUTAL"/>
+		<OpeningMove Name="STOffensiveStandard" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="STOffensiveOrcaRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="STOffensivePitBullSpam" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="STOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
