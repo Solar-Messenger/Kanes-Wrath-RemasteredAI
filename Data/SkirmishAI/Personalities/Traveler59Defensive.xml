@@ -38,11 +38,11 @@
 
 		<Side>Traveler59</Side>
 
-		<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />
+		<!--<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />-->
 
 		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-		<ResourceMultiplierCheat Percentage="150%" Difficulty="EASY"/>
+		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="MEDIUM"/>
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="300%" Difficulty="BRUTAL"/>
@@ -104,21 +104,25 @@
 		<OpeningMove Name="Traveler59StandardCrane" Weight="90%" Difficulty="MEDIUM HARD BRUTAL"/>
 		<OpeningMove Name="Traveler59SuperweaponRush" Weight="10%" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="Traveler59Counterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="Traveler59FinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="Traveler59DefensiveAirHarassment" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="Traveler59Mothership" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="T59ResourceDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="T59ConyardDefense" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59SuperweaponDefense" Difficulty="HARD BRUTAL"/>
+		<States State="T59Counterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="T59FinalAttack" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59DefensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="T59DefensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59DefensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="T59EngineerDefense" Difficulty="HARD BRUTAL"/>
-		<States State="T59CommandoDefense" Difficulty="HARD BRUTAL"/>
+		<States State="T59EngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="T59CommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="T59DefensiveGarrisonEpicUnit" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59DefensiveGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="T59AntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="T59AntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="T59CaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="T59Superweapon" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59Superweapon" Difficulty="HARD BRUTAL"/>
 		<States State="T59Expansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="T59Isolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
@@ -139,21 +143,27 @@
 		<States State="T59UnitPreferencesEasyLate" Difficulty="EASY"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="DefensiveEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="DefensiveMidGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="DefensiveLateGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="DefensiveEarlyGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="DefensiveMidGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="DefensiveLateGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="DefensiveBudget_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="FullInvestmentBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="FullInvestmentBudget_EASY_WINNING" Difficulty="EASY"/>
+		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="TechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="Traveler59DefensiveTechByTimeBudget_EASY" Difficulty="EASY"/>
+		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
 		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerbyTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="DefenseByTimeDistanceBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<UnitOverride UnitName="Traveler59EradicatorHexapod" Percentage="80%"/>
+		<UnitOverride UnitName="Traveler59EradicatorHexapod" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>
+
+		<UnitOverride UnitName="Traveler59DevastatorWarship" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="Traveler59PlanetaryAssaultCarrier" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="Traveler59EradicatorHexapod" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="Traveler59RiftGenerator" Percentage="-1%" Difficulty="EASY MEDIUM"/>
 
 	</AIPersonalityDefinition>
 </AssetDeclaration>
