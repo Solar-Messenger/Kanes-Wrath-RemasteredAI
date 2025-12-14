@@ -94,10 +94,10 @@
 
 		<OpeningMove Name="GDI_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="GDIOffensiveStandard" Weight="55%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="GDIOffensiveOrcaRush" Weight="15%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="GDIOffensivePitBullSpam" Weight="15%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="GDIOffensivePredatorSpam" Weight="15%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="GDIOffensiveStandard" Weight="40%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="GDIOffensiveOrcaRush" Weight="20%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="GDIOffensivePitBullSpam" Weight="20%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="GDIOffensivePredatorSpam" Weight="20%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="GDIOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
