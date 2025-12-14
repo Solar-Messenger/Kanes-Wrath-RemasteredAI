@@ -38,11 +38,11 @@
 
 		<Side>Alien</Side>
 
-		<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />
+		<!--<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />-->
 
 		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-		<ResourceMultiplierCheat Percentage="150%" Difficulty="EASY"/>
+		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="MEDIUM"/>
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="300%" Difficulty="BRUTAL"/>
@@ -108,31 +108,30 @@
 		<States State="AlienOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
 		<States State="AlienResourceDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="AlienConyardDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="AlienSuperweaponDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienConyardDefense" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="AlienSuperweaponDefense" Difficulty="HARD BRUTAL"/>
 		<States State="AlienCounterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="AlienFinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienFinalAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienDefensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="AlienDefensiveBombingRuns" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="AlienDefensiveSiege" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienDefensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="AlienDefensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="AlienEngineerDefense" Difficulty="HARD BRUTAL"/>
-		<States State="AlienCommandoDefense" Difficulty="HARD BRUTAL"/>
+		<States State="AlienEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
-
-		<States State="AlienDefensiveGarrisonEpicUnit" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="AlienExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienDefensiveGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="AlienCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="AlienSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="AlienSuperweapon" Difficulty="HARD BRUTAL"/>
+		<States State="AlienExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
+		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="AlienBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -150,18 +149,24 @@
 		<BudgetStates State="DefensiveEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="DefensiveMidGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="DefensiveLateGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="DefensiveBudget_EASY" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<BudgetStates State="FullInvestmentBudget" Difficulty="HARD BRUTAL"/>
-		<BudgetStates State="FullInvestmentBudget_EASY_WINNING" Difficulty="EASY"/>
+		<BudgetStates State="FullInvestmentBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="TechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="AlienDefensiveTechByTimeBudget_EASY" Difficulty="EASY"/>
+		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
 		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerbyTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="DefenseByTimeDistanceBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<UnitOverride UnitName="AlienEradicatorHexapod" Percentage="80%"/>
+		<UnitOverride UnitName="AlienEradicatorHexapod" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>
 
+		<UnitOverride UnitName="AlienDevastatorWarship" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="AlienPlanetaryAssaultCarrier" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="AlienEradicatorHexapod" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="AlienRiftGenerator" Percentage="-1%" Difficulty="EASY MEDIUM"/>
+		
 	</AIPersonalityDefinition>
 </AssetDeclaration>
