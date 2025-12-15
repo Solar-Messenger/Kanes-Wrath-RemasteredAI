@@ -38,11 +38,11 @@
 
 		<Side>NOD</Side>
 
-		<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />
+		<!--<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />-->
 
 		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-		<ResourceMultiplierCheat Percentage="150%" Difficulty="EASY"/>
+		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="MEDIUM"/>
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="300%" Difficulty="BRUTAL"/>
@@ -106,34 +106,33 @@
 		<States State="NODOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="NODResourceDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODConyardDefense" Difficulty="HARD BRUTAL"/>
-		<States State="NODSuperweaponDefense" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODCounterattack" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODConyardDefense" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODSuperweaponDefense" Difficulty="HARD BRUTAL"/>
+		<States State="NODCounterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODFinalAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODDefensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODDefensiveAirHarassmentAntiTurtle" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODDefensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODDefensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODGroundEngineerDefense" Difficulty="HARD BRUTAL"/>
+		<States State="NODGroundEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODAirEngineerDefense" Difficulty="HARD BRUTAL"/>
-		<States State="NODGroundCommandoDefense" Difficulty="HARD BRUTAL"/>
+		<States State="NODGroundCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODAirCommandoDefense" Difficulty="HARD BRUTAL"/>
-
-		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="NODDefensiveGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="NODCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODCommando" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODSuperweapon" Difficulty="HARD BRUTAL"/>
+		<States State="NODCommando" Difficulty="HARD BRUTAL"/>
 		<States State="NODExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
+		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="NODBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -148,15 +147,16 @@
 		<States State="NODUnitPreferencesEasyLate" Difficulty="EASY"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="DefensiveEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="DefensiveMidGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="DefensiveLateGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="DefensiveEarlyGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="DefensiveMidGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="DefensiveLateGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="DefensiveBudget_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="FullInvestmentBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="FullInvestmentBudget_EASY_WINNING" Difficulty="EASY"/>
+		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="TechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="NODDefensiveTechByTimeBudget_EASY" Difficulty="EASY"/>
+		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
 		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerbyTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -164,5 +164,9 @@
 
 		<UnitOverride UnitName="NODMetaUnit" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>
 
+		<UnitOverride UnitName="NODCommando" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="NODVertigo" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="NODMetaUnit" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="NODTempleOfNOD" Percentage="-1%" Difficulty="EASY MEDIUM"/>
 	</AIPersonalityDefinition>
 </AssetDeclaration>

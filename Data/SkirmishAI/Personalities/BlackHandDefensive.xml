@@ -38,11 +38,11 @@
 
 		<Side>BlackHand</Side>
 
-		<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />
+		<!--<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />-->
 
 		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-		<ResourceMultiplierCheat Percentage="150%" Difficulty="EASY"/>
+		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="MEDIUM"/>
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="300%" Difficulty="BRUTAL"/>
@@ -107,32 +107,31 @@
 		<States State="BHOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="BHResourceDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BHConyardDefense" Difficulty="HARD BRUTAL"/>
-		<States State="BHSuperweaponDefense" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="BHCounterattack" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BHConyardDefense" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BHSuperweaponDefense" Difficulty="HARD BRUTAL"/>
+		<States State="BHCounterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHFinalAttack" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="BHDefensiveAirHarassmentAntiTurtle" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BHDefensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHDefensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BHDefensiveArtilleryBombing" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BHEngineerDefense" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="BHCommandoDefense" Difficulty="HARD BRUTAL"/>
-
-		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BHEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="BHCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
 		<States State="BHDefensiveGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BHAntiGarrison_EASY" Difficulty="EASY"/>
-		<States State="BHExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BHCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="BHSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="BHCommando" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BHSuperweapon" Difficulty="HARD BRUTAL"/>
+		<States State="BHExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BHCommando" Difficulty="HARD BRUTAL"/>
 		<States State="BHIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
+		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BHBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BHOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -147,15 +146,16 @@
 		<States State="BHUnitPreferencesEasyLate" Difficulty="EASY"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="DefensiveEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="DefensiveMidGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="DefensiveLateGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="DefensiveEarlyGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="DefensiveMidGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="DefensiveLateGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="DefensiveBudget_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="FullInvestmentBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="FullInvestmentBudget_EASY_WINNING" Difficulty="EASY"/>
+		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="TechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="BlackHandDefensiveTechByTimeBudget_EASY" Difficulty="EASY"/>
+		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
 		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerbyTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="SupportPowerByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -163,5 +163,8 @@
 
 		<UnitOverride UnitName="BlackHandMetaUnit" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>
 
+		<UnitOverride UnitName="BlackHandCommando" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="BlackHandMetaUnit" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="BlackHandTempleOfNOD" Percentage="-1%" Difficulty="EASY MEDIUM"/>
 	</AIPersonalityDefinition>
 </AssetDeclaration>
