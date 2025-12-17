@@ -104,7 +104,7 @@
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="SecondaryTarget"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="SecondaryTarget">
-      <TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+      <TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="VEHICLE AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
         <CreateUnits MinUnits="2" MaxUnits="2" UnitName="GDISniperSquad"/>
       </TeamTemplate>
     </Tactic>
