@@ -695,11 +695,11 @@
 				id="ModuleTag_NODOpsBurrowMinesAI"
 				CommandButtonName="Command_NODBurrowMines"
 				SpecialPowerRadius="99999.0"
-				SpecialPowerAIType="SPECIAL_POWER_RANGED_AOE_ATTACK"
+				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
 				UnitKindOf="HARVESTER"
 				AllyUnitInclude=""
 				AllyUnitExclude="INFANTRY VEHICLE AIRCRAFT STRUCTURE NEUTRAL_TECH CIVILIAN_BUILDING HUSK"
-				EnemyUnitInclude="HARVESTER VEHICLE UNIQUE_UNIT"
+				EnemyUnitInclude="HARVESTER VEHICLE"
 				EnemyUnitExclude="AIRCRAFT STRUCTURE NEUTRAL_TECH CIVILIAN_BUILDING HUSK"
 			/>
 			<ModelConditionUpgrade
