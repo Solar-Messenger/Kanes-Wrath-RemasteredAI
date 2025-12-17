@@ -127,7 +127,7 @@
 		<States State="STAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="STAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="STCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="STSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="STSuperweapon" Difficulty="HARD BRUTAL"/>
 		<States State="STExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="STBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
