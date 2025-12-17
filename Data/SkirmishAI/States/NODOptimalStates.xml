@@ -8,7 +8,7 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
-			<TimerHeuristic StartTime="180s" EndTime="-1s"/>
+			<TimerHeuristic StartTime="120s" EndTime="-1s"/>
 			<OverpowerHeuristic
 				PowerAdvantageWeight="0.5"
 				PenetrabilityWeight="0.5">
@@ -26,7 +26,7 @@
 		  id="NODOptimalEarlyMidBikeEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime ="120s" EndTime="420s" />
+			<TimerHeuristic StartTime="90s" EndTime="420s" />
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.5"
 				BalanceOfPowerWeight="0.5">

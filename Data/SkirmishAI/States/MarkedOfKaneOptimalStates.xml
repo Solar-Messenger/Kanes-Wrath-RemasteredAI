@@ -8,7 +8,7 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
-			<TimerHeuristic StartTime="180s" EndTime="-1s"/>
+			<TimerHeuristic StartTime="120s" EndTime="-1s"/>
 			<OverpowerHeuristic
 				PowerAdvantageWeight="0.5"
 				PenetrabilityWeight="0.5">
@@ -26,7 +26,7 @@
 		  id="MOKOptimalEarlyMidBikeEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime ="120s" EndTime="420s" />
+			<TimerHeuristic StartTime="90s" EndTime="420s" />
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.5"
 				BalanceOfPowerWeight="0.5">
@@ -168,42 +168,5 @@
 		<UnitModifierByName UnitName="MOKCyborgInfantrySquad" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
 		<UnitModifierByName UnitName="MarkedOfKaneMilitantRocketSquad" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
 	</AIStrategicStateDefinition>
-
-  <AIBudgetStateDefinition
-		id="MarkedOfKaneOptimalTechByTimeBudget">
-    <Heuristic>
-      <ConstantHeuristic Weight="0.8"/>
-      <OpeningMoveHeuristic Complete="true"/>
-      <TimerHeuristic StartTime="90s" EndTime="-1s"/>
-      <IntervalHeuristic IntervalTime="60s" ActiveTime="20s"/>
-      <IntervalHeuristic IntervalTime="5s" ActiveTime="5s"/>
-    </Heuristic>
-    <Budget>
-      <AccountShare Account="INVESTMENT" Percent="0%"/>
-      <AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
-      <AccountShare Account="PRODUCTION" Percent="0%"/>
-      <AccountShare Account="DEFENSE" Percent="0%"/>
-      <AccountShare Account="TECHNOLOGY" Percent="90%"/>
-      <AccountShare Account="SLUSH_FUND" Percent="10%"/>
-    </Budget>
-  </AIBudgetStateDefinition>
-
-  <AIBudgetStateDefinition
-    id="MarkedOfKaneOptimalTechByTimeBudget_EASY">
-    <Heuristic>
-      <ConstantHeuristic Weight="0.8"/>
-      <OpeningMoveHeuristic Complete="true"/>
-      <IntervalHeuristic IntervalTime="610s" ActiveTime="20s"/>
-      <IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
-    </Heuristic>
-    <Budget>
-      <AccountShare Account="INVESTMENT" Percent="0%"/>
-      <AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
-      <AccountShare Account="PRODUCTION" Percent="0%"/>
-      <AccountShare Account="DEFENSE" Percent="0%"/>
-      <AccountShare Account="TECHNOLOGY" Percent="90%"/>
-      <AccountShare Account="SLUSH_FUND" Percent="10%"/>
-    </Budget>
-  </AIBudgetStateDefinition>
 
 </AssetDeclaration>
