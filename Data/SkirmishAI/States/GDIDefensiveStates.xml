@@ -45,9 +45,9 @@
 		id="GDICounterattack"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
+	  <TimerHeuristic StartTime="180s" EndTime="-1s"/>
       <PathToTargetHeuristic PathExists="true"/>
-      <TimerHeuristic StartTime="180s" EndTime="-1s"/>
-	  <FocusedThresholdHeuristic/>
+	  <CounterattackHeuristic Threshold="1.5"/>
 	  <SiegeThresholdHeuristic SiegeMode="false" Threshold="0.25"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Counterattack"/>
@@ -114,7 +114,7 @@
 		  id="GDIDefensiveSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="240s" EndTime="-1s"/>
+			<TimerHeuristic StartTime="180s" EndTime="-1s"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<LateGameHeuristic/>
 		</Heuristic>
@@ -145,7 +145,6 @@
 		  id="GDIDefensiveGarrisonEpicUnit"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="241s" EndTime="-1s"/>
 			<ConstantHeuristic Weight="1.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>
@@ -155,58 +154,4 @@
 		<UnitModifierByName UnitName="GDIMissileSoldierSquad" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
 	</AIStrategicStateDefinition>
   
-  <AIBudgetStateDefinition
-    id="GDIDefensiveTechByTimeBudget">
-    <Heuristic>
-      <ConstantHeuristic Weight="0.8"/>
-      <OpeningMoveHeuristic Complete="true"/>
-      <IntervalHeuristic IntervalTime="90s" ActiveTime="20s"/>
-      <IntervalHeuristic IntervalTime="5s" ActiveTime="5s"/>
-    </Heuristic>
-    <Budget>
-      <AccountShare Account="INVESTMENT" Percent="0%"/>
-      <AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
-      <AccountShare Account="PRODUCTION" Percent="0%"/>
-      <AccountShare Account="DEFENSE" Percent="0%"/>
-      <AccountShare Account="TECHNOLOGY" Percent="90%"/>
-      <AccountShare Account="SLUSH_FUND" Percent="10%"/>
-    </Budget>
-  </AIBudgetStateDefinition>
-
-  <AIBudgetStateDefinition
-    id="GDIDefensiveTechByTimeBudget_EASY">
-    <Heuristic>
-      <ConstantHeuristic Weight="0.8"/>
-      <OpeningMoveHeuristic Complete="true"/>
-      <IntervalHeuristic IntervalTime="610s" ActiveTime="20s"/>
-      <IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
-    </Heuristic>
-    <Budget>
-      <AccountShare Account="INVESTMENT" Percent="0%"/>
-      <AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
-      <AccountShare Account="PRODUCTION" Percent="0%"/>
-      <AccountShare Account="DEFENSE" Percent="0%"/>
-      <AccountShare Account="TECHNOLOGY" Percent="90%"/>
-      <AccountShare Account="SLUSH_FUND" Percent="10%"/>
-    </Budget>
-  </AIBudgetStateDefinition>
-
-  <AIBudgetStateDefinition
-    id="GDIDefensiveTechByTimeBudget_MEDIUM">
-    <Heuristic>
-      <ConstantHeuristic Weight="0.8"/>
-      <OpeningMoveHeuristic Complete="true"/>
-      <IntervalHeuristic IntervalTime="220s" ActiveTime="20s"/>
-      <IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
-    </Heuristic>
-    <Budget>
-      <AccountShare Account="INVESTMENT" Percent="0%"/>
-      <AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
-      <AccountShare Account="PRODUCTION" Percent="0%"/>
-      <AccountShare Account="DEFENSE" Percent="0%"/>
-      <AccountShare Account="TECHNOLOGY" Percent="90%"/>
-      <AccountShare Account="SLUSH_FUND" Percent="10%"/>
-    </Budget>
-  </AIBudgetStateDefinition>
-
 </AssetDeclaration>
