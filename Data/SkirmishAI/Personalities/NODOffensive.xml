@@ -92,13 +92,13 @@
 
 		<OpeningMove Name="NOD_EASY" Weight="100%" Difficulty="EASY"/>
 		
-		<OpeningMove Name="NODOffensiveStandard" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="NODOffensiveBikeBuggyRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="NODOffensiveScorpionRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="NODOffensiveBikeBuggyRush" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="NODOffensiveScorpionRush" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="NODOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
+		<States State="NODOffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODOffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODOffensiveEarlyMidBikeEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="NODOffensiveLateStealthTankEconomyAttack" Difficulty="HARD BRUTAL"/>

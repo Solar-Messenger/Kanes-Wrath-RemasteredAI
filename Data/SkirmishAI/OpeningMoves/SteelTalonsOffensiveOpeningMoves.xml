@@ -5,34 +5,6 @@
   </Includes>
 
 	<SkirmishOpeningMove
-    id="STOffensiveStandard"
-    Side="SteelTalons">
-		<Order Time="0s" Build="SteelTalonsPowerPlant"/>
-		<Order Time="5s" Build="SteelTalonsBarracks"/>
-		<Order Build="SteelTalonsCombatEngineer"/>
-		<Order Build="SteelTalonsCombatEngineer"/>
-		<Order Build="SteelTalonsRifleSoldierSquad"/>
-		<Order Build="SteelTalonsRifleSoldierSquad"/>
-		<Order Build="SteelTalonsRifleSoldierSquad"/>
-		<Order Time="10s" Build="SteelTalonsRefinery"/>
-		<Order Time="40s" Build="SteelTalonsWarfactory"/>
-		<Order Time="60s" Build="SteelTalonsRefinery"/>
-		<Order Build="SteelTalonsHeavyHarvester"/>
-		<Order Build="SteelTalonsPitbull"/>
-		<Order Build="SteelTalonsPitbull"/>
-		<Order Build="SteelTalonsPitbull"/>
-		<Order Build="SteelTalonsPitbull"/>
-		<Order Build="SteelTalonsHeavyHarvester"/>
-		<Order Time="90s" Build="SteelTalonsPowerPlant"/>
-		<Order Time="95s" Build="SteelTalonsPowerPlant"/>
-		<Order Time="100s" Build="SteelTalonsWarfactory"/>
-		<Order Time="120s" Build="SteelTalonsPowerPlant"/>
-		<Order Time="125s" Build="SteelTalonsWarfactory"/>
-		<Order Time="145s" Build="SteelTalonsCommandPost"/>
-		<Order Time="160s" Build="SteelTalonsAirTower"/>
-	</SkirmishOpeningMove>
-
-	<SkirmishOpeningMove
     id="STOffensiveOrcaRush"
     Side="SteelTalons">
 		<Order Time="0s" Build="SteelTalonsPowerPlant"/>
@@ -76,21 +48,29 @@
 		<Order Build="SteelTalonsPitBull"/>
 		<Order Build="SteelTalonsPitBull"/>
 		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Build="SteelTalonsPitBull"/>
+		<Order Build="SteelTalonsPitBull"/>
+		<Order Build="SteelTalonsPitBull"/>
+		<Order Build="SteelTalonsPitBull"/>
+		<Order Build="SteelTalonsPitBull"/>
+		<Order Build="SteelTalonsPitBull"/>
+		<Order Build="SteelTalonsPitBull"/>
+		<Order Build="SteelTalonsPitBull"/>
+		<Order Build="SteelTalonsPitBull"/>
+		<Order Build="SteelTalonsPitBull"/>
+		<Order Build="SteelTalonsPitBull"/>
+		<Order Build="SteelTalonsPitBull"/>
+		<Order Build="SteelTalonsPitBull"/>
+		<Order Build="SteelTalonsPitBull"/>
+		<Order Build="SteelTalonsPitBull"/>
+		<Order Build="SteelTalonsPitBull"/>
+		<Order Build="SteelTalonsPitBull"/>
+		<Order Build="SteelTalonsPitBull"/>
+		<Order Build="SteelTalonsPitBull"/>
+		<Order Build="SteelTalonsPitBull"/>
 		<Order Time="90s" Build="SteelTalonsPowerPlant"/>
 		<Order Time="95s" Build="SteelTalonsPowerPlant"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
 		<Order Time="100s" Build="SteelTalonsWarfactory"/>
 		<Order Time="120s" Build="SteelTalonsCommandPost"/>
 		<Order Time="135s" Build="SteelTalonsPowerPlant"/>

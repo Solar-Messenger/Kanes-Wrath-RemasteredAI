@@ -95,13 +95,13 @@
 
 		<OpeningMove Name="ZOCOM_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="ZOCOMOffensiveStandard" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="ZOCOMOffensiveOrcaRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="ZOCOMOffensivePitBullSpam" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="ZOCOMOffensiveOrcaRush" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="ZOCOMOffensivePitBullSpam" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="ZOCOMOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
+		<States State="ZOCOMOffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOffensiveGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="ZOCOMOffensiveAirEconomyAttack" Difficulty="BRUTAL"/>

@@ -92,14 +92,14 @@
 
 		<OpeningMove Name="R17_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="R17OffensiveStandard" Weight="40%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="R17SeekerSpam" Weight="20%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="R17DevRush" Weight="20%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="R17ShardWalkerSpam" Weight="20%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="R17SeekerSpam" Weight="33%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="R17DevRush" Weight="34%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="R17ShardWalkerSpam" Weight="33%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="R17OpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="R17OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
+		<States State="R17OffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="R17OffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="R17OffensiveEarlyGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="R17OffensiveLateGroundEconomyAttack" Difficulty="HARD BRUTAL"/>

@@ -3,35 +3,7 @@
   <Tags></Tags>
   <Includes>
   </Includes>
-
-  <SkirmishOpeningMove
-	id="T59OffensiveStandard"
-	Side="Traveler59">
-	  <Order Time="0s" Build="Traveler59PowerProjector"/>
-	  <Order Time="5s" Build="Traveler59Portal"/>
-	  <Order Build="Traveler59Assimilator"/>
-	  <Order Build="Traveler59Assimilator"/>
-	  <Order Build="AlienBuzzer"/>
-	  <Order Build="AlienBuzzer"/>
-	  <Order Build="AlienBuzzer"/>
-	  <Order Time="10s" Build="Traveler59TiberiumTower"/>
-	  <Order Time="40s" Build="Traveler59Gateway" />
-	  <Order Build="Traveler59Harvester"/>
-	  <Order Build="Traveler59GunWalker"/>
-	  <Order Build="Traveler59GunWalker"/>
-	  <Order Build="Traveler59GunWalker"/>
-	  <Order Build="Traveler59GunWalker"/>
-	  <Order Build="Traveler59Harvester"/>
-	  <Order Time="60s" Build="Traveler59TiberiumTower"/>
-	  <Order Time="90s" Build="Traveler59PowerProjector"/>
-	  <Order Time="95s" Build="Traveler59PowerProjector"/>
-	  <Order Time="100s" Build="Traveler59Gateway" />
-	  <Order Time="120s" Build="Traveler59PowerProjector"/>
-	  <Order Time="125s" Build="Traveler59Gateway" />
-	  <Order Time="145s" Build="Traveler59ControlCenter" />
-	  <Order Time="160s" Build="Traveler59WarpBeacon" />
-  </SkirmishOpeningMove>
-
+	
   <SkirmishOpeningMove
 	 id="T59DisintRush"
 	 Side="Traveler59">
@@ -50,6 +22,14 @@
 	  <Order Build="Traveler59RazorDroneSquad"/>
 	  <Order Build="Traveler59RazorDroneSquad"/>
 	  <Order Build="Traveler59RazorDroneSquad"/>
+	  <Order Build="Traveler59RazorDroneSquad"/>
+	  <Order Build="Traveler59RazorDroneSquad"/>
+	  <Order Build="Traveler59RazorDroneSquad"/>
+	  <Order Build="Traveler59RazorDroneSquad"/>
+	  <Order Build="Traveler59RazorDroneSquad"/>
+	  <Order Build="Traveler59RazorDroneSquad"/>
+	  <Order Build="Traveler59RazorDroneSquad"/>
+	  <Order Build="Traveler59RazorDroneSquad"/>
 	  <Order Time="5s" Build="Traveler59StatisChamber"/>
 	  <Order Time="15s" Build="Traveler59TiberiumTower"/>
 	  <Order Time="45s" Build="Traveler59TiberiumTower"/>
@@ -60,6 +40,7 @@
 	  <Order Build="Traveler59GunWalker"/>
 	  <Order Build="Traveler59GunWalker"/>
 	  <Order Build="Traveler59GunWalker"/>
+	  <Order Build="Traveler59Harvester"/>
 	  <Order Time="95s" Build="Traveler59PowerProjector"/>
 	  <Order Time="100s" Build="Traveler59PowerProjector"/>
 	  <Order Time="105s" Build="Traveler59Gateway"/>
@@ -80,11 +61,20 @@
 	  <Order Time="10s" Build="Traveler59TiberiumTower"/>
 	  <Order Time="40s" Build="Traveler59Gateway" />
 	  <Order Build="Traveler59Harvester"/>
-	  <Order Build="Traveler59SeekerTank"/>
-	  <Order Build="Traveler59SeekerTank"/>
-	  <Order Build="Traveler59SeekerTank"/>
-	  <Order Build="Traveler59SeekerTank"/>
+	  <Order Build="Traveler59GunWalker"/>
+	  <Order Build="Traveler59GunWalker"/>
+	  <Order Build="Traveler59GunWalker"/>
+	  <Order Build="Traveler59GunWalker"/>
 	  <Order Build="Traveler59Harvester"/>
+	  <Order Build="Traveler59Harvester"/>
+	  <Order Build="Traveler59SeekerTank"/>
+	  <Order Build="Traveler59SeekerTank"/>
+	  <Order Build="Traveler59SeekerTank"/>
+	  <Order Build="Traveler59SeekerTank"/>
+	  <Order Build="Traveler59SeekerTank"/>
+	  <Order Build="Traveler59SeekerTank"/>
+	  <Order Build="Traveler59SeekerTank"/>
+	  <Order Build="Traveler59SeekerTank"/>
 	  <Order Build="Traveler59SeekerTank"/>
 	  <Order Build="Traveler59SeekerTank"/>
 	  <Order Build="Traveler59SeekerTank"/>

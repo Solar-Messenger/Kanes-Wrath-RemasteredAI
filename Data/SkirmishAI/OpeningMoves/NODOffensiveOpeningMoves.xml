@@ -5,36 +5,6 @@
 	</Includes>
 
 	<SkirmishOpeningMove
-	id="NODOffensiveStandard"
-	Side="NOD">
-		<Order Time="0s" Build="NODPowerPlant"/>
-		<Order Time="5s" Build="NODHandOfNOD" />
-		<Order Build="NODSaboteur" />
-		<Order Build="NODSaboteur" />
-		<Order Build="NODMilitantSquad" />
-		<Order Build="NODMilitantSquad" />
-		<Order Build="NODMilitantSquad" />
-		<Order Time="10s" Build="NODRefinery" />
-		<Order Time="40s" Build="NODDropZone" />
-		<Order Build="NODHarvester" />
-		<Order Build="NODScorpionBuggy" />
-		<Order Build="NODScorpionBuggy" />
-		<Order Build="NODScorpionBuggy" />
-		<Order Build="NODScorpionBuggy" />
-		<Order Build="NODHarvester" />
-		<Order Time="60s" Build="NODRefinery" />
-		<Order Time="90s" Build="NODPowerPlant" />
-		<Order Time="95s" Build="NODPowerPlant" />
-		<Order Time="100s" Build="NODDropZone" />
-		<Order Time="120s" Build="NODPowerPlant" />
-		<Order Time="125s" Build="NODDropZone" />
-		<Order Time="145s" Build="NODOperationsCenter" />
-		<Order Build="NODFlameTank" />
-		<Order Build="NODFlameTank" />
-		<Order Time="160s" Build="NODHangar" />
-	</SkirmishOpeningMove>
-
-	<SkirmishOpeningMove
 	 id="NODOffensiveBikeBuggyRush"
 	 Side="NOD">
 		<Order Time="0s" Build="NODPowerPlant"/>
@@ -50,33 +20,56 @@
 		<Order Build="NODScorpionBuggy" />
 		<Order Build="NODScorpionBuggy" />
 		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODScorpionBuggy" />
 		<Order Build="NODHarvester" />
+		<Order Build="NODHarvester" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODAttackBike" />
+		<Order Build="NODAttackBike" />
 		<Order Time="60s" Build="NODRefinery" />
-		<Order Build="NODHarvester" />
 		<Order Time="90s" Build="NODPowerPlant" />
 		<Order Time="95s" Build="NODPowerPlant" />
-		<Order Build="NODAttackBike" />
-		<Order Build="NODScorpionBuggy" />
-		<Order Build="NODAttackBike" />
-		<Order Build="NODScorpionBuggy" />
-		<Order Build="NODAttackBike" />
-		<Order Build="NODScorpionBuggy" />
-		<Order Build="NODAttackBike" />
-		<Order Build="NODScorpionBuggy" />
-		<Order Build="NODAttackBike" />
-		<Order Build="NODScorpionBuggy" />
-		<Order Build="NODAttackBike" />
-		<Order Build="NODScorpionBuggy" />
-		<Order Build="NODAttackBike" />
-		<Order Build="NODScorpionBuggy" />
-		<Order Build="NODAttackBike" />
-		<Order Build="NODScorpionBuggy" />
-		<Order Build="NODAttackBike" />
-		<Order Build="NODAttackBike" />
-		<Order Build="NODAttackBike" />
-		<Order Build="NODAttackBike" />
-		<Order Build="NODAttackBike" />
-		<Order Build="NODAttackBike" />
 		<Order Time="100s" Build="NODDropZone" />
 		<Order Time="120s" Build="NODOperationsCenter" />
 		<Order Time="135s" Build="NODPowerPlant"/>
@@ -96,27 +89,35 @@
 		<Order Time="10s" Build="NODRefinery" />
 		<Order Time="40s" Build="NODDropZone" />
 		<Order Build="NODHarvester" />
-		<Order Build="NODRaiderTank" />
-		<Order Build="NODRaiderTank" />
-		<Order Build="NODRaiderTank" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODScorpionBuggy" />
 		<Order Build="NODHarvester" />
+		<Order Build="NODHarvester" />
+		<Order Build="NODRaiderTank" />
+		<Order Build="NODRaiderTank" />
+		<Order Build="NODRaiderTank" />
+		<Order Build="NODRaiderTank" />
+		<Order Build="NODRaiderTank" />
+		<Order Build="NODRaiderTank" />
+		<Order Build="NODRaiderTank" />
+		<Order Build="NODRaiderTank" />
+		<Order Build="NODRaiderTank" />
+		<Order Build="NODRaiderTank" />
+		<Order Build="NODRaiderTank" />
+		<Order Build="NODRaiderTank" />
+		<Order Build="NODRaiderTank" />
+		<Order Build="NODRaiderTank" />
+		<Order Build="NODRaiderTank" />
+		<Order Build="NODRaiderTank" />
+		<Order Build="NODRaiderTank" />
+		<Order Build="NODRaiderTank" />
+		<Order Build="NODRaiderTank" />
+		<Order Build="NODRaiderTank" />
 		<Order Time="60s" Build="NODRefinery" />
-		<Order Build="NODHarvester" />
 		<Order Time="90s" Build="NODPowerPlant" />
 		<Order Time="95s" Build="NODPowerPlant" />
-		<Order Build="NODRaiderTank" />
-		<Order Build="NODRaiderTank" />
-		<Order Build="NODRaiderTank" />
-		<Order Build="NODRaiderTank" />
-		<Order Build="NODRaiderTank" />
-		<Order Build="NODRaiderTank" />
-		<Order Build="NODRaiderTank" />
-		<Order Build="NODRaiderTank" />
-		<Order Build="NODRaiderTank" />
-		<Order Build="NODRaiderTank" />
-		<Order Build="NODRaiderTank" />
-		<Order Build="NODRaiderTank" />
-		<Order Build="NODRaiderTank" />
 		<Order Time="100s" Build="NODDropZone" />
 		<Order Time="120s" Build="NODOperationsCenter" />
 		<Order Time="135s" Build="NODPowerPlant"/>

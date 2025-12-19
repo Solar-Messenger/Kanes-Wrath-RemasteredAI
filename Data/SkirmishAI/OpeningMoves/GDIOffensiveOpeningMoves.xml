@@ -5,34 +5,6 @@
   </Includes>
 
 	<SkirmishOpeningMove
-    id="GDIOffensiveStandard"
-    Side="GDI">
-		<Order Time="0s" Build="GDIPowerPlant"/>
-		<Order Time="5s" Build="GDIBarracks"/>
-		<Order Build="GDIEngineer"/>
-		<Order Build="GDIEngineer"/>
-		<Order Build="GDIRifleSoldierSquad"/>
-		<Order Build="GDIRifleSoldierSquad"/>
-		<Order Build="GDIRifleSoldierSquad"/>
-		<Order Time="10s" Build="GDIRefinery"/>
-		<Order Time="40s" Build="GDIWarfactory"/>
-		<Order Time="60s" Build="GDIRefinery"/>
-		<Order Build="GDIHarvester"/>
-		<Order Build="GDIAPC"/>
-		<Order Build="GDIAPC"/>
-		<Order Build="GDIAPC"/>
-		<Order Build="GDIAPC"/>
-		<Order Build="GDIHarvester"/>
-		<Order Time="90s" Build="GDIPowerPlant"/>
-		<Order Time="95s" Build="GDIPowerPlant"/>
-		<Order Time="100s" Build="GDIWarfactory"/>
-		<Order Time="120s" Build="GDIPowerPlant"/>
-		<Order Time="125s" Build="GDIWarfactory"/>
-		<Order Time="145s" Build="GDICommandPost"/>
-		<Order Time="160s" Build="GDIAirTower"/>
-	</SkirmishOpeningMove>
-
-	<SkirmishOpeningMove
     id="GDIOffensiveOrcaRush"
     Side="GDI">
 		<Order Time="0s" Build="GDIPowerPlant"/>
@@ -72,25 +44,34 @@
 		<Order Time="40s" Build="GDIWarfactory"/>
 		<Order Time="60s" Build="GDIRefinery"/>
 		<Order Build="GDIHarvester"/>
-		<Order Build="GDIPitBull"/>
-		<Order Build="GDIPitBull"/>
-		<Order Build="GDIPitBull"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
 		<Order Build="GDIHarvester"/>
+		<Order Build="GDIHarvester"/>
+		<Order Build="GDIPitBull"/>
+		<Order Build="GDIPitBull"/>
+		<Order Build="GDIPitBull"/>
+		<Order Build="GDIPitBull"/>
+		<Order Build="GDIPitBull"/>
+		<Order Build="GDIPitBull"/>
+		<Order Build="GDIPitBull"/>
+		<Order Build="GDIPitBull"/>
+		<Order Build="GDIPitBull"/>
+		<Order Build="GDIPitBull"/>
+		<Order Build="GDIPitBull"/>
+		<Order Build="GDIPitBull"/>
+		<Order Build="GDIPitBull"/>
+		<Order Build="GDIPitBull"/>
+		<Order Build="GDIPitBull"/>
+		<Order Build="GDIPitBull"/>
+		<Order Build="GDIPitBull"/>
+		<Order Build="GDIPitBull"/>
+		<Order Build="GDIPitBull"/>
+		<Order Build="GDIPitBull"/>
 		<Order Time="90s" Build="GDIPowerPlant"/>
 		<Order Time="95s" Build="GDIPowerPlant"/>
-		<Order Build="GDIPitBull"/>
-		<Order Build="GDIPitBull"/>
-		<Order Build="GDIPitBull"/>
-		<Order Build="GDIPitBull"/>
-		<Order Build="GDIPitBull"/>
-		<Order Build="GDIPitBull"/>
-		<Order Build="GDIPitBull"/>
-		<Order Build="GDIPitBull"/>
-		<Order Build="GDIPitBull"/>
-		<Order Build="GDIPitBull"/>
-		<Order Build="GDIPitBull"/>
-		<Order Build="GDIPitBull"/>
-		<Order Build="GDIPitBull"/>
 		<Order Time="100s" Build="GDIWarfactory"/>
 		<Order Time="120s" Build="GDICommandPost"/>
 		<Order Time="135s" Build="GDIPowerPlant"/>
@@ -111,25 +92,34 @@
 		<Order Time="40s" Build="GDIWarfactory"/>
 		<Order Time="60s" Build="GDIRefinery"/>
 		<Order Build="GDIHarvester"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
 		<Order Build="GDIHarvester"/>
+		<Order Build="GDIHarvester"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
 		<Order Time="90s" Build="GDIPowerPlant"/>
 		<Order Time="95s" Build="GDIPowerPlant"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
 		<Order Time="100s" Build="GDIWarfactory"/>
 		<Order Time="120s" Build="GDICommandPost"/>
 		<Order Time="135s" Build="GDIPowerPlant"/>

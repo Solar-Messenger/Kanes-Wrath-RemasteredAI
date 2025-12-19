@@ -92,13 +92,13 @@
 
 		<OpeningMove Name="T59_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="T59OffensiveStandard" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="T59DisintRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="T59SeekerSpam" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="T59DisintRush" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="T59SeekerSpam" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="T59OpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="T59OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
+		<States State="T59OffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="T59OffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="T59OffensiveEarlyGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="T59OffensiveLateGroundEconomyAttack" Difficulty="HARD BRUTAL"/>

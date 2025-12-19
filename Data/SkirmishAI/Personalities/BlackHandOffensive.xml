@@ -92,14 +92,14 @@
 
 		<OpeningMove Name="BH_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="BHOffensiveStandard" Weight="40%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="BHOffensiveBikeBuggyRush" Weight="20%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="BHOffensiveScorpionRush" Weight="20%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="BHOffensiveFlameTankRush" Weight="20%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="BHOffensiveBikeBuggyRush" Weight="33%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="BHOffensiveScorpionRush" Weight="34%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="BHOffensiveFlameTankRush" Weight="33%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BHOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
+		<States State="BHOffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BHOffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHOffensiveEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="BHOffensiveFlameTankAttack" Difficulty="BRUTAL"/>

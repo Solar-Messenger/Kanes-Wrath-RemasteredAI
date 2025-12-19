@@ -97,13 +97,13 @@
 
 		<OpeningMove Name="ST_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="STOffensiveStandard" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="STOffensiveOrcaRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="STOffensivePitBullSpam" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="STOffensiveOrcaRush" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="STOffensivePitBullSpam" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="STOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
+		<States State="STOffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="STOffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STOffensiveGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="STOffensiveAirEconomyAttack" Difficulty="BRUTAL"/>

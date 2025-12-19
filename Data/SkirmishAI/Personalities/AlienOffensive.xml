@@ -91,10 +91,10 @@
 
 		<OpeningMove Name="Alien_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="AlienOffensiveStandard" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="AlienSeekerSpam" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="AlienDevRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="AlienSeekerSpam" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="AlienDevRush" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
 
+		<States State="AlienOffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienOffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienOffensiveEarlyGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="AlienOffensiveLateGroundEconomyAttack" Difficulty="HARD BRUTAL"/>

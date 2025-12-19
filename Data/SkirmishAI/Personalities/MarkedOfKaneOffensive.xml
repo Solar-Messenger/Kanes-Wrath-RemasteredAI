@@ -91,13 +91,13 @@
 
 		<OpeningMove Name="MOK_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="MOKOffensiveStandard" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="MOKOffensiveBikeBuggyRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="MOKOffensiveScorpionRush" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="MOKOffensiveBikeBuggyRush" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="MOKOffensiveScorpionRush" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="MOKOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
+		<States State="MOKOffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="MOKOffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKOffensiveEarlyMidBikeEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="MOKOffensiveLateStealthTankEconomyAttack" Difficulty="HARD BRUTAL"/>

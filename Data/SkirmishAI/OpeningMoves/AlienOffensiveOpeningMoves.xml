@@ -5,34 +5,6 @@
 	</Includes>
 
 	<SkirmishOpeningMove
-	  id="AlienOffensiveStandard"
-	  Side="Alien">
-		<Order Time="0s" Build="AlienPowerProjector"/>
-		<Order Time="5s" Build="AlienPortal"/>
-		<Order Build="AlienAssimilator"/>
-		<Order Build="AlienAssimilator"/>
-		<Order Build="AlienBuzzer"/>
-		<Order Build="AlienBuzzer"/>
-		<Order Build="AlienBuzzer"/>
-		<Order Time="10s" Build="AlienTiberiumTower"/>
-		<Order Time="40s" Build="AlienGateway" />
-		<Order Build="AlienHarvester"/>
-		<Order Build="AlienGunWalker"/>
-		<Order Build="AlienGunWalker"/>
-		<Order Build="AlienGunWalker"/>
-		<Order Build="AlienGunWalker"/>
-		<Order Build="AlienHarvester"/>
-		<Order Time="60s" Build="AlienTiberiumTower"/>
-		<Order Time="90s" Build="AlienPowerProjector"/>
-		<Order Time="95s" Build="AlienPowerProjector"/>
-		<Order Time="100s" Build="AlienGateway" />
-		<Order Time="120s" Build="AlienPowerProjector"/>
-		<Order Time="125s" Build="AlienGateway" />
-		<Order Time="145s" Build="AlienControlCenter" />
-		<Order Time="160s" Build="AlienWarpBeacon" />
-	</SkirmishOpeningMove>
-
-	<SkirmishOpeningMove
 	   id="AlienSeekerSpam"
 	   Side="Alien">
 		<Order Time="0s" Build="AlienPowerProjector"/>
@@ -45,11 +17,20 @@
 		<Order Time="10s" Build="AlienTiberiumTower"/>
 		<Order Time="40s" Build="AlienGateway" />
 		<Order Build="AlienHarvester"/>
-		<Order Build="AlienSeekerTank"/>
-		<Order Build="AlienSeekerTank"/>
-		<Order Build="AlienSeekerTank"/>
-		<Order Build="AlienSeekerTank"/>
+		<Order Build="AlienGunWalker"/>
+		<Order Build="AlienGunWalker"/>
+		<Order Build="AlienGunWalker"/>
+		<Order Build="AlienGunWalker"/>
 		<Order Build="AlienHarvester"/>
+		<Order Build="AlienHarvester"/>
+		<Order Build="AlienSeekerTank"/>
+		<Order Build="AlienSeekerTank"/>
+		<Order Build="AlienSeekerTank"/>
+		<Order Build="AlienSeekerTank"/>
+		<Order Build="AlienSeekerTank"/>
+		<Order Build="AlienSeekerTank"/>
+		<Order Build="AlienSeekerTank"/>
+		<Order Build="AlienSeekerTank"/>
 		<Order Build="AlienSeekerTank"/>
 		<Order Build="AlienSeekerTank"/>
 		<Order Build="AlienSeekerTank"/>
@@ -89,11 +70,20 @@
 		<Order Build="AlienGunWalker"/>
 		<Order Build="AlienGunWalker"/>
 		<Order Build="AlienHarvester"/>
+		<Order Build="AlienHarvester"/>
 		<Order Time="60s" Build="AlienTiberiumTower"/>
 		<Order Time="90s" Build="AlienPowerProjector"/>
 		<Order Time="95s" Build="AlienPowerProjector"/>
 		<Order Time="100s" Build="AlienControlCenter"/>
 		<Order Time="115s" Build="AlienGateway"/>
+		<Order Build="AlienDevourerTank"/>
+		<Order Build="AlienGunWalker"/>
+		<Order Build="AlienDevourerTank"/>
+		<Order Build="AlienGunWalker"/>
+		<Order Build="AlienDevourerTank"/>
+		<Order Build="AlienGunWalker"/>
+		<Order Build="AlienDevourerTank"/>
+		<Order Build="AlienGunWalker"/>
 		<Order Build="AlienDevourerTank"/>
 		<Order Build="AlienGunWalker"/>
 		<Order Build="AlienDevourerTank"/>

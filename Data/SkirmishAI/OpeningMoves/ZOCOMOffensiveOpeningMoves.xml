@@ -5,34 +5,6 @@
   </Includes>
 
 	<SkirmishOpeningMove
-    id="ZOCOMOffensiveStandard"
-    Side="ZOCOM">
-		<Order Time="0s" Build="ZOCOMPowerPlant"/>
-		<Order Time="5s" Build="ZOCOMBarracks"/>
-		<Order Build="ZOCOMEngineer"/>
-		<Order Build="ZOCOMEngineer"/>
-		<Order Build="ZOCOMRifleSoldierSquad"/>
-		<Order Build="ZOCOMRifleSoldierSquad"/>
-		<Order Build="ZOCOMRifleSoldierSquad"/>
-		<Order Time="10s" Build="ZOCOMRefinery"/>
-		<Order Time="40s" Build="ZOCOMWarfactory"/>
-		<Order Time="60s" Build="ZOCOMRefinery"/>
-		<Order Build="ZOCOMHarvester"/>
-		<Order Build="ZOCOMAPC"/>
-		<Order Build="ZOCOMAPC"/>
-		<Order Build="ZOCOMAPC"/>
-		<Order Build="ZOCOMAPC"/>
-		<Order Build="GDIHarvester"/>
-		<Order Time="90s" Build="ZOCOMPowerPlant"/>
-		<Order Time="95s" Build="ZOCOMPowerPlant"/>
-		<Order Time="100s" Build="ZOCOMWarfactory"/>
-		<Order Time="120s" Build="ZOCOMPowerPlant"/>
-		<Order Time="125s" Build="ZOCOMWarfactory"/>
-		<Order Time="145s" Build="ZOCOMCommandPost"/>
-		<Order Time="160s" Build="ZOCOMAirTower"/>
-	</SkirmishOpeningMove>
-
-	<SkirmishOpeningMove
     id="ZOCOMOffensiveOrcaRush"
     Side="ZOCOM">
 		<Order Time="0s" Build="ZOCOMPowerPlant"/>
@@ -72,25 +44,33 @@
 		<Order Time="40s" Build="ZOCOMWarfactory"/>
 		<Order Time="60s" Build="ZOCOMRefinery"/>
 		<Order Build="ZOCOMHarvester"/>
-		<Order Build="ZOCOMPitBull"/>
-		<Order Build="ZOCOMPitBull"/>
-		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMAPC"/>
+		<Order Build="ZOCOMAPC"/>
+		<Order Build="ZOCOMAPC"/>
 		<Order Build="ZOCOMHarvester"/>
+		<Order Build="ZOCOMHarvester"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
+		<Order Build="ZOCOMPitBull"/>
 		<Order Time="90s" Build="ZOCOMPowerPlant"/>
 		<Order Time="95s" Build="ZOCOMPowerPlant"/>
-		<Order Build="ZOCOMPitBull"/>
-		<Order Build="ZOCOMPitBull"/>
-		<Order Build="ZOCOMPitBull"/>
-		<Order Build="ZOCOMPitBull"/>
-		<Order Build="ZOCOMPitBull"/>
-		<Order Build="ZOCOMPitBull"/>
-		<Order Build="ZOCOMPitBull"/>
-		<Order Build="ZOCOMPitBull"/>
-		<Order Build="ZOCOMPitBull"/>
-		<Order Build="ZOCOMPitBull"/>
-		<Order Build="ZOCOMPitBull"/>
-		<Order Build="ZOCOMPitBull"/>
-		<Order Build="ZOCOMPitBull"/>
 		<Order Time="100s" Build="ZOCOMWarfactory"/>
 		<Order Time="120s" Build="ZOCOMCommandPost"/>
 		<Order Time="135s" Build="ZOCOMPowerPlant"/>
