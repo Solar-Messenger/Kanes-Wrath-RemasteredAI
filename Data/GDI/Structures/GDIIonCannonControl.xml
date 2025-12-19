@@ -35,7 +35,7 @@
 			Armor="GDIIonCannonControlSonicRepulsionFieldArmor"
 			DamageFX="NormalDamageFX" />
 		<SkirmishAIInformation
-			BaseBuildingLocation="BACK"
+			BaseBuildingLocation="HOMEBASE"
 			ConquerMetricsOverrideDamageType="UNDEFINED"
 			ConquerMetricsOverrideAntiMask="ANTI_GROUND"
 			UnitBuilderStandardCombatUnit="False" />
