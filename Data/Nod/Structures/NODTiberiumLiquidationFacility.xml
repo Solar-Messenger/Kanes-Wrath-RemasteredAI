@@ -988,7 +988,10 @@
 				PlayWeaponPreFireFX="False"
 				OffsetTargetLocationFromObject="False"
 				DestealthClosestObjectMatchingFilter="False" />
-			<AISpecialPowerUpdate
+			
+			<!--Disabled because too OP. Nod factions can easily tech up and spam this to deny opponent resources-->
+			
+			<!--<AISpecialPowerUpdate
 				id="8A6B4807"
 				CommandButtonName="Command_ChemicalPlantTibVeinDetonation"
 				SecondaryCommandButtonName=""
@@ -1005,7 +1008,7 @@
 				MinimumCutoff="0"
 				UpdateTime="1s"
 				MaxFrequency="0"
-				RandomizeTargetLocation="False" />
+				RandomizeTargetLocation="False" />-->
 			<ModelConditionUpgrade
 				id="C2732A48"
 				RequiresAllTriggers="False"
