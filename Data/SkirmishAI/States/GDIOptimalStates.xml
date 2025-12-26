@@ -3,6 +3,8 @@
   <Tags></Tags>
   <Includes></Includes>
 
+	<!--Siege Threshold values are basically current_unit_count / threshold = enemy_defense_structure_count-->
+
 	<AIStrategicStateDefinition
 		  id="GDIOptimalDirectAttack"
 		  UnitUpgradeMultiplier="0.0">
@@ -15,6 +17,7 @@
 				<PowerAdvantageHeuristic/>
 				<PenetrabilityHeuristic/>
 			</OverpowerHeuristic>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
@@ -33,6 +36,7 @@
 			<PenetrabilityHeuristic/>
 			<BalanceOfPowerHeuristic/>
         </ProductionHaltHeuristic>
+		<SiegeThresholdHeuristic SiegeMode="false" Threshold="10.0"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
     <Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
@@ -48,11 +52,12 @@
 		<Heuristic>
 			<TimerHeuristic StartTime ="180s" EndTime="-1s" />
 			<ProductionHaltHeuristic
-	            PenetrabilityWeight="0.5"
-	            BalanceOfPowerWeight="0.5">
+	            PenetrabilityWeight="0.4"
+	            BalanceOfPowerWeight="0.6">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterHeuristic" TargetType="SpreadTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="SpreadTarget">
@@ -78,16 +83,15 @@
 		id="GDIOptimalSiege"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
-	  <TimerHeuristic StartTime="180s" EndTime="-1s"/>
-      <PathToTargetHeuristic PathExists="true"/>
-	  <SiegeThresholdHeuristic SiegeMode="true" Threshold="0.25"/>
+		<PathToTargetHeuristic PathExists="true"/>
+		<SiegeThresholdHeuristic SiegeMode="true" Threshold="8.0"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
     <Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-      <TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-        <CreateUnits MinUnits="4" MaxUnits="4" UnitName="GDIJuggernaught"/>
+      <TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK SIEGE_WEAPON" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+        <CreateUnits MinUnits="2" MaxUnits="2" UnitName="GDIJuggernaught"/>
       </TeamTemplate>
-		<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="UNIQUE_UNIT SIEGE_WEAPON RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		<TeamTemplate MinUnits="6" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON RELOAD_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
     </Tactic>
   </AIStrategicStateDefinition>
 
@@ -96,7 +100,7 @@
     UnitUpgradeMultiplier="0.0">
     <Heuristic>
       <PathToTargetHeuristic PathExists="true"/>
-	  <SiegeThresholdHeuristic SiegeMode="true" Threshold="0.25"/>
+	  <SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="SecondaryTarget"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="SecondaryTarget">
@@ -118,7 +122,6 @@
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
-			<ConstantHeuristic Weight="0.5"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Opportunity"/>
 		<Tactic Tactic="FlankAttack" TargetType="Opportunity">
@@ -132,7 +135,8 @@
     id="GDIOptimalAirHarassmentAntiTurtle"
     UnitUpgradeMultiplier="0.0">
     <Heuristic>
-		<ConstantHeuristic Weight="0.75"/>
+		<!--<ConstantHeuristic Weight="1.0"/>-->
+		<MiddleGameHeuristic/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
     <TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
@@ -146,6 +150,7 @@
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
 	  <TimerHeuristic StartTime="480s" EndTime="-1s"/>
+	  <SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
     </Heuristic>
 	<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="BombingAirstrike"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
@@ -160,8 +165,7 @@
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
       <PathToTargetHeuristic PathExists="true"/>
-      <ConstantHeuristic Weight="0.10"/>
-	  <SiegeThresholdHeuristic SiegeMode="false" Threshold="1.0"/>
+	  <SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Engineer">
@@ -175,7 +179,7 @@
 		  id="GDIOptimalGarrisonEpicUnit"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="241s" EndTime="-1s"/>
+			<!--<TimerHeuristic StartTime="241s" EndTime="-1s"/>-->
 			<ConstantHeuristic Weight="1.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>

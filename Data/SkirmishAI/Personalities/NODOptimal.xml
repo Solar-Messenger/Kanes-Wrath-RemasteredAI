@@ -19,7 +19,7 @@
 		  BaseCompactness="0.75"
 	  DefaultThreatFindRadius="0"
 	  UnitBuilderCostEffectivenessWeight="1.0"
-	  UnitBuilderMoneyVersusTimePreference="0.5"
+	  UnitBuilderMoneyVersusTimePreference="1.0"
 	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
 	  UnitBuilderEnemyTowerWeight="10%"
@@ -43,16 +43,16 @@
 		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
 		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
-		<ResourceMultiplierCheat Percentage="200%" Difficulty="MEDIUM"/>
-		<ResourceMultiplierCheat Percentage="250%" Difficulty="HARD"/>
-		<ResourceMultiplierCheat Percentage="300%" Difficulty="BRUTAL"/>
+		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
+		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
+		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
 
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
@@ -123,7 +123,7 @@
 		<States State="NODAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="NODCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODSuperweapon" Difficulty="HARD BRUTAL"/>
+		<States State="NODSuperweapon" Difficulty="BRUTAL"/>
 		<States State="NODCommando" Difficulty="HARD BRUTAL"/>
 		<States State="NODExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -137,10 +137,6 @@
 		<States State="NODOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="NODInfantryDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODVehicleDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODAircraftDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-
 		<States State="NODUnitPreferencesEasyEarly" Difficulty="EASY"/>
 		<States State="NODUnitPreferencesEasyMid" Difficulty="EASY"/>
 		<States State="NODUnitPreferencesEasyLate" Difficulty="EASY"/>
@@ -152,22 +148,20 @@
 		<BudgetStates State="OptimalLateGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="OptimalBudget_EASY" Difficulty="EASY"/>
 
-		<BudgetStates State="FullInvestmentBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="InvestmentPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="InvestmentDepletedBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
-		<BudgetStates State="TechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechDepletedBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
-
-		<BudgetStates State="SupportPowerbyTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-
-		<BudgetStates State="DefenseByTimeDistanceBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<UnitOverride UnitName="NODMetaUnit" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>
 		
 		<UnitOverride UnitName="NODCommando" Percentage="-1%" Difficulty="EASY"/>
 		<UnitOverride UnitName="NODVertigo" Percentage="-1%" Difficulty="EASY"/>
 		<UnitOverride UnitName="NODMetaUnit" Percentage="-1%" Difficulty="EASY"/>
-		<UnitOverride UnitName="NODTempleOfNOD" Percentage="-1%" Difficulty="EASY MEDIUM"/>
+		<UnitOverride UnitName="NODTempleOfNOD" Percentage="-1%" Difficulty="EASY MEDIUM HARD"/>
 
 	</AIPersonalityDefinition>
 </AssetDeclaration>

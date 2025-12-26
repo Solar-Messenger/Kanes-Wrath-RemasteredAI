@@ -64,8 +64,8 @@
 		  id="NODOffensiveFlameTankAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime ="90s" EndTime="-1s" />
-			<ConstantHeuristic Weight="0.6" />
+			<TimerHeuristic StartTime="90s" EndTime="-1s" />
+			<BalanceOfPowerHeuristic/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="SpreadTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="SpreadTarget">
@@ -79,7 +79,6 @@
 		  id="NODOffensiveOverwhelmAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="421s" EndTime="-1s"/>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="ExtraTarget"/>
@@ -93,12 +92,13 @@
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
 		<PathToTargetHeuristic PathExists="true"/>
-		<SiegeThresholdHeuristic SiegeMode="True" Threshold="0.25"/>
+		<LateGameHeuristic/>
+		<SiegeThresholdHeuristic SiegeMode="True" Threshold="10.0"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
     <Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-      <TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-        <CreateUnits MinUnits="3" MaxUnits="3" UnitName="NODMobileArtillery"/>
+      <TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+        <CreateUnits MinUnits="2" MaxUnits="2" UnitName="NODMobileArtillery"/>
       </TeamTemplate>
     </Tactic>
   </AIStrategicStateDefinition>
@@ -107,7 +107,8 @@
     id="NODOffensiveAirHarassmentAntiTurtle"
     UnitUpgradeMultiplier="0.0">
     <Heuristic>
-      <ConstantHeuristic Weight="0.75"/>
+      <!--<ConstantHeuristic Weight="1.0"/>-->
+		<MiddleGameHeuristic/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
     <TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
@@ -135,7 +136,7 @@
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
 		<PathToTargetHeuristic PathExists="true"/>
-		<ConstantHeuristic Weight="0.3"/>
+		<SiegeThresholdHeuristic SiegeMode="false" Threshold="10.0"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Engineer">
@@ -149,7 +150,7 @@
 		  id="NODOffensiveGarrisonEpicUnit"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="241s" EndTime="-1s"/>
+			<!--<TimerHeuristic StartTime="241s" EndTime="-1s"/>-->
 			<ConstantHeuristic Weight="1.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>
@@ -159,42 +160,5 @@
 		<UnitModifierByName UnitName="NODBlackHandSquad" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
 		<UnitModifierByName UnitName="NODMilitantRocketSquad" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
 	</AIStrategicStateDefinition>
-
-  <AIBudgetStateDefinition
-		id="NODOffensiveTechByTimeBudget">
-    <Heuristic>
-      <ConstantHeuristic Weight="0.8"/>
-      <OpeningMoveHeuristic Complete="true"/>
-      <TimerHeuristic StartTime="90s" EndTime="-1s"/>
-      <IntervalHeuristic IntervalTime="60s" ActiveTime="20s"/>
-      <IntervalHeuristic IntervalTime="5s" ActiveTime="5s"/>
-    </Heuristic>
-    <Budget>
-      <AccountShare Account="INVESTMENT" Percent="0%"/>
-      <AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
-      <AccountShare Account="PRODUCTION" Percent="0%"/>
-      <AccountShare Account="DEFENSE" Percent="0%"/>
-      <AccountShare Account="TECHNOLOGY" Percent="90%"/>
-      <AccountShare Account="SLUSH_FUND" Percent="10%"/>
-    </Budget>
-  </AIBudgetStateDefinition>
-
-  <AIBudgetStateDefinition
-    id="NODOffensiveTechByTimeBudget_EASY">
-    <Heuristic>
-      <ConstantHeuristic Weight="0.8"/>
-      <OpeningMoveHeuristic Complete="true"/>
-      <IntervalHeuristic IntervalTime="640s" ActiveTime="20s"/>
-      <IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
-    </Heuristic>
-    <Budget>
-      <AccountShare Account="INVESTMENT" Percent="0%"/>
-      <AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
-      <AccountShare Account="PRODUCTION" Percent="0%"/>
-      <AccountShare Account="DEFENSE" Percent="0%"/>
-      <AccountShare Account="TECHNOLOGY" Percent="90%"/>
-      <AccountShare Account="SLUSH_FUND" Percent="10%"/>
-    </Budget>
-  </AIBudgetStateDefinition>
-
+	
 </AssetDeclaration>

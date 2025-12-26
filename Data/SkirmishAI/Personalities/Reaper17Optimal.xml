@@ -43,16 +43,16 @@
 		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
 		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
-		<ResourceMultiplierCheat Percentage="200%" Difficulty="MEDIUM"/>
-		<ResourceMultiplierCheat Percentage="250%" Difficulty="HARD"/>
-		<ResourceMultiplierCheat Percentage="300%" Difficulty="BRUTAL"/>
+		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
+		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
+		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
 
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
@@ -75,7 +75,6 @@
 		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
 
-		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
@@ -133,10 +132,6 @@
 		<States State="R17BaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="R17OffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="R17DefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		
-		<States State="R17InfantryDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="R17VehicleDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="R17AircraftDefensesPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="R17UnitPreferencesEasyEarly" Difficulty="EASY"/>
 		<States State="R17UnitPreferencesEasyMid" Difficulty="EASY"/>
@@ -149,15 +144,13 @@
 		<BudgetStates State="OptimalLateGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="OptimalBudget_EASY" Difficulty="EASY"/>
 
-		<BudgetStates State="FullInvestmentBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="InvestmentPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="InvestmentDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
-		<BudgetStates State="TechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
-		
-		<BudgetStates State="SupportPowerbyTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-
-		<BudgetStates State="DefenseByTimeDistanceBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<UnitOverride UnitName="Reaper17EradicatorHexapod" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>
 
