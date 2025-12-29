@@ -9,13 +9,14 @@
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
 			<TimerHeuristic StartTime="120s" EndTime="-1s"/>
+			<ConstantHeuristic Weight="1.0"/>
 			<OverpowerHeuristic
 	            PowerAdvantageWeight="0.5"
 	            PenetrabilityWeight="0.5">
 				<PowerAdvantageHeuristic/>
 				<PenetrabilityHeuristic/>
 			</OverpowerHeuristic>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
@@ -27,14 +28,15 @@
 		  id="T59OptimalEarlyGroundEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="90s" EndTime="300s" />
+			<TimerHeuristic StartTime="90s" EndTime="240s"/>
+			<ConstantHeuristic Weight="0.8"/>
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.5"
 				BalanceOfPowerWeight="0.5">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="10.0"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
@@ -48,14 +50,15 @@
 	  id="T59OptimalLateGroundEconomyAttack"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime ="301s" EndTime="-1s" />
+			<TimerHeuristic StartTime="241s" EndTime="-1s" />
+			<ConstantHeuristic Weight="0.8"/>
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.5"
 				BalanceOfPowerWeight="0.5">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="10.0"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
@@ -69,10 +72,11 @@
 	  id="T59OptimalRavagerEconomyAttack"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime ="180s" EndTime="-1s" />
+			<TimerHeuristic StartTime="180s" EndTime="-1s"/>
+			<ConstantHeuristic Weight="0.85"/>
 			<ProductionHaltHeuristic
-				PenetrabilityWeight="0.5"
-				BalanceOfPowerWeight="0.5">
+				PenetrabilityWeight="0.4"
+				BalanceOfPowerWeight="0.6">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
@@ -90,14 +94,14 @@
 		  id="T59OptimalAirEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime ="180s" EndTime="-1s" />
+			<TimerHeuristic StartTime="180s" EndTime="-1s"/>
+			<ConstantHeuristic Weight="0.825"/>
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.4"
 				BalanceOfPowerWeight="0.6">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="SpreadTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="SpreadTarget">
@@ -111,6 +115,7 @@
 		  id="T59OptimalOverwhelmAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="ExtraTarget"/>
@@ -120,18 +125,20 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="T59OptimalSiege"
+		  id="T59OptimalLateSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<ConstantHeuristic Weight="0.95"/>
 			<PathToTargetHeuristic PathExists="true"/>
-			<SiegeThresholdHeuristic SiegeMode="true" Threshold="8.0"/>
+			<LateGameHeuristic/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="6.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
 			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="Traveler59DevastatorWarship"/>
 			</TeamTemplate>
-			<TeamTemplate MinUnits="6" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON RELOAD_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
+			<TeamTemplate MinUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON RELOAD_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -139,8 +146,9 @@
 		  id="T59Cultists"
 		  UnitUpgradeModifier="0.0">
 		<Heuristic>
+			<ConstantHeuristic Weight="0.75"/>
 			<PathToTargetHeuristic PathExists="true"/>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestOffensiveUnitCapHeuristic" TargetType="Unit"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Unit">
@@ -154,7 +162,8 @@
 	id="T59OptimalBaseCrack"
 	UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="480s" EndTime="-1s"/>
+			<ConstantHeuristic Weight="0.975"/>
+			<PathToTargetHeuristic PathExists="true"/>
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.5"
 				BalanceOfPowerWeight="0.5">
@@ -188,8 +197,9 @@
 		  id="T59OptimalBombingRuns"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="480s" EndTime="-1s"/>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
+			<ConstantHeuristic Weight="1.0"/>
+			<LateGameHeuristic/>
+			<!--<TimerHeuristic StartTime="480s" EndTime="-1s"/>-->
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="BombingAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
@@ -203,8 +213,9 @@
 		  id="T59OptimalEngineer"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<ConstantHeuristic Weight="0.5"/>
 			<PathToTargetHeuristic PathExists="true"/>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Engineer">

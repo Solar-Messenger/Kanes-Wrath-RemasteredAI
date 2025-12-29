@@ -101,7 +101,8 @@
 		<States State="MOKOptimalEarlyMidBikeEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="MOKOptimalLateStealthTankEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="MOKOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MOKOptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKOptimalMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKOptimalLateSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="MOKOptimalBaseCrack" Difficulty="BRUTAL"/>
 
 		<States State="MOKOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>

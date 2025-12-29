@@ -9,13 +9,14 @@
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
 			<TimerHeuristic StartTime="120s" EndTime="-1s"/>
+			<ConstantHeuristic Weight="1.0"/>
 			<OverpowerHeuristic
 				PowerAdvantageWeight="0.5"
 				PenetrabilityWeight="0.5">
 				<PowerAdvantageHeuristic/>
 				<PenetrabilityHeuristic/>
 			</OverpowerHeuristic>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
@@ -27,14 +28,15 @@
 		  id="MOKOptimalEarlyMidBikeEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="90s" EndTime="420s" />
+			<TimerHeuristic StartTime="90s" EndTime="420s"/>
+			<ConstantHeuristic Weight="0.8"/>
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.5"
 				BalanceOfPowerWeight="0.5">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="10.0"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
@@ -49,13 +51,14 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime ="421s" EndTime="-1s" />
+			<ConstantHeuristic Weight="0.9"/>
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.5"
 				BalanceOfPowerWeight="0.5">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="10.0"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
@@ -69,6 +72,7 @@
 		id="MOKOptimalOverwhelmAttack"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
+		<ConstantHeuristic Weight="1.0"/>
 		<PathToTargetHeuristic PathExists="true"/>
     </Heuristic>
 	  <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="ExtraTarget"/>
@@ -78,7 +82,7 @@
   </AIStrategicStateDefinition>
 
   <AIStrategicStateDefinition
-		id="MOKOptimalBeamSiege"
+		id="MOKOptimalMidSiege"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
 		<PathToTargetHeuristic PathExists="true"/>
@@ -90,12 +94,12 @@
       <TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
         <CreateUnits MinUnits="4" MaxUnits="4" UnitName="MarkedOfKaneBeamCannon"/>
       </TeamTemplate>
-		<TeamTemplate MinUnits="6" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON RELOAD_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
+		<TeamTemplate MinUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON RELOAD_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="MOKOptimalSpecterSiege"
+		  id="MOKOptimalLateSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
@@ -107,7 +111,7 @@
 			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="MarkedOfKaneMobileArtillery"/>
 			</TeamTemplate>
-			<TeamTemplate MinUnits="6" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON RELOAD_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
+			<TeamTemplate MinUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON RELOAD_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -115,10 +119,12 @@
 	id="MOKOptimalBaseCrack"
 	UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="480s" EndTime="-1s"/>
+			<ConstantHeuristic Weight="0.975"/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<LateGameHeuristic/>
 			<ProductionHaltHeuristic
-				PenetrabilityWeight="0.5"
-				BalanceOfPowerWeight="0.5">
+				PenetrabilityWeight="0.25"
+				BalanceOfPowerWeight="0.75">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
@@ -135,8 +141,8 @@
     id="MOKOptimalAirHarassmentAntiTurtle"
     UnitUpgradeMultiplier="0.0">
     <Heuristic>
-      <!--<ConstantHeuristic Weight="1.0"/>-->
-		<MiddleGameHeuristic/>
+      <ConstantHeuristic Weight="1.0"/>
+	  <MiddleGameHeuristic/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
     <TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
@@ -149,8 +155,9 @@
 		id="MOKOptimalBombingRuns"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
-		<TimerHeuristic StartTime="480s" EndTime="-1s"/>
-		<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
+		<ConstantHeuristic Weight="1.0"/>
+		<LateGameHeuristic/>
+		<!--<TimerHeuristic StartTime="480s" EndTime="-1s"/>-->
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="BombingAirstrike"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
@@ -164,8 +171,9 @@
 		id="MOKOptimalEngineer"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
+		<ConstantHeuristic Weight="0.5"/>
 		<PathToTargetHeuristic PathExists="true"/>
-		<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
+		<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Engineer">

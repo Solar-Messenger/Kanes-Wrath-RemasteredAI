@@ -103,8 +103,8 @@
 		<States State="NODOptimalLateStealthTankEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="NODOptimalFlameTankAttack" Difficulty="BRUTAL"/>
 		<States State="NODOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODOptimalBeamSiege" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODOptimalSpecterSiege" Difficulty="HARD BRUTAL"/>
+		<States State="NODOptimalMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODOptimalLateSiege" Difficulty="HARD BRUTAL"/>
 		<States State="NODOptimalBaseCrack" Difficulty="BRUTAL"/>
 
 		<States State="NODOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>

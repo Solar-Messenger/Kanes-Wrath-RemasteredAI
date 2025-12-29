@@ -104,7 +104,7 @@
 		<States State="ZOCOMOptimalGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="ZOCOMOptimalAirEconomyAttack" Difficulty="BRUTAL"/>
 		<States State="ZOCOMOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMOptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="ZOCOMOptimalMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOptimalBaseCrack" Difficulty="BRUTAL"/>
 
 		<States State="ZOCOMOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>

@@ -9,13 +9,14 @@
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
 			<TimerHeuristic StartTime="120s" EndTime="-1s"/>
+			<ConstantHeuristic Weight="1.0"/>
 			<OverpowerHeuristic
 				PowerAdvantageWeight="0.5"
 				PenetrabilityWeight="0.5">
 				<PowerAdvantageHeuristic/>
 				<PenetrabilityHeuristic/>
 			</OverpowerHeuristic>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
@@ -28,13 +29,14 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="90s" EndTime="-1s" />
+			<ConstantHeuristic Weight="0.8"/>
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.5"
 				BalanceOfPowerWeight="0.5">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="10.0"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
@@ -49,6 +51,7 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime ="180s" EndTime="-1s" />
+			<ConstantHeuristic Weight="0.85"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.4"
@@ -56,7 +59,6 @@
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundRefineryHeuristic" TargetType="SpreadTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="SpreadTarget">
@@ -70,6 +72,7 @@
 		  id="BHOptimalOverwhelmAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="ExtraTarget"/>
@@ -79,18 +82,20 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BHOptimalSiege"
+		  id="BHOptimalMidSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<ConstantHeuristic Weight="0.9"/>
 			<PathToTargetHeuristic PathExists="true"/>
-			<SiegeThresholdHeuristic SiegeMode="true" Threshold="8.0"/>
+			<MiddleGameHeuristic/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="6.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
 			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="BlackHandBeamCannon"/>
 			</TeamTemplate>
-			<TeamTemplate MinUnits="6" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON RELOAD_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
+			<TeamTemplate MinUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON RELOAD_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -98,11 +103,12 @@
 	id="BHOptimalBaseCrack"
 	UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="480s" EndTime="-1s"/>
+			<ConstantHeuristic Weight="0.975"/>
 			<PathToTargetHeuristic PathExists="true"/>
+			<LateGameHeuristic/>
 			<ProductionHaltHeuristic
-				PenetrabilityWeight="0.5"
-				BalanceOfPowerWeight="0.5">
+				PenetrabilityWeight="0.25"
+				BalanceOfPowerWeight="0.75">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
@@ -119,7 +125,7 @@
 	  id="BHOptimalAirHarassmentAntiTurtle"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<!--<ConstantHeuristic Weight="1.0"/>-->
+			<ConstantHeuristic Weight="1.0"/>
 			<MiddleGameHeuristic/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
@@ -133,8 +139,9 @@
 		  id="BHOptimalArtilleryBombing"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="480s" EndTime="-1s"/>
-			<SiegeThresholdHeuristic SiegeMode="true" Threshold="8.0"/>
+			<ConstantHeuristic Weight="1.0"/>
+			<LateGameHeuristic/>
+			<!--<TimerHeuristic StartTime="480s" EndTime="-1s"/>-->
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="BombingAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
@@ -148,8 +155,9 @@
 		  id="BHOptimalEngineer"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<ConstantHeuristic Weight="0.5"/>
 			<PathToTargetHeuristic PathExists="true"/>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Engineer">

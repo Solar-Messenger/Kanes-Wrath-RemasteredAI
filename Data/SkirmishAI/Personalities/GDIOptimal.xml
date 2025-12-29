@@ -102,7 +102,8 @@
 		<States State="GDIOptimalGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="GDIOptimalAirEconomyAttack" Difficulty="BRUTAL"/>
 		<States State="GDIOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GDIOptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="GDIOptimalMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="GDIOptimalLateSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIOptimalSpotters" Difficulty="HARD BRUTAL"/>
 		<States State="GDIOptimalBaseCrack" Difficulty="BRUTAL"/>
 

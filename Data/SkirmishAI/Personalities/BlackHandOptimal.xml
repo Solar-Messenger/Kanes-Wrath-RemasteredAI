@@ -102,7 +102,7 @@
 		<States State="BHOptimalEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="BHOptimalFlameTankAttack" Difficulty="BRUTAL"/>
 		<States State="BHOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BHOptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BHOptimalMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BHOptimalBaseCrack" Difficulty="BRUTAL"/>
 
 		<States State="BHOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>

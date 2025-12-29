@@ -105,7 +105,7 @@
 		<States State="STOptimalGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="STOptimalAirEconomyAttack" Difficulty="BRUTAL"/>
 		<States State="STOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="STOptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="STOptimalLateSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="STOptimalBaseCrack" Difficulty="BRUTAL"/>
 
 		<States State="STOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>

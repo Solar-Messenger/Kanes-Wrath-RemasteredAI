@@ -48,7 +48,7 @@
 		  id="GDIOffensiveAirEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime ="60s" EndTime="-1s" />
+			<TimerHeuristic StartTime="60s" EndTime="-1s" />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterHeuristic" TargetType="SpreadTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="SpreadTarget">
