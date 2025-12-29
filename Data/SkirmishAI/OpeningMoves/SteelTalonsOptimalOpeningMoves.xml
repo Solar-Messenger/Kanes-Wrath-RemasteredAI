@@ -41,11 +41,13 @@
 
 		<!--Causes Crash if more than 1 Titan is Ordered. Idk why. Some issue with the Titan-->
 
-		<!--
+		
+		<!--<Order Build="SteelTalonsTitan"/>
 		<Order Build="SteelTalonsTitan"/>
 		<Order Build="SteelTalonsTitan"/>
 		<Order Build="SteelTalonsTitan"/>
-		-->
+		<Order Build="SteelTalonsTitan"/>-->
+	
 
 		<Order Build="SteelTalonsHeavyHarvester"/>
 		<Order Time="60s" Build="SteelTalonsRefinery"/>
