@@ -97,9 +97,7 @@
 
 		<OpeningMove Name="ZOCOM_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="ZOCOMStandardCrane" Weight="65%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="ZOCOMSuperweaponRush" Weight="10%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="ZOCOMTurtle" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="ZOCOMDefensiveSuperWeapon" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="ZOCOMConyardDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMSuperweaponDefense" Difficulty="HARD BRUTAL"/>

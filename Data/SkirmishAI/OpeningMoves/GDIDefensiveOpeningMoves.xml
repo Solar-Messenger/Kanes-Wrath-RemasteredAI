@@ -5,8 +5,8 @@
   </Includes>
 
 	<SkirmishOpeningMove
-	id="GDIDefensiveStandard"
-	Side="GDI">
+		id="GDIDefensiveSuperWeapon"
+		Side="GDI">
 		<Order Time="0s" Build="GDIPowerPlant"/>
 		<Order Time="5s" Build="GDIBarracks"/>
 		<Order Build="GDIEngineer"/>
@@ -16,21 +16,26 @@
 		<Order Build="GDIRifleSoldierSquad"/>
 		<Order Time="10s" Build="GDIRefinery"/>
 		<Order Time="40s" Build="GDIWarfactory"/>
+		<Order Build="GDIHarvester"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIHarvester"/>
+		<Order Build="GDIHarvester"/>
 		<Order Time="60s" Build="GDIRefinery"/>
-		<Order Build="GDIHarvester"/>
-		<Order Build="GDIAPC"/>
-		<Order Build="GDIAPC"/>
-		<Order Build="GDIAPC"/>
-		<Order Build="GDIHarvester"/>
-		<Order Build="GDIHarvester"/>
 		<Order Time="90s" Build="GDIPowerPlant"/>
-		<Order Time="95s" Build="GDIWatchTower"/>
 		<Order Time="95s" Build="GDIPowerPlant"/>
 		<Order Time="100s" Build="GDIWatchTower"/>
-		<Order Time="100s" Build="GDICrane"/>
-		<Order Time="115s" Build="GDIWarfactory"/>
-		<Order Time="115s" Build="GDICommandPost"/>
-		<Order Time="130s" Build="GDIAirTower"/>
+		<Order Time="105s" Build="GDIWatchTower"/>
+		<Order Time="100s" Build="GDIWarfactory"/>
+		<Order Time="120s" Build="GDICrane"/>
+		<Order Time="135s" Build="GDICommandPost"/>
+		<Order Time="135s" Build="GDIPowerPlant"/>
+		<Order Time="140s" Build="GDIAirTower"/>
+		<Order Time="150s" Build="GDIArmory"/>
+		<Order Time="190s" Build="MG_GDI_ReclamatorHub"/>
+		<Order Time="190s" Build="GDIIonCannonControlCenter"/>
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>

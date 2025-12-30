@@ -96,8 +96,7 @@
 
 		<OpeningMove Name="T59_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="Traveler59StandardCrane" Weight="90%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="Traveler59SuperweaponRush" Weight="10%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="T59DefensiveSuperWeapon" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="T59ConyardDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="T59SuperweaponDefense" Difficulty="HARD BRUTAL"/>

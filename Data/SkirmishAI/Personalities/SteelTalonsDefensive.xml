@@ -97,8 +97,7 @@
 
 		<OpeningMove Name="ST_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="SteelTalonsStandardCrane" Weight="90%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="SteelTalonsSuperweaponRush" Weight="10%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="STDefensiveSuperWeapon" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="STOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>

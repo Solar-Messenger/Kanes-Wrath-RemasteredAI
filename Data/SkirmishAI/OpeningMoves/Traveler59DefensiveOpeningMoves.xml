@@ -4,35 +4,38 @@
   <Includes>
   </Includes>
 
-  <SkirmishOpeningMove
-    id="Traveler59SuperweaponRush"
-    Side="Traveler59">
-
-    <Order Build="Traveler59TiberiumTower" />
-    <Order Build="Traveler59PowerProjector" />
-    <Order Build="Traveler59TiberiumTower" />
-    <Order Build="Traveler59Portal" />
-    <Order Time="53s" Account="PRODUCTION" Deposit="6000" />
-    <Order Build="Traveler59PowerProjector" />
-    <Order Build="Traveler59ControlCenter" />
-    <Order Build="Traveler59Reactor" />
-    <Order Build="Traveler59PowerProjector" />
-    <Order Build="Traveler59RiftGenerator" />
-    <Order Time="168s" />
-  </SkirmishOpeningMove>
-
-  <SkirmishOpeningMove
-     id="Traveler59DualBarracks"
-     Side="Traveler59">
-
-    <Order Time="0s" Account="PRODUCTION" Deposit="4000" />
-    <Order Build="Traveler59PowerProjector" />
-    <Order Build="Traveler59Portal" />
-    <Order Build="Traveler59TiberiumTower" />
-    <Order Build="Traveler59TiberiumTower" />
-    <Order Build="Traveler59Portal" />
-    <Order Build="Traveler59TiberiumTower" />
-    <Order Time="76s" />
-  </SkirmishOpeningMove>
+	<SkirmishOpeningMove
+		id="T59DefensiveSuperWeapon"
+		Side="Traveler59">
+		<Order Time="0s" Build="Traveler59PowerProjector"/>
+		<Order Time="5s" Build="Traveler59Portal"/>
+		<Order Build="Traveler59Assimilator"/>
+		<Order Build="Traveler59Assimilator"/>
+		<Order Build="AlienBuzzers"/>
+		<Order Build="AlienBuzzers"/>
+		<Order Build="AlienBuzzers"/>
+		<Order Time="10s" Build="Traveler59TiberiumTower"/>
+		<Order Time="40s" Build="Traveler59Gateway"/>
+		<Order Build="Traveler59Harvester"/>
+		<Order Build="Traveler59GunWalker"/>
+		<Order Build="Traveler59GunWalker"/>
+		<Order Build="Traveler59GunWalker"/>
+		<Order Build="Traveler59GunWalker"/>
+		<Order Build="Traveler59Harvester"/>
+		<Order Build="Traveler59Harvester"/>
+		<Order Time="60s" Build="Traveler59TiberiumTower"/>
+		<Order Time="90s" Build="Traveler59PowerProjector"/>
+		<Order Time="95s" Build="Traveler59PowerProjector"/>
+		<Order Time="100s" Build="Traveler59BuzzerHive"/>
+		<Order Time="105s" Build="Traveler59BuzzerHive"/>
+		<Order Time="100s" Build="Traveler59Gateway"/>
+		<Order Time="120s" Build="Traveler59Foundry"/>
+		<Order Time="135s" Build="Traveler59ControlCenter"/>
+		<Order Time="135s" Build="Traveler59PowerProjector"/>
+		<Order Time="140s" Build="Traveler59WarpBeacon"/>
+		<Order Time="150s" Build="Traveler59Reactor"/>
+		<Order Time="190s" Build="MG_Traveler59_Hive"/>
+		<Order Time="190s" Build="Traveler59RiftGenerator"/>
+	</SkirmishOpeningMove>
 
 </AssetDeclaration>

@@ -96,7 +96,7 @@
 
 		<OpeningMove Name="BH_Easy" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="BHDefensiveStandard" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="BHDefensiveSuperWeapon" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BHOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>

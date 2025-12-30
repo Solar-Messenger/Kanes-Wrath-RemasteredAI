@@ -95,7 +95,7 @@
 
 		<OpeningMove Name="MOK_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="MOKDefensiveStandard" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="MOKDefensiveSuperWeapon" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="MOKOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>

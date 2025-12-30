@@ -4,35 +4,38 @@
   <Includes>
   </Includes>
 
-  <SkirmishOpeningMove
-    id="AlienSuperweaponRush"
-    Side="Alien">
-
-    <Order Build="AlienTiberiumTower" />
-    <Order Build="AlienPowerProjector" />
-    <Order Build="AlienTiberiumTower" />
-    <Order Build="AlienPortal" />
-    <Order Time="53s" Account="PRODUCTION" Deposit="6000" />
-    <Order Build="AlienPowerProjector" />
-    <Order Build="AlienControlCenter" />
-    <Order Build="AlienReactor" />
-    <Order Build="AlienPowerProjector" />
-    <Order Build="AlienRiftGenerator" />
-    <Order Time="168s" />
-  </SkirmishOpeningMove>
-
-  <SkirmishOpeningMove
-     id="AlienDualBarracks"
-     Side="Alien">
-
-    <Order Time="0s" Account="PRODUCTION" Deposit="4000" />
-    <Order Build="AlienPowerProjector" />
-    <Order Build="AlienPortal" />
-    <Order Build="AlienTiberiumTower" />
-    <Order Build="AlienTiberiumTower" />
-    <Order Build="AlienPortal" />
-    <Order Build="AlienTiberiumTower" />
-    <Order Time="76s" />
-  </SkirmishOpeningMove>
+	<SkirmishOpeningMove
+		id="AlienDefensiveSuperWeapon"
+		Side="Alien">
+		<Order Time="0s" Build="AlienPowerProjector"/>
+		<Order Time="5s" Build="AlienPortal"/>
+		<Order Build="AlienAssimilator"/>
+		<Order Build="AlienAssimilator"/>
+		<Order Build="AlienBuzzers"/>
+		<Order Build="AlienBuzzers"/>
+		<Order Build="AlienBuzzers"/>
+		<Order Time="10s" Build="AlienTiberiumTower"/>
+		<Order Time="40s" Build="AlienGateway"/>
+		<Order Build="AlienHarvester"/>
+		<Order Build="AlienGunWalker"/>
+		<Order Build="AlienGunWalker"/>
+		<Order Build="AlienGunWalker"/>
+		<Order Build="AlienGunWalker"/>
+		<Order Build="AlienHarvester"/>
+		<Order Build="AlienHarvester"/>
+		<Order Time="60s" Build="AlienTiberiumTower"/>
+		<Order Time="90s" Build="AlienPowerProjector"/>
+		<Order Time="95s" Build="AlienPowerProjector"/>
+		<Order Time="100s" Build="AlienBuzzerHive"/>
+		<Order Time="105s" Build="AlienBuzzerHive"/>
+		<Order Time="100s" Build="AlienGateway"/>
+		<Order Time="120s" Build="AlienFoundry"/>
+		<Order Time="135s" Build="AlienControlCenter"/>
+		<Order Time="135s" Build="AlienPowerProjector"/>
+		<Order Time="140s" Build="AlienWarpBeacon"/>
+		<Order Time="150s" Build="AlienReactor"/>
+		<Order Time="190s" Build="MG_Alien_Hive"/>
+		<Order Time="190s" Build="AlienRiftGenerator"/>
+	</SkirmishOpeningMove>
 
 </AssetDeclaration>

@@ -95,7 +95,7 @@
 
 		<OpeningMove Name="NOD_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="NODDefensiveStandard" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="NODDefensiveSuperWeapon" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="NODOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>

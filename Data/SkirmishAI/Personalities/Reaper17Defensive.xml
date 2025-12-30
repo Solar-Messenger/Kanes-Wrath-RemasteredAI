@@ -95,8 +95,7 @@
 
 		<OpeningMove Name="R17_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="Reaper17StandardCrane" Weight="90%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="AlienSuperweaponRush" Weight="10%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="R17DefensiveSuperWeapon" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="R17ConyardDefense" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="R17SuperweaponDefense" Difficulty="HARD BRUTAL"/>
