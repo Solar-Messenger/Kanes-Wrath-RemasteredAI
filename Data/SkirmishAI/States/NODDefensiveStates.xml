@@ -4,27 +4,14 @@
 	<Includes></Includes>
 
 	<AIStrategicStateDefinition
-		  id="NODResourceDefense"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<EnemyNearbyHeuristic Distance="1000.0" EnemyNearby="true" AttackerKindOf="SUPPLY_GATHERING_CENTER"/>
-			<ConstantHeuristic Weight="1.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestFriendlyRefineryHeuristic" TargetType="Structure"/>
-		<Tactic Tactic="ReactiveDefense" TargetType="Structure">
-			<TeamTemplate MinUnits="1" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
 		  id="NODConyardDefense"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<EnemyNearbyHeuristic Distance="1000.0" EnemyNearby="true" AttackerKindOf="CONSTRUCTION_YARD"/>
+			<EnemyNearbyHeuristic Distance="1200.0" EnemyNearby="true" DefenderKindOf="CONSTRUCTION_YARD"/>
 			<ConstantHeuristic Weight="1.0"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestFriendlyConyardHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="ReactiveDefense" TargetType="PrimaryTarget">
+		<TargetHeuristic TargetHeuristic="ClosestFriendlyConyardHeuristic" TargetType="Defensive"/>
+		<Tactic Tactic="StaticDefense" TargetType="Defensive">
 			<TeamTemplate MinUnits="1" MaxUnits="5" IncludeKindOf="CAN_ATTACK VEHICLE" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -33,10 +20,11 @@
 		  id="NODSuperweaponDefense"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<EnemyNearbyHeuristic Distance="1200.0" EnemyNearby="true" DefenderKindOf="SUPER_WEAPON"/>
 			<ConstantHeuristic Weight="1.0"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestFriendlySuperweaponHeuristic" TargetType="FocusedTarget"/>
-		<Tactic Tactic="ReactiveDefense" TargetType="FocusedTarget">
+		<TargetHeuristic TargetHeuristic="ClosestFriendlySuperweaponHeuristic" TargetType="SpecialDefense"/>
+		<Tactic Tactic="StaticDefense" TargetType="SpecialDefense">
 			<TeamTemplate MinUnits="1" MaxUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -45,10 +33,11 @@
 		  id="NODCounterattack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="180s" EndTime="-1s"/>
+			<ConstantHeuristic Weight="1.0"/>
+			<TimerHeuristic StartTime="300s" EndTime="-1s"/>
 			<PathToTargetHeuristic PathExists="true"/>
-			<CounterattackHeuristic Threshold="1.5"/>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="0.25"/>
+			<FocusedThresholdHeuristic/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Counterattack"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Counterattack">
@@ -60,6 +49,7 @@
 	  id="NODFinalAttack"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="ExtraTarget"/>
@@ -69,19 +59,38 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="NODDefensiveSiege"
+		  id="NODDefensiveMidSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="180s" EndTime="-1s"/>
+			<ConstantHeuristic Weight="0.9"/>
 			<PathToTargetHeuristic PathExists="true"/>
-			<LateGameHeuristic/>
+			<MiddleGameHeuristic/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="8.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="3" MaxUnits="3" UnitName="NODMobileArtillery"/>
+			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="NODBeamCannon"/>
 			</TeamTemplate>
-			<TeamTemplate MinUnits="1" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="true"/>
+			<TeamTemplate MinUnits="6" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="NODDefensiveLateSiege"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.95"/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<LateGameHeuristic/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="8.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="SiegeTarget"/>
+		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="NODMobileArtillery"/>
+			</TeamTemplate>
+			<TeamTemplate MinUnits="6" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -89,12 +98,13 @@
 	  id="NODDefensiveAirHarassmentAntiTurtle"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.75"/>
+			<ConstantHeuristic Weight="1.0"/>
+			<MiddleGameHeuristic/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
 		<Tactic Tactic="FlankAttack" TargetType="AssaultAirstrike">
-			<TeamTemplate MinUnits="4" MaxUnits="8" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT PRODUCED_AT_HELIPAD" ExcludeKindOf="INFANTRY RELOAD_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
+			<TeamTemplate MaxUnits="8" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT PRODUCED_AT_HELIPAD" ExcludeKindOf="INFANTRY RELOAD_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -102,26 +112,13 @@
 	  id="NODDefensiveBombingRuns"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
 			<LateGameHeuristic/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="BombingAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
 			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="NODVertigo"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		  id="NODDefensiveExpansion"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<IntervalHeuristic IntervalTime="130s" ActiveTime="30s"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ExpansionHeuristic" TargetType="Expansion"/>
-		<Tactic Tactic="SimpleExpansion" TargetType="Expansion">
-			<TeamTemplate MinUnits="2" MaxUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits UnitName="NODEmissary"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -136,6 +133,7 @@
 		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">
 			<TeamTemplate MinUnits="1" MaxUnits="2" IncludeKindOf="INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
 		</Tactic>
+		<UnitModifierByName UnitName="NODMilitantRocketSquad" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
 	</AIStrategicStateDefinition>
 
 </AssetDeclaration>

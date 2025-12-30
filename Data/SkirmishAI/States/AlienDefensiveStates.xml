@@ -4,39 +4,27 @@
   <Includes></Includes>
 
 	<AIStrategicStateDefinition
-		  id="AlienResourceDefense"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<EnemyNearbyHeuristic Distance="1000.0" EnemyNearby="true" AttackerKindOf="SUPPLY_GATHERING_CENTER"/>
-			<ConstantHeuristic Weight="1.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestFriendlyRefineryHeuristic" TargetType="Structure"/>
-		<Tactic Tactic="ReactiveDefense" TargetType="Structure">
-			<TeamTemplate MinUnits="1" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
 		  id="AlienConyardDefense"
 		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<EnemyNearbyHeuristic Distance="1000.0" EnemyNearby="true" AttackerKindOf="CONSTRUCTION_YARD"/>
-			<ConstantHeuristic Weight="1.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestFriendlyConyardHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="ReactiveDefense" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="1" MaxUnits="5" IncludeKindOf="CAN_ATTACK VEHICLE" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
-		</Tactic>
+			<Heuristic>
+				<EnemyNearbyHeuristic Distance="1200.0" EnemyNearby="true" DefenderKindOf="CONSTRUCTION_YARD"/>
+				<ConstantHeuristic Weight="1.0"/>
+			</Heuristic>
+			<TargetHeuristic TargetHeuristic="ClosestFriendlyConyardHeuristic" TargetType="Defensive"/>
+			<Tactic Tactic="StaticDefense" TargetType="Defensive">
+				<TeamTemplate MinUnits="1" MaxUnits="5" IncludeKindOf="CAN_ATTACK VEHICLE" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
+			</Tactic>
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
 		  id="AlienSuperweaponDefense"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<EnemyNearbyHeuristic Distance="1200.0" EnemyNearby="true" DefenderKindOf="SUPER_WEAPON"/>
 			<ConstantHeuristic Weight="1.0"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestFriendlySuperweaponHeuristic" TargetType="FocusedTarget"/>
-		<Tactic Tactic="ReactiveDefense" TargetType="FocusedTarget">
+		<TargetHeuristic TargetHeuristic="ClosestFriendlySuperweaponHeuristic" TargetType="SpecialDefense"/>
+		<Tactic Tactic="StaticDefense" TargetType="SpecialDefense">
 			<TeamTemplate MinUnits="1" MaxUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -45,10 +33,11 @@
 		  id="AlienCounterattack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<TimerHeuristic StartTime="300s" EndTime="-1s"/>
 			<PathToTargetHeuristic PathExists="true"/>
-			<TimerHeuristic StartTime="180s" EndTime="-1s"/>
-			<CounterattackHeuristic Threshold="1.5"/>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="0.25"/>
+			<FocusedThresholdHeuristic/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Counterattack"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Counterattack">
@@ -60,6 +49,7 @@
 	  id="AlienFinalAttack"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="ExtraTarget"/>
@@ -68,16 +58,53 @@
 		</Tactic>
 	</AIStrategicStateDefinition>
 
+	<AIStrategicStateDefinition
+		  id="AlienDefensiveMidSiege"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.9"/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<MiddleGameHeuristic/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="8.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
+		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
+			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="3" MaxUnits="3" UnitName="AlienDevourerTank"/>
+			</TeamTemplate>
+			<TeamTemplate MinUnits="6" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="AlienDefensiveLateSiege"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.95"/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<LateGameHeuristic/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="8.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
+		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="AlienDevastatorWarship"/>
+			</TeamTemplate>
+			<TeamTemplate MinUnits="6" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
   <AIStrategicStateDefinition
   id="AlienDefensiveAirHarassmentAntiTurtle"
   UnitUpgradeMultiplier="0.0">
     <Heuristic>
-      <ConstantHeuristic Weight="0.75"/>
+		<ConstantHeuristic Weight="1.0"/>
+		<MiddleGameHeuristic/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
     <TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
     <Tactic Tactic="FlankAttack" TargetType="AssaultAirstrike">
-      <TeamTemplate MinUnits="4" MaxUnits="8" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="true"/>
+      <TeamTemplate MaxUnits="8" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
 
@@ -85,6 +112,7 @@
 		  id="AlienDefensiveBombingRuns"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
 			<LateGameHeuristic/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="BombingAirstrike"/>
@@ -94,37 +122,6 @@
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		  id="AlienDefensiveSiege"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<TimerHeuristic StartTime="180s" EndTime="-1s"/>
-			<PathToTargetHeuristic PathExists="true"/>
-			<LateGameHeuristic/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
-		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="3" MaxUnits="3" UnitName="AlienDevastatorWarship"/>
-			</TeamTemplate>
-			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="UNIQUE_UNIT SIEGE_WEAPON RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-  <AIStrategicStateDefinition
-		id="AlienDefensiveExpansion"
-		UnitUpgradeMultiplier="0.0">
-    <Heuristic>
-      <IntervalHeuristic IntervalTime="130s" ActiveTime="30s"/>
-    </Heuristic>
-    <TargetHeuristic TargetHeuristic="ExpansionHeuristic" TargetType="Expansion"/>
-    <Tactic Tactic="SimpleExpansion" TargetType="Expansion">
-      <TeamTemplate MinUnits="2" MaxUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-        <CreateUnits UnitName="AlienExplorer"/>
-      </TeamTemplate>
-    </Tactic>
-  </AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
 		  id="AlienDefensiveGarrisonEpicUnit"

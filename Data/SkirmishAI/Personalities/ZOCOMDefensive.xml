@@ -43,38 +43,33 @@
 		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
 		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
-		<ResourceMultiplierCheat Percentage="200%" Difficulty="MEDIUM"/>
-		<ResourceMultiplierCheat Percentage="250%" Difficulty="HARD"/>
-		<ResourceMultiplierCheat Percentage="300%" Difficulty="BRUTAL"/>
+		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
+		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
+		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
 
-		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Defensive" MaxTeamsPerTarget="1"/>
+
+		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
 
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
-
 		<TacticalTarget TacticalAITarget="Counterattack" MaxTeamsPerTarget="1"/>
-
+		<TacticalTarget TacticalAITarget="Counterattack" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
-
-		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="Targetless" MaxTeamsPerTarget="1"/>
 
@@ -106,14 +101,13 @@
 		<OpeningMove Name="ZOCOMSuperweaponRush" Weight="10%" Difficulty="MEDIUM HARD BRUTAL"/>
 		<OpeningMove Name="ZOCOMTurtle" Weight="25%" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="ZOCOMResourceDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMConyardDefense" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="ZOCOMConyardDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMSuperweaponDefense" Difficulty="HARD BRUTAL"/>
 		<States State="ZOCOMCounterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMFinalAttack" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="ZOCOMFinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="ZOCOMDefensiveMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMDefensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMDefensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMDefensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMGroundEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
@@ -128,7 +122,7 @@
 		<States State="ZOCOMCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMSuperweapon" Difficulty="HARD BRUTAL"/>
+		<States State="ZOCOMSuperweapon" Difficulty="BRUTAL"/>
 		<States State="ZOCOMCommando" Difficulty="HARD BRUTAL"/>
 		<States State="ZOCOMIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -138,10 +132,6 @@
 		<States State="ZOCOMBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-
-		<States State="ZOCOMInfantryDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMVehicleDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMAircraftDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="ZOCOMUnitPreferencesEasyEarly" Difficulty="EASY"/>
 		<States State="ZOCOMUnitPreferencesEasyMid" Difficulty="EASY"/>
@@ -153,15 +143,13 @@
 		<BudgetStates State="DefensiveLateGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="DefensiveBudget_EASY" Difficulty="EASY"/>
 
-		<BudgetStates State="FullInvestmentBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="InvestmentPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="InvestmentDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
-		<BudgetStates State="TechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
-
-		<BudgetStates State="SupportPowerbyTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-
-		<BudgetStates State="DefenseByTimeDistanceBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<UnitOverride UnitName="ZOCOMMARV" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>
 
