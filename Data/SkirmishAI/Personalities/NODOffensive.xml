@@ -121,7 +121,7 @@
 		<States State="NODAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="NODCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODSuperweapon" Difficulty="HARD BRUTAL"/>
+		<States State="NODSuperweapon" Difficulty="BRUTAL"/>
 		<States State="NODCommando" Difficulty="HARD BRUTAL"/>
 		<States State="NODExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>

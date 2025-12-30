@@ -118,7 +118,7 @@
 		<States State="MOKAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="MOKAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="MOKCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MOKSuperweapon" Difficulty="HARD BRUTAL"/>
+		<States State="MOKSuperweapon" Difficulty="BRUTAL"/>
 		<States State="MOKCommando" Difficulty="HARD BRUTAL"/>
 		<States State="MOKExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>

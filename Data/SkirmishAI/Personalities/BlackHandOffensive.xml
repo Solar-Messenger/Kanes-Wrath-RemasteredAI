@@ -118,7 +118,7 @@
 		<States State="BHAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BHAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="BHCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="BHSuperweapon" Difficulty="HARD BRUTAL"/>
+		<States State="BHSuperweapon" Difficulty="BRUTAL"/>
 		<States State="BHCommando" Difficulty="HARD BRUTAL"/>
 		<States State="BHExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>

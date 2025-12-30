@@ -122,7 +122,7 @@
 		<States State="ZOCOMAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="ZOCOMCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMSuperweapon" Difficulty="HARD BRUTAL"/>
+		<States State="ZOCOMSuperweapon" Difficulty="BRUTAL"/>
 		<States State="ZOCOMCommando" Difficulty="HARD BRUTAL"/>
 		<States State="ZOCOMExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
