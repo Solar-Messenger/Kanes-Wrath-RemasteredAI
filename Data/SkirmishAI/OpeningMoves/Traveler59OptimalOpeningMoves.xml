@@ -11,9 +11,9 @@
 		<Order Time="5s" Build="Traveler59Portal" />
 		<Order Build="Traveler59Assimilator" />
 		<Order Build="Traveler59Assimilator" />
-		<Order Build="Traveler59Buzzers" />
-		<Order Build="Traveler59Buzzers" />
-		<Order Build="Traveler59Buzzers" />
+		<Order Build="AlienBuzzers" />
+		<Order Build="AlienBuzzers" />
+		<Order Build="AlienBuzzers" />
 		<Order Time="10s" Build="Traveler59TiberiumTower" />
 		<Order Time="40s" Build="Traveler59Gateway" />
 		<Order Time="60s" Build="Traveler59TiberiumTower" />
