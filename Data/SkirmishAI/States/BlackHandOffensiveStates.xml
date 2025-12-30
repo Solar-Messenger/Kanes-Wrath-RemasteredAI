@@ -21,7 +21,7 @@
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="421s" EndTime="-1s"/>
-			<FocusedThresholdHeuristic />
+			<ConstantHeuristic Weight="1.0"/>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
@@ -34,6 +34,7 @@
 		  id="BHOffensiveEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
 			<FocusedThresholdHeuristic />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
@@ -48,8 +49,9 @@
 		  id="BHOffensiveFlameTankAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime ="90s" EndTime="-1s" />
-			<ConstantHeuristic Weight="0.6" />
+			<ConstantHeuristic Weight="1.0"/>
+			<TimerHeuristic Starttime="60s" EndTime="-1s" />
+			<!--<FocusedThresholdHeuristic />-->
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="SpreadTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="SpreadTarget">
@@ -63,7 +65,7 @@
 		  id="BHOffensiveOverwhelmAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="421s" EndTime="-1s"/>
+			<ConstantHeuristic Weight="1.0"/>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="ExtraTarget"/>
@@ -73,16 +75,18 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BHOffensiveSiege"
+		  id="BHOffensiveMidSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<ConstantHeuristic Weight="0.9"/>
 			<PathToTargetHeuristic PathExists="true"/>
-			<SiegeThresholdHeuristic SiegeMode="True" Threshold="0.25"/>
+			<MiddleGameHeuristic/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="6.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="6" MaxUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="6" MaxUnits="6" UnitName="BlackHandBeamCannon"/>
+			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="BlackHandBeamCannon"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -91,7 +95,8 @@
 	  id="BHOffensiveAirHarassmentAntiTurtle"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.75"/>
+			<ConstantHeuristic Weight="1.0"/>
+			<MiddleGameHeuristic/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
@@ -104,12 +109,14 @@
 		  id="BHOffensiveArtilleryBombing"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="420s" EndTime="-1s" />
+			<ConstantHeuristic Weight="1.0"/>
+			<LateGameHeuristic/>
+			<!--<TimerHeuristic StartTime="420s" EndTime="-1s" />-->
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="BombingAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
-			<TeamTemplate MinUnits="2" MaxUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="2" MaxUnits="4" UnitName="BlackHandMobileArtillery"/>
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="BlackHandMobileArtillery"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -118,8 +125,9 @@
 		  id="BHOffensiveEngineer"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<ConstantHeuristic Weight="0.5"/>
 			<PathToTargetHeuristic PathExists="true"/>
-			<ConstantHeuristic Weight="0.3"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Engineer">
@@ -133,7 +141,7 @@
 		  id="BHOffensiveGarrisonEpicUnit"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="241s" EndTime="-1s"/>
+			<!--<TimerHeuristic StartTime="241s" EndTime="-1s"/>-->
 			<ConstantHeuristic Weight="1.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>
@@ -143,42 +151,5 @@
 		<UnitModifierByName UnitName="BlackHandBlackHandSquad" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
 		<UnitModifierByName UnitName="BlackHandMilitantRocketSquad" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
 	</AIStrategicStateDefinition>
-
-	<AIBudgetStateDefinition
-		  id="BlackHandOffensiveTechByTimeBudget">
-		<Heuristic>
-			<ConstantHeuristic Weight="0.8"/>
-			<OpeningMoveHeuristic Complete="true"/>
-			<TimerHeuristic StartTime="180s" EndTime="-1s"/>
-			<IntervalHeuristic IntervalTime="90s" ActiveTime="20s"/>
-			<IntervalHeuristic IntervalTime="5s" ActiveTime="5s"/>
-		</Heuristic>
-		<Budget>
-			<AccountShare Account="INVESTMENT" Percent="0%"/>
-			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
-			<AccountShare Account="PRODUCTION" Percent="0%"/>
-			<AccountShare Account="DEFENSE" Percent="0%"/>
-			<AccountShare Account="TECHNOLOGY" Percent="90%"/>
-			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
-		</Budget>
-	</AIBudgetStateDefinition>
-
-	<AIBudgetStateDefinition
-	  id="BlackHandOffensiveTechByTimeBudget_EASY">
-		<Heuristic>
-			<ConstantHeuristic Weight="0.8"/>
-			<OpeningMoveHeuristic Complete="true"/>
-			<IntervalHeuristic IntervalTime="640s" ActiveTime="20s"/>
-			<IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
-		</Heuristic>
-		<Budget>
-			<AccountShare Account="INVESTMENT" Percent="0%"/>
-			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
-			<AccountShare Account="PRODUCTION" Percent="0%"/>
-			<AccountShare Account="DEFENSE" Percent="0%"/>
-			<AccountShare Account="TECHNOLOGY" Percent="90%"/>
-			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
-		</Budget>
-	</AIBudgetStateDefinition>
 
 </AssetDeclaration>

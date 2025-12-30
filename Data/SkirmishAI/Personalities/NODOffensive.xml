@@ -53,7 +53,6 @@
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
@@ -105,7 +104,8 @@
 		<States State="NODOffensiveLateStealthTankEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="NODOffensiveFlameTankAttack" Difficulty="BRUTAL"/>
 		<States State="NODOffensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODOffensiveMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODOffensiveLateSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="NODOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODOffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -133,10 +133,6 @@
 		<States State="NODBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-
-		<States State="NODInfantryDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODVehicleDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODAircraftDefensesPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="NODUnitPreferencesEasyEarly" Difficulty="EASY"/>
 		<States State="NODUnitPreferencesEasyMid" Difficulty="EASY"/>

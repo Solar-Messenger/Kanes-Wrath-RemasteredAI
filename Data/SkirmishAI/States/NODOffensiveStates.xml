@@ -21,7 +21,7 @@
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="421s" EndTime="-1s"/>
-			<FocusedThresholdHeuristic />
+			<ConstantHeuristic Weight="1.0"/>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
@@ -35,6 +35,7 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="60s" EndTime="300s"/>
+			<ConstantHeuristic Weight="1.0"/>
 			<FocusedThresholdHeuristic />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
@@ -50,6 +51,7 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic Starttime="301s" EndTime="-1s" />
+			<ConstantHeuristic Weight="1.0"/>
 			<FocusedThresholdHeuristic />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
@@ -64,8 +66,9 @@
 		  id="NODOffensiveFlameTankAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="90s" EndTime="-1s" />
-			<BalanceOfPowerHeuristic/>
+			<ConstantHeuristic Weight="1.0"/>
+			<TimerHeuristic Starttime="60s" EndTime="-1s" />
+			<!--<FocusedThresholdHeuristic />-->
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="SpreadTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="SpreadTarget">
@@ -79,6 +82,7 @@
 		  id="NODOffensiveOverwhelmAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="ExtraTarget"/>
@@ -87,13 +91,31 @@
 		</Tactic>
 	</AIStrategicStateDefinition>
 
+	<AIStrategicStateDefinition
+		  id="NODOffensiveMidSiege"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.9"/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<MiddleGameHeuristic/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="6.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
+		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
+			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="NODBeamCannon"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
   <AIStrategicStateDefinition
-		id="NODOffensiveSiege"
+		id="NODOffensiveLateSiege"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
+		<ConstantHeuristic Weight="0.95"/>
 		<PathToTargetHeuristic PathExists="true"/>
 		<LateGameHeuristic/>
-		<SiegeThresholdHeuristic SiegeMode="True" Threshold="10.0"/>
+		<SiegeThresholdHeuristic SiegeMode="true" Threshold="6.0"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
     <Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
@@ -107,8 +129,8 @@
     id="NODOffensiveAirHarassmentAntiTurtle"
     UnitUpgradeMultiplier="0.0">
     <Heuristic>
-      <!--<ConstantHeuristic Weight="1.0"/>-->
-		<MiddleGameHeuristic/>
+      <ConstantHeuristic Weight="1.0"/>
+	  <MiddleGameHeuristic/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
     <TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
@@ -121,7 +143,9 @@
 		id="NODOffensiveBombingRuns"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
-	  <TimerHeuristic StartTime="420s" EndTime="-1s" />
+		<ConstantHeuristic Weight="1.0"/>
+		<LateGameHeuristic/>
+		<!--<TimerHeuristic StartTime="420s" EndTime="-1s" />-->
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="BombingAirstrike"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
@@ -135,8 +159,9 @@
 		id="NODOffensiveEngineer"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
+		<ConstantHeuristic Weight="0.5"/>
 		<PathToTargetHeuristic PathExists="true"/>
-		<SiegeThresholdHeuristic SiegeMode="false" Threshold="10.0"/>
+		<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Engineer">
