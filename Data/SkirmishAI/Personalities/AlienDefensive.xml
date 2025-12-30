@@ -119,7 +119,7 @@
 		<States State="AlienAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="AlienCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="AlienSuperweapon" Difficulty="BRUTAL"/>
+		<States State="AlienSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>

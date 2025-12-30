@@ -123,7 +123,7 @@
 		<States State="GDIAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="GDICaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="GDISuperweapon" Difficulty="BRUTAL"/>
+		<States State="GDISuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDICommando" Difficulty="HARD BRUTAL"/>
 		<States State="GDIExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>

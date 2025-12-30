@@ -120,7 +120,7 @@
 		<States State="ZOCOMCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMSuperweapon" Difficulty="BRUTAL"/>
+		<States State="ZOCOMSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMCommando" Difficulty="HARD BRUTAL"/>
 		<States State="ZOCOMIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
