@@ -124,7 +124,7 @@
 		<States State="T59AntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="T59AntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="T59CaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="T59Superweapon" Difficulty="HARD BRUTAL"/>
+		<States State="T59Superweapon" Difficulty="BRUTAL"/>
 		<States State="T59Expansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="T59BridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>

@@ -120,7 +120,7 @@
 		<States State="R17AntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="R17AntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="R17CaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="R17Superweapon" Difficulty="HARD BRUTAL"/>
+		<States State="R17Superweapon" Difficulty="BRUTAL"/>
 		<States State="R17Expansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="R17BridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
