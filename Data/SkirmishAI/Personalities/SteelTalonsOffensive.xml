@@ -53,6 +53,9 @@
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
@@ -104,10 +107,11 @@
 		<States State="STOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="STOffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="STOffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="STOffensiveOverrunEarly" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="STOffensiveOverrunMiddle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="STOffensiveOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STOffensiveGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="STOffensiveAirEconomyAttack" Difficulty="BRUTAL"/>
-		<States State="STOffensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STOffensiveLateSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="STOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STOffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>

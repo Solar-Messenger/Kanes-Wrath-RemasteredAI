@@ -53,6 +53,9 @@
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
@@ -99,11 +102,12 @@
 		<States State="NODOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="NODOffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODOffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="NODOffensiveOverrunEarly" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="NODOffensiveOverrunMiddle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="NODOffensiveOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODOffensiveEarlyMidBikeEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="NODOffensiveLateStealthTankEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="NODOffensiveFlameTankAttack" Difficulty="BRUTAL"/>
-		<States State="NODOffensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODOffensiveMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODOffensiveLateSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 

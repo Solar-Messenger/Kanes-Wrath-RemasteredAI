@@ -54,6 +54,9 @@
 		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
@@ -95,12 +98,13 @@
 		<OpeningMove Name="AlienDevRush" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="AlienOffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="AlienOffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienOffensiveOverrunEarly" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienOffensiveOverrunMiddle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienOffensiveOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienOffensiveEarlyGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="AlienOffensiveLateGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="AlienOffensiveRavagerEconomyAttack" Difficulty="BRUTAL"/>
 		<States State="AlienOffensiveAirEconomyAttack" Difficulty="BRUTAL"/>
-		<States State="AlienOffensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienOffensiveMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienOffensiveLateSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 

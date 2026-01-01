@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Tags></Tags>
-  <Includes></Includes>
+	<Tags></Tags>
+	<Includes></Includes>
 
 	<AIStrategicStateDefinition
 	  id="GDIOffensiveVehicleRush"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
 			<TimerHeuristic StartTime="0s" EndTime="420s"/>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
@@ -15,18 +16,57 @@
 			<TeamTemplate MinUnits="10" IncludeKindOf="CAN_ATTACK VEHICLE" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
-	
+
 	<AIStrategicStateDefinition
-	  id="GDIOffensiveDirectAttack"
-	  UnitUpgradeMultiplier="0.0">
+		  id="GDIOffensiveOverrunEarly"
+		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<ConstantHeuristic Weight="0.96"/>
 			<TimerHeuristic StartTime="421s" EndTime="-1s"/>
-			<ConstantHeuristic Weight="1.0"/>
 			<PathToTargetHeuristic PathExists="true"/>
+			<OverrunEarlyHeuristic>
+				<MiddleGameHeuristic/>
+				<LateGameHeuristic/>
+			</OverrunEarlyHeuristic>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="ExtraTarget"/>
+		<Tactic Tactic="SimpleAttack" TargetType="ExtraTarget">
+			<TeamTemplate MinUnits="8" MaxUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="GDIOffensiveOverrunMiddle"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.97"/>
+			<TimerHeuristic StartTime="421s" EndTime="-1s"/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<OverrunMiddleHeuristic>
+				<MiddleGameHeuristic/>
+				<LateGameHeuristic/>
+			</OverrunMiddleHeuristic>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="ExtraTarget"/>
+		<Tactic Tactic="SimpleAttack" TargetType="ExtraTarget">
+			<TeamTemplate MinUnits="12" MaxUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="GDIOffensiveOverrunLate"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.98"/>
+			<TimerHeuristic StartTime="421s" EndTime="-1s"/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<OverrunLateHeuristic>
+				<LateGameHeuristic/>
+			</OverrunLateHeuristic>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="ExtraTarget"/>
+		<Tactic Tactic="SimpleAttack" TargetType="ExtraTarget">
+			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -61,35 +101,22 @@
 		</Tactic>
 	</AIStrategicStateDefinition>
 
-  <AIStrategicStateDefinition
-		id="GDIOffensiveOverwhelmAttack"
-		UnitUpgradeMultiplier="0.0">
-    <Heuristic>
-	  <ConstantHeuristic Weight="1.0"/>
-      <PathToTargetHeuristic PathExists="true"/>
-    </Heuristic>
-	  <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="ExtraTarget"/>
-    <Tactic Tactic="SimpleAttack" TargetType="ExtraTarget">
-      <TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-    </Tactic>
-  </AIStrategicStateDefinition>
-
-  <AIStrategicStateDefinition
-		id="GDIOffensiveMidSiege"
-		UnitUpgradeMultiplier="0.0">
-    <Heuristic>
-		<ConstantHeuristic Weight="0.9"/>
-		<PathToTargetHeuristic PathExists="true"/>
-		<MiddleGameHeuristic/>
-		<SiegeThresholdHeuristic SiegeMode="true" Threshold="6.0"/>
-    </Heuristic>
-    <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
-    <Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-      <TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
-        <CreateUnits MinUnits="3" MaxUnits="3" UnitName="GDISonicTank"/>
-      </TeamTemplate>
-    </Tactic>
-  </AIStrategicStateDefinition>
+	<AIStrategicStateDefinition
+		  id="GDIOffensiveMidSiege"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.9"/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<MiddleGameHeuristic/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="6.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
+		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
+			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="3" MaxUnits="3" UnitName="GDISonicTank"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
 		  id="GDIOffensiveLateSiege"
@@ -108,67 +135,67 @@
 		</Tactic>
 	</AIStrategicStateDefinition>
 
-  <AIStrategicStateDefinition
-    id="GDIOffensiveSpotters"
-    UnitUpgradeMultiplier="0.0">
-    <Heuristic>
-		<ConstantHeuristic Weight="0.75"/>
-		<PathToTargetHeuristic PathExists="true"/>
-		<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
-    </Heuristic>
-    <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="SecondaryTarget"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="SecondaryTarget">
-      <TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="VEHICLE AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-        <CreateUnits MinUnits="1" MaxUnits="1" UnitName="GDISniperSquad"/>
-      </TeamTemplate>
-    </Tactic>
-  </AIStrategicStateDefinition>
+	<AIStrategicStateDefinition
+	  id="GDIOffensiveSpotters"
+	  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.75"/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="SecondaryTarget"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="SecondaryTarget">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="VEHICLE AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="1" MaxUnits="1" UnitName="GDISniperSquad"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
 
-  <AIStrategicStateDefinition
-		id="GDIOffensiveEngineer"
-		UnitUpgradeMultiplier="0.0">
-    <Heuristic>
-		<ConstantHeuristic Weight="0.5"/>
-		<PathToTargetHeuristic PathExists="true"/>
-		<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
-    </Heuristic>
-    <TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Engineer">
-      <TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-        <CreateUnits UnitName="GDIEngineer"/>
-      </TeamTemplate>
-    </Tactic>
-  </AIStrategicStateDefinition>
+	<AIStrategicStateDefinition
+		  id="GDIOffensiveEngineer"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.5"/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Engineer">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="GDIEngineer"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
 
-  <AIStrategicStateDefinition
-    id="GDIOffensiveAirHarassmentAntiTurtle"
-    UnitUpgradeMultiplier="0.0">
-    <Heuristic>
-      <ConstantHeuristic Weight="1.0"/>
-	  <MiddleGameHeuristic/>
-    </Heuristic>
-    <TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
-    <TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
-      <TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT PRODUCED_AT_HELIPAD" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
-    </Tactic>
-  </AIStrategicStateDefinition>
+	<AIStrategicStateDefinition
+	  id="GDIOffensiveAirHarassmentAntiTurtle"
+	  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<MiddleGameHeuristic/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
+			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT PRODUCED_AT_HELIPAD" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
 
-  <AIStrategicStateDefinition
-		id="GDIOffensiveBombingRuns"
-		UnitUpgradeMultiplier="0.0">
-    <Heuristic>
-		<ConstantHeuristic Weight="1.0"/>
-		<LateGameHeuristic/>
-	  <!--<TimerHeuristic StartTime="420s" EndTime="-1s" />-->
-    </Heuristic>
-    <TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="BombingAirstrike"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
-      <TeamTemplate MinUnits="2" MaxUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
-        <CreateUnits MinUnits="2" MaxUnits="4" UnitName="GDIFireHawk"/>
-      </TeamTemplate>
-    </Tactic>
-  </AIStrategicStateDefinition>
+	<AIStrategicStateDefinition
+		  id="GDIOffensiveBombingRuns"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<LateGameHeuristic/>
+			<!--<TimerHeuristic StartTime="420s" EndTime="-1s" />-->
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="BombingAirstrike"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
+			<TeamTemplate MinUnits="2" MaxUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="2" MaxUnits="4" UnitName="GDIFireHawk"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
 		  id="GDIOffensiveGarrisonEpicUnit"

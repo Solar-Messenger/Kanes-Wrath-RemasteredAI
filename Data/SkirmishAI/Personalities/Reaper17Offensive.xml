@@ -54,6 +54,9 @@
 		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
@@ -100,12 +103,13 @@
 		<States State="R17OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="R17OffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="R17OffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17OffensiveOverrunEarly" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17OffensiveOverrunMiddle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17OffensiveOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="R17OffensiveEarlyGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="R17OffensiveLateGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="R17OffensiveRavagerEconomyAttack" Difficulty="BRUTAL"/>
 		<States State="R17OffensiveAirEconomyAttack" Difficulty="BRUTAL"/>
-		<States State="R17OffensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="R17OffensiveMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="R17OffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="R17OffensiveEngineer" Difficulty="MEDIUM HARD BRUTAL"/>

@@ -52,6 +52,9 @@
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
@@ -97,10 +100,11 @@
 		<States State="MOKOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="MOKOffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MOKOffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="MOKOffensiveOverrunEarly" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="MOKOffensiveOverrunMiddle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="MOKOffensiveOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKOffensiveEarlyMidBikeEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="MOKOffensiveLateStealthTankEconomyAttack" Difficulty="HARD BRUTAL"/>
-		<States State="MOKOffensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKOffensiveMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="MOKOffensiveLateSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 

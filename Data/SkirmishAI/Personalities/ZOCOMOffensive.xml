@@ -53,6 +53,9 @@
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
@@ -102,10 +105,11 @@
 		<States State="ZOCOMOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="ZOCOMOffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMOffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="ZOCOMOffensiveOverrunEarly" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="ZOCOMOffensiveOverrunMiddle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="ZOCOMOffensiveOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOffensiveGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="ZOCOMOffensiveAirEconomyAttack" Difficulty="BRUTAL"/>
-		<States State="ZOCOMOffensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOffensiveMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="ZOCOMOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>

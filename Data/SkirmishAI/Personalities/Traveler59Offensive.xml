@@ -54,6 +54,9 @@
 		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
@@ -99,12 +102,13 @@
 		<States State="T59OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
 		<States State="T59OffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="T59OffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="T59OffensiveOverrunEarly" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="T59OffensiveOverrunMiddle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="T59OffensiveOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="T59OffensiveEarlyGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="T59OffensiveLateGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="T59OffensiveRavagerEconomyAttack" Difficulty="BRUTAL"/>
 		<States State="T59OffensiveAirEconomyAttack" Difficulty="BRUTAL"/>
-		<States State="T59OffensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="T59OffensiveLateSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		
 		<States State="T59OffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>

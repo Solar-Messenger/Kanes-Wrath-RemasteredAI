@@ -53,6 +53,9 @@
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
@@ -102,10 +105,11 @@
 		<States State="GDIOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="GDIOffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="GDIOffensiveDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="GDIOffensiveOverrunEarly" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="GDIOffensiveOverrunMiddle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="GDIOffensiveOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIOffensiveGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="GDIOffensiveAirEconomyAttack" Difficulty="BRUTAL"/>
-		<States State="GDIOffensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIOffensiveMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIOffensiveLateSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIOffensiveSpotters" Difficulty="HARD BRUTAL"/>
