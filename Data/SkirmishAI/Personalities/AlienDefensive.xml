@@ -123,6 +123,7 @@
 		<States State="AlienExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>

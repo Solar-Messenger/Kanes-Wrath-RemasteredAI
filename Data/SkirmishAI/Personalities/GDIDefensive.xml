@@ -128,6 +128,7 @@
 		<States State="GDIExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="GDIBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>

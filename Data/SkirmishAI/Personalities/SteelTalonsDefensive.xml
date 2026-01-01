@@ -126,6 +126,7 @@
 		<States State="STExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="STIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="STBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>

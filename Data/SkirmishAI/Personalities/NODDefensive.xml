@@ -125,6 +125,7 @@
 		<States State="NODExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="NODBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>

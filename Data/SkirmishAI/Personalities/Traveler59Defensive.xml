@@ -119,6 +119,7 @@
 		<States State="T59Expansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="T59Isolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="T59BridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="T59HuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>

@@ -117,6 +117,7 @@
 		<States State="R17Expansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="R17Isolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17BridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="R17HuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>

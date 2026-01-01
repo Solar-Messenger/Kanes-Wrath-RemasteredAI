@@ -123,6 +123,7 @@
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BHCommando" Difficulty="HARD BRUTAL"/>
 		<States State="BHIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="BHBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>

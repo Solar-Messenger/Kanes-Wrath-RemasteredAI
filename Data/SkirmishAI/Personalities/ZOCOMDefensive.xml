@@ -123,6 +123,7 @@
 		<States State="ZOCOMSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMCommando" Difficulty="HARD BRUTAL"/>
 		<States State="ZOCOMIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="ZOCOMBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>

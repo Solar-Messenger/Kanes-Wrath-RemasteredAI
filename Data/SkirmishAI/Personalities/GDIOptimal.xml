@@ -85,6 +85,7 @@
 		<TacticalTarget TacticalAITarget="Superweapon" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Expansion" MaxTeamsPerTarget="1" UpdateTime="5s"/>
 		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="Bridge" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Beacon" MaxTeamsPerTarget="1"/>
