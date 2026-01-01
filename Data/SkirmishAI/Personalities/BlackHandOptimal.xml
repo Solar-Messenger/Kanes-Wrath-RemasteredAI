@@ -70,6 +70,7 @@
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
@@ -120,7 +121,7 @@
 		<States State="BHAntiGarrison" Difficulty="HARD BRUTAL"/>
 		<States State="BHAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="BHCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="BHSuperweapon" Difficulty="HARD BRUTAL"/>
+		<States State="BHSuperweapon" Difficulty="BRUTAL"/>
 		<States State="BHCommando" Difficulty="HARD BRUTAL"/>
 		<States State="BHExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
