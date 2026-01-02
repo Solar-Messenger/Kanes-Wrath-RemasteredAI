@@ -85,7 +85,9 @@
 		  id="MOKOptimalSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<ConstantHeuristic Weight="0.95"/>
 			<PathToTargetHeuristic PathExists="true"/>
+			<FocusedThresholdHeuristic/>
 			<LateGameHeuristic/>
 			<SiegeThresholdHeuristic SiegeMode="true" Threshold="8.0"/>
 		</Heuristic>

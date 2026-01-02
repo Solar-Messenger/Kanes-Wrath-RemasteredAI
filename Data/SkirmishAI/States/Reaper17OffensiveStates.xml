@@ -138,7 +138,8 @@
 		<Heuristic>
 			<ConstantHeuristic Weight="0.9"/>
 			<PathToTargetHeuristic PathExists="true"/>
-			<MiddleGameHeuristic/>
+			<FocusedThresholdHeuristic />
+			<LateeGameHeuristic/>
 			<SiegeThresholdHeuristic SiegeMode="true" Threshold="6.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
