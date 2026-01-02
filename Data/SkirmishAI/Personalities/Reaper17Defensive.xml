@@ -102,7 +102,7 @@
 		<States State="R17Counterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="R17FinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="R17DefensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="R17DefensiveMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17DefensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="R17EngineerDefense" Difficulty="MEDIUM HARD BRUTAL"/>

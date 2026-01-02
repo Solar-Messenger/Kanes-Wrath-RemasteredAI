@@ -108,8 +108,7 @@
 		<States State="NODOffensiveEarlyMidBikeEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="NODOffensiveLateStealthTankEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="NODOffensiveFlameTankAttack" Difficulty="BRUTAL"/>
-		<States State="NODOffensiveMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODOffensiveLateSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="NODOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODOffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>

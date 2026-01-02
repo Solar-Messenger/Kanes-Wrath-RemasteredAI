@@ -109,8 +109,7 @@
 		<States State="GDIDefensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIDefensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIDefensiveSpotters" Difficulty="HARD BRUTAL"/>
-		<States State="GDIDefensiveMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="GDIDefensiveLateSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="GDIDefensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIGroundEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>

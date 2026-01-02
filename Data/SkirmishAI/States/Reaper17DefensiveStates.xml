@@ -59,7 +59,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="R17DefensiveMidSiege"
+		  id="R17DefensiveSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<ConstantHeuristic Weight="0.9"/>
@@ -70,7 +70,7 @@
 		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
 			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="Reaper17DevourerTank"/>
+				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="Reaper17AnnihilatorTripod"/>
 			</TeamTemplate>
 			<TeamTemplate MinUnits="6" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
 		</Tactic>

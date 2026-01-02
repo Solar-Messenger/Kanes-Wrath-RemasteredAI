@@ -110,8 +110,7 @@
 		<States State="GDIOffensiveOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIOffensiveGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="GDIOffensiveAirEconomyAttack" Difficulty="BRUTAL"/>
-		<States State="GDIOffensiveMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="GDIOffensiveLateSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="GDIOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIOffensiveSpotters" Difficulty="HARD BRUTAL"/>
 
 		<States State="GDIOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>

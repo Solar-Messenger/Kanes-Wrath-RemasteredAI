@@ -110,7 +110,7 @@
 		<States State="ZOCOMOffensiveOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOffensiveGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="ZOCOMOffensiveAirEconomyAttack" Difficulty="BRUTAL"/>
-		<States State="ZOCOMOffensiveMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="ZOCOMOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="ZOCOMOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>

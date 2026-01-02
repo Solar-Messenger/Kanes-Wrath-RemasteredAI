@@ -106,7 +106,7 @@
 		<States State="T59OptimalRavagerEconomyAttack" Difficulty="BRUTAL"/>
 		<States State="T59OptimalAirEconomyAttack" Difficulty="BRUTAL"/>
 		<States State="T59OptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="T59OptimalLateSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59OptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="T59Cultists" Difficulty="HARD BRUTAL"/>
 		<States State="T59OptimalBaseCrack" Difficulty="BRUTAL"/>
 

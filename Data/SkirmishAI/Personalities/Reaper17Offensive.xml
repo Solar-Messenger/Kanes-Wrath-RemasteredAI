@@ -110,7 +110,7 @@
 		<States State="R17OffensiveLateGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="R17OffensiveRavagerEconomyAttack" Difficulty="BRUTAL"/>
 		<States State="R17OffensiveAirEconomyAttack" Difficulty="BRUTAL"/>
-		<States State="R17OffensiveMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17OffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="R17OffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="R17OffensiveEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 

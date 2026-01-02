@@ -81,7 +81,7 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="STOptimalLateSiege"
+		  id="STOptimalSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<ConstantHeuristic Weight="0.95"/>

@@ -105,8 +105,7 @@
 		<States State="MOKOffensiveOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKOffensiveEarlyMidBikeEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="MOKOffensiveLateStealthTankEconomyAttack" Difficulty="HARD BRUTAL"/>
-		<States State="MOKOffensiveMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MOKOffensiveLateSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="MOKOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKOffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>

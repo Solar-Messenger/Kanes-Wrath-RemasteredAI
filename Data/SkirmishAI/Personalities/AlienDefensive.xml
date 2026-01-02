@@ -107,8 +107,7 @@
 		<States State="AlienFinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienDefensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienDefensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="AlienDefensiveMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="AlienDefensiveLateSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="AlienDefensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>

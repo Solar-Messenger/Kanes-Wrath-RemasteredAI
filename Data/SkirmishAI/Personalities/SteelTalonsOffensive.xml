@@ -112,7 +112,7 @@
 		<States State="STOffensiveOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STOffensiveGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="STOffensiveAirEconomyAttack" Difficulty="BRUTAL"/>
-		<States State="STOffensiveLateSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="STOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="STOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STOffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="STOffensiveEngineer" Difficulty="MEDIUM HARD BRUTAL"/>

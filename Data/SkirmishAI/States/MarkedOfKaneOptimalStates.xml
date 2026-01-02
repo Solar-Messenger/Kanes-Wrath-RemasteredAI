@@ -81,25 +81,8 @@
 	  </Tactic>
   </AIStrategicStateDefinition>
 
-  <AIStrategicStateDefinition
-		id="MOKOptimalMidSiege"
-		UnitUpgradeMultiplier="0.0">
-    <Heuristic>
-		<PathToTargetHeuristic PathExists="true"/>
-		<MiddleGameHeuristic/>
-		<SiegeThresholdHeuristic SiegeMode="true" Threshold="8.0"/>
-    </Heuristic>
-    <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
-    <Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-      <TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-        <CreateUnits MinUnits="4" MaxUnits="4" UnitName="MarkedOfKaneBeamCannon"/>
-      </TeamTemplate>
-		<TeamTemplate MinUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON RELOAD_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
-    </Tactic>
-  </AIStrategicStateDefinition>
-
 	<AIStrategicStateDefinition
-		  id="MOKOptimalLateSiege"
+		  id="MOKOptimalSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>

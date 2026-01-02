@@ -106,8 +106,7 @@
 		<States State="AlienOptimalRavagerEconomyAttack" Difficulty="BRUTAL"/>
 		<States State="AlienOptimalAirEconomyAttack" Difficulty="BRUTAL"/>
 		<States State="AlienOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="AlienOptimalMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="AlienOptimalLateSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="AlienOptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienOptimalBaseCrack" Difficulty="BRUTAL"/>
 
 		<States State="AlienOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>

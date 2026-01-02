@@ -102,7 +102,7 @@
 		<States State="T59SuperweaponDefense" Difficulty="HARD BRUTAL"/>
 		<States State="T59Counterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="T59FinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="T59DefensiveLateSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59DefensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="T59DefensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="T59DefensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 

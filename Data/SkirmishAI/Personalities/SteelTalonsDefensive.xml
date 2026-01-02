@@ -106,7 +106,7 @@
 		<States State="STSuperweaponDefense" Difficulty="HARD BRUTAL"/>
 		<States State="STCounterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STFinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="STDefensiveLateSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="STDefensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="STDefensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STDefensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 

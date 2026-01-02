@@ -104,8 +104,7 @@
 		<States State="NODSuperweaponDefense" Difficulty="HARD BRUTAL"/>
 		<States State="NODCounterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODFinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODDefensiveMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODDefensiveLateSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODDefensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODDefensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODDefensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 

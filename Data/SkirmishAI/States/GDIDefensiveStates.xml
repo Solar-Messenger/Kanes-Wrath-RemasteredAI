@@ -57,27 +57,9 @@
       <TeamTemplate MinUnits="25" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		  id="GDIDefensiveMidSiege"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="0.9"/>
-			<PathToTargetHeuristic PathExists="true"/>
-			<MiddleGameHeuristic/>
-			<SiegeThresholdHeuristic SiegeMode="true" Threshold="8.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="SiegeTarget"/>
-		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="3" MaxUnits="3" UnitName="GDISonicTank"/>
-			</TeamTemplate>
-			<TeamTemplate MinUnits="6" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
 	
 	<AIStrategicStateDefinition
-		  id="GDIDefensiveLateSiege"
+		  id="GDIDefensiveSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<ConstantHeuristic Weight="0.95"/>

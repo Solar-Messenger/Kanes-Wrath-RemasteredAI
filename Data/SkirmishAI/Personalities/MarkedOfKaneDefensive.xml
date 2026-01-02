@@ -104,8 +104,7 @@
 		<States State="MOKSuperweaponDefense" Difficulty="HARD BRUTAL"/>
 		<States State="MOKCounterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKFinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MOKDefensiveMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MOKDefensiveLateSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKDefensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="MOKDefensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKDefensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 

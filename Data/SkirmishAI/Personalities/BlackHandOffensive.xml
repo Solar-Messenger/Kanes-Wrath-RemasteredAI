@@ -109,7 +109,7 @@
 		<States State="BHOffensiveOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHOffensiveEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="BHOffensiveFlameTankAttack" Difficulty="BRUTAL"/>
-		<States State="BHOffensiveMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BHOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BHOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHOffensiveArtilleryBombing" Difficulty="MEDIUM HARD BRUTAL"/>

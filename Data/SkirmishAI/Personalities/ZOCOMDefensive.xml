@@ -103,7 +103,7 @@
 		<States State="ZOCOMSuperweaponDefense" Difficulty="HARD BRUTAL"/>
 		<States State="ZOCOMCounterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMFinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMDefensiveMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="ZOCOMDefensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMDefensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMDefensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 

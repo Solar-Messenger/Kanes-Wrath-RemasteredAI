@@ -106,7 +106,7 @@
 		<States State="BHCounterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHFinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHDefensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BHDefensiveMidSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BHDefensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BHDefensiveArtilleryBombing" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
