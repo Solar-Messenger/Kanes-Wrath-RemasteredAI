@@ -3,91 +3,92 @@
 	<Tags></Tags>
 	<Includes></Includes>
 
-	<!--Direct assault with small team sizes-->
 	<AIStrategicStateDefinition
-		  id="BlackHandOverrunEarly"
+		  id="BHOverlordOverwhelmAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
 			<PathToTargetHeuristic PathExists="true"/>
-			<OverrunEarlyHeuristic>
-				<MiddleGameHeuristic/>
-				<LateGameHeuristic/>
-			</OverrunEarlyHeuristic>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="PrimaryTarget"/>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="SimpleAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="12" MaxUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="25" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
-		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="BlackHandMilitantSquad" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="BlackHandConfessorSquad" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="BlackHandMobileArtillery" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="0%"/>
-	</AIStrategicStateDefinition>
-
-	<!--Direct assault with medium team sizes-->
-	<AIStrategicStateDefinition
-		  id="BlackHandOverrunMiddle"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<PathToTargetHeuristic PathExists="true"/>
-			<OverrunMiddleHeuristic>
-				<MiddleGameHeuristic/>
-				<LateGameHeuristic/>
-			</OverrunMiddleHeuristic>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="SimpleAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="20" MaxUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-		<UnitModifierByName UnitName="BlackHandFlameTank" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="BlackHandMilitantRocketSquad" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="BlackHandMobileArtillery" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="0%"/>
-	</AIStrategicStateDefinition>
-
-	<!--Direct assault with large team sizes-->
-	<AIStrategicStateDefinition
-		  id="BlackHandOverrunLate"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<PathToTargetHeuristic PathExists="true"/>
-			<OverrunLateHeuristic>
-				<LateGameHeuristic/>
-			</OverrunLateHeuristic>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="SimpleAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="28" MaxUnits="28" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-		<UnitModifierByName UnitName="BlackHandCustomWarmech" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="BlackHandMetaUnit" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
-		<UnitModifierByName UnitName="BlackHandBlackHandSquad" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="BlackHandMilitantRocketSquad" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="BlackHandMobileArtillery" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="0%"/>
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandOverlordExpansion"
+		id="BHOverlordSiege"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.95"/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<FocusedThresholdHeuristic/>
+			<LateGameHeuristic/>
+			<!--<SiegeThresholdHeuristic SiegeMode="true" Threshold="10.0"/>-->
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
+		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
+			<TeamTemplate MinUnits="4" MaxUnits="4" includeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="BlackHandBeamCannon"/>
+			</TeamTemplate>
+			<TeamTemplate MinUnits="3" MaxUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON RELOAD_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+	  id="BHOverlordAirHarassmentAntiTurtle"
+	  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<MiddleGameHeuristic/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
+			<TeamTemplate MinUnits="8" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="RELOAD_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="BHOverlordBombingRuns"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<IntervalHeuristic IntervalTime="130s" ActiveTime="30s"/>
+			<ConstantHeuristic Weight="1.0"/>
+			<LateGameHeuristic/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ExpansionHeuristic" TargetType="Expansion"/>
-		<Tactic Tactic="SimpleExpansion" TargetType="Expansion">
-			<TeamTemplate MinUnits="2" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits UnitName="BlackHandEmissary"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="BombingAirstrike"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
+			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="BlackHandMobileArtillery"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandOverlordGarrisonEpicUnit"
+	id="BHOverlordBaseCrack"
+	UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.975"/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<LateGameHeuristic/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Opportunity"/>
+		<Tactic Tactic="FlankAttack" TargetType="Opportunity">
+			<TeamTemplate MinUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="BlackHandCustomWarmech"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="BHOverlordGarrisonEpicUnit"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="900.0" />
+			<ConstantHeuristic Weight="1.0" />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>
 		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">
-			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="1" MaxUnits="2" IncludeKindOf="INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
 		</Tactic>
 		<UnitModifierByName UnitName="BlackHandMilitantRocketSquad" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
 		<UnitModifierByName UnitName="BlackHandBlackHandSquad" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
