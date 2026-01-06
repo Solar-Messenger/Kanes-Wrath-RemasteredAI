@@ -94,41 +94,4 @@
 		<UnitModifierByName UnitName="BlackHandBlackHandSquad" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
 	</AIStrategicStateDefinition>
 
-	<AIBudgetStateDefinition
-	id="BlackHandOverlordTechByTimeBudget">
-		<Heuristic>
-			<ConstantHeuristic Weight="0.8"/>
-			<OpeningMoveHeuristic Complete="true"/>
-			<TimerHeuristic StartTime="90s" EndTime="-1s"/>
-			<IntervalHeuristic IntervalTime="30s" ActiveTime="20s"/>
-			<IntervalHeuristic IntervalTime="5s" ActiveTime="5s"/>
-		</Heuristic>
-		<Budget>
-			<AccountShare Account="INVESTMENT" Percent="0%"/>
-			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
-			<AccountShare Account="PRODUCTION" Percent="0%"/>
-			<AccountShare Account="DEFENSE" Percent="0%"/>
-			<AccountShare Account="TECHNOLOGY" Percent="90%"/>
-			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
-		</Budget>
-	</AIBudgetStateDefinition>
-
-	<AIBudgetStateDefinition
-	  id="BlackHandOverlordTechByTimeBudget_EASY">
-		<Heuristic>
-			<ConstantHeuristic Weight="0.8"/>
-			<OpeningMoveHeuristic Complete="true"/>
-			<IntervalHeuristic IntervalTime="580s" ActiveTime="20s"/>
-			<IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
-		</Heuristic>
-		<Budget>
-			<AccountShare Account="INVESTMENT" Percent="0%"/>
-			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
-			<AccountShare Account="PRODUCTION" Percent="0%"/>
-			<AccountShare Account="DEFENSE" Percent="0%"/>
-			<AccountShare Account="TECHNOLOGY" Percent="90%"/>
-			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
-		</Budget>
-	</AIBudgetStateDefinition>
-
 </AssetDeclaration>

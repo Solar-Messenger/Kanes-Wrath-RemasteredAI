@@ -39,7 +39,7 @@
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="FocusedTarget">
 			<TeamTemplate MinUnits="7" MaxUnits="7" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="7" MaxUnits="7" UnitName="NODAttackBike"/>
 			</TeamTemplate>
@@ -61,7 +61,7 @@
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="FocusedTarget">
 			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="NODStealthTank"/>
 			</TeamTemplate>

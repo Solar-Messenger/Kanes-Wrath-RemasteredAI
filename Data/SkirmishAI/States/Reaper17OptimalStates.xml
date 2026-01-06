@@ -39,7 +39,7 @@
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="FocusedTarget">
 			<TeamTemplate MinUnits="8" MaxUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="8" MaxUnits="8" UnitName="AlienRazorDroneSquad"/>
 			</TeamTemplate>
@@ -61,7 +61,7 @@
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="FocusedTarget">
 			<TeamTemplate MinUnits="8" MaxUnits="8" IncludeKindOf="CAN_ATTACK INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="8" MaxUnits="8" UnitName="Reaper17ShockTrooperSquad"/>
 			</TeamTemplate>
@@ -83,7 +83,7 @@
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ResourceSqueezeHeuristic" TargetType="SpreadTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="SpreadTarget">
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="SpreadTarget">
 			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="Reaper17StalkerSquad"/>
 			</TeamTemplate>
@@ -104,7 +104,7 @@
 			</ProductionHaltHeuristic>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="SpreadTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="SpreadTarget">
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="SpreadTarget">
 			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY BOMBER_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="Reaper17Stormrider"/>
 			</TeamTemplate>

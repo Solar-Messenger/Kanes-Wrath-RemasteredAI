@@ -11,7 +11,7 @@
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
 			<TeamTemplate MinUnits="10" IncludeKindOf="CAN_ATTACK VEHICLE" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -77,7 +77,7 @@
 			<FocusedThresholdHeuristic />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="FocusedTarget">
 			<TeamTemplate MinUnits="7" MaxUnits="7" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="7" MaxUnits="7" UnitName="BlackHandAttackBike"/>
 			</TeamTemplate>
@@ -93,7 +93,7 @@
 			<!--<FocusedThresholdHeuristic />-->
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ResourceSqueezeHeuristic" TargetType="SpreadTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="SpreadTarget">
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="SpreadTarget">
 			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="BlackHandFlameTank"/>
 			</TeamTemplate>

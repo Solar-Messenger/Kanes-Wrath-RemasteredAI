@@ -41,7 +41,7 @@
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="FocusedTarget">
 			<TeamTemplate MinUnits="6" MaxUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="6" MaxUnits="6" UnitName="GDIPitbull"/>
 			</TeamTemplate>
@@ -62,7 +62,7 @@
 			</ProductionHaltHeuristic>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterHeuristic" TargetType="SpreadTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="SpreadTarget">
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="SpreadTarget">
 			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK ASSAULT_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="GDIOrca"/>
 			</TeamTemplate>
