@@ -115,7 +115,6 @@
 		<States State="STOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="STOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STOffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="STOffensiveEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STGroundEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>

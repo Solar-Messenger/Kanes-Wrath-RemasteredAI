@@ -109,7 +109,6 @@
 
 		<States State="MOKOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKOffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MOKOffensiveEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKGroundEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>

@@ -112,7 +112,6 @@
 
 		<States State="NODOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODOffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="NODOffensiveEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODGroundEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>

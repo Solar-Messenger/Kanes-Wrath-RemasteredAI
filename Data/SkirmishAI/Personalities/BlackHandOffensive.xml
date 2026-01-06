@@ -113,7 +113,6 @@
 
 		<States State="BHOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHOffensiveArtilleryBombing" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="BHOffensiveEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>

@@ -113,7 +113,6 @@
 		
 		<States State="T59OffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="T59OffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="T59OffensiveEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="T59EngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>

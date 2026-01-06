@@ -109,7 +109,6 @@
 
 		<States State="AlienOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienOffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="AlienOffensiveEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>

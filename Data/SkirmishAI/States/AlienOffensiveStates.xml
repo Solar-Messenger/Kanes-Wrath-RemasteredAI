@@ -180,22 +180,6 @@
 		</Tactic>
 	</AIStrategicStateDefinition>
 
-  <AIStrategicStateDefinition
-		id="AlienOffensiveEngineer"
-		UnitUpgradeMultiplier="0.0">
-    <Heuristic>
-		<ConstantHeuristic Weight="0.5"/>
-		<PathToTargetHeuristic PathExists="true"/>
-		<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
-    </Heuristic>
-    <TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Engineer">
-      <TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-        <CreateUnits UnitName="AlienAssimilator"/>
-      </TeamTemplate>
-    </Tactic>
-  </AIStrategicStateDefinition>
-
 	<AIStrategicStateDefinition
 		  id="AlienOffensiveGarrisonEpicUnit"
 		  UnitUpgradeMultiplier="0.0">
