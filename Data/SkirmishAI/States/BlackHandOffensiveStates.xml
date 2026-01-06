@@ -92,7 +92,7 @@
 			<TimerHeuristic Starttime="60s" EndTime="-1s" />
 			<!--<FocusedThresholdHeuristic />-->
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="SpreadTarget"/>
+		<TargetHeuristic TargetHeuristic="ResourceSqueezeHeuristic" TargetType="SpreadTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="SpreadTarget">
 			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="BlackHandFlameTank"/>

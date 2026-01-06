@@ -109,7 +109,7 @@
 			<TimerHeuristic Starttime="120s" EndTime="-1s" />
 			<!--<FocusedThresholdHeuristic />-->
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundRefineryHeuristic" TargetType="SpreadTarget"/>
+		<TargetHeuristic TargetHeuristic="ResourceSqueezeHeuristic" TargetType="SpreadTarget"/>
 		<Tactic Tactic="FlankAttack" TargetType="SpreadTarget">
 			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="Traveler59StalkerSquad"/>
