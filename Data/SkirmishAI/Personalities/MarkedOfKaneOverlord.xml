@@ -100,7 +100,7 @@
 
 		<States State="MOKOverlordOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="MOKOverlordSiege" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="MOKOverlordBaseCrack" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="MOKOverlordBaseCrack" Difficulty="BRUTAL" />
 
 		<States State="MOKOverlordAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="MOKOverlordBombingRuns" Difficulty="MEDIUM HARD BRUTAL" />

@@ -100,7 +100,7 @@
 
 		<States State="STOverlordOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="STOverlordSiege" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="STOverlordBaseCrack" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="STOverlordBaseCrack" Difficulty="BRUTAL" />
 
 		<States State="STOverlordAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="STOverlordBombingRuns" Difficulty="MEDIUM HARD BRUTAL" />

@@ -96,14 +96,14 @@
 
 		<OpeningMove Name="Alien_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="AlienOverlordEpicUnitRush" Weight="1000%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="AlienOverlordEpicUnitRush" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="AlienOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="AlienOverlordOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="AlienOverlordSiege" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="AlienOverlordBaseCrack" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="AlienOverlordBaseCrack" Difficulty="BRUTAL" />
 
 		<States State="AlienOverlordAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="AlienOverlordBombingRuns" Difficulty="MEDIUM HARD BRUTAL" />

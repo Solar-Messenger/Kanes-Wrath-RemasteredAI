@@ -103,7 +103,7 @@
 
 		<States State="R17OverlordOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="R17OverlordSiege" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="R17OverlordBaseCrack" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="R17OverlordBaseCrack" Difficulty="BRUTAL" />
 
 		<States State="R17OverlordAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL" />
 

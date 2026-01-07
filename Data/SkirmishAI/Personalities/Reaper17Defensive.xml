@@ -81,6 +81,7 @@
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
@@ -98,7 +99,7 @@
 
 		<OpeningMove Name="R17DefensiveSuperWeapon" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="R17ConyardDefense" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17ConyardDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="R17SuperweaponDefense" Difficulty="HARD BRUTAL"/>
 		<States State="R17Counterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="R17FinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>

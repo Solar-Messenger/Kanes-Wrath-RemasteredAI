@@ -101,14 +101,14 @@
 
 		<States State="BHOverlordOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="BHOverlordSiege" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="BHOverlordBaseCrack" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="BHOverlordBaseCrack" Difficulty="BRUTAL" />
 
 		<States State="BHOverlordAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="BHOverlordBombingRuns" Difficulty="MEDIUM HARD BRUTAL" />
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BHEngineerDefense" Difficulty="HARD BRUTAL"/>
-		<States State="BHCommandoDefense" Difficulty="HARD BRUTAL"/>
+		<States State="BHEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="BHCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="BHOverlordGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="MEDIUM HARD BRUTAL"/>

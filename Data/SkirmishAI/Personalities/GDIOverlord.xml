@@ -100,7 +100,7 @@
 
 		<States State="GDIOverlordOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="GDIOverlordSiege" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="GDIOverlordBaseCrack" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="GDIOverlordBaseCrack" Difficulty="BRUTAL" />
 
 		<States State="GDIOverlordAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="GDIOverlordBombingRuns" Difficulty="MEDIUM HARD BRUTAL" />

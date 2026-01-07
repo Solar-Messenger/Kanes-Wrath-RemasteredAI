@@ -100,7 +100,7 @@
 
 		<States State="NODOverlordOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="NODOverlordSiege" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="NODOverlordBaseCrack" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="NODOverlordBaseCrack" Difficulty="BRUTAL" />
 
 		<States State="NODOverlordAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="NODOverlordBombingRuns" Difficulty="MEDIUM HARD BRUTAL" />

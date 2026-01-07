@@ -103,7 +103,7 @@
 
 		<States State="T59OverlordOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="T59OverlordSiege" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="T59OverlordBaseCrack" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="T59OverlordBaseCrack" Difficulty="BRUTAL" />
 
 		<States State="T59OverlordAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="T59OverlordBombingRuns" Difficulty="MEDIUM HARD BRUTAL" />

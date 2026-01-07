@@ -100,7 +100,7 @@
 
 		<States State="ZOCOMOverlordOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="ZOCOMOverlordSiege" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="ZOCOMOverlordBaseCrack" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="ZOCOMOverlordBaseCrack" Difficulty="BRUTAL" />
 
 		<States State="ZOCOMOverlordAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="ZOCOMOverlordBombingRuns" Difficulty="MEDIUM HARD BRUTAL" />
