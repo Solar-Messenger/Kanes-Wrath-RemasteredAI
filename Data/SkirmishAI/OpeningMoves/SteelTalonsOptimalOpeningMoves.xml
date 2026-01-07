@@ -21,6 +21,7 @@
 		<Order Build="SteelTalonsHeavyHarvester"/>
 		<Order Build="SteelTalonsHeavyHarvester"/>
 		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Build="SteelTalonsHeavyHarvester"/>
 		<Order Time="90s" Build="SteelTalonsPowerPlant"/>
 		<Order Time="95s" Build="SteelTalonsPowerPlant"/>
 	</SkirmishOpeningMove>

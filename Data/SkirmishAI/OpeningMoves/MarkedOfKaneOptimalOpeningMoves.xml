@@ -23,6 +23,7 @@
 		<Order Build="MarkedOfKaneHarvester" />
 		<Order Build="MarkedOfKaneHarvester" />
 		<Order Build="MarkedOfKaneHarvester" />
+		<Order Build="MarkedOfKaneHarvester" />
 		<Order Time="60s" Build="MarkedOfKaneRefinery" />
 		<Order Time="90s" Build="MarkedOfKanePowerPlant" />
 		<Order Time="95s" Build="MarkedOfKanePowerPlant" />

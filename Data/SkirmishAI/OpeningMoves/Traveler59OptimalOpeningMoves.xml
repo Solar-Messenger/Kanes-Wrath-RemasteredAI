@@ -24,6 +24,7 @@
 		<Order Build="Traveler59Harvester" />
 		<Order Build="Traveler59Harvester" />
 		<Order Build="Traveler59Harvester" />
+		<Order Build="Traveler59Harvester" />
 		<Order Time="90s" Build="Traveler59PowerProjector" />
 		<Order Time="95s" Build="Traveler59PowerProjector" />
 	</SkirmishOpeningMove>

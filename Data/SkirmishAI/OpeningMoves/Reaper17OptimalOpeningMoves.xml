@@ -47,6 +47,7 @@
 		<Order Build="Reaper17ShardWalker" />
 		<Order Build="Reaper17ShardWalker" />
 		<Order Build="Reaper17Harvester" />
+		<Order Build="Reaper17Harvester" />
 		<Order Time="60s" Build="Reaper17TiberiumTower" />
 		<Order Time="90s" Build="Reaper17PowerProjector" />
 		<Order Time="90s" Build="Reaper17BuzzerHive" />

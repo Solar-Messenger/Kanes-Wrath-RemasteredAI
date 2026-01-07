@@ -47,6 +47,7 @@
 		<Order Build="AlienGunwalker" />
 		<Order Build="AlienGunwalker" />
 		<Order Build="AlienHarvester" />
+		<Order Build="AlienHarvester" />
 		<Order Time="60s" Build="AlienTiberiumTower" />
 		<Order Time="90s" Build="AlienPowerProjector" />
 		<Order Time="90s" Build="AlienBuzzerHive" />

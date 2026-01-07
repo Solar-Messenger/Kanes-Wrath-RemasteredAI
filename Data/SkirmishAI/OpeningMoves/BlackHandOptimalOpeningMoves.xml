@@ -23,6 +23,7 @@
 		<Order Build="BlackHandHarvester" />
 		<Order Build="BlackHandHarvester" />
 		<Order Build="BlackHandHarvester" />
+		<Order Build="BlackHandHarvester" />
 		<Order Time="60s" Build="BlackHandRefinery" />
 		<Order Time="90s" Build="BlackHandPowerPlant" />
 		<Order Time="95s" Build="BlackHandPowerPlant" />

@@ -24,6 +24,7 @@
 		<Order Build="GDIHarvester"/>
 		<Order Build="GDIHarvester"/>
 		<Order Build="GDIHarvester"/>
+		<Order Build="GDIHarvester"/>
 		<Order Time="90s" Build="GDIPowerPlant"/>
 		<Order Time="95s" Build="GDIPowerPlant"/>
 	</SkirmishOpeningMove>
