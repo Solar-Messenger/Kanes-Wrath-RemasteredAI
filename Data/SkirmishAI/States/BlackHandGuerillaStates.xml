@@ -3,223 +3,167 @@
 	<Tags></Tags>
 	<Includes></Includes>
 
-	<!--If opponent is low on funds cripple his economy-->
 	<AIStrategicStateDefinition
-		  id="BlackHandResourceSqueeze"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<TimerHeuristic StartTime="60s" EndTime="-1s" />
-			<PathToTargetHeuristic PathExists="true"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="EconomyKillHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
-		<UnitModifierByName UnitName="BlackHandAttackBike" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="250%"/>
-	</AIStrategicStateDefinition>
-
-	<!--If opponent is nearly matched in forces, take out his production capacity-->
-	<AIStrategicStateDefinition
-		  id="BlackHandProductionHalt"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<TimerHeuristic StartTime="60s" EndTime="-1s" />
-			<PathToTargetHeuristic PathExists="true"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ProductionKillHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
-		<UnitModifierByName UnitName="BlackHandConfessorSquad" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
-		<UnitModifierByName UnitName="BlackHandMilitantRocketSquad" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
-		<UnitModifierByName UnitName="BlackHandCustomWarmech" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
-	</AIStrategicStateDefinition>
-
-	<!--If opponent is near power threshold, take his power offline-->
-	<AIStrategicStateDefinition
-		  id="BlackHandPowerCut"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<TimerHeuristic StartTime="60s" EndTime="-1s" />
-			<PathToTargetHeuristic PathExists="true"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="PowerKillHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
-		<UnitModifierByName UnitName="BlackHandAttackBike" UnitPreferenceOffensiveModifier="250%" UnitPreferenceDefensiveModifier="250%"/>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		id="BlackHandGuerillaOverwhelm"
-		UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<PathToTargetHeuristic PathExists="true"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="FocusedTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
-			<TeamTemplate MinUnits="20" MaxUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<!--If opponent is turtling, siege his base with many "mini" siege groups-->
-	<AIStrategicStateDefinition
-		  id="BlackHandMiniSiege"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<PathToTargetHeuristic PathExists="true"/>
-			<LateGameHeuristic/>
-			<SiegeThresholdHeuristic SiegeMode="true" Threshold="1.5"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="SimpleSiege" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="3" MaxUnits="3" UnitName="BlackHandBeamCannon"/>
-			</TeamTemplate>
-			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<!--If opponent's base is undefended sneak an engineer in to capture key structures-->
-	<AIStrategicStateDefinition
-		  id="BlackHandEngineer"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<TimerHeuristic StartTime="60s" EndTime="-1s"/>
-			<PathToTargetHeuristic PathExists="true"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Engineer">
-			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits UnitName="BlackHandSaboteur"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<!--Airstrike targets undefended by AA-->
-	<AIStrategicStateDefinition
-		  id="BlackHandGuerillaAirHarassment"
+		  id="BHGuerillaRefineryAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<ConstantHeuristic Weight="1.0"/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
-		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantHeuristic" TargetType="AssaultAirstrike"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
-			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		<TargetHeuristic TargetHeuristic="SafestToGroundRefineryHeuristic" TargetType="PrimaryTarget"/>
+		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
+			<TeamTemplate MinUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandGuerillaArtilleryBombing"
+		  id="BHGuerillaProductionAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<FocusedThresholdHeuristic/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ProductionKillHeuristic" TargetType="PrimaryTarget"/>
+		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
+			<TeamTemplate MinUnits="7" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="true"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="BHGuerillaEconomyAttack"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
+		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
+			<TeamTemplate MinUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON UNIQUE_UNIT AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="BHGuerillaPowerAttack"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<OpponentPowerThresholdHeuristic/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="10.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="PowerKillHeuristic" TargetType="SpreadTarget"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="SpreadTarget">
+			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON UNIQUE_UNIT AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		id="BHGuerillaOverwhelmAttack"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="ExtraTarget"/>
+		<Tactic Tactic="FlankAttack" TargetType="ExtraTarget">
+			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="BHGuerillaSiege"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.95"/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<LateGameHeuristic/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="6.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
+		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="BlackHandMobileArtillery"/>
+			</TeamTemplate>
+			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON UNIQUE_UNIT AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+	id="BHGuerillaFlameTankEconomyAttack"
+	UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<MiddleGameHeuristic/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundRefineryHeuristic" TargetType="Opportunity"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Opportunity">
+			<TeamTemplate MinUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="2" UnitName="BlackHandFlameTank"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="BHGuerillaAirHarassmentAntiTurtle"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<MiddleGameHeuristic/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
+			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT PRODUCED_AT_HELIPAD" ExcludeKindOf="RELOAD_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="BHGuerillaBombingRuns"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
 			<LateGameHeuristic/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="BombingAirstrike"/>
-		<Tactic Tactic="FlankAttack" TargetType="BombingAirstrike">
-			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK BOMBER_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="BlackHandMobileArtillery"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandGuerillaFlameTankAttack"
+		  id="BHGuerillaEngineer"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<LateGameHeuristic/>
-			<IntervalHeuristic IntervalTime="130s" ActiveTime="80s"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Diversion"/>
-		<Tactic Tactic="FlankAttack" TargetType="Diversion">
-			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="BlackHandFlameTank"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-	  id="BlackHandGuerillaFanaticAttack"
-	  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<MiddleGameHeuristic/>
-			<IntervalHeuristic IntervalTime="50s" ActiveTime="60s"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundVehicleHeuristic" TargetType="Diversion"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Diversion">
-			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="BlackHandFanaticSquad"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<!--Constantly pester opponent with small attacks on random targets -->
-	<AIStrategicStateDefinition
-		  id="BlackHandDiversion"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<TimerHeuristic StartTime="60s" EndTime="-1s" />
+			<ConstantHeuristic Weight="0.75"/>
 			<PathToTargetHeuristic PathExists="true"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Diversion"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Diversion">
-			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		<TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Engineer">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="BlackHandSaboteur"/>
+			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BlackHandGuerillaGarrisonEpicUnit"
+		  id="BHGuerillaGarrisonEpicUnit"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="900.0" />
+			<ConstantHeuristic Weight="1.0" />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>
 		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">
-			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="1" MaxUnits="2" IncludeKindOf="INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
 		</Tactic>
 		<UnitModifierByName UnitName="BlackHandMilitantRocketSquad" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
 		<UnitModifierByName UnitName="BlackHandBlackHandSquad" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
 	</AIStrategicStateDefinition>
-
-	<AIBudgetStateDefinition
-	  id="BlackHandGuerillaTechByTimeBudget">
-		<Heuristic>
-			<ConstantHeuristic Weight="0.8"/>
-			<OpeningMoveHeuristic Complete="true"/>
-			<TimerHeuristic StartTime="90s" EndTime="-1s"/>
-			<IntervalHeuristic IntervalTime="60s" ActiveTime="20s"/>
-			<IntervalHeuristic IntervalTime="5s" ActiveTime="5s"/>
-		</Heuristic>
-		<Budget>
-			<AccountShare Account="INVESTMENT" Percent="0%"/>
-			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
-			<AccountShare Account="PRODUCTION" Percent="0%"/>
-			<AccountShare Account="DEFENSE" Percent="0%"/>
-			<AccountShare Account="TECHNOLOGY" Percent="90%"/>
-			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
-		</Budget>
-	</AIBudgetStateDefinition>
-
-	<AIBudgetStateDefinition
-	  id="BlackHandGuerillaTechByTimeBudget_EASY">
-		<Heuristic>
-			<ConstantHeuristic Weight="0.8"/>
-			<OpeningMoveHeuristic Complete="true"/>
-			<IntervalHeuristic IntervalTime="640s" ActiveTime="20s"/>
-			<IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
-		</Heuristic>
-		<Budget>
-			<AccountShare Account="INVESTMENT" Percent="0%"/>
-			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
-			<AccountShare Account="PRODUCTION" Percent="0%"/>
-			<AccountShare Account="DEFENSE" Percent="0%"/>
-			<AccountShare Account="TECHNOLOGY" Percent="90%"/>
-			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
-		</Budget>
-	</AIBudgetStateDefinition>
 
 </AssetDeclaration>

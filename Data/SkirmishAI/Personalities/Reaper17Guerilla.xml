@@ -1,172 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Tags></Tags>
-  <Includes></Includes>
-  <AIPersonalityDefinition
-		id="4Reaper17Guerilla"
-		PersonalityType="4Reaper17Guerilla"
-    PersonalityUIName="Personality:Guerilla"
-    SkirmishPersonality="true" 
-		SecondsTillTargetsCanExpire="15.0"
-		ChanceForTargetToExpire="100"
-		MaxBuildingsToBeDefensiveTarget_Small="0"
-		MaxBuildingsToBeDefensiveTarget_Med="0"
-		ChanceForUnitsToUpgrade="100"
-		ChanceToUseAllUnitsForDefenseTarget_Small="0"
-		ChanceToUseAllUnitsForDefenseTarget_Med="0"
-		ChanceToUseAllUnitsForDefenseTarget_Large="0"
-		DesiredExcessPowerBuffer="10"
-		BaseCompactness="1.00"
-    DefaultThreatFindRadius="0"
-    UnitBuilderCostEffectivenessWeight="1.0"
-    UnitBuilderMoneyVersusTimePreference="0.5"
-    UnitBuilderOverallOffensivePreference="110%"
-    UnitBuilderOverallDefensivePreference="100%"
-    Expansion_TiberiumSearchRadius="1000"
-    Expansion_MaxTiberiumRemaining="22000"
-    ReactiveDefenseRadius="1000"
-    RepairBuildingsAtDifficulty="MEDIUM HARD BRUTAL"
-    EmergencyManagerHandleNoPowerAtDifficulty="MEDIUM HARD BRUTAL"
-    EmergencyManagerHandleNoIncomeAtDifficulty="EASY MEDIUM HARD BRUTAL"
-    EmergencyManagerHandleNoConyardAtDifficulty="EASY MEDIUM HARD BRUTAL"
-    StructureSaveChanceEasy="0.0"
-    StructureSaveChanceMedium="0.01"
-    StructureSaveChanceHard="1.0"
+	<Tags></Tags>
+	<Includes></Includes>
+	<AIPersonalityDefinition
+		  id="4Reaper17Guerilla"
+		  PersonalityType="4Reaper17Guerilla"
+	  PersonalityUIName="Personality:Guerilla"
+	  SkirmishPersonality="true"
+		  SecondsTillTargetsCanExpire="15.0"
+		  ChanceForTargetToExpire="100"
+		  MaxBuildingsToBeDefensiveTarget_Small="0"
+		  MaxBuildingsToBeDefensiveTarget_Med="0"
+		  ChanceForUnitsToUpgrade="999"
+		  ChanceToUseAllUnitsForDefenseTarget_Small="0"
+		  ChanceToUseAllUnitsForDefenseTarget_Med="0"
+		  ChanceToUseAllUnitsForDefenseTarget_Large="0"
+		  DesiredExcessPowerBuffer="10"
+		  BaseCompactness="0.75"
+	  DefaultThreatFindRadius="0"
+	  UnitBuilderCostEffectivenessWeight="1.0"
+	  UnitBuilderMoneyVersusTimePreference="0.5"
+	  UnitBuilderOverallOffensivePreference="100%"
+	  UnitBuilderOverallDefensivePreference="100%"
+	  Expansion_TiberiumSearchRadius="600"
+	  Expansion_MaxTiberiumRemaining="27000"
+	  ReactiveDefenseRadius="1500"
+	  RepairBuildingsAtDifficulty="EASY MEDIUM HARD BRUTAL"
+	  EmergencyManagerHandleNoPowerAtDifficulty="EASY MEDIUM HARD BRUTAL"
+	  EmergencyManagerHandleNoIncomeAtDifficulty="EASY MEDIUM HARD BRUTAL"
+	  EmergencyManagerHandleNoConyardAtDifficulty="EASY MEDIUM HARD BRUTAL"
+	  StructureSaveChanceEasy="0.0"
+	  StructureSaveChanceMedium="0.25"
+	  StructureSaveChanceHard="0.5"
 		>
 
-    <Side>Reaper17</Side>
+		<Side>Reaper17</Side>
 
-    <BuildDelayRange MinDelay="0s" MaxDelay="60s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />
-    <BuildDelayRange MinDelay="0s" MaxDelay="30s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="MEDIUM" />
+		<!--<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />-->
 
-    <UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.25" Difficulty="HARD BRUTAL" />
+		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-    <UnitBuilderUnitChoiceStrategyAdaptive 
-     MinEffectiveness="0.5" MaxEffectiveness="1.0"
-     MinStandardDeviation="2.0" MaxStandardDeviation="0.5"
-     MinEfficiency="1.0" MaxEfficiency="2.0"
-     Difficulty="EASY" 
-      />
+		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
+		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
+		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
+		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
 
-    <UnitBuilderUnitChoiceStrategyAdaptive
-      MinEffectiveness="0.0" MaxEffectiveness="0.5"
-      MinStandardDeviation="0.25" MaxStandardDeviation="2.0"
-      MinEfficiency="0.75" MaxEfficiency="1.0"
-      Difficulty="MEDIUM" 
-      />
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 
-    <UnitBuilderEvaluationDelayRange
-      UseAllAvailableQueues="false"
-      MinDelay="180s" MaxDelay="180s"
-      MinEfficiency="1.0" MaxEfficiency="1.0"
-      Difficulty="EASY"
-      />
+		<TacticalTarget TacticalAITarget="Opportunity" MaxTeamsPerTarget="1"/>
+		
+		<TacticalTarget TacticalAITarget="Targetless" MaxTeamsPerTarget="1"/>
 
-    <UnitBuilderEvaluationDelayRange
-      UseAllAvailableQueues="true"
-      MinDelay="10s" MaxDelay="60s"
-      MinEfficiency="0.75" MaxEfficiency="1.0"
-      Difficulty="MEDIUM"
-      />
+		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1" />
 
-    <ResourceMultiplierCheat Percentage="200%" Difficulty="BRUTAL"/>
+		<TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
 
-    <TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
-    <TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
-    <TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
-    <TacticalTarget TacticalAITarget="Diversion" MaxTeamsPerTarget="1" />
-    <TacticalTarget TacticalAITarget="Diversion" MaxTeamsPerTarget="1" />
-    <TacticalTarget TacticalAITarget="Diversion" MaxTeamsPerTarget="1" />
-    <TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
-    <TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
-    <TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
-    <TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
-    <TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1" />
-    <TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
 
-    <TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="ExpansionDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Superweapon" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Expansion" MaxTeamsPerTarget="1" UpdateTime="5s"/>
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Bridge" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Beacon" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Crate" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 
-    <TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Superweapon" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Expansion" MaxTeamsPerTarget="1" UpdateTime="5s"/>
-    <TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Bridge" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Beacon" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Crate" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
+		<OpeningMove Name="R17_EASY" Weight="100%" Difficulty="EASY"/>
 
-    <OpeningMove Name="Reaper17_EASY" Weight="100%" Difficulty="EASY"/>
+		<OpeningMove Name="R17GuerillaMechapedeSpam" Weight="40%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="R17GuerillaSeekerSpam" Weight="40%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="R17GuerillaRavagerSpam" Weight="20%" Difficulty="MEDIUM HARD BRUTAL"/>
 
-    <OpeningMove Name="Reaper17Standard" Weight="20%" Difficulty="MEDIUM HARD BRUTAL"/>
-    <OpeningMove Name="Reaper17Standard2" Weight="20%" Difficulty="MEDIUM HARD BRUTAL"/>
-    <OpeningMove Name="Reaper17StandardCrane" Weight="20%" Difficulty="MEDIUM HARD BRUTAL"/>
-    <OpeningMove Name="Reaper17StormriderRush" Weight="13%" Difficulty="MEDIUM HARD BRUTAL"/>
-    <OpeningMove Name="Reaper17RavagerRush" Weight="13%" Difficulty="MEDIUM HARD BRUTAL"/>
-    <OpeningMove Name="Reaper17MechapedeRush" Weight="14%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17OpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-    <States State="Reaper17PowerCut" Difficulty="EASY MEDIUM HARD BRUTAL" />
-    <States State="Reaper17ResourceSqueeze" Difficulty="HARD BRUTAL" />
-    <States State="Reaper17ProductionHalt" Difficulty="MEDIUM HARD BRUTAL" />
-    <States State="Reaper17MiniSiege" Difficulty="MEDIUM HARD BRUTAL" />
-    <States State="Reaper17GuerillaAirHarassment" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-    <States State="Reaper17Engineer" Difficulty="MEDIUM HARD BRUTAL" />
-    <States State="Reaper17Mothership" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-    <States State="Reaper17Diversion" Difficulty="EASY MEDIUM HARD BRUTAL" />
-    <States State="Guerilla_EASY" Difficulty="EASY"/>
+		<States State="R17GuerillaRefineryAttack" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="R17GuerillaProductionAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="R17GuerillaEconomyAttack" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="R17GuerillaPowerAttack" Difficulty="HARD BRUTAL" />
+		<States State="R17GuerillaOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="R17GuerillaSiege" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="R17GuerillaRavagerEconomyAttack" Difficulty="BRUTAL" />
+		<States State="R17GuerillaAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17GuerillaEngineer" Difficulty="MEDIUM HARD BRUTAL" />
 
-    <States State="Reaper17ReactiveDefense" Difficulty="EASY MEDIUM HARD BRUTAL" />
-    <States State="Reaper17EngineerDefense" Difficulty="HARD BRUTAL"/>
-    <States State="Reaper17CommandoDefense" Difficulty="HARD BRUTAL"/>
-    <States State="ExpansionDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17EngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17CommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-    <States State="Garrison" Difficulty="MEDIUM HARD BRUTAL"/>
-    <States State="Garrison_EASY" Difficulty="EASY"/>
-    <States State="Reaper17AntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
-    <States State="Reaper17AntiGarrison_EASY" Difficulty="EASY"/>
-    <States State="Reaper17CaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-    <States State="Reaper17Superweapon" Difficulty="MEDIUM HARD BRUTAL"/>
-    <States State="Reaper17Expansion" Difficulty="MEDIUM HARD BRUTAL"/>
-    <States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
-    <States State="Reaper17BridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-    <States State="Reaper17Isolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-    <States State="Reaper17HuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
-    <States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-    <States State="CratePickup" Difficulty="HARD BRUTAL"/>
+		<States State="R17GuerillaGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
+		<States State="Garrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17AntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17AntiGarrison_EASY" Difficulty="EASY"/>
+		<States State="R17CaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17Superweapon" Difficulty="BRUTAL"/>
+		<States State="R17Expansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17BridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17Isolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17HuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
 
-    <States State="Reaper17UnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17BaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17OffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17DefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
-    <BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-    <BudgetStates State="OptimalEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-    <BudgetStates State="OptimalMidGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-    <BudgetStates State="OptimalLateGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17UnitPreferencesEasyEarly" Difficulty="EASY"/>
+		<States State="R17UnitPreferencesEasyMid" Difficulty="EASY"/>
+		<States State="R17UnitPreferencesEasyLate" Difficulty="EASY"/>
 
-    <BudgetStates State="FullInvestmentBudget" Difficulty="HARD BRUTAL"/>
-    <BudgetStates State="FullInvestmentBudget_EASY_WINNING" Difficulty="EASY"/>
-    <BudgetStates State="FullInvestmentBudget_MEDIUM_WINNING" Difficulty="MEDIUM"/>
-    <BudgetStates State="FullInvestmentBudget_MEDIUM_LOSING" Difficulty="MEDIUM"/>
-    <BudgetStates State="InvestmentFinishBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="RushBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OptimalEarlyGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OptimalMidGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OptimalLateGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OptimalBudget_EASY" Difficulty="EASY"/>
 
-    <BudgetStates State="Reaper17GuerillaTechByTimeBudget" Difficulty="HARD BRUTAL"/>
-    <BudgetStates State="Reaper17GuerillaTechByTimeBudget_EASY" Difficulty="EASY"/>
-    <BudgetStates State="Reaper17GuerillaTechByTimeBudget_MEDIUM" Difficulty="MEDIUM"/>
-    <BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-    <BudgetStates State="TechByNeedAntiGarrisonBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-    <BudgetStates State="TechByNeedSiegeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-    <BudgetStates State="TechFinishBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="InvestmentPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="InvestmentDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
-  </AIPersonalityDefinition>
+		<BudgetStates State="TechPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
+
+		<UnitOverride UnitName="Reaper17EradicatorHexapod" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>
+
+		<UnitOverride UnitName="Reaper17EradicatorHexapod" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="Reaper17RiftGenerator" Percentage="-1%" Difficulty="EASY MEDIUM"/>
+
+	</AIPersonalityDefinition>
 </AssetDeclaration>

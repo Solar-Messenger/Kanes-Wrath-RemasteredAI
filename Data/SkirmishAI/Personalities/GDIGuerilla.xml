@@ -11,7 +11,7 @@
 		  ChanceForTargetToExpire="100"
 		  MaxBuildingsToBeDefensiveTarget_Small="0"
 		  MaxBuildingsToBeDefensiveTarget_Med="0"
-		  ChanceForUnitsToUpgrade="100"
+		  ChanceForUnitsToUpgrade="999"
 		  ChanceToUseAllUnitsForDefenseTarget_Small="0"
 		  ChanceToUseAllUnitsForDefenseTarget_Med="0"
 		  ChanceToUseAllUnitsForDefenseTarget_Large="0"
@@ -20,13 +20,14 @@
 	  DefaultThreatFindRadius="0"
 	  UnitBuilderCostEffectivenessWeight="1.0"
 	  UnitBuilderMoneyVersusTimePreference="0.5"
-	  UnitBuilderOverallOffensivePreference="110%"
+	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
-	  Expansion_TiberiumSearchRadius="750"
-	  Expansion_MaxTiberiumRemaining="28000"
-	  ReactiveDefenseRadius="1750"
-	  RepairBuildingsAtDifficulty="MEDIUM HARD BRUTAL"
-	  EmergencyManagerHandleNoPowerAtDifficulty="MEDIUM HARD BRUTAL"
+	  UnitBuilderEnemyTowerWeight="10%"
+	  Expansion_TiberiumSearchRadius="600"
+	  Expansion_MaxTiberiumRemaining="27000"
+	  ReactiveDefenseRadius="1500"
+	  RepairBuildingsAtDifficulty="EASY MEDIUM HARD BRUTAL"
+	  EmergencyManagerHandleNoPowerAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoIncomeAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoConyardAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  StructureSaveChanceEasy="0.0"
@@ -37,11 +38,11 @@
 
 		<Side>GDI</Side>
 
-		<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />
+		<!--<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />-->
 
-		<UnitBuilderUnitChoiceStrategy Shape="MIDDLE" StandardDeviation="0.25" Difficulty="EASY MEDIUM" />
-		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="HARD BRUTAL" />
+		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
+		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
@@ -51,27 +52,34 @@
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="Diversion" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="Diversion" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="Diversion" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Defensive" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 
+		<TacticalTarget TacticalAITarget="Opportunity" MaxTeamsPerTarget="1"/>
+		
 		<TacticalTarget TacticalAITarget="Targetless" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1" />
+		
 		<TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
@@ -84,8 +92,6 @@
 		<TacticalTarget TacticalAITarget="Superweapon" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Expansion" MaxTeamsPerTarget="1" UpdateTime="5s"/>
 		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Bridge" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
@@ -94,69 +100,76 @@
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 
-		<OpeningMove Name="GDIGuerillaEasy" Weight="100%" Difficulty="EASY"/>
+		<OpeningMove Name="GDI_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="GDIGuerillaStandard" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="GDIGuerillaPredatorSpam" Weight="40%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="GDIGuerillaPitbullSpam" Weight="30%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="GDIGuerillaAirAPCSpam" Weight="30%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="GDIOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GDIOpeningAntiRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="GDIPowerCut" Difficulty="EASY MEDIUM HARD BRUTAL" />
-		<States State="GDIResourceSqueeze" Difficulty="HARD BRUTAL" />
-		<States State="GDIProductionHalt" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="GDIGuerillaOverwhelm" Difficulty="EASY MEDIUM HARD BRUTAL" />
-		<States State="GDIMiniSiege" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="GDIGuerillaSpotters" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="GDIGuerillaAirHarassment" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GDIGuerillaBombingRuns" Difficulty="HARD BRUTAL"/>
-		<States State="GDIEngineer" Difficulty="HARD BRUTAL" />
-		<States State="GDIDiversion" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="GDIGuerillaRefineryAttack" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="GDIGuerillaProductionAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="GDIGuerillaEconomyAttack" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="GDIGuerillaPowerAttack" Difficulty="HARD BRUTAL" />
+		<States State="GDIGuerillaOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="GDIGuerillaSiege" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="GDIGuerillaSpotters" Difficulty="HARD BRUTAL"/>
+		<States State="GDIGuerillaOrcaEconomyAttack" Difficulty="BRUTAL"/>
+		<States State="GDIGuerillaAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="GDIGuerillaBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="GDIGuerillaEngineer" Difficulty="MEDIUM HARD BRUTAL" />
 
-		<States State="GDIDefend" Difficulty="EASY MEDIUM HARD BRUTAL" />
-		<States State="GDIEngineerDefense" Difficulty="HARD BRUTAL"/>
-		<States State="GDICommandoDefense" Difficulty="HARD BRUTAL"/>
+		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="GDIGroundEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="GDIAirEngineerDefense" Difficulty="HARD BRUTAL"/>
+		<States State="GDIGroundCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="GDIAirCommandoDefense" Difficulty="HARD BRUTAL"/>
 
 		<States State="GDIGuerillaGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
-		<States State="Garrison" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="Garrison_EASY" Difficulty="EASY"/>
+		<States State="Garrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIAntiGarrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDICaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="GDISuperweapon" Difficulty="HARD BRUTAL"/>
+		<States State="GDISuperweapon" Difficulty="BRUTAL"/>
 		<States State="GDICommando" Difficulty="HARD BRUTAL"/>
-		<States State="GDIExpansion" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ExpansionEscort" Difficulty="HARD BRUTAL"/>
+		<States State="GDIExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
+		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="GDIUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="GDIBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="GDIOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="GDIDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+
+		<States State="GDIUnitPreferencesEasyEarly" Difficulty="EASY"/>
+		<States State="GDIUnitPreferencesEasyMid" Difficulty="EASY"/>
+		<States State="GDIUnitPreferencesEasyLate" Difficulty="EASY"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="SpareMoneyBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OptimalEarlyGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OptimalMidGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OptimalLateGameBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OptimalEarlyGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OptimalMidGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OptimalLateGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OptimalBudget_EASY" Difficulty="EASY"/>
 
-		<BudgetStates State="FullInvestmentBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="FullInvestmentBudget_EASY_WINNING" Difficulty="EASY"/>
-		<BudgetStates State="InvestmentFinishBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="InvestmentPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="InvestmentDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
-		<BudgetStates State="GDIGuerillaTechByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechByMoneyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechByNeedAntiGarrisonBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechByNeedSiegeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechFinishBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
 
-		<UnitOverride UnitName="GDIHammerhead" Percentage="50%" Difficulty="HARD BRUTAL"/>
+		<UnitOverride UnitName="GDIMARV" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<UnitOverride UnitName="GDIPredator" Percentage="30%" Difficulty="HARD BRUTAL"/>
-		<UnitOverride UnitName="GDIAPC" Percentage="30%" Difficulty="HARD BRUTAL"/>
-		<UnitOverride UnitName="GDISonicTank" Percentage="10%" Difficulty="HARD BRUTAL"/>
-		<UnitOverride UnitName="GDIMammoth" Percentage="10%" Difficulty="HARD BRUTAL"/>
-		<UnitOverride UnitName="GDIMARV" Percentage="15%" Difficulty="HARD BRUTAL"/>
+		<UnitOverride UnitName="GDICommando" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="GDIFirehawk" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="GDIMARV" Percentage="-1%" Difficulty="EASY"/>
+		<UnitOverride UnitName="GDIIonCannonControl" Percentage="-1%" Difficulty="EASY MEDIUM HARD"/>
 
 	</AIPersonalityDefinition>
 </AssetDeclaration>

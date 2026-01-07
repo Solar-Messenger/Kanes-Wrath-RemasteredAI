@@ -3,178 +3,153 @@
   <Tags></Tags>
   <Includes></Includes>
 
-  <!--If opponent is low on funds cripple his economy-->
-  <AIStrategicStateDefinition
-		id="Reaper17ResourceSqueeze"
+	<AIStrategicStateDefinition
+		  id="R17GuerillaRefineryAttack"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundRefineryHeuristic" TargetType="PrimaryTarget"/>
+		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
+			<TeamTemplate MinUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="R17GuerillaProductionAttack"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<FocusedThresholdHeuristic/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ProductionKillHeuristic" TargetType="PrimaryTarget"/>
+		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
+			<TeamTemplate MinUnits="7" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="true"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="R17GuerillaEconomyAttack"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
+		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
+			<TeamTemplate MinUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON UNIQUE_UNIT AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="R17GuerillaPowerAttack"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<OpponentPowerThresholdHeuristic/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="10.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="PowerKillHeuristic" TargetType="SpreadTarget"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="SpreadTarget">
+			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON UNIQUE_UNIT AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		id="R17GuerillaOverwhelmAttack"
 		UnitUpgradeMultiplier="0.0">
-    <Heuristic>
-      <PathToTargetHeuristic PathExists="true"/>
-      <ResourceSqueezeHeuristic
-        PenetrabilityWeight="0.25"
-        OpponentFundsWeight="0.75">
-        <PenetrabilityHeuristic/>
-        <OpponentFundsHeuristic/>
-      </ResourceSqueezeHeuristic>
-    </Heuristic>
-    <TargetHeuristic TargetHeuristic="EconomyKillHeuristic" TargetType="PrimaryTarget"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-      <TeamTemplate MinUnits="3" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="ASSAULT_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-    </Tactic>
-    <UnitModifierByName UnitName="Reaper17SeekerTank" UnitPreferenceOffensiveModifier="125%" UnitPreferenceDefensiveModifier="100%"/>
-  </AIStrategicStateDefinition>
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="ExtraTarget"/>
+		<Tactic Tactic="FlankAttack" TargetType="ExtraTarget">
+			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
 
-  <!--If opponent is nearly matched in forces, take out his production capacity-->
-  <AIStrategicStateDefinition
-		id="Reaper17ProductionHalt"
-		UnitUpgradeMultiplier="0.0">
-    <Heuristic>
-      <PathToTargetHeuristic PathExists="true"/>
-      <ProductionHaltHeuristic
-        BalanceOfPowerWeight="0.75"
-        PenetrabilityWeight="0.25">
-        <PenetrabilityHeuristic/>
-        <BalanceOfPowerHeuristic/>
-      </ProductionHaltHeuristic>
-    </Heuristic>
-    <TargetHeuristic TargetHeuristic="ProductionKillHeuristic" TargetType="PrimaryTarget"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-      <TeamTemplate MinUnits="3" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="ASSAULT_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-    </Tactic>
-    <UnitModifierByName UnitName="Reaper17SeekerTank" UnitPreferenceOffensiveModifier="125" UnitPreferenceDefensiveModifier="100%"/>
-  </AIStrategicStateDefinition>
+	<AIStrategicStateDefinition
+		  id="R17GuerillaSiege"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.95"/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<LateGameHeuristic/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="6.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
+		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="Reaper17AnnihilatorTripod"/>
+			</TeamTemplate>
+			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON UNIQUE_UNIT AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
 
-  <!--If opponent is near power threshold, take his power offline-->
-  <AIStrategicStateDefinition
-		id="Reaper17PowerCut"
-		UnitUpgradeMultiplier="0.0">
-    <Heuristic>
-      <PathToTargetHeuristic PathExists="true"/>
-      <OpponentPowerThresholdHeuristic/>
-    </Heuristic>
-    <TargetHeuristic TargetHeuristic="PowerKillHeuristic" TargetType="PrimaryTarget"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-      <TeamTemplate MinUnits="3" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="ASSAULT_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-    </Tactic>
-    <!--No Unit Preferences-->
-  </AIStrategicStateDefinition>
+	<AIStrategicStateDefinition
+	id="R17GuerillaRavagerEconomyAttack"
+	UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<MiddleGameHeuristic/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundRefineryHeuristic" TargetType="Opportunity"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Opportunity">
+			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="4" UnitName="Reaper17StalkerSquad"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
 
-  <!--If opponent is turtling, siege his base with many "mini" siege groups-->
-  <AIStrategicStateDefinition
-		id="Reaper17MiniSiege"
-		UnitUpgradeMultiplier="0.0">
-    <Heuristic>
-      <PathToTargetHeuristic PathExists="true"/>
-      <LateGameHeuristic/>
-      <SiegeThresholdHeuristic SiegeMode="true" Threshold="1.5"/>
-    </Heuristic>
-    <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="PrimaryTarget"/>
-    <Tactic Tactic="SimpleSiege" TargetType="PrimaryTarget">
-      <TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
-        <CreateUnits UnitName="Reaper17AnnihilatorTripod"/>
-      </TeamTemplate>
-      <TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
-    </Tactic>
-  </AIStrategicStateDefinition>
+	<AIStrategicStateDefinition
+		  id="R17GuerillaAirHarassmentAntiTurtle"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<MiddleGameHeuristic/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
+			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="RELOAD_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
 
-  <!--If opponent's base is undefended sneak an engineer in to capture key structures-->
-  <AIStrategicStateDefinition
-		id="Reaper17Engineer"
-		UnitUpgradeMultiplier="0.0">
-    <Heuristic>
-      <PathToTargetHeuristic PathExists="true"/>
-      <ConstantHeuristic Weight="1.0"/>
-    </Heuristic>
-    <TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Engineer">
-      <TeamTemplate MinUnits="2" MaxUnits="8" IncludeKindOf="" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-        <CreateUnits UnitName="Reaper17Assimilator"/>
-      </TeamTemplate>
-    </Tactic>
-  </AIStrategicStateDefinition>
+	<AIStrategicStateDefinition
+		  id="R17GuerillaEngineer"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.75"/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Engineer">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="AlienAssimilator"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
 
-  <!--Airstrike targets undefended by AA-->
-  <AIStrategicStateDefinition
-		id="Reaper17GuerillaAirHarassment"
-		UnitUpgradeMultiplier="0.0">
-    <Heuristic>
-      <ConstantHeuristic Weight="1.0"/>
-    </Heuristic>
-    <TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
-    <TargetHeuristic TargetHeuristic="SafestToAirPowerPlantHeuristic" TargetType="AssaultAirstrike"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
-      <TeamTemplate MinUnits="1" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
-    </Tactic>
-  </AIStrategicStateDefinition>
-
-  <!--Constantly pester opponent with small attacks on random targets -->
-  <AIStrategicStateDefinition
-		id="Reaper17Diversion"
-		UnitUpgradeMultiplier="0.0">
-    <Heuristic>
-      <PathToTargetHeuristic PathExists="true"/>
-      <ConstantHeuristic Weight="1.0"/>
-    </Heuristic>
-    <TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Diversion"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Diversion">
-      <TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="ASSAULT_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-    </Tactic>
-  </AIStrategicStateDefinition>
-
-  <AIBudgetStateDefinition
-    id="Reaper17GuerillaTechByTimeBudget">
-    <Heuristic>
-      <ConstantHeuristic Weight="0.8"/>
-      <OpeningMoveHeuristic Complete="true"/>
-      <TimerHeuristic StartTime="300s" EndTime="-1s"/>
-      <IntervalHeuristic IntervalTime="130s" ActiveTime="20s"/>
-      <IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
-    </Heuristic>
-    <Budget>
-      <AccountShare Account="INVESTMENT" Percent="0%"/>
-      <AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
-      <AccountShare Account="PRODUCTION" Percent="0%"/>
-      <AccountShare Account="DEFENSE" Percent="0%"/>
-      <AccountShare Account="TECHNOLOGY" Percent="90%"/>
-      <AccountShare Account="SLUSH_FUND" Percent="10%"/>
-    </Budget>
-  </AIBudgetStateDefinition>
-
-  <AIBudgetStateDefinition
-    id="Reaper17GuerillaTechByTimeBudget_EASY">
-    <Heuristic>
-      <ConstantHeuristic Weight="0.8"/>
-      <OpeningMoveHeuristic Complete="true"/>
-      <IntervalHeuristic IntervalTime="610s" ActiveTime="20s"/>
-      <IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
-    </Heuristic>
-    <Budget>
-      <AccountShare Account="INVESTMENT" Percent="0%"/>
-      <AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
-      <AccountShare Account="PRODUCTION" Percent="0%"/>
-      <AccountShare Account="DEFENSE" Percent="0%"/>
-      <AccountShare Account="TECHNOLOGY" Percent="90%"/>
-      <AccountShare Account="SLUSH_FUND" Percent="10%"/>
-    </Budget>
-  </AIBudgetStateDefinition>
-
-  <AIBudgetStateDefinition
-    id="Reaper17GuerillaTechByTimeBudget_MEDIUM">
-    <Heuristic>
-      <ConstantHeuristic Weight="0.8"/>
-      <OpeningMoveHeuristic Complete="true"/>
-      <TimerHeuristic StartTime="300s" EndTime="-1s"/>
-      <IntervalHeuristic IntervalTime="220s" ActiveTime="20s"/>
-      <IntervalHeuristic IntervalTime="7s" ActiveTime="3s"/>
-    </Heuristic>
-    <Budget>
-      <AccountShare Account="INVESTMENT" Percent="0%"/>
-      <AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
-      <AccountShare Account="PRODUCTION" Percent="0%"/>
-      <AccountShare Account="DEFENSE" Percent="0%"/>
-      <AccountShare Account="TECHNOLOGY" Percent="90%"/>
-      <AccountShare Account="SLUSH_FUND" Percent="10%"/>
-    </Budget>
-  </AIBudgetStateDefinition>
+	<AIStrategicStateDefinition
+		  id="R17GuerillaGarrisonEpicUnit"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0" />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>
+		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">
+			<TeamTemplate MinUnits="1" MaxUnits="3" IncludeKindOf="INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
+		</Tactic>
+		<UnitModifierByName UnitName="Reaper17StalkerSquad" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="Reaper17ShockTrooperSquad" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+	</AIStrategicStateDefinition>
   
 </AssetDeclaration>
 
