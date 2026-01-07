@@ -95,8 +95,8 @@
 
 		<OpeningMove Name="BH_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="BHOffensiveBikeBuggyRush" Weight="33%" Difficulty="MEDIUM HARD BRUTAL"/>
 		<OpeningMove Name="BHOffensiveScorpionRush" Weight="34%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="BHOffensiveBikeBuggyRush" Weight="33%" Difficulty="MEDIUM HARD BRUTAL"/>
 		<OpeningMove Name="BHOffensiveFlameTankRush" Weight="33%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BHOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
