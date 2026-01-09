@@ -3,77 +3,6 @@
   <Tags></Tags>
   <Includes></Includes>
 
-	<AIStrategicStateDefinition
-		  id="GDIGuerillaRefineryAttack"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
-			<PathToTargetHeuristic PathExists="true"/>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundRefineryHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		  id="GDIGuerillaProductionAttack"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
-			<FocusedThresholdHeuristic/>
-			<PathToTargetHeuristic PathExists="true"/>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ProductionKillHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="7" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="true"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-  <AIStrategicStateDefinition
-		id="GDIGuerillaEconomyAttack"
-		UnitUpgradeMultiplier="0.0">
-    <Heuristic>
-		<ConstantHeuristic Weight="1.0"/>
-		<PathToTargetHeuristic PathExists="true"/>
-		<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
-    </Heuristic>
-    <TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
-    <Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
-      <TeamTemplate MinUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON UNIQUE_UNIT AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-    </Tactic>
-  </AIStrategicStateDefinition>
-
-  <AIStrategicStateDefinition
-		id="GDIGuerillaPowerAttack"
-		UnitUpgradeMultiplier="0.0">
-    <Heuristic>
-		<ConstantHeuristic Weight="1.0"/>
-		<OpponentPowerThresholdHeuristic/>
-		<PathToTargetHeuristic PathExists="true"/>
-		<SiegeThresholdHeuristic SiegeMode="false" Threshold="10.0"/>
-    </Heuristic>
-    <TargetHeuristic TargetHeuristic="PowerKillHeuristic" TargetType="SpreadTarget"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="SpreadTarget">
-      <TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON UNIQUE_UNIT AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-    </Tactic>
-  </AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		id="GDIGuerillaOverwhelmAttack"
-		UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
-			<PathToTargetHeuristic PathExists="true"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="ExtraTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="ExtraTarget">
-			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
   <AIStrategicStateDefinition
 		id="GDIGuerillaSiege"
 		UnitUpgradeMultiplier="0.0">
@@ -120,20 +49,6 @@
 			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="4" UnitName="GDIOrca"/>
 			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		  id="GDIGuerillaAirHarassmentAntiTurtle"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
-			<MiddleGameHeuristic/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
-		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
-			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT PRODUCED_AT_HELIPAD" ExcludeKindOf="RELOAD_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 

@@ -2,72 +2,6 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Tags></Tags>
   <Includes></Includes>
-	
-	<AIStrategicStateDefinition
-	  id="T59OffensiveVehicleRush"
-	  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<TimerHeuristic StartTime="0s" EndTime="420s"/>
-			<PathToTargetHeuristic PathExists="true"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="10" IncludeKindOf="CAN_ATTACK VEHICLE" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		  id="T59OffensiveOverrunEarly"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="0.96"/>
-			<TimerHeuristic StartTime="421s" EndTime="-1s"/>
-			<PathToTargetHeuristic PathExists="true"/>
-			<OverrunEarlyHeuristic>
-				<MiddleGameHeuristic/>
-				<LateGameHeuristic/>
-			</OverrunEarlyHeuristic>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="ExtraTarget"/>
-		<Tactic Tactic="SimpleAttack" TargetType="ExtraTarget">
-			<TeamTemplate MinUnits="8" MaxUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		  id="T59OffensiveOverrunMiddle"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="0.97"/>
-			<TimerHeuristic StartTime="421s" EndTime="-1s"/>
-			<PathToTargetHeuristic PathExists="true"/>
-			<OverrunMiddleHeuristic>
-				<MiddleGameHeuristic/>
-				<LateGameHeuristic/>
-			</OverrunMiddleHeuristic>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="ExtraTarget"/>
-		<Tactic Tactic="SimpleAttack" TargetType="ExtraTarget">
-			<TeamTemplate MinUnits="12" MaxUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		  id="T59OffensiveOverrunLate"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="0.98"/>
-			<TimerHeuristic StartTime="421s" EndTime="-1s"/>
-			<PathToTargetHeuristic PathExists="true"/>
-			<OverrunLateHeuristic>
-				<LateGameHeuristic/>
-			</OverrunLateHeuristic>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="ExtraTarget"/>
-		<Tactic Tactic="SimpleAttack" TargetType="ExtraTarget">
-			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
 		  id="T59OffensiveEarlyGroundEconomyAttack"
@@ -147,20 +81,6 @@
 			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="Traveler59DevastatorWarship"/>
 			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-	  id="T59OffensiveAirHarassmentAntiTurtle"
-	  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
-			<MiddleGameHeuristic/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
-		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
-			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 

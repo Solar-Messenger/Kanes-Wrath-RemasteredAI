@@ -19,7 +19,7 @@
 		  BaseCompactness="0.75"
 	  DefaultThreatFindRadius="0"
 	  UnitBuilderCostEffectivenessWeight="1.0"
-	  UnitBuilderMoneyVersusTimePreference="0.5"
+	  UnitBuilderMoneyVersusTimePreference="1.0"
 	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
 	  UnitBuilderEnemyTowerWeight="10%"
@@ -97,13 +97,15 @@
 		<OpeningMove Name="BHOverlordEpicUnitRush" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BHOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BHOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="BHOverlordOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="Cleanup" Difficulty="EASY MEDIUM HARD BRUTAL" />
+
+		<States State="OverlordOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="BHOverlordSiege" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="BHOverlordBaseCrack" Difficulty="BRUTAL" />
 
-		<States State="BHOverlordAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="OverlordAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="BHOverlordBombingRuns" Difficulty="MEDIUM HARD BRUTAL" />
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>

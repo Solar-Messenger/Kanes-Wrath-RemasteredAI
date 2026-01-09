@@ -19,7 +19,7 @@
 		  BaseCompactness="0.75"
 	  DefaultThreatFindRadius="0"
 	  UnitBuilderCostEffectivenessWeight="1.0"
-	  UnitBuilderMoneyVersusTimePreference="0.5"
+	  UnitBuilderMoneyVersusTimePreference="1.0"
 	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
 	  UnitBuilderEnemyTowerWeight="10%"
@@ -107,17 +107,19 @@
 		<OpeningMove Name="GDIGuerillaAirAPCSpam" Weight="30%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="GDIOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GDIOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		
+		<States State="Cleanup" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-		<States State="GDIGuerillaRefineryAttack" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="GDIGuerillaProductionAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
-		<States State="GDIGuerillaEconomyAttack" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="GDIGuerillaPowerAttack" Difficulty="HARD BRUTAL" />
-		<States State="GDIGuerillaOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="GuerillaRefineryAttack" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="GuerillaProductionAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="GuerillaEconomyAttack" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="GuerillaPowerAttack" Difficulty="HARD BRUTAL" />
+		<States State="GuerillaOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="GDIGuerillaSiege" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="GDIGuerillaSpotters" Difficulty="HARD BRUTAL"/>
 		<States State="GDIGuerillaOrcaEconomyAttack" Difficulty="BRUTAL"/>
-		<States State="GDIGuerillaAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="GuerillaAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIGuerillaBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIGuerillaEngineer" Difficulty="MEDIUM HARD BRUTAL" />
 

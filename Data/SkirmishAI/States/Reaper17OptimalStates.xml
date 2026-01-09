@@ -4,27 +4,6 @@
   <Includes></Includes>
 
 	<AIStrategicStateDefinition
-		  id="R17OptimalDirectAttack"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<PathToTargetHeuristic PathExists="true"/>
-			<TimerHeuristic StartTime="120s" EndTime="-1s"/>
-			<ConstantHeuristic Weight="1.0"/>
-			<OverpowerHeuristic
-	            PowerAdvantageWeight="0.5"
-	            PenetrabilityWeight="0.5">
-				<PowerAdvantageHeuristic/>
-				<PenetrabilityHeuristic/>
-			</OverpowerHeuristic>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
 		  id="R17OptimalEarlyGroundEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
@@ -112,19 +91,6 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="R17OptimalOverwhelmAttack"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
-			<PathToTargetHeuristic PathExists="true"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="ExtraTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="ExtraTarget">
-			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
 		  id="R17OptimalSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
@@ -161,20 +127,6 @@
 			<TeamTemplate MinUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="Reaper17AnnihilatorTripod"/>
 			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-	  id="R17OptimalAirHarassmentAntiTurtle"
-	  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
-			<MiddleGameHeuristic/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
-		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
-		<Tactic Tactic="FlankAttack" TargetType="AssaultAirstrike">
-			<TeamTemplate MinUnits="4" MaxUnits="8" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="INFANTRY RELOAD_AIRCRAFT UNIQUE_UNIT SLAVE_OWNER" AlwaysRelease="false" AlwaysRecruit="true"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 

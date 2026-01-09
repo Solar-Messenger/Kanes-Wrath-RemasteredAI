@@ -4,76 +4,6 @@
   <Includes></Includes>
 
 	<AIStrategicStateDefinition
-		  id="ZOCOMGuerillaRefineryAttack"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
-			<PathToTargetHeuristic PathExists="true"/>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundRefineryHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		  id="ZOCOMGuerillaProductionAttack"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
-			<FocusedThresholdHeuristic/>
-			<PathToTargetHeuristic PathExists="true"/>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ProductionKillHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="7" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="true"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		  id="ZOCOMGuerillaEconomyAttack"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
-			<PathToTargetHeuristic PathExists="true"/>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
-			<TeamTemplate MinUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON UNIQUE_UNIT AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		  id="ZOCOMGuerillaPowerAttack"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<OpponentPowerThresholdHeuristic/>
-			<PathToTargetHeuristic PathExists="true"/>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="10.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="PowerKillHeuristic" TargetType="SpreadTarget"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="SpreadTarget">
-			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON UNIQUE_UNIT AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		id="ZOCOMGuerillaOverwhelmAttack"
-		UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
-			<PathToTargetHeuristic PathExists="true"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="ExtraTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="ExtraTarget">
-			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
 		  id="ZOCOMGuerillaSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
@@ -103,20 +33,6 @@
 			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="4" UnitName="ZOCOMOrca"/>
 			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		  id="ZOCOMGuerillaAirHarassmentAntiTurtle"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
-			<MiddleGameHeuristic/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
-		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
-			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 

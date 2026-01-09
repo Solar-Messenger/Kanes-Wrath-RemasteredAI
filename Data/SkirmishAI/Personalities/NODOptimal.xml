@@ -96,17 +96,19 @@
 		<OpeningMove Name="NODOptimalStandard" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="NODOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="NODOptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="Cleanup" Difficulty="EASY MEDIUM HARD BRUTAL" />
+
+		<States State="OptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODOptimalEarlyMidBikeEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="NODOptimalLateStealthTankEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="NODOptimalFlameTankAttack" Difficulty="BRUTAL"/>
-		<States State="NODOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODOptimalSiege" Difficulty="HARD BRUTAL"/>
 		<States State="NODOptimalBaseCrack" Difficulty="BRUTAL"/>
 
-		<States State="NODOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODOptimalBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODOptimalEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 

@@ -19,7 +19,7 @@
 		  BaseCompactness="0.75"
 	  DefaultThreatFindRadius="0"
 	  UnitBuilderCostEffectivenessWeight="1.0"
-	  UnitBuilderMoneyVersusTimePreference="0.5"
+	  UnitBuilderMoneyVersusTimePreference="1.0"
 	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
 	  UnitBuilderEnemyTowerWeight="10%"
@@ -100,14 +100,16 @@
 		<OpeningMove Name="MOKDefensiveSuperWeapon" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="MOKOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MOKOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="MOKConyardDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MOKSuperweaponDefense" Difficulty="HARD BRUTAL"/>
-		<States State="MOKCounterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="MOKFinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="Cleanup" Difficulty="EASY MEDIUM HARD BRUTAL" />
+
+		<States State="ConyardDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="SuperweaponDefense" Difficulty="HARD BRUTAL"/>
+		<States State="Counterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="FinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKDefensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MOKDefensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="DefensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKDefensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>

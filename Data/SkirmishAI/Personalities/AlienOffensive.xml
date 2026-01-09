@@ -19,7 +19,7 @@
 		  BaseCompactness="0.75"
 	  DefaultThreatFindRadius="0"
 	  UnitBuilderCostEffectivenessWeight="1.0"
-	  UnitBuilderMoneyVersusTimePreference="0.5"
+	  UnitBuilderMoneyVersusTimePreference="1.0"
 	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
 	  UnitBuilderEnemyTowerWeight="10%"
@@ -95,17 +95,22 @@
 		<OpeningMove Name="AlienSeekerSpam" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
 		<OpeningMove Name="AlienDevRush" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="AlienOffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="AlienOffensiveOverrunEarly" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="AlienOffensiveOverrunMiddle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="AlienOffensiveOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+
+		<States State="Cleanup" Difficulty="EASY MEDIUM HARD BRUTAL" />
+
+		<States State="OffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="OffensiveOverrunEarly" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OffensiveOverrunMiddle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OffensiveOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienOffensiveEarlyGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="AlienOffensiveLateGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="AlienOffensiveRavagerEconomyAttack" Difficulty="BRUTAL"/>
 		<States State="AlienOffensiveAirEconomyAttack" Difficulty="BRUTAL"/>
 		<States State="AlienOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="AlienOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienOffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>

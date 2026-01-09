@@ -97,17 +97,19 @@
 		<OpeningMove Name="GDIOptimalStandard" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="GDIOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GDIOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="GDIOptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="Cleanup" Difficulty="EASY MEDIUM HARD BRUTAL" />
+
+		<States State="OptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIOptimalGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="GDIOptimalAirEconomyAttack" Difficulty="BRUTAL"/>
-		<States State="GDIOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIOptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIOptimalSpotters" Difficulty="HARD BRUTAL"/>
 		<States State="GDIOptimalBaseCrack" Difficulty="BRUTAL"/>
 
-		<States State="GDIOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIOptimalBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIOptimalEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
@@ -132,7 +134,7 @@
 		<States State="GDIHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
-
+		
 		<States State="GDIBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>

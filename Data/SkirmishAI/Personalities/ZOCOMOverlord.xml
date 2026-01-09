@@ -19,7 +19,7 @@
 		  BaseCompactness="0.75"
 	  DefaultThreatFindRadius="0"
 	  UnitBuilderCostEffectivenessWeight="1.0"
-	  UnitBuilderMoneyVersusTimePreference="0.5"
+	  UnitBuilderMoneyVersusTimePreference="1.0"
 	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
 	  UnitBuilderEnemyTowerWeight="10%"
@@ -96,13 +96,15 @@
 		<OpeningMove Name="ZOCOMOverlordEpicUnitRush" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="ZOCOMOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="ZOCOMOverlordOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="Cleanup" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+
+		<States State="OverlordOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="ZOCOMOverlordSiege" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="ZOCOMOverlordBaseCrack" Difficulty="BRUTAL" />
 
-		<States State="ZOCOMOverlordAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="OverlordAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="ZOCOMOverlordBombingRuns" Difficulty="MEDIUM HARD BRUTAL" />
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>

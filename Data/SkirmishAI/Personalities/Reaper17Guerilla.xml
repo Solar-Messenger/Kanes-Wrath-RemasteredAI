@@ -19,7 +19,7 @@
 		  BaseCompactness="0.75"
 	  DefaultThreatFindRadius="0"
 	  UnitBuilderCostEffectivenessWeight="1.0"
-	  UnitBuilderMoneyVersusTimePreference="0.5"
+	  UnitBuilderMoneyVersusTimePreference="1.0"
 	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
 	  Expansion_TiberiumSearchRadius="600"
@@ -105,16 +105,18 @@
 		<OpeningMove Name="R17GuerillaRavagerSpam" Weight="20%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="R17OpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="R17OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="R17GuerillaRefineryAttack" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="R17GuerillaProductionAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
-		<States State="R17GuerillaEconomyAttack" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="R17GuerillaPowerAttack" Difficulty="HARD BRUTAL" />
-		<States State="R17GuerillaOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="Cleanup" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+
+		<States State="GuerillaRefineryAttack" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="GuerillaProductionAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="GuerillaEconomyAttack" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="GuerillaPowerAttack" Difficulty="HARD BRUTAL" />
+		<States State="GuerillaOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="R17GuerillaSiege" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="R17GuerillaRavagerEconomyAttack" Difficulty="BRUTAL" />
-		<States State="R17GuerillaAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="GuerillaAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="R17GuerillaEngineer" Difficulty="MEDIUM HARD BRUTAL" />
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>

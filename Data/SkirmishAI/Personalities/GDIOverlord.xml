@@ -96,13 +96,15 @@
 		<OpeningMove Name="GDIOverlordEpicUnitRush" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="GDIOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GDIOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		
+		<States State="Cleanup" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-		<States State="GDIOverlordOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="OverlordOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="GDIOverlordSiege" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="GDIOverlordBaseCrack" Difficulty="BRUTAL" />
 
-		<States State="GDIOverlordAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="OverlordAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="GDIOverlordBombingRuns" Difficulty="MEDIUM HARD BRUTAL" />
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>

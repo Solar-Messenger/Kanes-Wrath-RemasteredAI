@@ -19,7 +19,7 @@
 		  BaseCompactness="0.75"
 	  DefaultThreatFindRadius="0"
 	  UnitBuilderCostEffectivenessWeight="1.0"
-	  UnitBuilderMoneyVersusTimePreference="0.5"
+	  UnitBuilderMoneyVersusTimePreference="1.0"
 	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
 	  UnitBuilderEnemyTowerWeight="10%"
@@ -97,16 +97,18 @@
 		<OpeningMove Name="BHOptimalStandard" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BHOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BHOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="BHOptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="Cleanup" Difficulty="EASY MEDIUM HARD BRUTAL" />
+
+		<States State="OptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHOptimalEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="BHOptimalFlameTankAttack" Difficulty="BRUTAL"/>
-		<States State="BHOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHOptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BHOptimalBaseCrack" Difficulty="BRUTAL"/>
 
-		<States State="BHOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHOptimalArtilleryBombing" Difficulty="MEDIUM HARD BRUTAL"/>
 		
 		<States State="BHOptimalEngineer" Difficulty="MEDIUM HARD BRUTAL"/>

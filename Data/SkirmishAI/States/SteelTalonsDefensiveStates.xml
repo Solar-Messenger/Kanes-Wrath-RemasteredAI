@@ -4,61 +4,6 @@
   <Includes></Includes>
 
 	<AIStrategicStateDefinition
-		  id="STConyardDefense"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<EnemyNearbyHeuristic Distance="1200.0" EnemyNearby="true" DefenderKindOf="CONSTRUCTION_YARD"/>
-			<ConstantHeuristic Weight="1.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestFriendlyConyardHeuristic" TargetType="Defensive"/>
-		<Tactic Tactic="StaticDefense" TargetType="Defensive">
-			<TeamTemplate MinUnits="1" MaxUnits="5" IncludeKindOf="CAN_ATTACK VEHICLE" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		  id="STSuperweaponDefense"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<EnemyNearbyHeuristic Distance="1200.0" EnemyNearby="true" DefenderKindOf="SUPER_WEAPON"/>
-			<ConstantHeuristic Weight="1.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestFriendlySuperweaponHeuristic" TargetType="SpecialDefense"/>
-		<Tactic Tactic="StaticDefense" TargetType="SpecialDefense">
-			<TeamTemplate MinUnits="1" MaxUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		  id="STCounterattack"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-	  <ConstantHeuristic Weight="1.0"/>
-	  <TimerHeuristic StartTime="300s" EndTime="-1s"/>
-      <PathToTargetHeuristic PathExists="true"/>
-	  <FocusedThresholdHeuristic/>
-	  <SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Counterattack"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Counterattack">
-			<TeamTemplate MinUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-	  id="STFinalAttack"
-	  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
-			<PathToTargetHeuristic PathExists="true"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="ExtraTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="ExtraTarget">
-			<TeamTemplate MinUnits="25" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
 		  id="STDefensiveSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
@@ -73,20 +18,6 @@
 				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="SteelTalonsBehemoth"/>
 			</TeamTemplate>
 			<TeamTemplate MinUnits="6" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-	  id="STDefensiveAirHarassmentAntiTurtle"
-	  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
-			<MiddleGameHeuristic/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
-		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
-		<Tactic Tactic="FlankAttack" TargetType="AssaultAirstrike">
-			<TeamTemplate MaxUnits="8" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT PRODUCED_AT_HELIPAD" ExcludeKindOf="INFANTRY RELOAD_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 

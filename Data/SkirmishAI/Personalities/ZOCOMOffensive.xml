@@ -19,7 +19,7 @@
 		  BaseCompactness="0.75"
 	  DefaultThreatFindRadius="0"
 	  UnitBuilderCostEffectivenessWeight="1.0"
-	  UnitBuilderMoneyVersusTimePreference="0.25"
+	  UnitBuilderMoneyVersusTimePreference="1.0"
 	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
 	  UnitBuilderEnemyTowerWeight="10%"
@@ -101,17 +101,19 @@
 		<OpeningMove Name="ZOCOMOffensivePitBullSpam" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="ZOCOMOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="ZOCOMOffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMOffensiveOverrunEarly" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMOffensiveOverrunMiddle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMOffensiveOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="Cleanup" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+
+		<States State="OffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="OffensiveOverrunEarly" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OffensiveOverrunMiddle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OffensiveOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOffensiveGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="ZOCOMOffensiveAirEconomyAttack" Difficulty="BRUTAL"/>
 		<States State="ZOCOMOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="ZOCOMOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>

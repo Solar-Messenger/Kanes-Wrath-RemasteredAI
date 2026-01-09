@@ -19,7 +19,7 @@
 		  BaseCompactness="0.75"
 	  DefaultThreatFindRadius="0"
 	  UnitBuilderCostEffectivenessWeight="1.0"
-	  UnitBuilderMoneyVersusTimePreference="0.5"
+	  UnitBuilderMoneyVersusTimePreference="1.0"
 	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
 	  UnitBuilderEnemyTowerWeight="10%"
@@ -100,17 +100,19 @@
 		<OpeningMove Name="BHOffensiveFlameTankRush" Weight="33%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BHOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BHOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="BHOffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="BHOffensiveOverrunEarly" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BHOffensiveOverrunMiddle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BHOffensiveOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="Cleanup" Difficulty="EASY MEDIUM HARD BRUTAL" />
+
+		<States State="OffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="OffensiveOverrunEarly" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OffensiveOverrunMiddle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OffensiveOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHOffensiveEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="BHOffensiveFlameTankAttack" Difficulty="BRUTAL"/>
 		<States State="BHOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="BHOffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHOffensiveArtilleryBombing" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>

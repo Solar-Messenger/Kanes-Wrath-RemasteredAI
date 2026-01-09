@@ -4,19 +4,6 @@
   <Includes></Includes>
 
 	<AIStrategicStateDefinition
-		  id="STOverlordOverwhelmAttack"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
-			<PathToTargetHeuristic PathExists="true"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="SimpleAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="25" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
 	id="STOverlordSiege"
 	UnitUpgradeMultiplier="0.0">
 		<Heuristic>
@@ -32,20 +19,6 @@
 				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="SteelTalonsBehemoth"/>
 			</TeamTemplate>
 			<TeamTemplate MinUnits="3" MaxUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON RELOAD_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-	  id="STOverlordAirHarassmentAntiTurtle"
-	  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
-			<MiddleGameHeuristic/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
-		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
-			<TeamTemplate MinUnits="8" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="RELOAD_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 

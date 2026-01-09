@@ -4,19 +4,6 @@
   <Includes></Includes>
 
 	<AIStrategicStateDefinition
-		  id="ZOCOMOverlordOverwhelmAttack"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
-			<PathToTargetHeuristic PathExists="true"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="SimpleAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="25" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
 		id="ZOCOMOverlordSiege"
 		UnitUpgradeMultiplier="0.0">
 		<Heuristic>
@@ -32,20 +19,6 @@
 				<CreateUnits MinUnits="3" MaxUnits="3" UnitName="ZOCOMImprovedSonicTank"/>
 			</TeamTemplate>
 			<TeamTemplate MinUnits="3" MaxUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON RELOAD_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-	  id="ZOCOMOverlordAirHarassmentAntiTurtle"
-	  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
-			<MiddleGameHeuristic/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
-		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
-			<TeamTemplate MinUnits="8" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 

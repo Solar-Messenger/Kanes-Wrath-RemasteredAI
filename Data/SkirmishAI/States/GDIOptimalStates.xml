@@ -3,29 +3,6 @@
 	<Tags></Tags>
 	<Includes></Includes>
 
-	<!--Siege Threshold values are basically current_unit_count / threshold = enemy_defense_structure_count-->
-
-	<AIStrategicStateDefinition
-		  id="GDIOptimalDirectAttack"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<PathToTargetHeuristic PathExists="true"/>
-			<TimerHeuristic StartTime="120s" EndTime="-1s"/>
-			<ConstantHeuristic Weight="1.0"/>
-			<OverpowerHeuristic
-	            PowerAdvantageWeight="0.5"
-	            PenetrabilityWeight="0.5">
-				<PowerAdvantageHeuristic/>
-				<PenetrabilityHeuristic/>
-			</OverpowerHeuristic>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
 	<AIStrategicStateDefinition
 		  id="GDIOptimalGroundEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
@@ -66,19 +43,6 @@
 			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK ASSAULT_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="GDIOrca"/>
 			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		  id="GDIOptimalOverwhelmAttack"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
-			<PathToTargetHeuristic PathExists="true"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="ExtraTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="ExtraTarget">
-			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -140,20 +104,6 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-	  id="GDIOptimalAirHarassmentAntiTurtle"
-	  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
-			<MiddleGameHeuristic/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirUnitHeuristic" TargetType="AssaultAirstrike"/>
-		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="AssaultAirstrike"/>
-		<Tactic Tactic="FlankAttack" TargetType="AssaultAirstrike">
-			<TeamTemplate MinUnits="4" MaxUnits="8" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT PRODUCED_AT_HELIPAD" ExcludeKindOf="INFANTRY RELOAD_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
 		  id="GDIOptimalBombingRuns"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
@@ -196,8 +146,6 @@
 		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">
 			<TeamTemplate MinUnits="1" MaxUnits="4" IncludeKindOf="INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
 		</Tactic>
-		<UnitModifierByName UnitName="GDIZoneTrooperSquad" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
-		<UnitModifierByName UnitName="GDIMissileSoldierSquad" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
 	</AIStrategicStateDefinition>
 
 </AssetDeclaration>

@@ -19,7 +19,7 @@
 		  BaseCompactness="0.75"
 	  DefaultThreatFindRadius="0"
 	  UnitBuilderCostEffectivenessWeight="1.0"
-	  UnitBuilderMoneyVersusTimePreference="0.5"
+	  UnitBuilderMoneyVersusTimePreference="1.0"
 	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
 	  UnitBuilderEnemyTowerWeight="10%"
@@ -27,7 +27,7 @@
 	  Expansion_MaxTiberiumRemaining="27000"
 	  ReactiveDefenseRadius="1500"
 	  RepairBuildingsAtDifficulty="EASY MEDIUM HARD BRUTAL"
-	  EmergencyManagerHandleNoPowerAtDifficulty=" EASY MEDIUM HARD BRUTAL"
+	  EmergencyManagerHandleNoPowerAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoIncomeAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoConyardAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  StructureSaveChanceEasy="0.0"
@@ -98,18 +98,20 @@
 		<OpeningMove Name="AlienOptimalStandard" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="AlienOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL" />
-		<States State="AlienOpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-		<States State="AlienOptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="Cleanup" Difficulty="EASY MEDIUM HARD BRUTAL" />
+
+		<States State="OptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienOptimalEarlyGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="AlienOptimalLateGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="AlienOptimalRavagerEconomyAttack" Difficulty="BRUTAL"/>
 		<States State="AlienOptimalAirEconomyAttack" Difficulty="BRUTAL"/>
-		<States State="AlienOptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienOptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienOptimalBaseCrack" Difficulty="BRUTAL"/>
 
-		<States State="AlienOptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienOptimalBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienOptimalEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
