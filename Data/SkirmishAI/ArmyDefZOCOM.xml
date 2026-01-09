@@ -21,7 +21,7 @@
 		UnitUpgradePriorityHigh="200.0"
 		MaxThreatForOpportunityTargets="10.0"
 		ValueToSetForMaxOnDefenseTeam="10"
-		CombatChainSearchDepthForTeamRecruits_AttackTeams="4"
+		CombatChainSearchDepthForTeamRecruits_AttackTeams="2"
 		CombatChainSearchDepthForTeamRecruits_DefenseTeams="7"
 		CombatChainSearchDepthForTeamRecruits_ExploreTeams="7"
 		UnboundedProductionEconomyStructure="ZOCOMPowerPlant"
