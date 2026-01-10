@@ -120,7 +120,7 @@
 		<States State="GDIGroundCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIAirCommandoDefense" Difficulty="HARD BRUTAL"/>
 
-		<States State="GDIOffensiveGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
+		<States State="GarrisonMARV" Difficulty="HARD BRUTAL"/>
 		<States State="GDIAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="GDIAntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="GDICaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>

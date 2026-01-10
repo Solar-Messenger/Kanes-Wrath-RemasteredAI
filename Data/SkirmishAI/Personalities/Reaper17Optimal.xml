@@ -116,7 +116,7 @@
 		<States State="R17EngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="R17CommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="R17OptimalGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
+		<States State="GarrisonHexapod" Difficulty="HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="Garrison_EASY" Difficulty="EASY"/>
 		<States State="R17AntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>

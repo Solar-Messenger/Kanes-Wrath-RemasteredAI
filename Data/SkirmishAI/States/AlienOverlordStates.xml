@@ -53,16 +53,4 @@
 		</Tactic>
 	</AIStrategicStateDefinition>
 
-	<AIStrategicStateDefinition
-		  id="AlienOverlordGarrisonEpicUnit"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="1.0" />
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>
-		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">
-			<TeamTemplate MinUnits="1" MaxUnits="3" IncludeKindOf="INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
 </AssetDeclaration>

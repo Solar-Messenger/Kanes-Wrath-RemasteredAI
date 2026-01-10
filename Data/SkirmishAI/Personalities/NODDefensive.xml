@@ -118,7 +118,7 @@
 		<States State="NODGroundCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODAirCommandoDefense" Difficulty="HARD BRUTAL"/>
 
-		<States State="NODDefensiveGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
+		<States State="GarrisonMetaUnit" Difficulty="HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="NODAntiGarrison_EASY" Difficulty="EASY"/>

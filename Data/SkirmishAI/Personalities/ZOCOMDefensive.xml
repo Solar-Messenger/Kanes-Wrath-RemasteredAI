@@ -118,7 +118,7 @@
 		<States State="ZOCOMGroundCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMAirCommandoDefense" Difficulty="HARD BRUTAL"/>
 
-		<States State="ZOCOMDefensiveGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
+		<States State="GarrisonMARV" Difficulty="HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMAntiGarrison_EASY" Difficulty="EASY"/>

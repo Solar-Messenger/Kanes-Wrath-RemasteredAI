@@ -125,7 +125,7 @@
 		<States State="BHEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="BHGuerillaGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
+		<States State="GarrisonMetaUnit" Difficulty="HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHAntiGarrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>

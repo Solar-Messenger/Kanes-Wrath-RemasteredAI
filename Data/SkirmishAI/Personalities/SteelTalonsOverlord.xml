@@ -113,7 +113,7 @@
 		<States State="STGroundCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STAirCommandoDefense" Difficulty="HARD BRUTAL"/>
 
-		<States State="STOverlordGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
+		<States State="GarrisonMARV" Difficulty="HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="Garrison_EASY" Difficulty="EASY"/>
 		<States State="STAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>

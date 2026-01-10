@@ -118,7 +118,7 @@
 		<States State="MOKGroundCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKAirCommandoDefense" Difficulty="HARD BRUTAL"/>
 
-		<States State="MOKDefensiveGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
+		<States State="GarrisonMetaUnit" Difficulty="HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="MOKAntiGarrison_EASY" Difficulty="EASY"/>

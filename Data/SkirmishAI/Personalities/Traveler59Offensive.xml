@@ -119,7 +119,7 @@
 		<States State="T59EngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="T59CommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="T59OffensiveGarrisonEpicUnit" Difficulty="HARD BRUTAL"/>
+		<States State="GarrisonHexapod" Difficulty="HARD BRUTAL"/>
 		<States State="T59AntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="T59AntiGarrison_EASY" Difficulty="EASY"/>
 		<States State="T59CaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>

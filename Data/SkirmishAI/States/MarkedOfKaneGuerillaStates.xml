@@ -84,18 +84,4 @@
 		</Tactic>
 	</AIStrategicStateDefinition>
 
-	<AIStrategicStateDefinition
-		  id="MOKGuerillaGarrisonEpicUnit"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="1.0" />
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>
-		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">
-			<TeamTemplate MinUnits="1" MaxUnits="4" IncludeKindOf="INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
-		</Tactic>
-		<UnitModifierByName UnitName="MarkedOfKaneTiberiumTrooperSquad" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneMilitantRocketSquad" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
-	</AIStrategicStateDefinition>
-
 </AssetDeclaration>
