@@ -98,8 +98,6 @@
 		<States State="NODOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="Cleanup" Difficulty="EASY MEDIUM HARD BRUTAL" />
-
 		<States State="OverlordOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="NODOverlordSiege" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="NODOverlordBaseCrack" Difficulty="BRUTAL" />

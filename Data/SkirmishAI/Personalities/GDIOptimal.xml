@@ -99,8 +99,6 @@
 		<States State="GDIOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="Cleanup" Difficulty="EASY MEDIUM HARD BRUTAL" />
-
 		<States State="OptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIOptimalGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="GDIOptimalAirEconomyAttack" Difficulty="BRUTAL"/>

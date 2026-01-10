@@ -98,8 +98,6 @@
 		<States State="MOKOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="Cleanup" Difficulty="EASY MEDIUM HARD BRUTAL" />
-
 		<States State="OverlordOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="MOKOverlordSiege" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="MOKOverlordBaseCrack" Difficulty="BRUTAL" />

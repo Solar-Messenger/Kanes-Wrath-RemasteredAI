@@ -98,8 +98,6 @@
 		<States State="STOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="Cleanup" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-
 		<States State="OverlordOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="STOverlordSiege" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="STOverlordBaseCrack" Difficulty="BRUTAL" />

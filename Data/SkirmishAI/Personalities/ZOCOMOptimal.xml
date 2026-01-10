@@ -100,8 +100,6 @@
 		<States State="ZOCOMOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="Cleanup" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-
 		<States State="OptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOptimalGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="ZOCOMOptimalAirEconomyAttack" Difficulty="BRUTAL"/>

@@ -102,8 +102,6 @@
 		<States State="ZOCOMOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="Cleanup" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-
 		<States State="ConyardDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="SuperweaponDefense" Difficulty="HARD BRUTAL"/>
 		<States State="Counterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>

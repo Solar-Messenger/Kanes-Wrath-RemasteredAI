@@ -99,8 +99,6 @@
 		<States State="BHOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="Cleanup" Difficulty="EASY MEDIUM HARD BRUTAL" />
-
 		<States State="OptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHOptimalEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="BHOptimalFlameTankAttack" Difficulty="BRUTAL"/>

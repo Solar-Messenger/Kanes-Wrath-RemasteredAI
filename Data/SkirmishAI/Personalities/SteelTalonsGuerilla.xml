@@ -108,8 +108,6 @@
 		<States State="STOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="Cleanup" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-
 		<States State="GuerillaRefineryAttack" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="GuerillaProductionAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="GuerillaEconomyAttack" Difficulty="MEDIUM HARD BRUTAL" />

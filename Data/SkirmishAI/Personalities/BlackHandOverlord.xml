@@ -99,8 +99,6 @@
 		<States State="BHOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="Cleanup" Difficulty="EASY MEDIUM HARD BRUTAL" />
-
 		<States State="OverlordOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="BHOverlordSiege" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="BHOverlordBaseCrack" Difficulty="BRUTAL" />

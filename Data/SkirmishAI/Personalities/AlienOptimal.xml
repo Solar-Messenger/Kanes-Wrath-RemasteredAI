@@ -100,8 +100,6 @@
 		<States State="AlienOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-		<States State="Cleanup" Difficulty="EASY MEDIUM HARD BRUTAL" />
-
 		<States State="OptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienOptimalEarlyGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="AlienOptimalLateGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
