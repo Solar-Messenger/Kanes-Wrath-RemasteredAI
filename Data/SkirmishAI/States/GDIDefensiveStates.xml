@@ -10,14 +10,15 @@
 			<ConstantHeuristic Weight="0.95"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<LateGameHeuristic/>
-			<SiegeThresholdHeuristic SiegeMode="true" Threshold="8.0"/>
+			<FocusedThresholdHeuristic/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="6.0"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="SiegeTarget"/>
+		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
 			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="GDIJuggernaught"/>
 			</TeamTemplate>
-			<TeamTemplate MinUnits="6" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
+			<TeamTemplate MinUnits="1" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON RELOAD_AIRCRAFT BOMBER_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -26,9 +27,8 @@
   UnitUpgradeMultiplier="0.0">
     <Heuristic>
 	  <ConstantHeuristic Weight="1.0"/>
-      <LateGameHeuristic/>
     </Heuristic>
-    <TargetHeuristic TargetHeuristic="CommandoHeuristic" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="BombingAirstrike"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
       <TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
         <CreateUnits MinUnits="4" MaxUnits="4" UnitName="GDIFireHawk"/>

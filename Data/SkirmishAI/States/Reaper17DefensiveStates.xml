@@ -10,14 +10,15 @@
 			<ConstantHeuristic Weight="0.9"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<LateGameHeuristic/>
+			<FocusedThresholdHeuristic/>
 			<SiegeThresholdHeuristic SiegeMode="true" Threshold="8.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="Reaper17AnnihilatorTripod"/>
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="Reaper17AnnihilatorTripod"/>
 			</TeamTemplate>
-			<TeamTemplate MinUnits="6" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
+			<TeamTemplate MinUnits="1" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 

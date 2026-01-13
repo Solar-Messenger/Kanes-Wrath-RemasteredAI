@@ -26,8 +26,8 @@
 		<Order Time="60s" Build="Reaper17TiberiumTower"/>
 		<Order Time="90s" Build="Reaper17PowerProjector"/>
 		<Order Time="95s" Build="Reaper17PowerProjector"/>
-		<Order Time="100s" Build="Reaper17BuzzerHive"/>
-		<Order Time="105s" Build="Reaper17BuzzerHive"/>
+		<Order Time="90s" Build="Reaper17BuzzerHive"/>
+		<Order Time="95s" Build="Reaper17BuzzerHive"/>
 		<Order Time="100s" Build="Reaper17Gateway"/>
 		<Order Time="120s" Build="Reaper17Foundry"/>
 		<Order Time="135s" Build="Reaper17ControlCenter"/>

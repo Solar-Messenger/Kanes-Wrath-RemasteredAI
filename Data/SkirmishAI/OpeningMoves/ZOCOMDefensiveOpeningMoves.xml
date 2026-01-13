@@ -26,8 +26,8 @@
 		<Order Time="60s" Build="ZOCOMRefinery"/>
 		<Order Time="90s" Build="ZOCOMPowerPlant"/>
 		<Order Time="95s" Build="ZOCOMPowerPlant"/>
-		<Order Time="100s" Build="ZOCOMWatchTower"/>
-		<Order Time="105s" Build="ZOCOMWatchTower"/>
+		<Order Time="90s" Build="ZOCOMWatchTower"/>
+		<Order Time="95s" Build="ZOCOMWatchTower"/>
 		<Order Time="100s" Build="ZOCOMWarfactory"/>
 		<Order Time="120s" Build="ZOCOMCrane"/>
 		<Order Time="135s" Build="ZOCOMCommandPost"/>

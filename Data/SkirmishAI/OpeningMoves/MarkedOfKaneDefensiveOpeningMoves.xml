@@ -26,8 +26,8 @@
 		<Order Time="60s" Build="MarkedOfKaneRefinery"/>
 		<Order Time="90s" Build="MarkedOfKanePowerPlant"/>
 		<Order Time="95s" Build="MarkedOfKanePowerPlant"/>
-		<Order Time="100s" Build="MarkedOfKaneShredderTurretHub"/>
-		<Order Time="105s" Build="MarkedOfKaneShredderTurretHub"/>
+		<Order Time="90s" Build="MarkedOfKaneShredderTurretHub"/>
+		<Order Time="95s" Build="MarkedOfKaneShredderTurretHub"/>
 		<Order Time="100s" Build="MarkedOfKaneDropZone"/>
 		<Order Time="120s" Build="MarkedOfKaneCrane"/>
 		<Order Time="135s" Build="MarkedOfKaneOperationsCenter"/>

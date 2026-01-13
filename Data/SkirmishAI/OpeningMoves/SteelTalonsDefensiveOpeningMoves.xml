@@ -22,8 +22,8 @@
 		<Order Time="60s" Build="SteelTalonsRefinery"/>
 		<Order Time="90s" Build="SteelTalonsPowerPlant"/>
 		<Order Time="95s" Build="SteelTalonsPowerPlant"/>
-		<Order Time="100s" Build="SteelTalonsWatchTower"/>
-		<Order Time="105s" Build="SteelTalonsWatchTower"/>
+		<Order Time="90s" Build="SteelTalonsWatchTower"/>
+		<Order Time="95s" Build="SteelTalonsWatchTower"/>
 		<Order Time="100s" Build="SteelTalonsWarfactory"/>
 		<Order Time="120s" Build="SteelTalonsCrane"/>
 		<Order Time="135s" Build="SteelTalonsCommandPost"/>

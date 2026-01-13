@@ -26,15 +26,14 @@
 		<Order Time="60s" Build="NODRefinery"/>
 		<Order Time="90s" Build="NODPowerPlant"/>
 		<Order Time="95s" Build="NODPowerPlant"/>
-		<Order Time="100s" Build="NODShredderTurretHub"/>
-		<Order Time="105s" Build="NODShredderTurretHub"/>
+		<Order Time="90s" Build="NODShredderTurretHub"/>
+		<Order Time="95s" Build="NODShredderTurretHub"/>
 		<Order Time="100s" Build="NODDropZone"/>
 		<Order Time="120s" Build="NODCrane"/>
 		<Order Time="135s" Build="NODOperationsCenter"/>
 		<Order Time="135s" Build="NODPowerPlant"/>
 		<Order Time="140s" Build="NODHangar"/>
 		<Order Time="150s" Build="NODTechAssemblyPlant"/>
-		<Order Time="190s" Build="MG_NOD_WarmechFacility"/>
 		<Order Time="190s" Build="NODTempleOfNOD"/>
 	</SkirmishOpeningMove>
 

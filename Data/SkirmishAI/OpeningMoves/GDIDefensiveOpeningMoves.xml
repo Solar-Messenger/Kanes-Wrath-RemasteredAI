@@ -26,15 +26,14 @@
 		<Order Time="60s" Build="GDIRefinery"/>
 		<Order Time="90s" Build="GDIPowerPlant"/>
 		<Order Time="95s" Build="GDIPowerPlant"/>
-		<Order Time="100s" Build="GDIWatchTower"/>
-		<Order Time="105s" Build="GDIWatchTower"/>
+		<Order Time="90s" Build="GDIWatchTower"/>
+		<Order Time="95s" Build="GDIWatchTower"/>
 		<Order Time="100s" Build="GDIWarfactory"/>
 		<Order Time="120s" Build="GDICrane"/>
 		<Order Time="135s" Build="GDICommandPost"/>
 		<Order Time="135s" Build="GDIPowerPlant"/>
 		<Order Time="140s" Build="GDIAirTower"/>
 		<Order Time="150s" Build="GDIArmory"/>
-		<Order Time="190s" Build="MG_GDI_ReclamatorHub"/>
 		<Order Time="190s" Build="GDIIonCannonControlCenter"/>
 	</SkirmishOpeningMove>
 

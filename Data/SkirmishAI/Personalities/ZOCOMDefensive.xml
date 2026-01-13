@@ -13,8 +13,8 @@
 		  MaxBuildingsToBeDefensiveTarget_Med="0"
 		  ChanceForUnitsToUpgrade="999"
 		  ChanceToUseAllUnitsForDefenseTarget_Small="0"
-		  ChanceToUseAllUnitsForDefenseTarget_Med="0"
-		  ChanceToUseAllUnitsForDefenseTarget_Large="0"
+		  ChanceToUseAllUnitsForDefenseTarget_Med="25"
+		  ChanceToUseAllUnitsForDefenseTarget_Large="50"
 		  DesiredExcessPowerBuffer="40"
 		  BaseCompactness="0.75"
 	  DefaultThreatFindRadius="0"
@@ -47,16 +47,8 @@
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
 
-		<TacticalTarget TacticalAITarget="Defensive" MaxTeamsPerTarget="1"/>
-
-		<TacticalTarget TacticalAITarget="SpecialDefense" MaxTeamsPerTarget="1"/>
-
-		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
-
-		<TacticalTarget TacticalAITarget="Counterattack" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Counterattack" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
@@ -87,6 +79,7 @@
 		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Superweapon" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Expansion" MaxTeamsPerTarget="1" UpdateTime="10s"/>
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Bridge" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
@@ -102,10 +95,7 @@
 		<States State="ZOCOMOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="ConyardDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="SuperweaponDefense" Difficulty="HARD BRUTAL"/>
-		<States State="Counterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="FinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="DefensiveFinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMDefensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="DefensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMDefensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -140,6 +130,7 @@
 		<States State="ZOCOMUnitPreferencesEasyLate" Difficulty="EASY"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="DefenseBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="DefensiveEarlyGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="DefensiveMidGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="DefensiveLateGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -158,6 +149,6 @@
 		<UnitOverride UnitName="ZOCOMCommando" Percentage="-1%" Difficulty="EASY"/>
 		<UnitOverride UnitName="ZOCOMFirehawk" Percentage="-1%" Difficulty="EASY"/>
 		<UnitOverride UnitName="ZOCOMMARV" Percentage="-1%" Difficulty="EASY"/>
-		<UnitOverride UnitName="ZOCOMIonCannonControl" Percentage="-1%" Difficulty="EASY MEDIUM"/>
+		<UnitOverride UnitName="ZOCOMIonCannonControl" Percentage="-1%" Difficulty="EASY"/>
 	</AIPersonalityDefinition>
 </AssetDeclaration>

@@ -26,8 +26,8 @@
 		<Order Time="60s" Build="AlienTiberiumTower"/>
 		<Order Time="90s" Build="AlienPowerProjector"/>
 		<Order Time="95s" Build="AlienPowerProjector"/>
-		<Order Time="100s" Build="AlienBuzzerHive"/>
-		<Order Time="105s" Build="AlienBuzzerHive"/>
+		<Order Time="90s" Build="AlienBuzzerHive"/>
+		<Order Time="95s" Build="AlienBuzzerHive"/>
 		<Order Time="100s" Build="AlienGateway"/>
 		<Order Time="120s" Build="AlienFoundry"/>
 		<Order Time="135s" Build="AlienControlCenter"/>

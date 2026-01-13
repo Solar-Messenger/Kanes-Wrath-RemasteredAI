@@ -26,8 +26,8 @@
 		<Order Time="60s" Build="BlackHandRefinery"/>
 		<Order Time="90s" Build="BlackHandPowerPlant"/>
 		<Order Time="95s" Build="BlackHandPowerPlant"/>
-		<Order Time="100s" Build="BlackHandShredderTurretHub"/>
-		<Order Time="105s" Build="BlackHandShredderTurretHub"/>
+		<Order Time="90s" Build="BlackHandShredderTurretHub"/>
+		<Order Time="95s" Build="BlackHandShredderTurretHub"/>
 		<Order Time="100s" Build="BlackHandDropZone"/>
 		<Order Time="120s" Build="BlackHandCrane"/>
 		<Order Time="135s" Build="BlackHandOperationsCenter"/>

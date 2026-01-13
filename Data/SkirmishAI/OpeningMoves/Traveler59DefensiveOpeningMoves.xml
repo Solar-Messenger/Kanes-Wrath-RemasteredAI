@@ -26,8 +26,8 @@
 		<Order Time="60s" Build="Traveler59TiberiumTower"/>
 		<Order Time="90s" Build="Traveler59PowerProjector"/>
 		<Order Time="95s" Build="Traveler59PowerProjector"/>
-		<Order Time="100s" Build="Traveler59BuzzerHive"/>
-		<Order Time="105s" Build="Traveler59BuzzerHive"/>
+		<Order Time="90s" Build="Traveler59BuzzerHive"/>
+		<Order Time="95s" Build="Traveler59BuzzerHive"/>
 		<Order Time="100s" Build="Traveler59Gateway"/>
 		<Order Time="120s" Build="Traveler59Foundry"/>
 		<Order Time="135s" Build="Traveler59ControlCenter"/>
