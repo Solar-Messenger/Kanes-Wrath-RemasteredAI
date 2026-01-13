@@ -49,7 +49,8 @@
 
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
-
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
