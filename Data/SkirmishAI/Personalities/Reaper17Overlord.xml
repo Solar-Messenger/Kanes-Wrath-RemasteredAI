@@ -135,7 +135,7 @@
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="DefenseBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="DefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="OffensiveEarlyGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="OffensiveMidGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="OffensiveLateGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>

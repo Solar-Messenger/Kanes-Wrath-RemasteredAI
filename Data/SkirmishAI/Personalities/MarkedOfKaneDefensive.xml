@@ -131,10 +131,9 @@
 		<States State="MOKUnitPreferencesEasyLate" Difficulty="EASY"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="DefenseBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="DefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="DefensiveEarlyGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="DefensiveMidGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="DefensiveLateGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="DefensiveLateGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="DefensiveBudget_EASY" Difficulty="EASY"/>
 
