@@ -9,13 +9,14 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="90s" EndTime="240s"/>
 			<ConstantHeuristic Weight="0.8"/>
-			<ProductionHaltHeuristic
+			<FocusedThresholdHeuristic/>
+			<!--<ProductionHaltHeuristic
 				PenetrabilityWeight="0.5"
 				BalanceOfPowerWeight="0.5">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
-			</ProductionHaltHeuristic>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
+			</ProductionHaltHeuristic>-->
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="FocusedTarget">
@@ -31,13 +32,14 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="241s" EndTime="-1s"/>
 			<ConstantHeuristic Weight="0.8"/>
-			<ProductionHaltHeuristic
+			<FocusedThresholdHeuristic/>
+			<!--<ProductionHaltHeuristic
 				PenetrabilityWeight="0.5"
 				BalanceOfPowerWeight="0.5">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
-			</ProductionHaltHeuristic>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
+			</ProductionHaltHeuristic>-->
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="FocusedTarget">
@@ -53,13 +55,14 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="180s" EndTime="-1s" />
 			<ConstantHeuristic Weight="0.85"/>
-			<ProductionHaltHeuristic
+			<FocusedThresholdHeuristic/>
+			<!--<ProductionHaltHeuristic
 				PenetrabilityWeight="0.4"
 				BalanceOfPowerWeight="0.6">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
-			</ProductionHaltHeuristic>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
+			</ProductionHaltHeuristic>-->
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ResourceSqueezeHeuristic" TargetType="SpreadTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="SpreadTarget">
@@ -75,12 +78,13 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="180s" EndTime="-1s" />
 			<ConstantHeuristic Weight="0.825"/>
-			<ProductionHaltHeuristic
+			<FocusedThresholdHeuristic/>
+			<!--<ProductionHaltHeuristic
 				PenetrabilityWeight="0.4"
 				BalanceOfPowerWeight="0.6">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
-			</ProductionHaltHeuristic>
+			</ProductionHaltHeuristic>-->
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="SpreadTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="SpreadTarget">
@@ -97,7 +101,7 @@
 			<ConstantHeuristic Weight="0.95"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<FocusedThresholdHeuristic/>
-			<SiegeThresholdHeuristic SiegeMode="true" Threshold="6.0"/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="5.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">

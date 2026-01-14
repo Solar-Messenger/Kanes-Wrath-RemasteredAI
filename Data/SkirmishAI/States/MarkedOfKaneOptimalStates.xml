@@ -9,13 +9,14 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="90s" EndTime="420s"/>
 			<ConstantHeuristic Weight="0.8"/>
-			<ProductionHaltHeuristic
+			<FocusedThresholdHeuristic/>
+			<!--<ProductionHaltHeuristic
 				PenetrabilityWeight="0.5"
 				BalanceOfPowerWeight="0.5">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
-			</ProductionHaltHeuristic>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
+			</ProductionHaltHeuristic>-->
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="FocusedTarget">
@@ -31,13 +32,14 @@
 		<Heuristic>
 			<TimerHeuristic StartTime ="421s" EndTime="-1s" />
 			<ConstantHeuristic Weight="0.9"/>
-			<ProductionHaltHeuristic
+			<FocusedThresholdHeuristic/>
+			<!--<ProductionHaltHeuristic
 				PenetrabilityWeight="0.5"
 				BalanceOfPowerWeight="0.5">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
-			</ProductionHaltHeuristic>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="8.0"/>
+			</ProductionHaltHeuristic>-->
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="FocusedTarget">
@@ -54,7 +56,7 @@
 			<ConstantHeuristic Weight="0.95"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<FocusedThresholdHeuristic/>
-			<SiegeThresholdHeuristic SiegeMode="true" Threshold="6.0"/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="5.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
@@ -62,6 +64,22 @@
 				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="MarkedOfKaneMobileArtillery"/>
 			</TeamTemplate>
 			<TeamTemplate MinUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON RELOAD_AIRCRAFT BOMBER_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+    id="MOKOptimalSpotters"
+    UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.85"/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="SecondaryTarget"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="SecondaryTarget">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="1" MaxUnits="1" UnitName="NODShadowSquad"/>
+			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
