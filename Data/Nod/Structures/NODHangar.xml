@@ -35,7 +35,7 @@
 			Armor="NODHangarLaserFencingArmor"
 			DamageFX="NormalDamageFX" />
 		<SkirmishAIInformation
-			BaseBuildingLocation="BACK"
+			BaseBuildingLocation="HOMEBASE"
 			ConquerMetricsOverrideDamageType="UNDEFINED"
 			ConquerMetricsOverrideAntiMask="ANTI_GROUND"
 			UnitBuilderStandardCombatUnit="False"/>
@@ -691,7 +691,7 @@
 				<!-- <InitiateSound Sound="GDI_GuardianAPC_MineDeployMS" /> -->
 			</OCLSpecialPower>
 			<!--Remove Include and Excludes if it doesnt work-->
-			<AISpecialPowerUpdate
+			<!--<AISpecialPowerUpdate
 				id="ModuleTag_NODOpsBurrowMinesAI"
 				CommandButtonName="Command_NODBurrowMines"
 				SpecialPowerRadius="99999.0"
@@ -701,6 +701,12 @@
 				AllyUnitExclude="INFANTRY VEHICLE AIRCRAFT STRUCTURE NEUTRAL_TECH CIVILIAN_BUILDING HUSK"
 				EnemyUnitInclude="HARVESTER VEHICLE"
 				EnemyUnitExclude="AIRCRAFT STRUCTURE NEUTRAL_TECH CIVILIAN_BUILDING HUSK"
+			/>-->
+			<AISpecialPowerUpdate
+			id="ModuleTag_NODOpsBurrowMinesAI"
+			CommandButtonName="Command_NODBurrowMines"
+			SpecialPowerRadius="99999.0"
+			SpecialPowerAIType="SPECIAL_POWER_RANGED_AOE_ATTACK"
 			/>
 			<ModelConditionUpgrade
 				id="ModuleTag_UpgradeLaserFencing"
