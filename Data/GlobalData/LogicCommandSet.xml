@@ -373,7 +373,7 @@
 		<Cmd>Command_NodShadow_GliderLiftOff</Cmd>
 		<Cmd>Command_NodShadow_GliderLand</Cmd>
 		<Cmd>Command_NodShadow_PlaceExplosiveCharges</Cmd>
-		<Cmd>Command_NODShadowSquadDeployBeacon</Cmd>
+		<!--<Cmd>Command_NODShadowSquadDeployBeacon</Cmd>-->
 		<Cmd>Command_NODShadowSquadBeaconGetInRange</Cmd>
 		<Cmd>Command_AttackMove</Cmd>
 	</LogicCommandSet>
@@ -1337,7 +1337,8 @@
 		<Cmd>Command_NODRecallAllAircraft</Cmd>
 		<Cmd>Command_UpgradeNODSignatureGenerator</Cmd>
 		<Cmd>Command_PurchaseUpgradeVertigoDisruptionPod</Cmd>
-		<Cmd>Command_NODBurrowMines</Cmd>
+		<!--<Cmd>Command_NODBurrowMines</Cmd>-->
+		<Cmd>Command_MarkedOfKaneMagneticMines</Cmd>
 	</LogicCommandSet>
 	<LogicCommandSet
 		id="MarkedOfKaneEmissaryCommandSet">
@@ -1471,9 +1472,10 @@
 	<LogicCommandSet
 		id="BlackHandOperationsCenterCommandSet">
 		<Cmd>Command_FireRadarJammingMissile</Cmd>
+		<!--<Cmd>Command_PowerSignatureScan</Cmd>-->
 		<Cmd>Command_SpecialPowerLaserFencing</Cmd>
-		<Cmd>Command_SelectObjectsForClone</Cmd>
-		<Cmd>Command_SpawnObjectsForClone</Cmd>
+		<!--<Cmd>Command_SelectObjectsForClone</Cmd>
+		<Cmd>Command_SpawnObjectsForClone</Cmd>-->
 		<Cmd>Command_UpgradeNODDozerBlades</Cmd>
 		<Cmd>Command_PurchaseUpgradeNODQuadTurrets</Cmd>
 	</LogicCommandSet>
