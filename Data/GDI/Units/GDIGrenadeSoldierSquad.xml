@@ -892,7 +892,7 @@
 				AllyUnitInclude=""
 				AllyUnitExclude=""
 				EnemyUnitInclude=""
-				EnemyUnitExclude="INFANTRY AIRCRAFT HUSK CIVILIAN_BUILDING NEUTRAL_TECH"
+				EnemyUnitExclude="INFANTRY AIRCRAFT HUSK CIVILIAN_BUILDING"
 				MinimumCutoff="0"
 				UpdateTime="2.5s"
 				MaxFrequency="0"
