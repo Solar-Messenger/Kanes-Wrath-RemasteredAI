@@ -1649,6 +1649,7 @@
 		<Cmd>Command_PurchaseUpgradeAdaptiveArmor</Cmd>
 		<Cmd>Command_PurchaseUpgradeGDITungstenAAShells</Cmd>
 		<Cmd>Command_SpecialPowerSonicRepulsionField</Cmd>
+		<Cmd>Command_SpecialPowerRailgunAccelerator</Cmd>
 	</LogicCommandSet>
 	<LogicCommandSet
 		id="SteelTalonsMammothCommandSet">
@@ -1829,6 +1830,8 @@
 		id="ZOCOMSpaceCommandUplinkCommandSet">
 		<Cmd>Command_SpaceCommandZOCOMRaiderPods</Cmd>
 		<Cmd>Command_SpaceCommandGDIShockwave</Cmd>
+		<Cmd>Command_SpecialPowerSupersonicAirAttack</Cmd>
+		<Cmd>Command_SpecialPowerMjolnirStrike</Cmd>
 	</LogicCommandSet>
 
 	<LogicCommandSet
