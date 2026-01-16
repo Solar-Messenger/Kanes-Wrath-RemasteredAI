@@ -373,7 +373,7 @@
 		<Cmd>Command_NodShadow_GliderLiftOff</Cmd>
 		<Cmd>Command_NodShadow_GliderLand</Cmd>
 		<Cmd>Command_NodShadow_PlaceExplosiveCharges</Cmd>
-		<!--<Cmd>Command_NODShadowSquadDeployBeacon</Cmd>-->
+		<Cmd>Command_NODShadowSquadDeployBeacon</Cmd>
 		<Cmd>Command_NODShadowSquadBeaconGetInRange</Cmd>
 		<Cmd>Command_AttackMove</Cmd>
 	</LogicCommandSet>
@@ -1516,7 +1516,7 @@
 	<LogicCommandSet
 		id="BlackHandMobileArtilleryCommandSet">
 		<Cmd>Command_AttackMove</Cmd>
-		<!-- <Cmd>Command_SpotBeaconBombard</Cmd> -->
+		 <Cmd>Command_SpotBeaconBombard</Cmd> 
 	</LogicCommandSet>
 	<LogicCommandSet
 	id="BlackHandSaboteurCommandSet">
