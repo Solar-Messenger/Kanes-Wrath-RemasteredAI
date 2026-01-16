@@ -254,8 +254,8 @@
 			<!--<AISpecialPowerUpdate
 				id="ModuleTag_CommandPostCallAirborneAI"
 				CommandButtonName="Command_CommandPostCallAirborne"
-				ReinforceDistance="999999.0"
-				SpecialPowerRadius="300.0"
+				ReinforceDistance="2000.0"
+				SpecialPowerRadius="1000.0"
 				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
 			/>-->
 
