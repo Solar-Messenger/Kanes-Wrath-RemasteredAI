@@ -1374,9 +1374,7 @@
 				AllyUnitExclude=""
 				EnemyUnitInclude=""
 				EnemyUnitExclude=""
-				MinimumCutoff="0"
-				UpdateTime="1s"
-				MaxFrequency="2"
+				MaxFrequency="2700"
 				RandomizeTargetLocation="False" />
 			<MonitorSpecialPowerTimerUpdate
 				id="E56507EB"
@@ -1594,14 +1592,12 @@
 					KindOf="FS_POWER"
 					UseLocalPlayerFilter="True" />
 			</RadarScanMapSpecialAbilityUpdate>
-			<AISpecialPowerUpdate
+			<!--<AISpecialPowerUpdate
 				id="33EA2973"
 				CommandButtonName="Command_PowerSignatureScan"
 				SecondaryCommandButtonName=""
-				SpecialPowerAIType="SPECIAL_POWER_BASIC_SELF_BUFF"
+				SpecialPowerAIType="SPECIAL_POWER_SUPERWEAPON"
 				SpecialPowerRadius="-1"
-				ReinforceDistance="0"
-				SpellMakesAStructure=""
 				SpecificUnit=""
 				UnitKindOf=""
 				AllyUnitInclude=""
@@ -1609,9 +1605,9 @@
 				EnemyUnitInclude=""
 				EnemyUnitExclude=""
 				MinimumCutoff="0"
-				UpdateTime="2.5s"
+				UpdateTime="1s"
 				MaxFrequency="2700"
-				RandomizeTargetLocation="False" />
+				RandomizeTargetLocation="false" />-->
 
 			<!--This thing likes to spam this to crash the game. Edit frequency and/or update time till it stops spamming 
 				or comment out till a later fix.
