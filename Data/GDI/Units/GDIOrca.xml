@@ -1560,42 +1560,42 @@
 			</AudioLoopUpgrade>
 
 			<AISpecialPowerUpdate
-			id="ModuleTag_OrcaSensorPod"
+			id="ModuleTag_AIOrcaSensorPod"
 			CommandSet="Command_OrcaSensorPod"
 			SecondaryCommandButtonName=""
-			SpecialPowerAIType="SPECIAL_POWER_RANGED_AOE_ATTACK"
-			SpecialPowerRadius="400"
+			SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF"
+			SpecialPowerRadius="300"
 			ReinforceDistance="0"
-			SpellMakesAStructure="GDIOrcaSensorPod"
+			SpellMakesAStructure=""
 			SpecificUnit=""
-			UnitKindOf=""
+			UnitKindOf="STRUCTURE"
 			AllyUnitInclude=""
-			AllyUnitExclude="VEHICLE"
-			EnemyUnitInclude="VEHICLE SUPPLY_GATHERING_CENTER HARVESTER"
+			AllyUnitExclude=""
+			EnemyUnitInclude=""
 			EnemyUnitExclude="INFANTRY AIRCRAFT NEUTRAL_TECH CIVILIAN_BUILDING"
 			MinimumCutoff="0"
 			UpdateTime="1s"
 			MaxFrequency="0"
-			RandomizeTargetLocation="true" />
+			RandomizeTargetLocation="False" />
 
 			<AISpecialPowerUpdate
-			id="ModuleTag_PulseScan"
+			id="ModuleTag_AIPulseScan"
 			CommandSet="Command_OrcaPulseScan"
 			SecondaryCommandButtonName=""
-			SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF"
-			SpecialPowerRadius="500.0"
+			SpecialPowerAIType="SPECIAL_POWER_SUPERWEAPON"
+			SpecialPowerRadius="300"
 			ReinforceDistance="0"
 			SpellMakesAStructure=""
 			SpecificUnit=""
-			UnitKindOf=""
+			UnitKindOf="HARVESTER"
 			AllyUnitInclude=""
-			AllyUnitExclude="INFANTRY VEHICLE AIRCRAFT STRUCTURE HARVESTER BROADCASTS_INVISIBILITY NEUTRAL_TECH HUSK"
-			EnemyUnitInclude="HARVESTER BROADCASTS_INVISIBILITY"
-			EnemyUnitExclude=""
+			AllyUnitExclude="INFANTRY VEHICLE AIRCRAFT STRUCTURE BROADCASTS_INVISIBILITY NEUTRAL_TECH HUSK"
+			EnemyUnitInclude=""
+			EnemyUnitExclude="INFANTRY HUSK CIVILIAN_BUILDING"
 			MinimumCutoff="0"
 			UpdateTime="1s"
 			MaxFrequency="0"
-			RandomizeTargetLocation="true" />
+			RandomizeTargetLocation="False" />
 		</Behaviors>
 		<AI>
 			<JetAIUpdate
