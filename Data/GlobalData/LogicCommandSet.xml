@@ -1472,10 +1472,10 @@
 	<LogicCommandSet
 		id="BlackHandOperationsCenterCommandSet">
 		<Cmd>Command_FireRadarJammingMissile</Cmd>
-		<!--<Cmd>Command_PowerSignatureScan</Cmd>-->
+		<Cmd>Command_PowerSignatureScan</Cmd>
 		<Cmd>Command_SpecialPowerLaserFencing</Cmd>
-		<!--<Cmd>Command_SelectObjectsForClone</Cmd>
-		<Cmd>Command_SpawnObjectsForClone</Cmd>-->
+		<Cmd>Command_SelectObjectsForClone</Cmd>
+		<Cmd>Command_SpawnObjectsForClone</Cmd>
 		<Cmd>Command_UpgradeNODDozerBlades</Cmd>
 		<Cmd>Command_PurchaseUpgradeNODQuadTurrets</Cmd>
 	</LogicCommandSet>
