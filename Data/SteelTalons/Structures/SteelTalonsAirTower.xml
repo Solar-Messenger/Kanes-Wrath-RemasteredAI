@@ -2375,14 +2375,8 @@
 				AllyUnitInclude=""
 				AllyUnitExclude="HARVESTER"
 				EnemyUnitInclude="HARVESTER"
-				EnemyUnitExclude="AIRCRAFT" />
-			<AISpecialPowerUpdate
-				id="ModuleTag_CommandPostCallBloodhoundAI"
-				CommandButtonName="Command_CommandPostCallBloodhound"
-				SpecialPowerRadius="2000.0"
-				ReinforceDistance="1000.0"
-				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
-			/>
+				EnemyUnitExclude="AIRCRAFT"
+				RandomizeTargetLocation="False"/>
 			<ArmorUpgrade
 				id="D7169F09"
 				RequiresAllTriggers="False"
@@ -2553,6 +2547,14 @@
 					AcceptModelCondition=""
 					RejectModelCondition="" />
 			</OCLSpecialPower>
+			<AISpecialPowerUpdate
+				id="ModuleTag_CommandPostCallBloodhoundAI"
+				CommandButtonName="Command_CommandPostCallSTBloodhound"
+				SpecialPowerRadius="99999"
+				ReinforceDistance="2000.0"
+				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
+				RandomizeTargetLocation="False"
+			/>
 		</Behaviors>
 		<AI>
 			<AIUpdate
