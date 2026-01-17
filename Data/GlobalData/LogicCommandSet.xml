@@ -1787,9 +1787,9 @@
 	<LogicCommandSet
 		id="ZOCOMCommandPostCommandSet">
 		<Cmd>Command_CommandPostRadarScan</Cmd>
-		<Cmd>Command_UpgradeZoneRaiderScannerPack</Cmd>
-		<Cmd>Command_PurchaseUpgradeOrcaSensorPod</Cmd>
 		<Cmd>Command_PurchaseUpgradeGDIAPAmmo</Cmd>
+		<Cmd>Command_PurchaseUpgradeOrcaSensorPod</Cmd>
+		<Cmd>Command_UpgradeZoneRaiderScannerPack</Cmd>
 	</LogicCommandSet>
 	<LogicCommandSet
 		id="ZOCOMAirTowerCommandSet">
