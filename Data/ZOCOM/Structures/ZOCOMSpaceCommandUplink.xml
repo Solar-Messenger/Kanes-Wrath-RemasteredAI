@@ -974,13 +974,13 @@
 				CommandButtonName="Command_SpaceCommandGDIShockwave"
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
-				SpecialPowerRadius="1500.0"
-				ReinforceDistance="1500.0"
+				SpecialPowerRadius="99999"
+				ReinforceDistance="1500"
 				UnitKindOf="VEHICLE"
 				AllyUnitInclude=""
 				AllyUnitExclude="INFANTRY VEHICLE AIRCRAFT STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH"
-				EnemyUnitInclude=""
-				EnemyUnitExclude="INFANTRY AIRCRAFT HUSK STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH"
+				EnemyUnitInclude="UNIQUE_UNIT META_UNIT"
+				EnemyUnitExclude="AIRCRAFT ASSAULT_AIRCRAFT RELOAD_AIRCRAFT BOMBER_AIRCRAFT INFANTRY HUSK STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH"
 				RandomizeTargetLocation="False" />
 			<MonitorSpecialPowerTimerUpdate
 				id="E4AED5E5"
@@ -1062,12 +1062,12 @@
 				CommandButtonName="Command_SpecialPowerMjolnirStrike"
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
-				SpecialPowerRadius="999999.0"
+				SpecialPowerRadius="99999"
 				UnitKindOf="VEHICLE"
 				AllyUnitInclude=""
 				AllyUnitExclude="INFANTRY VEHICLE AIRCRAFT STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH"
-				EnemyUnitInclude=""
-				EnemyUnitExclude="AIRCRAFT INFILTRATOR"
+				EnemyUnitInclude="INFANTRY VEHICLE STRUCTURE"
+				EnemyUnitExclude="AIRCRAFT ASSAULT_AIRCRAFT RELOAD_AIRCRAFT BOMBER_AIRCRAFT INFILTRATOR"
 				RandomizeTargetLocation="False" />
 			<OCLSpecialPower
 				id="B742FB9E"
@@ -1145,8 +1145,7 @@
 				CommandButtonName="Command_SpecialPowerSupersonicAirAttack"
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
-				SpecialPowerRadius="2000"
-				ReinforceDistance="2000"
+				SpecialPowerRadius="99999"
 				UnitKindOf="ASSAULT_AIRCRAFT"
 				AllyUnitInclude=""
 				AllyUnitExclude="INFANTRY VEHICLE AIRCRAFT STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH HUSK"
@@ -1320,24 +1319,24 @@
 					AcceptModelCondition=""
 					RejectModelCondition="" />
 			</OCLSpecialPower>
+
 			<AISpecialPowerUpdate
-				id="ModuleTag_GDISpaceCommandRaiderDropPodsAI"
+				id="ModuleTag_ZOCOMSpaceCommandRaiderDropPodsAI"
 				CommandButtonName="Command_SpaceCommandZOCOMRaiderPods"
 				SecondaryCommandButtonName=""
-				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
-				SpecialPowerRadius="999999"
-				ReinforceDistance="1500"
+				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
+				SpecialPowerRadius="99999"
 				SpellMakesAStructure=""
 				SpecificUnit=""
 				UnitKindOf="HARVESTER"
 				AllyUnitInclude=""
 				AllyUnitExclude=""
-				EnemyUnitInclude=""
+				EnemyUnitInclude="HARVESTER"
 				EnemyUnitExclude=""
 				MinimumCutoff="0"
 				UpdateTime="1s"
 				MaxFrequency="0"
-				RandomizeTargetLocation="True" />
+				RandomizeTargetLocation="False" />
 		</Behaviors>
 		<AI>
 			<AIUpdate
