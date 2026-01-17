@@ -671,7 +671,7 @@
 			</FXListBehavior>
 			<StructureUnpackUpdate
 				UnpackTime="1.5s" />
-			<AISpecialPowerUpdate
+			<!--<AISpecialPowerUpdate
 				id="4303908E"
 				CommandButtonName="Command_CommandPostCallHunterKiller"
 				SecondaryCommandButtonName=""
@@ -688,7 +688,7 @@
 				MinimumCutoff="0"
 				UpdateTime="1s"
 				MaxFrequency="0"
-				RandomizeTargetLocation="False" />
+				RandomizeTargetLocation="False" />-->
 			<ProductionUpdate
 				id="749674DE"
 				MaxQueueEntries="99"
