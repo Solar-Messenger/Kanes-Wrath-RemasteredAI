@@ -2279,23 +2279,6 @@
 			</SubObjectsUpgrade>
 			<StructureUnpackUpdate
 				UnpackTime="1.5s" />
-			<AISpecialPowerUpdate
-				id="ModuleTag_CommandPostBombingRunAI"
-				CommandButtonName="Command_CommandPostBombingRun"
-				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
-				SpecialPowerRadius="999999.0"
-				UnitKindOf="HARVESTER"
-				AllyUnitInclude=""
-				AllyUnitExclude="HARVESTER"
-				EnemyUnitInclude="HARVESTER"
-				EnemyUnitExclude="AIRCRAFT" />
-			<AISpecialPowerUpdate
-				id="ModuleTag_CommandPostCallBloodhoundAI"
-				CommandButtonName="Command_CommandPostCallBloodhound"
-				SpecialPowerRadius="2000.0"
-				ReinforceDistance="1000.0"
-				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
-			/>
 			<ArmorUpgrade
 				id="D7169F09"
 				RequiresAllTriggers="False"
@@ -2466,9 +2449,17 @@
 					AcceptModelCondition=""
 					RejectModelCondition="" />
 			</OCLSpecialPower>
+			<AISpecialPowerUpdate
+				id="ModuleTag_CommandPostCallBloodhoundAI"
+				CommandButtonName="Command_CommandPostCallZOCOMBloodhound"
+				SpecialPowerRadius="99999.0"
+				ReinforceDistance="2000.0"
+				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
+				RandomizeTargetLocation="False"
+			/>
 			<OCLSpecialPower
 				id="CA2E4032"
-				SpecialPowerTemplate="SpecialPowerBombingRun"
+				SpecialPowerTemplate="SpecialPowerZOCOMBombingRun"
 				AntiCategory=""
 				AntiFX=""
 				AttributeModifier=""
@@ -2537,6 +2528,17 @@
 					AcceptModelCondition=""
 					RejectModelCondition="" />
 			</OCLSpecialPower>
+			<AISpecialPowerUpdate
+				id="ModuleTag_ZOCOMCommandPostBombingRunAI"
+				CommandButtonName="Command_ZOCOMCommandPostBombingRun"
+				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
+				SpecialPowerRadius="999999.0"
+				UnitKindOf="HARVESTER"
+				AllyUnitInclude=""
+				AllyUnitExclude="HARVESTER"
+				EnemyUnitInclude="HARVESTER"
+				EnemyUnitExclude="AIRCRAFT"
+				RandomizeTargetLocation="False"/>
 			<SubObjectsUpgrade
 				id="7CD7B811"
 				RequiresAllTriggers="False"
