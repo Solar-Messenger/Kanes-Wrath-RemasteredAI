@@ -1602,8 +1602,8 @@
 	<LogicCommandSet
 		id="SteelTalonsCommandPostCommandSet">
 		<Cmd>Command_CommandPostRadarScan</Cmd>
-		<Cmd>Command_PurchaseUpgradeOrcaSensorPod</Cmd>
 		<Cmd>Command_PurchaseUpgradeSTAPAmmo</Cmd>
+		<Cmd>Command_PurchaseUpgradeOrcaSensorPod</Cmd>
 	</LogicCommandSet>
 
 	<LogicCommandSet
