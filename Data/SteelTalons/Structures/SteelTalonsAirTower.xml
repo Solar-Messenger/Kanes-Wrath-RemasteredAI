@@ -2551,7 +2551,7 @@
 				id="ModuleTag_CommandPostCallBloodhoundAI"
 				CommandButtonName="Command_CommandPostCallSTBloodhound"
 				SpecialPowerRadius="99999"
-				ReinforceDistance="2000.0"
+				ReinforceDistance="1500.0"
 				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
 				RandomizeTargetLocation="False"
 			/>

@@ -2453,7 +2453,7 @@
 				id="ModuleTag_CommandPostCallBloodhoundAI"
 				CommandButtonName="Command_CommandPostCallZOCOMBloodhound"
 				SpecialPowerRadius="99999.0"
-				ReinforceDistance="2000.0"
+				ReinforceDistance="1500.0"
 				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
 				RandomizeTargetLocation="False"
 			/>
