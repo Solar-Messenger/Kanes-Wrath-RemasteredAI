@@ -83,6 +83,7 @@
 		id="GDIZoneTrooperSquadCommandSet">
 		<Cmd>Command_GDICallForTransportInfantry</Cmd>
 		<Cmd>Command_ZoneTrooperSquadGetToJumpJetRange</Cmd>
+		<Cmd>Command_ZoneTrooperSquadFireJumpJets</Cmd>
 		<Cmd>Command_AttackMove</Cmd>
 		<!--<Cmd>Command_Stop</Cmd>-->
 	</LogicCommandSet>
@@ -264,6 +265,7 @@
 		id="GDIGrenadeSoldierSquadCommandSet">
 		<Cmd>Command_GDICallForTransportInfantry</Cmd>
 		<Cmd>Command_EMPGrenadesGetInRange</Cmd>
+		<Cmd>Command_FireEMPGrenades</Cmd>
 		<Cmd>Command_AttackMove</Cmd>
 	</LogicCommandSet>
 	<LogicCommandSet
@@ -365,6 +367,7 @@
 	<LogicCommandSet
 		id="BlackHandConfessorCabalSquadCommandSet">
 		<Cmd>Command_BlackHandConfessorCabalSquadFireGrenade</Cmd>
+		<Cmd>Command_BlackHandConfessorCabalFireGrenade</Cmd>
 		<Cmd>Command_AttackMove</Cmd>
 	</LogicCommandSet>
 
@@ -1817,7 +1820,7 @@
 		<Cmd>Command_ZoneTrooperSquadGetToJumpJetRange</Cmd>
 		<Cmd>Command_ZoneTrooperSquadFireJumpJets</Cmd>
 		<Cmd>Command_AttackMove</Cmd>
-		<Cmd>Command_Stop</Cmd>
+		<!--<Cmd>Command_Stop</Cmd>-->
 	</LogicCommandSet>
 
 	<LogicCommandSet

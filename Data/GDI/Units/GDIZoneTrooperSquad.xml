@@ -1150,7 +1150,7 @@
 				GoIdleInStartPreparation="True"
 				FaceTarget="True" />
 
-			<AISpecialPowerUpdate
+			<!--<AISpecialPowerUpdate
 			id="ModuleTag_ZoneTrooperSquadFireJumpJets"
 				CommandButtonName="Command_ZoneTrooperSquadGetToJumpJetRange"
 				SecondaryCommandButtonName=""
@@ -1167,17 +1167,26 @@
 				MinimumCutoff="200"
 				UpdateTime="2.5s"
 				MaxFrequency="0"
-				RandomizeTargetLocation="False"/>
+				RandomizeTargetLocation="False"/>-->
 
 			<AISpecialPowerUpdate
-				id="ModuleTag_ZoneTrooperSquadGarrisonEpic"
-				CommandButtonName="Command_GarrisonEpicUnit"
-				SpecialPowerAIType="SPECIAL_POWER_SUPERWEAPON"
-				SpecialPowerRadius="99999.0"
-				UnitKindOf="UNIQUE_UNIT GARRISONABLE_UNTIL_DESTROYED"
-				AllyUnitInclude="UNIQUE_UNIT GARRISONABLE_UNTIL_DESTROYED"
-				EnemyUnitExclude="UNIQUE_UNIT GARRISONABLE_UNTIL_DESTROYED"
-				UpdateTime="2.5s"/>
+				id="ModuleTag_ZoneTrooperSquadFireJumpJets"
+				CommandButtonName="Command_ZoneTrooperSquadGetToJumpJetRange"
+				SecondaryCommandButtonName=""
+				SpecialPowerAIType="SPECIAL_POWER_MOVEMENT"
+				SpecialPowerRadius="-1"
+				ReinforceDistance="0"
+				SpellMakesAStructure=""
+				SpecificUnit=""
+				UnitKindOf=""
+				AllyUnitInclude=""
+				AllyUnitExclude="UNIQUE_UNIT META_UNIT"
+				EnemyUnitInclude=""
+				EnemyUnitExclude=""
+				MinimumCutoff="100"
+				UpdateTime="2s"
+				MaxFrequency="0"
+				RandomizeTargetLocation="False"/>
 
 		</Behaviors>
 		<AI>
