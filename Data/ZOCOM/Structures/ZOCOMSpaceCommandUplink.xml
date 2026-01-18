@@ -975,13 +975,11 @@
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
 				SpecialPowerRadius="99999"
-				ReinforceDistance="1500"
-				UnitKindOf="VEHICLE"
-				AllyUnitInclude=""
-				AllyUnitExclude="INFANTRY VEHICLE AIRCRAFT STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH"
-				EnemyUnitInclude="UNIQUE_UNIT META_UNIT"
-				EnemyUnitExclude="AIRCRAFT ASSAULT_AIRCRAFT RELOAD_AIRCRAFT BOMBER_AIRCRAFT INFANTRY HUSK STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH"
-				RandomizeTargetLocation="False" />
+				ReinforceDistance="1200"
+				UnitKindOf="UNIQUE_UNIT"
+				EnemyUnitInclude="CAN_ATTACK STRUCTURE"
+				EnemyUnitExclude="INFANTRY AIRCRAFT CIVILIAN_BUILDING HUSK"
+				RandomizeTargetLocation="False"/>
 			<MonitorSpecialPowerTimerUpdate
 				id="E4AED5E5"
 				SpecialPowerTemplate="SpecialPowerGDI_SpaceCommandShockwaveArtillery"
@@ -1063,11 +1061,10 @@
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
 				SpecialPowerRadius="99999"
-				UnitKindOf="VEHICLE"
-				AllyUnitInclude=""
-				AllyUnitExclude="INFANTRY VEHICLE AIRCRAFT STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH"
-				EnemyUnitInclude="INFANTRY VEHICLE STRUCTURE"
-				EnemyUnitExclude="AIRCRAFT ASSAULT_AIRCRAFT RELOAD_AIRCRAFT BOMBER_AIRCRAFT INFILTRATOR"
+				ReinforceDistance="2000"
+				UnitKindOf=""
+				EnemyUnitInclude="CAN_ATTACK STRUCTURE"
+				EnemyUnitExclude="INFANTRY AIRCRAFT CIVILIAN_BUILDING HUSK"
 				RandomizeTargetLocation="False" />
 			<OCLSpecialPower
 				id="B742FB9E"
@@ -1141,7 +1138,7 @@
 					RejectModelCondition="" />
 			</OCLSpecialPower>
 			<AISpecialPowerUpdate
-				id="897E3FC1"
+				id="ModuleTag_SupersonicAirAttackAI"
 				CommandButtonName="Command_SpecialPowerSupersonicAirAttack"
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
@@ -1324,7 +1321,7 @@
 				id="ModuleTag_ZOCOMSpaceCommandRaiderDropPodsAI"
 				CommandButtonName="Command_SpaceCommandZOCOMRaiderPods"
 				SecondaryCommandButtonName=""
-				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
+				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
 				SpecialPowerRadius="99999"
 				SpellMakesAStructure=""
 				SpecificUnit=""
@@ -1336,7 +1333,7 @@
 				MinimumCutoff="0"
 				UpdateTime="1s"
 				MaxFrequency="0"
-				RandomizeTargetLocation="False" />
+				RandomizeTargetLocation="True" />
 		</Behaviors>
 		<AI>
 			<AIUpdate

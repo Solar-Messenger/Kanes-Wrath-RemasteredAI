@@ -403,12 +403,10 @@
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
 				SpecialPowerRadius="99999"
-				ReinforceDistance="1500"
-				UnitKindOf="VEHICLE"
-				AllyUnitInclude=""
-				AllyUnitExclude="INFANTRY VEHICLE AIRCRAFT STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH"
-				EnemyUnitInclude="UNIQUE_UNIT META_UNIT"
-				EnemyUnitExclude="AIRCRAFT ASSAULT_AIRCRAFT RELOAD_AIRCRAFT BOMBER_AIRCRAFT INFANTRY HUSK STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH"
+				ReinforceDistance="1200"
+				UnitKindOf="UNIQUE_UNIT"
+				EnemyUnitInclude="CAN_ATTACK STRUCTURE"
+				EnemyUnitExclude="INFANTRY AIRCRAFT CIVILIAN_BUILDING HUSK"
 				RandomizeTargetLocation="False" />
 
 			<MonitorSpecialPowerTimerUpdate
@@ -430,11 +428,10 @@
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
 				SpecialPowerRadius="99999"
-				UnitKindOf="VEHICLE"
-				AllyUnitInclude=""
-				AllyUnitExclude="INFANTRY VEHICLE AIRCRAFT STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH"
-				EnemyUnitInclude="INFANTRY VEHICLE STRUCTURE"
-				EnemyUnitExclude="AIRCRAFT ASSAULT_AIRCRAFT RELOAD_AIRCRAFT BOMBER_AIRCRAFT INFILTRATOR"
+				ReinforceDistance="2000"
+				UnitKindOf=""
+				EnemyUnitInclude="CAN_ATTACK STRUCTURE"
+				EnemyUnitExclude="INFANTRY AIRCRAFT CIVILIAN_BUILDING HUSK"
 				RandomizeTargetLocation="False" />
 
 			<!-- SUPERSONIC AIR ATTACK -->
@@ -446,7 +443,7 @@
 			/>
 
 			<AISpecialPowerUpdate
-				id="897E3FC1"
+				id="ModuleTag_SupersonicAirAttackAI"
 				CommandButtonName="Command_SpecialPowerSupersonicAirAttack"
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
