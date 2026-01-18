@@ -850,7 +850,7 @@
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
 				SpecialPowerRadius="999999"
-				ReinforceDistance="0"
+				ReinforceDistance="1500"
 				SpellMakesAStructure=""
 				SpecificUnit=""
 				UnitKindOf=""
