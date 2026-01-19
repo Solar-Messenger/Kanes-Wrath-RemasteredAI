@@ -755,22 +755,13 @@
 				EvaEvent="EnemyBuildingCaptured"
 				AudioType="voiceDefectingTowards" />
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:43E66761]"
+				Sound="AudioEvent:ALI_StasisChamber_Select"
 				AudioType="voiceSelect" />
 		</AudioArrayVoice>
 		<AudioArraySound>
-			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:45BB2ECF]"
-				AudioType="soundUnderConstruction" />
-			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:7E79A096]"
-				AudioType="soundOnDamaged" />
-			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:6B56860D]"
-				AudioType="soundOnReallyDamaged" />
-			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:4E81DAAC]"
-				AudioType="soundUnderConstruction" />
+			<AudioEntry Sound="AudioEvent:ALI_Building_Placed" AudioType="soundUnderConstruction" />
+			<AudioEntry Sound="AudioEvent:ALI_Building_LightDamage" AudioType="soundOnDamaged" />
+			<AudioEntry Sound="AudioEvent:ALI_Building_HeavyDamage" AudioType="soundOnReallyDamaged" />
 		</AudioArraySound>
 		<EvaEvents
 			EvaEventSoldOwner="StructureSold"

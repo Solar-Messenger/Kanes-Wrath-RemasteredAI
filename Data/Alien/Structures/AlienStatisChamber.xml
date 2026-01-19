@@ -758,8 +758,8 @@
 		</AudioArrayVoice>
 		<AudioArraySound>
 			<AudioEntry Sound="AudioEvent:ALI_Building_Placed" AudioType="soundUnderConstruction" />
-			<AudioEntry Sound="Multisound:ALI_Building_LightDamage" AudioType="soundOnDamaged" />
-			<AudioEntry Sound="Multisound:ALI_Building_HeavyDamage" AudioType="soundOnReallyDamaged" />
+			<AudioEntry Sound="AudioEvent:ALI_Building_LightDamage" AudioType="soundOnDamaged" />
+			<AudioEntry Sound="AudioEvent:ALI_Building_HeavyDamage" AudioType="soundOnReallyDamaged" />
 		</AudioArraySound>
 		<EvaEvents
 			EvaEventSoldOwner="StructureSold"
