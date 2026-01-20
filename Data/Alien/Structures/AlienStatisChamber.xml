@@ -605,6 +605,7 @@
 				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
 				SpecialPowerRadius="99999"
+				ReinforceDistance="1500"
 				UnitKindOf="UNIQUE_UNIT"
 				EnemyUnitInclude="CAN_ATTACK STRUCTURE"
 				EnemyUnitExclude="INFANTRY AIRCRAFT CIVILIAN_BUILDING HUSK"
