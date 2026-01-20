@@ -1062,22 +1062,6 @@
 				MaxFrequency="0"
 				RandomizeTargetLocation="False" />-->
 			
-			<!--<OCLSpecialPower
-				id="ModuleTag_SpecialPowerAlienRepairDrones"
-				SpecialPowerTemplate="SpecialPowerAlienRepairDrones"
-				OCL="OCL_SpecialPowerAlienRepairDrones"
-				CreateLocation="CREATE_AT_LOCATION"
-			/>
-			<AISpecialPowerUpdate
-				id="CD2F71ED"
-				CommandButtonName="Command_SpecialPowerAlienRepairDrones"
-				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
-				SpecialPowerRadius="99999"
-				SpellMakesAStructure="AlienReconstructionBaseSpawned"
-				UnitKindOf="VEHICLE"
-				AllyUnitInclude="VEHICLE"
-				RandomizeTargetLocation="False"
-				 />-->
 			<RepairUpdate
 				id="41FDEB2A"
 				RepopThreshold="0.2"
