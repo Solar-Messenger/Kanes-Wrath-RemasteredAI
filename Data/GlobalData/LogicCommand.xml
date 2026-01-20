@@ -7,6 +7,20 @@
 		<SpecialPower>SpecialPower_DecoyTemple</SpecialPower>
 	</LogicCommand>
 
+	<LogicCommand
+		id="Command_ControlCenterSeedTiberium"
+		Type="SPECIAL_POWER"
+		Options="NEED_TARGET_POS">
+		<SpecialPower>SpecialPower_AlienSeedTiberium</SpecialPower>
+	</LogicCommand>
+
+	<!--<LogicCommand
+	id="Command_SpecialPowerCrystalField"
+	Type="SPECIAL_POWER"
+	Options="NEED_TARGET_POS">
+		<SpecialPower>SpecialPower_CrystalShield</SpecialPower>
+	</LogicCommand>-->
+
 	<!--Doesnt work. Commenting out till a solution is found-->
 
 	<!--<LogicCommand
