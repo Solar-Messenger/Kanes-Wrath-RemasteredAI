@@ -44,7 +44,7 @@
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="FocusedTarget">
 			<TeamTemplate MinUnits="8" MaxUnits="8" IncludeKindOf="CAN_ATTACK INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="8" MaxUnits="8" UnitName="TRaveler59ShockTrooperSquad"/>
+				<CreateUnits MinUnits="8" MaxUnits="8" UnitName="Traveler59ShockTrooperSquad"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
