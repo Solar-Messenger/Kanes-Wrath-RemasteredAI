@@ -844,21 +844,21 @@
 				EvaEvent="EnemyBuildingCaptured"
 				AudioType="voiceDefectingTowards" />
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:3DB22914]"
+				Sound="AudioEvent:ALI_SignalTransmitter_Select"
 				AudioType="voiceSelect" />
 		</AudioArrayVoice>
 		<AudioArraySound>
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:45BB2ECF]"
+				Sound="AudioEvent:GDI_BuildingPlaced"
 				AudioType="soundUnderConstruction" />
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:7E79A096]"
+				Sound="AudioEvent:ALI_Building_LightDamage"
 				AudioType="soundOnDamaged" />
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:6B56860D]"
+				Sound="AudioEvent:ALI_Building_HeavyDamage"
 				AudioType="soundOnReallyDamaged" />
 			<AudioEntry
-				Sound="Asset not found in stream: [844D7B9F:4E81DAAC]"
+				Sound="AudioEvent:ALI_Building_Placed"
 				AudioType="soundUnderConstruction" />
 		</AudioArraySound>
 		<EvaEvents
