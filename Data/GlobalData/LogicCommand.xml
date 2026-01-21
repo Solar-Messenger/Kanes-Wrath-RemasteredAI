@@ -15,10 +15,10 @@
 	</LogicCommand>
 
 	<!--<LogicCommand
-	id="Command_SpecialPowerCrystalField"
-	Type="SPECIAL_POWER"
-	Options="NEED_TARGET_POS">
-		<SpecialPower>SpecialPower_CrystalShield</SpecialPower>
+		id="Command_UseTiberiumAgitationAI"
+		Type="SPECIAL_POWER"
+		Options="NEED_TARGET_POS">
+		<SpecialPower>TiberiumAgitationGetInRange</SpecialPower>
 	</LogicCommand>-->
 
 	<!--Doesnt work. Commenting out till a solution is found-->
