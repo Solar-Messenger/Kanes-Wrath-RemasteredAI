@@ -850,9 +850,12 @@
 				CommandButtonName="Command_NODEMPBlastGetInRange"
 				SpecialPowerAIType="SPECIAL_POWER_RANGED_AOE_ATTACK"
 				SpecialPowerRadius="275"
-				UnitKindOf="VEHICLE FS_POWER"
+				UnitKindOf="VEHICLE STRUCTURE"
 				EnemyUnitInclude=""
 				EnemyUnitExclude="INFANTRY AIRCRAFT HUSK CIVILIAN_BUILDING"
+				MinimumCutoff="100"
+				UpdateTime="1s"
+				MaxFrequency="0"
 			 />
 		</Behaviors>
 		<AI>

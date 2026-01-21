@@ -472,9 +472,12 @@
 				CommandButtonName="Command_NODImprovedEMPBlastGetInRange"
 				SpecialPowerAIType="SPECIAL_POWER_RANGED_AOE_ATTACK"
 				SpecialPowerRadius="275"
-				UnitKindOf="VEHICLE FS_POWER"
+				UnitKindOf="VEHICLE STRUCTURE"
 				EnemyUnitInclude=""
-				EnemyUnitExclude="INFANTRY AIRCRAFT HUSK CIVILIAN_BUILDING" />
+				EnemyUnitExclude="INFANTRY AIRCRAFT HUSK CIVILIAN_BUILDING"
+				MinimumCutoff="100"
+				UpdateTime="1s"
+				MaxFrequency="0" />
 			<StealthDetectorUpdate
 				id="70ED959C"
 				RequiresAllTriggers="False"
