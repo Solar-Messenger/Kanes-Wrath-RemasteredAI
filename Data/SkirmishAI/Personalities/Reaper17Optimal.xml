@@ -105,6 +105,7 @@
 		<States State="R17OptimalAirEconomyAttack" Difficulty="BRUTAL"/>
 		<States State="OptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="R17OptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17OptimalMechaHarass" Difficulty="HARD BRUTAL" />
 		<States State="R17OptimalBaseCrack" Difficulty="BRUTAL"/>
 		
 		<States State="OptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>

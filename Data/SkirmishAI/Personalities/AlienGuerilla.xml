@@ -116,6 +116,7 @@
 		<States State="GuerillaOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="AlienGuerillaSiege" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="AlienGuerillaRavagerEconomyAttack" Difficulty="BRUTAL" />
+		<States State="AlienGuerillaMechaHarass" Difficulty="HARD BRUTAL" />
 		<States State="GuerillaAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienGuerillaBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienGuerillaEngineer" Difficulty="MEDIUM HARD BRUTAL" />

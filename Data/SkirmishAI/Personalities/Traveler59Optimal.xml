@@ -109,6 +109,7 @@
 		<States State="OptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="T59OptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<!--<States State="T59Cultists" Difficulty="HARD BRUTAL"/>-->
+		<States State="T59OptimalMechaHarass" Difficulty="HARD BRUTAL" />
 		<States State="T59OptimalBaseCrack" Difficulty="BRUTAL"/>
 
 		<States State="OptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>

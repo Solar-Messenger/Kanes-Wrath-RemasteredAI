@@ -117,6 +117,7 @@
 		<States State="GuerillaOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="T59GuerillaSiege" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="T59GuerillaRavagerEconomyAttack" Difficulty="BRUTAL" />
+		<States State="T59GuerillaMechaHarass" Difficulty="HARD BRUTAL" />
 		<States State="GuerillaAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="T59GuerillaBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="T59GuerillaEngineer" Difficulty="MEDIUM HARD BRUTAL" />
