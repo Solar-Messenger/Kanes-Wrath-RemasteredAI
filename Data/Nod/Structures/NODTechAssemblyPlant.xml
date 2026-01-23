@@ -915,7 +915,7 @@
 				SpecificUnit=""
 				UnitKindOf="INFANTRY"
 				AllyUnitInclude="INFANTRY"
-				AllyUnitExclude="ENGINEER VEHICLE AIRCRAFT"
+				AllyUnitExclude="UNIQUE_UNIT ENGINEER INFILTRATOR VEHICLE AIRCRAFT"
 				EnemyUnitInclude=""
 				EnemyUnitExclude="INFANTRY VEHICLE"
 				MinimumCutoff="0"
