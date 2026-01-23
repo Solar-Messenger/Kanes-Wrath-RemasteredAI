@@ -1690,7 +1690,7 @@
 					id="ModuleTag_STAdaptiveArmourAI"
 					CommandButtonName="Command_ActivateAdaptiveArmor"
 					SecondaryCommandButtonName=""
-					SpecialPowerAIType="SPECIAL_POWER_BASIC_SELF_BUFF"
+					SpecialPowerAIType="SPECIAL_POWER_HEAL_AOE"
 					SpecialPowerRadius="-1"
 					ReinforceDistance="0"
 					SpellMakesAStructure=""
