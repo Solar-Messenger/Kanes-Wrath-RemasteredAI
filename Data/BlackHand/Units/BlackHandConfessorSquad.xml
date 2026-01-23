@@ -982,7 +982,7 @@
 					UnitKindOf="INFANTRY"
 					AllyUnitInclude=""
 					AllyUnitExclude=""
-					EnemyUnitInclude=""
+					EnemyUnitInclude="INFANTRY"
 					EnemyUnitExclude="VEHICLE AIRCRAFT STRUCTURE CIVILIAN_BUILDING NEUTRAL_TECH HUSK UNIQUE_UNIT"
 					MinimumCutoff="0"
 					UpdateTime="2.5s"
