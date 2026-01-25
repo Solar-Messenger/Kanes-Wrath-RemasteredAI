@@ -988,7 +988,7 @@
 				PlayWeaponPreFireFX="False"
 				OffsetTargetLocationFromObject="False"
 				DestealthClosestObjectMatchingFilter="False" />
-			<AISpecialPowerUpdate
+			<!--<AISpecialPowerUpdate
 				id="8A6B4807"
 				CommandButtonName="Command_ChemicalPlantTibVeinDetonation"
 				SecondaryCommandButtonName=""
@@ -1005,7 +1005,7 @@
 				MinimumCutoff="0"
 				UpdateTime="1s"
 				MaxFrequency="0"
-				RandomizeTargetLocation="False" />
+				RandomizeTargetLocation="False" />-->
 			<ModelConditionUpgrade
 				id="C2732A48"
 				RequiresAllTriggers="False"
