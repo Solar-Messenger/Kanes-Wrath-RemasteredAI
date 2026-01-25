@@ -1592,12 +1592,12 @@
 					KindOf="FS_POWER"
 					UseLocalPlayerFilter="True" />
 			</RadarScanMapSpecialAbilityUpdate>
-			<!--<AISpecialPowerUpdate
+			<AISpecialPowerUpdate
 				id="33EA2973"
 				CommandButtonName="Command_PowerSignatureScan"
 				SecondaryCommandButtonName=""
-				SpecialPowerAIType="SPECIAL_POWER_SUPERWEAPON"
-				SpecialPowerRadius="-1"
+				SpecialPowerAIType="SPECIAL_POWER_REINFORCEMENT"
+				SpecialPowerRadius="99999"
 				SpecificUnit=""
 				UnitKindOf=""
 				AllyUnitInclude=""
@@ -1607,7 +1607,7 @@
 				MinimumCutoff="0"
 				UpdateTime="1s"
 				MaxFrequency="2700"
-				RandomizeTargetLocation="false" />-->
+				RandomizeTargetLocation="false" />
 
 			<!--This thing likes to spam this to crash the game. Edit frequency and/or update time till it stops spamming 
 				or comment out till a later fix.
