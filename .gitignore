@@ -368,8 +368,8 @@ Data/SkirmishAI/SkirmishAIIncludes.xml
 Data/SkirmishAI/Targets
 Data/SkirmishAI/Personalities/PersonalityList.xml
 Data/SkirmishAI/OpeningMoves/TestMove.xml
-Data/maps/official/**/*.tga
-Data/maps/official/**/*.map
+Data/Maps/official/**/*.tga
+Data/Maps/official/**/*.map
 /Data/AdditionalMaps
 /Data/GDI/GDI.xml
 /Data/BlackHand/BlackHand.xml
