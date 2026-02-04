@@ -1559,11 +1559,11 @@
 				<TriggeredBy>Upgrade_OrcaSensorPod</TriggeredBy>
 			</AudioLoopUpgrade>
 
-			<AISpecialPowerUpdate
+			<!--<AISpecialPowerUpdate
 			id="ModuleTag_AIOrcaSensorPod"
 			CommandSet="Command_OrcaSensorPod"
 			SecondaryCommandButtonName=""
-			SpecialPowerAIType="SPECIAL_POWER_AOE_BUFF"
+			SpecialPowerAIType="SPECIAL_POWER_SUPERWEAPON"
 			SpecialPowerRadius="300"
 			ReinforceDistance="0"
 			SpellMakesAStructure=""
@@ -1595,7 +1595,7 @@
 			MinimumCutoff="0"
 			UpdateTime="1s"
 			MaxFrequency="0"
-			RandomizeTargetLocation="False" />
+			RandomizeTargetLocation="False" />-->
 		</Behaviors>
 		<AI>
 			<JetAIUpdate
