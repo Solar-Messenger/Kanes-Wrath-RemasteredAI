@@ -430,7 +430,7 @@
 				id="ModuleTag_CultistMindControlAI"
 				CommandButtonName="Command_CultistMindControlGetInRange"
 				SecondaryCommandButtonName=""
-				SpecialPowerAIType="SPECIAL_POWER_CAPTURE_BUILDING"
+				SpecialPowerAIType="SPECIAL_POWER_MOVEMENT"
 				SpecialPowerRadius="300"
 				ReinforceDistance="0"
 				SpellMakesAStructure=""
