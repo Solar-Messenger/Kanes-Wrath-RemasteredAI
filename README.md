@@ -1,7 +1,7 @@
-﻿# Skirmish & Campaign AI Remaster
+﻿# Skirmish & Global Conquest Remaster
 
 This repository hosts files and code related to remastering the **Skirmish AI** and 
-**Campaign AI** for **Command & Conquer 3 Kane's Wrath**.  
+**Global Conquest** for **Command & Conquer 3 Kane's Wrath**.  
 
 The goal is to improve AI behaviors over the base game, 
 give AI actions more purpose and to assist players in identifying and learning vital
@@ -16,7 +16,7 @@ alongside Masterleaf's 4K Mod and 1.02+ Community Patch.
 - **Skirmish AI**: Updated logic for more purposeful matches, improved consistency and scaling
  as well as to teach and prepare casual players for the pressures they will experience in PvP.  
 
-- **Campaign AI**: Adjustments to create smarter and more immersive single-player experiences, 
+- **Global Conquest**: Adjustments to create smarter and more immersive single-player experiences, 
 various fixes and improved consistency.  
 
 This project is community-driven and intended for research, education, and non-commercial modding.
