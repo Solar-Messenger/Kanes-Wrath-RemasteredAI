@@ -570,23 +570,13 @@
 				OffsetTargetLocationFromObject="False"
 				DestealthClosestObjectMatchingFilter="False" />
 			<AISpecialPowerUpdate
-				id="7F5EC0AE"
+				id="ModuleTag_EMPControlCenterAI"
 				CommandButtonName="Command_EMPControlCenterEMP"
-				SecondaryCommandButtonName=""
 				SpecialPowerAIType="SPECIAL_POWER_ENEMY_TYPE_KILLER_STRUCTURES"
-				SpecialPowerRadius="999999.0"
-				ReinforceDistance="0"
-				SpellMakesAStructure=""
-				SpecificUnit=""
+				SpecialPowerRadius="99999.0"
+				ReinforceDistance="1200"
 				UnitKindOf="VEHICLE"
-				AllyUnitInclude=""
-				AllyUnitExclude="VEHICLE STRUCTURE"
-				EnemyUnitInclude="UNIQUE_UNIT META_UNIT"
-				EnemyUnitExclude="INFANTRY STRUCTURE CIVILIAN_BUILDING HUSK STRUCTURE"
-				MinimumCutoff="0"
-				UpdateTime="1s"
-				MaxFrequency="0"
-				RandomizeTargetLocation="True" />
+			/>
 			<RepairUpdate
 				id="41FDEB2A"
 				RepopThreshold="0.2"
