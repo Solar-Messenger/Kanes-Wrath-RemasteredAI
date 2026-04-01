@@ -16,7 +16,7 @@
 		  ChanceToUseAllUnitsForDefenseTarget_Med="25"
 		  ChanceToUseAllUnitsForDefenseTarget_Large="50"
 		  DesiredExcessPowerBuffer="40"
-		  BaseCompactness="0.75"
+		  BaseCompactness="0.6"
 	  DefaultThreatFindRadius="0"
 	  UnitBuilderCostEffectivenessWeight="1.0"
 	  UnitBuilderMoneyVersusTimePreference="1.0"
@@ -38,8 +38,6 @@
 
 		<Side>Reaper17</Side>
 
-		<!--<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />-->
-
 		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
 		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
@@ -47,6 +45,7 @@
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
 
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
@@ -127,11 +126,15 @@
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="DefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="DefensiveEarlyGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="DefensiveMidGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="DefensiveLateGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="DefensiveEarlyGameBudget" Difficulty="HARD BRUTAL"/>
+		<BudgetStates State="DefensiveMidGameBudget" Difficulty="HARD BRUTAL"/>
+		<BudgetStates State="DefensiveLateGameBudget" Difficulty="HARD BRUTAL"/>
+		
 		<BudgetStates State="DefensiveBudget_EASY" Difficulty="EASY"/>
-
+		<BudgetStates State="DefensiveEarlyGameBudget_MEDIUM" Difficulty="MEDIUM"/>
+		<BudgetStates State="DefensiveMidGameBudget_MEDIUM" Difficulty="MEDIUM"/>
+		<BudgetStates State="DefensiveLateGameBudget_MEDIUM" Difficulty="MEDIUM"/>
+		
 		<BudgetStates State="InvestmentPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="InvestmentDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
