@@ -16,7 +16,7 @@
 		  ChanceToUseAllUnitsForDefenseTarget_Med="20"
 		  ChanceToUseAllUnitsForDefenseTarget_Large="40"
 		  DesiredExcessPowerBuffer="20"
-		  BaseCompactness="0.75"
+		  BaseCompactness="0.6"
 	  DefaultThreatFindRadius="0"
 	  UnitBuilderCostEffectivenessWeight="1.0"
 	  UnitBuilderMoneyVersusTimePreference="1.0"
@@ -38,9 +38,7 @@
 
 		<Side>ZOCOM</Side>
 
-		<!--<BuildDelayRange MinDelay="0s" MaxDelay="10s" MinTTKRatio="0.5" MaxTTKRatio="1.5" Difficulty="EASY" />-->
-
-		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.25" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
 		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
@@ -140,11 +138,15 @@
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="DefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OffensiveEarlyGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OffensiveMidGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OffensiveLateGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OffensiveEarlyGameBudget" Difficulty="HARD BRUTAL"/>
+		<BudgetStates State="OffensiveMidGameBudget" Difficulty="HARD BRUTAL"/>
+		<BudgetStates State="OffensiveLateGameBudget" Difficulty="HARD BRUTAL"/>
+		
 		<BudgetStates State="OffensiveBudget_EASY" Difficulty="EASY"/>
-
+		<BudgetStates State="OffensiveEarlyGameBudget_MEDIUM" Difficulty="MEDIUM"/>
+		<BudgetStates State="OffensiveMidGameBudget_MEDIUM" Difficulty="MEDIUM"/>
+		<BudgetStates State="OffensiveLateGameBudget_MEDIUM" Difficulty="MEDIUM"/>
+		
 		<BudgetStates State="InvestmentPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="InvestmentDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
