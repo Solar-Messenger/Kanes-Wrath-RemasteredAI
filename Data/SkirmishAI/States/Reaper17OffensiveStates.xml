@@ -9,7 +9,13 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="0s" EndTime="240s" />
 			<ConstantHeuristic Weight="1.0"/>
-			<FocusedThresholdHeuristic />
+			<!--<FocusedThresholdHeuristic/>-->
+			<ProductionHaltHeuristic
+				PenetrabilityWeight="0.7"
+				BalanceOfPowerWeight="0.3">
+				<PenetrabilityHeuristic/>
+				<BalanceOfPowerHeuristic/>
+			</ProductionHaltHeuristic>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="FocusedTarget">
@@ -25,7 +31,13 @@
 		<Heuristic>
 			<TimerHeuristic StartTime ="241s" EndTime="-1s" />
 			<ConstantHeuristic Weight="1.0"/>
-			<FocusedThresholdHeuristic />
+			<!--<FocusedThresholdHeuristic/>-->
+			<ProductionHaltHeuristic
+				PenetrabilityWeight="0.7"
+				BalanceOfPowerWeight="0.3">
+				<PenetrabilityHeuristic/>
+				<BalanceOfPowerHeuristic/>
+			</ProductionHaltHeuristic>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="FocusedTarget">
@@ -41,7 +53,13 @@
 		<Heuristic>
 			<ConstantHeuristic Weight="1.0"/>
 			<TimerHeuristic Starttime="120s" EndTime="-1s" />
-			<!--<FocusedThresholdHeuristic />-->
+			<!--<FocusedThresholdHeuristic/>-->
+			<ProductionHaltHeuristic
+				PenetrabilityWeight="0.7"
+				BalanceOfPowerWeight="0.3">
+				<PenetrabilityHeuristic/>
+				<BalanceOfPowerHeuristic/>
+			</ProductionHaltHeuristic>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ResourceSqueezeHeuristic" TargetType="SpreadTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="SpreadTarget">
@@ -57,6 +75,13 @@
 		<Heuristic>
 			<TimerHeuristic StartTime ="120s" EndTime="-1s" />
 			<ConstantHeuristic Weight="0.9"/>
+			<!--<FocusedThresholdHeuristic/>-->
+			<ProductionHaltHeuristic
+				PenetrabilityWeight="0.7"
+				BalanceOfPowerWeight="0.3">
+				<PenetrabilityHeuristic/>
+				<BalanceOfPowerHeuristic/>
+			</ProductionHaltHeuristic>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="SpreadTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="SpreadTarget">

@@ -9,7 +9,13 @@
 		<Heuristic>
 			<ConstantHeuristic Weight="1.0"/>
 			<TimerHeuristic StartTime="60s" EndTime="-1s"/>
-			<FocusedThresholdHeuristic />
+			<!--<FocusedThresholdHeuristic/>-->
+			<ProductionHaltHeuristic
+				PenetrabilityWeight="0.7"
+				BalanceOfPowerWeight="0.3">
+				<PenetrabilityHeuristic/>
+				<BalanceOfPowerHeuristic/>
+			</ProductionHaltHeuristic>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="FocusedTarget">
@@ -24,7 +30,13 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="60s" EndTime="-1s"/>
-			<ConstantHeuristic Weight="1.0"/>
+			<!--<FocusedThresholdHeuristic/>-->
+			<ProductionHaltHeuristic
+				PenetrabilityWeight="0.7"
+				BalanceOfPowerWeight="0.3">
+				<PenetrabilityHeuristic/>
+				<BalanceOfPowerHeuristic/>
+			</ProductionHaltHeuristic>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterHeuristic" TargetType="SpreadTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="SpreadTarget">
