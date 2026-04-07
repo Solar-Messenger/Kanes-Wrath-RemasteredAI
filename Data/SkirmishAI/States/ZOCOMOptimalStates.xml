@@ -9,13 +9,13 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="90s" EndTime="-1s" />
 			<ConstantHeuristic Weight="0.85"/>
-			<FocusedThresholdHeuristic/>
-			<!--<ProductionHaltHeuristic
-				PenetrabilityWeight="0.5"
-				BalanceOfPowerWeight="0.5">
+			<!--<FocusedThresholdHeuristic/>-->
+			<ProductionHaltHeuristic
+				PenetrabilityWeight="0.7"
+				BalanceOfPowerWeight="0.3">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
-			</ProductionHaltHeuristic>-->
+			</ProductionHaltHeuristic>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
@@ -32,13 +32,13 @@
 		<Heuristic>
 			<TimerHeuristic StartTime ="180s" EndTime="-1s" />
 			<ConstantHeuristic Weight="0.875"/>
-			<FocusedThresholdHeuristic/>
-			<!--<ProductionHaltHeuristic
-	            PenetrabilityWeight="0.4"
-	            BalanceOfPowerWeight="0.6">
+			<!--<FocusedThresholdHeuristic/>-->
+			<ProductionHaltHeuristic
+	            PenetrabilityWeight="0.7"
+	            BalanceOfPowerWeight="0.3">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
-			</ProductionHaltHeuristic>-->
+			</ProductionHaltHeuristic>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterHeuristic" TargetType="SpreadTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="SpreadTarget">
@@ -93,6 +93,12 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<ConstantHeuristic Weight="1.0"/>
+			<OverpowerHeuristic
+	         PowerAdvantageWeight="0.3"
+	         PenetrabilityWeight="0.7">
+				<PowerAdvantageHeuristic/>
+				<PenetrabilityHeuristic/>
+			</OverpowerHeuristic>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="BombingAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
@@ -109,6 +115,7 @@
 			<ConstantHeuristic Weight="0.5"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
+			<EnemyNearbyHeuristic Distance="600.0" EnemyNearby="false"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Engineer">
