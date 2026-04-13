@@ -58,6 +58,12 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<ConstantHeuristic Weight="1.0"/>
+			<OverpowerHeuristic
+	         PowerAdvantageWeight="0.3"
+	         PenetrabilityWeight="0.7">
+				<PowerAdvantageHeuristic/>
+				<PenetrabilityHeuristic/>
+			</OverpowerHeuristic>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="BombingAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
