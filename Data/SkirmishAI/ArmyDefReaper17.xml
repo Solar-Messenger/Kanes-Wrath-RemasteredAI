@@ -21,8 +21,8 @@
 		UnitUpgradePriorityLow="100.0"
 		UnitUpgradePriorityHigh="200.0"
 		MaxThreatForOpportunityTargets="10.0"
-		ValueToSetForMaxOnDefenseTeam="10"
-		CombatChainSearchDepthForTeamRecruits_AttackTeams="7"
+		ValueToSetForMaxOnDefenseTeam="50"
+		CombatChainSearchDepthForTeamRecruits_AttackTeams="4"
 		CombatChainSearchDepthForTeamRecruits_DefenseTeams="7"
 		CombatChainSearchDepthForTeamRecruits_ExploreTeams="7"
 		UnboundedProductionEconomyStructure="Reaper17PowerProjector"
@@ -32,11 +32,11 @@
 		>
 
     <TechStructure>Reaper17ControlCenter</TechStructure>
-    <TechStructure>Reaper17Reactor</TechStructure>
     <TechStructure>Reaper17StasisChamber</TechStructure>
+    <TechStructure>Reaper17Reactor</TechStructure>
     <TechStructure>Reaper17SignalTransmitter</TechStructure>
-    <TechStructure>Reaper17RiftGenerator</TechStructure>
     <TechStructure>MG_Reaper17_Hive</TechStructure>
+    <TechStructure>Reaper17RiftGenerator</TechStructure>
     
 	</ArmyDefinition>
 </AssetDeclaration>

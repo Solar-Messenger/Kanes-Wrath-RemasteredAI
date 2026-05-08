@@ -21,8 +21,8 @@
 		UnitUpgradePriorityLow="100.0"
 		UnitUpgradePriorityHigh="200.0"
 		MaxThreatForOpportunityTargets="10.0"
-		ValueToSetForMaxOnDefenseTeam="10"
-		CombatChainSearchDepthForTeamRecruits_AttackTeams="7"
+		ValueToSetForMaxOnDefenseTeam="50"
+		CombatChainSearchDepthForTeamRecruits_AttackTeams="4"
 		CombatChainSearchDepthForTeamRecruits_DefenseTeams="7"
 		CombatChainSearchDepthForTeamRecruits_ExploreTeams="7"
 		UnboundedProductionEconomyStructure="ZOCOMPowerPlant"
@@ -32,11 +32,11 @@
 		>
 
     <TechStructure>ZOCOMCommandPost</TechStructure>
-    <TechStructure>ZOCOMArmory</TechStructure>
     <TechStructure>ZOCOMMedicalBay</TechStructure>
+    <TechStructure>ZOCOMArmory</TechStructure>
     <TechStructure>ZOCOMSpaceCommandUplink</TechStructure>
-    <TechStructure>ZOCOMIonCannonControl</TechStructure>
-    <TechStructure>MG_ZOCOM_ReclamatorHub</TechStructure>    
+    <TechStructure>MG_ZOCOM_ReclamatorHub</TechStructure>  
+    <TechStructure>ZOCOMIonCannonControl</TechStructure>  
 
   </ArmyDefinition>
 </AssetDeclaration>

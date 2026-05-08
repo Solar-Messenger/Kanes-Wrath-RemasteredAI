@@ -21,8 +21,8 @@
 		UnitUpgradePriorityLow="100.0"
 		UnitUpgradePriorityHigh="200.0"
 		MaxThreatForOpportunityTargets="10.0"
-		ValueToSetForMaxOnDefenseTeam="10"
-		CombatChainSearchDepthForTeamRecruits_AttackTeams="7"
+		ValueToSetForMaxOnDefenseTeam="50"
+		CombatChainSearchDepthForTeamRecruits_AttackTeams="4"
 		CombatChainSearchDepthForTeamRecruits_DefenseTeams="7"
 		CombatChainSearchDepthForTeamRecruits_ExploreTeams="7"
 		UnboundedProductionEconomyStructure="Traveler59PowerProjector"
@@ -32,11 +32,11 @@
 		>
 
     <TechStructure>Traveler59ControlCenter</TechStructure>
-    <TechStructure>Traveler59Reactor</TechStructure>
     <TechStructure>Traveler59StatisChamber</TechStructure>
+    <TechStructure>Traveler59Reactor</TechStructure>
     <TechStructure>Traveler59SignalTransmitter</TechStructure>
-    <TechStructure>Traveler59RiftGenerator</TechStructure>
     <TechStructure>MG_Traveler59_Hive</TechStructure>
+    <TechStructure>Traveler59RiftGenerator</TechStructure>
     
 	</ArmyDefinition>
 </AssetDeclaration>

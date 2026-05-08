@@ -21,21 +21,21 @@
 		UnitUpgradePriorityLow="100.0"
 		UnitUpgradePriorityHigh="200.0"
 		MaxThreatForOpportunityTargets="10.0"
-		ValueToSetForMaxOnDefenseTeam="10"
-		CombatChainSearchDepthForTeamRecruits_AttackTeams="7"
+		ValueToSetForMaxOnDefenseTeam="50"
+		CombatChainSearchDepthForTeamRecruits_AttackTeams="4"
 		CombatChainSearchDepthForTeamRecruits_DefenseTeams="7"
 		CombatChainSearchDepthForTeamRecruits_ExploreTeams="7"
 		UnboundedProductionEconomyStructure="SteelTalonsPowerPlant"
 		LimitedProductionEconomyStructure="SteelTalonsRefinery"
-		WorkerGathererTemplate="SteelTalonsHarvester"
+		WorkerGathererTemplate="SteelTalonsHeavyHarvester"
     MCVTemplate="SteelTalonsMCV"
 		>
 
     <TechStructure>SteelTalonsCommandPost</TechStructure>
     <TechStructure>SteelTalonsTechCenter</TechStructure>
     <TechStructure>SteelTalonsSpaceCommandUplink</TechStructure>
-    <TechStructure>SteelTalonsIonCannonControl</TechStructure>
     <TechStructure>MG_SteelTalons_ReclamatorHub</TechStructure>    
+    <TechStructure>SteelTalonsIonCannonControl</TechStructure>
 
   </ArmyDefinition>
 </AssetDeclaration>

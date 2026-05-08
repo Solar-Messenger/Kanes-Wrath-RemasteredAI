@@ -21,8 +21,8 @@
 		UnitUpgradePriorityLow="100.0"
 		UnitUpgradePriorityHigh="200.0"
 		MaxThreatForOpportunityTargets="10.0"
-		ValueToSetForMaxOnDefenseTeam="10"
-		CombatChainSearchDepthForTeamRecruits_AttackTeams="7"
+		ValueToSetForMaxOnDefenseTeam="50"
+		CombatChainSearchDepthForTeamRecruits_AttackTeams="4"
 		CombatChainSearchDepthForTeamRecruits_DefenseTeams="7"
 		CombatChainSearchDepthForTeamRecruits_ExploreTeams="7"
 		UnboundedProductionEconomyStructure="BlackHandPowerPlant"
@@ -32,11 +32,11 @@
 		>
 
     <TechStructure>BlackHandOperationsCenter</TechStructure>
+	<TechStructure>BlackHandSecretShrine</TechStructure>
     <TechStructure>BlackHandTechAssemblyPlant</TechStructure>
-    <TechStructure>BlackHandSecretShrine</TechStructure>
     <TechStructure>BlackHandTiberiumLiquidationFacility</TechStructure>
-    <TechStructure>BlackHandTempleOfNOD</TechStructure>
     <TechStructure>MG_BlackHand_WarmechFacility</TechStructure>
+    <TechStructure>BlackHandTempleOfNOD</TechStructure>
     
 	</ArmyDefinition>
 </AssetDeclaration>

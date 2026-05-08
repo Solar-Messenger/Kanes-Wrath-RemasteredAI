@@ -21,8 +21,8 @@
 		UnitUpgradePriorityLow="100.0"
 		UnitUpgradePriorityHigh="200.0"
 		MaxThreatForOpportunityTargets="10.0"
-		ValueToSetForMaxOnDefenseTeam="10"
-		CombatChainSearchDepthForTeamRecruits_AttackTeams="7"
+		ValueToSetForMaxOnDefenseTeam="50"
+		CombatChainSearchDepthForTeamRecruits_AttackTeams="4"
 		CombatChainSearchDepthForTeamRecruits_DefenseTeams="7"
 		CombatChainSearchDepthForTeamRecruits_ExploreTeams="7"
 		UnboundedProductionEconomyStructure="NODPowerPlant"
@@ -32,11 +32,13 @@
 		>
 
     <TechStructure>NODOperationsCenter</TechStructure>
-    <TechStructure>NODTechAssemblyPlant</TechStructure>
     <TechStructure>NODSecretShrine</TechStructure>
+    <TechStructure>NODTechAssemblyPlant</TechStructure>
     <TechStructure>NODTiberiumLiquidationFacility</TechStructure>
-    <TechStructure>NODTempleOfNOD</TechStructure>
     <TechStructure>MG_NOD_WarmechFacility</TechStructure>
+    <TechStructure>NODDisruptionTower</TechStructure>
+    <TechStructure>NODPropagandaTower</TechStructure>
+    <TechStructure>NODTempleOfNOD</TechStructure>
 
   </ArmyDefinition>
 </AssetDeclaration>

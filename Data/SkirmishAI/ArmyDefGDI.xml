@@ -21,8 +21,8 @@
 		UnitUpgradePriorityLow="100.0"
 		UnitUpgradePriorityHigh="200.0"
 		MaxThreatForOpportunityTargets="10.0"
-		ValueToSetForMaxOnDefenseTeam="10"
-		CombatChainSearchDepthForTeamRecruits_AttackTeams="7"
+		ValueToSetForMaxOnDefenseTeam="50"
+		CombatChainSearchDepthForTeamRecruits_AttackTeams="4"
 		CombatChainSearchDepthForTeamRecruits_DefenseTeams="7"
 		CombatChainSearchDepthForTeamRecruits_ExploreTeams="7"
 		UnboundedProductionEconomyStructure="GDIPowerPlant"
@@ -32,11 +32,11 @@
 		>
 
     <TechStructure>GDICommandPost</TechStructure>
-    <TechStructure>GDIArmory</TechStructure>
     <TechStructure>GDIMedicalBay</TechStructure>
+    <TechStructure>GDIArmory</TechStructure>
     <TechStructure>GDISpaceCommandUplink</TechStructure>
-    <TechStructure>GDIIonCannonControl</TechStructure>
     <TechStructure>MG_GDI_ReclamatorHub</TechStructure>
+    <TechStructure>GDIIonCannonControl</TechStructure>
     
 	</ArmyDefinition>
 </AssetDeclaration>

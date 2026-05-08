@@ -21,8 +21,8 @@
 		UnitUpgradePriorityLow="100.0"
 		UnitUpgradePriorityHigh="200.0"
 		MaxThreatForOpportunityTargets="10.0"
-		ValueToSetForMaxOnDefenseTeam="10"
-		CombatChainSearchDepthForTeamRecruits_AttackTeams="7"
+		ValueToSetForMaxOnDefenseTeam="50"
+		CombatChainSearchDepthForTeamRecruits_AttackTeams="4"
 		CombatChainSearchDepthForTeamRecruits_DefenseTeams="7"
 		CombatChainSearchDepthForTeamRecruits_ExploreTeams="7"
 		UnboundedProductionEconomyStructure="MarkedOfKanePowerPlant"
@@ -32,11 +32,11 @@
 		>
 
     <TechStructure>MarkedOfKaneOperationsCenter</TechStructure>
-    <TechStructure>MarkedOfKaneTechAssemblyPlant</TechStructure>
     <TechStructure>MarkedOfKaneSecretShrine</TechStructure>
+    <TechStructure>MarkedOfKaneTechAssemblyPlant</TechStructure>
     <TechStructure>MarkedOfKaneTiberiumLiquidationFacility</TechStructure>
-    <TechStructure>MarkedOfKaneTempleOfNOD</TechStructure>
-    <TechStructure>MG_MarkedOfKane_WarmechFacility</TechStructure>    
+    <TechStructure>MG_MarkedOfKane_WarmechFacility</TechStructure> 
+    <TechStructure>MarkedOfKaneTempleOfNOD</TechStructure>   
     
 	</ArmyDefinition>
 </AssetDeclaration>
