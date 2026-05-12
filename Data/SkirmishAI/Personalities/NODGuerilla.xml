@@ -42,8 +42,8 @@
 
 		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
-		<ResourceMultiplierCheat Percentage="250%" Difficulty="HARD"/>
-		<ResourceMultiplierCheat Percentage="300%" Difficulty="BRUTAL"/>
+		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
+		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
 
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
