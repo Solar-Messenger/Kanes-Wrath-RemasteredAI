@@ -162,12 +162,11 @@
 		<BudgetStates State="InvestmentDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
-		<BudgetStates State="GuerillaTechPreferenceByTimeEarlyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="GuerillaTechPreferenceByTimeLateBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="GuerillaTechPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
 
-		<UnitOverride UnitName="GDIMARV" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<!--<UnitOverride UnitName="GDIMARV" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>-->
 
 		<UnitOverride UnitName="GDICommando" Percentage="-1%" Difficulty="EASY"/>
 		<UnitOverride UnitName="GDIFirehawk" Percentage="-1%" Difficulty="EASY"/>

@@ -115,7 +115,7 @@
 		<States State="GuerillaPowerAttack" Difficulty="HARD BRUTAL" />
 		<States State="GuerillaOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="AlienGuerillaSiege" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="AlienGuerillaRavagerEconomyAttack" Difficulty="BRUTAL" />
+		<!--<States State="AlienGuerillaRavagerEconomyAttack" Difficulty="BRUTAL" />-->
 		<States State="AlienGuerillaMechaHarass" Difficulty="HARD BRUTAL" />
 		<States State="GuerillaAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienGuerillaBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -160,12 +160,11 @@
 		<BudgetStates State="InvestmentDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
-		<BudgetStates State="GuerillaTechPreferenceByTimeEarlyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="GuerillaTechPreferenceByTimeLateBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="GuerillaTechPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
 
-		<UnitOverride UnitName="AlienEradicatorHexapod" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<!--<UnitOverride UnitName="AlienEradicatorHexapod" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>-->
 
 		<UnitOverride UnitName="AlienDevastatorWarship" Percentage="-1%" Difficulty="EASY"/>
 		<UnitOverride UnitName="AlienPlanetaryAssaultCarrier" Percentage="-1%" Difficulty="EASY"/>

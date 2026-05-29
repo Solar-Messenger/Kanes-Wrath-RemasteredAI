@@ -155,12 +155,11 @@
 		<BudgetStates State="InvestmentDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
-		<BudgetStates State="OptimalTechPreferenceByTimeEarlyBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OptimalTechPreferenceByTimeLateBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OptimalTechPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
 
-		<UnitOverride UnitName="NODMetaUnit" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<!--<UnitOverride UnitName="NODMetaUnit" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>-->
 		
 		<UnitOverride UnitName="NODCommando" Percentage="-1%" Difficulty="EASY"/>
 		<UnitOverride UnitName="NODVertigo" Percentage="-1%" Difficulty="EASY"/>
