@@ -7,7 +7,6 @@
 		  id="AlienDefensiveSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.95"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<LateGameHeuristic/>
 			<FocusedThresholdHeuristic/>

@@ -7,9 +7,6 @@
 		  id="ZOCOMOffensiveGroundEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
-			<TimerHeuristic StartTime="60s" EndTime="-1s"/>
-			<!--<FocusedThresholdHeuristic/>-->
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.7"
 				BalanceOfPowerWeight="0.3">
@@ -29,9 +26,6 @@
 		  id="ZOCOMOffensiveAirEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="60s" EndTime="-1s"/>
-			<ConstantHeuristic Weight="1.0"/>
-			<!--<FocusedThresholdHeuristic/>-->
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.7"
 				BalanceOfPowerWeight="0.3">
@@ -51,7 +45,6 @@
 		  id="ZOCOMOffensiveSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.9"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<FocusedThresholdHeuristic />
 			<SiegeThresholdHeuristic SiegeMode="true" Threshold="6.0"/>

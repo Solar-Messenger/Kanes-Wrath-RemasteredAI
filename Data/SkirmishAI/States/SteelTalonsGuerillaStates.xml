@@ -7,7 +7,6 @@
 		  id="STGuerillaSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.95"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<FocusedThresholdHeuristic/>
 			<SiegeThresholdHeuristic SiegeMode="true" Threshold="5.0"/>
@@ -39,7 +38,6 @@
 		  id="STGuerillaBombingRuns"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
 			<OverpowerHeuristic
 	         PowerAdvantageWeight="0.3"
 	         PenetrabilityWeight="0.7">
@@ -59,7 +57,6 @@
 		  id="STGuerillaEngineer"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.75"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 			<EnemyNearbyHeuristic Distance="600.0" EnemyNearby="false"/>

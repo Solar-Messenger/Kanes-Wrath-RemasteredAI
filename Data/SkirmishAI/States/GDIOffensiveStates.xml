@@ -7,9 +7,6 @@
 		  id="GDIOffensiveGroundEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
-			<TimerHeuristic StartTime="60s" EndTime="-1s"/>
-			<!--<FocusedThresholdHeuristic/>-->
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.7"
 				BalanceOfPowerWeight="0.3">
@@ -29,8 +26,6 @@
 		  id="GDIOffensiveAirEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="60s" EndTime="-1s"/>
-			<!--<FocusedThresholdHeuristic/>-->
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.7"
 				BalanceOfPowerWeight="0.3">
@@ -50,7 +45,6 @@
 		  id="GDIOffensiveSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.95"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<FocusedThresholdHeuristic />
 			<SiegeThresholdHeuristic SiegeMode="true" Threshold="6.0"/>

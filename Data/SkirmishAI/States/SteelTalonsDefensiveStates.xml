@@ -6,8 +6,7 @@
 	<AIStrategicStateDefinition
 		  id="STDefensiveSiege"
 		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<ConstantHeuristic Weight="0.95"/>
+		<Heuristic>/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<LateGameHeuristic/>
 			<FocusedThresholdHeuristic/>

@@ -8,8 +8,6 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="90s" EndTime="240s"/>
-			<ConstantHeuristic Weight="0.8"/>
-			<!--<FocusedThresholdHeuristic/>-->
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.7"
 				BalanceOfPowerWeight="0.3">
@@ -31,8 +29,6 @@
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="241s" EndTime="-1s" />
-			<ConstantHeuristic Weight="0.8"/>
-			<!--<FocusedThresholdHeuristic/>-->
 			<ProductionHaltHeuristic
 	            PenetrabilityWeight="0.7"
 	            BalanceOfPowerWeight="0.3">
@@ -54,8 +50,6 @@
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="180s" EndTime="-1s"/>
-			<ConstantHeuristic Weight="0.85"/>
-			<!--<FocusedThresholdHeuristic/>-->
 			<ProductionHaltHeuristic
 	            PenetrabilityWeight="0.7"
 	            BalanceOfPowerWeight="0.3">
@@ -77,8 +71,6 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="180s" EndTime="-1s"/>
-			<ConstantHeuristic Weight="0.825"/>
-			<!--<FocusedThresholdHeuristic/>-->
 			<ProductionHaltHeuristic
 	            PenetrabilityWeight="0.7"
 	            BalanceOfPowerWeight="0.3">
@@ -98,7 +90,6 @@
 		  id="T59OptimalSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.95"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<FocusedThresholdHeuristic/>
 			<SiegeThresholdHeuristic SiegeMode="true" Threshold="5.0"/>
@@ -116,7 +107,6 @@
 		  id="T59Cultists"
 		  UnitUpgradeModifier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.75"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 		</Heuristic>
@@ -132,7 +122,6 @@
     id="T59OptimalMechaHarass"
     UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.75"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
@@ -148,7 +137,6 @@
 	id="T59OptimalBaseCrack"
 	UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.975"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.5"
@@ -183,7 +171,6 @@
 		  id="T59OptimalEngineer"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.5"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 			<EnemyNearbyHeuristic Distance="600.0" EnemyNearby="false"/>

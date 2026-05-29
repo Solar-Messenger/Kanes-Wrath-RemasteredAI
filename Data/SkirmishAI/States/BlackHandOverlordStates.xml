@@ -7,7 +7,6 @@
 		id="BHOverlordSiege"
 		UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.95"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<FocusedThresholdHeuristic/>
 		</Heuristic>
@@ -38,7 +37,6 @@
 	id="BHOverlordBaseCrack"
 	UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.975"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<LateGameHeuristic/>
 		</Heuristic>

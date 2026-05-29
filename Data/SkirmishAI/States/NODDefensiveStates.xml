@@ -7,7 +7,6 @@
 		  id="NODDefensiveSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.95"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<LateGameHeuristic/>
 			<FocusedThresholdHeuristic/>
@@ -40,7 +39,6 @@
 	  id="NODDefensiveSpotters"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.75"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>

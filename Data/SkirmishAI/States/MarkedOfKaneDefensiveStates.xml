@@ -7,7 +7,6 @@
 		  id="MOKDefensiveSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.95"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<LateGameHeuristic/>
 			<FocusedThresholdHeuristic/>
@@ -40,7 +39,6 @@
 	  id="MOKDefensiveSpotters"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.75"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>

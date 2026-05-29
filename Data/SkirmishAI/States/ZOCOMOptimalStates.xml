@@ -7,9 +7,6 @@
 		  id="ZOCOMOptimalGroundEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="90s" EndTime="-1s" />
-			<ConstantHeuristic Weight="0.85"/>
-			<!--<FocusedThresholdHeuristic/>-->
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.7"
 				BalanceOfPowerWeight="0.3">
@@ -31,8 +28,6 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime ="180s" EndTime="-1s" />
-			<ConstantHeuristic Weight="0.875"/>
-			<!--<FocusedThresholdHeuristic/>-->
 			<ProductionHaltHeuristic
 	            PenetrabilityWeight="0.7"
 	            BalanceOfPowerWeight="0.3">
@@ -52,7 +47,6 @@
 		  id="ZOCOMOptimalSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.95"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<FocusedThresholdHeuristic/>
 			<SiegeThresholdHeuristic SiegeMode="true" Threshold="5.0"/>
@@ -70,7 +64,6 @@
 		  id="ZOCOMOptimalBaseCrack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.975"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<LateGameHeuristic/>
 			<ProductionHaltHeuristic
@@ -92,7 +85,6 @@
 		  id="ZOCOMOptimalBombingRuns"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
 			<OverpowerHeuristic
 	         PowerAdvantageWeight="0.3"
 	         PenetrabilityWeight="0.7">
@@ -112,7 +104,6 @@
 		  id="ZOCOMOptimalEngineer"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.5"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 			<EnemyNearbyHeuristic Distance="600.0" EnemyNearby="false"/>

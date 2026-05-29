@@ -7,7 +7,6 @@
 		  id="MOKGuerillaSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.95"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<FocusedThresholdHeuristic/>
 			<SiegeThresholdHeuristic SiegeMode="true" Threshold="5.0"/>
@@ -25,7 +24,6 @@
     id="MOKGuerillaSpotters"
     UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.85"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
@@ -41,7 +39,6 @@
     id="MOKGuerillaEMPTeam"
     UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.9"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
@@ -57,7 +54,6 @@
 		  id="MOKGuerillaBombingRuns"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
 			<OverpowerHeuristic
 	         PowerAdvantageWeight="0.3"
 	         PenetrabilityWeight="0.7">
@@ -77,7 +73,6 @@
 		  id="MOKGuerillaEngineer"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.75"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 			<EnemyNearbyHeuristic Distance="600.0" EnemyNearby="false"/>

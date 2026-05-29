@@ -7,12 +7,10 @@
 		  id="NODOptimalEarlyMidBikeEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="90s" EndTime="420s" />
-			<ConstantHeuristic Weight="0.8"/>
-			<!--<FocusedThresholdHeuristic/>-->
+			<TimerHeuristic StartTime="0s" EndTime="420s" />
 			<ProductionHaltHeuristic
-				PenetrabilityWeight="0.7"
-				BalanceOfPowerWeight="0.3">
+				PenetrabilityWeight="0.6"
+				BalanceOfPowerWeight="0.4">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
@@ -31,11 +29,9 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime ="421s" EndTime="-1s" />
-			<ConstantHeuristic Weight="0.9"/>
-			<!--<FocusedThresholdHeuristic/>-->
 			<ProductionHaltHeuristic
-	            PenetrabilityWeight="0.7"
-	            BalanceOfPowerWeight="0.3">
+	            PenetrabilityWeight="0.6"
+	            BalanceOfPowerWeight="0.4">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
@@ -53,16 +49,14 @@
 		  id="NODOptimalFlameTankAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="180s" EndTime="-1s" />
-			<ConstantHeuristic Weight="0.85"/>
 			<PathToTargetHeuristic PathExists="true"/>
-			<!--<FocusedThresholdHeuristic/>-->
 			<ProductionHaltHeuristic
 	            PenetrabilityWeight="0.7"
 	            BalanceOfPowerWeight="0.3">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ResourceSqueezeHeuristic" TargetType="SpreadTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="SpreadTarget">
@@ -76,7 +70,6 @@
 		  id="NODOptimalSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.95"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<FocusedThresholdHeuristic/>
 			<SiegeThresholdHeuristic SiegeMode="true" Threshold="5.0"/>
@@ -94,7 +87,6 @@
     id="NODOptimalSpotters"
     UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.75"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
@@ -110,7 +102,6 @@
 	  id="NODOptimalBaseCrack"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.975"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.25"
@@ -131,7 +122,6 @@
 		  id="NODOptimalBombingRuns"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
 			<OverpowerHeuristic
 	         PowerAdvantageWeight="0.3"
 	         PenetrabilityWeight="0.7">
@@ -151,7 +141,6 @@
 		  id="NODOptimalEngineer"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.5"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 			<EnemyNearbyHeuristic Distance="600.0" EnemyNearby="false"/>

@@ -8,8 +8,6 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="90s" EndTime="240s"/>
-			<ConstantHeuristic Weight="0.8"/>
-			<!--<FocusedThresholdHeuristic/>-->
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.7"
 				BalanceOfPowerWeight="0.3">
@@ -31,8 +29,6 @@
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="241s" EndTime="-1s"/>
-			<ConstantHeuristic Weight="0.8"/>
-			<!--<FocusedThresholdHeuristic/>-->
 			<ProductionHaltHeuristic
 	            PenetrabilityWeight="0.7"
 	            BalanceOfPowerWeight="0.3">
@@ -53,9 +49,6 @@
 	  id="R17OptimalRavagerEconomyAttack"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="180s" EndTime="-1s" />
-			<ConstantHeuristic Weight="0.85"/>
-			<!--<FocusedThresholdHeuristic/>-->
 			<ProductionHaltHeuristic
 	            PenetrabilityWeight="0.7"
 	            BalanceOfPowerWeight="0.3">
@@ -76,15 +69,13 @@
 		  id="R17OptimalAirEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="180s" EndTime="-1s" />
-			<ConstantHeuristic Weight="0.825"/>
-			<FocusedThresholdHeuristic/>
-			<!--<ProductionHaltHeuristic
-				PenetrabilityWeight="0.4"
-				BalanceOfPowerWeight="0.6">
+		<TimerHeuristic StartTime="180s" EndTime="-1s"/>
+			<ProductionHaltHeuristic
+				PenetrabilityWeight="0.6"
+				BalanceOfPowerWeight="0.4">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
-			</ProductionHaltHeuristic>-->
+			</ProductionHaltHeuristic>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="SpreadTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="SpreadTarget">
@@ -98,7 +89,6 @@
 		  id="R17OptimalSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.95"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<FocusedThresholdHeuristic/>
 			<SiegeThresholdHeuristic SiegeMode="true" Threshold="5.0"/>
@@ -116,7 +106,6 @@
 		id="R17OptimalMechaHarass"
 		UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.75"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
@@ -132,7 +121,6 @@
 	id="R17OptimalBaseCrack"
 	UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.975"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.25"
@@ -153,7 +141,6 @@
 		  id="R17OptimalEngineer"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.5"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 			<EnemyNearbyHeuristic Distance="600.0" EnemyNearby="false"/>

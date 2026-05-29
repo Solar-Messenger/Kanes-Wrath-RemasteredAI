@@ -7,12 +7,9 @@
 		  id="GDIOptimalGroundEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="90s" EndTime="-1s" />
-			<ConstantHeuristic Weight="0.85"/>
-			<!--<FocusedThresholdHeuristic/>-->
 			<ProductionHaltHeuristic
-				PenetrabilityWeight="0.7"
-				BalanceOfPowerWeight="0.3">
+				PenetrabilityWeight="0.6"
+				BalanceOfPowerWeight="0.4">
 				<PenetrabilityHeuristic/>
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
@@ -30,10 +27,6 @@
 		  id="GDIOptimalAirEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="180s" EndTime="-1s" />
-			<IntervalHeuristic IntervalTime="180s" ActiveTime="60s"/>
-			<ConstantHeuristic Weight="0.875"/>
-			<!--<FocusedThresholdHeuristic/>-->
 			<ProductionHaltHeuristic
 	            PenetrabilityWeight="0.7"
 	            BalanceOfPowerWeight="0.3">
@@ -53,7 +46,6 @@
 		  id="GDIOptimalSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.95"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<FocusedThresholdHeuristic/>
 			<SiegeThresholdHeuristic SiegeMode="true" Threshold="5.0"/>
@@ -71,7 +63,6 @@
 	  id="GDIOptimalSpotters"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.75"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
@@ -87,7 +78,6 @@
 	id="GDIOptimalBaseCrack"
 	UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.975"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.25"
@@ -108,7 +98,6 @@
 		  id="GDIOptimalBombingRuns"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
 			<OverpowerHeuristic
 	         PowerAdvantageWeight="0.3"
 	         PenetrabilityWeight="0.7">
@@ -128,7 +117,6 @@
 		  id="GDIOptimalEngineer"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.5"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 			<EnemyNearbyHeuristic Distance="600.0" EnemyNearby="false"/>

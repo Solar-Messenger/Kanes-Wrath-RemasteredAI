@@ -8,8 +8,6 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="60s" EndTime="300s"/>
-			<ConstantHeuristic Weight="1.0"/>
-			<!--<FocusedThresholdHeuristic/>-->
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.7"
 				BalanceOfPowerWeight="0.3">
@@ -30,8 +28,6 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic Starttime="301s" EndTime="-1s" />
-			<ConstantHeuristic Weight="1.0"/>
-			<!--<FocusedThresholdHeuristic/>-->
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.7"
 				BalanceOfPowerWeight="0.3">
@@ -51,9 +47,7 @@
 		  id="NODOffensiveFlameTankAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="1.0"/>
 			<TimerHeuristic Starttime="60s" EndTime="-1s" />
-			<!--<FocusedThresholdHeuristic/>-->
 			<ProductionHaltHeuristic
 				PenetrabilityWeight="0.7"
 				BalanceOfPowerWeight="0.3">
@@ -73,7 +67,6 @@
 		id="NODOffensiveSiege"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
-		<ConstantHeuristic Weight="0.95"/>
 		<PathToTargetHeuristic PathExists="true"/>
 		<FocusedThresholdHeuristic />
 		<SiegeThresholdHeuristic SiegeMode="true" Threshold="6.0"/>
