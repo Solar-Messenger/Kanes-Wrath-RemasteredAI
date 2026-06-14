@@ -23,7 +23,7 @@
 	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
 	  UnitBuilderEnemyTowerWeight="10%"
-	  Expansion_TiberiumSearchRadius="600"
+	  Expansion_TiberiumSearchRadius="700"
 	  Expansion_MaxTiberiumRemaining="27000"
 	  ReactiveDefenseRadius="1500"
 	  RepairBuildingsAtDifficulty="EASY MEDIUM HARD BRUTAL"
@@ -38,17 +38,18 @@
 
 		<Side>ZOCOM</Side>
 
-		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.5" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.35" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
 		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
 
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
+		<!--<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
@@ -57,16 +58,33 @@
 		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>-->
+		
+		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
+		
+		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
+		
+		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
+		
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="Targetless" MaxTeamsPerTarget="1"/>
-		
-		<TacticalTarget TacticalAITarget="Defensive" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="Opportunity" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1"/>
@@ -96,24 +114,24 @@
 
 		<OpeningMove Name="ZOCOM_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="ZOCOMOptimalStandard" Weight="100%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="ZOCOMOptimalStandard" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="ZOCOMOptimalCrane" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="ZOCOMOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="OptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="ZOCOMOptimalGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
-		<States State="ZOCOMOptimalAirEconomyAttack" Difficulty="BRUTAL"/>
+		<States State="OptimalGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="OptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOptimalBaseCrack" Difficulty="BRUTAL"/>
 
 		<States State="OptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OptimalReloadAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOptimalBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOptimalEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="QuickReactionForce" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMGroundEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMAirEngineerDefense" Difficulty="HARD BRUTAL"/>
 		<States State="ZOCOMGroundCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
@@ -135,7 +153,6 @@
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="ZOCOMBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 

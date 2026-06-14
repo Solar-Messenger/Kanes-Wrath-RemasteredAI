@@ -23,7 +23,7 @@
 	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
 	  UnitBuilderEnemyTowerWeight="10%"
-	  Expansion_TiberiumSearchRadius="600"
+	  Expansion_TiberiumSearchRadius="700"
 	  Expansion_MaxTiberiumRemaining="27000"
 	  ReactiveDefenseRadius="1500"
 	  RepairBuildingsAtDifficulty="EASY MEDIUM HARD BRUTAL"
@@ -38,14 +38,14 @@
 
 		<Side>Alien</Side>
 
-		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.5" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.35" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
 		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
 
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
+		<!--<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
@@ -53,19 +53,32 @@
 		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>-->
+		
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="2"/>
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="2"/>
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
+		
+		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="3"/>
+		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="2"/>
+		
+		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="2"/>
+		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
+		
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 		
 		<TacticalTarget TacticalAITarget="Targetless" MaxTeamsPerTarget="1"/>
-		
-		<TacticalTarget TacticalAITarget="Defensive" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
@@ -102,20 +115,16 @@
 
 		<States State="OffensiveRush_EASY" Difficulty="EASY"/>
 		<States State="OffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="OffensiveOverrunEarly" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="OffensiveOverrunMiddle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="OffensiveOverrunLate" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="AlienOffensiveEarlyGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
-		<States State="AlienOffensiveLateGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
-		<!--<States State="AlienOffensiveRavagerEconomyAttack" Difficulty="BRUTAL"/>-->
-		<States State="AlienOffensiveAirEconomyAttack" Difficulty="BRUTAL"/>
+		<States State="OffensiveInfRush" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="OffensiveOverrunSmall" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OffensiveOverrunLarge" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="AlienOffensiveGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="AlienOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="OffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienOffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="QuickReactionForce" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
@@ -131,7 +140,6 @@
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="AlienBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
