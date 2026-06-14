@@ -29,10 +29,11 @@
 		<Order Build="GDIAPC"/>
 		<Order Build="GDIAPC"/>
 		<Order Build="GDIAPC"/>
-		<Order Time="60s" Build="GDICommandPost"/>
-		<Order Time="75s" Build="GDIAirTower"/>
-		<Order Time="85s" Build="GDIPowerPlant"/>
+		<Order Time="60s" Build="GDIRefinery"/>
 		<Order Time="90s" Build="GDIPowerPlant"/>
+		<Order Time="95s" Build="GDIPowerPlant"/>
+		<Order Time="100s" Build="GDICommandPost"/>
+		<Order Time="115s" Build="GDIAirTower"/>
 		<Order Build="GDIOrca"/>
 		<Order Build="GDIOrca"/>
 		<Order Build="GDIOrca"/>
@@ -41,9 +42,8 @@
 		<Order Build="GDIHammerHead"/>
 		<Order Build="GDIHammerHead"/>
 		<Order Build="GDIHammerHead"/>
-		<Order Time="95s" Build="GDIRefinery"/>
 		<Order Time="125s" Build="GDIWarfactory"/>
-		<Order Time="145s" Build="GDIArmory"/>
+		<Order Time="216s"/>
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
@@ -92,8 +92,7 @@
 		<Order Time="95s" Build="GDIWatchTower"/>
 		<Order Time="100s" Build="GDIWarfactory"/>
 		<Order Time="120s" Build="GDICommandPost"/>
-		<Order Time="135s" Build="GDIMedicalBay"/>
-		<Order Time="145s" Build="GDIArmory"/>
+		<Order Time="290s"/>
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
@@ -142,8 +141,8 @@
 		<Order Time="95s" Build="GDIWatchTower"/>
 		<Order Time="100s" Build="GDIWarfactory"/>
 		<Order Time="120s" Build="GDICommandPost"/>
-		<Order Time="135s" Build="GDIMedicalBay"/>
-		<Order Time="145s" Build="GDIArmory"/>
+		<Order Time="135s" Build="GDIArmory"/>
+		<Order Time="210s"/>
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>

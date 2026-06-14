@@ -16,18 +16,27 @@
 		<Order Build="GDIRifleSoldierSquad"/>
 		<Order Time="10s" Build="GDIRefinery"/>
 		<Order Time="40s" Build="GDIWarfactory"/>
-		<Order Time="60s" Build="GDICommandPost"/>
+		<Order Time="60s" Build="GDIRefinery"/>
 		<Order Build="GDIHarvester"/>
 		<Order Build="GDIHarvester"/>
-		<Order Time="75s" Build="GDIAirTower"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Time="90s" Build="GDIPowerPlant"/>
+		<Order Time="95s" Build="GDIPowerPlant"/>
+		<Order Time="100s" Build="GDICommandPost"/>
+		<Order Time="115s" Build="GDIAirTower"/>
 		<Order Build="GDIOrca"/>
 		<Order Build="GDIOrca"/>
 		<Order Build="GDIOrca"/>
 		<Order Build="GDIOrca"/>
-		<Order Time="80s" Build="GDIPowerPlant"/>
-		<Order Time="85s" Build="GDIRefinery" />
-		<Order Time="115s" Build="GDIWarfactory" />
-		<Order Time="135s" Build="GDIWarfactory"/>
+		<Order Time="125s" Build="GDIPowerPlant"/>
+		<Order Time="130s" Build="GDIAirTower" />
+		<Order Build="GDIOrca"/>
+		<Order Build="GDIOrca"/>
+		<Order Build="GDIOrca"/>
+		<Order Build="GDIOrca"/>
+		<Order Time="140s" Build="GDIWarfactory"/>
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
@@ -44,12 +53,10 @@
 		<Order Time="40s" Build="GDIWarfactory"/>
 		<Order Time="60s" Build="GDIRefinery"/>
 		<Order Build="GDIHarvester"/>
-		<Order Build="GDIAPC"/>
-		<Order Build="GDIAPC"/>
-		<Order Build="GDIAPC"/>
-		<Order Build="GDIAPC"/>
 		<Order Build="GDIHarvester"/>
-		<Order Build="GDIHarvester"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
 		<Order Build="GDIPitBull"/>
 		<Order Build="GDIPitBull"/>
 		<Order Build="GDIPitBull"/>
@@ -76,6 +83,7 @@
 		<Order Time="120s" Build="GDICommandPost"/>
 		<Order Time="135s" Build="GDIPowerPlant"/>
 		<Order Time="140s" Build="GDIArmory"/>
+		<Order Time="168s"/>
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
@@ -92,12 +100,10 @@
 		<Order Time="40s" Build="GDIWarfactory"/>
 		<Order Time="60s" Build="GDIRefinery"/>
 		<Order Build="GDIHarvester"/>
-		<Order Build="GDIAPC"/>
-		<Order Build="GDIAPC"/>
-		<Order Build="GDIAPC"/>
-		<Order Build="GDIAPC"/>
 		<Order Build="GDIHarvester"/>
-		<Order Build="GDIHarvester"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
 		<Order Build="GDIPredator"/>
 		<Order Build="GDIPredator"/>
 		<Order Build="GDIPredator"/>
@@ -123,7 +129,7 @@
 		<Order Time="100s" Build="GDIWarfactory"/>
 		<Order Time="120s" Build="GDICommandPost"/>
 		<Order Time="135s" Build="GDIPowerPlant"/>
-		<Order Time="140s" Build="GDIArmory"/>
+		<Order Time="248s"/>
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>

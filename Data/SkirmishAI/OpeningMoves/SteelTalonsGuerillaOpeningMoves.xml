@@ -19,7 +19,6 @@
 		<Order Build="SteelTalonsHeavyHarvester"/>
 		<Order Build="SteelTalonsHeavyHarvester"/>
 		<Order Build="SteelTalonsHeavyHarvester"/>
-		<Order Time="60s" Build="SteelTalonsCommandPost"/>
 		<Order Build="SteelTalonsWolverine"/>
 		<Order Build="SteelTalonsWolverine"/>
 		<Order Build="SteelTalonsWolverine"/>
@@ -30,9 +29,11 @@
 		<Order Build="SteelTalonsWolverine"/>
 		<Order Build="SteelTalonsWolverine"/>
 		<Order Build="SteelTalonsWolverine"/>
-		<Order Time="75s" Build="SteelTalonsAirTower"/>
-		<Order Time="85s" Build="SteelTalonsPowerPlant"/>
+		<Order Time="60s" Build="SteelTalonsRefinery"/>
 		<Order Time="90s" Build="SteelTalonsPowerPlant"/>
+		<Order Time="95s" Build="SteelTalonsPowerPlant"/>
+		<Order Time="100s" Build="SteelTalonsCommandPost"/>
+		<Order Time="115s" Build="SteelTalonsAirTower"/>
 		<Order Build="SteelTalonsOrca"/>
 		<Order Build="SteelTalonsOrca"/>
 		<Order Build="SteelTalonsOrca"/>
@@ -41,9 +42,8 @@
 		<Order Build="SteelTalonsHammerHead"/>
 		<Order Build="SteelTalonsHammerHead"/>
 		<Order Build="SteelTalonsHammerHead"/>
-		<Order Time="95s" Build="SteelTalonsRefinery"/>
 		<Order Time="125s" Build="SteelTalonsWarfactory"/>
-		<Order Time="145s" Build="SteelTalonsArmory"/>
+		<Order Time="216s"/>
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
@@ -88,8 +88,8 @@
 		<Order Time="95s" Build="SteelTalonsWatchTower"/>
 		<Order Time="100s" Build="SteelTalonsWarfactory"/>
 		<Order Time="120s" Build="SteelTalonsCommandPost"/>
-		<Order Time="135s" Build="SteelTalonsMedicalBay"/>
-		<Order Time="145s" Build="SteelTalonsArmory"/>
+		<Order Time="135s" Build="ZOCOMArmory"/>
+		<Order Time="210s"/>
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>

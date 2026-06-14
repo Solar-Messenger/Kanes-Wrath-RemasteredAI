@@ -16,18 +16,24 @@
 		<Order Build="SteelTalonsRifleSoldierSquad"/>
 		<Order Time="10s" Build="SteelTalonsRefinery"/>
 		<Order Time="40s" Build="SteelTalonsWarfactory"/>
-		<Order Time="60s" Build="SteelTalonsCommandPost"/>
+		<Order Time="60s" Build="SteelTalonsRefinery"/>
 		<Order Build="SteelTalonsHeavyHarvester"/>
 		<Order Build="SteelTalonsHeavyHarvester"/>
-		<Order Time="75s" Build="SteelTalonsAirTower"/>
+		<Order Time="90s" Build="SteelTalonsPowerPlant"/>
+		<Order Time="95s" Build="SteelTalonsPowerPlant"/>
+		<Order Time="100s" Build="SteelTalonsCommandPost"/>
+		<Order Time="115s" Build="SteelTalonsAirTower"/>
 		<Order Build="SteelTalonsOrca"/>
 		<Order Build="SteelTalonsOrca"/>
 		<Order Build="SteelTalonsOrca"/>
 		<Order Build="SteelTalonsOrca"/>
-		<Order Time="80s" Build="SteelTalonsPowerPlant"/>
-		<Order Time="85s" Build="SteelTalonsRefinery" />
-		<Order Time="115s" Build="SteelTalonsWarfactory" />
-		<Order Time="135s" Build="SteelTalonsWarfactory"/>
+		<Order Time="125s" Build="SteelTalonsPowerPlant"/>
+		<Order Time="130s" Build="SteelTalonsAirTower" />
+		<Order Build="SteelTalonsOrca"/>
+		<Order Build="SteelTalonsOrca"/>
+		<Order Build="SteelTalonsOrca"/>
+		<Order Build="SteelTalonsOrca"/>
+		<Order Time="140s" Build="SteelTalonsWarfactory"/>
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
@@ -44,10 +50,10 @@
 		<Order Time="40s" Build="SteelTalonsWarfactory"/>
 		<Order Time="60s" Build="SteelTalonsRefinery"/>
 		<Order Build="SteelTalonsHeavyHarvester"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsWolverine"/>
 		<Order Build="SteelTalonsHeavyHarvester"/>
 		<Order Build="SteelTalonsHeavyHarvester"/>
 		<Order Build="SteelTalonsPitBull"/>
@@ -76,6 +82,7 @@
 		<Order Time="120s" Build="SteelTalonsCommandPost"/>
 		<Order Time="135s" Build="SteelTalonsPowerPlant"/>
 		<Order Time="140s" Build="SteelTalonsArmory"/>
+		<Order Time="168s"/>
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>

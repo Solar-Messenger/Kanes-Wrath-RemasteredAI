@@ -29,10 +29,11 @@
 		<Order Build="ZOCOMAPC"/>
 		<Order Build="ZOCOMAPC"/>
 		<Order Build="ZOCOMAPC"/>
-		<Order Time="60s" Build="ZOCOMCommandPost"/>
-		<Order Time="75s" Build="ZOCOMAirTower"/>
-		<Order Time="85s" Build="ZOCOMPowerPlant"/>
+		<Order Time="60s" Build="ZOCOMRefinery"/>
 		<Order Time="90s" Build="ZOCOMPowerPlant"/>
+		<Order Time="95s" Build="ZOCOMPowerPlant"/>
+		<Order Time="100s" Build="ZOCOMCommandPost"/>
+		<Order Time="115s" Build="ZOCOMAirTower"/>
 		<Order Build="ZOCOMOrca"/>
 		<Order Build="ZOCOMOrca"/>
 		<Order Build="ZOCOMOrca"/>
@@ -41,9 +42,8 @@
 		<Order Build="ZOCOMHammerHead"/>
 		<Order Build="ZOCOMHammerHead"/>
 		<Order Build="ZOCOMHammerHead"/>
-		<Order Time="95s" Build="ZOCOMRefinery"/>
-		<Order Time="125s" Build="ZOCOMWarfactory"/>
-		<Order Time="145s" Build="ZOCOMArmory"/>
+		<Order Time="125s" Build="GDIWarfactory"/>
+		<Order Time="216s"/>
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
@@ -92,8 +92,7 @@
 		<Order Time="95s" Build="ZOCOMWatchTower"/>
 		<Order Time="100s" Build="ZOCOMWarfactory"/>
 		<Order Time="120s" Build="ZOCOMCommandPost"/>
-		<Order Time="135s" Build="ZOCOMMedicalBay"/>
-		<Order Time="145s" Build="ZOCOMArmory"/>
+		<Order Time="290s"/>
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
@@ -142,8 +141,8 @@
 		<Order Time="95s" Build="ZOCOMWatchTower"/>
 		<Order Time="100s" Build="ZOCOMWarfactory"/>
 		<Order Time="120s" Build="ZOCOMCommandPost"/>
-		<Order Time="135s" Build="ZOCOMMedicalBay"/>
-		<Order Time="145s" Build="ZOCOMArmory"/>
+		<Order Time="135s" Build="ZOCOMArmory"/>
+		<Order Time="210s"/>
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>

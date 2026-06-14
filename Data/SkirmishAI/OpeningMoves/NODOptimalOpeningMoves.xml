@@ -30,7 +30,7 @@
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
-	id="NODOptimalStandard"
+	id="NODOptimalCrane"
 	Side="NOD">
 		<Order Time="0s" Build="NODPowerPlant"/>
 		<Order Time="5s" Build="NODHandOfNOD"/>
@@ -57,7 +57,35 @@
 		<Order Time="115s" Build="NODPowerPlant"/>
 		<Order Time="120s" Build="NODOperationsCenter" />
 		<Order Time="135s" Build="NODPowerPlant"/>
-		<Order Time="135s" Build="NODHangar" />
+	</SkirmishOpeningMove>
+	
+	<SkirmishOpeningMove
+	id="NODOptimalStandard"
+	Side="NOD">
+		<Order Time="0s" Build="NODPowerPlant"/>
+		<Order Time="5s" Build="NODHandOfNOD"/>
+		<Order Build="NODSaboteur" />
+		<Order Build="NODSaboteur" />
+		<Order Build="NODMilitantSquad" />
+		<Order Build="NODMilitantSquad" />
+		<Order Build="NODMilitantSquad" />
+		<Order Time="10s" Build="NODRefinery"/>
+		<Order Time="40s" Build="NODDropZone"/>
+		<Order Build="NODHarvester" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODScorpionBuggy" />
+		<Order Build="NODHarvester" />
+		<Order Time="60s" Build="NODRefinery"/>
+		<Order Time="90s" Build="NODPowerPlant"/>
+		<Order Time="95s" Build="NODPowerPlant"/>
+		<Order Time="95s" Build="NODShredderTurretHub"/>
+		<Order Time="100s" Build="NODShredderTurretHub"/>
+		<Order Time="100s" Build="NODDropZone"/>
+		<Order Time="120s" Build="NODPowerPlant"/>
+		<Order Time="125s" Build="NODOperationsCenter" />
+		<Order Time="140s" Build="NODPowerPlant"/>
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>

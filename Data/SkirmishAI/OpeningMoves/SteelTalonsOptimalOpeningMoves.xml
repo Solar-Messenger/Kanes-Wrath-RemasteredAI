@@ -27,7 +27,7 @@
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
-	id="STOptimalStandard"
+	id="STOptimalCrane"
 	Side="SteelTalons">
 		<Order Time="0s" Build="SteelTalonsPowerPlant"/>
 		<Order Time="5s" Build="SteelTalonsBarracks"/>
@@ -53,7 +53,34 @@
 		<Order Time="115s" Build="SteelTalonsPowerPlant"/>
 		<Order Time="120s" Build="SteelTalonsCommandPost"/>
 		<Order Time="135s" Build="SteelTalonsPowerPlant"/>
-		<Order Time="135s" Build="SteelTalonsAirTower"/>
+	</SkirmishOpeningMove>
+	
+	<SkirmishOpeningMove
+	id="STOptimalStandard"
+	Side="SteelTalons">
+		<Order Time="0s" Build="SteelTalonsPowerPlant"/>
+		<Order Time="5s" Build="SteelTalonsBarracks"/>
+		<Order Build="SteelTalonsCombatEngineer"/>
+		<Order Build="SteelTalonsCombatEngineer"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Time="10s" Build="SteelTalonsRefinery"/>
+		<Order Time="40s" Build="SteelTalonsWarfactory"/>
+		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Build="SteelTalonsTitan"/>
+		<Order Build="SteelTalonsTitan"/>
+		<Order Build="SteelTalonsTitan"/>
+		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Time="60s" Build="SteelTalonsRefinery"/>
+		<Order Time="90s" Build="SteelTalonsPowerPlant"/>
+		<Order Time="90s" Build="SteelTalonsWatchTower"/>
+		<Order Time="95s" Build="SteelTalonsPowerPlant"/>
+		<Order Time="95s" Build="SteelTalonsWatchTower"/>
+		<Order Time="100s" Build="SteelTalonsWarfactory"/>
+		<Order Time="120s" Build="SteelTalonsPowerPlant"/>
+		<Order Time="125s" Build="SteelTalonsCommandPost"/>
+		<Order Time="140s" Build="SteelTalonsPowerPlant"/>
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>
