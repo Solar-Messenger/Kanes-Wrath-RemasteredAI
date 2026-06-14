@@ -4,89 +4,6 @@
   <Includes></Includes>
 
 	<AIStrategicStateDefinition
-		  id="T59OptimalEarlyGroundEconomyAttack"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<TimerHeuristic StartTime="90s" EndTime="240s"/>
-			<ProductionHaltHeuristic
-				PenetrabilityWeight="0.7"
-				BalanceOfPowerWeight="0.3">
-				<PenetrabilityHeuristic/>
-				<BalanceOfPowerHeuristic/>
-			</ProductionHaltHeuristic>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="FocusedTarget">
-			<TeamTemplate MinUnits="8" MaxUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="8" MaxUnits="8" UnitName="Traveler59RazorDroneSquad"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-	  id="T59OptimalLateGroundEconomyAttack"
-	  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<TimerHeuristic StartTime="241s" EndTime="-1s" />
-			<ProductionHaltHeuristic
-	            PenetrabilityWeight="0.7"
-	            BalanceOfPowerWeight="0.3">
-				<PenetrabilityHeuristic/>
-				<BalanceOfPowerHeuristic/>
-			</ProductionHaltHeuristic>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="FocusedTarget"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="FocusedTarget">
-			<TeamTemplate MinUnits="8" MaxUnits="8" IncludeKindOf="CAN_ATTACK INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="8" MaxUnits="8" UnitName="Traveler59ShockTrooperSquad"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-	  id="T59OptimalRavagerEconomyAttack"
-	  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<TimerHeuristic StartTime="180s" EndTime="-1s"/>
-			<ProductionHaltHeuristic
-	            PenetrabilityWeight="0.7"
-	            BalanceOfPowerWeight="0.3">
-				<PenetrabilityHeuristic/>
-				<BalanceOfPowerHeuristic/>
-			</ProductionHaltHeuristic>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ResourceSqueezeHeuristic" TargetType="SpreadTarget"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="SpreadTarget">
-			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="Traveler59StalkerSquad"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		  id="T59OptimalAirEconomyAttack"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<TimerHeuristic StartTime="180s" EndTime="-1s"/>
-			<ProductionHaltHeuristic
-	            PenetrabilityWeight="0.7"
-	            BalanceOfPowerWeight="0.3">
-				<PenetrabilityHeuristic/>
-				<BalanceOfPowerHeuristic/>
-			</ProductionHaltHeuristic>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="SpreadTarget"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="SpreadTarget">
-			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY BOMBER_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="Traveler59Stormrider"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
 		  id="T59OptimalSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
@@ -94,7 +11,7 @@
 			<FocusedThresholdHeuristic/>
 			<SiegeThresholdHeuristic SiegeMode="true" Threshold="5.0"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic" TargetType="SiegeTarget"/>
+		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
 			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="Traveler59DevastatorWarship"/>
@@ -103,7 +20,7 @@
 		</Tactic>
 	</AIStrategicStateDefinition>
 
-	<AIStrategicStateDefinition
+	<!--<AIStrategicStateDefinition
 		  id="T59Cultists"
 		  UnitUpgradeModifier="0.0">
 		<Heuristic>
@@ -116,7 +33,7 @@
 				<CreateUnits MinUnits="3" Maxunits="3" UnitName="Traveler59CultistSquad"/>
 			</TeamTemplate>
 		</Tactic>
-	</AIStrategicStateDefinition>
+	</AIStrategicStateDefinition>-->
 	
 	<AIStrategicStateDefinition
     id="T59OptimalMechaHarass"
@@ -125,8 +42,8 @@
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="SecondaryTarget"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="SecondaryTarget">
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureDiversionHeuristic" TargetType="Diversion"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Diversion">
 			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="1" MaxUnits="1" UnitName="Traveler59CustomizableVehicle"/>
 			</TeamTemplate>
@@ -145,7 +62,7 @@
 				<BalanceOfPowerHeuristic/>
 			</ProductionHaltHeuristic>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Opportunity"/>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureOpportunityHeuristic" TargetType="Opportunity"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Opportunity">
 			<TeamTemplate MinUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="Traveler59AnnihilatorTripod"/>
@@ -159,7 +76,7 @@
 		<Heuristic>
 			<ConstantHeuristic Weight="1.0"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirStructureHeuristic" TargetType="BombingAirstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" TargetType="BombingAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
 			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT PRODUCED_AT_HELIPAD" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="Traveler59PlanetaryAssaultCarrier"/>
