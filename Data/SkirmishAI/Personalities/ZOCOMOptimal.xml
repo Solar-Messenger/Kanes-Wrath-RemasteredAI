@@ -33,7 +33,7 @@
 	  StructureSaveChanceEasy="0.0"
 	  StructureSaveChanceMedium="0.25"
 	  StructureSaveChanceHard="0.5"
-	  MinHarvesters="6"
+	  MinHarvesters="4"
 		>
 
 		<Side>ZOCOM</Side>
@@ -160,19 +160,20 @@
 		<States State="ZOCOMUnitPreferencesEasyMid" Difficulty="EASY"/>
 		<States State="ZOCOMUnitPreferencesEasyLate" Difficulty="EASY"/>
 
-		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>	
-		<BudgetStates State="OpeningMoveDefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>	
-		<BudgetStates State="DefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OptimalProductionBudget" Difficulty="HARD BRUTAL"/>
+		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
-		<BudgetStates State="OptimalProductionBudget_EASY" Difficulty="EASY"/>
-		<BudgetStates State="OptimalProductionBudget_MEDIUM" Difficulty="MEDIUM"/>
+		<BudgetStates State="BaseBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="BaseBudget_EASY" Difficulty="EASY"/>
+		
+		<BudgetStates State="DefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
 		<BudgetStates State="OptimalInvestmentPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="InvestmentDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
-		<BudgetStates State="OptimalTechPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechPreferenceByTimeOpeningBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechPreferenceByTimeLateBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechPreferenceByTimeSiegeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
 

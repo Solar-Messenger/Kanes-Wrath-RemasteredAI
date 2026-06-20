@@ -95,7 +95,7 @@
 		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Superweapon" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Expansion" MaxTeamsPerTarget="1"  UpdateTime="10s"/>
+		<TacticalTarget TacticalAITarget="Expansion" MaxTeamsPerTarget="1"  UpdateTime="5s"/>
 		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Bridge" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
@@ -131,7 +131,7 @@
 		<States State="Garrison_EASY" Difficulty="EASY"/>
 		<States State="STAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="STAntiGarrison_EASY" Difficulty="EASY"/>
-		<States State="GDIExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="STExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="STCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="STSuperweapon" Difficulty="BRUTAL"/>
@@ -149,18 +149,20 @@
 		<States State="STUnitPreferencesEasyLate" Difficulty="EASY"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OpeningMoveDefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="DefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OverlordProductionBudget" Difficulty="HARD BRUTAL"/>
 		
-		<BudgetStates State="OverlordProductionBudget_EASY" Difficulty="EASY"/>
-		<BudgetStates State="OverlordProductionBudget_MEDIUM" Difficulty="MEDIUM"/>
+		<BudgetStates State="BaseBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="OverlordBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="BaseBudget_EASY" Difficulty="EASY"/>
+		
+		<BudgetStates State="DefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
 		<BudgetStates State="OverlordInvestmentPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="InvestmentDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
-		<BudgetStates State="OverlordTechPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechPreferenceByTimeOpeningBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechPreferenceByTimeLateBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechPreferenceByTimeSiegeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
 

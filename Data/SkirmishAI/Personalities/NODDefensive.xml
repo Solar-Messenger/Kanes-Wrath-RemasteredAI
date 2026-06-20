@@ -146,19 +146,21 @@
 		<States State="NODUnitPreferencesEasyMid" Difficulty="EASY"/>
 		<States State="NODUnitPreferencesEasyLate" Difficulty="EASY"/>
 
-		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OpeningMoveDefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="DefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="DefensiveProductionBudget" Difficulty="HARD BRUTAL"/>
+		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>	
 		
-		<BudgetStates State="DefensiveProductionBudget_EASY" Difficulty="EASY"/>
-		<BudgetStates State="DefensiveProductionBudget_MEDIUM" Difficulty="MEDIUM"/>
+		<BudgetStates State="BaseBudget" Difficulty="MEDIUM HARD BRUTAL"/>	
+		<BudgetStates State="DefensiveTurtleBudget" Difficulty="MEDIUM HARD BRUTAL"/>	
+		<BudgetStates State="BaseBudget_EASY" Difficulty="EASY"/>	
+		
+		<BudgetStates State="DefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
 		<BudgetStates State="DefensiveInvestmentPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="InvestmentDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
-		<BudgetStates State="DefensiveTechPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechPreferenceByTimeOpeningBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechPreferenceByTimeLateBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechPreferenceByTimeSiegeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
 

@@ -33,7 +33,7 @@
 	  StructureSaveChanceEasy="0.0"
 	  StructureSaveChanceMedium="0.25"
 	  StructureSaveChanceHard="0.5"
-	  MinHarvesters="6"
+	  MinHarvesters="4"
 		>
 
 		<Side>GDI</Side>
@@ -107,6 +107,7 @@
 		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Superweapon" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Expansion" MaxTeamsPerTarget="1" UpdateTime="5s"/>
+		<TacticalTarget TacticalAITarget="ExpansionDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Bridge" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
@@ -151,6 +152,7 @@
 		<States State="GDICommando" Difficulty="HARD BRUTAL"/>
 		<States State="GDIExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="ExpansionDefense" Difficulty="HARD BRUTAL"/>
 		<States State="GDIBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GDIHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -164,19 +166,20 @@
 		<States State="GDIUnitPreferencesEasyMid" Difficulty="EASY"/>
 		<States State="GDIUnitPreferencesEasyLate" Difficulty="EASY"/>
 		
-		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>	
-		<BudgetStates State="OpeningMoveDefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>	
-		<BudgetStates State="DefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="OptimalProductionBudget" Difficulty="HARD BRUTAL"/>
+		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
-		<BudgetStates State="OptimalProductionBudget_EASY" Difficulty="EASY"/>
-		<BudgetStates State="OptimalProductionBudget_MEDIUM" Difficulty="MEDIUM"/>
+		<BudgetStates State="BaseBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="BaseBudget_EASY" Difficulty="EASY"/>
+		
+		<BudgetStates State="DefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
 		<BudgetStates State="OptimalInvestmentPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="InvestmentDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
-		<BudgetStates State="OptimalTechPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechPreferenceByTimeOpeningBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechPreferenceByTimeLateBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechPreferenceByTimeSiegeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
 	
