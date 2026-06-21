@@ -45,13 +45,15 @@
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
 
-		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="2" />
+		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1" />
 		
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="2" />
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1" />
 		
-		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="2" />
+		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1" />
 		
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1" />
@@ -108,14 +110,15 @@
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="GuerillaRefineryAttack" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="GuerillaProductionAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="GuerillaEconomyAttack" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="GuerillaPowerAttack" Difficulty="HARD BRUTAL" />
 		<States State="GuerillaOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="ZOCOMGuerillaSiege" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="ZOCOMGuerillaOrcaEconomyAttack" Difficulty="BRUTAL" />
+		
 		<States State="GuerillaAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMGuerillaBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
+		
 		<States State="ZOCOMGuerillaEngineer" Difficulty="MEDIUM HARD BRUTAL" />
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>

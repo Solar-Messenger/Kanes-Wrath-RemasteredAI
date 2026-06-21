@@ -45,13 +45,15 @@
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
 		
-		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="2" />
+		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1" />
 		
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="2" />
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1" />
 		
-		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="2" />
+		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1" />
 		
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1" />
@@ -111,15 +113,16 @@
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="GuerillaRefineryAttack" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="GuerillaProductionAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="GuerillaEconomyAttack" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="GuerillaPowerAttack" Difficulty="HARD BRUTAL" />
 		<States State="GuerillaOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="T59GuerillaSiege" Difficulty="MEDIUM HARD BRUTAL" />
 		<!--<States State="T59GuerillaRavagerEconomyAttack" Difficulty="BRUTAL" />-->
 		<States State="T59GuerillaMechaHarass" Difficulty="HARD BRUTAL" />
+		
 		<States State="GuerillaAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="T59GuerillaBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
+		
 		<States State="T59GuerillaEngineer" Difficulty="MEDIUM HARD BRUTAL" />
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
