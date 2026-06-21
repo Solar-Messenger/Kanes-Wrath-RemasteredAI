@@ -45,18 +45,6 @@
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
 
-		<!--<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>-->
-
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="2"/>
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="2"/>
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>

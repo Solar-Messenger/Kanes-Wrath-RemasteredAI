@@ -43,22 +43,6 @@
 		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
-
-		<!--<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="SpreadTarget" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>-->
 		
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="2" />
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1" />
