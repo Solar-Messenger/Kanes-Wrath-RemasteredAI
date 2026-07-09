@@ -42,11 +42,11 @@
 
 		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
-		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
-		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
+		<ResourceMultiplierCheat Percentage="175%" Difficulty="HARD"/>
+		<ResourceMultiplierCheat Percentage="200%" Difficulty="BRUTAL"/>
 		
-		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		
 		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
@@ -90,7 +90,7 @@
 		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Superweapon" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Expansion" MaxTeamsPerTarget="1" UpdateTime="5s"/>
+		<TacticalTarget TacticalAITarget="Expansion" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Bridge" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
@@ -140,12 +140,11 @@
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="MOKOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="MOKDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKOptimalOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="MOKCriticalDefensiveSpamUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		
-		<States State="MOKUnitPreferencesEasyEarly" Difficulty="EASY"/>
-		<States State="MOKUnitPreferencesEasyMid" Difficulty="EASY"/>
-		<States State="MOKUnitPreferencesEasyLate" Difficulty="EASY"/>
+		<States State="MOKUnitPreferences_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
@@ -155,13 +154,11 @@
 		<BudgetStates State="DefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
 		<BudgetStates State="OptimalInvestmentPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="InvestmentDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="TechPreferenceByTimeOpeningBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechPreferenceByTimeLateBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechPreferenceByTimeSiegeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
 
 		<!--<UnitOverride UnitName="MarkedOfKaneMetaUnit" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>-->

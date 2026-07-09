@@ -42,8 +42,8 @@
 
 		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
-		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
-		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
+		<ResourceMultiplierCheat Percentage="175%" Difficulty="HARD"/>
+		<ResourceMultiplierCheat Percentage="200%" Difficulty="BRUTAL"/>
 		
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
@@ -82,7 +82,7 @@
 		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Superweapon" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Expansion" MaxTeamsPerTarget="1" UpdateTime="5s"/>
+		<TacticalTarget TacticalAITarget="Expansion" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Bridge" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
@@ -128,12 +128,11 @@
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="HARD BRUTAL"/>
 
-		<States State="BHOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="BHDefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-
-		<States State="BHUnitPreferencesEasyEarly" Difficulty="EASY"/>
-		<States State="BHUnitPreferencesEasyMid" Difficulty="EASY"/>
-		<States State="BHUnitPreferencesEasyLate" Difficulty="EASY"/>
+		<States State="BHBaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BHOffensiveRushUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="BHCriticalDefensiveSpamUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		
+		<States State="BHUnitPreferences_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
@@ -144,13 +143,11 @@
 		<BudgetStates State="DefenseBudget" Difficulty="HARD BRUTAL"/>
 		
 		<BudgetStates State="OffensiveInvestmentPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="InvestmentDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="TechPreferenceByTimeOpeningBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechPreferenceByTimeLateBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechPreferenceByTimeSiegeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
 
 		<!--<UnitOverride UnitName="BlackHandMetaUnit" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>-->

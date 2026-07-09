@@ -42,8 +42,8 @@
 
 		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
-		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
-		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
+		<ResourceMultiplierCheat Percentage="175%" Difficulty="HARD"/>
+		<ResourceMultiplierCheat Percentage="200%" Difficulty="BRUTAL"/>
 		
 		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="2" />
 		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1" />
@@ -80,7 +80,7 @@
 		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Superweapon" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Expansion" MaxTeamsPerTarget="1" UpdateTime="10s"/>
+		<TacticalTarget TacticalAITarget="Expansion" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Bridge" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
@@ -120,12 +120,11 @@
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="T59OffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="T59DefensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59BaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59DefensiveTurtleUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59CriticalDefensiveSpamUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
-		<States State="T59UnitPreferencesEasyEarly" Difficulty="EASY"/>
-		<States State="T59UnitPreferencesEasyMid" Difficulty="EASY"/>
-		<States State="T59UnitPreferencesEasyLate" Difficulty="EASY"/>
+		<States State="T59UnitPreferences_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>	
 		
@@ -136,13 +135,11 @@
 		<BudgetStates State="DefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
 		<BudgetStates State="DefensiveInvestmentPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="InvestmentDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="TechPreferenceByTimeOpeningBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechPreferenceByTimeLateBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechPreferenceByTimeSiegeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
 
 		<!--<UnitOverride UnitName="Traveler59EradicatorHexapod" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>-->
