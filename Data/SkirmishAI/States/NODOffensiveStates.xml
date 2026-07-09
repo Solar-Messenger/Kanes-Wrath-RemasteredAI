@@ -7,13 +7,9 @@
 		  id="NODOffensiveStealthTankEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<!--<ProductionHaltHeuristic
-				PenetrabilityWeight="0.5"
-				BalanceOfPowerWeight="0.5">
-				<PenetrabilityHeuristic/>
-				<BalanceOfPowerHeuristic/>
-			</ProductionHaltHeuristic>-->
 			<IntervalHeuristic IntervalTime="420s" ActiveTime="180s"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
+			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="Unit"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Unit">
@@ -27,13 +23,8 @@
 		  id="NODOffensiveFlameTankAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<!--<ProductionHaltHeuristic
-				PenetrabilityWeight="0.5"
-				BalanceOfPowerWeight="0.5">
-				<PenetrabilityHeuristic/>
-				<BalanceOfPowerHeuristic/>
-			</ProductionHaltHeuristic>-->
 			<IntervalHeuristic IntervalTime="420s" ActiveTime="180s"/>
+			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundRefineryHeuristic" TargetType="Structure"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Structure">
@@ -63,14 +54,67 @@
 		id="NODOffensiveBombingRuns"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
-		<ConstantHeuristic Weight="1.0"/>
+		<TimerHeuristic StartTime="420s" EndTime="-1s"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" TargetType="BombingAirstrike"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
-      <TeamTemplate MinUnits="2" MaxUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
-        <CreateUnits MinUnits="2" MaxUnits="4" UnitName="NODVertigo"/>
+      <TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
+        <CreateUnits MinUnits="2" MaxUnits="2" UnitName="NODVertigo"/>
       </TeamTemplate>
     </Tactic>
   </AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+	id="NODOffensiveRushUnitPreferences"
+	UnitUpgradeMultiplier="1.0"
+	UnitBuilderSimpleUnitCap="100"
+	UnitBuilderCostEffectivenessWeight="1.0"
+	UnitBuilderOverallOffensivePreference="100%"
+	UnitBuilderOverallDefensivePreference="100%"
+	UnitBuilderEnemyTowerWeight="100%">
+		<Heuristic>
+			<ConstantHeuristic Weight="997.0"/>
+			<TimerHeuristic StartTime="0s" EndTime="420s"/>
+		</Heuristic>
+		<UnitModifierByName UnitName="NODMilitantSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="20%"/>
+		<UnitModifierByName UnitName="NODMilitantRocketSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="NODSaboteur" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODFanaticSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODBlackHandSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODShadowSquad" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
+
+		<UnitModifierByName UnitName="NODAttackBike" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODScorpionBuggy" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODRaiderTank" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODFlameTank" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="20%"/>
+		<UnitModifierByName UnitName="NODBunkerTruck" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODBeamCannon" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODStealthTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODMobileArtillery" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODAvatar" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODMetaUnit" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
+
+		<UnitModifierByName UnitName="NODVenom" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODVertigo" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		
+		<UnitModifierByName UnitName="NODRefinery" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODEmissary" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
+
+		<UnitModifierByName UnitName="NODHandOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="80%"/>
+		<UnitModifierByName UnitName="NODDropZone" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="NODHangar" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="50%"/>
+		
+		<UnitModifierByName UnitName="NODOperationsCenter" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODSecretShrine" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="NODTechAssemblyPlant" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="MG_NOD_WarmechFacility" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
+		<UnitModifierByName UnitName="NODTiberiumLiquidationFacility" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="400%"/>
+		<UnitModifierByName UnitName="NODTempleOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="NODShredderTurretHub" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODLaserCannon" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODRocketBunker" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODObelisk" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+	</AIStrategicStateDefinition>
 	
 </AssetDeclaration>

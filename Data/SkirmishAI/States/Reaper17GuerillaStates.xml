@@ -16,7 +16,7 @@
 			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits UnitName="Reaper17AnnihilatorTripod"/>
 			</TeamTemplate>
-			<TeamTemplate MinUnits="1" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON UNIQUE_UNIT AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="true"/>
+			<TeamTemplate MinUnits="1" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON UNIQUE_UNIT AIRCRAFT" AlwaysRelease="false" AutoReinforce="True" AlwaysRecruit="true"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -59,7 +59,7 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Engineer">
-			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits UnitName="AlienAssimilator"/>
 			</TeamTemplate>
 		</Tactic>
