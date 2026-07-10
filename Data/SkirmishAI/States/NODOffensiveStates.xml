@@ -24,6 +24,7 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<IntervalHeuristic IntervalTime="420s" ActiveTime="180s"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundRefineryHeuristic" TargetType="Structure"/>
@@ -40,7 +41,7 @@
     <Heuristic>
 		<PathToTargetHeuristic PathExists="true"/>
 		<FocusedThresholdHeuristic />
-		<SiegeThresholdHeuristic SiegeMode="true" Threshold="6.0"/>
+		<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
     <Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">

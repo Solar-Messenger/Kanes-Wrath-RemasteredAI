@@ -7,6 +7,7 @@
 		id="T59OverlordSiege"
 		UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<IntervalHeuristic IntervalTime="420s" ActiveTime="180s"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<FocusedThresholdHeuristic/>
 		</Heuristic>
@@ -15,7 +16,7 @@
 			<TeamTemplate MinUnits="2" MaxUnits="2" includeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="Traveler59DevastatorWarship"/>
 			</TeamTemplate>
-			<TeamTemplate MinUnits="2" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AutoReinforce="True"AlwaysRecruit="true"/>
+			<TeamTemplate MinUnits="2" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AutoReinforce="True" AlwaysRecruit="true"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -38,7 +39,7 @@
 	UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
-			<LateGameHeuristic/>
+			<!--<LateGameHeuristic/>-->
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureOpportunityHeuristic" TargetType="Opportunity"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Opportunity">

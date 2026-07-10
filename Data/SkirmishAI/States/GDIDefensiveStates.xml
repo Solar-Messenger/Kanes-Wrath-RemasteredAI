@@ -10,7 +10,7 @@
 			<PathToTargetHeuristic PathExists="true"/>
 			<LateGameHeuristic/>
 			<FocusedThresholdHeuristic/>
-			<SiegeThresholdHeuristic SiegeMode="true" Threshold="5.0"/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
@@ -41,7 +41,7 @@
     UnitUpgradeMultiplier="0.0">
     <Heuristic>
 		<PathToTargetHeuristic PathExists="true"/>
-		<SiegeThresholdHeuristic SiegeMode="false" Threshold="3.0"/>
+		<SiegeThresholdHeuristic SiegeMode="false" Threshold="2.0"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToGroundStructureDiversionHeuristic" TargetType="Diversion"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Diversion">

@@ -7,6 +7,7 @@
 		id="MOKOverlordSiege"
 		UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<IntervalHeuristic IntervalTime="420s" ActiveTime="180s"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<FocusedThresholdHeuristic/>
 		</Heuristic>
@@ -39,7 +40,7 @@
 	UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
-			<LateGameHeuristic/>
+			<!--<LateGameHeuristic/>-->
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureOpportunityHeuristic" TargetType="Opportunity"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Opportunity">
