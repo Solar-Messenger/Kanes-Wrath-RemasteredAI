@@ -51,6 +51,9 @@
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1" />
 		
+		<TacticalTarget TacticalAITarget="Counterattack" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="Counterattack" MaxTeamsPerTarget="1" />
+		
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
@@ -98,7 +101,8 @@
 		<States State="BHOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
-		<States State="DefensiveFinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="DefensiveCounterAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="DefensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="DefensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHDefensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="BHDefensiveArtilleryBombing" Difficulty="MEDIUM HARD BRUTAL"/>

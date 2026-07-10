@@ -45,15 +45,16 @@
 		<ResourceMultiplierCheat Percentage="175%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="BRUTAL"/>
 		
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
-		
 		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
 		
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
+		
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
@@ -109,7 +110,8 @@
 		<States State="T59OpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="OptimalDirectAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OptimalDirectAttack_S1" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OptimalDirectAttack_S2" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="OptimalGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="OptimalOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="T59OptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>

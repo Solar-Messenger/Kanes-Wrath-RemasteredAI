@@ -51,6 +51,9 @@
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1" />
 		
+		<TacticalTarget TacticalAITarget="Counterattack" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="Counterattack" MaxTeamsPerTarget="1" />
+		
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
@@ -99,7 +102,8 @@
 		<States State="ZOCOMOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="DefensiveFinalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="DefensiveCounterAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="DefensiveOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="ZOCOMDefensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="DefensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="DefensiveReloadAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
