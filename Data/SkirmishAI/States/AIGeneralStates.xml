@@ -12,11 +12,11 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="2.0"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructurePrimaryHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="5" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="true" AutoReinforce="true" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="5" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AutoReinforce="true" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 	
@@ -25,7 +25,7 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="2.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructurePrimaryHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
@@ -42,7 +42,7 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="Unit"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Unit">
-			<TeamTemplate MinUnits="4" MaxUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT SIEGE_WEAPON" AlwaysRelease="true" AutoReinforce="false" AlwaysRecruit="true"/>
+			<TeamTemplate MinUnits="4" MaxUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT SIEGE_WEAPON" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="true"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 	
@@ -188,8 +188,9 @@
 	  id="DefensiveCounterAttack"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<CounterattackHeuristic Threshold="1.5"/>
+			<CounterattackHeuristic Threshold="2.0"/>
 			<PathToTargetHeuristic PathExists="true"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureCounterattackHeuristic" TargetType="Counterattack"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Counterattack">
