@@ -26,6 +26,7 @@
 		<Heuristic>
 			<IntervalHeuristic IntervalTime="420s" ActiveTime="180s"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
+			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundRefineryOpportunityHeuristic" TargetType="Opportunity"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Opportunity">
