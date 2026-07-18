@@ -7,21 +7,21 @@
 		Side="NOD"
 		StructureRebuildPriorityModifier="100"
 		DefaultUnitPriority="100.0"
-		FortressRebuildPriority="1950.0"
+		FortressRebuildPriority="999.0"
 		LowUnitPriorityModifier="999.0"
 		EconomyBuilderMinFarmsOwned="3"
 		EconomyBuilderMinMoney="100"
-		EconomyBuilderPerFarmValue="40"
-		EconomyBuilderPerSecPriorityIncreaseBase="40"
-		EconomyBuilderMinTimeBetweenFarms_Rush="30"
+		EconomyBuilderPerFarmValue="50"
+		EconomyBuilderPerSecPriorityIncreaseBase="2.0"
+		EconomyBuilderMinTimeBetweenFarms_Rush="60"
 		UpgradeSciencePriorityNormalLow="100.0"
-		UpgradeSciencePriorityNormalHigh="200.0"
-		UpgradeSciencePriorityImportantLow="999.0"
-		UpgradeSciencePriorityImportantHigh="999.0"
-		UnitUpgradePriorityLow="100.0"
-		UnitUpgradePriorityHigh="200.0"
+		UpgradeSciencePriorityNormalHigh="150.0"
+		UpgradeSciencePriorityImportantLow="200.0"
+		UpgradeSciencePriorityImportantHigh="250.0"
+		UnitUpgradePriorityLow="300.0"
+		UnitUpgradePriorityHigh="600.0"
 		MaxThreatForOpportunityTargets="10.0"
-		ValueToSetForMaxOnDefenseTeam="50"
+		ValueToSetForMaxOnDefenseTeam="10"
 		CombatChainSearchDepthForTeamRecruits_AttackTeams="4"
 		CombatChainSearchDepthForTeamRecruits_DefenseTeams="7"
 		CombatChainSearchDepthForTeamRecruits_ExploreTeams="7"
@@ -36,8 +36,6 @@
     <TechStructure>NODTechAssemblyPlant</TechStructure>
     <TechStructure>NODTiberiumLiquidationFacility</TechStructure>
     <TechStructure>MG_NOD_WarmechFacility</TechStructure>
-    <TechStructure>NODDisruptionTower</TechStructure>
-    <TechStructure>NODPropagandaTower</TechStructure>
     <TechStructure>NODTempleOfNOD</TechStructure>
 
   </ArmyDefinition>
