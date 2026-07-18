@@ -13,10 +13,9 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="NODMobileArtillery"/>
+			<TeamTemplate MinUnits="3" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="3" MaxUnits="3" UnitName="NODMobileArtillery"/>
 			</TeamTemplate>
-			<TeamTemplate MinUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON RELOAD_AIRCRAFT BOMBER_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AutoReinforce="True" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -27,30 +26,10 @@
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureDiversionHeuristic" TargetType="Diversion"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Diversion">
-			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="1" MaxUnits="1" UnitName="NODShadowSquad"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-	  id="NODOptimalBaseCrack"
-	  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<PathToTargetHeuristic PathExists="true"/>
-			<ProductionHaltHeuristic
-				PenetrabilityWeight="0.25"
-				BalanceOfPowerWeight="0.75">
-				<PenetrabilityHeuristic/>
-				<BalanceOfPowerHeuristic/>
-			</ProductionHaltHeuristic>
-		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureOpportunityHeuristic" TargetType="Opportunity"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Opportunity">
-			<TeamTemplate MinUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="NODAvatar"/>
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="1" MaxUnits="1" UnitName="NODShadowSquad"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -60,6 +39,7 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="240s" EndTime="-1s"/>
+			<!--<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0" />-->
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" TargetType="BombingAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
@@ -102,6 +82,7 @@
 		<UnitModifierByName UnitName="NODFanaticSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
 		<UnitModifierByName UnitName="NODBlackHandSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
 		<UnitModifierByName UnitName="NODShadowSquad" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODCommando" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
 
 		<UnitModifierByName UnitName="NODAttackBike" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="80%"/>
 		<UnitModifierByName UnitName="NODScorpionBuggy" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
@@ -114,7 +95,7 @@
 		<UnitModifierByName UnitName="NODAvatar" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="120%"/>
 		<UnitModifierByName UnitName="NODMetaUnit" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
 
-		<UnitModifierByName UnitName="NODVenom" UnitPreferenceOffensiveModifier="75%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODVenom" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="50%"/>
 		<UnitModifierByName UnitName="NODVertigo" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
 		
 		<UnitModifierByName UnitName="NODRefinery" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
