@@ -82,7 +82,6 @@
 		<Order Time="120s" Build="SteelTalonsCommandPost"/>
 		<Order Time="135s" Build="SteelTalonsPowerPlant"/>
 		<Order Time="140s" Build="SteelTalonsArmory"/>
-		<Order Time="168s"/>
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>

@@ -43,7 +43,6 @@
 		<Order Build="SteelTalonsHammerHead"/>
 		<Order Build="SteelTalonsHammerHead"/>
 		<Order Time="125s" Build="SteelTalonsWarfactory"/>
-		<Order Time="216s"/>
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
@@ -89,7 +88,6 @@
 		<Order Time="100s" Build="SteelTalonsWarfactory"/>
 		<Order Time="120s" Build="SteelTalonsCommandPost"/>
 		<Order Time="135s" Build="ZOCOMArmory"/>
-		<Order Time="210s"/>
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>

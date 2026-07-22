@@ -43,7 +43,6 @@
 		<Order Build="GDIHammerHead"/>
 		<Order Build="GDIHammerHead"/>
 		<Order Time="125s" Build="GDIWarfactory"/>
-		<Order Time="216s"/>
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
@@ -92,7 +91,6 @@
 		<Order Time="95s" Build="GDIWatchTower"/>
 		<Order Time="100s" Build="GDIWarfactory"/>
 		<Order Time="120s" Build="GDICommandPost"/>
-		<Order Time="290s"/>
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
@@ -142,7 +140,6 @@
 		<Order Time="100s" Build="GDIWarfactory"/>
 		<Order Time="120s" Build="GDICommandPost"/>
 		<Order Time="135s" Build="GDIArmory"/>
-		<Order Time="210s"/>
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>

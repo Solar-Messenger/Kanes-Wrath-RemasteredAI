@@ -3,6 +3,8 @@
   <Tags></Tags>
   <Includes>
   </Includes>
+	
+	<!--Remove the end timer as it delays the AI from doing anything else-->
 
 	<SkirmishOpeningMove
 		id="ZOCOMGuerillaAirAPCSpam"
@@ -43,7 +45,6 @@
 		<Order Build="ZOCOMHammerHead"/>
 		<Order Build="ZOCOMHammerHead"/>
 		<Order Time="125s" Build="GDIWarfactory"/>
-		<Order Time="216s"/>
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
@@ -92,7 +93,6 @@
 		<Order Time="95s" Build="ZOCOMWatchTower"/>
 		<Order Time="100s" Build="ZOCOMWarfactory"/>
 		<Order Time="120s" Build="ZOCOMCommandPost"/>
-		<Order Time="290s"/>
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
@@ -142,7 +142,6 @@
 		<Order Time="100s" Build="ZOCOMWarfactory"/>
 		<Order Time="120s" Build="ZOCOMCommandPost"/>
 		<Order Time="135s" Build="ZOCOMArmory"/>
-		<Order Time="210s"/>
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>

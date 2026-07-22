@@ -86,7 +86,6 @@
 		<Order Time="120s" Build="ZOCOMCommandPost"/>
 		<Order Time="135s" Build="ZOCOMPowerPlant"/>
 		<Order Time="140s" Build="ZOCOMArmory"/>
-		<Order Time="168s"/>
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>

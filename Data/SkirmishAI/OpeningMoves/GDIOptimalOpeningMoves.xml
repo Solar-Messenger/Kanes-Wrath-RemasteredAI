@@ -61,6 +61,7 @@
 		<Order Time="115s" Build="GDIPowerPlant"/>
 		<Order Time="120s" Build="GDICommandPost"/>
 		<Order Time="135s" Build="GDIPowerPlant"/>
+		<Order Time="140s" Account="TECHNOLOGY" Deposit="2000"/>
 	</SkirmishOpeningMove>
 	
 	<SkirmishOpeningMove
@@ -90,6 +91,37 @@
 		<Order Time="120s" Build="GDIPowerPlant"/>
 		<Order Time="125s" Build="GDICommandPost"/>
 		<Order Time="140s" Build="GDIPowerPlant"/>
+		<Order Time="145s" Account="TECHNOLOGY" Deposit="2000"/>
 	</SkirmishOpeningMove>
+	
+	<!--<SkirmishOpeningMove
+	id="GDIOptimalStandard"
+	Side="GDI">
+		<Order Time="0s" Build="GDIPowerPlant" Account="INVESTMENT" Deposit="600"/>
+		<Order Time="5s" Build="GDIBarracks" Account="INVESTMENT" Deposit="600"/>
+		<Order Build="GDIEngineer" Account="PRODUCTION" Deposit="500"/>
+		<Order Build="GDIEngineer" Account="PRODUCTION" Deposit="500"/>
+		<Order Build="GDIRifleSoldierSquad"/>
+		<Order Build="GDIRifleSoldierSquad"/>
+		<Order Build="GDIRifleSoldierSquad"/>
+		<Order Time="10s" Build="GDIRefinery" Account="INVESTMENT" Deposit="3000"/>
+		<Order Time="40s" Build="GDIWarfactory" Account="INVESTMENT" Deposit="2000"/>
+		<Order Build="GDIHarvester" Account="PRODUCTION" Deposit="1400"/>
+		<Order Build="GDIAPC" Account="PRODUCTION" Deposit="800"/>
+		<Order Build="GDIAPC" Account="PRODUCTION" Deposit="800"/>
+		<Order Build="GDIAPC" Account="PRODUCTION" Deposit="800"/>
+		<Order Build="GDIAPC" Account="PRODUCTION" Deposit="800"/>
+		<Order Build="GDIHarvester" Account="PRODUCTION" Deposit="1400"/>
+		<Order Time="60s" Build="GDIRefinery" Account="INVESTMENT" Deposit="3000"/>
+		<Order Time="90s" Build="GDIPowerPlant" Account="INVESTMENT" Deposit="600"/>
+		<Order Time="90s" Build="GDIWatchTower" Account="DEFENSE" Deposit="600"/>
+		<Order Time="95s" Build="GDIPowerPlant" Account="INVESTMENT" Deposit="600"/>
+		<Order Time="95s" Build="GDIWatchTower" Account="DEFENSE" Deposit="600"/>
+		<Order Time="100s" Build="GDIWarfactory" Account="INVESTMENT" Deposit="2000"/>
+		<Order Time="120s" Build="GDIPowerPlant" Account="INVESTMENT" Deposit="600"/>
+		<Order Time="125s" Build="GDICommandPost" Account="TECHNOLOGY" Deposit="1500"/>
+		<Order Time="140s" Build="GDIPowerPlant" Account="INVESTMENT" Deposit="600"/>
+		<Order Time="145s" Build="GDICommandPost" Account="TECHNOLOGY" Deposit="2000"/>
+	</SkirmishOpeningMove>-->
 
 </AssetDeclaration>

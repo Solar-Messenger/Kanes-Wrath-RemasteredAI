@@ -83,7 +83,6 @@
 		<Order Time="120s" Build="GDICommandPost"/>
 		<Order Time="135s" Build="GDIPowerPlant"/>
 		<Order Time="140s" Build="GDIArmory"/>
-		<Order Time="168s"/>
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
@@ -129,7 +128,6 @@
 		<Order Time="100s" Build="GDIWarfactory"/>
 		<Order Time="120s" Build="GDICommandPost"/>
 		<Order Time="135s" Build="GDIPowerPlant"/>
-		<Order Time="248s"/>
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>

@@ -73,7 +73,7 @@
 		<Order Time="100s" Build="NODDropZone" />
 		<Order Time="120s" Build="NODOperationsCenter" />
 		<Order Time="135s" Build="NODPowerPlant"/>
-		<Order Time="140s" Build="NODTechAssemblyPlant"/>
+		<!--<Order Time="140s" Build="NODTechAssemblyPlant"/>-->
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
@@ -121,7 +121,7 @@
 		<Order Time="100s" Build="NODDropZone" />
 		<Order Time="120s" Build="NODOperationsCenter" />
 		<Order Time="135s" Build="NODPowerPlant"/>
-		<Order Time="140s" Build="NODTechAssemblyPlant"/>
+		<!--<Order Time="140s" Build="NODTechAssemblyPlant"/>-->
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>
