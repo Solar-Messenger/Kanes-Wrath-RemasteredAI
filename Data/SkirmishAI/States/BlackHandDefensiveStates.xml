@@ -24,7 +24,6 @@
 	  id="BHDefensiveArtilleryBombing"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<!--<ConstantHeuristic Weight="1.0"/>-->
 			<PathToTargetHeuristic PathExists="true"/>
 			<LateGameHeuristic/>
 			<FocusedThresholdHeuristic/>

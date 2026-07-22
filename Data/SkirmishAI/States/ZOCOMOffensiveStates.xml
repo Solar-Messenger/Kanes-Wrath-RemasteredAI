@@ -7,7 +7,6 @@
 	  id="ZOCOMOffensiveAirEconomyAttack"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<!--<IntervalHeuristic IntervalTime="420s" ActiveTime="180s"/>-->
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>

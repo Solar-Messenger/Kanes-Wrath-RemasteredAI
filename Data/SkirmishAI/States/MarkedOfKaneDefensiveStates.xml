@@ -24,7 +24,6 @@
     id="MOKDefensiveBombingRuns"
     UnitUpgradeMultiplier="0.0">
     <Heuristic>
-		<!--<ConstantHeuristic Weight="1.0"/>-->
 		<TimerHeuristic StartTime="90s" EndTime="-1s"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" TargetType="BombingAirstrike"/>

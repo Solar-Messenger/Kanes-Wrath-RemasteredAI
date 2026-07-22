@@ -7,7 +7,6 @@
 		id="AlienOverlordSiege"
 		UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<!--<IntervalHeuristic IntervalTime="420s" ActiveTime="180s"/>-->
 			<PathToTargetHeuristic PathExists="true"/>
 			<FocusedThresholdHeuristic/>
 		</Heuristic>
@@ -23,7 +22,6 @@
 		  id="AlienOverlordBombingRuns"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<!--<ConstantHeuristic Weight="1.0"/>-->
 		<TimerHeuristic StartTime="240s" EndTime="-1s"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" TargetType="BombingAirstrike"/>

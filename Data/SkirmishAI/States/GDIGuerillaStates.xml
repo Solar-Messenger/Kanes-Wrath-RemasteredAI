@@ -38,7 +38,6 @@
 		id="GDIGuerillaOrcaEconomyAttack"
 		UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<!--<ConstantHeuristic Weight="1.0"/>-->
 			<TimerHeuristic StartTime="60s" EndTime="-1s"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterAirstrikeHeuristic" TargetType="Airstrike"/>

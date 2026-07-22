@@ -39,7 +39,6 @@
 		  id="AlienOffensiveBombingRuns"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<!--<ConstantHeuristic Weight="1.0"/>-->
 			<TimerHeuristic StartTime="420s" EndTime="-1s"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" TargetType="BombingAirstrike"/>

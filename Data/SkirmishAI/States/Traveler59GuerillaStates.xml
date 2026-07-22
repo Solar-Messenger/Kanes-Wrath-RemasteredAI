@@ -19,20 +19,6 @@
 		</Tactic>
 	</AIStrategicStateDefinition>
 
-	<!--<AIStrategicStateDefinition
-	id="T59GuerillaRavagerEconomyAttack"
-	UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundRefineryHeuristic" TargetType="Opportunity"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Opportunity">
-			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="4" UnitName="Traveler59StalkerSquad"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>-->
-
 	<AIStrategicStateDefinition
     id="T59GuerillaMechaHarass"
     UnitUpgradeMultiplier="0.0">

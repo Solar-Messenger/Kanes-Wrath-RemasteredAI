@@ -7,7 +7,6 @@
 	  id="GDIOffensiveAirEconomyAttack"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<!--<IntervalHeuristic IntervalTime="420s" ActiveTime="180s"/>-->
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
@@ -39,7 +38,6 @@
 		  id="GDIOffensiveBombingRuns"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<!--<ConstantHeuristic Weight="1.0"/>-->
 			<TimerHeuristic StartTime="420s" EndTime="-1s"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" TargetType="BombingAirstrike"/>
