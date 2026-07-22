@@ -34,7 +34,7 @@
 		<Order Time="135s" Build="AlienPowerProjector"/>
 		<Order Time="140s" Build="AlienWarpBeacon"/>
 		<Order Time="150s" Build="AlienReactor"/>
-		<Order Time="190s" Build="MG_Alien_Hive"/>
+		<!--<Order Time="190s" Build="MG_Alien_Hive"/>-->
 		<Order Time="190s" Build="AlienRiftGenerator"/>
 	</SkirmishOpeningMove>
 

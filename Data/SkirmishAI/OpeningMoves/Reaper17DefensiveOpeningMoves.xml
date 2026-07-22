@@ -34,7 +34,7 @@
 		<Order Time="135s" Build="Reaper17PowerProjector"/>
 		<Order Time="140s" Build="Reaper17WarpBeacon"/>
 		<Order Time="150s" Build="Reaper17Reactor"/>
-		<Order Time="190s" Build="MG_Reaper17_Hive"/>
+		<!--<Order Time="190s" Build="MG_Reaper17_Hive"/>-->
 		<Order Time="190s" Build="Reaper17RiftGenerator"/>
 	</SkirmishOpeningMove>
 

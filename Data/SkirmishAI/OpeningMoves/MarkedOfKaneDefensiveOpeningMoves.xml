@@ -34,7 +34,7 @@
 		<Order Time="135s" Build="MarkedOfKanePowerPlant"/>
 		<Order Time="140s" Build="MarkedOfKaneHangar"/>
 		<Order Time="150s" Build="MarkedOfKaneTechAssemblyPlant"/>
-		<Order Time="190s" Build="MG_MarkedOfKane_WarmechFacility"/>
+		<!--<Order Time="190s" Build="MG_MarkedOfKane_WarmechFacility"/>-->
 		<Order Time="190s" Build="MarkedOfKaneTempleOfNOD"/>
 	</SkirmishOpeningMove>
 

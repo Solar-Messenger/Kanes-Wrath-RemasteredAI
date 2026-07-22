@@ -34,7 +34,7 @@
 		<Order Time="135s" Build="Traveler59PowerProjector"/>
 		<Order Time="140s" Build="Traveler59WarpBeacon"/>
 		<Order Time="150s" Build="Traveler59Reactor"/>
-		<Order Time="190s" Build="MG_Traveler59_Hive"/>
+		<!--<Order Time="190s" Build="MG_Traveler59_Hive"/>-->
 		<Order Time="190s" Build="Traveler59RiftGenerator"/>
 	</SkirmishOpeningMove>
 

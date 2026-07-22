@@ -30,7 +30,7 @@
 		<Order Time="135s" Build="SteelTalonsPowerPlant"/>
 		<Order Time="140s" Build="SteelTalonsAirTower"/>
 		<Order Time="150s" Build="SteelTalonsArmory"/>
-		<Order Time="190s" Build="MG_SteelTalons_ReclamatorHub"/>
+		<!--<Order Time="190s" Build="MG_SteelTalons_ReclamatorHub"/>-->
 		<Order Time="190s" Build="SteelTalonsIonCannonControlCenter"/>
 	</SkirmishOpeningMove>
 
