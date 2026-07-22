@@ -43,7 +43,10 @@
 
 		<ResourceMultiplierCheat Percentage="125%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
-		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD BRUTAL"/>
+		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
+		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
+		
+		<TacticalTarget TacticalAITarget="Targetless" MaxTeamsPerTarget="1"/>
 		
 		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
@@ -63,8 +66,6 @@
 		
 		<TacticalTarget TacticalAITarget="Opportunity" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Opportunity" MaxTeamsPerTarget="1"/>
-
-		<TacticalTarget TacticalAITarget="Targetless" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
