@@ -7,16 +7,15 @@
 		id="AlienOverlordSiege"
 		UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<IntervalHeuristic IntervalTime="420s" ActiveTime="180s"/>
+			<!--<IntervalHeuristic IntervalTime="420s" ActiveTime="180s"/>-->
 			<PathToTargetHeuristic PathExists="true"/>
 			<FocusedThresholdHeuristic/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="2" MaxUnits="2" includeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
+			<TeamTemplate MinUnits="4" MaxUnits="6" includeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="AlienDevastatorWarship"/>
 			</TeamTemplate>
-			<TeamTemplate MinUnits="2" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AutoReinforce="True" AlwaysRecruit="true"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -31,21 +30,6 @@
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
 			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="AlienPlanetaryAssaultCarrier"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-	id="AlienOverlordBaseCrack"
-	UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<PathToTargetHeuristic PathExists="true"/>
-			<!--<LateGameHeuristic/>-->
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureOpportunityHeuristic" TargetType="Opportunity"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Opportunity">
-			<TeamTemplate MinUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="AlienAnnihilatorTripod"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>

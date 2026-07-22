@@ -13,10 +13,9 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits UnitName="SteelTalonsBehemoth"/>
+			<TeamTemplate MinUnits="6" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="3" MaxUnits="3" UnitName="SteelTalonsBehemoth"/>
 			</TeamTemplate>
-			<TeamTemplate MinUnits="1" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON UNIQUE_UNIT RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AutoReinforce="True" AlwaysRecruit="true"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -26,8 +25,8 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="60s" EndTime="-1s"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterOpportunityHeuristic" TargetType="Opportunity"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Opportunity">
+		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterAirstrikeHeuristic" TargetType="Airstrike"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Airstrike">
 			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="4" UnitName="SteelTalonsOrca"/>
 			</TeamTemplate>

@@ -13,8 +13,8 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="3" MaxUnits="3" UnitName="ZOCOMOrca"/>
+			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="ZOCOMOrca"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -25,8 +25,8 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="60s" EndTime="-1s"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterOpportunityHeuristic" TargetType="Opportunity"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Opportunity">
+		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterAirstrikeHeuristic" TargetType="Airstrike"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Airstrike">
 			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="4" UnitName="ZOCOMOrca"/>
 			</TeamTemplate>

@@ -4,17 +4,17 @@
 	<Includes></Includes>
 	
 	<AIStrategicStateDefinition
-	  id="GDIOffensiveGroundEconomyAttack"
+	  id="GDIOffensiveAirEconomyAttack"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<IntervalHeuristic IntervalTime="420s" ActiveTime="180s"/>
+			<!--<IntervalHeuristic IntervalTime="420s" ActiveTime="180s"/>-->
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="Unit"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Unit">
-			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="5" MaxUnits="5" UnitName="GDIPitbull"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterAirstrikeHeuristic" TargetType="Airstrike"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Airstrike">
+			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="GDIOrca"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>

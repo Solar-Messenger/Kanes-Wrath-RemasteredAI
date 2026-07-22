@@ -7,6 +7,8 @@
 	
 	<!--General Purpose Overwhelm Attacks-->
 	
+	<!--Overwrite S1 for Defensive, Guerilla and Overlord with their respective conditional attacks-->
+	
 	<AIStrategicStateDefinition
 		  id="GeneralOverwhelmAttack_S1"
 		  UnitUpgradeMultiplier="0.0">
@@ -113,8 +115,9 @@
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterPrimaryHeuristic" TargetType="PrimaryTarget"/>
+		<TargetHeuristic TargetHeuristic="SafestToGroundProductionPrimaryHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="6" MaxUnits="12" IncludeKindOf="CAN_ATTACK VEHICLE" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AutoReinforce="True" AlwaysRecruit="True"/>
+			<TeamTemplate MinUnits="6" MaxUnits="12" IncludeKindOf="CAN_ATTACK VEHICLE" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AutoReinforce="True" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 	
@@ -141,6 +144,21 @@
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Structure"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Structure">
 			<TeamTemplate MinUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="OffensiveRefineryAttack"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<!--<FocusedThresholdHeuristic />-->
+			<TimerHeuristic StartTime="421s" EndTime="-1s"/>
+			<PathToTargetHeuristic PathExists="true"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundRefineryPrimaryHeuristic" TargetType="PrimaryTarget"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
+			<TeamTemplate MinUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -221,7 +239,7 @@
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="2.0"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureDiversionHeuristic" TargetType="Diverison"/>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureDiversionHeuristic" TargetType="Diversion"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Diverison">
 			<TeamTemplate MinUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
 		</Tactic>

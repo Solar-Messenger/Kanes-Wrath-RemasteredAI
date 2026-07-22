@@ -7,7 +7,7 @@
 		  id="NODOffensiveStealthTankEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<IntervalHeuristic IntervalTime="420s" ActiveTime="180s"/>
+			<IntervalHeuristic IntervalTime="480s" ActiveTime="180s"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
@@ -23,7 +23,7 @@
 		  id="NODOffensiveFlameTankAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<IntervalHeuristic IntervalTime="420s" ActiveTime="180s"/>
+			<IntervalHeuristic IntervalTime="480s" ActiveTime="180s"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>

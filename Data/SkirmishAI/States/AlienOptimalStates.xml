@@ -13,10 +13,9 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+			<TeamTemplate MinUnits="4" MaxUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="AlienDevastatorWarship"/>
 			</TeamTemplate>
-			<TeamTemplate MinUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AutoReinforce="True" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -27,30 +26,10 @@
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureDiversionHeuristic" TargetType="Diversion"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Diversion">
-			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="1" MaxUnits="1" UnitName="AlienCustomizableVehicle"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		id="AlienOptimalBaseCrack"
-		UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<PathToTargetHeuristic PathExists="true"/>
-			<ProductionHaltHeuristic
-				PenetrabilityWeight="0.25"
-				BalanceOfPowerWeight="0.75">
-				<PenetrabilityHeuristic/>
-				<BalanceOfPowerHeuristic/>
-			</ProductionHaltHeuristic>
-		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureOpportunityHeuristic" TargetType="Opportunity"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Opportunity">
-			<TeamTemplate MinUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="AlienAnnihilatorTripod"/>
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="1" MaxUnits="1" UnitName="AlienCustomizableVehicle"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>

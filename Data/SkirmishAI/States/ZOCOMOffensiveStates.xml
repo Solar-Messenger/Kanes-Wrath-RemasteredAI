@@ -4,17 +4,17 @@
   <Includes></Includes>
 	
 	<AIStrategicStateDefinition
-	  id="ZOCOMOffensiveGroundEconomyAttack"
+	  id="ZOCOMOffensiveAirEconomyAttack"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<IntervalHeuristic IntervalTime="420s" ActiveTime="180s"/>
+			<!--<IntervalHeuristic IntervalTime="420s" ActiveTime="180s"/>-->
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="Unit"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Unit">
-			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="5" MaxUnits="5" UnitName="ZOCOMPitbull"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterAirstrikeHeuristic" TargetType="Airstrike"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Airstrike">
+			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="ZOCOMOrca"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -29,8 +29,8 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="3" MaxUnits="3" UnitName="ZOCOMOrca"/>
+			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="ZOCOMOrca"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -43,8 +43,8 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" TargetType="BombingAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
-			<TeamTemplate MinUnits="2" MaxUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="2" MaxUnits="4" UnitName="ZOCOMFireHawk"/>
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="ZOCOMFireHawk"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
