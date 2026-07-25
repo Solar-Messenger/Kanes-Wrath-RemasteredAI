@@ -37,7 +37,7 @@
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
-		id="STOffensivePitBullSpam"
+		id="STOffensiveTitanSpam"
 		Side="SteelTalons">
 		<Order Time="0s" Build="SteelTalonsPowerPlant"/>
 		<Order Time="5s" Build="SteelTalonsBarracks"/>
@@ -56,26 +56,26 @@
 		<Order Build="SteelTalonsWolverine"/>
 		<Order Build="SteelTalonsHeavyHarvester"/>
 		<Order Build="SteelTalonsHeavyHarvester"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
-		<Order Build="SteelTalonsPitBull"/>
+		<Order Build="SteelTalonsTitan"/>
+		<Order Build="SteelTalonsTitan"/>
+		<Order Build="SteelTalonsTitan"/>
+		<Order Build="SteelTalonsTitan"/>
+		<Order Build="SteelTalonsTitan"/>
+		<Order Build="SteelTalonsTitan"/>
+		<Order Build="SteelTalonsTitan"/>
+		<Order Build="SteelTalonsTitan"/>
+		<Order Build="SteelTalonsTitan"/>
+		<Order Build="SteelTalonsTitan"/>
+		<Order Build="SteelTalonsTitan"/>
+		<Order Build="SteelTalonsTitan"/>
+		<Order Build="SteelTalonsTitan"/>
+		<Order Build="SteelTalonsTitan"/>
+		<Order Build="SteelTalonsTitan"/>
+		<Order Build="SteelTalonsTitan"/>
+		<Order Build="SteelTalonsTitan"/>
+		<Order Build="SteelTalonsTitan"/>
+		<Order Build="SteelTalonsTitan"/>
+		<Order Build="SteelTalonsTitan"/>
 		<Order Time="90s" Build="SteelTalonsPowerPlant"/>
 		<Order Time="95s" Build="SteelTalonsPowerPlant"/>
 		<Order Time="100s" Build="SteelTalonsWarfactory"/>

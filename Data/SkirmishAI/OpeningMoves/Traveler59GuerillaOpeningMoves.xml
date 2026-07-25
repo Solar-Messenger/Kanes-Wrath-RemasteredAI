@@ -94,57 +94,6 @@
 	</SkirmishOpeningMove>
 
 	<SkirmishOpeningMove
-		id="T59GuerillaRavagerSpam"
-		Side="Traveler59">
-		<Order Time="0s" Build="Traveler59PowerProjector"/>
-		<Order Time="5s" Build="Traveler59Portal"/>
-		<Order Build="AlienAssimilator"/>
-		<Order Build="AlienAssimilator"/>
-		<Order Build="Traveler59Buzzers"/>
-		<Order Build="Traveler59Buzzers"/>
-		<Order Build="Traveler59Buzzers"/>
-		<Order Time="10s" Build="Traveler59TiberiumTower"/>
-		<Order Time="40s" Build="Traveler59Gateway"/>
-		<Order Build="Traveler59Harvester"/>
-		<Order Build="Traveler59GunWalker"/>
-		<Order Build="Traveler59GunWalker"/>
-		<Order Build="Traveler59GunWalker"/>
-		<Order Build="Traveler59GunWalker"/>
-		<Order Build="Traveler59Harvester"/>
-		<Order Build="Traveler59Harvester"/>
-		<Order Time="60s" Build="Traveler59TiberiumTower"/>
-		<Order Time="90s" Build="Traveler59PowerProjector"/>
-		<Order Time="95s" Build="Traveler59PowerProjector"/>
-		<Order Time="90s" Build="Traveler59BuzzerHive"/>
-		<Order Time="95s" Build="Traveler59BuzzerHive"/>
-		<Order Time="100s" Build="Traveler59StatisChamber"/>
-		<Order Time="110s" Build="Traveler59ControlCenter"/>
-		<Order Build="Traveler59StalkerSquad"/>
-		<Order Build="Traveler59StalkerSquad"/>
-		<Order Build="Traveler59StalkerSquad"/>
-		<Order Build="Traveler59StalkerSquad"/>
-		<Order Build="Traveler59StalkerSquad"/>
-		<Order Build="Traveler59StalkerSquad"/>
-		<Order Build="Traveler59StalkerSquad"/>
-		<Order Build="Traveler59StalkerSquad"/>
-		<Order Build="Traveler59StalkerSquad"/>
-		<Order Build="Traveler59StalkerSquad"/>
-		<Order Build="Traveler59StalkerSquad"/>
-		<Order Build="Traveler59StalkerSquad"/>
-		<Order Build="Traveler59StalkerSquad"/>
-		<Order Build="Traveler59StalkerSquad"/>
-		<Order Build="Traveler59StalkerSquad"/>
-		<Order Build="Traveler59StalkerSquad"/>
-		<Order Build="Traveler59StalkerSquad"/>
-		<Order Build="Traveler59StalkerSquad"/>
-		<Order Build="Traveler59StalkerSquad"/>
-		<Order Build="Traveler59StalkerSquad"/>
-		<Order Time="125s" Build="Traveler59Portal"/>
-		<Order Time="130s" Build="Traveler59Gateway"/>
-		<Order Time="150s" Build="Traveler59Reactor"/>
-	</SkirmishOpeningMove>
-
-	<SkirmishOpeningMove
 		id="T59GuerillaShockTrooperSpam"
 		Side="Traveler59">
 		<Order Time="0s" Build="Traveler59PowerProjector"/>
