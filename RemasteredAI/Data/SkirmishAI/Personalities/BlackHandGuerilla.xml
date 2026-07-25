@@ -115,6 +115,7 @@
 		<States State="GeneralOverwhelmAttack_S2" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="GeneralOverwhelmAttack_S3" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="BHGuerillaSiege" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="BHGuerillaBombingRuns" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="BHGuerillaFlameTankEconomyAttack" Difficulty="MEDIUM HARD BRUTAL" />
 		
 		<States State="GuerillaAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
