@@ -2001,7 +2001,7 @@
 			<Shape
 				Type="CYLINDER"
 				ContactPointGeneration="INFANTRY"
-				MajorRadius="21"
+				MajorRadius="20"
 				MinorRadius="1"
 				Height="40"
 				FrontAngle="0d"

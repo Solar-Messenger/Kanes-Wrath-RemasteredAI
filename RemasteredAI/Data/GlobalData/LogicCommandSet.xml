@@ -8,7 +8,7 @@
 		id="EmptyCommandSet" />
 	<LogicCommandSet
 		id="GDIJuggernaughtCommandSet">
-		<Cmd>Command_Stop</Cmd>
+		<!--<Cmd>Command_Stop</Cmd>-->
 		<Cmd>Command_SpotTargetBombard</Cmd>
 		<Cmd>Command_AttackMove</Cmd>
 	</LogicCommandSet>
@@ -238,7 +238,7 @@
 		<Cmd>Command_GDICallForTransportVehicle</Cmd>
 		<Cmd>Command_MoveToPositionAndEvacuate</Cmd>
 		<Cmd>Command_APCMinefield</Cmd>
-		<Cmd>Command_Stop</Cmd>
+		<!--<Cmd>Command_Stop</Cmd>-->
 		<Cmd>Command_AttackMove</Cmd>
 	</LogicCommandSet>
 	<LogicCommandSet
