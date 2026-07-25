@@ -11,9 +11,9 @@
 	  <FocusedThresholdHeuristic/>
       <SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
     </Heuristic>
-    <TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
+    <TargetHeuristic TargetHeuristic="SafestToGroundStructureSiegeHeuristic" TargetType="SiegeTarget"/>
     <Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-      <TeamTemplate MinUnits="6" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+      <TeamTemplate MinUnits="6" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
         <CreateUnits MinUnits="3" MaxUnits="3" UnitName="GDIJuggernaught"/>
       </TeamTemplate>
     </Tactic>
@@ -42,7 +42,7 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterAirstrikeHeuristic" TargetType="Airstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Airstrike">
-			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="4" UnitName="GDIOrca"/>
 			</TeamTemplate>
 		</Tactic>

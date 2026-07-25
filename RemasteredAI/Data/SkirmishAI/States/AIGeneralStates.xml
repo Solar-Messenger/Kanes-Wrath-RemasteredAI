@@ -33,7 +33,7 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureExtraHeuristic" TargetType="ExtraTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="ExtraTarget">
-			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="24" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 	
@@ -43,9 +43,9 @@
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestStructureExtraHeuristic" TargetType="ExtraTarget"/>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureExtraHeuristic" TargetType="ExtraTarget"/>
 		<Tactic Tactic="SimpleAttack" TargetType="ExtraTarget">
-			<TeamTemplate MinUnits="30" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="36" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 	
@@ -84,7 +84,8 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="210s" EndTime="-1s"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirUnitAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
+		<!--<TargetHeuristic TargetHeuristic="SafestToAirUnitAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>-->
+		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
 		<Tactic Tactic="FlankAttack" TargetType="AssaultAirstrike">
 			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="INFANTRY RELOAD_AIRCRAFT BOMBER_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
@@ -98,7 +99,8 @@
 			<TimerHeuristic StartTime="0s" EndTime="-1s"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterAirstrikeHeuristic" TargetType="Airstrike"/>
-		<TargetHeuristic TargetHeuristic="SafestToAirUnitAirstrikeHeuristic" TargetType="Airstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAirstrikeHeuristic" TargetType="Airstrike"/>
+		<!--<TargetHeuristic TargetHeuristic="SafestToAirUnitAirstrikeHeuristic" TargetType="Airstrike"/>-->
 		<Tactic Tactic="FlankAttack" TargetType="Airstrike">
 			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="INFANTRY BOMBER_AIRCRAFT UNIQUE_UNIT SIEGE_WEAPON" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
@@ -166,7 +168,8 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="120s" EndTime="-1s"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirUnitAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
+		<!--<TargetHeuristic TargetHeuristic="SafestToAirUnitAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>-->
+		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
 			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
@@ -180,7 +183,8 @@
 			<TimerHeuristic StartTime="0s" EndTime="-1s"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterAirstrikeHeuristic" TargetType="Airstrike"/>
-		<TargetHeuristic TargetHeuristic="SafestToAirUnitAirstrikeHeuristic" TargetType="Airstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAirstrikeHeuristic" TargetType="Airstrike"/>
+		<!--<TargetHeuristic TargetHeuristic="SafestToAirUnitAirstrikeHeuristic" TargetType="Airstrike"/>-->
 		<Tactic Tactic="FlankAttack" TargetType="Airstrike">
 			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="INFANTRY BOMBER_AIRCRAFT UNIQUE_UNIT SIEGE_WEAPON" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
@@ -208,7 +212,8 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="210s" EndTime="-1s"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirUnitAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
+		<!--<TargetHeuristic TargetHeuristic="SafestToAirUnitAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>-->
+		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
 			<TeamTemplate MinUnits="8" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="INFANTRY RELOAD_AIRCRAFT BOMBER_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
@@ -222,7 +227,8 @@
 			<TimerHeuristic StartTime="0s" EndTime="-1s"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterAirstrikeHeuristic" TargetType="Airstrike"/>
-		<TargetHeuristic TargetHeuristic="SafestToAirUnitAirstrikeHeuristic" TargetType="Airstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAirstrikeHeuristic" TargetType="Airstrike"/>
+		<!--<TargetHeuristic TargetHeuristic="SafestToAirUnitAirstrikeHeuristic" TargetType="Airstrike"/>-->
 		<Tactic Tactic="FlankAttack" TargetType="Airstrike">
 			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="INFANTRY BOMBER_AIRCRAFT UNIQUE_UNIT SIEGE_WEAPON" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
@@ -263,7 +269,7 @@
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="PowerKillHeuristic" TargetType="Structure"/>
+		<TargetHeuristic TargetHeuristic="SafestToGroundPowerPlantHeuristic" TargetType="Structure"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Structure">
 			<TeamTemplate MinUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON UNIQUE_UNIT AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
 		</Tactic>
@@ -275,7 +281,8 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="120s" EndTime="-1s"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirUnitAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
+		<!--<TargetHeuristic TargetHeuristic="SafestToAirUnitAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>-->
+		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
 			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="INFANTRY RELOAD_AIRCRAFT BOMBER_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
@@ -306,7 +313,8 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="210s" EndTime="-1s"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirUnitAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
+		<!--<TargetHeuristic TargetHeuristic="SafestToAirUnitAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>-->
+		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
 			<TeamTemplate MinUnits="8" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="INFANTRY RELOAD_AIRCRAFT BOMBER_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
@@ -320,7 +328,8 @@
 			<TimerHeuristic StartTime="0s" EndTime="-1s"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterAirstrikeHeuristic" TargetType="Airstrike"/>
-		<TargetHeuristic TargetHeuristic="SafestToAirUnitAirstrikeHeuristic" TargetType="Airstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAirstrikeHeuristic" TargetType="Airstrike"/>
+		<!--<TargetHeuristic TargetHeuristic="SafestToAirUnitAirstrikeHeuristic" TargetType="Airstrike"/>-->
 		<Tactic Tactic="FlankAttack" TargetType="Airstrike">
 			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="INFANTRY BOMBER_AIRCRAFT UNIQUE_UNIT SIEGE_WEAPON" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>

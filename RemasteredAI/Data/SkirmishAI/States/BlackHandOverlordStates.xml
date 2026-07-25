@@ -10,9 +10,9 @@
 			<PathToTargetHeuristic PathExists="true"/>
 			<FocusedThresholdHeuristic/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureSiegeHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="6" MaxUnits="10" includeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
+			<TeamTemplate MinUnits="6" MaxUnits="10" includeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="BlackHandBeamCannon"/>
 			</TeamTemplate>
 		</Tactic>
@@ -25,9 +25,9 @@
 			<PathToTargetHeuristic PathExists="true"/>
 			<FocusedThresholdHeuristic/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" TargetType="BombingAirstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureBombingHeuristic" TargetType="BombingAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
-			<TeamTemplate MinUnits="6" MaxUnits="10" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
+			<TeamTemplate MinUnits="6" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="3" MaxUnits="3" UnitName="BlackHandMobileArtillery"/>
 			</TeamTemplate>
 		</Tactic>
