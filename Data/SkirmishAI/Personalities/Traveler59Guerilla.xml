@@ -17,7 +17,7 @@
 		  ChanceToUseAllUnitsForDefenseTarget_Large="0"
 		  DesiredExcessPowerBuffer="20"
 		  BaseCompactness="0.6"
-	  DefaultThreatFindRadius="500"
+	  DefaultThreatFindRadius="750"
 	  UnitBuilderCostEffectivenessWeight="1.0"
 	  UnitBuilderMoneyVersusTimePreference="1.0"
 	  UnitBuilderOverallOffensivePreference="100%"
@@ -41,10 +41,10 @@
 
 		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.35" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-		<ResourceMultiplierCheat Percentage="125%" Difficulty="EASY"/>
-		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
-		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
-		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
+		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
+		<ResourceMultiplierCheat Percentage="133%" Difficulty="MEDIUM"/>
+		<ResourceMultiplierCheat Percentage="166%" Difficulty="HARD"/>
+		<ResourceMultiplierCheat Percentage="200%" Difficulty="BRUTAL"/>
 		
 		<TacticalTarget TacticalAITarget="Targetless" MaxTeamsPerTarget="1"/>
 		
@@ -102,22 +102,21 @@
 
 		<OpeningMove Name="T59_EASY" Weight="100%" Difficulty="EASY"/>
 
+		<OpeningMove Name="T59GuerillaSeekerSpam" Weight="40%" Difficulty="MEDIUM HARD BRUTAL"/>
 		<OpeningMove Name="T59GuerillaMechapedeSpam" Weight="30%" Difficulty="MEDIUM HARD BRUTAL"/>
 		<OpeningMove Name="T59GuerillaShockTrooperSpam" Weight="30%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="T59GuerillaSeekerSpam" Weight="20%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="T59GuerillaRavagerSpam" Weight="20%" Difficulty="MEDIUM HARD BRUTAL"/>
 	
 		<States State="T59OpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
 		<States State="GuerillaDiversionAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
-		<States State="GuerillaEconomyAttack" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="GuerillaPowerAttack" Difficulty="HARD BRUTAL" />
+		<States State="GuerillaEconomyAttack" Difficulty="HARD BRUTAL" />
+		<States State="GuerillaPowerAttack" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="GeneralOverwhelmAttack_S2" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="GeneralOverwhelmAttack_S3" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="T59GuerillaSiege" Difficulty="MEDIUM HARD BRUTAL" />
 		<!--<States State="T59GuerillaRavagerEconomyAttack" Difficulty="BRUTAL" />-->
-		<States State="T59GuerillaMechaHarass" Difficulty="HARD BRUTAL" />
+		<States State="T59GuerillaMechaHarass" Difficulty="MEDIUM HARD BRUTAL" />
 		
 		<States State="GuerillaAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="T59GuerillaBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
