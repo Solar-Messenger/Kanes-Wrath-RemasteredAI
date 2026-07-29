@@ -73,26 +73,10 @@
 		<Order Build="NODScorpionBuggy"/>
 		<Order Build="NODHarvester"/>
 		<Order Build="NODHarvester"/>
-		<Order Time="60s" Build="NODOperationsCenter"/>
-		<Order Time="75s" Build="NODRefinery"/>
+		<Order Time="60s" Build="NODRefinery"/>
+		<Order Time="90s" Build="NODOperationsCenter"/>
 		<Order Time="105s" Build="NODPowerPlant"/>
 		<Order Time="110s" Build="NODPowerPlant"/>
-		<Order Build="NODFlameTank"/>
-		<Order Build="NODFlameTank"/>
-		<Order Build="NODFlameTank"/>
-		<Order Build="NODFlameTank"/>
-		<Order Build="NODFlameTank"/>
-		<Order Build="NODFlameTank"/>
-		<Order Build="NODFlameTank"/>
-		<Order Build="NODFlameTank"/>
-		<Order Build="NODFlameTank"/>
-		<Order Build="NODFlameTank"/>
-		<Order Build="NODFlameTank"/>
-		<Order Build="NODFlameTank"/>
-		<Order Build="NODFlameTank"/>
-		<Order Build="NODFlameTank"/>
-		<Order Build="NODFlameTank"/>
-		<Order Build="NODFlameTank"/>
 		<Order Build="NODFlameTank"/>
 		<Order Build="NODFlameTank"/>
 		<Order Build="NODFlameTank"/>
