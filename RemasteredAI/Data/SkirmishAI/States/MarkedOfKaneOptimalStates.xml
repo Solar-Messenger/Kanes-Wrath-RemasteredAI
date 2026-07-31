@@ -39,6 +39,7 @@
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
 		<TimerHeuristic StartTime="240s" EndTime="-1s"/>
+		<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" TargetType="BombingAirstrike"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
@@ -53,7 +54,7 @@
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
 		<PathToTargetHeuristic PathExists="true"/>
-		<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
+		<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		<EnemyNearbyHeuristic Distance="600.0" EnemyNearby="false"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>

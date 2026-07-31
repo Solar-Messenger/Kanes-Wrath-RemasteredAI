@@ -39,7 +39,7 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 			<EnemyNearbyHeuristic Distance="600.0" EnemyNearby="false"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
