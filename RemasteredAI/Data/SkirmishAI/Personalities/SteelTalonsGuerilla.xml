@@ -41,10 +41,10 @@
 
 		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.35" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
+		<ResourceMultiplierCheat Percentage="125%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
-		<ResourceMultiplierCheat Percentage="175%" Difficulty="HARD"/>
-		<ResourceMultiplierCheat Percentage="200%" Difficulty="BRUTAL"/>
+		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
+		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
 
 		<TacticalTarget TacticalAITarget="Targetless" MaxTeamsPerTarget="1"/>
 		
@@ -55,7 +55,7 @@
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="2" />
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1" />
 		
-		<TacticalTarget TacticalAITarget="Diversion" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
 		
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1" />
@@ -67,7 +67,6 @@
 		<TacticalTarget TacticalAITarget="Opportunity" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Opportunity" MaxTeamsPerTarget="1"/>
 
-		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1" />
@@ -79,12 +78,8 @@
 		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
 
-		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
@@ -110,7 +105,7 @@
 		<States State="STOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="GuerillaDiversionAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="GuerillaProbeAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="GuerillaEconomyAttack" Difficulty="HARD BRUTAL" />
 		<States State="GuerillaPowerAttack" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="GeneralOverwhelmAttack_S2" Difficulty="EASY MEDIUM HARD BRUTAL" />
@@ -151,7 +146,6 @@
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
 		<BudgetStates State="BaseBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="BaseBudget_LateGame" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="BaseBudget_EASY" Difficulty="EASY"/>
 		
 		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>

@@ -41,10 +41,10 @@
 
 		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.35" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
+		<ResourceMultiplierCheat Percentage="125%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
-		<ResourceMultiplierCheat Percentage="175%" Difficulty="HARD"/>
-		<ResourceMultiplierCheat Percentage="200%" Difficulty="BRUTAL"/>
+		<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD"/>
+		<ResourceMultiplierCheat Percentage="250%" Difficulty="BRUTAL"/>
 		
 		<TacticalTarget TacticalAITarget="Targetless" MaxTeamsPerTarget="1"/>
 		
@@ -66,19 +66,15 @@
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
 
-		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
@@ -107,7 +103,7 @@
 		<States State="OffensiveRush_EASY" Difficulty="EASY"/>
 		<States State="OffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="OffensiveInfRush" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="OffensiveRefineryAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OffensiveProbeAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GeneralOverwhelmAttack_S1" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GeneralOverwhelmAttack_S2" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GeneralOverwhelmAttack_S3" Difficulty="EASY MEDIUM HARD BRUTAL"/>
@@ -146,7 +142,6 @@
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
 		<BudgetStates State="BaseBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="BaseBudget_LateGame" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="BaseBudget_EASY" Difficulty="EASY"/>
 		
 		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
