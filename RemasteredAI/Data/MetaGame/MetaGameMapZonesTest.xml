@@ -1,0 +1,1250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+        
+    <MetaGameMapZoneData Name="MapZoneNorthernEurope" id="11">
+
+       <Group2Player>
+         <GreenGroup>
+          <MapEntry MapName="Separate Ways 1.02+_23z"/>
+          <MapEntry MapName="Permafrost 1.02+__23z"/>
+         </GreenGroup>
+
+         <YellowGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+         </YellowGroup>
+
+         <RedGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+         </RedGroup>
+      </Group2Player>
+
+
+      <Group3Player>
+        <GreenGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </GreenGroup>
+      
+        <YellowGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </YellowGroup>
+          
+        <RedGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </RedGroup>
+      </Group3Player>
+  
+      <Group4Player>
+        <GreenGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </GreenGroup>
+      
+        <YellowGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </YellowGroup>
+          
+        <RedGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </RedGroup>
+      </Group4Player>
+          
+    </MetaGameMapZoneData>
+   
+
+
+    <MetaGameMapZoneData Name="MapZoneSouthernEurope" id="12">
+
+      <Group2Player>
+         <GreenGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+         </GreenGroup>
+
+         <YellowGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+         </YellowGroup>
+
+         <RedGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+         </RedGroup>
+      </Group2Player>
+
+
+      <Group3Player>
+        <GreenGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </GreenGroup>
+      
+        <YellowGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </YellowGroup>
+          
+        <RedGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </RedGroup>
+      </Group3Player>
+  
+      <Group4Player>
+        <GreenGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </GreenGroup>
+      
+        <YellowGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </YellowGroup>
+          
+        <RedGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </RedGroup>
+      </Group4Player>
+                  
+    </MetaGameMapZoneData>
+  
+  
+    <MetaGameMapZoneData Name="MapZoneNorthAfrica" id="13">
+  
+      <Group2Player>
+         <GreenGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+         </GreenGroup>
+
+         <YellowGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+         </YellowGroup>
+
+         <RedGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+         </RedGroup>
+      </Group2Player>
+
+
+      <Group3Player>
+        <GreenGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </GreenGroup>
+      
+        <YellowGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </YellowGroup>
+          
+        <RedGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </RedGroup>
+      </Group3Player>
+   
+      <Group4Player>
+        <GreenGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </GreenGroup>
+      
+        <YellowGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </YellowGroup>
+          
+        <RedGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </RedGroup>
+      </Group4Player>
+    
+    </MetaGameMapZoneData>     
+ 
+  
+    <MetaGameMapZoneData Name="MapZoneCentralAfrica" id="14">
+  
+      <Group2Player>
+         <GreenGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+         </GreenGroup>
+
+         <YellowGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+         </YellowGroup>
+
+         <RedGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+         </RedGroup>
+      </Group2Player>
+
+
+      <Group3Player>
+        <GreenGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </GreenGroup>
+      
+        <YellowGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </YellowGroup>
+          
+        <RedGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </RedGroup>
+      </Group3Player>
+   
+      <Group4Player>
+        <GreenGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </GreenGroup>
+      
+        <YellowGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </YellowGroup>
+          
+        <RedGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </RedGroup>
+      </Group4Player>
+    
+    </MetaGameMapZoneData>   
+ 
+  
+    <MetaGameMapZoneData Name="MapZoneSouthAfrica" id="15">
+  
+      <Group2Player>
+         <GreenGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+         </GreenGroup>
+
+         <YellowGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+         </YellowGroup>
+
+         <RedGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+         </RedGroup>
+      </Group2Player>
+
+
+      <Group3Player>
+        <GreenGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </GreenGroup>
+      
+        <YellowGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </YellowGroup>
+          
+        <RedGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </RedGroup>
+      </Group3Player>
+   
+      <Group4Player>
+        <GreenGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </GreenGroup>
+      
+        <YellowGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </YellowGroup>
+          
+        <RedGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </RedGroup>
+      </Group4Player>
+    
+    </MetaGameMapZoneData>     
+ 
+    
+    <MetaGameMapZoneData Name="MapZoneAustralia" id="16">
+      
+      <Group2Player>
+         <GreenGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+         </GreenGroup>
+
+         <YellowGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+         </YellowGroup>
+
+         <RedGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+         </RedGroup>
+      </Group2Player>
+
+
+      <Group3Player>
+        <GreenGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </GreenGroup>
+      
+        <YellowGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </YellowGroup>
+          
+        <RedGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </RedGroup>
+      </Group3Player>
+    
+      <Group4Player>
+        <GreenGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </GreenGroup>
+      
+        <YellowGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </YellowGroup>
+          
+        <RedGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </RedGroup>
+      </Group4Player>
+         
+    </MetaGameMapZoneData>
+    
+  
+    <MetaGameMapZoneData Name="MapZoneNAECoast" id="17">
+  
+      <Group2Player>
+         <GreenGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+         </GreenGroup>
+
+         <YellowGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+         </YellowGroup>
+
+         <RedGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+         </RedGroup>
+      </Group2Player>
+
+
+      <Group3Player>
+        <GreenGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </GreenGroup>
+      
+        <YellowGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </YellowGroup>
+          
+        <RedGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </RedGroup>
+      </Group3Player>
+  
+      <Group4Player>
+        <GreenGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </GreenGroup>
+      
+        <YellowGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </YellowGroup>
+          
+        <RedGroup>
+			<MapEntry MapName="Separate Ways 1.02+_23z"/>
+			<MapEntry MapName="Permafrost 1.02+__23z"/>
+        </RedGroup>
+      </Group4Player>
+    
+    </MetaGameMapZoneData>
+    
+    <MetaGameMapZoneData Name="MapZoneNAWCoast" id="18">
+
+		<Group2Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group2Player>
+
+
+		<Group3Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group3Player>
+
+		<Group4Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group4Player>
+    
+    </MetaGameMapZoneData>
+    
+    <MetaGameMapZoneData Name="MapZoneMidwest" id="19">
+
+		<Group2Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group2Player>
+
+
+		<Group3Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group3Player>
+
+		<Group4Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group4Player>
+    
+    </MetaGameMapZoneData>
+    
+    <MetaGameMapZoneData Name="MapZoneCentralAmerica" id="20">
+
+		<Group2Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group2Player>
+
+
+		<Group3Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group3Player>
+
+		<Group4Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group4Player>
+    
+    </MetaGameMapZoneData>   
+  
+    <MetaGameMapZoneData Name="MapZoneEastAsia" id="21">
+
+		<Group2Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group2Player>
+
+
+		<Group3Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group3Player>
+
+		<Group4Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group4Player>
+    
+    </MetaGameMapZoneData>
+   
+    
+    <MetaGameMapZoneData Name="MapZoneIndia" id="22">
+
+		<Group2Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group2Player>
+
+
+		<Group3Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group3Player>
+
+		<Group4Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group4Player>
+    
+    </MetaGameMapZoneData>
+   
+  
+    <MetaGameMapZoneData Name="MapZoneHimalayas" id="23">
+
+		<Group2Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group2Player>
+
+
+		<Group3Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group3Player>
+
+		<Group4Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group4Player>
+     
+    </MetaGameMapZoneData>
+
+   
+    <MetaGameMapZoneData Name="MapZoneMiddleEast" id="24">
+  
+		<Group2Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group2Player>
+
+
+		<Group3Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group3Player>
+
+		<Group4Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group4Player>
+    
+    </MetaGameMapZoneData>
+
+    <MetaGameMapZoneData Name="MapZoneJapan" id="25">
+
+		<Group2Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group2Player>
+
+
+		<Group3Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group3Player>
+
+		<Group4Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group4Player>
+    
+    </MetaGameMapZoneData>
+    
+     <MetaGameMapZoneData Name="MapZoneCentralAsia" id="26">
+
+		 <Group2Player>
+			 <GreenGroup>
+				 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+				 <MapEntry MapName="Permafrost 1.02+__23z"/>
+			 </GreenGroup>
+
+			 <YellowGroup>
+				 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+				 <MapEntry MapName="Permafrost 1.02+__23z"/>
+			 </YellowGroup>
+
+			 <RedGroup>
+				 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+				 <MapEntry MapName="Permafrost 1.02+__23z"/>
+			 </RedGroup>
+		 </Group2Player>
+
+
+		 <Group3Player>
+			 <GreenGroup>
+				 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+				 <MapEntry MapName="Permafrost 1.02+__23z"/>
+			 </GreenGroup>
+
+			 <YellowGroup>
+				 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+				 <MapEntry MapName="Permafrost 1.02+__23z"/>
+			 </YellowGroup>
+
+			 <RedGroup>
+				 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+				 <MapEntry MapName="Permafrost 1.02+__23z"/>
+			 </RedGroup>
+		 </Group3Player>
+
+		 <Group4Player>
+			 <GreenGroup>
+				 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+				 <MapEntry MapName="Permafrost 1.02+__23z"/>
+			 </GreenGroup>
+
+			 <YellowGroup>
+				 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+				 <MapEntry MapName="Permafrost 1.02+__23z"/>
+			 </YellowGroup>
+
+			 <RedGroup>
+				 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+				 <MapEntry MapName="Permafrost 1.02+__23z"/>
+			 </RedGroup>
+		 </Group4Player>
+    
+    </MetaGameMapZoneData>
+
+
+ <MetaGameMapZoneData Name="MapZoneSouthAmericaCoastW" id="27">
+
+	 <Group2Player>
+		 <GreenGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </GreenGroup>
+
+		 <YellowGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </YellowGroup>
+
+		 <RedGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </RedGroup>
+	 </Group2Player>
+
+
+	 <Group3Player>
+		 <GreenGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </GreenGroup>
+
+		 <YellowGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </YellowGroup>
+
+		 <RedGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </RedGroup>
+	 </Group3Player>
+
+	 <Group4Player>
+		 <GreenGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </GreenGroup>
+
+		 <YellowGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </YellowGroup>
+
+		 <RedGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </RedGroup>
+	 </Group4Player>
+    
+    </MetaGameMapZoneData>
+
+ <MetaGameMapZoneData Name="MapZoneSouthAmericaCoastE" id="28">
+
+	 <Group2Player>
+		 <GreenGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </GreenGroup>
+
+		 <YellowGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </YellowGroup>
+
+		 <RedGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </RedGroup>
+	 </Group2Player>
+
+
+	 <Group3Player>
+		 <GreenGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </GreenGroup>
+
+		 <YellowGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </YellowGroup>
+
+		 <RedGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </RedGroup>
+	 </Group3Player>
+
+	 <Group4Player>
+		 <GreenGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </GreenGroup>
+
+		 <YellowGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </YellowGroup>
+
+		 <RedGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </RedGroup>
+	 </Group4Player>
+    
+    </MetaGameMapZoneData>
+
+ <MetaGameMapZoneData Name="MapZoneSouthAmericaCoastN" id="29">
+
+	 <Group2Player>
+		 <GreenGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </GreenGroup>
+
+		 <YellowGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </YellowGroup>
+
+		 <RedGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </RedGroup>
+	 </Group2Player>
+
+
+	 <Group3Player>
+		 <GreenGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </GreenGroup>
+
+		 <YellowGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </YellowGroup>
+
+		 <RedGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </RedGroup>
+	 </Group3Player>
+
+	 <Group4Player>
+		 <GreenGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </GreenGroup>
+
+		 <YellowGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </YellowGroup>
+
+		 <RedGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </RedGroup>
+	 </Group4Player>
+    
+    </MetaGameMapZoneData>
+    
+    <MetaGameMapZoneData Name="MapZoneSouthAmericaInland" id="30">
+
+		<Group2Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group2Player>
+
+
+		<Group3Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group3Player>
+
+		<Group4Player>
+			<GreenGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</GreenGroup>
+
+			<YellowGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</YellowGroup>
+
+			<RedGroup>
+				<MapEntry MapName="Separate Ways 1.02+_23z"/>
+				<MapEntry MapName="Permafrost 1.02+__23z"/>
+			</RedGroup>
+		</Group4Player>
+     
+    </MetaGameMapZoneData>
+
+ <MetaGameMapZoneData Name="MapZoneAmericaTundra" id="31">
+
+	 <Group2Player>
+		 <GreenGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </GreenGroup>
+
+		 <YellowGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </YellowGroup>
+
+		 <RedGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </RedGroup>
+	 </Group2Player>
+
+
+	 <Group3Player>
+		 <GreenGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </GreenGroup>
+
+		 <YellowGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </YellowGroup>
+
+		 <RedGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </RedGroup>
+	 </Group3Player>
+
+	 <Group4Player>
+		 <GreenGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </GreenGroup>
+
+		 <YellowGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </YellowGroup>
+
+		 <RedGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </RedGroup>
+	 </Group4Player>
+    
+    </MetaGameMapZoneData>
+
+ <MetaGameMapZoneData Name="MapZoneAsiaTundra" id="32">
+
+	 <Group2Player>
+		 <GreenGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </GreenGroup>
+
+		 <YellowGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </YellowGroup>
+
+		 <RedGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </RedGroup>
+	 </Group2Player>
+
+
+	 <Group3Player>
+		 <GreenGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </GreenGroup>
+
+		 <YellowGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </YellowGroup>
+
+		 <RedGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </RedGroup>
+	 </Group3Player>
+
+	 <Group4Player>
+		 <GreenGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </GreenGroup>
+
+		 <YellowGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </YellowGroup>
+
+		 <RedGroup>
+			 <MapEntry MapName="Separate Ways 1.02+_23z"/>
+			 <MapEntry MapName="Permafrost 1.02+__23z"/>
+		 </RedGroup>
+	 </Group4Player>
+    
+    </MetaGameMapZoneData>
+
+
+</AssetDeclaration>
+
