@@ -63,7 +63,7 @@
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 
-		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1" />
@@ -99,7 +99,7 @@
 		<States State="GeneralOverwhelmAttack_S1" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="GeneralOverwhelmAttack_S2" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="GeneralOverwhelmAttack_S3" Difficulty="EASY MEDIUM HARD BRUTAL" />
-		<States State="AlienOverlordSiege" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="AlienSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="OverlordAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="AlienOverlordBombingRuns" Difficulty="MEDIUM HARD BRUTAL" />

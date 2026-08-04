@@ -69,7 +69,8 @@
 
 		<!--<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>-->
 
-		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
@@ -107,7 +108,7 @@
 		<States State="GeneralOverwhelmAttack_S1" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GeneralOverwhelmAttack_S2" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GeneralOverwhelmAttack_S3" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="T59OptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="T59Siege" Difficulty="MEDIUM HARD BRUTAL" />
 		<!--<States State="T59Cultists" Difficulty="HARD BRUTAL"/>-->
 		<States State="T59OptimalMechaHarass" Difficulty="HARD BRUTAL" />
 

@@ -67,7 +67,7 @@
 		<TacticalTarget TacticalAITarget="Opportunity" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Opportunity" MaxTeamsPerTarget="1"/>
 
-		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1" />
 
@@ -108,7 +108,7 @@
 		<States State="GuerillaPowerAttack" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="GeneralOverwhelmAttack_S2" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="GeneralOverwhelmAttack_S3" Difficulty="EASY MEDIUM HARD BRUTAL" />
-		<States State="MOKGuerillaSiege" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="MOKSiege" Difficulty="MEDIUM HARD BRUTAL" />
 		<!--<States State="MOKGuerillaSpotters" Difficulty="HARD BRUTAL" />-->
 		<States State="MOKGuerillaEMPTeam" Difficulty="MEDIUM HARD BRUTAL" />
 		

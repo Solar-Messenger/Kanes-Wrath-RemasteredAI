@@ -64,9 +64,9 @@
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1" />
 
-		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1" />
 
@@ -108,7 +108,7 @@
 		<States State="GuerillaPowerAttack" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="GeneralOverwhelmAttack_S2" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="GeneralOverwhelmAttack_S3" Difficulty="EASY MEDIUM HARD BRUTAL" />
-		<States State="ZOCOMGuerillaSiege" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="ZOCOMSiege" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="ZOCOMGuerillaOrcaEconomyAttack" Difficulty="MEDIUM HARD BRUTAL" />
 		
 		<States State="GuerillaAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>

@@ -69,9 +69,9 @@
 		<TacticalTarget TacticalAITarget="Opportunity" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Opportunity" MaxTeamsPerTarget="1"/>
 
-		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
@@ -105,7 +105,7 @@
 		<States State="DefensiveCounterAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GeneralOverwhelmAttack_S2" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GeneralOverwhelmAttack_S3" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GDIDefensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="GDISiege" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="GDIDefensiveSpotters" Difficulty="HARD BRUTAL"/>
 		
 		<States State="DefensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>

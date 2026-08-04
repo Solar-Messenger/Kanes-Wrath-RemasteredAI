@@ -65,7 +65,7 @@
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		
-		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
@@ -99,7 +99,7 @@
 		<States State="DefensiveCounterAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GeneralOverwhelmAttack_S2" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GeneralOverwhelmAttack_S3" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="AlienDefensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="AlienSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		
 		<States State="DefensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienDefensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>

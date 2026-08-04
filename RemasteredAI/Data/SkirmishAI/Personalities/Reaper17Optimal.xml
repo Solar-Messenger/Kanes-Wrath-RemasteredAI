@@ -67,7 +67,7 @@
 		<TacticalTarget TacticalAITarget="Opportunity" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Opportunity" MaxTeamsPerTarget="1"/>
 
-		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
 
@@ -103,7 +103,7 @@
 		<States State="GeneralOverwhelmAttack_S1" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GeneralOverwhelmAttack_S2" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GeneralOverwhelmAttack_S3" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="R17OptimalSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17Siege" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="R17OptimalMechaHarass" Difficulty="HARD BRUTAL" />
 		
 		<States State="OptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
