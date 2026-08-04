@@ -364,6 +364,8 @@ FodyWeavers.xsd
 
 RemasteredAI/Data/Static.xml
 RemasteredAI/Data/MetaGame/MetaGameStatic.xml
+RemasteredAI/Data/MetaGame/MetaGameMapZonesTest.xml
+RemasteredAI/Data/MetaGame/MetaGameMapZonesTestStandardMaps.xml
 RemasteredAI/Data/SkirmishAI/SkirmishAIIncludes.xml
 RemasteredAI/Data/SkirmishAI/Targets
 RemasteredAI/Data/SkirmishAI/Personalities/PersonalityList.xml
