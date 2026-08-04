@@ -3,21 +3,6 @@
   <Tags></Tags>
   <Includes></Includes>
 
-	<AIStrategicStateDefinition
-		  id="T59OptimalSiege"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<FocusedThresholdHeuristic/>
-			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirStructureSiegeHeuristic" TargetType="SiegeTarget"/>
-		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="4" MaxUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="Traveler59DevastatorWarship"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
 	<!--<AIStrategicStateDefinition
 		  id="T59Cultists"
 		  UnitUpgradeModifier="0.0">
@@ -107,8 +92,8 @@
 		<UnitModifierByName UnitName="Traveler59DevastatorWarship" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
 		<UnitModifierByName UnitName="Traveler59PlanetaryAssaultCarrier" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
 		
-		<UnitModifierByName UnitName="Traveler59TiberiumTower" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="Traveler59Explorer" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="Traveler59TiberiumTower" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="Traveler59Explorer" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
 
 		<UnitModifierByName UnitName="Traveler59Portal" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="70%"/>
 		<UnitModifierByName UnitName="Traveler59Gateway" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="120%"/>

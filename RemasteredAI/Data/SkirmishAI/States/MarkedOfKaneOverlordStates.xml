@@ -4,29 +4,17 @@
 	<Includes></Includes>
 
 	<AIStrategicStateDefinition
-		id="MOKOverlordSiege"
-		UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<PathToTargetHeuristic PathExists="true"/>
-			<FocusedThresholdHeuristic/>
-			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureSiegeHeuristic" TargetType="SiegeTarget"/>
-		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="3" MaxUnits="3" includeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="3" MaxUnits="3" UnitName="MarkedOfKaneMobileArtillery"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
 		  id="MOKOverlordBombingRuns"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="90s" EndTime="-1s"/>
 			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToAirTechBombingAirstrikeHeuristic" WeightMultiplier="2.5" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToAirAirfieldBombingAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToAirWarfactoryBombingAirstrikeHeuristic" WeightMultiplier="1.5" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToAirRefineryBombingAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" WeightMultiplier="0.5" TargetType="BombingAirstrike"/>		
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
 			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="MarkedOfKaneVertigo"/>
@@ -65,8 +53,8 @@
 		<UnitModifierByName UnitName="MarkedOfKaneVenom" UnitPreferenceOffensiveModifier="80%" UnitPreferenceDefensiveModifier="100%"/>
 		<UnitModifierByName UnitName="MarkedOfKaneVertigo" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
 		
-		<UnitModifierByName UnitName="MarkedOfKaneRefinery" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneEmissary" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="MarkedOfKaneRefinery" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="MarkedOfKaneEmissary" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
 
 		<UnitModifierByName UnitName="MarkedOfKaneHandOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
 		<UnitModifierByName UnitName="MarkedOfKaneDropZone" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="120%"/>

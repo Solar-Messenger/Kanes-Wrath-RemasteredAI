@@ -4,22 +4,6 @@
   <Includes></Includes>
 
 	<AIStrategicStateDefinition
-		  id="R17OptimalSiege"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<PathToTargetHeuristic PathExists="true"/>
-			<FocusedThresholdHeuristic/>
-			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureSiegeHeuristic" TargetType="SiegeTarget"/>
-		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="6" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="3" MaxUnits="3" UnitName="Reaper17AnnihilatorTripod"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
 		id="R17OptimalMechaHarass"
 		UnitUpgradeMultiplier="0.0">
 		<Heuristic>
@@ -77,8 +61,8 @@
 
 		<UnitModifierByName UnitName="Reaper17Stormrider" UnitPreferenceOffensiveModifier="80%" UnitPreferenceDefensiveModifier="80%"/>
 		
-		<UnitModifierByName UnitName="Reaper17TiberiumTower" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="Reaper17Explorer" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="Reaper17TiberiumTower" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="Reaper17Explorer" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
 
 		<UnitModifierByName UnitName="Reaper17Portal" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="80%"/>
 		<UnitModifierByName UnitName="Reaper17Gateway" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="120%"/>
