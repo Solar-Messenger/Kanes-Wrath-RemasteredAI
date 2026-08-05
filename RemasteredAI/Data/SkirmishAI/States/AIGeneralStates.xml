@@ -66,8 +66,8 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<OverpowerHeuristic
-				PowerAdvantageWeight="0.2"
-				PenetrabilityWeight="0.8">
+				PowerAdvantageWeight="0.6"
+				PenetrabilityWeight="0.4">
 				<PowerAdvantageHeuristic/>
 				<PenetrabilityHeuristic/>
 			</OverpowerHeuristic>
@@ -89,12 +89,12 @@
 		  id="OptimalGroundEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ResourceSqueezeHeuristic
-				PenetrabilityWeight="0.8"
-				OpponentFundsWeight="0.2">
+			<OverpowerHeuristic
+				PowerAdvantageWeight="0.3"
+				PenetrabilityWeight="0.7">
+				<PowerAdvantageHeuristic/>
 				<PenetrabilityHeuristic/>
-				<OpponentFundsHeuristic/>
-			</ResourceSqueezeHeuristic>
+			</OverpowerHeuristic>
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
@@ -185,12 +185,12 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="421s" EndTime="-1s"/>
-			<ResourceSqueezeHeuristic
-				PenetrabilityWeight="0.8"
-				OpponentFundsWeight="0.2">
+			<OverpowerHeuristic
+				PowerAdvantageWeight="0.5"
+				PenetrabilityWeight="0.5">
+				<PowerAdvantageHeuristic/>
 				<PenetrabilityHeuristic/>
-				<OpponentFundsHeuristic/>
-			</ResourceSqueezeHeuristic>
+			</OverpowerHeuristic>
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
@@ -289,8 +289,8 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<OverpowerHeuristic
-				PowerAdvantageWeight="0.2"
-				PenetrabilityWeight="0.8">
+				PowerAdvantageWeight="0.5"
+				PenetrabilityWeight="0.5">
 				<PowerAdvantageHeuristic/>
 				<PenetrabilityHeuristic/>
 			</OverpowerHeuristic>
@@ -312,12 +312,12 @@
 		  id="GuerillaEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ResourceSqueezeHeuristic
-				PenetrabilityWeight="0.8"
-				OpponentFundsWeight="0.2">
+			<OverpowerHeuristic
+				PowerAdvantageWeight="0.3"
+				PenetrabilityWeight="0.7">
+				<PowerAdvantageHeuristic/>
 				<PenetrabilityHeuristic/>
-				<OpponentFundsHeuristic/>
-			</ResourceSqueezeHeuristic>
+			</OverpowerHeuristic>
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
@@ -332,8 +332,8 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<OverpowerHeuristic
-				PowerAdvantageWeight="0.2"
-				PenetrabilityWeight="0.8">
+				PowerAdvantageWeight="0.3"
+				PenetrabilityWeight="0.7">
 				<PowerAdvantageHeuristic/>
 				<PenetrabilityHeuristic/>
 			</OverpowerHeuristic>
