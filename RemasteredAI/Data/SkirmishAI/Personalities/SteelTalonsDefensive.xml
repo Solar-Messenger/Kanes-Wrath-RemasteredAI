@@ -64,6 +64,9 @@
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
+		
+		<TacticalTarget TacticalAITarget="Defensive" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Defensive" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
