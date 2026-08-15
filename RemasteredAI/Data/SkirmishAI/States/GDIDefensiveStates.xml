@@ -30,8 +30,8 @@
 		<PathToTargetHeuristic PathExists="true"/>
 		<SiegeThresholdHeuristic SiegeMode="false" Threshold="2.0"/>
     </Heuristic>
-    <TargetHeuristic TargetHeuristic="SafestToGroundStructureSecondaryHeuristic" TargetType="SecondaryTarget"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="SecondaryTarget">
+    <TargetHeuristic TargetHeuristic="SafestToGroundStructureOpportunityHeuristic" TargetType="Opportunity"/>
+    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Opportunity">
       <TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="VEHICLE AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
         <CreateUnits UnitName="GDISniperSquad"/>
         <CreateUnits UnitName="GDISniperSquad"/>
