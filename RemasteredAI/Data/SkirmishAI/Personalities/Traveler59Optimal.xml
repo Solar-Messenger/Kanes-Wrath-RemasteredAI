@@ -67,8 +67,6 @@
 		<TacticalTarget TacticalAITarget="Opportunity" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Opportunity" MaxTeamsPerTarget="1"/>
 
-		<!--<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>-->
-
 		<TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
