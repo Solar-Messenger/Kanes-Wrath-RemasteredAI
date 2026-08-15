@@ -28,7 +28,7 @@
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureOpportunityHeuristic" TargetType="Opportunity"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Opportunity">
 			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="1" MaxUnits="1" UnitName="Traveler59CustomizableVehicle"/>
+				<CreateUnits UnitName="Traveler59CustomizableVehicle"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -42,7 +42,8 @@
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" TargetType="BombingAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
 			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT PRODUCED_AT_HELIPAD" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="Traveler59PlanetaryAssaultCarrier"/>
+				<CreateUnits UnitName="Traveler59PlanetaryAssaultCarrier"/>
+				<CreateUnits UnitName="Traveler59PlanetaryAssaultCarrier"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>

@@ -17,7 +17,8 @@
     <TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" WeightMultiplier="0.5" TargetType="BombingAirstrike"/>		
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
 			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="GDIFireHawk"/>
+				<CreateUnits UnitName="GDIFireHawk"/>
+				<CreateUnits UnitName="GDIFireHawk"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>

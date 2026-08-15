@@ -14,7 +14,9 @@
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureBombingHeuristic" TargetType="BombingAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
 			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="3" MaxUnits="3" UnitName="BlackHandMobileArtillery"/>
+				<CreateUnits  UnitName="BlackHandMobileArtillery"/>
+				<CreateUnits  UnitName="BlackHandMobileArtillery"/>
+				<CreateUnits  UnitName="BlackHandMobileArtillery"/>
 			</TeamTemplate>
 			<TeamTemplate MinUnits="2" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>

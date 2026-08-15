@@ -13,7 +13,7 @@
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureOpportunityHeuristic" TargetType="Opportunity"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Opportunity">
 			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="1" MaxUnits="1" UnitName="Reaper17CustomizableVehicle"/>
+				<CreateUnits UnitName="Reaper17CustomizableVehicle"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>

@@ -9,10 +9,14 @@
 		<Heuristic>
 			<TimerHeuristic StartTime="60s" EndTime="-1s"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterAssaultAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="AssaultAirstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirRefineryAssaultAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="AssaultAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
 			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="4" UnitName="SteelTalonsOrca"/>
+				<CreateUnits UnitName="SteelTalonsOrca"/>
+				<CreateUnits UnitName="SteelTalonsOrca"/>
+				<CreateUnits UnitName="SteelTalonsOrca"/>
+				<CreateUnits UnitName="SteelTalonsOrca"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -30,7 +34,8 @@
     <TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" WeightMultiplier="0.5" TargetType="BombingAirstrike"/>	
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
 			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="SteelTalonsFireHawk"/>
+				<CreateUnits UnitName="SteelTalonsFireHawk"/>
+				<CreateUnits UnitName="SteelTalonsFireHawk"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>

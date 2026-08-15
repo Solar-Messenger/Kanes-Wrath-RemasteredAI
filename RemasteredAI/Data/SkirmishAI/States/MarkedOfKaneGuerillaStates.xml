@@ -2,21 +2,6 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Tags></Tags>
 	<Includes></Includes>
-	
-	<!--<AIStrategicStateDefinition
-    id="MOKGuerillaSpotters"
-    UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<PathToTargetHeuristic PathExists="true"/>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureOpportunityHeuristic" TargetType="Opportunity"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Opportunity">
-			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="1" MaxUnits="1" UnitName="MarkedOfKaneShadowSquad"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>-->
 
 	<AIStrategicStateDefinition
     id="MOKGuerillaEMPTeam"
@@ -28,7 +13,10 @@
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureOpportunityHeuristic" TargetType="Opportunity"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Opportunity">
 			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="MarkedOfKaneImprovedCyborgInfantrySquad"/>
+				<CreateUnits UnitName="MarkedOfKaneImprovedCyborgInfantrySquad"/>
+				<CreateUnits UnitName="MarkedOfKaneImprovedCyborgInfantrySquad"/>
+				<CreateUnits UnitName="MarkedOfKaneImprovedCyborgInfantrySquad"/>
+				<CreateUnits UnitName="MarkedOfKaneImprovedCyborgInfantrySquad"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -46,7 +34,8 @@
     <TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" WeightMultiplier="0.5" TargetType="BombingAirstrike"/>	
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
 			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="MarkedOfKaneVertigo"/>
+				<CreateUnits UnitName="MarkedOfKaneVertigo"/>
+				<CreateUnits UnitName="MarkedOfKaneVertigo"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>

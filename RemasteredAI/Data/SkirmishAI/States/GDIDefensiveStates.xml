@@ -17,7 +17,8 @@
     <TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" WeightMultiplier="0.5" TargetType="BombingAirstrike"/>		
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
       <TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
-        <CreateUnits MinUnits="2" MaxUnits="2" UnitName="GDIFireHawk"/>
+        <CreateUnits UnitName="GDIFireHawk"/>
+        <CreateUnits UnitName="GDIFireHawk"/>
       </TeamTemplate>
     </Tactic>
   </AIStrategicStateDefinition>
@@ -29,10 +30,11 @@
 		<PathToTargetHeuristic PathExists="true"/>
 		<SiegeThresholdHeuristic SiegeMode="false" Threshold="2.0"/>
     </Heuristic>
-    <TargetHeuristic TargetHeuristic="SafestToGroundStructureOpportunityHeuristic" TargetType="Opportunity"/>
-    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Opportunity">
+    <TargetHeuristic TargetHeuristic="SafestToGroundStructureSecondaryHeuristic" TargetType="SecondaryTarget"/>
+    <Tactic Tactic="DefenseAvoidanceAttack" TargetType="SecondaryTarget">
       <TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="VEHICLE AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-        <CreateUnits MinUnits="2" MaxUnits="2" UnitName="GDISniperSquad"/>
+        <CreateUnits UnitName="GDISniperSquad"/>
+        <CreateUnits UnitName="GDISniperSquad"/>
       </TeamTemplate>
     </Tactic>
   </AIStrategicStateDefinition>

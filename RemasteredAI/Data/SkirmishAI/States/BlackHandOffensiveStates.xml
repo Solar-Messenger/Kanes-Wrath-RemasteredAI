@@ -30,7 +30,10 @@
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureSiegeHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
 			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="BlackHandBeamCannon"/>
+				<CreateUnits UnitName="BlackHandBeamCannon"/>
+				<CreateUnits UnitName="BlackHandBeamCannon"/>
+				<CreateUnits UnitName="BlackHandBeamCannon"/>
+				<CreateUnits UnitName="BlackHandBeamCannon"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -46,7 +49,8 @@
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureBombingHeuristic" TargetType="BombingAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
 			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="BlackHandMobileArtillery"/>
+				<CreateUnits UnitName="BlackHandMobileArtillery"/>
+				<CreateUnits UnitName="BlackHandMobileArtillery"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>

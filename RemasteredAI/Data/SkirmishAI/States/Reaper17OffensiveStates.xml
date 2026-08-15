@@ -14,7 +14,11 @@
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="Unit"/>
 		<Tactic Tactic="FlankAttack" TargetType="Unit">
 			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="5" MaxUnits="5" UnitName="Reaper17ShockTrooperSquad"/>
+				<CreateUnits UnitName="Reaper17ShockTrooperSquad"/>
+				<CreateUnits UnitName="Reaper17ShockTrooperSquad"/>
+				<CreateUnits UnitName="Reaper17ShockTrooperSquad"/>
+				<CreateUnits UnitName="Reaper17ShockTrooperSquad"/>
+				<CreateUnits UnitName="Reaper17ShockTrooperSquad"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -30,7 +34,8 @@
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureSiegeHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
 			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="Reaper17AnnihilatorTripod"/>
+				<CreateUnits UnitName="Reaper17AnnihilatorTripod"/>
+				<CreateUnits UnitName="Reaper17AnnihilatorTripod"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>

@@ -2,6 +2,22 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Tags></Tags>
 	<Includes></Includes>
+	
+	<AIStrategicStateDefinition
+	id="BHOptimalFlameTankEconomyAttack"
+	UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<IntervalHeuristic IntervalTime="540s" ActiveTime="240s"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="6.0"/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundRefineryOpportunityHeuristic" TargetType="Opportunity"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Opportunity">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="BlackHandFlameTank"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
 		  id="BHOptimalArtilleryBombing"
@@ -14,7 +30,9 @@
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureBombingHeuristic" TargetType="BombingAirstrike"/>
 		<Tactic Tactic="SimpleSiege" TargetType="BombingAirstrike">
 			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="3" MaxUnits="3" UnitName="BlackHandMobileArtillery"/>
+				<CreateUnits UnitName="BlackHandMobileArtillery"/>
+				<CreateUnits UnitName="BlackHandMobileArtillery"/>
+				<CreateUnits UnitName="BlackHandMobileArtillery"/>
 			</TeamTemplate>
 			<TeamTemplate MinUnits="2" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>

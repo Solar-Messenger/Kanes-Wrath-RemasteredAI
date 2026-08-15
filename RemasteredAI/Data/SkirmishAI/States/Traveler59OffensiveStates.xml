@@ -14,7 +14,11 @@
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="Unit"/>
 		<Tactic Tactic="FlankAttack" TargetType="Unit">
 			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="5" MaxUnits="5" UnitName="Traveler59ShockTrooperSquad"/>
+				<CreateUnits UnitName="Traveler59ShockTrooperSquad"/>
+				<CreateUnits UnitName="Traveler59ShockTrooperSquad"/>
+				<CreateUnits UnitName="Traveler59ShockTrooperSquad"/>
+				<CreateUnits UnitName="Traveler59ShockTrooperSquad"/>
+				<CreateUnits UnitName="Traveler59ShockTrooperSquad"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -29,7 +33,8 @@
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureSiegeHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
 			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="Traveler59DevastatorWarship"/>
+				<CreateUnits UnitName="Traveler59DevastatorWarship"/>
+				<CreateUnits UnitName="Traveler59DevastatorWarship"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -43,7 +48,8 @@
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" TargetType="BombingAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
 			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT PRODUCED_AT_HELIPAD " ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits MinUnits="2" MaxUnits="2" UnitName="Traveler59PlanetaryAssaultCarrier"/>
+				<CreateUnits UnitName="Traveler59PlanetaryAssaultCarrier"/>
+				<CreateUnits UnitName="Traveler59PlanetaryAssaultCarrier"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
