@@ -7,6 +7,7 @@
     id="AlienGuerillaMechaHarass"
     UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<IntervalHeuristic IntervalTime="540s" ActiveTime="240s"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
