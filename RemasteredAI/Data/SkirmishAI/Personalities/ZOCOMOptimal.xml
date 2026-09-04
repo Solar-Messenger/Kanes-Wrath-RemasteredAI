@@ -41,7 +41,7 @@
 
 		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.35" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		
-		<ResourceMultiplierCheat Percentage="125%" Difficulty="EASY"/>
+		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
 		<ResourceMultiplierCheat Percentage="175%" Difficulty="HARD"/>
 		<ResourceMultiplierCheat Percentage="200%" Difficulty="BRUTAL"/>
