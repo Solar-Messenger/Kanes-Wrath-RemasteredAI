@@ -5,50 +5,10 @@
 	
 	<!--File for all general, shared attack states-->
 	
-	<!--General Purpose Overwhelm Attacks-->
-	
-	<!--Overwrite S1 for Defensive, Guerilla and Overlord with their respective conditional attacks-->
+	<!--General Purpose Overwhelm Attack-->
 	
 	<AIStrategicStateDefinition
-		  id="GeneralOverwhelmAttack_S1"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<OverpowerHeuristic
-				PowerAdvantageWeight="0.6"
-				PenetrabilityWeight="0.4">
-				<PowerAdvantageHeuristic/>
-				<PenetrabilityHeuristic/>
-			</OverpowerHeuristic>
-			<PathToTargetHeuristic PathExists="true"/>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureExtraHeuristic" TargetType="ExtraTarget"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="ExtraTarget">
-			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-	
-	<AIStrategicStateDefinition
-		  id="GeneralOverwhelmAttack_S2"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<OverpowerHeuristic
-				PowerAdvantageWeight="0.7"
-				PenetrabilityWeight="0.3">
-				<PowerAdvantageHeuristic/>
-				<PenetrabilityHeuristic/>
-			</OverpowerHeuristic>
-			<PathToTargetHeuristic PathExists="true"/>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="3.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureExtraHeuristic" TargetType="ExtraTarget"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="ExtraTarget">
-			<TeamTemplate MinUnits="40" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-	
-	<AIStrategicStateDefinition
-		  id="GeneralOverwhelmAttack_S3"
+		  id="GeneralOverwhelmAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
@@ -62,45 +22,16 @@
 	<!--Optimal-->
 	
 	<AIStrategicStateDefinition
-		  id="OptimalProbeAttack"
+		  id="OptimalAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<OverpowerHeuristic
-				PowerAdvantageWeight="0.6"
-				PenetrabilityWeight="0.4">
-				<PowerAdvantageHeuristic/>
-				<PenetrabilityHeuristic/>
-			</OverpowerHeuristic>
-			<PathToTargetHeuristic PathExists="true"/>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="3.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundTechPrimaryHeuristic" WeightMultiplier="3.0" TargetType="PrimaryTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundRefineryPrimaryHeuristic" WeightMultiplier="2.5" TargetType="PrimaryTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundAirfieldPrimaryHeuristic" WeightMultiplier="2.0" TargetType="PrimaryTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundWarfactoryPrimaryHeuristic" WeightMultiplier="1.5" TargetType="PrimaryTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundBarracksPrimaryHeuristic" WeightMultiplier="1.0" TargetType="PrimaryTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructurePrimaryHeuristic" WeightMultiplier="0.5" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-	
-	<AIStrategicStateDefinition
-		  id="OptimalGroundEconomyAttack"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<OverpowerHeuristic
-				PowerAdvantageWeight="0.3"
-				PenetrabilityWeight="0.7">
-				<PowerAdvantageHeuristic/>
-				<PenetrabilityHeuristic/>
-			</OverpowerHeuristic>
+			<FocusedThresholdHeuristic />
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="Unit"/>
-		<Tactic Tactic="FlankAttack" TargetType="Unit">
-			<TeamTemplate MinUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT SIEGE_WEAPON" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureFocusedHeuristic" TargetType="FocusedTarget"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="FocusedTarget">
+			<TeamTemplate MinUnits="15" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -108,29 +39,16 @@
 	  id="OptimalAirHarassmentAntiTurtle"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="210s" EndTime="-1s"/>
+			<ConstantHeuristic />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirTechAirstrikeHeuristic" WeightMultiplier="3.0" TargetType="Airstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAirstrikeHeuristic" WeightMultiplier="2.5" TargetType="Airstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirAirfieldAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="Airstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirWarfactoryAirstrikeHeuristic" WeightMultiplier="1.5" TargetType="Airstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirBarracksAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="Airstrike"/>
-		<TargetHeuristic TargetHeuristic="SafestToAirStructureAirstrikeHeuristic" WeightMultiplier="0.5" TargetType="Airstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirStructureAirstrikeHeuristic" TargetType="Airstrike"/>
 		<Tactic Tactic="FlankAttack" TargetType="Airstrike">
 			<TeamTemplate MinUnits="6" MaxUnits="6" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="INFANTRY RELOAD_AIRCRAFT BOMBER_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-	
-	<AIStrategicStateDefinition
-	  id="OptimalReloadAirHarassmentAntiTurtle"
-	  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<TimerHeuristic StartTime="0s" EndTime="-1s"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterAssaultAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="AssaultAirstrike"/>
-		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAssaultAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="AssaultAirstrike"/>
-		<Tactic Tactic="FlankAttack" TargetType="AssaultAirstrike">
-			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="RELOAD_AIRCRAFT" ExcludeKindOf="INFANTRY BOMBER_AIRCRAFT UNIQUE_UNIT SIEGE_WEAPON" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 	
@@ -141,16 +59,13 @@
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="0s" EndTime="420s"/>
+			<ConstantHeuristic />
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundWarfactoryPrimaryHeuristic" WeightMultiplier="3.0" TargetType="PrimaryTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundAirfieldPrimaryHeuristic" WeightMultiplier="2.5" TargetType="PrimaryTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundBarracksPrimaryHeuristic" WeightMultiplier="2.0" TargetType="PrimaryTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterPrimaryHeuristic" WeightMultiplier="1.5" TargetType="PrimaryTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundRefineryPrimaryHeuristic" WeightMultiplier="1.0" TargetType="PrimaryTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructurePrimaryHeuristic" WeightMultiplier="0.5" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="8" IncludeKindOf="CAN_ATTACK VEHICLE" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" WeightMultiplier="2.0" TargetType="Unit"/>
+		<TargetHeuristic TargetHeuristic="SafestToGroundUnitHeuristic" WeightMultiplier="1.0" TargetType="Unit"/>
+		<Tactic Tactic="FlankAttack" TargetType="Unit">
+			<TeamTemplate MinUnits="5" MaxUnits="12" IncludeKindOf="CAN_ATTACK VEHICLE" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 	
@@ -159,11 +74,12 @@
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="0s" EndTime="420s"/>
+			<ConstantHeuristic />
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Structure"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Structure">
-			<TeamTemplate MinUnits="8" MaxUnits="8" IncludeKindOf="CAN_ATTACK INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="8" MaxUnits="16" IncludeKindOf="CAN_ATTACK INFANTRY" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 	
@@ -172,36 +88,27 @@
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="0s" EndTime="420s"/>
+			<ConstantHeuristic />
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Structure"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Structure">
-			<TeamTemplate MinUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 	
 	<AIStrategicStateDefinition
-		  id="OffensiveProbeAttack"
+		  id="OffensiveAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<TimerHeuristic StartTime="421s" EndTime="-1s"/>
-			<OverpowerHeuristic
-				PowerAdvantageWeight="0.5"
-				PenetrabilityWeight="0.5">
-				<PowerAdvantageHeuristic/>
-				<PenetrabilityHeuristic/>
-			</OverpowerHeuristic>
+			<ConstantHeuristic />
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterPrimaryHeuristic" WeightMultiplier="3.0" TargetType="PrimaryTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundWarfactoryPrimaryHeuristic" WeightMultiplier="2.5" TargetType="PrimaryTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundAirfieldPrimaryHeuristic" WeightMultiplier="2.0" TargetType="PrimaryTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundBarracksPrimaryHeuristic" WeightMultiplier="1.5" TargetType="PrimaryTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundRefineryPrimaryHeuristic" WeightMultiplier="1.0" TargetType="PrimaryTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructurePrimaryHeuristic" WeightMultiplier="0.5" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureFocusedHeuristic" TargetType="FocusedTarget"/>
+		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
+			<TeamTemplate MinUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -209,7 +116,7 @@
 		  id="OffensiveAirHarassmentAntiTurtle"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="120s" EndTime="-1s"/>
+			<ConstantHeuristic />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirTechAirstrikeHeuristic" WeightMultiplier="3.0" TargetType="Airstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAirstrikeHeuristic" WeightMultiplier="2.5" TargetType="Airstrike"/>
@@ -218,20 +125,7 @@
 		<TargetHeuristic TargetHeuristic="SafestToAirBarracksAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="Airstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureAirstrikeHeuristic" WeightMultiplier="0.5" TargetType="Airstrike"/>
 		<Tactic Tactic="FlankAttack" TargetType="Airstrike">
-			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-	
-	<AIStrategicStateDefinition
-	  id="OffensiveReloadAirHarassmentAntiTurtle"
-	  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<TimerHeuristic StartTime="0s" EndTime="-1s"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterAssaultAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="AssaultAirstrike"/>
-		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAssaultAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="AssaultAirstrike"/>
-		<Tactic Tactic="FlankAttack" TargetType="AssaultAirstrike">
-			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="INFANTRY BOMBER_AIRCRAFT UNIQUE_UNIT SIEGE_WEAPON" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 	
@@ -243,12 +137,11 @@
 		<Heuristic>
 			<CounterattackHeuristic Threshold="2.0"/>
 			<PathToTargetHeuristic PathExists="true"/>
-			<LateGameHeuristic/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureCounterattackHeuristic" TargetType="Counterattack"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Counterattack">
-			<TeamTemplate MinUnits="25" MaxUnits="25" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="25" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -256,7 +149,7 @@
 	  id="DefensiveAirHarassmentAntiTurtle"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="210s" EndTime="-1s"/>
+			<ConstantHeuristic />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirTechAirstrikeHeuristic" WeightMultiplier="3.0" TargetType="Airstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAirstrikeHeuristic" WeightMultiplier="2.5" TargetType="Airstrike"/>
@@ -268,81 +161,21 @@
 			<TeamTemplate MinUnits="6" MaxUnits="6" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="INFANTRY RELOAD_AIRCRAFT BOMBER_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
-	
-	<AIStrategicStateDefinition
-	  id="DefensiveReloadAirHarassmentAntiTurtle"
-	  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<TimerHeuristic StartTime="0s" EndTime="-1s"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterAssaultAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="AssaultAirstrike"/>
-		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAssaultAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="AssaultAirstrike"/>
-		<Tactic Tactic="FlankAttack" TargetType="AssaultAirstrike">
-			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="INFANTRY BOMBER_AIRCRAFT UNIQUE_UNIT SIEGE_WEAPON" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
 
 	<!--Guerilla-->
 	
 	<AIStrategicStateDefinition
-		  id="GuerillaProbeAttack"
+		  id="GuerillaAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<OverpowerHeuristic
-				PowerAdvantageWeight="0.5"
-				PenetrabilityWeight="0.5">
-				<PowerAdvantageHeuristic/>
-				<PenetrabilityHeuristic/>
-			</OverpowerHeuristic>
-			<PathToTargetHeuristic PathExists="true"/>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="3.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundTechPrimaryHeuristic" WeightMultiplier="3.0" TargetType="PrimaryTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundAirfieldPrimaryHeuristic" WeightMultiplier="2.5" TargetType="PrimaryTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundWarfactoryPrimaryHeuristic" WeightMultiplier="2.0" TargetType="PrimaryTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundRefineryPrimaryHeuristic" WeightMultiplier="1.5" TargetType="PrimaryTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundBarracksPrimaryHeuristic" WeightMultiplier="1.0" TargetType="PrimaryTarget"/>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructurePrimaryHeuristic" WeightMultiplier="0.5" TargetType="PrimaryTarget"/>
-		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="8" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		  id="GuerillaEconomyAttack"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<OverpowerHeuristic
-				PowerAdvantageWeight="0.3"
-				PenetrabilityWeight="0.7">
-				<PowerAdvantageHeuristic/>
-				<PenetrabilityHeuristic/>
-			</OverpowerHeuristic>
+			<ConstantHeuristic />
+			<EnemyNearbyHeuristic Distance="1500.0" EnemyNearby="false" />
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="Unit"/>
-		<Tactic Tactic="FlankAttack" TargetType="Unit">
-			<TeamTemplate MinUnits="6" IncludeKindOf="CAN_ATTACK VEHICLE" ExcludeKindOf="SIEGE_WEAPON UNIQUE_UNIT AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		  id="GuerillaPowerAttack"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<OverpowerHeuristic
-				PowerAdvantageWeight="0.3"
-				PenetrabilityWeight="0.7">
-				<PowerAdvantageHeuristic/>
-				<PenetrabilityHeuristic/>
-			</OverpowerHeuristic>
-			<PathToTargetHeuristic PathExists="true"/>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundPowerPlantHeuristic" TargetType="Structure"/>
-		<Tactic Tactic="FlankAttack" TargetType="Structure">
-			<TeamTemplate MinUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="SIEGE_WEAPON UNIQUE_UNIT AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureFocusedHeuristic" TargetType="FocusedTarget"/>
+		<Tactic Tactic="FlankAttack" TargetType="FocusedTarget">
+			<TeamTemplate MinUnits="6" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -350,7 +183,7 @@
 		  id="GuerillaAirHarassmentAntiTurtle"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="120s" EndTime="-1s"/>
+			<ConstantHeuristic />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirTechAirstrikeHeuristic" WeightMultiplier="3.0" TargetType="Airstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAirstrikeHeuristic" WeightMultiplier="2.5" TargetType="Airstrike"/>
@@ -359,17 +192,31 @@
 		<TargetHeuristic TargetHeuristic="SafestToAirBarracksAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="Airstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureAirstrikeHeuristic" WeightMultiplier="0.5" TargetType="Airstrike"/>
 		<Tactic Tactic="FlankAttack" TargetType="Airstrike">
-			<TeamTemplate MinUnits="6" MaxUnits="6" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="INFANTRY RELOAD_AIRCRAFT BOMBER_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="INFANTRY RELOAD_AIRCRAFT BOMBER_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 	
 	<!--Overlord-->
+	
+	<AIStrategicStateDefinition
+		  id="OverlordAttack"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<FocusedThresholdHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureFocusedHeuristic" TargetType="FocusedTarget"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="FocusedTarget">
+			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
 	  id="OverlordAirHarassmentAntiTurtle"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="210s" EndTime="-1s"/>
+			<ConstantHeuristic />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirTechAirstrikeHeuristic" WeightMultiplier="3.0" TargetType="Airstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAirstrikeHeuristic" WeightMultiplier="2.5" TargetType="Airstrike"/>
@@ -379,19 +226,6 @@
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureAirstrikeHeuristic" WeightMultiplier="0.5" TargetType="Airstrike"/>
 		<Tactic Tactic="FlankAttack" TargetType="Airstrike">
 			<TeamTemplate MinUnits="6" MaxUnits="6" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="INFANTRY RELOAD_AIRCRAFT BOMBER_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-	
-	<AIStrategicStateDefinition
-	  id="OverlordReloadAirHarassmentAntiTurtle"
-	  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<TimerHeuristic StartTime="0s" EndTime="-1s"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterAssaultAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="AssaultAirstrike"/>
-		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAssaultAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="AssaultAirstrike"/>
-		<Tactic Tactic="FlankAttack" TargetType="AssaultAirstrike">
-			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="INFANTRY BOMBER_AIRCRAFT UNIQUE_UNIT SIEGE_WEAPON" AlwaysRelease="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
