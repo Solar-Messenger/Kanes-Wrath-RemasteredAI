@@ -369,6 +369,8 @@ RemasteredAI/Data/MetaGame/MetaGameMapZonesTest.xml
 RemasteredAI/Data/MetaGame/MetaGameMapZonesTestStandardMaps.xml
 RemasteredAI/Data/SkirmishAI/SkirmishAIIncludes.xml
 RemasteredAI/Data/SkirmishAI/Targets
+RemasteredAI/Data/SkirmishAI/Budgets
+RemasteredAI/Data/SkirmishAI/States/UnitPreferences
 RemasteredAI/Data/SkirmishAI/Personalities/PersonalityList.xml
 RemasteredAI/Data/SkirmishAI/OpeningMoves/TestMove.xml
 RemasteredAI/Data/Maps/official/**/*.tga
@@ -400,6 +402,7 @@ RemasteredAI/Data/Traveler59
 RemasteredAI/Data/ZOCOM
 
 RemasteredAI/Data/SkirmishAI/States/AIStates.xml
+RemasteredAI/Data/SkirmishAI/States/AIUnitPreferences.xml
 RemasteredAI/Data/SkirmishAI/Personalities/HuntPersonality.xml
 RemasteredAI/Data/SkirmishAI/Personalities/DefaultPersonality.xml
 RemasteredAI/Data/GDI/Units/GDIAPC.xml
