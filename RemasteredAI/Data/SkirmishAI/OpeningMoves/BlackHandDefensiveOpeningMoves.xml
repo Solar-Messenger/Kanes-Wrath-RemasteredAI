@@ -35,7 +35,7 @@
 		<Order Time="140s" Build="BlackHandHandOfNOD"/>
 		<Order Time="150s" Build="BlackHandTechAssemblyPlant"/>
 		<!--<Order Time="190s" Build="MG_BlackHand_WarmechFacility"/>-->
-		<Order Time="190s" Build="BlackHandTempleOfNOD"/>
+		<!--<Order Time="190s" Build="BlackHandTempleOfNOD"/>-->
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>

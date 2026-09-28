@@ -35,7 +35,7 @@
 		<Order Time="140s" Build="GDIAirTower"/>
 		<Order Time="150s" Build="GDIArmory"/>
 		<!--<Order Time="190s" Build="MG_GDI_ReclamatorHub"/>-->
-		<Order Time="190s" Build="GDIIonCannonControlCenter"/>
+		<!--<Order Time="190s" Build="GDIIonCannonControlCenter"/>-->
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>

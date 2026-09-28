@@ -35,7 +35,7 @@
 		<Order Time="140s" Build="ZOCOMAirTower"/>
 		<Order Time="150s" Build="ZOCOMArmory"/>
 		<!--<Order Time="190s" Build="MG_ZOCOM_ReclamatorHub"/>-->
-		<Order Time="190s" Build="ZOCOMIonCannonControlCenter"/>
+		<!--<Order Time="190s" Build="ZOCOMIonCannonControlCenter"/>-->
 	</SkirmishOpeningMove>
 
 </AssetDeclaration>
