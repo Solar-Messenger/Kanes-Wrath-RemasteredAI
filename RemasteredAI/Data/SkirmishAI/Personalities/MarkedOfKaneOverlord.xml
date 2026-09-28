@@ -12,12 +12,12 @@
 		  MaxBuildingsToBeDefensiveTarget_Small="0"
 		  MaxBuildingsToBeDefensiveTarget_Med="0"
 		  ChanceForUnitsToUpgrade="999"
-		  ChanceToUseAllUnitsForDefenseTarget_Small="0"
-		  ChanceToUseAllUnitsForDefenseTarget_Med="20"
-		  ChanceToUseAllUnitsForDefenseTarget_Large="40"
+		  ChanceToUseAllUnitsForDefenseTarget_Small="30"
+		  ChanceToUseAllUnitsForDefenseTarget_Med="60"
+		  ChanceToUseAllUnitsForDefenseTarget_Large="90"
 		  DesiredExcessPowerBuffer="20"
 		  BaseCompactness="0.6"
-	  DefaultThreatFindRadius="400"
+	  DefaultThreatFindRadius="0"
 	  UnitBuilderCostEffectivenessWeight="1.0"
 	  UnitBuilderMoneyVersusTimePreference="1.0"
 	  UnitBuilderOverallOffensivePreference="100%"
@@ -25,7 +25,7 @@
 	  UnitBuilderEnemyTowerWeight="0%"
 	  Expansion_TiberiumSearchRadius="700"
 	  Expansion_MaxTiberiumRemaining="27000"
-	  ReactiveDefenseRadius="1250"
+	  ReactiveDefenseRadius="1000"
 	  RepairBuildingsAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoPowerAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoIncomeAtDifficulty="EASY MEDIUM HARD BRUTAL"
@@ -39,7 +39,7 @@
 
 		<Side>MarkedOfKane</Side>
 
-		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.35" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.25" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
 		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
@@ -50,12 +50,13 @@
 		
 		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
 		
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
 		
-		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="2"/>
+		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
+		
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		
@@ -64,8 +65,8 @@
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1"/>
+		
 		<TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
 
@@ -96,13 +97,12 @@
 		<States State="MOKOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="GeneralOverwhelmAttack_S1" Difficulty="EASY MEDIUM HARD BRUTAL" />
-		<States State="GeneralOverwhelmAttack_S2" Difficulty="EASY MEDIUM HARD BRUTAL" />
-		<States State="GeneralOverwhelmAttack_S3" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="OverlordAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="GeneralOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<States State="Cleanup_Victory" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="MOKSiege" Difficulty="MEDIUM HARD BRUTAL" />
 
 		<States State="OverlordAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL" />
-		<States State="MOKOverlordBombingRuns" Difficulty="MEDIUM HARD BRUTAL" />
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="MOKGroundEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
@@ -133,23 +133,28 @@
 		<States State="MOKUnitPreferences_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+
+		<BudgetStates State="CleanupBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
-		<BudgetStates State="BaseBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="BaseBudget_EASY" Difficulty="EASY"/>
+		<BudgetStates State="CriticalDefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
-		<BudgetStates State="OverwhelmBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="InvestmentDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="InvestmentPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
+		
+		<BudgetStates State="TechDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
+		
 		<BudgetStates State="DefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
-		<BudgetStates State="InvestmentPreferenceByTimeBudget_HighPriority" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="InvestmentPreferenceByTimeBudget_MediumPriority" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="InvestmentPreferenceByTimeBudget_LowPriority" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
-
-		<BudgetStates State="TechPreferenceByTime_EarlyGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechPreferenceByTime_MidGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechSupportPreferenceByTime_LateGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechPreferenceByTime_SiegeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
+		<BudgetStates State="RecoveryProduction_Investment_HighPriorityBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="RecoveryProduction_Investment_MediumPriorityBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="RecoveryProduction_Investment_LowPriorityBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		
+		<BudgetStates State="OverwhelmBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="BaseBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="BaseBudget_EASY" Difficulty="EASY"/>
 
 		<!--<UnitOverride UnitName="MarkedOfKaneMetaUnit" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>-->
 

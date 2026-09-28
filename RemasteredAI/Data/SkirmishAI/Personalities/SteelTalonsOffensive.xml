@@ -12,34 +12,34 @@
 		  MaxBuildingsToBeDefensiveTarget_Small="0"
 		  MaxBuildingsToBeDefensiveTarget_Med="0"
 		  ChanceForUnitsToUpgrade="999"
-		  ChanceToUseAllUnitsForDefenseTarget_Small="0"
-		  ChanceToUseAllUnitsForDefenseTarget_Med="0"
-		  ChanceToUseAllUnitsForDefenseTarget_Large="0"
+		  ChanceToUseAllUnitsForDefenseTarget_Small="25"
+		  ChanceToUseAllUnitsForDefenseTarget_Med="50"
+		  ChanceToUseAllUnitsForDefenseTarget_Large="75"
 		  DesiredExcessPowerBuffer="20"
 		  BaseCompactness="0.6"
-	  DefaultThreatFindRadius="750"
-	  UnitBuilderCostEffectivenessWeight="1.0"
+	  DefaultThreatFindRadius="800"
+	  UnitBuilderCostEffectivenessWeight="1.25"
 	  UnitBuilderMoneyVersusTimePreference="1.0"
 	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
 	  UnitBuilderEnemyTowerWeight="0%"
 	  Expansion_TiberiumSearchRadius="700"
-	  Expansion_MaxTiberiumRemaining="27000"
-	  ReactiveDefenseRadius="1250"
+	  Expansion_MaxTiberiumRemaining="20000"
+	  ReactiveDefenseRadius="1000"
 	  RepairBuildingsAtDifficulty="EASY MEDIUM HARD BRUTAL"
-	  EmergencyManagerHandleNoPowerAtDifficulty=" EASY MEDIUM HARD BRUTAL"
+	  EmergencyManagerHandleNoPowerAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoIncomeAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  EmergencyManagerHandleNoConyardAtDifficulty="EASY MEDIUM HARD BRUTAL"
 	  StructureSaveChanceEasy="0.0"
 	  StructureSaveChanceMedium="0.25"
 	  StructureSaveChanceHard="0.5"
-	  MinHarvesters="4"
+	  MinHarvesters="3"
 	  TimeTobeConsideredIdle="0.5"
 		>
 
 		<Side>SteelTalons</Side>
 
-		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.35" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.5" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
 		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
@@ -50,15 +50,15 @@
 		
 		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
 		
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
 		
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="2"/>
+		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
 		
-		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		
@@ -67,9 +67,7 @@
 
 		<TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
+		
 		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
@@ -103,16 +101,13 @@
 		<States State="OffensiveRush_EASY" Difficulty="EASY"/>
 		<States State="OffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="OffensiveInfRush" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="OffensiveProbeAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GeneralOverwhelmAttack_S1" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GeneralOverwhelmAttack_S2" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="GeneralOverwhelmAttack_S3" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OffensiveAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STOffensiveAirEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="GeneralOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="Cleanup_Victory" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="STOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 		
 		<States State="OffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<!--<States State="OffensiveReloadAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>-->
-		<States State="STOffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="STGroundEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
@@ -140,21 +135,26 @@
 		<States State="STUnitPreferences_EASY" Difficulty="EASY"/>
 
 		<BudgetStates State="OpeningMoveBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+
+		<BudgetStates State="CleanupBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
-		<BudgetStates State="BaseBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="BaseBudget_EASY" Difficulty="EASY"/>
+		<BudgetStates State="CriticalDefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
-		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="InvestmentDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="InvestmentPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
+		
+		<BudgetStates State="TechDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
+		
 		<BudgetStates State="DefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
-		<BudgetStates State="InvestmentPreferenceByTimeBudget_HighPriority" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="FullInvestmentBudget_EASY" Difficulty="EASY"/>
-
-		<BudgetStates State="TechPreferenceByTime_EarlyGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechPreferenceByTime_MidGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechSupportPreferenceByTime_LateGameBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechPreferenceByTime_SiegeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="TechByTimeBudget_EASY" Difficulty="EASY"/>
+		<BudgetStates State="RecoveryProduction_Investment_HighPriorityBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		
+		<BudgetStates State="RushBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="BaseBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="BaseBudget_EASY" Difficulty="EASY"/>
 
 		<!--<UnitOverride UnitName="SteelTalonsMARV" Percentage="80%" Difficulty="MEDIUM HARD BRUTAL"/>-->
 
