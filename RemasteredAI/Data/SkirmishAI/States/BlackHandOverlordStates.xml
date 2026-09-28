@@ -2,30 +2,10 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Tags></Tags>
 	<Includes></Includes>
-
-	<AIStrategicStateDefinition
-		  id="BHOverlordBombingRuns"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<PathToTargetHeuristic PathExists="true"/>
-			<FocusedThresholdHeuristic/>
-			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureBombingHeuristic" TargetType="BombingAirstrike"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
-			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits  UnitName="BlackHandMobileArtillery"/>
-				<CreateUnits  UnitName="BlackHandMobileArtillery"/>
-				<CreateUnits  UnitName="BlackHandMobileArtillery"/>
-			</TeamTemplate>
-			<TeamTemplate MinUnits="2" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
 	
 	<AIStrategicStateDefinition
 	id="BHOverlordOverwhelmUnitPreferences"
-	UnitUpgradeMultiplier="1.0"
-	UnitBuilderSimpleUnitCap="80"
+	UnitUpgradeMultiplier="0.5"
 	UnitBuilderCostEffectivenessWeight="1.0"
 	UnitBuilderOverallOffensivePreference="100%"
 	UnitBuilderOverallDefensivePreference="100%"

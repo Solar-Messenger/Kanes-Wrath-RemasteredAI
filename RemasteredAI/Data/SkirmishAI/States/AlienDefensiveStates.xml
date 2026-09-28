@@ -7,7 +7,7 @@
 		  id="AlienDefensiveBombingRuns"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="240s" EndTime="-1s"/>
+			<ConstantHeuristic />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" TargetType="BombingAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
@@ -20,8 +20,7 @@
 	
 	<AIStrategicStateDefinition
 	id="AlienDefensiveTurtleUnitPreferences"
-	UnitUpgradeMultiplier="1.0"
-	UnitBuilderSimpleUnitCap="80"
+	UnitUpgradeMultiplier="0.5"
 	UnitBuilderCostEffectivenessWeight="1.0"
 	UnitBuilderOverallOffensivePreference="100%"
 	UnitBuilderOverallDefensivePreference="100%"

@@ -7,11 +7,12 @@
 	  id="STOffensiveAirEconomyAttack"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
+			<ConstantHeuristic />
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="3.0"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
-			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
+			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT SIEGE_WEAPON BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits UnitName="SteelTalonsOrca"/>
 				<CreateUnits UnitName="SteelTalonsOrca"/>
 				<CreateUnits UnitName="SteelTalonsOrca"/>
@@ -24,8 +25,9 @@
 		  id="STOffensiveSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<EnemyNearbyHeuristic Distance="1250.0" EnemyNearby="false"/>
 			<PathToTargetHeuristic PathExists="true"/>
-			<FocusedThresholdHeuristic />
+			<LateGameHeuristic />
 			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
 		</Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToGroundStructureSiegeHeuristic" WeightMultiplier="0.5" TargetType="SiegeTarget"/>
@@ -41,7 +43,7 @@
 		  id="STOffensiveBombingRuns"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="420s" EndTime="-1s"/>
+			<ConstantHeuristic />
 		</Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToAirTechBombingAirstrikeHeuristic" WeightMultiplier="2.5" TargetType="BombingAirstrike"/>
     <TargetHeuristic TargetHeuristic="SafestToAirAirfieldBombingAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="BombingAirstrike"/>
@@ -58,8 +60,7 @@
 
 	<AIStrategicStateDefinition
 	id="STOffensiveRushUnitPreferences"
-	UnitUpgradeMultiplier="1.0"
-	UnitBuilderSimpleUnitCap="100"
+	UnitUpgradeMultiplier="0.5"
     UnitBuilderCostEffectivenessWeight="1.0"
 	UnitBuilderOverallOffensivePreference="100%"
 	UnitBuilderOverallDefensivePreference="100%"

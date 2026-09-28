@@ -4,15 +4,15 @@
   <Includes></Includes>
 
 	<AIStrategicStateDefinition
-		id="ZOCOMGuerillaOrcaEconomyAttack"
+		id="ZOCOMGuerillaAirEconomyAttack"
 		UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="60s" EndTime="-1s"/>
+			<ConstantHeuristic />
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="3.0"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterAssaultAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="AssaultAirstrike"/>
-		<TargetHeuristic TargetHeuristic="SafestToAirRefineryAssaultAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="AssaultAirstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirRefineryAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
-			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT SIEGE_WEAPON BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits UnitName="ZOCOMOrca"/>
 				<CreateUnits UnitName="ZOCOMOrca"/>
 				<CreateUnits UnitName="ZOCOMOrca"/>
@@ -25,7 +25,7 @@
 		  id="ZOCOMGuerillaBombingRuns"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="90s" EndTime="-1s"/>
+			<ConstantHeuristic />
 		</Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToAirTechBombingAirstrikeHeuristic" WeightMultiplier="2.5" TargetType="BombingAirstrike"/>
     <TargetHeuristic TargetHeuristic="SafestToAirAirfieldBombingAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="BombingAirstrike"/>

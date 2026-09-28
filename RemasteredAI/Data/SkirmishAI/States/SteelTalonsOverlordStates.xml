@@ -2,31 +2,10 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Tags></Tags>
   <Includes></Includes>
-
-	<AIStrategicStateDefinition
-		  id="STOverlordBombingRuns"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<TimerHeuristic StartTime="90s" EndTime="-1s"/>
-			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
-		</Heuristic>
-    <TargetHeuristic TargetHeuristic="SafestToAirTechBombingAirstrikeHeuristic" WeightMultiplier="2.5" TargetType="BombingAirstrike"/>
-    <TargetHeuristic TargetHeuristic="SafestToAirAirfieldBombingAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="BombingAirstrike"/>
-    <TargetHeuristic TargetHeuristic="SafestToAirWarfactoryBombingAirstrikeHeuristic" WeightMultiplier="1.5" TargetType="BombingAirstrike"/>
-    <TargetHeuristic TargetHeuristic="SafestToAirRefineryBombingAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="BombingAirstrike"/>
-    <TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" WeightMultiplier="0.5" TargetType="BombingAirstrike"/>	
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
-			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits UnitName="SteelTalonsFireHawk"/>
-				<CreateUnits UnitName="SteelTalonsFireHawk"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
 	
 	<AIStrategicStateDefinition
 	id="STOverlordOverwhelmUnitPreferences"
-	UnitUpgradeMultiplier="1.0"
-	UnitBuilderSimpleUnitCap="80"
+	UnitUpgradeMultiplier="0.5"
 	UnitBuilderCostEffectivenessWeight="1.0"
 	UnitBuilderOverallOffensivePreference="100%"
 	UnitBuilderOverallDefensivePreference="100%"

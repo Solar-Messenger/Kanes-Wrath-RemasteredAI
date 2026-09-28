@@ -4,12 +4,13 @@
 	<Includes></Includes>
 
 	<AIStrategicStateDefinition
-		  id="MOKOffensiveStealthTankEconomyAttack"
+		  id="MOKOffensiveGroundEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<FocusedThresholdHeuristic />
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
+			<ConstantHeuristic />
 			<PathToTargetHeuristic PathExists="true"/>
+			<EnemyNearbyHeuristic Distance="1250.0" EnemyNearby="false"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="Unit"/>
 		<Tactic Tactic="FlankAttack" TargetType="Unit">
@@ -23,8 +24,9 @@
 		  id="MOKOffensiveSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<EnemyNearbyHeuristic Distance="1250.0" EnemyNearby="false"/>
 			<PathToTargetHeuristic PathExists="true"/>
-			<FocusedThresholdHeuristic />
+			<LateGameHeuristic />
 			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureSiegeHeuristic" TargetType="SiegeTarget"/>
@@ -35,30 +37,10 @@
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		  id="MOKOffensiveBombingRuns"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<TimerHeuristic StartTime="420s" EndTime="-1s"/>
-		</Heuristic>
-    <TargetHeuristic TargetHeuristic="SafestToAirTechBombingAirstrikeHeuristic" WeightMultiplier="2.5" TargetType="BombingAirstrike"/>
-    <TargetHeuristic TargetHeuristic="SafestToAirAirfieldBombingAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="BombingAirstrike"/>
-    <TargetHeuristic TargetHeuristic="SafestToAirWarfactoryBombingAirstrikeHeuristic" WeightMultiplier="1.5" TargetType="BombingAirstrike"/>
-    <TargetHeuristic TargetHeuristic="SafestToAirRefineryBombingAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="BombingAirstrike"/>
-    <TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" WeightMultiplier="0.5" TargetType="BombingAirstrike"/>		
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
-			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits UnitName="MarkedOfKaneVertigo"/>
-				<CreateUnits UnitName="MarkedOfKaneVertigo"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
 	
 	<AIStrategicStateDefinition
 	id="MOKOffensiveRushUnitPreferences"
-	UnitUpgradeMultiplier="1.0"
-	UnitBuilderSimpleUnitCap="100"
+	UnitUpgradeMultiplier="0.5"
 	UnitBuilderCostEffectivenessWeight="1.0"
 	UnitBuilderOverallOffensivePreference="100%"
 	UnitBuilderOverallDefensivePreference="100%"

@@ -25,8 +25,7 @@
 	
 	<AIStrategicStateDefinition
 	id="BHDefensiveTurtleUnitPreferences"
-	UnitUpgradeMultiplier="1.0"
-	UnitBuilderSimpleUnitCap="80"
+	UnitUpgradeMultiplier="0.5"
 	UnitBuilderCostEffectivenessWeight="1.0"
 	UnitBuilderOverallOffensivePreference="100%"
 	UnitBuilderOverallDefensivePreference="100%"

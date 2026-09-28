@@ -4,17 +4,35 @@
   <Includes></Includes>
 
 	<AIStrategicStateDefinition
-    id="AlienGuerillaMechaHarass"
-    UnitUpgradeMultiplier="0.0">
+		id="AlienGuerillaGroundEconomyAttack"
+		UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<FocusedThresholdHeuristic />
+			<ConstantHeuristic />
+			<EnemyNearbyHeuristic Distance="1250.0" EnemyNearby="false" />
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureOpportunityHeuristic" TargetType="Opportunity"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Opportunity">
+		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="Unit"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Unit">
 			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits UnitName="AlienCustomizableVehicle"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		id="AlienGuerillaAirEconomyAttack"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterHeuristic" TargetType="AssaultAirstrike"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
+			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT ASSAULT_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="AlienStormrider"/>
+				<CreateUnits UnitName="AlienStormrider"/>
+				<CreateUnits UnitName="AlienStormrider"/>
+				<CreateUnits UnitName="AlienStormrider"/>
 			</TeamTemplate>
 		</Tactic>
 	</AIStrategicStateDefinition>
@@ -23,7 +41,7 @@
 		  id="AlienGuerillaBombingRuns"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="240s" EndTime="-1s"/>
+			<ConstantHeuristic />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" TargetType="BombingAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">

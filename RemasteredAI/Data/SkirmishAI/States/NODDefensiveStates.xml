@@ -7,8 +7,7 @@
 	  id="NODDefensiveBombingRuns"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="90s" EndTime="-1s"/>
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="2.0"/>
+			<ConstantHeuristic />
 		</Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToAirTechBombingAirstrikeHeuristic" WeightMultiplier="2.5" TargetType="BombingAirstrike"/>
     <TargetHeuristic TargetHeuristic="SafestToAirAirfieldBombingAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="BombingAirstrike"/>
@@ -27,6 +26,7 @@
 	  id="NODDefensiveSpotters"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<ConstantHeuristic />
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
@@ -41,8 +41,7 @@
 	
 	<AIStrategicStateDefinition
 	id="NODDefensiveTurtleUnitPreferences"
-	UnitUpgradeMultiplier="1.0"
-	UnitBuilderSimpleUnitCap="80"
+	UnitUpgradeMultiplier="0.5"
 	UnitBuilderCostEffectivenessWeight="1.0"
 	UnitBuilderOverallOffensivePreference="100%"
 	UnitBuilderOverallDefensivePreference="100%"

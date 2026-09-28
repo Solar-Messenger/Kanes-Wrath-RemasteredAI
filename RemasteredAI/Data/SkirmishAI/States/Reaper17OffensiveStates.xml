@@ -7,9 +7,10 @@
 	  id="R17OffensiveGroundEconomyAttack"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<FocusedThresholdHeuristic />
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
+			<ConstantHeuristic />
 			<PathToTargetHeuristic PathExists="true"/>
+			<EnemyNearbyHeuristic Distance="1250.0" EnemyNearby="false"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="Unit"/>
 		<Tactic Tactic="FlankAttack" TargetType="Unit">
@@ -27,8 +28,9 @@
 		  id="R17OffensiveSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<EnemyNearbyHeuristic Distance="1250.0" EnemyNearby="false"/>
 			<PathToTargetHeuristic PathExists="true"/>
-			<FocusedThresholdHeuristic />
+			<LateGameHeuristic />
 			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureSiegeHeuristic" TargetType="SiegeTarget"/>
@@ -42,8 +44,7 @@
 	
 	<AIStrategicStateDefinition
 	id="R17OffensiveRushUnitPreferences"
-	UnitUpgradeMultiplier="1.0"
-	UnitBuilderSimpleUnitCap="100"
+	UnitUpgradeMultiplier="0.5"
 	UnitBuilderCostEffectivenessWeight="1.0"
 	UnitBuilderOverallOffensivePreference="100%"
 	UnitBuilderOverallDefensivePreference="100%"

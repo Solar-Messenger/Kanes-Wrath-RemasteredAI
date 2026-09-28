@@ -2,11 +2,28 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Tags></Tags>
   <Includes></Includes>
+	
+	<AIStrategicStateDefinition
+	  id="MOKOptimalGroundEconomyAttack"
+	  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<EnemyNearbyHeuristic Distance="1250.0" EnemyNearby="false" />
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="Unit"/>
+		<Tactic Tactic="FlankAttack" TargetType="Unit">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY UNIQUE_UNIT SIEGE_WEAPON AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="MarkedOfKaneStealthTank"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
     id="MOKOptimalSpotters"
     UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<ConstantHeuristic />
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
@@ -22,7 +39,7 @@
 		id="MOKOptimalBombingRuns"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
-		<TimerHeuristic StartTime="240s" EndTime="-1s"/>
+		<ConstantHeuristic />
 		<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToAirTechBombingAirstrikeHeuristic" WeightMultiplier="2.5" TargetType="BombingAirstrike"/>
@@ -44,7 +61,7 @@
     <Heuristic>
 		<PathToTargetHeuristic PathExists="true"/>
 		<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
-		<EnemyNearbyHeuristic Distance="600.0" EnemyNearby="false"/>
+		<EnemyNearbyHeuristic Distance="1000.0" EnemyNearby="false"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="EngineerHeuristic" TargetType="Engineer"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="Engineer">
@@ -56,8 +73,7 @@
 	
 	<AIStrategicStateDefinition
 	id="MOKOptimalOffensiveUnitPreferences"
-	UnitUpgradeMultiplier="1.0"
-	UnitBuilderSimpleUnitCap="80"
+	UnitUpgradeMultiplier="0.5"
 	UnitBuilderCostEffectivenessWeight="1.0"
 	UnitBuilderOverallOffensivePreference="100%"
 	UnitBuilderOverallDefensivePreference="100%"
