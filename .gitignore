@@ -373,6 +373,7 @@ RemasteredAI/Data/SkirmishAI/Budgets
 RemasteredAI/Data/SkirmishAI/States/UnitPreferences
 RemasteredAI/Data/SkirmishAI/Personalities/PersonalityList.xml
 RemasteredAI/Data/SkirmishAI/OpeningMoves/TestMove.xml
+RemasteredAI/Data/SkirmishAI/OpeningMoves/OpeningMoveLibraries.xml
 RemasteredAI/Data/Maps/official/**/*.tga
 RemasteredAI/Data/Maps/official/**/*.map
 RemasteredAI/Data/Maps/official/**/map.xml
