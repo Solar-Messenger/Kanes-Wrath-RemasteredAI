@@ -2,55 +2,5 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Tags></Tags>
 	<Includes></Includes>
-	
-	<AIStrategicStateDefinition
-	id="MOKOverlordOverwhelmUnitPreferences"
-	UnitUpgradeMultiplier="0.5"
-	UnitBuilderCostEffectivenessWeight="1.0"
-	UnitBuilderOverallOffensivePreference="100%"
-	UnitBuilderOverallDefensivePreference="100%"
-	UnitBuilderEnemyTowerWeight="100%">
-		<Heuristic>
-			<ConstantHeuristic Weight="995.0"/>
-		</Heuristic>
-		<UnitModifierByName UnitName="MOKCyborgInfantrySquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="30%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneMilitantRocketSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="50%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneSaboteur" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneFanaticSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneTiberiumTrooperSquad" UnitPreferenceOffensiveModifier="80%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneImprovedCyborgInfantrySquad" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
-
-		<UnitModifierByName UnitName="MarkedOfKaneAttackBike" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="50%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneScorpionBuggy" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneRaiderTank" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneBunkerTruck" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneStealthTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneBeamCannon" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneMobileArtillery" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneAvatar" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="120%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneMetaUnit" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
-
-		<UnitModifierByName UnitName="MarkedOfKaneVenom" UnitPreferenceOffensiveModifier="80%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneVertigo" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
-		
-		<UnitModifierByName UnitName="MarkedOfKaneRefinery" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneEmissary" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
-
-		<UnitModifierByName UnitName="MarkedOfKaneHandOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneDropZone" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="120%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneHangar" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="70%"/>
-		
-		<UnitModifierByName UnitName="MarkedOfKaneOperationsCenter" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneSecretShrine" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneTechAssemblyPlant" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="300%"/>
-		<UnitModifierByName UnitName="MG_MarkedOfKane_WarmechFacility" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneTiberiumLiquidationFacility" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="400%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneTempleOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
-
-		<UnitModifierByName UnitName="MarkedOfKaneShredderTurretHub" UnitPreferenceOffensiveModifier="110%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneLaserCannon" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="80%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneRocketBunker" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="120%"/>
-		<UnitModifierByName UnitName="MarkedOfKaneObelisk" UnitPreferenceOffensiveModifier="1%" UnitPreferenceDefensiveModifier="1%"/>
-	</AIStrategicStateDefinition>
 
 </AssetDeclaration>

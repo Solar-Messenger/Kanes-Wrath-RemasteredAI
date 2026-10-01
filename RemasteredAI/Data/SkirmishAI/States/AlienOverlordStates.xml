@@ -2,54 +2,5 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Tags></Tags>
 	<Includes></Includes>
-	
-	<AIStrategicStateDefinition
-	id="AlienOverlordOverwhelmUnitPreferences"
-	UnitUpgradeMultiplier="0.5"
-	UnitBuilderCostEffectivenessWeight="1.0"
-	UnitBuilderOverallOffensivePreference="100%"
-	UnitBuilderOverallDefensivePreference="100%"
-	UnitBuilderEnemyTowerWeight="100%">
-		<Heuristic>
-			<ConstantHeuristic Weight="995.0"/>
-		</Heuristic>
-		<UnitModifierByName UnitName="AlienBuzzers" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="20%"/>
-		<UnitModifierByName UnitName="AlienRazorDroneSquad" UnitPreferenceOffensiveModifier="10%" UnitPreferenceDefensiveModifier="10%"/>
-		<UnitModifierByName UnitName="AlienAssimilator" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
-		<UnitModifierByName UnitName="AlienStalkerSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
-		<UnitModifierByName UnitName="AlienShockTrooperSquad" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
-
-		<UnitModifierByName UnitName="AlienGunWalker" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="AlienSeekerTank" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="AlienDevourerTank" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="AlienCorrupter" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="AlienAnnihilatorTripod" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="120%"/>
-		<UnitModifierByName UnitName="AlienCustomizableVehicle" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="80%"/>
-		<UnitModifierByName UnitName="AlienEradicatorHexapod" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
-
-		<UnitModifierByName UnitName="AlienStormrider" UnitPreferenceOffensiveModifier="80%" UnitPreferenceDefensiveModifier="80%"/>
-		<UnitModifierByName UnitName="AlienDevastatorWarship" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="AlienPlanetaryAssaultCarrier" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
-		
-		<UnitModifierByName UnitName="AlienTiberiumTower" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="AlienExplorer" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
-
-		<UnitModifierByName UnitName="AlienPortal" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="50%"/>
-		<UnitModifierByName UnitName="AlienGateway" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="120%"/>
-		<UnitModifierByName UnitName="AlienWarpBeacon" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="80%"/>
-		
-		<UnitModifierByName UnitName="AlienControlCenter" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="AlienStatisChamber" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
-		<UnitModifierByName UnitName="AlienReactor" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="300%"/>
-		<UnitModifierByName UnitName="MG_Alien_Hive" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="999%"/>
-		<UnitModifierByName UnitName="AlienSignalTransmitter" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="400%"/>
-		<UnitModifierByName UnitName="AlienRiftGenerator" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
-
-		<UnitModifierByName UnitName="AlienBuzzerHive" UnitPreferenceOffensiveModifier="40%" UnitPreferenceDefensiveModifier="20%"/>
-		<UnitModifierByName UnitName="AlienPhotonCannon" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="AlienPlasmaMissileBattery" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="50%"/>
-		<UnitModifierByName UnitName="AlienSporePod" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
-		<UnitModifierByName UnitName="AlienStormColumn" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
-	</AIStrategicStateDefinition>
 
 </AssetDeclaration>

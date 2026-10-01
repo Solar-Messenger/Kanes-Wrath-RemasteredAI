@@ -77,6 +77,7 @@
 		  id="NODGuerillaEngineer"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
+			<OpeningMoveHeuristic Complete="true" />
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 			<EnemyNearbyHeuristic Distance="600.0" EnemyNearby="false"/>
