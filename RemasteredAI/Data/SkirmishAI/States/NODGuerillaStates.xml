@@ -7,7 +7,7 @@
 		  id="NODGuerillaGroundEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic />
+			<IntervalHeuristic IntervalTime="420s" ActiveTime="120s" />
 			<PathToTargetHeuristic PathExists="true"/>
 			<EnemyNearbyHeuristic Distance="1250.0" EnemyNearby="false"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
@@ -24,7 +24,7 @@
 		id="NODGuerillaGroundRefineryAttack"
 		UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic />
+			<IntervalHeuristic IntervalTime="600s" ActiveTime="120s" />
 			<PathToTargetHeuristic PathExists="true" />
 			<EnemyNearbyHeuristic Distance="1250.0" EnemyNearby="false"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
