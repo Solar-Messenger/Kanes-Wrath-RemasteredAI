@@ -27,7 +27,7 @@
 		<Heuristic>
 			<ConstantHeuristic />
 			<PathToTargetHeuristic PathExists="true"/>
-			<EnemyNearbyHeuristic Distance="1500.0" EnemyNearby="false" />
+			<EnemyNearbyHeuristic Distance="1250.0" EnemyNearby="false" />
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructurePrimaryHeuristic" TargetType="PrimaryTarget"/>
@@ -62,6 +62,7 @@
 			<TimerHeuristic StartTime="0s" EndTime="420s"/>
 			<ConstantHeuristic />
 			<PathToTargetHeuristic PathExists="true"/>
+			<EnemyNearbyHeuristic Distance="1250.0" EnemyNearby="false" />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterPrimaryHeuristic" WeightMultiplier="2.0" TargetType="PrimaryTarget"/>
 		<TargetHeuristic TargetHeuristic="SafestToGroundUnitPrimaryHeuristic" WeightMultiplier="1.0" TargetType="PrimaryTarget"/>
@@ -170,7 +171,7 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<ConstantHeuristic />
-			<EnemyNearbyHeuristic Distance="1500.0" EnemyNearby="false" />
+			<EnemyNearbyHeuristic Distance="1250.0" EnemyNearby="false" />
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
