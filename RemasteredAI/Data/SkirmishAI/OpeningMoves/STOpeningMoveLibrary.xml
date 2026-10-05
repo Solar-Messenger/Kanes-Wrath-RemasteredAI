@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Tags></Tags>
+  <Includes>
+  </Includes>
+	
+	<SkirmishOpeningMove
+	id="ST_EASY"
+	Side="SteelTalons">
+		<Order Time="0s" Build="SteelTalonsPowerPlant"/>
+		<Order Time="5s" Build="SteelTalonsBarracks"/>
+		<Order Build="SteelTalonsCombatEngineer"/>
+		<Order Build="SteelTalonsCombatEngineer"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Time="10s" Build="SteelTalonsRefinery"/>
+		<Order Time="40s" Build="SteelTalonsWarfactory"/>
+		<Order Time="60s" Build="SteelTalonsRefinery"/>
+		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Time="90s" Build="SteelTalonsPowerPlant"/>
+		<Order Time="95s" Build="SteelTalonsPowerPlant"/>
+	</SkirmishOpeningMove>
+	
+	<SkirmishOpeningMove
+		id="STStandard"
+		Side="SteelTalons">
+		<Order Time="0s" Build="SteelTalonsPowerPlant"/>
+		<Order Time="5s" Build="SteelTalonsBarracks"/>
+		<Order Build="SteelTalonsCombatEngineer"/>
+		<Order Build="SteelTalonsCombatEngineer"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Time="10s" Build="SteelTalonsRefinery"/>
+		<Order Time="40s" Build="SteelTalonsWarfactory"/>
+		<Order Time="60s" Build="SteelTalonsRefinery"/>
+		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Time="90s" Build="SteelTalonsPowerPlant"/>
+		<Order Time="90s" Build="SteelTalonsWatchTower"/>
+		<Order Time="95s" Build="SteelTalonsPowerPlant"/>
+		<Order Time="95s" Build="SteelTalonsWatchTower"/>
+		<Order Time="100s" Build="SteelTalonsWarfactory"/>
+		<Order Time="120s" Build="SteelTalonsPowerPlant"/>
+		<Order Time="125s" Build="SteelTalonsCommandPost"/>
+		<Order Time="140s" Build="SteelTalonsPowerPlant"/>
+		<Order Time="145s" Account="TECHNOLOGY" Deposit="2000"/>
+	</SkirmishOpeningMove>
+	
+	<SkirmishOpeningMove
+	id="STStandardCrane"
+	Side="SteelTalons">
+		<Order Time="0s" Build="SteelTalonsPowerPlant"/>
+		<Order Time="5s" Build="SteelTalonsBarracks"/>
+		<Order Build="SteelTalonsCombatEngineer"/>
+		<Order Build="SteelTalonsCombatEngineer"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Time="10s" Build="SteelTalonsRefinery"/>
+		<Order Time="40s" Build="SteelTalonsWarfactory"/>
+		<Order Time="60s" Build="SteelTalonsRefinery"/>
+		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Time="90s" Build="SteelTalonsPowerPlant"/>
+		<Order Time="90s" Build="SteelTalonsWatchTower"/>
+		<Order Time="95s" Build="SteelTalonsPowerPlant"/>
+		<Order Time="95s" Build="SteelTalonsWatchTower"/>
+		<Order Time="100s" Build="SteelTalonsCrane"/>
+		<Order Time="115s" Build="SteelTalonsWarfactory"/>
+		<Order Time="115s" Build="SteelTalonsPowerPlant"/>
+		<Order Time="120s" Build="SteelTalonsCommandPost"/>
+		<Order Time="135s" Build="SteelTalonsPowerPlant"/>
+		<Order Time="140s" Account="TECHNOLOGY" Deposit="2000"/>
+	</SkirmishOpeningMove>
+
+	<SkirmishOpeningMove
+		id="STTwoWarfactory"
+		Side="SteelTalons">
+		<Order Time="0s" Build="SteelTalonsPowerPlant" />
+		<Order Time="5s" Build="SteelTalonsBarracks" />
+		<Order Build="SteelTalonsCombatEngineer"/>
+		<Order Build="SteelTalonsCombatEngineer"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Time="10s" Build="SteelTalonsRefinery" />
+		<Order Time="40s" Build="SteelTalonsWarfactory" />
+		<Order Time="60s" Build="SteelTalonsRefinery" />
+		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Time="90s" Build="SteelTalonsPowerPlant" />
+		<Order Time="95s" Build="SteelTalonsPowerPlant" />
+		<Order Time="100s" Build="SteelTalonsWarfactory" />
+	</SkirmishOpeningMove>
+	
+	<SkirmishOpeningMove
+		id="STThreeWarfactory"
+		Side="SteelTalons">
+		<Order Time="0s" Build="SteelTalonsPowerPlant" />
+		<Order Time="5s" Build="SteelTalonsBarracks" />
+		<Order Build="SteelTalonsCombatEngineer"/>
+		<Order Build="SteelTalonsCombatEngineer"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Time="10s" Build="SteelTalonsRefinery" />
+		<Order Time="40s" Build="SteelTalonsWarfactory" />
+		<Order Time="60s" Build="SteelTalonsRefinery" />
+		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Time="90s" Build="SteelTalonsPowerPlant" />
+		<Order Time="95s" Build="SteelTalonsPowerPlant" />
+		<Order Time="100s" Build="SteelTalonsWarfactory" />
+		<Order Time="120s" Build="SteelTalonsWarfactory" />
+	</SkirmishOpeningMove>
+
+	<SkirmishOpeningMove
+		id="STMixed"
+		Side="SteelTalons">
+		<Order Time="0s" Build="SteelTalonsPowerPlant" />
+		<Order Time="5s" Build="SteelTalonsBarracks" />
+		<Order Build="SteelTalonsCombatEngineer"/>
+		<Order Build="SteelTalonsCombatEngineer"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Time="10s" Build="SteelTalonsRefinery" />
+		<Order Time="40s" Build="SteelTalonsWarfactory" />
+		<Order Time="60s" Build="SteelTalonsRefinery" />
+		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Time="90s" Build="SteelTalonsPowerPlant" />
+		<Order Time="95s" Build="SteelTalonsPowerPlant" />
+		<Order Time="100s" Build="SteelTalonsCommandPost" />
+		<Order Time="115s" Build="SteelTalonsAirfield" />
+	</SkirmishOpeningMove>
+
+	<SkirmishOpeningMove
+		id="STT3Rush"
+		Side="SteelTalons">
+		<Order Time="0s" Build="SteelTalonsPowerPlant" />
+		<Order Time="5s" Build="SteelTalonsBarracks" />
+		<Order Build="SteelTalonsCombatEngineer"/>
+		<Order Build="SteelTalonsCombatEngineer"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Build="SteelTalonsRifleSoldierSquad"/>
+		<Order Time="10s" Build="SteelTalonsRefinery" />
+		<Order Time="40s" Build="SteelTalonsWarfactory" />
+		<Order Time="60s" Build="SteelTalonsRefinery" />
+		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsWolverine"/>
+		<Order Build="SteelTalonsHeavyHarvester"/>
+		<Order Time="90s" Build="SteelTalonsPowerPlant" />
+		<Order Time="95s" Build="SteelTalonsPowerPlant" />
+		<Order Time="100s" Build="SteelTalonsCrane" />
+		<Order Time="115s" Build="SteelTalonsWarfactory" />
+		<Order Time="115s" Build="SteelTalonsCommandPost" />
+		<Order Time="130s" Build="SteelTalonsArmory" />
+	</SkirmishOpeningMove>
+	
+</AssetDeclaration>

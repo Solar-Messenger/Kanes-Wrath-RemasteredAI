@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Tags></Tags>
+  <Includes>
+  </Includes>
+	
+	<SkirmishOpeningMove
+	id="GDI_EASY"
+	Side="GDI">
+		<Order Time="0s" Build="GDIPowerPlant"/>
+		<Order Time="5s" Build="GDIBarracks"/>
+		<Order Build="GDIEngineer"/>
+		<Order Build="GDIEngineer"/>
+		<Order Build="GDIRifleSoldierSquad"/>
+		<Order Build="GDIRifleSoldierSquad"/>
+		<Order Build="GDIRifleSoldierSquad"/>
+		<Order Time="10s" Build="GDIRefinery"/>
+		<Order Time="40s" Build="GDIWarfactory"/>
+		<Order Time="60s" Build="GDIRefinery"/>
+		<Order Build="GDIHarvester"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIHarvester"/>
+		<Order Build="GDIHarvester"/>
+		<Order Build="GDIHarvester"/>
+		<Order Build="GDIHarvester"/>
+		<Order Time="90s" Build="GDIPowerPlant"/>
+		<Order Time="95s" Build="GDIPowerPlant"/>
+	</SkirmishOpeningMove>
+	
+	<SkirmishOpeningMove
+		id="GDIStandard"
+		Side="GDI">
+		<Order Time="0s" Build="GDIPowerPlant"/>
+		<Order Time="5s" Build="GDIBarracks"/>
+		<Order Build="GDIEngineer"/>
+		<Order Build="GDIEngineer"/>
+		<Order Build="GDIRifleSoldierSquad"/>
+		<Order Build="GDIRifleSoldierSquad"/>
+		<Order Build="GDIRifleSoldierSquad"/>
+		<Order Time="10s" Build="GDIRefinery"/>
+		<Order Time="40s" Build="GDIWarfactory"/>
+		<Order Time="60s" Build="GDIRefinery"/>
+		<Order Build="GDIHarvester"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIHarvester"/>
+		<Order Time="90s" Build="GDIPowerPlant"/>
+		<Order Time="90s" Build="GDIWatchTower"/>
+		<Order Time="95s" Build="GDIPowerPlant"/>
+		<Order Time="95s" Build="GDIWatchTower"/>
+		<Order Time="100s" Build="GDIWarfactory"/>
+		<Order Time="120s" Build="GDIPowerPlant"/>
+		<Order Time="125s" Build="GDICommandPost"/>
+		<Order Time="140s" Build="GDIPowerPlant"/>
+		<Order Time="145s" Account="TECHNOLOGY" Deposit="2000"/>
+	</SkirmishOpeningMove>
+	
+	<SkirmishOpeningMove
+	id="GDIStandardCrane"
+	Side="GDI">
+		<Order Time="0s" Build="GDIPowerPlant"/>
+		<Order Time="5s" Build="GDIBarracks"/>
+		<Order Build="GDIEngineer"/>
+		<Order Build="GDIEngineer"/>
+		<Order Build="GDIRifleSoldierSquad"/>
+		<Order Build="GDIRifleSoldierSquad"/>
+		<Order Build="GDIRifleSoldierSquad"/>
+		<Order Time="10s" Build="GDIRefinery"/>
+		<Order Time="40s" Build="GDIWarfactory"/>
+		<Order Time="60s" Build="GDIRefinery"/>
+		<Order Build="GDIHarvester"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIHarvester"/>
+		<Order Time="90s" Build="GDIPowerPlant"/>
+		<Order Time="90s" Build="GDIWatchTower"/>
+		<Order Time="95s" Build="GDIPowerPlant"/>
+		<Order Time="95s" Build="GDIWatchTower"/>
+		<Order Time="100s" Build="GDICrane"/>
+		<Order Time="115s" Build="GDIWarfactory"/>
+		<Order Time="115s" Build="GDIPowerPlant"/>
+		<Order Time="120s" Build="GDICommandPost"/>
+		<Order Time="135s" Build="GDIPowerPlant"/>
+		<Order Time="140s" Account="TECHNOLOGY" Deposit="2000"/>
+	</SkirmishOpeningMove>
+
+	<SkirmishOpeningMove
+		id="GDITwoWarfactory"
+		Side="GDI">
+		<Order Time="0s" Build="GDIPowerPlant" />
+		<Order Time="5s" Build="GDIBarracks" />
+		<Order Build="GDIEngineer" />
+		<Order Build="GDIEngineer" />
+		<Order Build="GDIRifleSoldierSquad" />
+		<Order Build="GDIRifleSoldierSquad" />
+		<Order Build="GDIRifleSoldierSquad" />
+		<Order Time="10s" Build="GDIRefinery" />
+		<Order Time="40s" Build="GDIWarfactory" />
+		<Order Time="60s" Build="GDIRefinery" />
+		<Order Build="GDIHarvester"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIHarvester"/>
+		<Order Time="90s" Build="GDIPowerPlant" />
+		<Order Time="95s" Build="GDIPowerPlant" />
+		<Order Time="100s" Build="GDIWarfactory" />
+	</SkirmishOpeningMove>
+	
+	<SkirmishOpeningMove
+		id="GDIThreeWarfactory"
+		Side="GDI">
+		<Order Time="0s" Build="GDIPowerPlant" />
+		<Order Time="5s" Build="GDIBarracks" />
+		<Order Build="GDIEngineer" />
+		<Order Build="GDIEngineer" />
+		<Order Build="GDIRifleSoldierSquad" />
+		<Order Build="GDIRifleSoldierSquad" />
+		<Order Build="GDIRifleSoldierSquad" />
+		<Order Time="10s" Build="GDIRefinery" />
+		<Order Time="40s" Build="GDIWarfactory" />
+		<Order Time="60s" Build="GDIRefinery" />
+		<Order Build="GDIHarvester"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIHarvester"/>
+		<Order Time="90s" Build="GDIPowerPlant" />
+		<Order Time="95s" Build="GDIPowerPlant" />
+		<Order Time="100s" Build="GDIWarfactory" />
+		<Order Time="120s" Build="GDIWarfactory" />
+	</SkirmishOpeningMove>
+
+	<SkirmishOpeningMove
+		id="GDIMixed"
+		Side="GDI">
+		<Order Time="0s" Build="GDIPowerPlant" />
+		<Order Time="5s" Build="GDIBarracks" />
+		<Order Build="GDIEngineer" />
+		<Order Build="GDIEngineer" />
+		<Order Build="GDIRifleSoldierSquad" />
+		<Order Build="GDIRifleSoldierSquad" />
+		<Order Build="GDIRifleSoldierSquad" />
+		<Order Time="10s" Build="GDIRefinery" />
+		<Order Time="40s" Build="GDIWarfactory" />
+		<Order Time="60s" Build="GDIRefinery" />
+		<Order Build="GDIHarvester"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIHarvester"/>
+		<Order Time="90s" Build="GDIPowerPlant" />
+		<Order Time="95s" Build="GDIPowerPlant" />
+		<Order Time="100s" Build="GDICommandPost" />
+		<Order Time="115s" Build="GDIAirfield" />
+	</SkirmishOpeningMove>
+
+	<SkirmishOpeningMove
+		id="GDIT3Rush"
+		Side="GDI">
+		<Order Time="0s" Build="GDIPowerPlant" />
+		<Order Time="5s" Build="GDIBarracks" />
+		<Order Build="GDIEngineer" />
+		<Order Build="GDIEngineer" />
+		<Order Build="GDIRifleSoldierSquad" />
+		<Order Build="GDIRifleSoldierSquad" />
+		<Order Build="GDIRifleSoldierSquad" />
+		<Order Time="10s" Build="GDIRefinery" />
+		<Order Time="40s" Build="GDIWarfactory" />
+		<Order Time="60s" Build="GDIRefinery" />
+		<Order Build="GDIHarvester"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIAPC"/>
+		<Order Build="GDIHarvester"/>
+		<Order Time="90s" Build="GDIPowerPlant" />
+		<Order Time="95s" Build="GDIPowerPlant" />
+		<Order Time="100s" Build="GDICrane" />
+		<Order Time="115s" Build="GDIWarfactory" />
+		<Order Time="115s" Build="GDICommandPost" />
+		<Order Time="130s" Build="GDIArmory" />
+	</SkirmishOpeningMove>
+	
+</AssetDeclaration>
