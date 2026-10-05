@@ -7,14 +7,14 @@
 		  PersonalityType="1Reaper17Optimal"
 	  PersonalityUIName="Personality:Optimal"
 	  SkirmishPersonality="true"
-		  SecondsTillTargetsCanExpire="1.0"
+		  SecondsTillTargetsCanExpire="5.0"
 		  ChanceForTargetToExpire="100"
-		  MaxBuildingsToBeDefensiveTarget_Small="0"
-		  MaxBuildingsToBeDefensiveTarget_Med="0"
+		  MaxBuildingsToBeDefensiveTarget_Small="1"
+		  MaxBuildingsToBeDefensiveTarget_Med="5"
 		  ChanceForUnitsToUpgrade="999"
-		  ChanceToUseAllUnitsForDefenseTarget_Small="30"
-		  ChanceToUseAllUnitsForDefenseTarget_Med="60"
-		  ChanceToUseAllUnitsForDefenseTarget_Large="90"
+		  ChanceToUseAllUnitsForDefenseTarget_Small="100"
+		  ChanceToUseAllUnitsForDefenseTarget_Med="90"
+		  ChanceToUseAllUnitsForDefenseTarget_Large="75"
 		  DesiredExcessPowerBuffer="20"
 		  BaseCompactness="0.6"
 	  DefaultThreatFindRadius="500"
@@ -54,7 +54,9 @@
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
 		
-		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="2"/>
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="2"/>
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="2"/>
+		
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
 		
@@ -70,6 +72,8 @@
 		<TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
@@ -90,25 +94,26 @@
 		<TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 
 		<OpeningMove Name="R17_EASY" Weight="100%" Difficulty="EASY"/>
-		<OpeningMove Name="R17OptimalStandard" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="R17OptimalCrane" Weight="50%" Difficulty="MEDIUM HARD BRUTAL"/>
+		
+		<OpeningMove Name="R17Standard" Weight="55%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="R17StandardCrane" Weight="45%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="R17OpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
-		<States State="R17OptimalGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="OptimalHuntArmy" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="OptimalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17OptimalGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="GeneralOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="Cleanup_Victory" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="R17Siege" Difficulty="MEDIUM HARD BRUTAL" />
 		
 		<States State="OptimalAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
-		<States State="R17OptimalEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17OptimalEngineer" Difficulty="HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="R17EngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="R17CommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="R17EngineerDefense" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="R17CommandoDefense" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="GarrisonHexapod" Difficulty="HARD BRUTAL"/>
 		<States State="Garrison" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -125,9 +130,8 @@
 		<States State="BeaconHelp" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="CratePickup" Difficulty="MEDIUM HARD BRUTAL"/>
 
+		<States State="R17CriticalDefenseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="R17BaseUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="R17OptimalOffensiveUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="R17CriticalDefensiveSpamUnitPreferences" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="R17UnitPreferences_EASY" Difficulty="EASY"/>
 
@@ -135,7 +139,7 @@
 		
 		<BudgetStates State="CleanupBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		
-		<BudgetStates State="CriticalDefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="CriticalDefenseBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		
 		<BudgetStates State="InvestmentDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="InvestmentPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -147,9 +151,7 @@
 		
 		<BudgetStates State="DefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
-		<BudgetStates State="RecoveryProduction_Investment_HighPriorityBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="RecoveryProduction_Investment_MediumPriorityBudget" Difficulty="MEDIUM HARD BRUTAL"/>
-		<BudgetStates State="RecoveryProduction_Investment_LowPriorityBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="RecoveryProduction_Investment_Budget" Difficulty="MEDIUM HARD BRUTAL"/>
 		
 		<BudgetStates State="BaseBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="BaseBudget_EASY" Difficulty="EASY"/>
