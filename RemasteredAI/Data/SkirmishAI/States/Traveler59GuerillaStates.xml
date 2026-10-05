@@ -7,8 +7,7 @@
 		id="T59GuerillaGroundEconomyAttack"
 		UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic />
-			<EnemyNearbyHeuristic Distance="1250.0" EnemyNearby="false" />
+			<EnemyNearbyHeuristic Distance="1500.0" EnemyNearby="false" />
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>

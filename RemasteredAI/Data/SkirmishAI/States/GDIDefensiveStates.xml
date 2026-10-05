@@ -26,7 +26,6 @@
     id="GDIDefensiveSpotters"
     UnitUpgradeMultiplier="0.0">
     <Heuristic>
-		<ConstantHeuristic />
 		<PathToTargetHeuristic PathExists="true"/>
 		<SiegeThresholdHeuristic SiegeMode="false" Threshold="2.0"/>
     </Heuristic>

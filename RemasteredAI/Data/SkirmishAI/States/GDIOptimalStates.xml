@@ -8,10 +8,10 @@
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<ConstantHeuristic />
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="3.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
-		<Tactic Tactic="FlankAttack" TargetType="AssaultAirstrike">
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
 			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT SIEGE_WEAPON BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits UnitName="GDIOrca"/>
 				<CreateUnits UnitName="GDIOrca"/>
@@ -25,7 +25,6 @@
 	  id="GDIOptimalSpotters"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic />
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="2.0"/>
 		</Heuristic>

@@ -7,13 +7,12 @@
 	  id="R17OffensiveGroundEconomyAttack"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic />
 			<PathToTargetHeuristic PathExists="true"/>
-			<EnemyNearbyHeuristic Distance="1250.0" EnemyNearby="false"/>
+			<EnemyNearbyHeuristic Distance="1500.0" EnemyNearby="false"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="Unit"/>
-		<Tactic Tactic="FlankAttack" TargetType="Unit">
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Unit">
 			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits UnitName="Reaper17ShockTrooperSquad"/>
 				<CreateUnits UnitName="Reaper17ShockTrooperSquad"/>

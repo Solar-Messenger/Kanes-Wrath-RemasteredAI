@@ -7,7 +7,6 @@
 		id="R17GuerillaGroundEconomyAttack"
 		UnitUpgradeMultiplier="0.0">
 		<Heuristic> 
-			<ConstantHeuristic />
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>

@@ -11,7 +11,7 @@
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
-		<Tactic Tactic="FlankAttack" TargetType="AssaultAirstrike">
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
 			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT SIEGE_WEAPON BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits UnitName="SteelTalonsOrca"/>
 				<CreateUnits UnitName="SteelTalonsOrca"/>
