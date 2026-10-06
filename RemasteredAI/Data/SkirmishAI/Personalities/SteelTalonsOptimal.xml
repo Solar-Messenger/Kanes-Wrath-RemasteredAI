@@ -55,10 +55,8 @@
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
 		
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="2"/>
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="2"/>
 		
-		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 		
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
@@ -161,7 +159,7 @@
 		
 		<BudgetStates State="DefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
-		<BudgetStates State="RecoveryProduction_Investment_Budget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="RecoveryProduction_Investment_Budget_Large" Difficulty="MEDIUM HARD BRUTAL"/>
 		
 		<BudgetStates State="BaseBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="BaseBudget_EASY" Difficulty="EASY"/>
