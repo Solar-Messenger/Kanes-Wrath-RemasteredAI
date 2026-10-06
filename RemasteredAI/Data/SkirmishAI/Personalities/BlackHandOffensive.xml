@@ -102,7 +102,7 @@
 		<States State="OffensiveRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="OffensiveHuntArmy" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="OffensiveAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="BHOffensiveGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
+		<States State="BHOffensiveGroundRefineryAttack" Difficulty="HARD BRUTAL"/>
 		<States State="GeneralOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="BHOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 
