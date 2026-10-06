@@ -26,7 +26,7 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<FocusedThresholdHeuristic />
-			<EnemyNearbyHeuristic Distance="1250.0" EnemyNearby="false"/>
+			<EnemyNearbyHeuristic Distance="2000.0" EnemyNearby="false"/>
 			<PathToTargetHeuristic PathExists="true"/>
 			<LateGameHeuristic />
 			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>

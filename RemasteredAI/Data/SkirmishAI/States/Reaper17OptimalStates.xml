@@ -7,7 +7,7 @@
 		id="R17OptimalGroundEconomyAttack"
 		UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<EnemyNearbyHeuristic Distance="1500.0" EnemyNearby="false" />
+			<EnemyNearbyHeuristic Distance="2000.0" EnemyNearby="false" />
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>

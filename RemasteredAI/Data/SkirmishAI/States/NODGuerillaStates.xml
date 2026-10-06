@@ -7,13 +7,12 @@
 		  id="NODGuerillaGroundEconomyAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<IntervalHeuristic IntervalTime="420s" ActiveTime="120s" />
 			<PathToTargetHeuristic PathExists="true"/>
-			<EnemyNearbyHeuristic Distance="1250.0" EnemyNearby="false"/>
+			<EnemyNearbyHeuristic Distance="2000.0" EnemyNearby="false"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="Unit"/>
-		<Tactic Tactic="FlankAttack" TargetType="Unit">
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Unit">
 			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT SIEGE_WEAPON" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits UnitName="NODStealthTank"/>
 			</TeamTemplate>
@@ -24,9 +23,8 @@
 		id="NODGuerillaGroundRefineryAttack"
 		UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<IntervalHeuristic IntervalTime="600s" ActiveTime="120s" />
 			<PathToTargetHeuristic PathExists="true" />
-			<EnemyNearbyHeuristic Distance="1250.0" EnemyNearby="false"/>
+			<EnemyNearbyHeuristic Distance="2000.0" EnemyNearby="false"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundRefineryHeuristic" TargetType="Structure"/>
@@ -42,13 +40,14 @@
 		id="NODGuerillaSpotters"
 		UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic />
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructureOpportunityHeuristic" TargetType="Opportunity"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Opportunity">
-			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="NODShadowSquad"/>
+				<CreateUnits UnitName="NODShadowSquad"/>
 				<CreateUnits UnitName="NODShadowSquad"/>
 			</TeamTemplate>
 		</Tactic>

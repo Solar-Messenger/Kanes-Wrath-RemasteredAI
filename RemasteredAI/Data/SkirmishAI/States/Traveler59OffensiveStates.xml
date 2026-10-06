@@ -8,7 +8,7 @@
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<PathToTargetHeuristic PathExists="true"/>
-			<EnemyNearbyHeuristic Distance="1500.0" EnemyNearby="false"/>
+			<EnemyNearbyHeuristic Distance="2000.0" EnemyNearby="false"/>
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="Unit"/>
@@ -28,7 +28,7 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<FocusedThresholdHeuristic />
-			<EnemyNearbyHeuristic Distance="1250.0" EnemyNearby="false"/>
+			<EnemyNearbyHeuristic Distance="2000.0" EnemyNearby="false"/>
 			<LateGameHeuristic />
 			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
 		</Heuristic>
