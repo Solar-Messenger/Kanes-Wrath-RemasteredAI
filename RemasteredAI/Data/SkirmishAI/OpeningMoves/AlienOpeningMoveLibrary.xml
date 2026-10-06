@@ -190,5 +190,100 @@
 		<Order Time="115s" Build="AlienControlCenter" />
 		<Order Time="130s" Build="AlienReactor" />
 	</SkirmishOpeningMove>
+	
+	<SkirmishOpeningMove
+		id="AlienTwoWarfactorySeekers"
+		Side="Alien">
+		<Order Time="0s" Build="AlienPowerProjector" />
+		<Order Time="5s" Build="AlienPortal" />
+		<Order Build="AlienAssimilator" />
+		<Order Build="AlienAssimilator" />
+		<Order Build="AlienBuzzers" />
+		<Order Build="AlienBuzzers" />
+		<Order Build="AlienBuzzers" />
+		<Order Time="10s" Build="AlienTiberiumTower" />
+		<Order Time="40s" Build="AlienGateway" />
+		<Order Time="60s" Build="AlienTiberiumTower" />
+		<Order Build="AlienHarvester" />
+		<Order Build="AlienGunwalker" />
+		<Order Build="AlienHarvester" />
+		<Order Build="AlienSeekerTank" />
+		<Order Build="AlienSeekerTank" />
+		<Order Build="AlienSeekerTank" />
+		<Order Build="AlienSeekerTank" />
+		<Order Build="AlienSeekerTank" />
+		<Order Build="AlienSeekerTank" />
+		<Order Build="AlienSeekerTank" />
+		<Order Build="AlienSeekerTank" />
+		<Order Build="AlienSeekerTank" />
+		<Order Build="AlienSeekerTank" />
+		<Order Build="AlienSeekerTank" />
+		<Order Build="AlienSeekerTank" />
+		<Order Time="90s" Build="AlienPowerProjector" />
+		<Order Time="95s" Build="AlienPowerProjector" />
+		<Order Time="100s" Build="AlienGateway" />
+	</SkirmishOpeningMove>
+	
+	<SkirmishOpeningMove
+		id="AlienThreeWarfactorySeekers"
+		Side="Alien">
+		<Order Time="0s" Build="AlienPowerProjector" />
+		<Order Time="5s" Build="AlienPortal" />
+		<Order Build="AlienAssimilator" />
+		<Order Build="AlienAssimilator" />
+		<Order Build="AlienBuzzers" />
+		<Order Build="AlienBuzzers" />
+		<Order Build="AlienBuzzers" />
+		<Order Time="10s" Build="AlienTiberiumTower" />
+		<Order Time="40s" Build="AlienGateway" />
+		<Order Time="60s" Build="AlienTiberiumTower" />
+		<Order Build="AlienHarvester" />
+		<Order Build="AlienGunwalker" />
+		<Order Build="AlienHarvester" />
+		<Order Build="AlienSeekerTank" />
+		<Order Build="AlienSeekerTank" />
+		<Order Build="AlienSeekerTank" />
+		<Order Build="AlienSeekerTank" />
+		<Order Build="AlienSeekerTank" />
+		<Order Build="AlienSeekerTank" />
+		<Order Build="AlienSeekerTank" />
+		<Order Build="AlienSeekerTank" />
+		<Order Build="AlienSeekerTank" />
+		<Order Build="AlienSeekerTank" />
+		<Order Build="AlienSeekerTank" />
+		<Order Build="AlienSeekerTank" />
+		<Order Time="90s" Build="AlienPowerProjector" />
+		<Order Time="95s" Build="AlienPowerProjector" />
+		<Order Time="100s" Build="AlienGateway" />
+		<Order Time="120s" Build="AlienGateway" />
+	</SkirmishOpeningMove>
+
+	<SkirmishOpeningMove
+		id="AlienDisintRush"
+		Side="Alien">
+		<Order Time="0s" Build="AlienPowerProjector" />
+		<Order Time="5s" Build="AlienPortal" />
+		<Order Time="10s" Build="AlienTiberiumTower" />
+		<Order Build="AlienAssimilator" />
+		<Order Build="AlienAssimilator" />
+		<Order Build="AlienBuzzers" />
+		<Order Build="AlienBuzzers" />
+		<Order Build="AlienBuzzers" />
+		<Order Build="AlienRazorDroneSquad" />
+		<Order Build="AlienRazorDroneSquad" />
+		<Order Build="AlienRazorDroneSquad" />
+		<Order Build="AlienRazorDroneSquad" />
+		<Order Build="AlienRazorDroneSquad" />
+		<Order Build="AlienRazorDroneSquad" />
+		<Order Build="AlienRazorDroneSquad" />
+		<Order Build="AlienRazorDroneSquad" />
+		<Order Time="40s" Build="AlienTiberiumTower" />
+		<Order Time="70s" Build="AlienGateway" />
+		<Order Time="90s" Build="AlienPowerProjector" />
+		<Order Build="AlienHarvester" />
+		<Order Build="AlienHarvester" />
+		<Order Time="95s" Build="AlienPowerProjector" />
+		<Order Time="100s" Build="AlienGateway" />
+	</SkirmishOpeningMove>
 
 </AssetDeclaration>

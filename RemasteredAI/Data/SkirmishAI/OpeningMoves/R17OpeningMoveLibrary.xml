@@ -191,4 +191,98 @@
 		<Order Time="130s" Build="Reaper17Reactor" />
 	</SkirmishOpeningMove>
 	
+	<SkirmishOpeningMove
+		id="R17TwoWarfactorySeekers"
+		Side="Reaper17">
+		<Order Time="0s" Build="Reaper17PowerProjector" />
+		<Order Time="5s" Build="Reaper17Portal" />
+		<Order Build="AlienAssimilator" />
+		<Order Build="AlienAssimilator" />
+		<Order Build="AlienBuzzers" />
+		<Order Build="AlienBuzzers" />
+		<Order Build="AlienBuzzers" />
+		<Order Time="10s" Build="Reaper17TiberiumTower" />
+		<Order Time="40s" Build="Reaper17Gateway" />
+		<Order Time="60s" Build="Reaper17TiberiumTower" />
+		<Order Build="Reaper17Harvester" />
+		<Order Build="Reaper17Gunwalker" />
+		<Order Build="Reaper17Harvester" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Time="90s" Build="Reaper17PowerProjector" />
+		<Order Time="95s" Build="Reaper17PowerProjector" />
+		<Order Time="100s" Build="Reaper17Gateway" />
+	</SkirmishOpeningMove>
+	
+	<SkirmishOpeningMove
+		id="R17ThreeWarfactorySeekers"
+		Side="Reaper17">
+		<Order Time="0s" Build="Reaper17PowerProjector" />
+		<Order Time="5s" Build="Reaper17Portal" />
+		<Order Build="AlienAssimilator" />
+		<Order Build="AlienAssimilator" />
+		<Order Build="AlienBuzzers" />
+		<Order Build="AlienBuzzers" />
+		<Order Build="AlienBuzzers" />
+		<Order Time="10s" Build="Reaper17TiberiumTower" />
+		<Order Time="40s" Build="Reaper17Gateway" />
+		<Order Time="60s" Build="Reaper17TiberiumTower" />
+		<Order Build="Reaper17Harvester" />
+		<Order Build="Reaper17Gunwalker" />
+		<Order Build="Reaper17Harvester" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Build="Reaper17SeekerTank" />
+		<Order Time="90s" Build="Reaper17PowerProjector" />
+		<Order Time="95s" Build="Reaper17PowerProjector" />
+		<Order Time="100s" Build="Reaper17Gateway" />
+		<Order Time="120s" Build="Reaper17Gateway" />
+	</SkirmishOpeningMove>
+
+	<SkirmishOpeningMove
+		id="R17DisintRush"
+		Side="Reaper17">
+		<Order Time="0s" Build="Reaper17PowerProjector" />
+		<Order Time="5s" Build="Reaper17Portal" />
+		<Order Time="10s" Build="Reaper17TiberiumTower" />
+		<Order Build="AlienAssimilator" />
+		<Order Build="AlienBuzzers" />
+		<Order Build="AlienBuzzers" />
+		<Order Build="AlienBuzzers" />
+		<Order Build="AlienRazorDroneSquad" />
+		<Order Build="AlienRazorDroneSquad" />
+		<Order Build="AlienRazorDroneSquad" />
+		<Order Build="AlienRazorDroneSquad" />
+		<Order Build="AlienRazorDroneSquad" />
+		<Order Build="AlienRazorDroneSquad" />
+		<Order Build="AlienRazorDroneSquad" />
+		<Order Build="AlienRazorDroneSquad" />
+		<Order Time="40s" Build="Reaper17TiberiumTower" />
+		<Order Time="70s" Build="Reaper17Gateway" />
+		<Order Time="90s" Build="Reaper17PowerProjector" />
+		<Order Build="Reaper17Harvester" />
+		<Order Build="Reaper17Harvester" />
+		<Order Time="95s" Build="Reaper17PowerProjector" />
+		<Order Time="100s" Build="Reaper17Gateway" />
+	</SkirmishOpeningMove>
+	
 </AssetDeclaration>

@@ -191,4 +191,101 @@
 		<Order Time="130s" Build="Traveler59Reactor" />
 	</SkirmishOpeningMove>
 	
+	<SkirmishOpeningMove
+		id="T59TwoWarfactorySeekers"
+		Side="Traveler59">
+		<Order Time="0s" Build="Traveler59PowerProjector" />
+		<Order Time="5s" Build="Traveler59Portal" />
+		<Order Build="Traveler59Assimilator" />
+		<Order Build="Traveler59Assimilator" />
+		<Order Build="AlienBuzzers" />
+		<Order Build="AlienBuzzers" />
+		<Order Build="AlienBuzzers" />
+		<Order Time="10s" Build="Traveler59TiberiumTower" />
+		<Order Time="40s" Build="Traveler59Gateway" />
+		<Order Time="60s" Build="Traveler59TiberiumTower" />
+		<Order Build="Traveler59Harvester" />
+		<Order Build="Traveler59Gunwalker" />
+		<Order Build="Traveler59Harvester" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Time="90s" Build="Traveler59PowerProjector" />
+		<Order Time="95s" Build="Traveler59PowerProjector" />
+		<Order Time="100s" Build="Traveler59Gateway" />
+	</SkirmishOpeningMove>
+	
+	<SkirmishOpeningMove
+		id="T59ThreeWarfactorySeekers"
+		Side="Traveler59">
+		<Order Time="0s" Build="Traveler59PowerProjector" />
+		<Order Time="5s" Build="Traveler59Portal" />
+		<Order Build="Traveler59Assimilator" />
+		<Order Build="Traveler59Assimilator" />
+		<Order Build="AlienBuzzers" />
+		<Order Build="AlienBuzzers" />
+		<Order Build="AlienBuzzers" />
+		<Order Time="10s" Build="Traveler59TiberiumTower" />
+		<Order Time="40s" Build="Traveler59Gateway" />
+		<Order Time="60s" Build="Traveler59TiberiumTower" />
+		<Order Build="Traveler59Harvester" />
+		<Order Build="Traveler59Gunwalker" />
+		<Order Build="Traveler59Harvester" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Build="Traveler59SeekerTank" />
+		<Order Time="90s" Build="Traveler59PowerProjector" />
+		<Order Time="95s" Build="Traveler59PowerProjector" />
+		<Order Time="100s" Build="Traveler59Gateway" />
+		<Order Time="120s" Build="Traveler59Gateway" />
+	</SkirmishOpeningMove>
+
+	<SkirmishOpeningMove
+		id="T59DisintRush"
+		Side="Traveler59">
+		<Order Time="0s" Build="Traveler59PowerProjector" />
+		<Order Time="5s" Build="Traveler59Portal" />
+		<Order Time="10s" Build="Traveler59StatisChamber" />
+		<Order Build="Traveler59Assimilator" />
+		<Order Build="Traveler59Assimilator" />
+		<Order Build="AlienBuzzers" />
+		<Order Build="AlienBuzzers" />
+		<Order Build="AlienBuzzers" />
+		<Order Build="Traveler59RazorDroneSquad" />
+		<Order Build="Traveler59RazorDroneSquad" />
+		<Order Build="Traveler59RazorDroneSquad" />
+		<Order Build="Traveler59RazorDroneSquad" />
+		<Order Build="Traveler59RazorDroneSquad" />
+		<Order Build="Traveler59RazorDroneSquad" />
+		<Order Build="Traveler59RazorDroneSquad" />
+		<Order Build="Traveler59RazorDroneSquad" />
+		<Order Time="20s" Account="TECHNOLOGY" Deposit="1000" />
+		<Order Time="20s" Build="Traveler59TiberiumTower" />
+		<Order Time="40s" Build="Traveler59TiberiumTower" />
+		<Order Time="70s" Build="Traveler59Gateway" />
+		<Order Time="90s" Build="Traveler59PowerProjector" />
+		<Order Build="Traveler59Harvester" />
+		<Order Build="Traveler59Harvester" />
+		<Order Time="95s" Build="Traveler59PowerProjector" />
+		<Order Time="100s" Build="Traveler59Gateway" />
+	</SkirmishOpeningMove>
+	
 </AssetDeclaration>
