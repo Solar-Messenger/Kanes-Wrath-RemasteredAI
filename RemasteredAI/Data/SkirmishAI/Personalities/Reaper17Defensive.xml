@@ -56,9 +56,6 @@
 		
 		<TacticalTarget TacticalAITarget="Counterattack" MaxTeamsPerTarget="2" />
 		
-		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
-		
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1" />
 		
@@ -101,7 +98,6 @@
 		<States State="R17OpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="DefensiveHuntArmy" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="DefensiveCounterAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GeneralOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="R17Siege" Difficulty="MEDIUM HARD BRUTAL" />
@@ -147,7 +143,7 @@
 		
 		<BudgetStates State="DefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
-		<BudgetStates State="RecoveryProduction_Investment_Budget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="RecoveryProduction_Investment_Budget_Large" Difficulty="MEDIUM HARD BRUTAL"/>
 		
 		<BudgetStates State="TurtleBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="TurtleBudget_EASY" Difficulty="EASY"/>
