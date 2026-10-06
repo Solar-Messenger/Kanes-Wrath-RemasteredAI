@@ -55,11 +55,8 @@
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
 		
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="2"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
-		
-		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="FocusedTarget" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
@@ -82,6 +79,7 @@
 		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Superweapon" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Expansion" MaxTeamsPerTarget="1"/>
+		<TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Bridge" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Isolation" MaxTeamsPerTarget="1"/>
@@ -92,16 +90,14 @@
 
 		<OpeningMove Name="Alien_EASY" Weight="100%" Difficulty="EASY"/>
 
-		<OpeningMove Name="AlienTwoWarfactory" Weight="45%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="AlienThreeWarfactory" Weight="35%" Difficulty="MEDIUM HARD BRUTAL"/>
-		<OpeningMove Name="AlienMixed" Weight="20%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="AlienTwoWarfactorySeekers" Weight="45%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="AlienThreeWarfactorySeekers" Weight="35%" Difficulty="MEDIUM HARD BRUTAL"/>
+		<OpeningMove Name="AlienDisintRush" Weight="20%" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="AlienOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="OffensiveRush_EASY" Difficulty="EASY"/>
-		<States State="OffensiveVehicleRush" Difficulty="MEDIUM HARD BRUTAL"/>
-		<States State="OffensiveInfRush" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="OffensiveRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="OffensiveHuntArmy" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="OffensiveAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienOffensiveGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
@@ -120,6 +116,7 @@
 		<States State="AlienCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienSuperweapon" Difficulty="HARD BRUTAL"/>
 		<States State="AlienExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="AlienBridgeRepair" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienIsolation" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="AlienHuskCapture" Difficulty="HARD BRUTAL"/>
@@ -149,7 +146,7 @@
 		
 		<BudgetStates State="DefenseBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
-		<BudgetStates State="RecoveryProduction_Investment_Budget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<BudgetStates State="RecoveryProduction_Investment_Budget_Small" Difficulty="MEDIUM HARD BRUTAL"/>
 		
 		<BudgetStates State="RushBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="RushBudget_EASY" Difficulty="EASY"/>
