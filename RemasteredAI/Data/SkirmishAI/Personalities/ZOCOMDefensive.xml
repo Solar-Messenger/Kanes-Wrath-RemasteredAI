@@ -101,7 +101,6 @@
 
 		<States State="DefensiveCounterAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="GeneralOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="Cleanup_Victory" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="ZOCOMSiege" Difficulty="MEDIUM HARD BRUTAL" />
 		
 		<States State="DefensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
