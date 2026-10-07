@@ -70,6 +70,8 @@
 	<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
 	<TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
 
+	<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
+	<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
 	<TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
 	<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
 	<TacticalTarget TacticalAITarget="Superweapon" MaxTeamsPerTarget="1"/>
@@ -92,6 +94,8 @@
 	<States State="GDIGroundCommandoDefense" Difficulty="MEDIUM HARD BRUTAL"/>
  	<States State="GDIAirCommandoDefense" Difficulty="HARD BRUTAL"/>
 
+	<States State="Garrison" Difficulty="MEDIUM HARD BRUTAL"/>
+	<States State="Garrison_EASY" Difficulty="EASY"/>
 	<States State="GDIAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
 	<States State="GDIAntiGarrison_EASY" Difficulty="EASY"/>
 	<States State="GDICaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
