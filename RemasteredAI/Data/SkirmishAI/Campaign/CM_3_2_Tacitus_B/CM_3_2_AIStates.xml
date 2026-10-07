@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Tags></Tags>
+	<Includes></Includes>
+
+	<!-- CM 3-2: Tacitus Regained - AI States -->
+	
+	<AIStrategicStateDefinition
+		id="3_2_GDIHuntArmy"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<OpeningMoveHeuristic Complete="true" />
+			<ConstantHeuristic Weight="1.0" />
+			<ProductionHaltHeuristic
+				BalanceOfPowerWeight="0.5"
+				PenetrabilityWeight="0.5">
+				<BalanceOfPowerHeuristic />
+				<PenetrabilityHeuristic />
+			</ProductionHaltHeuristic>
+			<PathToTargetHeuristic PathExists="true" />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestEnemyUnitPrimaryHeuristic" WeightMultiplier="2.0" TargetType="PrimaryTarget" />
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureSecondaryHeuristic" WeightMultiplier="1.0" TargetType="SecondaryTarget" />
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
+			<TeamTemplate MinUnits="12" MaxUnits="15" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+		</Tactic>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="SecondaryTarget">
+			<TeamTemplate MinUnits="10" MaxUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="3_2_GDIAttack"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<OpeningMoveHeuristic Complete="true" />
+			<ConstantHeuristic Weight="0.5" />
+			<OverpowerHeuristic
+				PowerAdvantageWeight="0.5"
+				PenetrabilityWeight="0.5">
+				<PowerAdvantageHeuristic />
+				<PenetrabilityHeuristic />
+			</OverpowerHeuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructurePrimaryHeuristic" TargetType="PrimaryTarget"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
+			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="3_2_GDIOverwhelmAttack"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureExtraHeuristic" TargetType="ExtraTarget"/>
+		<Tactic Tactic="SimpleAttack" TargetType="ExtraTarget">
+			<TeamTemplate MinUnits="40" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="3_2_GDISiege"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+			<EnemyNearbyHeuristic Distance="1500.0" EnemyNearby="false"/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
+		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
+			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="GDIJuggernaught"/>
+				<CreateUnits UnitName="GDIJuggernaught"/>
+				<CreateUnits UnitName="GDIJuggernaught"/>
+			</TeamTemplate>
+			<TeamTemplate MinUnits="2" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+	  id="3_2_GDISpotters"
+	  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="2.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureOpportunityHeuristic" TargetType="Opportunity"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Opportunity">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="VEHICLE AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="GDISniperSquad"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+	  id="3_2_GDIAirHarassmentAntiTurtle"
+	  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToAirUnitAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="Airstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAirstrikeHeuristic" WeightMultiplier="1.5" TargetType="Airstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirStructureAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="Airstrike"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Airstrike">
+			<TeamTemplate MinUnits="6" MaxUnits="6" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="INFANTRY RELOAD_AIRCRAFT BOMBER_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="3_2_GDIBombingRuns"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+    <TargetHeuristic TargetHeuristic="SafestToAirTechBombingAirstrikeHeuristic" WeightMultiplier="2.5" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToAirAirfieldBombingAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToAirWarfactoryBombingAirstrikeHeuristic" WeightMultiplier="1.5" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToAirRefineryBombingAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" WeightMultiplier="0.5" TargetType="BombingAirstrike"/>		
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="GDIFireHawk"/>
+				<CreateUnits UnitName="GDIFireHawk"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+	id="3_2_GDIUnitPreferences"
+	UnitUpgradeMultiplier="1.5"
+	UnitBuilderOverallOffensivePreference="100%"
+	UnitBuilderOverallDefensivePreference="100%"
+	UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<ConstantHeuristic Weight="999.0"/>
+		</Heuristic>
+		<UnitModifierByName UnitName="GDIRifleSoldierSquad" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="20%"/>
+		<UnitModifierByName UnitName="GDIMissileSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="GDIEngineer" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIGrenadeSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="75%"/>
+		<UnitModifierByName UnitName="GDISniperSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIZoneTrooperSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+
+		<UnitModifierByName UnitName="GDIPitbull" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIPredator" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIAPC" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDISonicTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIAAScout" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIMammoth" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIJuggernaught" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIMARV" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+
+		<UnitModifierByName UnitName="GDIOrca" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIHammerhead" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIFireHawk" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="GDIBarracks" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIWarfactory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="150%"/>
+		<UnitModifierByName UnitName="GDIAirTower" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="20%"/>
+
+		<UnitModifierByName UnitName="GDIWatchTower" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIGolumCannon" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIAABattery" UnitPreferenceOffensiveModifier="60%" UnitPreferenceDefensiveModifier="80%"/>
+		<UnitModifierByName UnitName="GDITerraformingStation" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+	</AIStrategicStateDefinition>
+
+<!-- Budget -->
+
+</AssetDeclaration>

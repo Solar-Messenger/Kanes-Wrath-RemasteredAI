@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Tags></Tags>
+  <Includes></Includes>
+  <AIPersonalityDefinition
+		id="CM_3_1_Marked_Of_Kane_AIP_GDI_1_Main"
+		PersonalityType="CM_3_1_Marked_Of_Kane_AIP_GDI_1_Main"
+    PersonalityUIName="CM_3_1_Marked_Of_Kane_AIP_GDI_1_Main"
+    SkirmishPersonality="false" 
+		SecondsTillTargetsCanExpire="5.0"
+		ChanceForTargetToExpire="100"
+		MaxBuildingsToBeDefensiveTarget_Small="1"
+		MaxBuildingsToBeDefensiveTarget_Med="5"
+		ChanceForUnitsToUpgrade="999"
+		ChanceToUseAllUnitsForDefenseTarget_Small="100"
+		ChanceToUseAllUnitsForDefenseTarget_Med="90"
+		ChanceToUseAllUnitsForDefenseTarget_Large="80"
+		DesiredExcessPowerBuffer="40"
+		BaseCompactness="0.65"
+    DefaultThreatFindRadius="0"
+    UnitBuilderCostEffectivenessWeight="1.0"
+    UnitBuilderMoneyVersusTimePreference="1.0"
+    UnitBuilderOverallOffensivePreference="100%"
+    UnitBuilderOverallDefensivePreference="100%"
+    Expansion_TiberiumSearchRadius="600"
+    Expansion_MaxTiberiumRemaining="22000"
+    ReactiveDefenseRadius="1000"
+    RepairBuildingsAtDifficulty="EASY MEDIUM HARD BRUTAL"
+    EmergencyManagerHandleNoPowerAtDifficulty="EASY MEDIUM HARD BRUTAL"
+    EmergencyManagerHandleNoIncomeAtDifficulty="EASY MEDIUM HARD BRUTAL"
+    EmergencyManagerHandleNoConyardAtDifficulty="EASY MEDIUM HARD BRUTAL"
+    StructureSaveChanceEasy="0.0"
+    StructureSaveChanceMedium="0.25"
+    StructureSaveChanceHard="0.5"
+		MinHarvesters="4"
+		>
+    
+    <Side>GDI</Side>
+
+	<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.5" Difficulty="EASY MEDIUM HARD BRUTAL" />
+
+	<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
+	<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
+	<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD BRUTAL"/>
+
+    <TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1" />
+    <TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1" />
+    <TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1" />
+	  
+    <TacticalTarget TacticalAITarget="Counterattack" MaxTeamsPerTarget="2" />
+	  
+    <TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1" />
+
+	<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>    
+    <TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
+	  
+    <TacticalTarget TacticalAITarget="Opportunity" MaxTeamsPerTarget="1"/>    
+    <TacticalTarget TacticalAITarget="Opportunity" MaxTeamsPerTarget="1"/>    
+    
+    <TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="AssaultAirstrike" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
+
+    <TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="Commando" MaxTeamsPerTarget="1"/>
+	  
+    <TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
+
+    <TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
+	
+    <States State="3_1_Go_After_Node_Attack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+	  
+    <States State="3_1_GDICounterattack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+    <States State="3_1_GDIOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+    <States State="3_1_GDISiege" Difficulty="MEDIUM HARD BRUTAL"/>
+    <States State="3_1_GDISpotters" Difficulty="HARD BRUTAL"/>
+
+    <States State="3_1_GDIAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+    <States State="3_1_GDIBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
+	  
+    <States State="GDIGuerillaEngineer" Difficulty="MEDIUM HARD BRUTAL"/>
+	  
+    <States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+    <States State="GDIGroundEngineerDefense" Difficulty="MEDIUM HARD BRUTAL"/>
+    <States State="GDIAirEngineerDefense" Difficulty="HARD BRUTAL"/>
+    <States State="GDIGroundCommandoDefense" Difficulty="MEDIUM HARD BRUTAL"/>
+    <States State="GDIAirCommandoDefense" Difficulty="HARD BRUTAL"/>
+
+    <States State="GarrisonMARV" Difficulty="MEDIUM HARD BRUTAL"/>
+    <States State="Garrison" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+    <States State="GDIAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
+    <States State="GDIAntiGarrison_EASY" Difficulty="EASY"/>
+    <States State="GDICaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+    <States State="GDICommando" Difficulty="MEDIUM HARD BRUTAL"/>
+    <States State="GDIHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
+
+    <States State="3_1_GDIUnitPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+
+    <BudgetStates State="CM_3_1_Budget_Standard" Difficulty="MEDIUM HARD BRUTAL"/>
+    <BudgetStates State="CM_3_1_RecoveryBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+    <BudgetStates State="CM_3_1_TechPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+    <BudgetStates State="CM_3_1_Budget_Defense" Difficulty="MEDIUM HARD BRUTAL"/>
+	  
+    <BudgetStates State="CM_3_1_Budget_EASY" Difficulty="EASY"/>
+    <BudgetStates State="CM_3_1_TechPreferenceByTimeBudget_EASY" Difficulty="EASY"/>
+
+  </AIPersonalityDefinition>
+</AssetDeclaration>

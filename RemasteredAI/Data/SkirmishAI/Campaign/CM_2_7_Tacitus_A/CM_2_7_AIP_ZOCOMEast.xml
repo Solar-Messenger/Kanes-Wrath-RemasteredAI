@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Tags></Tags>
+	<Includes></Includes>
+
+	<AIPersonalityDefinition
+		id="CM_2_7_AIP_ZOCOMEast"
+		PersonalityType="CM_2_7_AIP_ZOCOMEast"
+	    	PersonalityUIName="Personality:ZOCOMEastAI"
+		SkirmishPersonality="false" 
+		SecondsTillTargetsCanExpire="5.0"
+		ChanceForTargetToExpire="100"
+		MaxBuildingsToBeDefensiveTarget_Small="1"
+		MaxBuildingsToBeDefensiveTarget_Med="5"
+		ChanceForUnitsToUpgrade="999"
+		ChanceToUseAllUnitsForDefenseTarget_Small="100"
+		ChanceToUseAllUnitsForDefenseTarget_Med="80"
+		ChanceToUseAllUnitsForDefenseTarget_Large="60"
+		DesiredExcessPowerBuffer="10"
+		BaseCompactness="0.75"
+    DefaultThreatFindRadius="0"
+    UnitBuilderCostEffectivenessWeight="1.3"
+    UnitBuilderMoneyVersusTimePreference="1.0"
+    UnitBuilderOverallOffensivePreference="100%"
+    UnitBuilderOverallDefensivePreference="100%"
+    Expansion_TiberiumSearchRadius="600"
+    Expansion_MaxTiberiumRemaining="22000"
+    ReactiveDefenseRadius="1000"
+    RepairBuildingsAtDifficulty="EASY MEDIUM HARD BRUTAL"
+    EmergencyManagerHandleNoPowerAtDifficulty="EASY MEDIUM HARD BRUTAL"
+    EmergencyManagerHandleNoIncomeAtDifficulty="EASY MEDIUM HARD BRUTAL"
+    EmergencyManagerHandleNoConyardAtDifficulty="EASY MEDIUM HARD BRUTAL"
+    StructureSaveChanceEasy="0.0"
+    StructureSaveChanceMedium="0.25"
+    StructureSaveChanceHard="0.5"
+	MinHarvesters="4"
+		>
+
+    <Side>ZOCOM</Side>
+
+	<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.5" Difficulty="EASY MEDIUM HARD BRUTAL" />
+
+	<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
+	<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
+	<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD BRUTAL"/>
+
+    <TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
+         
+    <TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
+		
+    <TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1"/>
+    
+    <TacticalTarget TacticalAITarget="EngineerDefense" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="CommandoDefense" MaxTeamsPerTarget="1"/>
+
+    <TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="Expansion" MaxTeamsPerTarget="1" />
+    <TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1" />
+    <TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1" />
+    <TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1" />
+
+    <States State="2_7_ZOCOM_Directional_Attack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+
+    <States State="2_7_ZOCOMAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+    <States State="2_7_ZOCOMBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
+
+    <States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+    <States State="ZOCOMGroundEngineerDefense" Difficulty="MEDIUM HARD BRUTAL"/>
+    <States State="ZOCOMAirEngineerDefense" Difficulty="HARD BRUTAL"/>
+    <States State="ZOCOMGroundCommandoDefense" Difficulty="MEDIUM HARD BRUTAL"/>
+    <States State="ZOCOMAirCommandoDefense" Difficulty="HARD BRUTAL"/>
+		
+    <States State="GarrisonMARV" Difficulty="MEDIUM HARD BRUTAL"/>
+    <States State="Garrison" Difficulty="MEDIUM HARD BRUTAL"/>
+    <States State="Garrison_EASY" Difficulty="EASY"/>
+    <States State="ZOCOMAntiGarrison" Difficulty="MEDIUM HARD BRUTAL"/>
+    <States State="ZOCOMAntiGarrison_EASY" Difficulty="EASY"/>
+    <States State="ZOCOMCaptureTech" Difficulty="MEDIUM HARD BRUTAL"/>
+    <States State="ZOCOMSuperweapon" Difficulty="MEDIUM HARD BRUTAL"/>
+    <States State="ZOCOMExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+    <States State="ExpansionEscort" Difficulty="MEDIUM HARD BRUTAL"/>
+    <States State="ZOCOMHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
+    
+    <States State="2_7_ZOCOMUnitPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+
+    <BudgetStates State="CM_2_7_ZOCOM_Budget_Standard" Difficulty="MEDIUM HARD BRUTAL"/>
+    <BudgetStates State="CM_2_7_ZOCOM_RecoveryBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+    <BudgetStates State="CM_2_7_ZOCOM_TechPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+    <BudgetStates State="CM_2_7_ZOCOM_Budget_Defense" Difficulty="MEDIUM HARD BRUTAL"/>
+		
+    <BudgetStates State="CM_2_7_ZOCOM_Budget_EASY" Difficulty="EASY"/>
+    <BudgetStates State="CM_2_7_ZOCOM_TechPreferenceByTimeBudget_EASY" Difficulty="EASY"/>
+
+  </AIPersonalityDefinition>
+</AssetDeclaration>

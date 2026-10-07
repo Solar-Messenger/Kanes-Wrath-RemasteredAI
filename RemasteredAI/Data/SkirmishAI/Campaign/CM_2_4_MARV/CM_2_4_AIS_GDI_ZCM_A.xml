@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Tags></Tags>
+  <Includes></Includes>
+	
+	<AIStrategicStateDefinition
+		  id="2_4_ZOCOM_A_Attack"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<OverpowerHeuristic
+				PowerAdvantageWeight="0.75"
+				PenetrabilityWeight="0.25">
+				<PowerAdvantageHeuristic />
+				<PenetrabilityHeuristic />
+			</OverpowerHeuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructurePrimaryHeuristic" TargetType="PrimaryTarget"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
+			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="2_4_ZOCOM_A_OverwhelmAttack"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureExtraHeuristic" TargetType="ExtraTarget"/>
+		<Tactic Tactic="SimpleAttack" TargetType="ExtraTarget">
+			<TeamTemplate MinUnits="40" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+  <AIBudgetStateDefinition
+    id="CM_2_4_ZOCOM_A_Budget_Standard">
+    <Heuristic>
+      <ConstantHeuristic Weight="0.7"/>
+    </Heuristic>
+    <Budget>
+      <AccountShare Account="INVESTMENT" Percent="0%"/>
+      <AccountShare Account="SPECIAL_OPERATIONS" Percent="10%"/>
+      <AccountShare Account="PRODUCTION" Percent="70%"/>
+      <AccountShare Account="DEFENSE" Percent="0%"/>
+      <AccountShare Account="TECHNOLOGY" Percent="10%"/>
+      <AccountShare Account="SLUSH_FUND" Percent="10%"/>
+    </Budget>
+  </AIBudgetStateDefinition>
+	
+  <AIBudgetStateDefinition
+    id="CM_2_4_ZOCOM_A_RecoveryBudget">
+    <Heuristic>
+      <ConstantHeuristic Weight="0.7"/>
+	  <HarvesterCapHeuristic MaxHarvesters="6"/>
+    </Heuristic>
+    <Budget>
+      <AccountShare Account="INVESTMENT" Percent="30%"/>
+      <AccountShare Account="SPECIAL_OPERATIONS" Percent="10%"/>
+      <AccountShare Account="PRODUCTION" Percent="60%"/>
+      <AccountShare Account="DEFENSE" Percent="0%"/>
+      <AccountShare Account="TECHNOLOGY" Percent="0%"/>
+      <AccountShare Account="SLUSH_FUND" Percent="10%"/>
+    </Budget>
+  </AIBudgetStateDefinition>
+	
+	<AIBudgetStateDefinition
+		id="CM_2_4_ZOCOM_A_TechPreferenceByTimeBudget">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.9"/>
+			<TimerHeuristic StartTime="180s" EndTime="-1s" />
+			<OpeningMoveHeuristic Complete="true"/>
+			<IntervalHeuristic IntervalTime="78s" ActiveTime="18s"/>
+			<IntervalHeuristic IntervalTime="9s" ActiveTime="4s"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="20%"/>
+			<AccountShare Account="PRODUCTION" Percent="30%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="40%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+  <AIBudgetStateDefinition
+    id="CM_2_4_ZOCOM_A_Budget_Defense">
+    <Heuristic>
+        <ConstantHeuristic Weight="1.0"/>
+		<SpreadThresholdHeuristic />
+		<EnemyNearbyHeuristic Distance="1250.0" EnemyNearby="true" />
+    </Heuristic>
+    <Budget>
+      <AccountShare Account="INVESTMENT" Percent="0%"/>
+      <AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+      <AccountShare Account="PRODUCTION" Percent="60%"/>
+      <AccountShare Account="DEFENSE" Percent="20%"/>
+      <AccountShare Account="TECHNOLOGY" Percent="10%"/>
+      <AccountShare Account="SLUSH_FUND" Percent="10%"/>
+    </Budget>
+  </AIBudgetStateDefinition>
+  
+   <AIBudgetStateDefinition
+    id="CM_2_4_ZOCOM_A_Budget_EASY">
+    <Heuristic>
+      <ConstantHeuristic Weight="0.9"/>
+    </Heuristic>
+    <Budget>
+      <AccountShare Account="INVESTMENT" Percent="0%"/>
+      <AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+      <AccountShare Account="PRODUCTION" Percent="80%"/>
+      <AccountShare Account="DEFENSE" Percent="0%"/>
+      <AccountShare Account="TECHNOLOGY" Percent="0%"/>
+      <AccountShare Account="SLUSH_FUND" Percent="20%"/>
+    </Budget>
+  </AIBudgetStateDefinition>
+	
+	<AIBudgetStateDefinition
+		id="CM_2_4_ZOCOM_A_TechPreferenceByTimeBudget_EASY">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<TimerHeuristic StartTime="300s" EndTime="-1s" />
+			<OpeningMoveHeuristic Complete="true"/>
+			<IntervalHeuristic IntervalTime="138s" ActiveTime="18s"/>
+			<IntervalHeuristic IntervalTime="9s" ActiveTime="4s"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+			<AccountShare Account="PRODUCTION" Percent="50%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="40%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+
+</AssetDeclaration>

@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Tags></Tags>
+	<Includes></Includes>
+
+	<!-- CM 2-5: Temple Prime -->
+
+	<!-- AI Budget -->
+
+	<AIBudgetStateDefinition
+		id="CM_2_5_Budget_Standard">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.8"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+			<AccountShare Account="PRODUCTION" Percent="80%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="10%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<AIBudgetStateDefinition
+		id="CM_2_5_TechPreferenceByTimeBudget">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.9"/>
+			<TimerHeuristic StartTime="180s" EndTime="-1s" />
+			<IntervalHeuristic IntervalTime="78s" ActiveTime="18s"/>
+			<IntervalHeuristic IntervalTime="9s" ActiveTime="4s"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="20%"/>
+			<AccountShare Account="PRODUCTION" Percent="30%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="40%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<AIBudgetStateDefinition
+		id="CM_2_5_Budget_Defense">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<SpreadThresholdHeuristic />
+			<EnemyNearbyHeuristic Distance="1000.0" />
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+			<AccountShare Account="PRODUCTION" Percent="60%"/>
+			<AccountShare Account="DEFENSE" Percent="30%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="0%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+
+	<AIBudgetStateDefinition
+		id="CM_2_5_GDIInvestmentBudget">
+		<Heuristic>
+			<ScriptedFlagHeuristic FlagName="GA1_Flag_ActivateGDIInvestmentBudgetHeuristic"/>
+			<ConstantHeuristic Weight="2.0"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="30%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+			<AccountShare Account="PRODUCTION" Percent="70%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="0%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="0%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+
+	<AIBudgetStateDefinition
+		id="CM_2_5_NOD_B_InvestmentBudget">
+		<Heuristic>
+			<ScriptedFlagHeuristic FlagName="NB1_Flag_ActivateNODInvestmentBudgetHeuristic"/>
+			<ConstantHeuristic Weight="2.0"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="30%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+			<AccountShare Account="PRODUCTION" Percent="70%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="0%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="0%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+
+	<AIBudgetStateDefinition
+		id="CM_2_5_NOD_D_InvestmentBudget">
+		<Heuristic>
+			<ScriptedFlagHeuristic FlagName="ND3_Flag_ActivateNODInvestmentBudgetHeuristic"/>
+			<ConstantHeuristic Weight="2.0"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="30%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+			<AccountShare Account="PRODUCTION" Percent="70%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="0%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="0%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+
+	<AIBudgetStateDefinition
+		id="CM_2_5_NOD_E_InvestmentBudget">
+		<Heuristic>
+			<ScriptedFlagHeuristic FlagName="NE3_Flag_ActivateNODInvestmentBudgetHeuristic"/>
+			<ConstantHeuristic Weight="2.0"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="30%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+			<AccountShare Account="PRODUCTION" Percent="70%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="0%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="0%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+
+
+
+	<!-- ===================================================================================================================
+		GDI AI: GDI-A
+	==================================================================================================================== -->
+
+	<AIStrategicStateDefinition
+		id="2_5_GDIAttack"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructurePrimaryHeuristic" TargetType="PrimaryTarget" />
+		<Tactic Tactic="FlankAttack" TargetType="PrimaryTarget">
+			<TeamTemplate MinUnits="7" MaxUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		id="2_5_GDIOverwhelmAttack"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureExtraHeuristic" TargetType="ExtraTarget" />
+		<Tactic Tactic="SimpleAttack" TargetType="ExtraTarget">
+			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="2_5_GDISiege"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+			<EnemyNearbyHeuristic Distance="1500.0" EnemyNearby="false"/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
+		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
+			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="GDIJuggernaught"/>
+				<CreateUnits UnitName="GDIJuggernaught"/>
+				<CreateUnits UnitName="GDIJuggernaught"/>
+			</TeamTemplate>
+			<TeamTemplate MinUnits="2" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+	  id="2_5_GDISpotters"
+	  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="2.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureOpportunityHeuristic" TargetType="Opportunity"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Opportunity">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="VEHICLE AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="GDISniperSquad"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="2_5_GDIAirHarassmentAntiTurtle"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="Airstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirTechAirstrikeHeuristic" WeightMultiplier="1.5" TargetType="Airstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirStructureAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="Airstrike"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Airstrike">
+			<TeamTemplate MinUnits="5" MaxUnits="5" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="INFANTRY RELOAD_AIRCRAFT BOMBER_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="2_5_GDIBombingRuns"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+    <TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" TargetType="BombingAirstrike"/>		
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="GDIFireHawk"/>
+				<CreateUnits UnitName="GDIFireHawk"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+	id="2_5_GDIUnitPreferences"
+	UnitUpgradeMultiplier="1.5"
+	UnitBuilderOverallOffensivePreference="100%"
+	UnitBuilderOverallDefensivePreference="100%"
+	UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<ConstantHeuristic Weight="999.0"/>
+		</Heuristic>
+		<UnitModifierByName UnitName="GDIRifleSoldierSquad" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="20%"/>
+		<UnitModifierByName UnitName="GDIMissileSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="GDIEngineer" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIGrenadeSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="75%"/>
+		<UnitModifierByName UnitName="GDISniperSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIZoneTrooperSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+
+		<UnitModifierByName UnitName="GDIPitbull" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIPredator" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIAPC" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDISonicTank" UnitPreferenceOffensiveModifier="40%" UnitPreferenceDefensiveModifier="80%"/>
+		<UnitModifierByName UnitName="GDIAAScout" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIMammoth" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIJuggernaught" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIMARV" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="GDIOrca" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIHammerhead" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIFireHawk" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="GDIBarracks" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIWarfactory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="150%"/>
+		<UnitModifierByName UnitName="GDIAirTower" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="20%"/>
+
+		<UnitModifierByName UnitName="GDIWatchTower" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIGolumCannon" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIAABattery" UnitPreferenceOffensiveModifier="60%" UnitPreferenceDefensiveModifier="80%"/>
+		<UnitModifierByName UnitName="GDITerraformingStation" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+	</AIStrategicStateDefinition>
+
+
+	<!-- ===================================================================================================================
+		NOD Kane AI: NOD-B
+	==================================================================================================================== -->
+
+	<AIStrategicStateDefinition
+		  id="2_5_NOD_B_Attack"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructurePrimaryHeuristic" TargetType="PrimaryTarget"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
+			<TeamTemplate MinUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="2_5_NOD_B_OverwhelmAttack"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureExtraHeuristic" TargetType="ExtraTarget"/>
+		<Tactic Tactic="SimpleAttack" TargetType="ExtraTarget">
+			<TeamTemplate MinUnits="30" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="2_5_NOD_B_GroundEconomyAttack"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+			<EnemyNearbyHeuristic Distance="1500.0" EnemyNearby="false"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundHarvesterHeuristic" TargetType="Unit"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Unit">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT SIEGE_WEAPON" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="NODStealthTank"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		id="2_5_NOD_B_GroundRefineryAttack"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true" />
+			<EnemyNearbyHeuristic Distance="1500.0" EnemyNearby="false"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundRefineryHeuristic" TargetType="Structure"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Structure">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT SIEGE_WEAPON" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="NODFlameTank"/>
+				<CreateUnits UnitName="NODFlameTank"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="2_5_NOD_B_Siege"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+			<EnemyNearbyHeuristic Distance="1500.0" EnemyNearby="false"/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
+		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
+			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="NODBeamCannon"/>
+				<CreateUnits UnitName="NODBeamCannon"/>
+				<CreateUnits UnitName="NODBeamCannon"/>
+				<CreateUnits UnitName="NODBeamCannon"/>
+			</TeamTemplate>
+			<TeamTemplate MinUnits="2" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+	  id="2_5_NOD_B_AirHarassmentAntiTurtle"
+	  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToAirUnitAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="Airstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAirstrikeHeuristic" WeightMultiplier="1.5" TargetType="Airstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirStructureAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="Airstrike"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Airstrike">
+			<TeamTemplate MinUnits="6" MaxUnits="6" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="INFANTRY RELOAD_AIRCRAFT BOMBER_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="2_5_NOD_B_BombingRuns"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+    <TargetHeuristic TargetHeuristic="SafestToAirTechBombingAirstrikeHeuristic" WeightMultiplier="2.5" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToAirAirfieldBombingAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToAirWarfactoryBombingAirstrikeHeuristic" WeightMultiplier="1.5" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToAirRefineryBombingAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" WeightMultiplier="0.5" TargetType="BombingAirstrike"/>	
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="NODVertigo"/>
+				<CreateUnits UnitName="NODVertigo"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<!-- ===================================================================================================================
+		NOD Elite AI: NOD-D/E
+	==================================================================================================================== -->
+
+	<AIStrategicStateDefinition
+	  id="2_5_NOD_Elite_CounterAttack"
+	  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<CounterattackHeuristic Threshold="1.0"/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureCounterattackHeuristic" TargetType="Counterattack"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Counterattack">
+			<TeamTemplate MinUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="2_5_NOD_Elite_OverwhelmAttack"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureExtraHeuristic" TargetType="ExtraTarget"/>
+		<Tactic Tactic="SimpleAttack" TargetType="ExtraTarget">
+			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="2_5_NOD_Elite_AirHarassmentAntiTurtle"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToAirUnitAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="Airstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAirstrikeHeuristic" WeightMultiplier="1.5" TargetType="Airstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirStructureAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="Airstrike"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Airstrike">
+			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="2_5_NOD_Elite_BombingRuns"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+    <TargetHeuristic TargetHeuristic="SafestToAirTechBombingAirstrikeHeuristic" WeightMultiplier="2.5" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToAirAirfieldBombingAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToAirWarfactoryBombingAirstrikeHeuristic" WeightMultiplier="1.5" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToAirRefineryBombingAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" WeightMultiplier="0.5" TargetType="BombingAirstrike"/>	
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="NODVertigo"/>
+				<CreateUnits UnitName="NODVertigo"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<!-- ===================================================================================================================
+		NOD Unit Preferences: ALL NODs
+	==================================================================================================================== -->
+	
+	<AIStrategicStateDefinition
+	id="2_5_NODUnitPreferences"
+	UnitUpgradeMultiplier="1.5"
+	UnitBuilderOverallOffensivePreference="100%"
+	UnitBuilderOverallDefensivePreference="100%"
+	UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<ConstantHeuristic Weight="999.0"/>
+		</Heuristic>
+		<UnitModifierByName UnitName="NODMilitantSquad" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="20%"/>
+		<UnitModifierByName UnitName="NODMilitantRocketSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="NODSaboteur" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODFanaticSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODBlackHandSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODShadowSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+
+		<UnitModifierByName UnitName="NODAttackBike" UnitPreferenceOffensiveModifier="40%" UnitPreferenceDefensiveModifier="20%"/>
+		<UnitModifierByName UnitName="NODScorpionBuggy" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODRaiderTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODFlameTank" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODBunkerTruck" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODBeamCannon" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODStealthTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODMobileArtillery" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODAvatar" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODMetaUnit" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="NODVenom" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="NODVertigo" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="NODHandOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="NODDropZone" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="NODHangar" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="NODShredderTurretHub" UnitPreferenceOffensiveModifier="80%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODLaserCannon" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODRocketBunker" UnitPreferenceOffensiveModifier="60%" UnitPreferenceDefensiveModifier="80%"/>
+		<UnitModifierByName UnitName="NODObelisk" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+	</AIStrategicStateDefinition>
+	
+</AssetDeclaration>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Tags></Tags>
+  <Includes></Includes>
+	
+	<AIStrategicStateDefinition
+		  id="2_4_ZOCOMAttack"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<OverpowerHeuristic
+				PowerAdvantageWeight="0.75"
+				PenetrabilityWeight="0.25">
+				<PowerAdvantageHeuristic />
+				<PenetrabilityHeuristic />
+			</OverpowerHeuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructurePrimaryHeuristic" TargetType="PrimaryTarget"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
+			<TeamTemplate MinUnits="15" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		id="2_4_ZOCOMAirEconomyAttack"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="3.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToAirRefineryAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
+			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT SIEGE_WEAPON BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="ZOCOMOrca"/>
+				<CreateUnits UnitName="ZOCOMOrca"/>
+				<CreateUnits UnitName="ZOCOMOrca"/>
+				<CreateUnits UnitName="ZOCOMOrca"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="2_4_ZOCOMOverwhelmAttack"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureExtraHeuristic" TargetType="ExtraTarget"/>
+		<Tactic Tactic="SimpleAttack" TargetType="ExtraTarget">
+			<TeamTemplate MinUnits="30" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+	  id="2_4_ZOCOMAirHarassmentAntiTurtle"
+	  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToAirUnitAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="Airstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAirstrikeHeuristic" WeightMultiplier="1.5" TargetType="Airstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirStructureAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="Airstrike"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Airstrike">
+			<TeamTemplate MinUnits="6" MaxUnits="6" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="INFANTRY RELOAD_AIRCRAFT BOMBER_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="2_4_ZOCOMBombingRuns"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+    <TargetHeuristic TargetHeuristic="SafestToAirTechBombingAirstrikeHeuristic" WeightMultiplier="2.5" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToAirAirfieldBombingAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToAirWarfactoryBombingAirstrikeHeuristic" WeightMultiplier="1.5" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToAirRefineryBombingAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="BombingAirstrike"/>
+    <TargetHeuristic TargetHeuristic="SafestToAirStructureBombingHeuristic" WeightMultiplier="0.5" TargetType="BombingAirstrike"/>		
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="ZOCOMFireHawk"/>
+				<CreateUnits UnitName="ZOCOMFireHawk"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+	id="2_4_ZOCOMUnitPreferences"
+	UnitUpgradeMultiplier="1.5"
+	UnitBuilderOverallOffensivePreference="100%"
+	UnitBuilderOverallDefensivePreference="100%"
+	UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<ConstantHeuristic Weight="999.0"/>
+		</Heuristic>
+		<UnitModifierByName UnitName="ZOCOMRifleSoldierSquad" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="20%"/>
+		<UnitModifierByName UnitName="ZOCOMMissileSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="40%"/>
+		<UnitModifierByName UnitName="ZOCOMEngineer" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="ZOCOMGrenadeSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="75%"/>
+		<UnitModifierByName UnitName="ZOCOMSniperSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="ZOCOMZoneRaiderSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+
+		<UnitModifierByName UnitName="ZOCOMPitbull" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="ZOCOMPredator" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="ZOCOMAPC" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="ZOCOMImprovedSonicTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="ZOCOMAAScout" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="ZOCOMMammoth" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="ZOCOMMARV" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+
+		<UnitModifierByName UnitName="ZOCOMOrca" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="ZOCOMHammerhead" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="ZOCOMFireHawk" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="ZOCOMBarracks" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="ZOCOMWarfactory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="150%"/>
+		<UnitModifierByName UnitName="ZOCOMAirTower" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="20%"/>
+
+		<UnitModifierByName UnitName="ZOCOMWatchTower" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="ZOCOMGolumCannon" UnitPreferenceOffensiveModifier="40%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="ZOCOMAABattery" UnitPreferenceOffensiveModifier="60%" UnitPreferenceDefensiveModifier="80%"/>
+		<UnitModifierByName UnitName="ZOCOMTerraformingStation" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+	</AIStrategicStateDefinition>
+
+	<AIBudgetStateDefinition
+	  id="2_4_ZOCOMFullProductionBudget">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.9"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+			<AccountShare Account="PRODUCTION" Percent="90%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="0%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<AIBudgetStateDefinition
+	  id="2_4_ZOCOM_Budget_Defense">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<SpreadThresholdHeuristic />
+			<EnemyNearbyHeuristic Distance="1500.0" EnemyNearby="true" />
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+			<AccountShare Account="PRODUCTION" Percent="60%"/>
+			<AccountShare Account="DEFENSE" Percent="30%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="0%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+  
+</AssetDeclaration>
