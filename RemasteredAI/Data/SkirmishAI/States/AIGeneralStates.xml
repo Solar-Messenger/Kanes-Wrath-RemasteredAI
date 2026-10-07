@@ -30,7 +30,7 @@
 			<ProductionHaltHeuristic
 				BalanceOfPowerWeight="0.5"
 				PenetrabilityWeight="0.5">
-				<PowerAdvantageHeuristic />
+				<BalanceOfPowerHeuristic />
 				<PenetrabilityHeuristic />
 			</ProductionHaltHeuristic>
 			<PathToTargetHeuristic PathExists="true" />
@@ -108,7 +108,7 @@
 			<ProductionHaltHeuristic
 				BalanceOfPowerWeight="0.75"
 				PenetrabilityWeight="0.25">
-				<PowerAdvantageHeuristic />
+				<BalanceOfPowerHeuristic />
 				<PenetrabilityHeuristic />
 			</ProductionHaltHeuristic>
 		</Heuristic>
