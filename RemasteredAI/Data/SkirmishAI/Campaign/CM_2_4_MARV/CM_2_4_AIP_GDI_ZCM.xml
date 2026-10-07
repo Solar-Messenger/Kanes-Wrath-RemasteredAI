@@ -21,6 +21,7 @@
     DefaultThreatFindRadius="500"
     UnitBuilderCostEffectivenessWeight="1.0"
     UnitBuilderMoneyVersusTimePreference="1.0"
+	UnitBuilderEnemyTowerWeight="0%"
     UnitBuilderOverallOffensivePreference="100%"
     UnitBuilderOverallDefensivePreference="100%"
     Expansion_TiberiumSearchRadius="600"

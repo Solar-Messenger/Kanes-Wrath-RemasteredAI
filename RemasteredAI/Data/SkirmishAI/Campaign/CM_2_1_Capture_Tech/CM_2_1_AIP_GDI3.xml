@@ -24,6 +24,7 @@
 		UnitBuilderMoneyVersusTimePreference="1.0"
 		UnitBuilderOverallOffensivePreference="100%"
 		UnitBuilderOverallDefensivePreference="100%"
+		UnitBuilderEnemyTowerWeight="0%"
 		Expansion_TiberiumSearchRadius="600"
 		Expansion_MaxTiberiumRemaining="22000"
 		ReactiveDefenseRadius="1000"
