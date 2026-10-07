@@ -8,7 +8,7 @@
 		UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<ConstantHeuristic />
-			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0"/>
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="3.0"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
