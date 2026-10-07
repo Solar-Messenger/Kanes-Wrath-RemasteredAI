@@ -18,7 +18,7 @@
 		ChanceToUseAllUnitsForDefenseTarget_Large="80"
 		DesiredExcessPowerBuffer="20"
 		BaseCompactness="0.75"
-    DefaultThreatFindRadius="0"
+    DefaultThreatFindRadius="500"
     UnitBuilderCostEffectivenessWeight="1.25"
     UnitBuilderMoneyVersusTimePreference="1.0"
     UnitBuilderOverallOffensivePreference="100%"

@@ -18,7 +18,7 @@
 		ChanceToUseAllUnitsForDefenseTarget_Large="60"
 		DesiredExcessPowerBuffer="10"
 		BaseCompactness="0.75"
-    DefaultThreatFindRadius="0"
+    DefaultThreatFindRadius="500"
     UnitBuilderCostEffectivenessWeight="1.3"
     UnitBuilderMoneyVersusTimePreference="1.0"
     UnitBuilderOverallOffensivePreference="100%"
@@ -40,7 +40,7 @@
 
 	<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.5" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
-	<ResourceMultiplierCheat Percentage="125%" Difficulty="EASY"/>
+	<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 	<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
 	<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD BRUTAL"/>
 

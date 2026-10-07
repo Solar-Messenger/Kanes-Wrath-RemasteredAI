@@ -2,7 +2,6 @@
 <AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Tags></Tags>
   <Includes>
-    <Include type="instance" source="DATA:SkirmishAI/Personalities/ZOCOMDefensive.xml" />
   </Includes>
  
   <AIPersonalityDefinition
@@ -19,7 +18,7 @@
 		ChanceToUseAllUnitsForDefenseTarget_Large="60"
 		DesiredExcessPowerBuffer="40"
 		BaseCompactness="0.65"
-    DefaultThreatFindRadius="0"
+    DefaultThreatFindRadius="500"
     UnitBuilderCostEffectivenessWeight="1.3"
     UnitBuilderMoneyVersusTimePreference="1.0"
     UnitBuilderOverallOffensivePreference="100%"
