@@ -440,6 +440,7 @@
 	<AIStrategicStateDefinition
 	id="2_5_NODUnitPreferences"
 	UnitUpgradeMultiplier="1.5"
+	UnitBuilderSimpleUnitCap="60"
 	UnitBuilderOverallOffensivePreference="100%"
 	UnitBuilderOverallDefensivePreference="100%"
 	UnitBuilderEnemyTowerWeight="0%">
