@@ -7,7 +7,7 @@
 		id="3_1_Go_After_Node_Attack"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
-      <ScriptedFlagHeuristic FlagName="'Flag-OKToAttackNodes"/>
+      <ScriptedFlagHeuristic FlagName="Flag-OKToAttackNodes"/>
     </Heuristic>
     <TargetHeuristic TargetHeuristic="ClosestStructureSpecialHeuristic_3_1" TargetType="Structure"/>
     <Tactic Tactic="SimpleAttack" TargetType="Structure">
