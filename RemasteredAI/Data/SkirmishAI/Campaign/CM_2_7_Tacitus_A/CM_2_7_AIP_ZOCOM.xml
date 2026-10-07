@@ -34,6 +34,7 @@
     StructureSaveChanceEasy="0.0"
     StructureSaveChanceMedium="0.25"
     StructureSaveChanceHard="0.5"
+		MinHarvesters="4"
 		>
 
     <Side>ZOCOM</Side>
