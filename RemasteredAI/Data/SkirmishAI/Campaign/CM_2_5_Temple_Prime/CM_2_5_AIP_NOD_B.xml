@@ -31,8 +31,8 @@
 		EmergencyManagerHandleNoIncomeAtDifficulty="EASY MEDIUM HARD BRUTAL"
 		EmergencyManagerHandleNoConyardAtDifficulty="EASY MEDIUM HARD BRUTAL"
 		StructureSaveChanceEasy="0.0"
-		StructureSaveChanceMedium="0.25"
-		StructureSaveChanceHard="0.5"
+		StructureSaveChanceMedium="0.0"
+		StructureSaveChanceHard="0.0"
 		MinHarvesters="4"
 		>
 
