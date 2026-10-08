@@ -15,7 +15,7 @@
 		ChanceToUseAllUnitsForDefenseTarget_Small="100"
 		ChanceToUseAllUnitsForDefenseTarget_Med="90"
 		ChanceToUseAllUnitsForDefenseTarget_Large="80"
-		DesiredExcessPowerBuffer="40"
+		DesiredExcessPowerBuffer="20"
 		BaseCompactness="0.65"
     DefaultThreatFindRadius="500"
     UnitBuilderCostEffectivenessWeight="1.0"
@@ -25,7 +25,7 @@
 	UnitBuilderEnemyTowerWeight="0%"
     Expansion_TiberiumSearchRadius="600"
     Expansion_MaxTiberiumRemaining="22000"
-    ReactiveDefenseRadius="1000"
+    ReactiveDefenseRadius="800"
     RepairBuildingsAtDifficulty="EASY MEDIUM HARD BRUTAL"
     EmergencyManagerHandleNoPowerAtDifficulty="EASY MEDIUM HARD BRUTAL"
     EmergencyManagerHandleNoIncomeAtDifficulty="EASY MEDIUM HARD BRUTAL"
@@ -41,8 +41,8 @@
 	<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.5" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
 	<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
-	<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
-	<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD BRUTAL"/>
+	<ResourceMultiplierCheat Percentage="125%" Difficulty="MEDIUM"/>
+	<ResourceMultiplierCheat Percentage="150%" Difficulty="HARD BRUTAL"/>
 
     <TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1" />
     <TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1" />
@@ -78,6 +78,8 @@
     <TacticalTarget TacticalAITarget="AntiGarrison" MaxTeamsPerTarget="1"/>
     <TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
     <TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="Expansion" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="Guard" MaxTeamsPerTarget="1"/>
     <TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
     <TacticalTarget TacticalAITarget="Husk" MaxTeamsPerTarget="1"/>
 	
@@ -105,6 +107,8 @@
     <States State="GDIAntiGarrison_EASY" Difficulty="EASY"/>
     <States State="GDICaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
     <States State="GDICommando" Difficulty="MEDIUM HARD BRUTAL"/>
+    <States State="GDIExpansion" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+    <States State="ExpansionEscort" Difficulty="EASY MEDIUM HARD BRUTAL"/>
     <States State="GDIHuskCapture" Difficulty="MEDIUM HARD BRUTAL"/>
 
     <States State="3_1_GDIUnitPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
