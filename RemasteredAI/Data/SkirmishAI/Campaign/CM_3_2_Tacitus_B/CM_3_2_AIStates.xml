@@ -9,7 +9,6 @@
 		id="3_2_GDIHuntArmy"
 		UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<OpeningMoveHeuristic Complete="true" />
 			<ConstantHeuristic Weight="1.0" />
 			<ProductionHaltHeuristic
 				BalanceOfPowerWeight="0.5"
@@ -33,7 +32,6 @@
 		  id="3_2_GDIAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<OpeningMoveHeuristic Complete="true" />
 			<ConstantHeuristic Weight="0.5" />
 			<OverpowerHeuristic
 				PowerAdvantageWeight="0.5"
