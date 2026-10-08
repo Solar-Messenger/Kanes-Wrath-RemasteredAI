@@ -8,7 +8,7 @@
 		PersonalityType="CM_2_7_AIP_ZocomWest"
 	   	PersonalityUIName="Personality:ZocomWestAI"
     		SkirmishPersonality="false"	
-		SecondsTillTargetsCanExpire="15.0"
+		SecondsTillTargetsCanExpire="5.0"
 		ChanceForTargetToExpire="100"
 		MaxBuildingsToBeDefensiveTarget_Small="1"
 		MaxBuildingsToBeDefensiveTarget_Med="5"
