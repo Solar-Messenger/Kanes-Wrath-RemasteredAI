@@ -125,7 +125,7 @@
 	<AIBudgetStateDefinition
 	  id="2_4_ZOCOMFullProductionBudget">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.9"/>
+			<ConstantHeuristic Weight="0.8"/>
 		</Heuristic>
 		<Budget>
 			<AccountShare Account="INVESTMENT" Percent="0%"/>
@@ -133,6 +133,23 @@
 			<AccountShare Account="PRODUCTION" Percent="90%"/>
 			<AccountShare Account="DEFENSE" Percent="0%"/>
 			<AccountShare Account="TECHNOLOGY" Percent="0%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<AIBudgetStateDefinition
+	  id="2_4_ZOCOMTechPreferenceByTimeBudget">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.9"/>
+			<IntervalHeuristic IntervalTime="78s" ActiveTime="18s"/>
+			<IntervalHeuristic IntervalTime="9s" ActiveTime="4s"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="20%"/>
+			<AccountShare Account="PRODUCTION" Percent="30%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="40%"/>
 			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
 		</Budget>
 	</AIBudgetStateDefinition>

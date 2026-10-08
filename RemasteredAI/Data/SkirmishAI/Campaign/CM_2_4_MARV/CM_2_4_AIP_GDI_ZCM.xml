@@ -104,6 +104,7 @@
     <States State="2_4_ZOCOMUnitPreferences" Difficulty="EASY MEDIUM HARD BRUTAL"/>
     
     <BudgetStates State="2_4_ZOCOMFullProductionBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+    <BudgetStates State="2_4_ZOCOMTechPreferenceByTimeBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
     <BudgetStates State="2_4_ZOCOM_Budget_Defense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
   </AIPersonalityDefinition>
