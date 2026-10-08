@@ -14,7 +14,7 @@
     <TargetHeuristic TargetHeuristic="ClosestEnemyUnitPrimaryHeuristic" WeightMultiplier="2.0" TargetType="PrimaryTarget"/>
     <TargetHeuristic TargetHeuristic="SafestToGroundStructurePrimaryHeuristic" WeightMultiplier="1.0" TargetType="PrimaryTarget"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-      <TeamTemplate MinUnits="8" MaxUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="6" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
 	
@@ -26,7 +26,7 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureExtraHeuristic" TargetType="ExtraTarget"/>
 		<Tactic Tactic="SimpleAttack" TargetType="ExtraTarget">
-			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="15" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -218,7 +218,6 @@
 		<Heuristic>
 			<ConstantHeuristic Weight="0.9"/>
 			<TimerHeuristic StartTime="180s" EndTime="-1s" />
-			<OpeningMoveHeuristic Complete="true"/>
 			<IntervalHeuristic IntervalTime="78s" ActiveTime="18s"/>
 			<IntervalHeuristic IntervalTime="9s" ActiveTime="4s"/>
 		</Heuristic>
@@ -269,7 +268,6 @@
 		<Heuristic>
 			<ConstantHeuristic Weight="1.0"/>
 			<TimerHeuristic StartTime="300s" EndTime="-1s" />
-			<OpeningMoveHeuristic Complete="true"/>
 			<IntervalHeuristic IntervalTime="138s" ActiveTime="18s"/>
 			<IntervalHeuristic IntervalTime="9s" ActiveTime="4s"/>
 		</Heuristic>
