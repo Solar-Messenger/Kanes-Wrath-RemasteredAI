@@ -21,7 +21,6 @@
 	  id="1_4_STAirEconomyAttack"
 	  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="180s" EndTime="-1s" />
 			<ConstantHeuristic />
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="3.0"/>
 		</Heuristic>
@@ -40,7 +39,6 @@
 		  id="1_4_STGeneralOverwhelmAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="180s" EndTime="-1s" />
 			<PathToTargetHeuristic PathExists="true"/>
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureExtraHeuristic_1_2" WeightMultiplier="2.0" TargetType="ExtraTarget"/>
@@ -54,7 +52,6 @@
 		  id="1_4_STSiege"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<TimerHeuristic StartTime="180s" EndTime="-1s" />
 			<PathToTargetHeuristic PathExists="true"/>
 			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
 		</Heuristic>
@@ -193,7 +190,6 @@
 		<Heuristic>
 			<ConstantHeuristic Weight="1.0"/>
 			<TimerHeuristic StartTime="180s" EndTime="-1s" />
-			<OpeningMoveHeuristic Complete="true"/>
 			<IntervalHeuristic IntervalTime="78s" ActiveTime="18s"/>
 			<IntervalHeuristic IntervalTime="9s" ActiveTime="4s"/>
 		</Heuristic>
@@ -227,7 +223,6 @@
 		<Heuristic>
 			<ConstantHeuristic Weight="1.0"/>
 			<TimerHeuristic StartTime="300s" EndTime="-1s" />
-			<OpeningMoveHeuristic Complete="true"/>
 			<IntervalHeuristic IntervalTime="138s" ActiveTime="18s"/>
 			<IntervalHeuristic IntervalTime="9s" ActiveTime="4s"/>
 		</Heuristic>
