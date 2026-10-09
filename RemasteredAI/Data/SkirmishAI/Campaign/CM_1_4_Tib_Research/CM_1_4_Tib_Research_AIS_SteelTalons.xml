@@ -7,13 +7,13 @@
 		id="1_4_STAttack"
 		UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<FocusedThresholdHeuristic />
+			<ConstantHeuristic />
 			<PathToTargetHeuristic PathExists="true" />
 			<SiegeThresholdHeuristic SiegeMode="false" Threshold="4.0" />
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructurePrimaryHeuristic" TargetType="PrimaryTarget" />
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="8" MaxUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false" />
+			<TeamTemplate MinUnits="12" MaxUnits="15" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false" />
 		</Tactic>
 	</AIStrategicStateDefinition>
 	
@@ -44,7 +44,7 @@
 		<TargetHeuristic TargetHeuristic="ClosestStructureExtraHeuristic_1_2" WeightMultiplier="2.0" TargetType="ExtraTarget"/>
 		<TargetHeuristic TargetHeuristic="ClosestStructureExtraHeuristic" WeightMultiplier="1.0" TargetType="ExtraTarget"/>
 		<Tactic Tactic="SimpleAttack" TargetType="ExtraTarget">
-			<TeamTemplate MinUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="30" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 
@@ -57,7 +57,7 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+			<TeamTemplate MinUnits="8" MaxUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits UnitName="SteelTalonsBehemoth"/>
 				<CreateUnits UnitName="SteelTalonsBehemoth"/>
 				<CreateUnits UnitName="SteelTalonsBehemoth"/>

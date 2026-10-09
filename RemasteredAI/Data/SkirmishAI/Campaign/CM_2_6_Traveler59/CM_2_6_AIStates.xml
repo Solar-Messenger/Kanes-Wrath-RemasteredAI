@@ -10,8 +10,6 @@
 		id="2_6_T59HuntArmy"
 		UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<OpeningMoveHeuristic Complete="true" />
-			<ConstantHeuristic Weight="1.0" />
 			<ProductionHaltHeuristic
 				BalanceOfPowerWeight="0.5"
 				PenetrabilityWeight="0.5">
@@ -34,8 +32,6 @@
 		  id="2_6_T59Attack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<OpeningMoveHeuristic Complete="true" />
-			<ConstantHeuristic Weight="0.5" />
 			<OverpowerHeuristic
 				PowerAdvantageWeight="0.5"
 				PenetrabilityWeight="0.5">
@@ -46,7 +42,7 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToGroundStructurePrimaryHeuristic" TargetType="PrimaryTarget"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-			<TeamTemplate MinUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
+			<TeamTemplate MinUnits="12" MaxUnits="15" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="false"/>
 		</Tactic>
 	</AIStrategicStateDefinition>
 	
@@ -107,7 +103,8 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+			<TeamTemplate MinUnits="12" MaxUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="Traveler59DevastatorWarship"/>
 				<CreateUnits UnitName="Traveler59DevastatorWarship"/>
 				<CreateUnits UnitName="Traveler59DevastatorWarship"/>
 			</TeamTemplate>
@@ -165,7 +162,7 @@
 		<UnitModifierByName UnitName="Traveler59Corrupter" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
 		<UnitModifierByName UnitName="Traveler59AnnihilatorTripod" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
 		<UnitModifierByName UnitName="Traveler59CustomizableVehicle" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
-		<UnitModifierByName UnitName="Traveler59EradicatorHexapod" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="Traveler59EradicatorHexapod" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
 
 		<UnitModifierByName UnitName="Traveler59Stormrider" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="50%"/>
 		<UnitModifierByName UnitName="Traveler59DevastatorWarship" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>

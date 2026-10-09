@@ -14,7 +14,7 @@
     <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic_1_2" WeightMultiplier="2.0" TargetType="PrimaryTarget"/>
     <TargetHeuristic TargetHeuristic="SafestToGroundStructurePrimaryHeuristic" WeightMultiplier="1.0" TargetType="PrimaryTarget"/>
     <Tactic Tactic="DefenseAvoidanceAttack" TargetType="PrimaryTarget">
-      <TeamTemplate MinUnits="7" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="8" MaxUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
 	
@@ -41,7 +41,7 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+			<TeamTemplate MinUnits="8" MaxUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits UnitName="SteelTalonsBehemoth"/>
 				<CreateUnits UnitName="SteelTalonsBehemoth"/>
 				<CreateUnits UnitName="SteelTalonsBehemoth"/>
@@ -54,6 +54,7 @@
 		id="1_2_STAirHarassment"
 		UnitUpgradeMultiplier="0.0">
     <Heuristic>
+	  <ConstantHeuristic />
       <SiegeThresholdHeuristic SiegeMode="false" Threshold="2.0"/>
     </Heuristic>
 	<TargetHeuristic TargetHeuristic="SafestToAirStructureAirstrikeHeuristic" TargetType="Airstrike"/>
@@ -70,7 +71,7 @@
     </Heuristic>
     <TargetHeuristic TargetHeuristic="ClosestStructureHeuristic_1_2" TargetType="Structure"/>
     <Tactic Tactic="SimpleAttack" TargetType="Structure">
-      <TeamTemplate MinUnits="7" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+      <TeamTemplate MinUnits="7" MaxUnits="10" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
     </Tactic>
   </AIStrategicStateDefinition>
   

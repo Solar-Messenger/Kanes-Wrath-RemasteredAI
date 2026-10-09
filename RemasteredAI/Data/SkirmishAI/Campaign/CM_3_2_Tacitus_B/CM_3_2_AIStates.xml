@@ -9,7 +9,6 @@
 		id="3_2_GDIHuntArmy"
 		UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="1.0" />
 			<ProductionHaltHeuristic
 				BalanceOfPowerWeight="0.5"
 				PenetrabilityWeight="0.5">
@@ -32,7 +31,6 @@
 		  id="3_2_GDIAttack"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
-			<ConstantHeuristic Weight="0.5" />
 			<OverpowerHeuristic
 				PowerAdvantageWeight="0.5"
 				PenetrabilityWeight="0.5">
@@ -69,7 +67,8 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
 		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+			<TeamTemplate MinUnits="12" MaxUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="GDIJuggernaught"/>
 				<CreateUnits UnitName="GDIJuggernaught"/>
 				<CreateUnits UnitName="GDIJuggernaught"/>
 				<CreateUnits UnitName="GDIJuggernaught"/>
