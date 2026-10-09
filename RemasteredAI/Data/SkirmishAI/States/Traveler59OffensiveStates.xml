@@ -23,22 +23,4 @@
 		</Tactic>
 	</AIStrategicStateDefinition>
 
-	<AIStrategicStateDefinition
-		  id="T59OffensiveSiege"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<FocusedThresholdHeuristic />
-			<EnemyNearbyHeuristic Distance="2000.0" EnemyNearby="false"/>
-			<LateGameHeuristic />
-			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirStructureSiegeHeuristic" TargetType="SiegeTarget"/>
-		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits UnitName="Traveler59DevastatorWarship"/>
-				<CreateUnits UnitName="Traveler59DevastatorWarship"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
 </AssetDeclaration>

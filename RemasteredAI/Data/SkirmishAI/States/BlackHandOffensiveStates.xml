@@ -19,43 +19,4 @@
 		</Tactic>
 	</AIStrategicStateDefinition>
 
-	<AIStrategicStateDefinition
-		  id="BHOffensiveSiege"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<FocusedThresholdHeuristic />
-			<EnemyNearbyHeuristic Distance="2000.0" EnemyNearby="false"/>
-			<PathToTargetHeuristic PathExists="true"/>
-			<MiddleGameHeuristic />
-			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureSiegeHeuristic" TargetType="SiegeTarget"/>
-		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits UnitName="BlackHandBeamCannon"/>
-				<CreateUnits UnitName="BlackHandBeamCannon"/>
-				<CreateUnits UnitName="BlackHandBeamCannon"/>
-				<CreateUnits UnitName="BlackHandBeamCannon"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
-		  id="BHOffensiveArtilleryBombing"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<PathToTargetHeuristic PathExists="true"/>
-			<FocusedThresholdHeuristic />
-			<LateGameHeuristic />
-			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureBombingHeuristic" TargetType="BombingAirstrike"/>
-		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="BombingAirstrike">
-			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK AIRCRAFT BOMBER_AIRCRAFT" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits UnitName="BlackHandMobileArtillery"/>
-				<CreateUnits UnitName="BlackHandMobileArtillery"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
 </AssetDeclaration>

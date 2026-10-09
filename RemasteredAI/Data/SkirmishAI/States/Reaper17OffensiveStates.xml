@@ -23,23 +23,4 @@
 		</Tactic>
 	</AIStrategicStateDefinition>
 
-	<AIStrategicStateDefinition
-		  id="R17OffensiveSiege"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<FocusedThresholdHeuristic />
-			<EnemyNearbyHeuristic Distance="2000.0" EnemyNearby="false"/>
-			<PathToTargetHeuristic PathExists="true"/>
-			<LateGameHeuristic />
-			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureSiegeHeuristic" TargetType="SiegeTarget"/>
-		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits UnitName="Reaper17AnnihilatorTripod"/>
-				<CreateUnits UnitName="Reaper17AnnihilatorTripod"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
 </AssetDeclaration>

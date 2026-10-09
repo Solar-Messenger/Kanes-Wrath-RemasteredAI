@@ -21,22 +21,4 @@
 		</Tactic>
 	</AIStrategicStateDefinition>
 
-	<AIStrategicStateDefinition
-		  id="ZOCOMOffensiveSiege"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<FocusedThresholdHeuristic />
-			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirStructureSiegeHeuristic" TargetType="SiegeTarget"/>
-		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits UnitName="ZOCOMOrca"/>
-				<CreateUnits UnitName="ZOCOMOrca"/>
-				<CreateUnits UnitName="ZOCOMOrca"/>
-				<CreateUnits UnitName="ZOCOMOrca"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
 </AssetDeclaration>

@@ -41,7 +41,6 @@
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
 			<ConstantHeuristic />
-			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
 		</Heuristic>
     <TargetHeuristic TargetHeuristic="SafestToAirTechBombingAirstrikeHeuristic" WeightMultiplier="2.5" TargetType="BombingAirstrike"/>
     <TargetHeuristic TargetHeuristic="SafestToAirAirfieldBombingAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="BombingAirstrike"/>

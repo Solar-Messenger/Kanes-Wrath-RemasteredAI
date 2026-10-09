@@ -20,26 +20,6 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="BHOptimalArtilleryBombing"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<PathToTargetHeuristic PathExists="true"/>
-			<FocusedThresholdHeuristic/>
-			<LateGameHeuristic />
-			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
-		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToGroundStructureBombingHeuristic" TargetType="BombingAirstrike"/>
-		<Tactic Tactic="SimpleSiege" TargetType="BombingAirstrike">
-			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits UnitName="BlackHandMobileArtillery"/>
-				<CreateUnits UnitName="BlackHandMobileArtillery"/>
-				<CreateUnits UnitName="BlackHandMobileArtillery"/>
-			</TeamTemplate>
-			<TeamTemplate MinUnits="2" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
 		  id="BHOptimalEngineer"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>

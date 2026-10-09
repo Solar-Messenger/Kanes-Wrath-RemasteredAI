@@ -22,25 +22,6 @@
 	</AIStrategicStateDefinition>
 
 	<AIStrategicStateDefinition
-		  id="STOffensiveSiege"
-		  UnitUpgradeMultiplier="0.0">
-		<Heuristic>
-			<FocusedThresholdHeuristic />
-			<EnemyNearbyHeuristic Distance="2000.0" EnemyNearby="false"/>
-			<PathToTargetHeuristic PathExists="true"/>
-			<LateGameHeuristic />
-			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
-		</Heuristic>
-    <TargetHeuristic TargetHeuristic="SafestToGroundStructureSiegeHeuristic" WeightMultiplier="0.5" TargetType="SiegeTarget"/>
-		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
-			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
-				<CreateUnits UnitName="SteelTalonsBehemoth"/>
-				<CreateUnits UnitName="SteelTalonsBehemoth"/>
-			</TeamTemplate>
-		</Tactic>
-	</AIStrategicStateDefinition>
-
-	<AIStrategicStateDefinition
 		  id="STOffensiveBombingRuns"
 		  UnitUpgradeMultiplier="0.0">
 		<Heuristic>
