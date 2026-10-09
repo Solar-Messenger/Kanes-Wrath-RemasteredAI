@@ -39,7 +39,7 @@
 
 		<Side>GDI</Side>
 
-		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.35" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.75" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
 		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
@@ -58,9 +58,7 @@
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		
-		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		
@@ -138,7 +136,7 @@
 
 		<BudgetStates State="CleanupBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		
-		<BudgetStates State="CriticalDefenseBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<!--<BudgetStates State="CriticalDefenseBudget" Difficulty="MEDIUM HARD BRUTAL"/>-->
 		
 		<BudgetStates State="InvestmentDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="InvestmentPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>

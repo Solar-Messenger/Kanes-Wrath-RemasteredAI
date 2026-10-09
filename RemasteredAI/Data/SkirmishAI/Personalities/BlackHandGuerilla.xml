@@ -18,7 +18,7 @@
 		  DesiredExcessPowerBuffer="20"
 		  BaseCompactness="0.6"
 	  DefaultThreatFindRadius="1000"
-	  UnitBuilderCostEffectivenessWeight="1.25"
+	  UnitBuilderCostEffectivenessWeight="1.0"
 	  UnitBuilderMoneyVersusTimePreference="1.0"
 	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
@@ -39,7 +39,7 @@
 
 		<Side>BlackHand</Side>
 
-		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.75" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
 		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
@@ -56,17 +56,14 @@
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1" />
 		
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1" />
 				
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1" />
 		
-		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1" />
+		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 
 		<TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1" />
-		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1" />
 		<TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1" />
 
 		<TacticalTarget TacticalAITarget="Engineer" MaxTeamsPerTarget="1" />
@@ -108,7 +105,7 @@
 		<States State="BHGuerillaGroundRefineryAttack" Difficulty="MEDIUM HARD BRUTAL" />
 		<States State="GeneralOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL" />
 		<States State="BHSiege" Difficulty="MEDIUM HARD BRUTAL" />
-		<States State="BHGuerillaBombingRuns" Difficulty="MEDIUM HARD BRUTAL" />
+		<States State="BHArtilleryBombing" Difficulty="MEDIUM HARD BRUTAL" />
 		
 		<States State="GuerillaAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		
@@ -143,7 +140,7 @@
 
 		<BudgetStates State="CleanupBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		
-		<BudgetStates State="CriticalDefenseBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<!--<BudgetStates State="CriticalDefenseBudget" Difficulty="MEDIUM HARD BRUTAL"/>-->
 		
 		<BudgetStates State="InvestmentDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="InvestmentPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>

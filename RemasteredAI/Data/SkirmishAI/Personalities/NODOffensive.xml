@@ -18,7 +18,7 @@
 		  DesiredExcessPowerBuffer="20"
 		  BaseCompactness="0.6"
 	  DefaultThreatFindRadius="800"
-	  UnitBuilderCostEffectivenessWeight="1.25"
+	  UnitBuilderCostEffectivenessWeight="1.0"
 	  UnitBuilderMoneyVersusTimePreference="1.0"
 	  UnitBuilderOverallOffensivePreference="100%"
 	  UnitBuilderOverallDefensivePreference="100%"
@@ -39,7 +39,7 @@
 
 		<Side>NOD</Side>
 
-		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.5" Difficulty="EASY MEDIUM HARD BRUTAL" />
+		<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
 		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
@@ -51,13 +51,11 @@
 		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="Unit" MaxTeamsPerTarget="1"/>
 		
-		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="2"/>
+		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/>
 		
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
-		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		
-		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		
 		<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
@@ -97,16 +95,16 @@
 		<States State="NODOpenCaptureTech" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="OpeningScout" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 
-		<States State="OffensiveRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="OffensiveVehicleRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<!--<States State="OffensiveInfantryRush" Difficulty="EASY MEDIUM HARD BRUTAL"/>-->
 		<States State="OffensiveHuntArmy" Difficulty="MEDIUM HARD BRUTAL"/>
 		<States State="OffensiveAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODOffensiveGroundEconomyAttack" Difficulty="HARD BRUTAL"/>
 		<States State="NODOffensiveGroundRefineryAttack" Difficulty="HARD BRUTAL"/>
 		<States State="GeneralOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODOffensiveSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="NODSiege" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="OffensiveAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="NODOffensiveBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODGroundEngineerDefense" Difficulty="MEDIUM HARD BRUTAL"/>
@@ -139,7 +137,7 @@
 
 		<BudgetStates State="CleanupBudget" Difficulty="MEDIUM HARD BRUTAL"/>
 		
-		<BudgetStates State="CriticalDefenseBudget" Difficulty="MEDIUM HARD BRUTAL"/>
+		<!--<BudgetStates State="CriticalDefenseBudget" Difficulty="MEDIUM HARD BRUTAL"/>-->
 		
 		<BudgetStates State="InvestmentDepletedBudget" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<BudgetStates State="InvestmentPreferenceByTimeBudget" Difficulty="MEDIUM HARD BRUTAL"/>
