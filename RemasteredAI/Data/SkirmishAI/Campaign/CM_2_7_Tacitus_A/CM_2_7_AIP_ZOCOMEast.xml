@@ -39,13 +39,12 @@
 
     <Side>ZOCOM</Side>
 
-	<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.5" Difficulty="EASY MEDIUM HARD BRUTAL" />
+	<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
 	<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 	<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
 	<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD BRUTAL"/>
 
-    <TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
     <TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
     <TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
          
@@ -72,10 +71,10 @@
     <States State="2_7_ZOCOMBombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>
 
     <States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-    <States State="ZOCOMGroundEngineerDefense" Difficulty="MEDIUM HARD BRUTAL"/>
-    <States State="ZOCOMAirEngineerDefense" Difficulty="HARD BRUTAL"/>
-    <States State="ZOCOMGroundCommandoDefense" Difficulty="MEDIUM HARD BRUTAL"/>
-    <States State="ZOCOMAirCommandoDefense" Difficulty="HARD BRUTAL"/>
+    <States State="ZOCOMGroundEngineerDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+    <States State="ZOCOMAirEngineerDefense" Difficulty="MEDIUM HARD BRUTAL"/>
+    <States State="ZOCOMGroundCommandoDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+    <States State="ZOCOMAirCommandoDefense" Difficulty="MEDIUM HARD BRUTAL"/>
 		
     <States State="GarrisonMARV" Difficulty="MEDIUM HARD BRUTAL"/>
     <States State="Garrison" Difficulty="MEDIUM HARD BRUTAL"/>

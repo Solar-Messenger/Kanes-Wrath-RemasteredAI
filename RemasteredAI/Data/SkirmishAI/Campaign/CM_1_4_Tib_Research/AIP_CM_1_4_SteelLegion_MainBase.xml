@@ -40,7 +40,7 @@
 
     <Side>SteelTalons</Side>
 
-    <UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.5" Difficulty="EASY MEDIUM HARD BRUTAL" />
+    <UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
     <ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
     <ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
@@ -51,7 +51,6 @@
 	<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 	<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 	  
-	<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 	<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 	  
 	<TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
@@ -74,12 +73,11 @@
     <TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
     <TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>
     
-    <States State="1_4_SteelTalonsOptimalAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-	  
+    <States State="1_4_STAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
     <States State="1_4_STAirEconomyAttack" Difficulty="MEDIUM HARD BRUTAL"/>
     <States State="1_4_STGeneralOverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 	  
-    <States State="1_4_STSiege" Difficulty="MEDIUM HARD BRUTAL"/>
+    <States State="1_4_STSiege" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 	  
     <States State="1_4_STAirHarassmentAntiTurtle" Difficulty="EASY MEDIUM HARD BRUTAL"/>
     <States State="CM_1_4_BombingRuns" Difficulty="MEDIUM HARD BRUTAL"/>

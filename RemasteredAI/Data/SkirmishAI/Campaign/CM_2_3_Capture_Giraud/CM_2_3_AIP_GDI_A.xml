@@ -39,7 +39,7 @@
 
 	<Side>GDI</Side>
 
-	<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.5" Difficulty="EASY MEDIUM HARD BRUTAL" />
+	<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
 	<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 	<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
@@ -52,9 +52,7 @@
 	<TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 		
 	<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
-	<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		
-    <TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
     <TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
     <TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
 		

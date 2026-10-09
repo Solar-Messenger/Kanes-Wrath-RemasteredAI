@@ -40,7 +40,7 @@
 
     <Side>BlackHand</Side>
 
-    <UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.5" Difficulty="EASY MEDIUM HARD BRUTAL" />
+    <UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
     <ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
     <ResourceMultiplierCheat Percentage="125%" Difficulty="MEDIUM"/>

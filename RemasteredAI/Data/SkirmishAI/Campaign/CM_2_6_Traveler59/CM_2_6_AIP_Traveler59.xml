@@ -19,7 +19,7 @@
 		DesiredExcessPowerBuffer="20"
 		BaseCompactness="0.75"
     DefaultThreatFindRadius="500"
-    UnitBuilderCostEffectivenessWeight="1.25"
+    UnitBuilderCostEffectivenessWeight="1.0"
     UnitBuilderMoneyVersusTimePreference="1.0"
 	UnitBuilderEnemyTowerWeight="0%"
     UnitBuilderOverallOffensivePreference="100%"
@@ -39,7 +39,7 @@
 
     <Side>Traveler59</Side>
 
-	<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.5" Difficulty="EASY MEDIUM HARD BRUTAL" />
+	<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
 	<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 	<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
@@ -53,9 +53,12 @@
     <TacticalTarget TacticalAITarget="SecondaryTarget" MaxTeamsPerTarget="1"/>
 		
     <TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
-    <TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 		
-    <TacticalTarget TacticalAITarget="Opportunity" MaxTeamsPerTarget="2"/>
+    <TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="SiegeTarget" MaxTeamsPerTarget="1"/>
+		
+    <TacticalTarget TacticalAITarget="Opportunity" MaxTeamsPerTarget="1"/>
+    <TacticalTarget TacticalAITarget="Opportunity" MaxTeamsPerTarget="1"/>
   
     <TacticalTarget TacticalAITarget="Airstrike" MaxTeamsPerTarget="1"/>
     <TacticalTarget TacticalAITarget="BombingAirstrike" MaxTeamsPerTarget="1"/>
