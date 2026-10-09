@@ -39,7 +39,7 @@
 
     <Side>SteelTalons</Side>
 
-    <UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="0.75" Difficulty="EASY MEDIUM HARD BRUTAL" />
+    <UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
 		<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
 		<ResourceMultiplierCheat Percentage="125%" Difficulty="MEDIUM"/>
@@ -49,8 +49,7 @@
 	  
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
 		<TacticalTarget TacticalAITarget="PrimaryTarget" MaxTeamsPerTarget="1"/>
-
-		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>  
+ 
 		<TacticalTarget TacticalAITarget="ExtraTarget" MaxTeamsPerTarget="1"/>
 	  
 		<TacticalTarget TacticalAITarget="Structure" MaxTeamsPerTarget="1"/> 
@@ -62,9 +61,9 @@
 		<TacticalTarget TacticalAITarget="Garrison" MaxTeamsPerTarget="1"/>  
 		<TacticalTarget TacticalAITarget="CaptureTech" MaxTeamsPerTarget="1"/>  
       		
-		<States State="SplinterNod_Attack" Difficulty="MEDIUM HARD BRUTAL"/>
+		<States State="SplinterNod_Attack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="SplinterNod_OverwhelmAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
-		<States State="SplinterNod_FanaticAttack" Difficulty="EASY MEDIUM HARD BRUTAL"/>
+		<States State="SplinterNod_FanaticAttack" Difficulty="MEDIUM HARD BRUTAL"/>
 		
 		<States State="BaseDefense" Difficulty="EASY MEDIUM HARD BRUTAL"/>
 		<States State="NODGroundEngineerDefense" Difficulty="MEDIUM HARD BRUTAL"/>
