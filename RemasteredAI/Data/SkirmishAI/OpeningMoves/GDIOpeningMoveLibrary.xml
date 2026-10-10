@@ -205,19 +205,19 @@
 		<Order Time="40s" Build="GDIWarfactory" />
 		<Order Time="60s" Build="GDIRefinery" />
 		<Order Build="GDIHarvester"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
+		<Order Build="GDIPredator"/>
 		<Order Build="GDIHarvester"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
-		<Order Build="GDIPredator"/>
 		<Order Time="90s" Build="GDIPowerPlant" />
 		<Order Time="95s" Build="GDIPowerPlant" />
 		<Order Time="100s" Build="GDIWarfactory" />

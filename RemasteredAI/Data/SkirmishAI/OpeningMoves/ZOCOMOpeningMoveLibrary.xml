@@ -205,19 +205,19 @@
 		<Order Time="40s" Build="ZOCOMWarfactory" />
 		<Order Time="60s" Build="ZOCOMRefinery" />
 		<Order Build="ZOCOMHarvester"/>
+		<Order Build="ZOCOMPredator"/>
+		<Order Build="ZOCOMPredator"/>
+		<Order Build="ZOCOMPredator"/>
+		<Order Build="ZOCOMPredator"/>
+		<Order Build="ZOCOMPredator"/>
+		<Order Build="ZOCOMPredator"/>
+		<Order Build="ZOCOMPredator"/>
+		<Order Build="ZOCOMPredator"/>
+		<Order Build="ZOCOMPredator"/>
+		<Order Build="ZOCOMPredator"/>
+		<Order Build="ZOCOMPredator"/>
+		<Order Build="ZOCOMPredator"/>
 		<Order Build="ZOCOMHarvester"/>
-		<Order Build="ZOCOMPredator"/>
-		<Order Build="ZOCOMPredator"/>
-		<Order Build="ZOCOMPredator"/>
-		<Order Build="ZOCOMPredator"/>
-		<Order Build="ZOCOMPredator"/>
-		<Order Build="ZOCOMPredator"/>
-		<Order Build="ZOCOMPredator"/>
-		<Order Build="ZOCOMPredator"/>
-		<Order Build="ZOCOMPredator"/>
-		<Order Build="ZOCOMPredator"/>
-		<Order Build="ZOCOMPredator"/>
-		<Order Build="ZOCOMPredator"/>
 		<Order Time="90s" Build="ZOCOMPowerPlant" />
 		<Order Time="95s" Build="ZOCOMPowerPlant" />
 		<Order Time="100s" Build="ZOCOMWarfactory" />
