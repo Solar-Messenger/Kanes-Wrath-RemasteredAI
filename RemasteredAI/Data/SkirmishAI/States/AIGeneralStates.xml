@@ -70,8 +70,7 @@
 		<Heuristic>
 			<ConstantHeuristic />
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirUnitAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="Airstrike"/>
-		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAirstrikeHeuristic" WeightMultiplier="1.5" TargetType="Airstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="Airstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="Airstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Airstrike">
 			<TeamTemplate MinUnits="6" MaxUnits="6" IncludeKindOf="CAN_ATTACK AIRCRAFT PRODUCED_AT_HELIPAD" ExcludeKindOf="INFANTRY RELOAD_AIRCRAFT BOMBER_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
@@ -156,8 +155,7 @@
 		<Heuristic>
 			<ConstantHeuristic />
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirUnitAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="Airstrike"/>
-		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAirstrikeHeuristic" WeightMultiplier="1.5" TargetType="Airstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="Airstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="Airstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Airstrike">
 			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT PRODUCED_AT_HELIPAD" ExcludeKindOf="INFANTRY UNIQUE_UNIT RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
@@ -186,8 +184,7 @@
 		<Heuristic>
 			<ConstantHeuristic />
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirUnitAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="Airstrike"/>
-		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAirstrikeHeuristic" WeightMultiplier="1.5" TargetType="Airstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="Airstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="Airstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Airstrike">
 			<TeamTemplate MinUnits="6" MaxUnits="6" IncludeKindOf="CAN_ATTACK AIRCRAFT PRODUCED_AT_HELIPAD" ExcludeKindOf="INFANTRY RELOAD_AIRCRAFT BOMBER_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
@@ -254,8 +251,7 @@
 		<Heuristic>
 			<ConstantHeuristic />
 		</Heuristic>
-		<TargetHeuristic TargetHeuristic="SafestToAirUnitAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="Airstrike"/>
-		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAirstrikeHeuristic" WeightMultiplier="1.5" TargetType="Airstrike"/>
+		<TargetHeuristic TargetHeuristic="SafestToAirPowerPlantAirstrikeHeuristic" WeightMultiplier="2.0" TargetType="Airstrike"/>
 		<TargetHeuristic TargetHeuristic="SafestToAirStructureAirstrikeHeuristic" WeightMultiplier="1.0" TargetType="Airstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Airstrike">
 			<TeamTemplate MinUnits="6" MaxUnits="6" IncludeKindOf="CAN_ATTACK AIRCRAFT PRODUCED_AT_HELIPAD" ExcludeKindOf="INFANTRY RELOAD_AIRCRAFT BOMBER_AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
