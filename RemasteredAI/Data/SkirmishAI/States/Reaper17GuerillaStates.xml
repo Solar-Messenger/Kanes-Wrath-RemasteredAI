@@ -26,7 +26,7 @@
 		</Heuristic>
 		<TargetHeuristic TargetHeuristic="SafestToAirHarvesterAssaultAirstrikeHeuristic" TargetType="AssaultAirstrike"/>
 		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="AssaultAirstrike">
-			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK ASSAULT_AIRCRAFT" ExcludeKindOf="INFANTRY UNIQUE_UNIT RELOAD_AIRCRAFT BOMBER_AIRCRAFT PRODUCED_AT_HELIPAD" AlwaysRelease="false" AlwaysRecruit="false">
 				<CreateUnits UnitName="Reaper17Stormrider"/>
 				<CreateUnits UnitName="Reaper17Stormrider"/>
 				<CreateUnits UnitName="Reaper17Stormrider"/>
