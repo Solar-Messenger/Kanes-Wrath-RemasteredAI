@@ -42,8 +42,8 @@
 	<UnitBuilderUnitChoiceStrategy Shape="BEST" StandardDeviation="1.0" Difficulty="EASY MEDIUM HARD BRUTAL" />
 
 	<ResourceMultiplierCheat Percentage="100%" Difficulty="EASY"/>
-	<ResourceMultiplierCheat Percentage="150%" Difficulty="MEDIUM"/>
-	<ResourceMultiplierCheat Percentage="200%" Difficulty="HARD BRUTAL"/>
+	<ResourceMultiplierCheat Percentage="130%" Difficulty="MEDIUM"/>
+    <ResourceMultiplierCheat Percentage="175%" Difficulty="HARD BRUTAL"/>
     
     <TacticalTarget TacticalAITarget="Targetless" MaxTeamsPerTarget="1"/>
 		

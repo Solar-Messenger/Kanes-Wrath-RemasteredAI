@@ -143,7 +143,7 @@
     </Heuristic>
     <Budget>
       <AccountShare Account="INVESTMENT" Percent="30%"/>
-      <AccountShare Account="SPECIAL_OPERATIONS" Percent="10%"/>
+      <AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
       <AccountShare Account="PRODUCTION" Percent="60%"/>
       <AccountShare Account="DEFENSE" Percent="0%"/>
       <AccountShare Account="TECHNOLOGY" Percent="0%"/>

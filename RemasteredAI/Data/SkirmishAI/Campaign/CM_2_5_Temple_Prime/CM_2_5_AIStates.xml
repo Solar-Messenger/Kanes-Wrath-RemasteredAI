@@ -45,7 +45,7 @@
 		<Heuristic>
 			<ConstantHeuristic Weight="1.0"/>
 			<SpreadThresholdHeuristic />
-			<EnemyNearbyHeuristic Distance="1000.0" />
+			<EnemyNearbyHeuristic Distance="1000.0" EnemyNearby="true"/>
 		</Heuristic>
 		<Budget>
 			<AccountShare Account="INVESTMENT" Percent="0%"/>
