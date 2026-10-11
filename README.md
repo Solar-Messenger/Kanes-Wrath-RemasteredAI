@@ -30,14 +30,14 @@ be added by the user in order to have it be compiled.
 
 ## Release (R25j):
 
-## Campaign
+## Campaign:
 
 - Fully adapted/fixed campaign maps will follow (with map specific fixes).
 - Revamp entire General AI behaviour from scratch with compatibility for 1.02+.
 - Fix and improve incomplete/incorrect Attack states (Proactive, Reactive & Context Specific).
 - Scale Easy, Medium & Hard to a more suitable consistency.
 
-## Skirmish
+## Skirmish:
 
 - Recreated Skirmish AI logic from scratch to comply with 1.01/1.02/1.02+ economy changes.
 - Improved Personality types with distinct behaviours for each.
@@ -53,6 +53,40 @@ be added by the user in order to have it be compiled.
 - Improved reactivity based on personality type and match conditions.
 - AI now garrisons Epic units if idle/free infantry are available.
 - AI will make more frequent use of Support Powers.
+
+## Global Conquest:
+- Global Conquest Support for all supported EA maps in 1.02+ has been implemented.
+- 1.02+ Maps added to Global Conquest:
+    - Barstow Badlands
+	- Pipeline Problems
+	- Schlachtfield Stuttgart
+	- Tournament Arena
+	- Tournament Decision
+	- Suburban Slaughterhouse
+	- Unfair Advantage
+	- Arid Remains
+	- Badlands
+	- Coastline Chaos
+	- Crosstown Conflict
+	- Death Valley
+	- Dockside Devastation
+	- Downtown Dustbowl
+	- Eastern Promises
+	- End of the Line
+	- Grasslands Landgrab
+	- Heaven and Hell
+	- Missed Opportunity
+	- Mountains of Madness
+	- Oasis Onslaught
+	- Redzone Rampage
+	- Safety Nest
+	- Seaport Smackdown
+	- The Battle for Middle Egypt
+	- Unsound Investment
+	- Dry Heat
+	- Permafrost
+	- Isthmus of Insanity
+- Special thanks to Desolator Trooper for Global Conquest building map placements.
 
 ---
 
