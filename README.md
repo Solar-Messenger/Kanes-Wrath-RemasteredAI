@@ -42,12 +42,12 @@ be added by the user in order to have it be compiled.
 - Recreated Skirmish AI logic from scratch to comply with 1.01/1.02/1.02+ economy changes.
 - Improved Personality types with distinct behaviours for each.
 - Medium & Hard now have proper scaling in difficulty in relation to Easy and Brutal.
-- Brutal retains base game 200% resoure modifier.
+- Brutal retains base game 200% resource modifier.
 - Fixed incorrect unit listings, target types for prioritized targets (Engineers, Commandos, Bridges, Husks, Garrisons) for sub factions.
 - Improved Budget management definitions.
 - Fixed an issue where the AI would crash the game if it made Steel Talons Heavy Harvesters.
 - Fixed an issue where reload/dock based aircraft would formation move for some states instead of moving at native speed.
-- Fixed cases whereby Opening Moves would request to build units that are not available at certain tech levels
+- Fixed cases whereby Opening Moves would request to build units that are not available at certain tech levels.
 - Fixed cases whereby certain subfactions would request to build unit(s) in their Opening Moves and Unit Preferences that they do not have access to or do not exist/were cut from the game during development.
 - Unit Preferences have been redesigned to be dynamic depending on specific battlefield/match conditions.
 - Improved reactivity based on personality type and match conditions.
