@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Tags></Tags>
+	<Includes></Includes>
+	
+	<!--Steel Talons-->
+	
+	<!--Isolation: No ground path exists to enemy base-->
+	
+	<AIStrategicStateDefinition
+		  id="STIsolation"
+		  UnitUpgradeMultiplier="0.0"
+		  UnitBuilderCostEffectivenessWeight="1.0"
+		  UnitBuilderOverallOffensivePreference="100%"
+		  UnitBuilderOverallDefensivePreference="100%"
+		  UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="false"/>
+			<ConstantHeuristic Weight="999.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToAirStructureIsolationHeuristic" TargetType="Isolation"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Isolation">
+			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="SteelTalonsFireHawk"/>
+				<CreateUnits UnitName="SteelTalonsFireHawk"/>
+				<CreateUnits UnitName="SteelTalonsFireHawk"/>
+				<CreateUnits UnitName="SteelTalonsFireHawk"/>
+			</TeamTemplate>
+		</Tactic>
+		<UnitModifierByName UnitName="SteelTalonsRifleSoldierSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsMissileSoldierSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsCombatEngineer" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsGrenadeSoldierSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsPitbull" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsTitan" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsRepairAPC" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsWolverine" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsAAScout" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsMammoth" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsBehemoth" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsMARV" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsOrca" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsHammerhead" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+		<UnitModifierByName UnitName="SteelTalonsFireHawk" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsBarracks" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="SteelTalonsWarfactory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="SteelTalonsAirTower" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		
+		<UnitModifierByName UnitName="SteelTalonsCommandPost" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsArmory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="MG_SteelTalons_ReclamatorHub" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
+		<UnitModifierByName UnitName="SteelTalonsSpaceCommandUplink" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="SteelTalonsIonCannonControl" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsWatchTower" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsGolumCannon" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsAABattery" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+	</AIStrategicStateDefinition>
+	
+	<!--Critical Defense-->
+
+	<AIStrategicStateDefinition
+	id="STCriticalDefenseUnitPreferences"
+	UnitUpgradeMultiplier="0.0"
+    UnitBuilderCostEffectivenessWeight="1.0"
+	UnitBuilderOverallOffensivePreference="100%"
+	UnitBuilderOverallDefensivePreference="100%"
+	UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<ConstantHeuristic Weight="998.0"/>
+			<SpreadThresholdHeuristic/>
+			<!--<EnemyNearbyHeuristic Distance="2500.0" EnemyNearby="True" />-->
+		</Heuristic>
+		<UnitModifierByName UnitName="SteelTalonsRifleSoldierSquad" UnitPreferenceOffensiveModifier="80%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="SteelTalonsMissileSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsCombatEngineer" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsGrenadeSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsPitbull" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsTitan" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsRepairAPC" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsWolverine" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsAAScout" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsMammoth" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsBehemoth" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsMARV" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsOrca" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsHammerhead" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsFireHawk" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsBarracks" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsWarfactory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="150%"/>
+		<UnitModifierByName UnitName="SteelTalonsAirTower" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="50%"/>
+		
+		<UnitModifierByName UnitName="SteelTalonsCommandPost" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsArmory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="MG_SteelTalons_ReclamatorHub" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
+		<UnitModifierByName UnitName="SteelTalonsSpaceCommandUplink" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="SteelTalonsIonCannonControl" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsWatchTower" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsGolumCannon" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="SteelTalonsAABattery" UnitPreferenceOffensiveModifier="60%" UnitPreferenceDefensiveModifier="80%"/>
+	</AIStrategicStateDefinition>
+	
+	<!--Rush-->
+	
+	<AIStrategicStateDefinition
+	id="STRushUnitPreferences"
+	UnitUpgradeMultiplier="0.0"
+	UnitBuilderOverallOffensivePreference="100%"
+	UnitBuilderOverallDefensivePreference="100%"
+	UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<ConstantHeuristic Weight="997.0"/>
+			<TimerHeuristic StartTime="0s" EndTime="420s" />
+		</Heuristic>
+		<UnitModifierByName UnitName="SteelTalonsRifleSoldierSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsMissileSoldierSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsCombatEngineer" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsGrenadeSoldierSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsPitbull" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsTitan" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsRepairAPC" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsWolverine" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsAAScout" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsMammoth" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsBehemoth" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsMARV" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsOrca" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsHammerhead" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsFireHawk" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsBarracks" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsWarfactory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="150%"/>
+		<UnitModifierByName UnitName="SteelTalonsAirTower" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="50%"/>
+		
+		<UnitModifierByName UnitName="SteelTalonsCommandPost" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsArmory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="MG_SteelTalons_ReclamatorHub" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
+		<UnitModifierByName UnitName="SteelTalonsSpaceCommandUplink" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="SteelTalonsIonCannonControl" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsWatchTower" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsGolumCannon" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+		<UnitModifierByName UnitName="SteelTalonsAABattery" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+	</AIStrategicStateDefinition>
+	
+	<!--Siege-->
+	
+	<AIStrategicStateDefinition
+	id="STSiegeUnitPreferences"
+	UnitUpgradeMultiplier="0.0"
+	UnitBuilderOverallOffensivePreference="100%"
+	UnitBuilderOverallDefensivePreference="100%"
+	UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<ConstantHeuristic Weight="996.0"/>
+			<FocusedThresholdHeuristic />
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="3.0" />
+		</Heuristic>
+		<UnitModifierByName UnitName="SteelTalonsRifleSoldierSquad" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="SteelTalonsMissileSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsCombatEngineer" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsGrenadeSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsPitbull" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="SteelTalonsTitan" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsRepairAPC" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsWolverine" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="SteelTalonsAAScout" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsMammoth" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsBehemoth" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="SteelTalonsMARV" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsOrca" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsHammerhead" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsFireHawk" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsBarracks" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsWarfactory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="150%"/>
+		<UnitModifierByName UnitName="SteelTalonsAirTower" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="50%"/>
+		
+		<UnitModifierByName UnitName="SteelTalonsCommandPost" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsArmory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="MG_SteelTalons_ReclamatorHub" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
+		<UnitModifierByName UnitName="SteelTalonsSpaceCommandUplink" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="SteelTalonsIonCannonControl" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsWatchTower" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsGolumCannon" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsAABattery" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+	</AIStrategicStateDefinition>
+	
+	<!--Base-->
+	
+	<AIStrategicStateDefinition
+	id="STBaseUnitPreferences"
+	UnitUpgradeMultiplier="1.5"
+	UnitBuilderOverallOffensivePreference="100%"
+	UnitBuilderOverallDefensivePreference="100%"
+	UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<ConstantHeuristic Weight="995.0"/>
+		</Heuristic>
+		<UnitModifierByName UnitName="SteelTalonsRifleSoldierSquad" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="20%"/>
+		<UnitModifierByName UnitName="SteelTalonsMissileSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="SteelTalonsCombatEngineer" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsGrenadeSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="75%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsPitbull" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="SteelTalonsTitan" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsRepairAPC" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsWolverine" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="SteelTalonsAAScout" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsMammoth" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsBehemoth" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsMARV" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsOrca" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsHammerhead" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsFireHawk" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsBarracks" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsWarfactory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="150%"/>
+		<UnitModifierByName UnitName="SteelTalonsAirTower" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="50%"/>
+		
+		<UnitModifierByName UnitName="SteelTalonsCommandPost" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsArmory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="MG_SteelTalons_ReclamatorHub" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
+		<UnitModifierByName UnitName="SteelTalonsSpaceCommandUplink" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="SteelTalonsIonCannonControl" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsWatchTower" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsGolumCannon" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsAABattery" UnitPreferenceOffensiveModifier="60%" UnitPreferenceDefensiveModifier="80%"/>
+	</AIStrategicStateDefinition>
+	
+	<!--Easy-->
+
+	<AIStrategicStateDefinition
+	id="STUnitPreferences_EASY"
+	UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="999.0"/>
+		</Heuristic>
+		<UnitModifierByName UnitName="SteelTalonsRifleSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsMissileSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsCombatEngineer" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsGrenadeSoldierSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsPitbull" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsTitan" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsRepairAPC" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsWolverine" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsAAScout" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsMammoth" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsBehemoth" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsMARV" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsOrca" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsHammerhead" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsFireHawk" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsBarracks" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="80%"/>
+		<UnitModifierByName UnitName="SteelTalonsWarfactory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsAirTower" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="20%"/>
+		
+		<UnitModifierByName UnitName="SteelTalonsCommandPost" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsArmory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="MG_SteelTalons_ReclamatorHub" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsSpaceCommandUplink" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsIonCannonControl" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="SteelTalonsWatchTower" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="SteelTalonsGolumCannon" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="SteelTalonsAABattery" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+	</AIStrategicStateDefinition>
+	
+</AssetDeclaration>

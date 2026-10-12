@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Tags></Tags>
+	<Includes></Includes>
+	
+	<!--Unit preferences for production-->
+
+	<!--Note: Base preferences should loosely match Defensive preferences. This is because defensive is usually unit spam
+		and offensive is heavy unit spam. A base preference should match unit spam as some personalities have dedicated states
+		for making heavy units when there is a balance of power to ensure there isnt any over representation of T3 in spam.-->
+	
+	<!--Engineers, Commandos, other Special Infantry/Vehicles as well as RELOAD_AIRCRAFT and BOMBER_AIRCRAFT count as
+		context specific units and must be set to 0% here and created/managed via a state instead to prevent dormant 
+		units sitting on airfield decks or having a faction only fight with them and lose stupendously-->
+	
+	<!--Offensive Preference: Takes into consideration the WeaponTemplate of a GameObject Asset but not all aspects of it
+		Percentages should be assigned in coordinance with unit usability, context and general effectivenss (Micro, AOE)
+		to compensate for the lack of aspects not considered (Ex: The SkirmishAI Unit Builder 'thinks' the shatterer
+		is an extremely good unit because of its AOE and sonic dps but in reality it can be dodged, therefore offensive
+		percentage assignment must take this into account to rebalance it for the Unit Builder Algorithm-->
+	
+	<!--Defensive Preference: Takes into consideration the Body (HP) and ArmorTemplate but not speed/agility
+		Percentages should be assigned based on how durable but also how maneuverable the unit really is and for
+		infantry, crushing must be taken into consideration strongly as well as the fact their effectiveness
+		is primarily horde based at the Unit chooser level-->
+	
+	<!--Overall Offensive & Defensive Preferences may be used to scale or over emphasize the real effectiveness of
+		units between each other. This could/might be used to scale down the Defensive Modifier for Infantry so that
+		the AI doesnt make them in more proportions than is determined for any given battle scenario. Generally spam 
+		Infantry when on heavy defense or far behind for a quick boost and cut them down from the main body of the army
+		when things stabilize. High tier infantry can be made exceptions to this (Shock/Zone Troopers/BH inf)-->
+	
+	<!--On unit composition: UnitBuilder params also exist in personality templates, those are the default if they are 
+		not defined here. Define it for Critical Defense spam so its cost effective while defending and doesnt spam 
+		expensive T3 but keep it blank for base preference. Percentages otherwise
+		largely do not matter but it might be worth contrasting between vehicles and infantry to avoid too much
+		representation of infantry.-->
+	
+	<!--GDI-->
+	
+	<!--Isolation: No ground path exists to enemy base-->
+	
+	<AIStrategicStateDefinition
+		  id="GDIIsolation"
+		  UnitUpgradeMultiplier="0.0"
+		  UnitBuilderCostEffectivenessWeight="1.0"
+		  UnitBuilderOverallOffensivePreference="100%"
+		  UnitBuilderOverallDefensivePreference="100%"
+		  UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="false"/>
+			<ConstantHeuristic Weight="999.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToAirStructureIsolationHeuristic" TargetType="Isolation"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Isolation">
+			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="GDIFirehawk"/>
+				<CreateUnits UnitName="GDIFirehawk"/>
+				<CreateUnits UnitName="GDIFirehawk"/>
+				<CreateUnits UnitName="GDIFirehawk"/>
+			</TeamTemplate>
+		</Tactic>
+		<UnitModifierByName UnitName="GDIRifleSoldierSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIMissileSoldierSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIEngineer" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIGrenadeSoldierSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDISniperSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDICommando" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+		<UnitModifierByName UnitName="GDIZoneTrooperSquad" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
+
+		<UnitModifierByName UnitName="GDIPitbull" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIPredator" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIAPC" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDISonicTank" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIAAScout" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIMammoth" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIJuggernaught" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIMARV" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
+
+		<UnitModifierByName UnitName="GDIOrca" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIHammerhead" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+		<UnitModifierByName UnitName="GDIFireHawk" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="GDIBarracks" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="20%"/>
+		<UnitModifierByName UnitName="GDIWarfactory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="GDIAirTower" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		
+		<UnitModifierByName UnitName="GDICommandPost" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIMedicalBay" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="GDIArmory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="MG_GDI_ReclamatorHub" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
+		<UnitModifierByName UnitName="GDISpaceCommandUplink" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="400%"/>
+		<UnitModifierByName UnitName="GDIIonCannonControl" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="GDIWatchTower" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIGolumCannon" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIAABattery" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDITerraformingStation" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+	</AIStrategicStateDefinition>
+	
+	<!--Critical Defense-->
+
+	<AIStrategicStateDefinition
+	id="GDICriticalDefenseUnitPreferences"
+	UnitUpgradeMultiplier="0.0"
+	UnitBuilderCostEffectivenessWeight="1.0"
+	UnitBuilderOverallOffensivePreference="100%"
+	UnitBuilderOverallDefensivePreference="100%"
+	UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<ConstantHeuristic Weight="998.0"/>
+			<SpreadThresholdHeuristic/>
+			<!--<EnemyNearbyHeuristic Distance="2500.0" EnemyNearby="True" />-->
+		</Heuristic>
+		<UnitModifierByName UnitName="GDIRifleSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIMissileSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIEngineer" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIGrenadeSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDISniperSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIZoneTrooperSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+
+		<UnitModifierByName UnitName="GDIPitbull" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="80%"/>
+		<UnitModifierByName UnitName="GDIPredator" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIAPC" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDISonicTank" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="80%"/>
+		<UnitModifierByName UnitName="GDIAAScout" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIMammoth" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIJuggernaught" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIMARV" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+
+		<UnitModifierByName UnitName="GDIOrca" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIHammerhead" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIFireHawk" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="GDIBarracks" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIWarfactory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="GDIAirTower" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="50%"/>
+		
+		<UnitModifierByName UnitName="GDICommandPost" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIMedicalBay" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="GDIArmory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="MG_GDI_ReclamatorHub" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
+		<UnitModifierByName UnitName="GDISpaceCommandUplink" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="400%"/>
+		<UnitModifierByName UnitName="GDIIonCannonControl" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="GDIWatchTower" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIGolumCannon" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIAABattery" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="GDITerraformingStation" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+	</AIStrategicStateDefinition>
+	
+	<!--Rush-->
+	
+	<AIStrategicStateDefinition
+	id="GDIRushUnitPreferences"
+	UnitUpgradeMultiplier="0.0"
+	UnitBuilderOverallOffensivePreference="100%"
+	UnitBuilderOverallDefensivePreference="100%"
+	UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<ConstantHeuristic Weight="997.0"/>
+			<TimerHeuristic StartTime="0s" EndTime="420s" />
+		</Heuristic>
+		<UnitModifierByName UnitName="GDIRifleSoldierSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIMissileSoldierSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIEngineer" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIGrenadeSoldierSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDISniperSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIZoneTrooperSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="GDIPitbull" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIPredator" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIAPC" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDISonicTank" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIAAScout" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIMammoth" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIJuggernaught" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIMARV" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+
+		<UnitModifierByName UnitName="GDIOrca" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIHammerhead" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIFireHawk" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="GDIBarracks" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIWarfactory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="150%"/>
+		<UnitModifierByName UnitName="GDIAirTower" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="50%"/>
+		
+		<UnitModifierByName UnitName="GDICommandPost" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIMedicalBay" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="GDIArmory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="MG_GDI_ReclamatorHub" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
+		<UnitModifierByName UnitName="GDISpaceCommandUplink" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="400%"/>
+		<UnitModifierByName UnitName="GDIIonCannonControl" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="GDIWatchTower" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIGolumCannon" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIAABattery" UnitPreferenceOffensiveModifier="60%" UnitPreferenceDefensiveModifier="80%"/>
+		<UnitModifierByName UnitName="GDITerraformingStation" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+	</AIStrategicStateDefinition>
+	
+	<!--Siege-->
+	
+	<AIStrategicStateDefinition
+	id="GDISiegeUnitPreferences"
+	UnitUpgradeMultiplier="0.0"
+	UnitBuilderCostEffectivenessWeight="1.0"
+	UnitBuilderOverallOffensivePreference="100%"
+	UnitBuilderOverallDefensivePreference="100%"
+	UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<ConstantHeuristic Weight="996.0"/>
+			<FocusedThresholdHeuristic />
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="3.0" />
+		</Heuristic>
+		<UnitModifierByName UnitName="GDIRifleSoldierSquad" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="20%"/>
+		<UnitModifierByName UnitName="GDIMissileSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIEngineer" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIGrenadeSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDISniperSquad" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="GDIZoneTrooperSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+
+		<UnitModifierByName UnitName="GDIPitbull" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIPredator" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIAPC" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDISonicTank" UnitPreferenceOffensiveModifier="80%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIAAScout" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIMammoth" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIJuggernaught" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="GDIMARV" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+
+		<UnitModifierByName UnitName="GDIOrca" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIHammerhead" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIFireHawk" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="50%"/>
+
+		<UnitModifierByName UnitName="GDIBarracks" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIWarfactory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="150%"/>
+		<UnitModifierByName UnitName="GDIAirTower" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="20%"/>
+		
+		<UnitModifierByName UnitName="GDICommandPost" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIMedicalBay" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="GDIArmory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="MG_GDI_ReclamatorHub" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
+		<UnitModifierByName UnitName="GDISpaceCommandUplink" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="400%"/>
+		<UnitModifierByName UnitName="GDIIonCannonControl" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="GDIWatchTower" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIGolumCannon" UnitPreferenceOffensiveModifier="80%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIAABattery" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDITerraformingStation" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+	</AIStrategicStateDefinition>
+	
+	<!--Base-->
+	
+	<AIStrategicStateDefinition
+	id="GDIBaseUnitPreferences"
+	UnitUpgradeMultiplier="1.5"
+	UnitBuilderOverallOffensivePreference="100%"
+	UnitBuilderOverallDefensivePreference="100%"
+	UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<ConstantHeuristic Weight="995.0"/>
+		</Heuristic>
+		<UnitModifierByName UnitName="GDIRifleSoldierSquad" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="20%"/>
+		<UnitModifierByName UnitName="GDIMissileSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="GDIEngineer" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIGrenadeSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="75%"/>
+		<UnitModifierByName UnitName="GDISniperSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIZoneTrooperSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+
+		<UnitModifierByName UnitName="GDIPitbull" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIPredator" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIAPC" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDISonicTank" UnitPreferenceOffensiveModifier="40%" UnitPreferenceDefensiveModifier="80%"/>
+		<UnitModifierByName UnitName="GDIAAScout" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIMammoth" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIJuggernaught" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIMARV" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+
+		<UnitModifierByName UnitName="GDIOrca" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIHammerhead" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIFireHawk" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="GDIBarracks" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIWarfactory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="150%"/>
+		<UnitModifierByName UnitName="GDIAirTower" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="50%"/>
+		
+		<UnitModifierByName UnitName="GDICommandPost" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIMedicalBay" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="GDIArmory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="MG_GDI_ReclamatorHub" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
+		<UnitModifierByName UnitName="GDISpaceCommandUplink" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="400%"/>
+		<UnitModifierByName UnitName="GDIIonCannonControl" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="GDIWatchTower" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIGolumCannon" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIAABattery" UnitPreferenceOffensiveModifier="60%" UnitPreferenceDefensiveModifier="80%"/>
+		<UnitModifierByName UnitName="GDITerraformingStation" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+	</AIStrategicStateDefinition>
+	
+	<!--Easy-->
+
+	<AIStrategicStateDefinition
+	id="GDIUnitPreferences_EASY"
+	UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="998.0"/>
+		</Heuristic>
+		<UnitModifierByName UnitName="GDIRifleSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIMissileSoldierSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIEngineer" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIGrenadeSoldierSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDISniperSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIZoneTrooperSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="GDIPitbull" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIPredator" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIAPC" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDISonicTank" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIAAScout" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIMammoth" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIJuggernaught" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIMARV" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="GDIOrca" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIHammerhead" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIFireHawk" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="GDIBarracks" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="80%"/>
+		<UnitModifierByName UnitName="GDIWarfactory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIAirTower" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="20%"/>
+		
+		<UnitModifierByName UnitName="GDICommandPost" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIMedicalBay" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIArmory" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="MG_GDI_ReclamatorHub" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDISpaceCommandUplink" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIIonCannonControl" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="GDIWatchTower" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="GDIGolumCannon" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDIAABattery" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="GDITerraformingStation" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+	</AIStrategicStateDefinition>
+	
+</AssetDeclaration>

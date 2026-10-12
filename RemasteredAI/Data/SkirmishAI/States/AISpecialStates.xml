@@ -1,0 +1,2059 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Tags></Tags>
+	<Includes></Includes>
+	
+	<AIStrategicStateDefinition
+	  id="Hunt"
+	  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+		</Heuristic>
+		<Tactic Tactic="Hunt" TargetType="Targetless"/>
+	</AIStrategicStateDefinition>
+
+	<!--This state is used by all personalities as protection from ever getting "stuck" if all other states fail-->
+	<AIStrategicStateDefinition
+		  id="Cleanup"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.00001"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureHeuristic"/>
+		<Tactic Tactic="SimpleAttack" TargetType="Structure"/>
+		<Tactic Tactic="Hunt" TargetType="Targetless"/>
+	</AIStrategicStateDefinition>
+
+	<!--AI sends all available units to an ally beacon-->
+	<AIStrategicStateDefinition
+		  id="BeaconHelp"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="BeaconHeuristic" TargetType="Beacon"/>
+		<Tactic Tactic="SimpleAttack" TargetType="Beacon">
+			<TeamTemplate MinUnits="1" MaxUnits="12" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="true"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<!--Send any 1 ground unit to pickup a crate-->
+	<AIStrategicStateDefinition
+	  id="CratePickup"
+	  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CrateHeuristic" TargetType="Crate"/>
+		<Tactic Tactic="SimpleAttack" TargetType="Crate">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<!--Start repairing broken bridges if the AI has no path to its target-->
+	<AIStrategicStateDefinition
+		  id="GDIBridgeRepair"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="false"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="BridgeHeuristic" TargetType="Bridge"/>
+		<Tactic Tactic="Engineer" TargetType="Bridge">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="GDIEngineer"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<!--Start repairing broken bridges if the AI has no path to its target-->
+	<AIStrategicStateDefinition
+		  id="NODBridgeRepair"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="false"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="BridgeHeuristic" TargetType="Bridge"/>
+		<Tactic Tactic="Engineer" TargetType="Bridge">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="NODSaboteur"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<!--Start repairing broken bridges if the AI has no path to its target-->
+	<AIStrategicStateDefinition
+		  id="AlienBridgeRepair"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="false"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="BridgeHeuristic" TargetType="Bridge"/>
+		<Tactic Tactic="Engineer" TargetType="Bridge">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="AlienAssimilator"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<!--Start repairing broken bridges if the AI has no path to its target-->
+	<AIStrategicStateDefinition
+		  id="STBridgeRepair"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="false"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="BridgeHeuristic" TargetType="Bridge"/>
+		<Tactic Tactic="Engineer" TargetType="Bridge">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="SteelTalonsCombatEngineer"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<!--Start repairing broken bridges if the AI has no path to its target-->
+	<AIStrategicStateDefinition
+		  id="BHBridgeRepair"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="false"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="BridgeHeuristic" TargetType="Bridge"/>
+		<Tactic Tactic="Engineer" TargetType="Bridge">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="BlackHandSaboteur"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<!--Start repairing broken bridges if the AI has no path to its target-->
+	<AIStrategicStateDefinition
+		  id="R17BridgeRepair"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="false"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="BridgeHeuristic" TargetType="Bridge"/>
+		<Tactic Tactic="Engineer" TargetType="Bridge">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="AlienAssimilator"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<!--Start repairing broken bridges if the AI has no path to its target-->
+	<AIStrategicStateDefinition
+		  id="ZOCOMBridgeRepair"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="false"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="BridgeHeuristic" TargetType="Bridge"/>
+		<Tactic Tactic="Engineer" TargetType="Bridge">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="ZOCOMEngineer"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<!--Start repairing broken bridges if the AI has no path to its target-->
+	<AIStrategicStateDefinition
+		  id="MOKBridgeRepair"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="false"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="BridgeHeuristic" TargetType="Bridge"/>
+		<Tactic Tactic="Engineer" TargetType="Bridge">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="MarkedOfKaneSaboteur"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<!--Start repairing broken bridges if the AI has no path to its target-->
+	<AIStrategicStateDefinition
+		  id="T59BridgeRepair"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="false"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="BridgeHeuristic" TargetType="Bridge"/>
+		<Tactic Tactic="Engineer" TargetType="Bridge">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="Traveler59Assimilator"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<!--For capturing husks-->
+
+	<AIStrategicStateDefinition
+	 id="GDIHuskCapture"
+	 UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="FriendlyHuskHeuristic" TargetType="Husk"/>
+		<TargetHeuristic TargetHeuristic="EnemyHuskHeuristic" TargetType="Husk"/>
+		<Tactic Tactic="Engineer" TargetType="Husk">
+			<TeamTemplate MinUnits="1" MaxUnits ="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="GDIEngineer"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="NODHuskCapture"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="FriendlyHuskHeuristic" TargetType="Husk"/>
+		<TargetHeuristic TargetHeuristic="EnemyHuskHeuristic" TargetType="Husk"/>
+		<Tactic Tactic="Engineer" TargetType="Husk">
+			<TeamTemplate MinUnits="1" MaxUnits ="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="NODSaboteur"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="AlienHuskCapture"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="FriendlyHuskHeuristic" TargetType="Husk"/>
+		<TargetHeuristic TargetHeuristic="EnemyHuskHeuristic" TargetType="Husk"/>
+		<Tactic Tactic="Engineer" TargetType="Husk">
+			<TeamTemplate MinUnits="1" MaxUnits ="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="AlienAssimilator"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+	 id="STHuskCapture"
+	 UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="FriendlyHuskHeuristic" TargetType="Husk"/>
+		<TargetHeuristic TargetHeuristic="EnemyHuskHeuristic" TargetType="Husk"/>
+		<Tactic Tactic="Engineer" TargetType="Husk">
+			<TeamTemplate MinUnits="1" MaxUnits ="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="SteelTalonsCombatEngineer"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="BHHuskCapture"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="FriendlyHuskHeuristic" TargetType="Husk"/>
+		<TargetHeuristic TargetHeuristic="EnemyHuskHeuristic" TargetType="Husk"/>
+		<Tactic Tactic="Engineer" TargetType="Husk">
+			<TeamTemplate MinUnits="1" MaxUnits ="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="BlackHandSaboteur"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="R17HuskCapture"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="FriendlyHuskHeuristic" TargetType="Husk"/>
+		<TargetHeuristic TargetHeuristic="EnemyHuskHeuristic" TargetType="Husk"/>
+		<Tactic Tactic="Engineer" TargetType="Husk">
+			<TeamTemplate MinUnits="1" MaxUnits ="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="AlienAssimilator"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+	 id="ZOCOMHuskCapture"
+	 UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="FriendlyHuskHeuristic" TargetType="Husk"/>
+		<TargetHeuristic TargetHeuristic="EnemyHuskHeuristic" TargetType="Husk"/>
+		<Tactic Tactic="Engineer" TargetType="Husk">
+			<TeamTemplate MinUnits="1" MaxUnits ="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="ZOCOMEngineer"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="MOKHuskCapture"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="FriendlyHuskHeuristic" TargetType="Husk"/>
+		<TargetHeuristic TargetHeuristic="EnemyHuskHeuristic" TargetType="Husk"/>
+		<Tactic Tactic="Engineer" TargetType="Husk">
+			<TeamTemplate MinUnits="1" MaxUnits ="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="MarkedOfKaneSaboteur"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="T59HuskCapture"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="FriendlyHuskHeuristic" TargetType="Husk"/>
+		<TargetHeuristic TargetHeuristic="EnemyHuskHeuristic" TargetType="Husk"/>
+		<Tactic Tactic="Engineer" TargetType="Husk">
+			<TeamTemplate MinUnits="1" MaxUnits ="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="Traveler59Assimilator"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<!--For Expansions-->
+
+	<AIStrategicStateDefinition
+		  id="GDIExpansion"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CloseDistanceExpansionHeuristic" WeightMultiplier="3.0" TargetType="Expansion"/>
+		<TargetHeuristic TargetHeuristic="MediumDistanceExpansionHeuristic" WeightMultiplier="2.0" TargetType="Expansion"/>
+		<TargetHeuristic TargetHeuristic="LongDistanceExpansionHeuristic" WeightMultiplier="1.0" TargetType="Expansion"/>
+		<Tactic Tactic="SimpleExpansion" TargetType="Expansion">
+			<TeamTemplate MinUnits="1" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT SIEGE_WEAPON" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="GDISurveyor"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="NODExpansion"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CloseDistanceExpansionHeuristic" WeightMultiplier="3.0" TargetType="Expansion"/>
+		<TargetHeuristic TargetHeuristic="MediumDistanceExpansionHeuristic" WeightMultiplier="2.0" TargetType="Expansion"/>
+		<TargetHeuristic TargetHeuristic="LongDistanceExpansionHeuristic" WeightMultiplier="1.0" TargetType="Expansion"/>
+		<Tactic Tactic="SimpleExpansion" TargetType="Expansion">
+			<TeamTemplate MinUnits="1" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT SIEGE_WEAPON" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="NODEmissary"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="AlienExpansion"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CloseDistanceExpansionHeuristic" WeightMultiplier="3.0" TargetType="Expansion"/>
+		<TargetHeuristic TargetHeuristic="MediumDistanceExpansionHeuristic" WeightMultiplier="2.0" TargetType="Expansion"/>
+		<TargetHeuristic TargetHeuristic="LongDistanceExpansionHeuristic" WeightMultiplier="1.0" TargetType="Expansion"/>
+		<Tactic Tactic="SimpleExpansion" TargetType="Expansion">
+			<TeamTemplate MinUnits="1" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT SIEGE_WEAPON" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="AlienExplorer"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="STExpansion"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CloseDistanceExpansionHeuristic" WeightMultiplier="3.0" TargetType="Expansion"/>
+		<TargetHeuristic TargetHeuristic="MediumDistanceExpansionHeuristic" WeightMultiplier="2.0" TargetType="Expansion"/>
+		<TargetHeuristic TargetHeuristic="LongDistanceExpansionHeuristic" WeightMultiplier="1.0" TargetType="Expansion"/>
+		<Tactic Tactic="SimpleExpansion" TargetType="Expansion">
+			<TeamTemplate MinUnits="1" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT SIEGE_WEAPON" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="SteelTalonsSurveyor"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="BHExpansion"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CloseDistanceExpansionHeuristic" WeightMultiplier="3.0" TargetType="Expansion"/>
+		<TargetHeuristic TargetHeuristic="MediumDistanceExpansionHeuristic" WeightMultiplier="2.0" TargetType="Expansion"/>
+		<TargetHeuristic TargetHeuristic="LongDistanceExpansionHeuristic" WeightMultiplier="1.0" TargetType="Expansion"/>
+		<Tactic Tactic="SimpleExpansion" TargetType="Expansion">
+			<TeamTemplate MinUnits="1" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT SIEGE_WEAPON" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="BlackHandEmissary"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="R17Expansion"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CloseDistanceExpansionHeuristic" WeightMultiplier="3.0" TargetType="Expansion"/>
+		<TargetHeuristic TargetHeuristic="MediumDistanceExpansionHeuristic" WeightMultiplier="2.0" TargetType="Expansion"/>
+		<TargetHeuristic TargetHeuristic="LongDistanceExpansionHeuristic" WeightMultiplier="1.0" TargetType="Expansion"/>
+		<Tactic Tactic="SimpleExpansion" TargetType="Expansion">
+			<TeamTemplate MinUnits="1" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT SIEGE_WEAPON" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="Reaper17Explorer"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="ZOCOMExpansion"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CloseDistanceExpansionHeuristic" WeightMultiplier="3.0" TargetType="Expansion"/>
+		<TargetHeuristic TargetHeuristic="MediumDistanceExpansionHeuristic" WeightMultiplier="2.0" TargetType="Expansion"/>
+		<TargetHeuristic TargetHeuristic="LongDistanceExpansionHeuristic" WeightMultiplier="1.0" TargetType="Expansion"/>
+		<Tactic Tactic="SimpleExpansion" TargetType="Expansion">
+			<TeamTemplate MinUnits="1" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT SIEGE_WEAPON" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="ZOCOMSurveyor"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="MOKExpansion"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CloseDistanceExpansionHeuristic" WeightMultiplier="3.0" TargetType="Expansion"/>
+		<TargetHeuristic TargetHeuristic="MediumDistanceExpansionHeuristic" WeightMultiplier="2.0" TargetType="Expansion"/>
+		<TargetHeuristic TargetHeuristic="LongDistanceExpansionHeuristic" WeightMultiplier="1.0" TargetType="Expansion"/>
+		<Tactic Tactic="SimpleExpansion" TargetType="Expansion">
+			<TeamTemplate MinUnits="1" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT SIEGE_WEAPON" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="MarkedOfKaneEmissary"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="T59Expansion"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CloseDistanceExpansionHeuristic" WeightMultiplier="3.0" TargetType="Expansion"/>
+		<TargetHeuristic TargetHeuristic="MediumDistanceExpansionHeuristic" WeightMultiplier="2.0" TargetType="Expansion"/>
+		<TargetHeuristic TargetHeuristic="LongDistanceExpansionHeuristic" WeightMultiplier="1.0" TargetType="Expansion"/>
+		<Tactic Tactic="SimpleExpansion" TargetType="Expansion">
+			<TeamTemplate MinUnits="1" MaxUnits="5" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT SIEGE_WEAPON" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="Traveler59Explorer"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+	  id="ExpansionEscort"
+	  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestFriendlyExpanderHeuristic" TargetType="Guard"/>
+		<Tactic Tactic="StaticDefense" TargetType="Guard">
+			<TeamTemplate MinUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AutoReinforce="false" AlwaysRecruit="true"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<!--For Superweapons-->
+
+	<AIStrategicStateDefinition
+		  id="GDISuperweapon"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<SuperweaponHeuristic/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SuperweaponHeuristic" TargetType="Superweapon"/>
+		<Tactic Tactic="Superweapon" TargetType="Superweapon">
+			<TeamTemplate MinUnits="0" MaxUnits="0" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="NODSuperweapon"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<SuperweaponHeuristic/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SuperweaponHeuristic" TargetType="Superweapon"/>
+		<Tactic Tactic="Superweapon" TargetType="Superweapon">
+			<TeamTemplate MinUnits="0" MaxUnits="0" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+	  id="AlienSuperweapon"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<SuperweaponHeuristic/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SuperweaponHeuristic" TargetType="Superweapon"/>
+		<Tactic Tactic="Superweapon" TargetType="Superweapon">
+			<TeamTemplate MinUnits="0" MaxUnits="0" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="STSuperweapon"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<SuperweaponHeuristic/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SuperweaponHeuristic" TargetType="Superweapon"/>
+		<Tactic Tactic="Superweapon" TargetType="Superweapon">
+			<TeamTemplate MinUnits="0" MaxUnits="0" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="BHSuperweapon"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<SuperweaponHeuristic/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SuperweaponHeuristic" TargetType="Superweapon"/>
+		<Tactic Tactic="Superweapon" TargetType="Superweapon">
+			<TeamTemplate MinUnits="0" MaxUnits="0" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+	  id="R17Superweapon"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<SuperweaponHeuristic/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SuperweaponHeuristic" TargetType="Superweapon"/>
+		<Tactic Tactic="Superweapon" TargetType="Superweapon">
+			<TeamTemplate MinUnits="0" MaxUnits="0" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="ZOCOMSuperweapon"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<SuperweaponHeuristic/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SuperweaponHeuristic" TargetType="Superweapon"/>
+		<Tactic Tactic="Superweapon" TargetType="Superweapon">
+			<TeamTemplate MinUnits="0" MaxUnits="0" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="MOKSuperweapon"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<SuperweaponHeuristic/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SuperweaponHeuristic" TargetType="Superweapon"/>
+		<Tactic Tactic="Superweapon" TargetType="Superweapon">
+			<TeamTemplate MinUnits="0" MaxUnits="0" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+	  id="T59Superweapon"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<SuperweaponHeuristic/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SuperweaponHeuristic" TargetType="Superweapon"/>
+		<Tactic Tactic="Superweapon" TargetType="Superweapon">
+			<TeamTemplate MinUnits="0" MaxUnits="0" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<!--For producing commandos-->
+
+	<AIStrategicStateDefinition
+		  id="GDICommando"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CommandoHeuristic" TargetType="Commando"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Commando">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="GDICommando"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="NODCommando"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CommandoHeuristic" TargetType="Commando"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Commando">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="NODCommando"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+	  id="AlienCommando"
+	  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CommandoHeuristic" TargetType="Commando"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Commando">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="AlienMastermind"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="BHCommando"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CommandoHeuristic" TargetType="Commando"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Commando">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="BlackHandCommando"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="ZOCOMCommando"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CommandoHeuristic" TargetType="Commando"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Commando">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="ZOCOMCommando"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="MOKCommando"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CommandoHeuristic" TargetType="Commando"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Commando">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="MarkedOfKaneCommando"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="T59Commando"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CommandoHeuristic" TargetType="Commando"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Commando">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="Traveler59BlinkMastermind"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<!--For Opening match actions & capturing neutral tech-->
+
+	<AIStrategicStateDefinition
+		id="OpeningScout"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+			<TimerHeuristic StartTime="0s" EndTime="120s"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureScoutHeuristic" WeightMultiplier="2.0" TargetType="Structure"/>
+		<TargetHeuristic TargetHeuristic="EngineerUnitHeuristic" WeightMultiplier="1.5" TargetType="Unit"/>
+		<TargetHeuristic TargetHeuristic="SafestToInfantryScoutUnitHeuristic" WeightMultiplier="1.0" TargetType="Unit"/>
+		<Tactic Tactic="SimpleAttack" TargetType="Unit">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+		<Tactic Tactic="FlankAttack" TargetType="Structure">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		id="GDIOpenCaptureTech"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+			<TimerHeuristic StartTime="0s" EndTime="60s"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestNeutralTechHeuristic" TargetType="CaptureTech"/>
+		<Tactic Tactic="Engineer" TargetType="CaptureTech">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="GDIEngineer" />
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="GDICaptureTech"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<OpeningMoveHeuristic Complete="true" />
+			<EnemyNearbyHeuristic Distance="1000.0" EnemyNearby="false" />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestNeutralTechHeuristic" TargetType="CaptureTech"/>
+		<Tactic Tactic="Engineer" TargetType="CaptureTech">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="GDIEngineer"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		id="NODOpenCaptureTech"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+			<TimerHeuristic StartTime="0s" EndTime="60s"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestNeutralTechHeuristic" TargetType="CaptureTech"/>
+		<Tactic Tactic="Engineer" TargetType="CaptureTech">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="NODSaboteur" />
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="NODCaptureTech"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<OpeningMoveHeuristic Complete="true" />
+			<EnemyNearbyHeuristic Distance="1000.0" EnemyNearby="false" />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestNeutralTechHeuristic" TargetType="CaptureTech"/>
+		<Tactic Tactic="Engineer" TargetType="CaptureTech">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="NODSaboteur"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		id="AlienOpenCaptureTech"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+			<TimerHeuristic StartTime="0s" EndTime="60s"/>
+		</Heuristic>
+		<OpeningMoveHeuristic Complete="false"/>
+		<TargetHeuristic TargetHeuristic="ClosestNeutralTechHeuristic" TargetType="CaptureTech"/>
+		<Tactic Tactic="Engineer" TargetType="CaptureTech">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="AlienAssimilator" />
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="AlienCaptureTech"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<OpeningMoveHeuristic Complete="true" />
+			<EnemyNearbyHeuristic Distance="1000.0" EnemyNearby="false" />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestNeutralTechHeuristic" TargetType="CaptureTech"/>
+		<Tactic Tactic="Engineer" TargetType="CaptureTech">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="AlienAssimilator"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		id="STOpenCaptureTech"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+			<TimerHeuristic StartTime="0s" EndTime="60s"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestNeutralTechHeuristic" TargetType="CaptureTech"/>
+		<Tactic Tactic="Engineer" TargetType="CaptureTech">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="SteelTalonsCombatEngineer" />
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="STCaptureTech"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<OpeningMoveHeuristic Complete="true" />
+			<EnemyNearbyHeuristic Distance="1000.0" EnemyNearby="false" />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestNeutralTechHeuristic" TargetType="CaptureTech"/>
+		<Tactic Tactic="Engineer" TargetType="CaptureTech">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="SteelTalonsCombatEngineer"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="STMRT"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundFriendlyRepairHeuristic" TargetType="SpecialDefense"/>
+		<Tactic Tactic="StaticDefense" TargetType="SpecialDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="INFANTRY AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits MinUnits="1" MaxUnits="1" UnitName="SteelTalonsRepairAPC"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		id="BHOpenCaptureTech"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+			<TimerHeuristic StartTime="0s" EndTime="60s"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestNeutralTechHeuristic" TargetType="CaptureTech"/>
+		<Tactic Tactic="Engineer" TargetType="CaptureTech">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="BlackHandSaboteur" />
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="BHCaptureTech"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<OpeningMoveHeuristic Complete="true" />
+			<EnemyNearbyHeuristic Distance="1000.0" EnemyNearby="false" />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestNeutralTechHeuristic" TargetType="CaptureTech"/>
+		<Tactic Tactic="Engineer" TargetType="CaptureTech">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="BlackHandSaboteur"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		id="R17OpenCaptureTech"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+			<TimerHeuristic StartTime="0s" EndTime="60s"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestNeutralTechHeuristic" TargetType="CaptureTech"/>
+		<Tactic Tactic="Engineer" TargetType="CaptureTech">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="AlienAssimilator" />
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="R17CaptureTech"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<OpeningMoveHeuristic Complete="true" />
+			<EnemyNearbyHeuristic Distance="1000.0" EnemyNearby="false" />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestNeutralTechHeuristic" TargetType="CaptureTech"/>
+		<Tactic Tactic="Engineer" TargetType="CaptureTech">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="AlienAssimilator"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		id="ZOCOMOpenCaptureTech"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+			<TimerHeuristic StartTime="0s" EndTime="60s"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestNeutralTechHeuristic" TargetType="CaptureTech"/>
+		<Tactic Tactic="Engineer" TargetType="CaptureTech">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="ZOCOMEngineer" />
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="ZOCOMCaptureTech"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<OpeningMoveHeuristic Complete="true" />
+			<EnemyNearbyHeuristic Distance="1000.0" EnemyNearby="false" />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestNeutralTechHeuristic" TargetType="CaptureTech"/>
+		<Tactic Tactic="Engineer" TargetType="CaptureTech">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="ZOCOMEngineer"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		id="MOKOpenCaptureTech"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+			<TimerHeuristic StartTime="0s" EndTime="60s"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestNeutralTechHeuristic" TargetType="CaptureTech"/>
+		<Tactic Tactic="Engineer" TargetType="CaptureTech">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="MarkedOfKaneSaboteur" />
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="MOKCaptureTech"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<OpeningMoveHeuristic Complete="true" />
+			<EnemyNearbyHeuristic Distance="1000.0" EnemyNearby="false" />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestNeutralTechHeuristic" TargetType="CaptureTech"/>
+		<Tactic Tactic="Engineer" TargetType="CaptureTech">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="MarkedOfKaneSaboteur"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		id="T59OpenCaptureTech"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="true"/>
+			<TimerHeuristic StartTime="0s" EndTime="60s"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestNeutralTechHeuristic" TargetType="CaptureTech"/>
+		<Tactic Tactic="Engineer" TargetType="CaptureTech">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="Traveler59Assimilator" />
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="T59CaptureTech"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<OpeningMoveHeuristic Complete="true" />
+			<EnemyNearbyHeuristic Distance="1000.0" EnemyNearby="false" />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestNeutralTechHeuristic" TargetType="CaptureTech"/>
+		<Tactic Tactic="Engineer" TargetType="CaptureTech">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="Traveler59Assimilator"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<!--For Garrisons-->
+
+	<!--Doesnt work for garrisoning APCs-->
+	<!--
+	<AIStrategicStateDefinition
+		  id="GDIGarrisonAPC"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0" />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="GarrisonTransportHeuristic" TargetType="Garrison"/>
+		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="INFANTRY CAN_ATTACK" ExcludeKindOf="SKIRMISH_AI_DONT_GARRISON VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	-->
+
+	<AIStrategicStateDefinition
+		  id="Garrison"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<OpeningMoveHeuristic Complete="true"/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="GarrisonHeuristic" TargetType="Garrison"/>
+		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">
+			<TeamTemplate MinUnits="1" MaxUnits="2" IncludeKindOf="CAN_ATTACK INFANTRY" ExcludeKindOf="SKIRMISH_AI_DONT_GARRISON" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+	  id="Garrison_EASY"
+	  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<OpeningMoveHeuristic Complete="true"/>
+			<LateGameHeuristic/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="GarrisonHeuristic" TargetType="Garrison"/>
+		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">
+			<TeamTemplate MinUnits="1" MaxUnits="2" IncludeKindOf="CAN_ATTACK INFANTRY" ExcludeKindOf="SKIRMISH_AI_DONT_GARRISON" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="GDIAntiGarrison"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<IntervalHeuristic IntervalTime="240s" ActiveTime="60s"/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="AntiGarrisonHeuristic" TargetType="AntiGarrison"/>
+		<Tactic Tactic="SimpleAttack" TargetType="AntiGarrison">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="INFANTRY ANTI_GARRISON" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="GDIGrenadeSoldierSquad"/>
+				<CreateUnits UnitName="GDIGrenadeSoldierSquad"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="GDIAntiGarrison_EASY"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<LateGameHeuristic/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="AntiGarrisonHeuristic" TargetType="AntiGarrison"/>
+		<Tactic Tactic="SimpleAttack" TargetType="AntiGarrison">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="INFANTRY ANTI_GARRISON" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="GDIGrenadeSoldierSquad"/>
+				<CreateUnits UnitName="GDIGrenadeSoldierSquad"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="STAntiGarrison"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<IntervalHeuristic IntervalTime="240s" ActiveTime="60s"/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="AntiGarrisonHeuristic" TargetType="AntiGarrison"/>
+		<Tactic Tactic="SimpleAttack" TargetType="AntiGarrison">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="INFANTRY ANTI_GARRISON" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="SteelTalonsGrenadeSoldierSquad"/>
+				<CreateUnits UnitName="SteelTalonsGrenadeSoldierSquad"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="STAntiGarrison_EASY"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<LateGameHeuristic/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="AntiGarrisonHeuristic" TargetType="AntiGarrison"/>
+		<Tactic Tactic="SimpleAttack" TargetType="AntiGarrison">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="INFANTRY ANTI_GARRISON" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="SteelTalonsGrenadeSoldierSquad"/>
+				<CreateUnits UnitName="SteelTalonsGrenadeSoldierSquad"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="ZOCOMAntiGarrison"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<IntervalHeuristic IntervalTime="240s" ActiveTime="60s"/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="AntiGarrisonHeuristic" TargetType="AntiGarrison"/>
+		<Tactic Tactic="SimpleAttack" TargetType="AntiGarrison">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="INFANTRY ANTI_GARRISON" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="ZOCOMGrenadeSoldierSquad"/>
+				<CreateUnits UnitName="ZOCOMGrenadeSoldierSquad"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="ZOCOMAntiGarrison_EASY"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<LateGameHeuristic/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="AntiGarrisonHeuristic" TargetType="AntiGarrison"/>
+		<Tactic Tactic="SimpleAttack" TargetType="AntiGarrison">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="INFANTRY ANTI_GARRISON" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="ZOCOMGrenadeSoldierSquad"/>
+				<CreateUnits UnitName="ZOCOMGrenadeSoldierSquad"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="NODAntiGarrison"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<IntervalHeuristic IntervalTime="240s" ActiveTime="60s"/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="AntiGarrisonHeuristic" TargetType="AntiGarrison"/>
+		<Tactic Tactic="SimpleAttack" TargetType="AntiGarrison">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="INFANTRY ANTI_GARRISON" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="NODBlackHandSquad"/>
+				<CreateUnits UnitName="NODBlackHandSquad"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		id="NODAntiGarrison_EASY"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<LateGameHeuristic/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="AntiGarrisonHeuristic" TargetType="AntiGarrison"/>
+		<Tactic Tactic="SimpleAttack" TargetType="AntiGarrison">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="INFANTRY ANTI_GARRISON" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="NODBlackHandSquad"/>
+				<CreateUnits UnitName="NODBlackHandSquad"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="BHAntiGarrison"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<IntervalHeuristic IntervalTime="240s" ActiveTime="60s"/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="AntiGarrisonHeuristic" TargetType="AntiGarrison"/>
+		<Tactic Tactic="SimpleAttack" TargetType="AntiGarrison">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="INFANTRY ANTI_GARRISON" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="BlackHandBlackHandSquad"/>
+				<CreateUnits UnitName="BlackHandBlackHandSquad"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		id="BHAntiGarrison_EASY"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<LateGameHeuristic/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="AntiGarrisonHeuristic" TargetType="AntiGarrison"/>
+		<Tactic Tactic="SimpleAttack" TargetType="AntiGarrison">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="INFANTRY ANTI_GARRISON" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="BlackHandBlackHandSquad"/>
+				<CreateUnits UnitName="BlackHandBlackHandSquad"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="MOKAntiGarrison"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<IntervalHeuristic IntervalTime="240s" ActiveTime="60s"/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="AntiGarrisonHeuristic" TargetType="AntiGarrison"/>
+		<Tactic Tactic="SimpleAttack" TargetType="AntiGarrison">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="INFANTRY ANTI_GARRISON" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="MarkedOfKaneTibTrooperSquad"/>
+				<CreateUnits UnitName="MarkedOfKaneTibTrooperSquad"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		id="MOKAntiGarrison_EASY"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<LateGameHeuristic/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="AntiGarrisonHeuristic" TargetType="AntiGarrison"/>
+		<Tactic Tactic="SimpleAttack" TargetType="AntiGarrison">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="INFANTRY ANTI_GARRISON" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="MarkedOfKaneTibTrooperSquad"/>
+				<CreateUnits UnitName="MarkedOfKaneTibTrooperSquad"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="AlienAntiGarrison"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<IntervalHeuristic IntervalTime="240s" ActiveTime="60s"/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="AntiGarrisonHeuristic" TargetType="AntiGarrison"/>
+		<Tactic Tactic="SimpleAttack" TargetType="AntiGarrison">
+			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="INFANTRY ANTI_GARRISON" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="AlienBuzzers"/>
+				<CreateUnits UnitName="AlienBuzzers"/>
+				<CreateUnits UnitName="AlienBuzzers"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		id="AlienAntiGarrison_EASY"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<LateGameHeuristic/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="AntiGarrisonHeuristic" TargetType="AntiGarrison"/>
+		<Tactic Tactic="SimpleAttack" TargetType="AntiGarrison">
+			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="INFANTRY ANTI_GARRISON" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="AlienBuzzers"/>
+				<CreateUnits UnitName="AlienBuzzers"/>
+				<CreateUnits UnitName="AlienBuzzers"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="R17AntiGarrison"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<IntervalHeuristic IntervalTime="240s" ActiveTime="60s"/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="AntiGarrisonHeuristic" TargetType="AntiGarrison"/>
+		<Tactic Tactic="SimpleAttack" TargetType="AntiGarrison">
+			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="INFANTRY ANTI_GARRISON" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="AlienBuzzers"/>
+				<CreateUnits UnitName="AlienBuzzers"/>
+				<CreateUnits UnitName="AlienBuzzers"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		id="R17AntiGarrison_EASY"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<LateGameHeuristic/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="AntiGarrisonHeuristic" TargetType="AntiGarrison"/>
+		<Tactic Tactic="SimpleAttack" TargetType="AntiGarrison">
+			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="INFANTRY ANTI_GARRISON" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="AlienBuzzers"/>
+				<CreateUnits UnitName="AlienBuzzers"/>
+				<CreateUnits UnitName="AlienBuzzers"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="T59AntiGarrison"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<IntervalHeuristic IntervalTime="240s" ActiveTime="60s"/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="AntiGarrisonHeuristic" TargetType="AntiGarrison"/>
+		<Tactic Tactic="SimpleAttack" TargetType="AntiGarrison">
+			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="INFANTRY ANTI_GARRISON" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="AlienBuzzers"/>
+				<CreateUnits UnitName="AlienBuzzers"/>
+				<CreateUnits UnitName="AlienBuzzers"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		id="T59AntiGarrison_EASY"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<LateGameHeuristic/>
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="AntiGarrisonHeuristic" TargetType="AntiGarrison"/>
+		<Tactic Tactic="SimpleAttack" TargetType="AntiGarrison">
+			<TeamTemplate MinUnits="3" MaxUnits="3" IncludeKindOf="INFANTRY ANTI_GARRISON" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="AlienBuzzers"/>
+				<CreateUnits UnitName="AlienBuzzers"/>
+				<CreateUnits UnitName="AlienBuzzers"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<!--For defending against engineers-->
+
+	<AIStrategicStateDefinition
+		  id="GDIGroundEngineerDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="EngineerUnitHeuristic" TargetType="EngineerDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="EngineerDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="GDIAPC"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="GDIAirEngineerDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="EngineerUnitHeuristic" TargetType="EngineerDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="EngineerDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="GDIHammerhead"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="NODGroundEngineerDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="EngineerUnitHeuristic" TargetType="EngineerDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="EngineerDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="NODScorpionBuggy"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="NODAirEngineerDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="EngineerUnitHeuristic" TargetType="EngineerDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="EngineerDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="NODVenom"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="AlienEngineerDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="EngineerUnitHeuristic" TargetType="EngineerDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="EngineerDefense">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="AlienBuzzers"/>
+				<CreateUnits UnitName="AlienBuzzers"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="STGroundEngineerDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="EngineerUnitHeuristic" TargetType="EngineerDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="EngineerDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="SteelTalonsWolverine"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="STAirEngineerDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="EngineerUnitHeuristic" TargetType="EngineerDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="EngineerDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="SteelTalonsHammerhead"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="BHEngineerDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="EngineerUnitHeuristic" TargetType="EngineerDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="EngineerDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="BlackHandScorpionBuggy"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="R17EngineerDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="EngineerUnitHeuristic" TargetType="EngineerDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="EngineerDefense">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="AlienBuzzers"/>
+				<CreateUnits UnitName="AlienBuzzers"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="ZOCOMGroundEngineerDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="EngineerUnitHeuristic" TargetType="EngineerDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="EngineerDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="ZOCOMAPC"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="ZOCOMAirEngineerDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="EngineerUnitHeuristic" TargetType="EngineerDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="EngineerDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="ZOCOMHammerhead"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="MOKGroundEngineerDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="EngineerUnitHeuristic" TargetType="EngineerDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="EngineerDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="MarkedOfKaneScorpionBuggy"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="MOKAirEngineerDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="EngineerUnitHeuristic" TargetType="EngineerDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="EngineerDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="MarkedOfKaneVenom"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="T59EngineerDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="EngineerUnitHeuristic" TargetType="EngineerDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="EngineerDefense">
+			<TeamTemplate MinUnits="2" MaxUnits="2" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="AlienBuzzers"/>
+				<CreateUnits UnitName="AlienBuzzers"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<!--For defending against Commandos-->
+
+	<AIStrategicStateDefinition
+		  id="GDIGroundCommandoDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CommandoUnitHeuristic" TargetType="CommandoDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="CommandoDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="GDIAPC"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="GDIAirCommandoDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CommandoUnitHeuristic" TargetType="CommandoDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="CommandoDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="GDIHammerhead"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="NODGroundCommandoDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CommandoUnitHeuristic" TargetType="CommandoDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="CommandoDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="NODScorpionBuggy"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="NODAirCommandoDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CommandoUnitHeuristic" TargetType="CommandoDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="CommandoDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="NODVenom"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="AlienCommandoDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CommandoUnitHeuristic" TargetType="CommandoDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="CommandoDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="AlienGunWalker"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="STGroundCommandoDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CommandoUnitHeuristic" TargetType="CommandoDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="CommandoDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="SteelTalonsWolverine"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="STAirCommandoDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CommandoUnitHeuristic" TargetType="CommandoDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="CommandoDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="SteelTalonsHammerhead"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="BHCommandoDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CommandoUnitHeuristic" TargetType="CommandoDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="CommandoDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="BlackHandScorpionBuggy"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="R17CommandoDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CommandoUnitHeuristic" TargetType="CommandoDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="CommandoDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="Reaper17ShardWalker"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="ZOCOMGroundCommandoDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CommandoUnitHeuristic" TargetType="CommandoDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="CommandoDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="ZOCOMAPC"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="ZOCOMAirCommandoDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CommandoUnitHeuristic" TargetType="CommandoDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="CommandoDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="ZOCOMHammerhead"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="MOKGroundCommandoDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CommandoUnitHeuristic" TargetType="CommandoDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="CommandoDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="MarkedOfKaneScorpionBuggy"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="MOKAirCommandoDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CommandoUnitHeuristic" TargetType="CommandoDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="CommandoDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="MarkedOfKaneVenom"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="T59CommandoDefense"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="CommandoUnitHeuristic" TargetType="CommandoDefense"/>
+		<Tactic Tactic="SimpleAttack" TargetType="CommandoDefense">
+			<TeamTemplate MinUnits="1" MaxUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="Traveler59GunWalker"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<!--Stealth Defense-->
+
+	<!--Defensive force to protect the base radius-->
+	<AIStrategicStateDefinition
+		id="BaseDefense"
+		UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+			<IntervalHeuristic IntervalTime="1s" ActiveTime="10s" />
+		</Heuristic>
+		<Tactic Tactic="ReactiveDefense" TargetType="Targetless">
+			<TeamTemplate MinUnits="1" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="true" AlwaysRecruit="true"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<!--Garrison Epic Unit States-->
+
+	<AIStrategicStateDefinition
+	  id="GarrisonMARV"
+	  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>
+		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">
+			<TeamTemplate MinUnits="1" MaxUnits="4" IncludeKindOf="INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="GarrisonMetaUnit"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>
+		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">
+			<TeamTemplate MinUnits="1" MaxUnits="2" IncludeKindOf="INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<AIStrategicStateDefinition
+		  id="GarrisonHexapod"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="GarrisonEpicUnitHeuristic" TargetType="Garrison"/>
+		<Tactic Tactic="GarrisonBuilding" TargetType="Garrison">
+			<TeamTemplate MinUnits="1" MaxUnits="3" IncludeKindOf="INFANTRY" ExcludeKindOf="VEHICLE AIRCRAFT UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="true"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<!--Siege States-->
+	
+	<AIStrategicStateDefinition
+		  id="AlienSiege"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<LateGameHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+			<EnemyNearbyHeuristic Distance="2000.0" EnemyNearby="false"/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
+		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
+			<TeamTemplate MinUnits="12" MaxUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="ASSAULT_AIRCRAFT RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="AlienDevastatorWarship"/>
+				<CreateUnits UnitName="AlienDevastatorWarship"/>
+				<CreateUnits UnitName="AlienDevastatorWarship"/>
+				<CreateUnits UnitName="AlienDevastatorWarship"/>
+			</TeamTemplate>
+			<TeamTemplate MinUnits="2" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="ASSAULT_AIRCRAFT RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="BHSiege"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<MiddleGameHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+			<EnemyNearbyHeuristic Distance="2000.0" EnemyNearby="false"/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
+		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
+			<TeamTemplate MinUnits="12" MaxUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="BlackHandBeamCannon"/>
+				<CreateUnits UnitName="BlackHandBeamCannon"/>
+				<CreateUnits UnitName="BlackHandBeamCannon"/>
+				<CreateUnits UnitName="BlackHandBeamCannon"/>
+				<CreateUnits UnitName="BlackHandBeamCannon"/>
+			</TeamTemplate>
+			<TeamTemplate MinUnits="2" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="BHArtilleryBombing"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<LateGameHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+			<EnemyNearbyHeuristic Distance="2000.0" EnemyNearby="false"/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureBombingHeuristic" TargetType="BombingAirstrike"/>
+		<Tactic Tactic="SimpleSiege" TargetType="BombingAirstrike">
+			<TeamTemplate MinUnits="12" MaxUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="BlackHandMobileArtillery"/>
+				<CreateUnits UnitName="BlackHandMobileArtillery"/>
+				<CreateUnits UnitName="BlackHandMobileArtillery"/>
+				<CreateUnits UnitName="BlackHandMobileArtillery"/>
+			</TeamTemplate>
+			<TeamTemplate MinUnits="2" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="GDISiege"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<LateGameHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+			<EnemyNearbyHeuristic Distance="2000.0" EnemyNearby="false"/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
+		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
+			<TeamTemplate MinUnits="12" MaxUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="GDIJuggernaught"/>
+				<CreateUnits UnitName="GDIJuggernaught"/>
+				<CreateUnits UnitName="GDIJuggernaught"/>
+				<CreateUnits UnitName="GDIJuggernaught"/>
+			</TeamTemplate>
+			<TeamTemplate MinUnits="2" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="MOKSiege"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<LateGameHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+			<EnemyNearbyHeuristic Distance="2000.0" EnemyNearby="false"/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
+		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
+			<TeamTemplate MinUnits="12" MaxUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="MarkedOfKaneMobileArtillery"/>
+				<CreateUnits UnitName="MarkedOfKaneMobileArtillery"/>
+				<CreateUnits UnitName="MarkedOfKaneMobileArtillery"/>
+				<CreateUnits UnitName="MarkedOfKaneMobileArtillery"/>
+			</TeamTemplate>
+			<TeamTemplate MinUnits="2" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="NODSiege"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<LateGameHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+			<EnemyNearbyHeuristic Distance="2000.0" EnemyNearby="false"/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
+		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
+			<TeamTemplate MinUnits="12" MaxUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="NODMobileArtillery"/>
+				<CreateUnits UnitName="NODMobileArtillery"/>
+				<CreateUnits UnitName="NODMobileArtillery"/>
+				<CreateUnits UnitName="NODMobileArtillery"/>
+			</TeamTemplate>
+			<TeamTemplate MinUnits="2" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="R17Siege"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<LateGameHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+			<EnemyNearbyHeuristic Distance="2000.0" EnemyNearby="false"/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
+		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
+			<TeamTemplate MinUnits="12" MaxUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="ASSAULT_AIRCRAFT RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="Reaper17AnnihilatorTripod"/>
+				<CreateUnits UnitName="Reaper17AnnihilatorTripod"/>
+				<CreateUnits UnitName="Reaper17AnnihilatorTripod"/>
+				<CreateUnits UnitName="Reaper17AnnihilatorTripod"/>
+			</TeamTemplate>
+			<TeamTemplate MinUnits="2" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="ASSAULT_AIRCRAFT RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="STSiege"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<LateGameHeuristic />
+			<PathToTargetHeuristic PathExists="true"/>
+			<EnemyNearbyHeuristic Distance="2000.0" EnemyNearby="false"/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
+		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
+			<TeamTemplate MinUnits="12" MaxUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="SteelTalonsBehemoth"/>
+				<CreateUnits UnitName="SteelTalonsBehemoth"/>
+				<CreateUnits UnitName="SteelTalonsBehemoth"/>
+				<CreateUnits UnitName="SteelTalonsBehemoth"/>
+			</TeamTemplate>
+			<TeamTemplate MinUnits="2" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="T59Siege"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<LateGameHeuristic />
+			<EnemyNearbyHeuristic Distance="2000.0" EnemyNearby="false"/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
+		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
+			<TeamTemplate MinUnits="12" MaxUnits="20" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="ASSAULT_AIRCRAFT RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="Traveler59DevastatorWarship"/>
+				<CreateUnits UnitName="Traveler59DevastatorWarship"/>
+				<CreateUnits UnitName="Traveler59DevastatorWarship"/>
+				<CreateUnits UnitName="Traveler59DevastatorWarship"/>
+			</TeamTemplate>
+			<TeamTemplate MinUnits="2" MaxUnits="3" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="ASSAULT_AIRCRAFT RELOAD_AIRCRAFT BOMBER_AIRCRAFT" AlwaysRelease="false" AlwaysRecruit="false"/>
+		</Tactic>
+	</AIStrategicStateDefinition>
+	
+	<AIStrategicStateDefinition
+		  id="ZOCOMSiege"
+		  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<MiddleGameHeuristic/>
+			<EnemyNearbyHeuristic Distance="2000.0" EnemyNearby="false"/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="4.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="ClosestStructureSiegeHeuristic" TargetType="SiegeTarget"/>
+		<Tactic Tactic="SimpleSiege" TargetType="SiegeTarget">
+			<TeamTemplate MinUnits="4" MaxUnits="4" IncludeKindOf="CAN_ATTACK RELOAD_AIRCRAFT" ExcludeKindOf="BOMBER_AIRCRAFT INFANTRY UNIQUE_UNIT" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="ZOCOMOrca"/>
+				<CreateUnits UnitName="ZOCOMOrca"/>
+				<CreateUnits UnitName="ZOCOMOrca"/>
+				<CreateUnits UnitName="ZOCOMOrca"/>
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition>
+
+	<!-- Does not work. AI refuses to 'Attack' its own Hexapod thus it doesnt trigger Corruptor healing
+	<AIStrategicStateDefinition
+	  id="HealEpicUnit"
+	  UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0" />
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="HealHexHeuristic" TargetType="SpreadTarget"/>
+		<Tactic Tactic="SimpleAttack" TargetType="SpreadTarget">
+			<TeamTemplate MinUnits="1" MaxUnits="4" IncludeKindOf="CAN_HEAL_ALLIES" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="true">
+				<CreateUnits MinUnits="4" MaxUnits="4" UnitName="AlienCorrupter" />
+			</TeamTemplate>
+		</Tactic>
+	</AIStrategicStateDefinition> -->
+
+</AssetDeclaration>

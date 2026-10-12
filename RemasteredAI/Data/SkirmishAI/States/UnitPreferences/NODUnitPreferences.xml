@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Tags></Tags>
+	<Includes></Includes>
+	
+	<!--NOD-->
+	
+	<!--Isolation: No ground path exists to enemy base-->
+	
+	<AIStrategicStateDefinition
+		  id="NODIsolation"
+		  UnitUpgradeMultiplier="0.0"
+		  UnitBuilderCostEffectivenessWeight="1.0"
+		  UnitBuilderOverallOffensivePreference="100%"
+		  UnitBuilderOverallDefensivePreference="100%"
+		  UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="false"/>
+			<ConstantHeuristic Weight="999.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToAirStructureIsolationHeuristic" TargetType="Isolation"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Isolation">
+			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK AIRCRAFT" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="NODVertigo"/>
+				<CreateUnits UnitName="NODVertigo"/>
+				<CreateUnits UnitName="NODVertigo"/>
+				<CreateUnits UnitName="NODVertigo"/>
+			</TeamTemplate>
+		</Tactic>
+		<UnitModifierByName UnitName="NODMilitantSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODMilitantRocketSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODSaboteur" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODFanaticSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODBlackHandSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODShadowSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODCommando" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="NODAttackBike" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODScorpionBuggy" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODRaiderTank" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODFlameTank" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODBunkerTruck" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODBeamCannon" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODStealthTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODMobileArtillery" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODAvatar" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODMetaUnit" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
+
+		<UnitModifierByName UnitName="NODVenom" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+		<UnitModifierByName UnitName="NODVertigo" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="NODHandOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="NODDropZone" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="NODHangar" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		
+		<UnitModifierByName UnitName="NODOperationsCenter" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODSecretShrine" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="NODTechAssemblyPlant" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="MG_NOD_WarmechFacility" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
+		<UnitModifierByName UnitName="NODTiberiumLiquidationFacility" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="400%"/>
+		<UnitModifierByName UnitName="NODTempleOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="NODShredderTurretHub" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODLaserCannon" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODRocketBunker" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODObelisk" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+	</AIStrategicStateDefinition>
+	
+	<!--Critical Defense-->
+
+	<AIStrategicStateDefinition
+	id="NODCriticalDefenseUnitPreferences"
+	UnitUpgradeMultiplier="0.0"
+	UnitBuilderCostEffectivenessWeight="1.0"
+	UnitBuilderOverallOffensivePreference="100%"
+	UnitBuilderOverallDefensivePreference="100%"
+	UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<ConstantHeuristic Weight="998.0"/>
+			<SpreadThresholdHeuristic/>
+			<!--<EnemyNearbyHeuristic Distance="2500.0" EnemyNearby="True" />-->
+		</Heuristic>
+		<UnitModifierByName UnitName="NODMilitantSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODMilitantRocketSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODSaboteur" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODFanaticSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODBlackHandSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODShadowSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+
+		<UnitModifierByName UnitName="NODAttackBike" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="20%"/>
+		<UnitModifierByName UnitName="NODScorpionBuggy" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODRaiderTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODFlameTank" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODBunkerTruck" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODBeamCannon" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODStealthTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODMobileArtillery" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODAvatar" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODMetaUnit" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+
+		<UnitModifierByName UnitName="NODVenom" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="20%"/>
+		<UnitModifierByName UnitName="NODVertigo" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="NODHandOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="NODDropZone" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="NODHangar" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="20%"/>
+		
+		<UnitModifierByName UnitName="NODOperationsCenter" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODSecretShrine" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="NODTechAssemblyPlant" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="MG_NOD_WarmechFacility" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
+		<UnitModifierByName UnitName="NODTiberiumLiquidationFacility" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="400%"/>
+		<UnitModifierByName UnitName="NODTempleOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="NODShredderTurretHub" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODLaserCannon" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODRocketBunker" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODObelisk" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+	</AIStrategicStateDefinition>
+	
+	<!--Rush-->
+	
+	<AIStrategicStateDefinition
+	id="NODRushUnitPreferences"
+	UnitUpgradeMultiplier="0.0"
+	UnitBuilderOverallOffensivePreference="100%"
+	UnitBuilderOverallDefensivePreference="100%"
+	UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<ConstantHeuristic Weight="997.0"/> 
+			<TimerHeuristic StartTime="0s" EndTIme="420s" />
+		</Heuristic>
+		<UnitModifierByName UnitName="NODMilitantSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODMilitantRocketSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODSaboteur" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODFanaticSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODBlackHandSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODShadowSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="NODAttackBike" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODScorpionBuggy" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODRaiderTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODFlameTank" UnitPreferenceOffensiveModifier="30%" UnitPreferenceDefensiveModifier="30%"/>
+		<UnitModifierByName UnitName="NODBunkerTruck" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODBeamCannon" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODStealthTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODMobileArtillery" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODAvatar" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODMetaUnit" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+
+		<UnitModifierByName UnitName="NODVenom" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="NODVertigo" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="NODHandOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="NODDropZone" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="NODHangar" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		
+		<UnitModifierByName UnitName="NODOperationsCenter" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODSecretShrine" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="NODTechAssemblyPlant" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="MG_NOD_WarmechFacility" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
+		<UnitModifierByName UnitName="NODTiberiumLiquidationFacility" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="400%"/>
+		<UnitModifierByName UnitName="NODTempleOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="NODShredderTurretHub" UnitPreferenceOffensiveModifier="80%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODLaserCannon" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODRocketBunker" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="NODObelisk" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+	</AIStrategicStateDefinition>
+	
+	<!--Siege-->
+	
+	<AIStrategicStateDefinition
+	id="NODSiegeUnitPreferences"
+	UnitUpgradeMultiplier="0.0"
+	UnitBuilderCostEffectivenessWeight="1.0"
+	UnitBuilderOverallOffensivePreference="100%"
+	UnitBuilderOverallDefensivePreference="100%"
+	UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<ConstantHeuristic Weight="996.0"/>
+			<FocusedThresholdHeuristic />
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="3.0" />
+		</Heuristic>
+		<UnitModifierByName UnitName="NODMilitantSquad" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="20%"/>
+		<UnitModifierByName UnitName="NODMilitantRocketSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODSaboteur" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODFanaticSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODBlackHandSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODShadowSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+
+		<UnitModifierByName UnitName="NODAttackBike" UnitPreferenceOffensiveModifier="40%" UnitPreferenceDefensiveModifier="20%"/>
+		<UnitModifierByName UnitName="NODScorpionBuggy" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODRaiderTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODFlameTank" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODBunkerTruck" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODBeamCannon" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODStealthTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODMobileArtillery" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="NODAvatar" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODMetaUnit" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+
+		<UnitModifierByName UnitName="NODVenom" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="NODVertigo" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="NODHandOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="NODDropZone" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="NODHangar" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="50%"/>
+		
+		<UnitModifierByName UnitName="NODOperationsCenter" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODSecretShrine" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="NODTechAssemblyPlant" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="MG_NOD_WarmechFacility" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
+		<UnitModifierByName UnitName="NODTiberiumLiquidationFacility" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="400%"/>
+		<UnitModifierByName UnitName="NODTempleOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="NODShredderTurretHub" UnitPreferenceOffensiveModifier="80%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODLaserCannon" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODRocketBunker" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODObelisk" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+	</AIStrategicStateDefinition>
+	
+	<!--Base-->
+	
+	<AIStrategicStateDefinition
+	id="NODBaseUnitPreferences"
+	UnitUpgradeMultiplier="1.5"
+	UnitBuilderOverallOffensivePreference="100%"
+	UnitBuilderOverallDefensivePreference="100%"
+	UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<ConstantHeuristic Weight="995.0"/>
+		</Heuristic>
+		<UnitModifierByName UnitName="NODMilitantSquad" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="20%"/>
+		<UnitModifierByName UnitName="NODMilitantRocketSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODSaboteur" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODFanaticSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODBlackHandSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODShadowSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+
+		<UnitModifierByName UnitName="NODAttackBike" UnitPreferenceOffensiveModifier="40%" UnitPreferenceDefensiveModifier="20%"/>
+		<UnitModifierByName UnitName="NODScorpionBuggy" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODRaiderTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODFlameTank" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODBunkerTruck" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODBeamCannon" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODStealthTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODMobileArtillery" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODAvatar" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODMetaUnit" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+
+		<UnitModifierByName UnitName="NODVenom" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="NODVertigo" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="NODHandOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="NODDropZone" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="NODHangar" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="50%"/>
+		
+		<UnitModifierByName UnitName="NODOperationsCenter" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODSecretShrine" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="NODTechAssemblyPlant" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="MG_NOD_WarmechFacility" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
+		<UnitModifierByName UnitName="NODTiberiumLiquidationFacility" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="400%"/>
+		<UnitModifierByName UnitName="NODTempleOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="NODShredderTurretHub" UnitPreferenceOffensiveModifier="80%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODLaserCannon" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODRocketBunker" UnitPreferenceOffensiveModifier="60%" UnitPreferenceDefensiveModifier="80%"/>
+		<UnitModifierByName UnitName="NODObelisk" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+	</AIStrategicStateDefinition>
+	
+	<!--Easy-->
+
+	<AIStrategicStateDefinition
+	id="NODUnitPreferences_EASY"
+	UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="998.0"/>
+		</Heuristic>
+		<UnitModifierByName UnitName="NODMilitantSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODMilitantRocketSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODSaboteur" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODFanaticSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODBlackHandSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODShadowSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="NODAttackBike" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODScorpionBuggy" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODRaiderTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODFlameTank" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODBunkerTruck" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODBeamCannon" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODStealthTank" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODMobileArtillery" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODAvatar" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODMetaUnit" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="NODVenom" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODVertigo" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="NODHandOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="80%"/>
+		<UnitModifierByName UnitName="NODDropZone" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODHangar" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="20%"/>
+		
+		<UnitModifierByName UnitName="NODOperationsCenter" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODSecretShrine" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODTechAssemblyPlant" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="MG_NOD_WarmechFacility" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODTiberiumLiquidationFacility" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODTempleOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="NODShredderTurretHub" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="NODLaserCannon" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODRocketBunker" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="NODObelisk" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+	</AIStrategicStateDefinition>
+	
+</AssetDeclaration>

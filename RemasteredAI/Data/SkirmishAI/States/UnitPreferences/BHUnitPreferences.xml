@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Tags></Tags>
+	<Includes></Includes>
+	
+	<!--Black Hand-->
+	
+	<!--Isolation: No ground path exists to enemy base-->
+	
+	<AIStrategicStateDefinition
+		  id="BHIsolation"
+		  UnitUpgradeMultiplier="0.0"
+		  UnitBuilderCostEffectivenessWeight="1.0"
+		  UnitBuilderOverallOffensivePreference="100%"
+		  UnitBuilderOverallDefensivePreference="100%"
+		  UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<PathToTargetHeuristic PathExists="false"/>
+			<ConstantHeuristic Weight="999.0"/>
+		</Heuristic>
+		<TargetHeuristic TargetHeuristic="SafestToGroundStructureHeuristic" TargetType="Isolation"/>
+		<Tactic Tactic="DefenseAvoidanceAttack" TargetType="Isolation">
+			<TeamTemplate MinUnits="4" IncludeKindOf="CAN_ATTACK" ExcludeKindOf="" AlwaysRelease="false" AlwaysRecruit="false">
+				<CreateUnits UnitName="BlackHandMobileArtillery"/>
+				<CreateUnits UnitName="BlackHandMobileArtillery"/>
+				<CreateUnits UnitName="BlackHandMobileArtillery"/>
+				<CreateUnits UnitName="BlackHandMobileArtillery"/>
+			</TeamTemplate>
+		</Tactic>
+		<UnitModifierByName UnitName="BlackHandConfessorSquad" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="BlackHandMilitantRocketSquad" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="BlackHandSaboteur" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandFanaticSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandBlackHandSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="BlackHandAttackBike" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandScorpionBuggy" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandFlameTank" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandBeamCannon" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandStealthTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandMobileArtillery" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandCustomWarmech" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandMetaUnit" UnitPreferenceOffensiveModifier="200%" UnitPreferenceDefensiveModifier="200%"/>
+
+		<UnitModifierByName UnitName="BlackHandHandOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="BlackHandDropZone" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		
+		<UnitModifierByName UnitName="BlackHandOperationsCenter" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandSecretShrine" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="BlackHandTechAssemblyPlant" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="MG_BlackHand_WarmechFacility" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="999%"/>
+		<UnitModifierByName UnitName="BlackHandTiberiumLiquidationFacility" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="400%"/>
+		<UnitModifierByName UnitName="BlackHandTempleOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="BlackHandShredderTurretHub" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandLaserCannon" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandRocketBunker" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandObelisk" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+	</AIStrategicStateDefinition>
+	
+	<!--Critical Defense-->
+
+	<AIStrategicStateDefinition
+	id="BHCriticalDefenseUnitPreferences"
+	UnitUpgradeMultiplier="0.0"
+	UnitBuilderCostEffectivenessWeight="1.0"
+	UnitBuilderOverallOffensivePreference="100%"
+	UnitBuilderOverallDefensivePreference="100%"
+	UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<ConstantHeuristic Weight="998.0"/>
+			<SpreadThresholdHeuristic/>
+			<!--<EnemyNearbyHeuristic Distance="2500.0" EnemyNearby="True" />-->
+		</Heuristic>
+		<UnitModifierByName UnitName="BlackHandConfessorSquad" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="BlackHandMilitantRocketSquad" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="BlackHandSaboteur" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandFanaticSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandBlackHandSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="BlackHandAttackBike" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="20%"/>
+		<UnitModifierByName UnitName="BlackHandScorpionBuggy" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandFlameTank" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandBeamCannon" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandStealthTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandMobileArtillery" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandCustomWarmech" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandMetaUnit" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+
+		<UnitModifierByName UnitName="BlackHandHandOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="BlackHandDropZone" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		
+		<UnitModifierByName UnitName="BlackHandOperationsCenter" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandSecretShrine" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="BlackHandTechAssemblyPlant" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="MG_BlackHand_WarmechFacility" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="999%"/>
+		<UnitModifierByName UnitName="BlackHandTiberiumLiquidationFacility" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="400%"/>
+		<UnitModifierByName UnitName="BlackHandTempleOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="BlackHandShredderTurretHub" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandLaserCannon" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandRocketBunker" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandObelisk" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+	</AIStrategicStateDefinition>
+	
+	<!--Rush-->
+	
+	<AIStrategicStateDefinition
+	id="BHRushUnitPreferences"
+	UnitUpgradeMultiplier="0.0"
+	UnitBuilderOverallOffensivePreference="100%"
+	UnitBuilderOverallDefensivePreference="100%"
+	UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<ConstantHeuristic Weight="997.0"/> 
+			<TimerHeuristic StartTime="0s" EndTIme="420s" />
+		</Heuristic>
+		<UnitModifierByName UnitName="BlackHandConfessorSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandMilitantRocketSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandSaboteur" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandFanaticSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandBlackHandSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="BlackHandAttackBike" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandScorpionBuggy" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandFlameTank" UnitPreferenceOffensiveModifier="30%" UnitPreferenceDefensiveModifier="30%"/>
+		<UnitModifierByName UnitName="BlackHandBeamCannon" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandStealthTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandMobileArtillery" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandCustomWarmech" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandMetaUnit" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+
+		<UnitModifierByName UnitName="BlackHandHandOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandDropZone" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="150%"/>
+		
+		<UnitModifierByName UnitName="BlackHandOperationsCenter" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandSecretShrine" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="BlackHandTechAssemblyPlant" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="MG_BlackHand_WarmechFacility" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="999%"/>
+		<UnitModifierByName UnitName="BlackHandTiberiumLiquidationFacility" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="400%"/>
+		<UnitModifierByName UnitName="BlackHandTempleOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="BlackHandShredderTurretHub" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandLaserCannon" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandRocketBunker" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="50%"/>
+		<UnitModifierByName UnitName="BlackHandObelisk" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+	</AIStrategicStateDefinition>
+	
+	<!--Siege-->
+	
+	<AIStrategicStateDefinition
+	id="BHSiegeUnitPreferences"
+	UnitUpgradeMultiplier="0.0"
+	UnitBuilderCostEffectivenessWeight="1.0"
+	UnitBuilderOverallOffensivePreference="100%"
+	UnitBuilderOverallDefensivePreference="100%"
+	UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<ConstantHeuristic Weight="996.0"/>
+			<FocusedThresholdHeuristic />
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="3.0" />
+		</Heuristic>
+		<UnitModifierByName UnitName="BlackHandConfessorSquad" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="BlackHandMilitantRocketSquad" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="BlackHandSaboteur" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandFanaticSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandBlackHandSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="BlackHandAttackBike" UnitPreferenceOffensiveModifier="40%" UnitPreferenceDefensiveModifier="20%"/>
+		<UnitModifierByName UnitName="BlackHandScorpionBuggy" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandFlameTank" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandBunkerTruck" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandBeamCannon" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="BlackHandStealthTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandMobileArtillery" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="BlackHandCustomWarmech" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandMetaUnit" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+
+		<UnitModifierByName UnitName="BlackHandHandOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="BlackHandDropZone" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="120%"/>
+		
+		<UnitModifierByName UnitName="BlackHandOperationsCenter" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandSecretShrine" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="BlackHandTechAssemblyPlant" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="MG_BlackHand_WarmechFacility" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
+		<UnitModifierByName UnitName="BlackHandTiberiumLiquidationFacility" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="400%"/>
+		<UnitModifierByName UnitName="BlackHandTempleOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="BlackHandShredderTurretHub" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandLaserCannon" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="80%"/>
+		<UnitModifierByName UnitName="BlackHandRocketBunker" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandObelisk" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+	</AIStrategicStateDefinition>
+	
+	<!--Base-->
+
+	<AIStrategicStateDefinition
+	id="BHBaseUnitPreferences"
+	UnitUpgradeMultiplier="1.5"
+	UnitBuilderOverallOffensivePreference="100%"
+	UnitBuilderOverallDefensivePreference="100%"
+	UnitBuilderEnemyTowerWeight="0%">
+		<Heuristic>
+			<ConstantHeuristic Weight="995.0"/>
+		</Heuristic>
+		<UnitModifierByName UnitName="BlackHandConfessorSquad" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="BlackHandMilitantRocketSquad" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="BlackHandSaboteur" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandFanaticSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandBlackHandSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="BlackHandAttackBike" UnitPreferenceOffensiveModifier="40%" UnitPreferenceDefensiveModifier="20%"/>
+		<UnitModifierByName UnitName="BlackHandScorpionBuggy" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandFlameTank" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandBunkerTruck" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandBeamCannon" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandStealthTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandMobileArtillery" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandCustomWarmech" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandMetaUnit" UnitPreferenceOffensiveModifier="300%" UnitPreferenceDefensiveModifier="300%"/>
+
+		<UnitModifierByName UnitName="BlackHandHandOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="120%"/>
+		<UnitModifierByName UnitName="BlackHandDropZone" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="120%"/>
+		
+		<UnitModifierByName UnitName="BlackHandOperationsCenter" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandSecretShrine" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="200%"/>
+		<UnitModifierByName UnitName="BlackHandTechAssemblyPlant" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="300%"/>
+		<UnitModifierByName UnitName="MG_BlackHand_WarmechFacility" UnitPreferenceOffensiveModifier="999%" UnitPreferenceDefensiveModifier="999%"/>
+		<UnitModifierByName UnitName="BlackHandTiberiumLiquidationFacility" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="400%"/>
+		<UnitModifierByName UnitName="BlackHandTempleOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="BlackHandShredderTurretHub" UnitPreferenceOffensiveModifier="120%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandLaserCannon" UnitPreferenceOffensiveModifier="50%" UnitPreferenceDefensiveModifier="80%"/>
+		<UnitModifierByName UnitName="BlackHandRocketBunker" UnitPreferenceOffensiveModifier="60%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandObelisk" UnitPreferenceOffensiveModifier="150%" UnitPreferenceDefensiveModifier="150%"/>
+	</AIStrategicStateDefinition>
+	
+	<!--Easy-->
+
+	<AIStrategicStateDefinition
+	id="BHUnitPreferences_EASY"
+	UnitUpgradeMultiplier="0.0">
+		<Heuristic>
+			<ConstantHeuristic Weight="998.0"/>
+		</Heuristic>
+		<UnitModifierByName UnitName="BlackHandConfessorSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandMilitantRocketSquad" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandSaboteur" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandFanaticSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandBlackHandSquad" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="BlackHandAttackBike" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandScorpionBuggy" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandRaiderTank" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandFlameTank" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandBunkerTruck" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandBeamCannon" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandStealthTank" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandMobileArtillery" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandCustomWarmech" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandMetaUnit" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="BlackHandHandOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandDropZone" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		
+		<UnitModifierByName UnitName="BlackHandOperationsCenter" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandSecretShrine" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandTechAssemblyPlant" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="MG_BlackHand_WarmechFacility" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandTiberiumLiquidationFacility" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandTempleOfNOD" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+
+		<UnitModifierByName UnitName="BlackHandShredderTurretHub" UnitPreferenceOffensiveModifier="100%" UnitPreferenceDefensiveModifier="100%"/>
+		<UnitModifierByName UnitName="BlackHandLaserCannon" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandRocketBunker" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+		<UnitModifierByName UnitName="BlackHandObelisk" UnitPreferenceOffensiveModifier="0%" UnitPreferenceDefensiveModifier="0%"/>
+	</AIStrategicStateDefinition>
+	
+</AssetDeclaration>

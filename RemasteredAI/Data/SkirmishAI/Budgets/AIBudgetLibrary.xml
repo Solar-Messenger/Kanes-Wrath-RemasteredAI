@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Tags></Tags>
+	<Includes></Includes>
+	
+	<!--Budgets-->
+	
+	<!--If decisive victory is imminent, dedicate to units and support powers and close off the game-->
+	
+	<AIBudgetStateDefinition
+		  id="CleanupBudget">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.99"/> 
+			<OpeningMoveHeuristic Complete="true"/>
+			<ProductionAdvantageHeuristic />
+			<FocusedThresholdHeuristic />
+			<SiegeThresholdHeuristic SiegeMode="false" Threshold="0.5" />
+			<EnemyNearbyHeuristic Distance="2000.0" EnemyNearby="false" />
+			<PathToTargetHeuristic PathExists="true" />
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="30%"/>
+			<AccountShare Account="PRODUCTION" Percent="60%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="0%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<!--If imminent defeat is looming, dedicate to units and defenses-->
+	
+	<!--<AIBudgetStateDefinition
+		  id="CriticalDefenseBudget">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.98"/> 
+			<OpeningMoveHeuristic Complete="true"/>
+			<EnemyNearbyHeuristic Distance="1250.0" EnemyNearby="true" />
+			<SpreadThresholdHeuristic />
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+			<AccountShare Account="PRODUCTION" Percent="60%"/>
+			<AccountShare Account="DEFENSE" Percent="30%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="0%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>-->
+	
+	<!--Investment-->
+	
+	<AIBudgetStateDefinition
+		id="InvestmentDepletedBudget">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.97"/>
+			<OpeningMoveHeuristic Complete="true"/>
+			<FullInvestmentHeuristic Threshold="500"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="90%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+			<AccountShare Account="PRODUCTION" Percent="0%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="0%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<AIBudgetStateDefinition
+		id="InvestmentPreferenceByTimeBudget">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.96"/>
+			<HarvesterCapHeuristic MaxHarvesters="6"/>
+			<OpeningMoveHeuristic Complete="true"/>
+			<IntervalHeuristic IntervalTime="60s" ActiveTime="45s"/>
+			<IntervalHeuristic IntervalTime="9s" ActiveTime="4s"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="90%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+			<AccountShare Account="PRODUCTION" Percent="0%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="0%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<!--Easy-->
+	
+	<AIBudgetStateDefinition
+		 id="FullInvestmentBudget_EASY">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.96"/>
+			<OpeningMoveHeuristic Complete="true"/>
+			<HarvesterCapHeuristic MaxHarvesters="6"/>
+			<IntervalHeuristic IntervalTime="60s" ActiveTime="27s"/>
+			<IntervalHeuristic IntervalTime="9s" ActiveTime="4s"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="90%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+			<AccountShare Account="PRODUCTION" Percent="0%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="0%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<!--Technology-->
+	
+	<!--Calculation: Harvester_Cargo_Total($) / 9, * Budget_%, * Seconds_Docked (Or Estimated ActiveTime Docked) * Docked_Refineries-->
+	
+	<AIBudgetStateDefinition
+		id="TechDepletedBudget">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.95"/>
+			<OpeningMoveHeuristic Complete="true"/>
+			<EnemyNearbyHeuristic Distance="2500.0" EnemyNearby="false" />
+			<FullTechHeuristic Threshold="500" />
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="40%"/>
+			<AccountShare Account="PRODUCTION" Percent="0%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="50%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<AIBudgetStateDefinition
+		id="TechPreferenceByTimeBudget">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.93"/>
+			<OpeningMoveHeuristic Complete="true"/>
+			<IntervalHeuristic IntervalTime="78s" ActiveTime="18s"/>
+			<IntervalHeuristic IntervalTime="9s" ActiveTime="4s"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="20%"/>
+			<AccountShare Account="PRODUCTION" Percent="30%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="40%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<AIBudgetStateDefinition
+		id="TechPreferenceByTime_SiegeBudget">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.94"/>
+			<OpeningMoveHeuristic Complete="true"/>
+			<SiegeThresholdHeuristic SiegeMode="true" Threshold="3.0"/>
+			<TimerHeuristic StartTime="420s" EndTime="-1s" />
+			<IntervalHeuristic IntervalTime="95s" ActiveTime="45s"/>
+			<IntervalHeuristic IntervalTime="9s" ActiveTime="4s"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="20%"/>
+			<AccountShare Account="PRODUCTION" Percent="30%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="40%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<!--Easy-->
+	
+	<AIBudgetStateDefinition
+	  id="TechByTimeBudget_EASY">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.93"/>
+			<OpeningMoveHeuristic Complete="true"/>
+			<IntervalHeuristic IntervalTime="108s" ActiveTime="18s"/>
+			<IntervalHeuristic IntervalTime="9s" ActiveTime="3s"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+			<AccountShare Account="PRODUCTION" Percent="0%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="90%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<!--General Defense for all states-->
+	
+	<AIBudgetStateDefinition
+		  id="DefenseBudget">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.92"/> 
+			<OpeningMoveHeuristic Complete="true"/>
+			<SpreadThresholdHeuristic />
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+			<AccountShare Account="PRODUCTION" Percent="70%"/>
+			<AccountShare Account="DEFENSE" Percent="20%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="0%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<!--Recovery-->
+	
+	<AIBudgetStateDefinition
+		  id="RecoveryProduction_Investment_Budget_Large">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.91"/> 
+			<OpeningMoveHeuristic Complete="true"/>
+			<HarvesterCapHeuristic MaxHarvesters="6"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="30%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+			<AccountShare Account="PRODUCTION" Percent="60%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="0%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<AIBudgetStateDefinition
+		  id="RecoveryProduction_Investment_Budget_Small">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.91"/> 
+			<OpeningMoveHeuristic Complete="true"/>
+			<HarvesterCapHeuristic MaxHarvesters="4"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="30%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+			<AccountShare Account="PRODUCTION" Percent="60%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="0%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<!--Optimal/Base-->
+	
+	<AIBudgetStateDefinition
+		  id="BaseBudget">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.89"/> 
+			<OpeningMoveHeuristic Complete="true"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="10%"/>
+			<AccountShare Account="PRODUCTION" Percent="60%"/>
+			<AccountShare Account="DEFENSE" Percent="10%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="10%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<!--Easy-->
+	
+	<AIBudgetStateDefinition
+		  id="BaseBudget_EASY">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.89"/> 
+			<OpeningMoveHeuristic Complete="true"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+			<AccountShare Account="PRODUCTION" Percent="80%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="10%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<!--Turtle-->
+	
+	<AIBudgetStateDefinition
+		  id="TurtleBudget">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.89"/> 
+			<OpeningMoveHeuristic Complete="true"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="10%"/>
+			<AccountShare Account="PRODUCTION" Percent="60%"/>
+			<AccountShare Account="DEFENSE" Percent="10%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="10%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<!--Easy-->
+	
+	<AIBudgetStateDefinition
+		  id="TurtleBudget_EASY">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.89"/> 
+			<OpeningMoveHeuristic Complete="true"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+			<AccountShare Account="PRODUCTION" Percent="60%"/>
+			<AccountShare Account="DEFENSE" Percent="30%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="0%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<!--Offensive/Guerilla-->
+	
+	<AIBudgetStateDefinition
+		  id="RushBudget">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.9"/> 
+			<OpeningMoveHeuristic Complete="true"/>
+			<TimerHeuristic StartTime="0s" EndTime="420s" />
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="10%"/>
+			<AccountShare Account="PRODUCTION" Percent="70%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="10%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<!--Easy-->
+	
+	<AIBudgetStateDefinition
+		  id="RushBudget_EASY">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.9"/> 
+			<OpeningMoveHeuristic Complete="true"/>
+			<TimerHeuristic StartTime="0s" EndTime="420s" />
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+			<AccountShare Account="PRODUCTION" Percent="80%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="10%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<!--Overlord-->
+	
+	<AIBudgetStateDefinition
+		  id="OverwhelmBudget">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.9"/> 
+			<OpeningMoveHeuristic Complete="true"/>
+			<TimerHeuristic StartTime="0s" EndTime="600s"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="10%"/>
+			<AccountShare Account="PRODUCTION" Percent="70%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="10%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<!--Easy-->
+	
+	<AIBudgetStateDefinition
+		  id="OverwhelmBudget_EASY">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.9"/> 
+			<OpeningMoveHeuristic Complete="true"/>
+			<TimerHeuristic StartTime="0s" EndTime="600s"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+			<AccountShare Account="PRODUCTION" Percent="70%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="10%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="20%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<!--Opening Move-->
+
+	<AIBudgetStateDefinition
+	  id="OpeningMoveBudget">
+		<Heuristic>
+			<ConstantHeuristic Weight="0.1"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+			<AccountShare Account="PRODUCTION" Percent="0%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="0%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="100%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+	<!--Full Production-->
+	
+	<AIBudgetStateDefinition
+	  id="FullProductionBudget">
+		<Heuristic>
+			<ConstantHeuristic Weight="1.0"/>
+		</Heuristic>
+		<Budget>
+			<AccountShare Account="INVESTMENT" Percent="0%"/>
+			<AccountShare Account="SPECIAL_OPERATIONS" Percent="0%"/>
+			<AccountShare Account="PRODUCTION" Percent="90%"/>
+			<AccountShare Account="DEFENSE" Percent="0%"/>
+			<AccountShare Account="TECHNOLOGY" Percent="0%"/>
+			<AccountShare Account="SLUSH_FUND" Percent="10%"/>
+		</Budget>
+	</AIBudgetStateDefinition>
+	
+</AssetDeclaration>
