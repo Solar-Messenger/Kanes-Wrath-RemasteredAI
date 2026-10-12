@@ -368,9 +368,9 @@ RemasteredAI/Data/MetaGame/MetaGameMapZones.xml
 RemasteredAI/Data/MetaGame/MetaGameMapZonesTest.xml
 RemasteredAI/Data/MetaGame/MetaGameMapZonesTestStandardMaps.xml
 RemasteredAI/Data/SkirmishAI/SkirmishAIIncludes.xml
-RemasteredAI/Data/SkirmishAI/Targets
-RemasteredAI/Data/SkirmishAI/Budgets
-RemasteredAI/Data/SkirmishAI/States/UnitPreferences
+# RemasteredAI/Data/SkirmishAI/Targets
+# RemasteredAI/Data/SkirmishAI/Budgets
+# RemasteredAI/Data/SkirmishAI/States/UnitPreferences
 RemasteredAI/Data/SkirmishAI/Personalities/PersonalityList.xml
 RemasteredAI/Data/SkirmishAI/OpeningMoves/TestMove.xml
 RemasteredAI/Data/SkirmishAI/OpeningMoves/OpeningMoveLibraries.xml
@@ -403,13 +403,13 @@ RemasteredAI/Data/Traveler59
 RemasteredAI/Data/ZOCOM
 
 RemasteredAI/Data/SkirmishAI/States/AIStates.xml
-RemasteredAI/Data/SkirmishAI/States/AIUnitPreferences.xml
+# RemasteredAI/Data/SkirmishAI/States/AIUnitPreferences.xml
 RemasteredAI/Data/SkirmishAI/Personalities/HuntPersonality.xml
 RemasteredAI/Data/SkirmishAI/Personalities/DefaultPersonality.xml
 RemasteredAI/Data/GDI/Units/GDIAPC.xml
 RemasteredAI/Data/SkirmishAI/Personalities/GDITest.xml
 RemasteredAI/Data/SkirmishAI/Personalities/RandomPersonalities.xml
-RemasteredAI/Data/SkirmishAI/States/AISpecialStates.xml
+# RemasteredAI/Data/SkirmishAI/States/AISpecialStates.xml
 RemasteredAI/Data/Alien/Alien.xml
 RemasteredAI/Data/Maps
 RemasteredAI/Data/AdditionalMaps
@@ -418,4 +418,4 @@ RemasteredAI/Art
 RemasteredAI/Data/Civilian
 RemasteredAI/Data/Zones
 RemasteredAI/Data/MapSpecific.xml 
-RemasteredAI/Misc 
+# RemasteredAI/Misc 
