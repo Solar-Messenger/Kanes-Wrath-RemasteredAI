@@ -1,7 +1,7 @@
 ﻿# Skirmish & Global Conquest Remaster
 
 This repository hosts files and code related to remastering the **Skirmish AI** and 
-**Global Conquest** for **Command & Conquer 3 Kane's Wrath**.  
+**Global Conquest** for **Command & Conquer 3 Kane's Wrath**
 
 The goal is to improve AI behaviors over the base game, 
 give AI actions more purpose and to assist players in identifying and learning vital
@@ -89,6 +89,8 @@ be added by the user in order to have it be compiled.
 - Special thanks to Desolator Trooper for Global Conquest building map placements.
 
 ---
+
+All work within this repository and it's associated contents has been modded/edited by me (Solar-Messenger) in line with EA's Modding Support guidelines and license.
 
 ## ⚖️ License
 
