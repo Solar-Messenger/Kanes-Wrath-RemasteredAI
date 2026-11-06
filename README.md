@@ -6,8 +6,7 @@ This repository hosts files and code related to remastering the **Skirmish AI** 
 The goal is to improve AI behaviors over the base game, 
 give AI actions more purpose and to assist players in identifying and learning vital
 points of their base as well as their opponent's as well as encourage micro and macro management
-under a more difficult experience. This AI Remaster is intended to be developed and distributed
-alongside Masterleaf's 4K Mod and 1.02+ Community Patch.
+under a more difficult experience.
 
 ---
 
@@ -28,11 +27,11 @@ be added by the user in order to have it be compiled.
 
 ## :memo: Change Log 
 
-## Release (R25j):
+## Release:
 
 ## Campaign:
 
-- Fully adapted/fixed campaign maps will follow (with map specific fixes).
+- Fully adapted/fixed campaign maps.
 - Revamp entire General AI behaviour from scratch with compatibility for 1.02+.
 - Fix and improve incomplete/incorrect Attack states (Proactive, Reactive & Context Specific).
 - Scale Easy, Medium & Hard to a more suitable consistency.
